@@ -1,0 +1,25 @@
+@media only screen and (min-width: 768px) {
+
+    body {
+        padding-top: 12%;
+        overflow: auto;
+    }
+    
+    header {
+          padding: 20px 10% 20px 13%;
+    }
+
+    
+    
+    .content textarea {
+        height: 60vh;
+        width: 95vw;
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+    
+    
+    
+ }

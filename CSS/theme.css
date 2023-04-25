@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --accent: #D14081;
+    --primary: #CDDEFF;
+    --contrast: #eef2ff;
+    --mainBG: #2E2E3A;
+    --dark: #F8F1FF;
+    --selection: #00000096;
+    --bg-art: url(/img/art/bg2.webp);
+    --font: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --navFont: 'Archivo', sans-serif;
+    --mtg-w: #f8f6d8;
+    --mtg-u: #c1d7e9;
+    --mtg-b: #cac5c0;
+    --mtg-r: #e49977;
+    --mtg-g: #a3c095;
+    --mtg-c: #cac5c0;
+
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--contrast) #ffffff00;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--contrast);
+    border-radius: 10px;
+    border: 1px solid #ffffff00;
+  }
+
+body{
+    background:
+        linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 1)
+    ), var(--bg-art);
+    background-color: #000;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 100vh;
+    }
+
+body::before {
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+    background-image: url(data:image/svg+xml;charset=utf8,%3C%21--%20%28c%29%20Carrd%20Inc.%20All%20rights%20reserved.%20--%3E%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%0A%09%3Cstyle%3E%0A%09%09line%20%7B%0A%09%09%09stroke-linecap%3A%20square%3B%0A%09%09%09stroke-width%3A%202.01px%3B%0A%09%09%09stroke%3A%20%2300000080%3B%0A%09%09%09vector-effect%3A%20non-scaling-stroke%3B%0A%09%09%7D%0A%09%3C/style%3E%0A%09%3Cline%20x1%3D%22256%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%22256%22%20/%3E%0A%09%3Cline%20x1%3D%22256%22%20y1%3D%22512%22%20x2%3D%22512%22%20y2%3D%22256%22%20/%3E%0A%3C/svg%3E);
+    background-size: 8px;
+    background-position: center center;
+    background-repeat: repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+header.navScrolled .logo
+{  
+
+    fill: var(--contrast);
+
+}
+
+header .logo:hover,
+header .logo:focus
+{
+
+    fill: var(--accent);
+}
+
+
+/* BACKGROUNDS */
+
+.skip-nav-link,
+.menu,
+header.navScrolled,
+header,
+footer
+
+{
+
+    background: var(--mainBG);
+    
+    
+}
+
+.skip-nav-link,
+.menu ul li a:hover,
+.menu ul li a:focus,
+.dropdown-sub:checked + label,
+.dropdown.parent:checked + label
+
+{
+color: var(--accent);
+    
+}
+
+.menu ul li:hover,
+.menu ul li:focus,
+.menu ul li:focus-within {
+    border-bottom-color: var(--accent);
+}
+
+
+.menu ul li a,
+.menu ul li div,
+main::after,
+footer
+
+{
+
+    color: var(--contrast);
+    
+    
+}
+
+h1, h2, h3, h4, h5, h6,
+p
+{
+    color: var(--contrast);
+}
+
+/* FONTS */
+
+p,
+textarea,
+span {
+    font-family: var(--font);
+}
+
+.dropdown:checked + label,
+.dropdown:not(:checked) + label,
+header a {
+    font-family: var(--navFont);
+}
+
+.dropdown a {
+    color: var(--contrast)
+}
+
+
+i.ms-w {color: var(--mtg-w);}
+i.ms-u {color: var(--mtg-u);}
+i.ms-b {color: var(--mtg-b);}
+i.ms-r {color: var(--mtg-r);}
+i.ms-g {color: var(--mtg-g);}
+i.ms-c {color: var(--mtg-c);}

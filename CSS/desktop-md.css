@@ -1,0 +1,182 @@
+@media only screen and (min-width: 1200px) {
+    
+    :root {
+    --bradius: 0px 0px 20px 20px;
+    }    
+    
+    html {
+        
+
+    scroll-padding-top: 120px; /* height of sticky header */
+
+
+    
+    }
+    
+    body {
+        padding-top: 0%;
+
+    }
+    
+    
+    img {
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+    }
+
+    .container {
+        min-height: 100vh;
+    }
+    
+    /* HEADER */
+    
+    header {
+        position: relative;
+        padding: 10px;
+        right: auto;
+        left: auto;
+        top: auto;
+        border-radius: var(--bradius);
+
+    }
+    
+    header.navScrolled {
+        position: fixed;
+        top: 0px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        
+    }
+    
+    header .logo {
+        height: 3em;
+        padding: 0px 20px;
+    }
+
+
+    
+    
+    .skip-nav-link {
+        display: block;
+        left: 10%;
+        position: absolute;
+        top: -10px;
+        transform: translateY(-120%);
+        padding: 30px;
+        border-radius: 0px 0px 5px 5px;
+        box-shadow: 2px 1px 0px 0px rgb(0 0 0 / 20%);
+        transition: transform 0.1s ease-in-out;
+        z-index: 99999        ;
+    }
+
+    .skip-nav-link:focus {
+            transform: translateY(10%);
+    }
+
+    
+    .toggle
+    {
+        display: none;
+    }
+    
+    
+    .menu {
+        position: relative;
+        right: 0;
+        width: auto;
+        height: auto;
+        transition: 0s;
+
+    }
+    
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .menu ul li {
+       border-right: 1px solid #0000002b;
+
+    }
+    
+        
+    .menu ul li:last-child,
+    .menu ul li.lastMenuOption {
+       border-right: 0px;
+    }
+    
+    
+    
+    .dropdown:checked + label,
+    .dropdown:not(:checked) + label,
+    .menu ul li a{
+
+        min-width: 130px;
+        justify-content: center;
+        border-top: 0px;
+        margin-bottom: 0px;
+        padding: 1em;
+        font-weight: 300;
+    }
+    
+    .menu ul li div a {
+    justify-content: flex-start;
+}
+
+    
+        .section-dropdown {
+        width: 200%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    
+    main {
+        z-index: 2;
+    }
+
+    main .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .content textarea {
+        height: 60vh;
+        width: 35vw;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    footer {
+        margin-top: 0;
+        width:80%;
+        z-index: 2;
+    }
+
+    
+}
+     
+    

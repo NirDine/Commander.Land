@@ -1,0 +1,406 @@
+:root {
+    --bradius: 5px;
+    
+    
+    
+    
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 70px;
+}
+
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.2s;
+    overflow-x: hidden;
+    text-rendering: optimizeSpeed;
+
+}
+
+
+
+header
+{
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 5vw 40px 5vw;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+
+header .logo 
+{  display: flex;
+    align-content: center;
+    stroke: none;
+    fill: var(--contrast);
+    height: 5.5em;
+
+
+}
+
+
+
+
+body.active header .logo {
+    display: none;
+}
+
+.skip-nav-link {
+    display: none;
+}
+
+
+.toggle
+{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background: url(/img/buttons/menu.svg);
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.navScrolled .toggle {
+     background-image: url(/img/buttons/menu-contrast.svg); 
+}
+
+.toggle.active
+{
+  background: url(/img/buttons/close.svg);
+  background-repeat: no-repeat;
+  background-size: 50px;
+  background-position: center;
+  cursor: pointer;
+    right:1em;
+    transition: right 0.5s;
+}
+
+.navScrolled .toggle.active {
+    background-image: url(/img/buttons/close-contrast.svg);
+}
+
+
+
+
+
+.menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -500px;
+    height: 100%;
+    width: 500;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: right;
+    z-index: 99999;
+
+    transition: 0.25s;
+
+}
+
+body.active .menu {
+      right: 0;
+
+}
+
+.menu ul
+{
+  position: relative;
+    text-align: right;
+
+
+}
+
+.menu ul li
+{
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+
+.menu ul li:hover,
+.menu ul li:focus-within{
+    border-bottom: 5px solid  ;
+    padding-bottom: 0px;
+
+}
+
+
+.menu ul li a
+{
+    display: flex;
+    justify-content: flex-end;
+
+    font-size: 1.3em;
+    padding: 25px 25px 14px;
+
+    border-top: 1px solid #00000010;
+
+    font-weight: 300;
+    width: 100%;
+
+}
+
+
+.dropdown:checked + label,
+.dropdown:not(:checked) + label {
+    font-size: 1.3em;
+    padding: 25px 25px 14px;
+    font-weight: 300;
+    border-top: 1px solid #00000010;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.menu ul li div.section-dropdown-sub a {
+    font-size: 1.1em;
+}
+
+
+.menu ul li a img {
+    margin-top:5px;
+    height: 20px;
+    width: 20px;
+}
+
+
+.menu ul li a img {
+    margin-top:5px;
+    height: 20px;
+    width: 20px;
+}
+
+
+
+
+.lightsOff {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+body.active .lightsOff {
+
+    display: flex;
+    
+}
+
+
+main {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.content h1 {
+    font-size: 1.75rem;
+    font-family:OpineHeavy
+}
+
+
+.content textarea {
+    padding: 1em;
+    margin-block: 0.2em;
+    border: 1px solid #00000010;
+    border-radius: 10px;
+}
+
+.content textarea:focus {
+    filter: brightness(102%);
+    border: 1px solid var(--contrast);
+}
+
+
+.content input[type=submit] {
+
+    transition: all 0.2s;
+    padding: 1.2em;
+}
+.content input[type=submit]:hover,
+.content input[type=submit]:focus {
+
+    outline:none;
+    
+}
+
+
+
+
+
+
+
+section + section {
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+footer,
+footer div {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    background: var(--contrast);
+    z-index: 1000;
+}
+
+
+footer span {
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-family: var(--font);
+}
+
+
+
+.sec-center {
+  position: relative;
+  max-width: 100%;
+  text-align: center;
+  z-index: 200;
+}
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.dropdown:checked + label,
+.dropdown:not(:checked) + label{
+  position: relative;
+
+  transition: all 200ms linear;
+
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+
+  cursor: pointer;
+
+}
+
+.dropdown:checked + label:before,
+.dropdown:not(:checked) + label:before{
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  cursor: auto;
+  pointer-events: none;
+}
+.dropdown:checked + label:before{
+  pointer-events: auto;
+}
+
+.section-dropdown {
+  position: absolute;
+  padding: 5px;
+  background-color: #111;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 200ms linear;
+}
+
+.dropdown:checked ~ .section-dropdown{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+
+.dropdown-sub:checked + label,
+.dropdown-sub:not(:checked) + label{
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+    cursor: pointer;
+    font-size: 1.3em;
+    padding: 25px 25px 14px;
+}
+
+.menu ul li div a i + i {
+  margin-left: 1px;
+}
+
+.menu ul li div a i:last-child {
+  margin-right: 10px;
+}
+
+.section-dropdown-sub {
+  position: relative;
+  display: block;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  max-height: 0;
+  padding-left: 10px;
+  padding-right: 3px;
+  overflow: hidden;
+  transition: all 200ms linear;
+}
+
+.dropdown-sub:checked + label + .section-dropdown-sub{
+  pointer-events: auto;
+  opacity: 1;
+  max-height: 999px;
+}
+.section-dropdown-sub a {
+  font-size: 14px;
+}
+
+
+

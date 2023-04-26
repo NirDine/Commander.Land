@@ -1,5 +1,10 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=5, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+        <title>Commander.Land</title>
+
+        <!-- CSS -->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/structure.css">
         <link rel="stylesheet" href="css/theme.css">
@@ -15,7 +20,7 @@
     </head>
     <body class="fallback" style="">
     
-    <a href="#addList" class="skip-nav-link" id="skip">Skip Navigation</a>
+    <a href="#deckList" class="skip-nav-link" id="skip">Skip Navigation</a>
  
     <div class="lightsOff"></div>
 <div class="container">
@@ -171,10 +176,65 @@ White</a>
             <div class="content">
                 <div class="top">
                     <h1>Build your perfect mana base!</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam provident culpa voluptates, expedita, pariatur tenetur necessitatibus dolores architecto adipisci ipsa aut iusto mollitia dolore, doloremque, et modi fugiat animi blanditiis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo harum laboriosam, reiciendis ea nesciunt odit ipsa. Quae, molestias, reprehenderit. Vitae optio exercitationem quaerat quae aliquid nulla soluta magnam autem quibusdam rem, mollitia nihil dicta aspernatur ratione laborum, voluptates ipsa quis perspiciatis. Dolores, facere saepe fuga nemo non, laudantium veniam! Vel non reprehenderit illum et voluptas aliquid cum, necessitatibus nulla, velit eos vitae, neque nam cumque dolores enim rerum nihil. Voluptas rem doloremque officiis placeat, quisquam est vitae suscipit error quod esse? Autem, saepe nihil quam ex id, velit architecto rem nemo amet ducimus optio libero harum consectetur voluptatem inventore in!</p>
                 </div>
                 <div class="bottom">
-                    <textarea aria-label="Deck list" id="deckList" name="deckList" rows="10" cols="33" placeholder="1x Alpha Myr&#10;1x Myr Galvanizer&#10;1x Myr Retriever&#10;1x Palladium Myr&#10;1x Omega Myr&#10;...&#10;" required></textarea>
+                 <div class="explore">
+                   <div class="explain">
+                       <h2>Explore all lands in your colors...</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptatem animi ratione molestiae nisi facere laudantium perferendis explicabo odio, esse dolor recusandae at ex repudiandae assumenda ipsa porro possimus nulla?</p>
+                   </div>
+                    <div class="color-picker">
+                        <div class="mana">
+                        <input class="color" type="checkbox" id="mana-w" name="mana-w"/>
+                        <label class="mana-w" for="mana-w"><i class="ms ms-w"></i></label>
+                    </div>
+                    <div class="mana">
+                        <input class="color" type="checkbox" id="mana-u" name="mana-u"/>
+                        <label class="mana-u" for="mana-u"><i class="ms ms-u"></i></label>
+                    </div>
+                    <div class="mana">
+                        <input class="color" type="checkbox" id="mana-b" name="mana-b"/>
+                        <label class="mana-b" for="mana-b"><i class="ms ms-b"></i></label>
+                    </div>
+                    <div class="mana">
+                        <input class="color" type="checkbox" id="mana-r" name="mana-r"/>
+                        <label class="mana-r" for="mana-r"><i class="ms ms-r"></i></label>
+                    </div>
+                    <div class="mana">
+                        <input class="color" type="checkbox" id="mana-g" name="mana-g"/>
+                        <label class="mana-g" for="mana-g"><i class="ms ms-g"></i></label>
+                    </div>
+                    <div class="mana">
+                        <input class="colorless" type="checkbox" id="mana-c" name="mana-c" />
+                        <label class="mana-c" for="mana-c"><i class="ms ms-c"></i></label>
+                    </div>
+                    <div class="name">
+                        <span id="combination-name">
+                        Esper
+                        </span>
+                    </div>
+                    </div>
+                    <div class="button">
+                        <input type="submit" name="Explore" value="I want to do it myself" disabled>
+                    </div>
+                  </div>
+                  <div class="analyze">
+                        <div class="explain">
+                           <h2>...or just let us take care of the hard part!</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus qui impedit tempore nisi, laudantium laborum amet voluptate ipsa expedita modi non et ratione tenetur quibusdam hic eaque vitae eum officia itaque nemo autem ab delectus veritatis dignissimos. Laboriosam, impedit, voluptates ea quia incidunt, provident ullam explicabo repellendus ex distinctio delectus.</p>
+                       </div>
+                        <div class="addDeck">
+                          <div class="backdrop">
+                            <div class="highlights"></div>
+                          </div>
+                          <textarea aria-label="Deck list" id="deckList" name="deckList" rows="10" cols="33" placeholder="1x Alpha Myr&#10;1x Myr Galvanizer&#10;1x Myr Retriever&#10;1x Palladium Myr&#10;1x Omega Myr&#10;...&#10;" required></textarea>
+                        </div>
+                        <div class="button">
+                            <input type="submit" name="Analyze" value="Help me build the perfect mana base">
+                        </div>
+                   </div>
+
                 </div>
 
             </div>
@@ -235,7 +295,19 @@ White</a>
                     escape();
 
             })
+            
         </script>
-
+        
+        <script type="text/javascript">
+            $(document).on('click', '.colorless', function() {      
+                $('input[type="checkbox"]').not(this).prop('checked', false);      
+            });
+            
+            $(document).on('click', '.color', function() {      
+                $('.colorless').prop('checked', false);      
+            });
+            
+        </script>
+        <script type="text/javascript" src="JS/Highlights.js"></script>
     </body>
 </html>

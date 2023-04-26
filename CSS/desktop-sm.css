@@ -1,25 +1,79 @@
 @media only screen and (min-width: 768px) {
 
     body {
-        padding-top: 12%;
         overflow: auto;
+        padding-top: 12%;
     }
     
     header {
           padding: 20px 10% 20px 13%;
     }
 
-    
-    
-    .content textarea {
-        height: 60vh;
-        width: 95vw;
-    }
+
 
     footer {
-        margin-top: 10%;
+        margin-top: 10em;
     }
     
+
+    .bottom .explore {
+    display: flex;
+    padding: 30px 0px;
+}
     
+    .explain p {
+    text-align: left;
+}
+
+
+.color-picker {
+    display: grid;
+    grid-template:
+        'c c c'
+        'c c c'
+        'n n n';
+    grid-gap: 0.5em;
+}
+
+.explore .name {
+    grid-area: n;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#combination-name {
+    padding: 5px;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+    .bottom {
+     flex-direction: column-reverse;
+    }
+
+.bottom .mana label {
+    display: inline-flex;
+    padding: 25px;
+    background: #ffffff14;
+    border-radius: 20px;
+    border: 2px solid #0000006e;
+    
+}
+
+.mana:has(input[type="checkbox"]:checked) label {
+    background: #4f1e37;
+    border-color: var(--accent);
+}
+    
+    
+    .bottom .button input {
+
+   width: auto;
     
  }
+    
+.backdrop, textarea {
+    height: 50vh;
+}
+    
+}

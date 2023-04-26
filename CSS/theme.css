@@ -9,7 +9,7 @@
     --dark: #F8F1FF;
     --selection: #00000096;
     --bg-art: url(/img/art/bg2.webp);
-    --font: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font: ;
     --navFont: 'Archivo', sans-serif;
     --mtg-w: #f8f6d8;
     --mtg-u: #c1d7e9;
@@ -53,7 +53,6 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
-    height: 100vh;
     }
 
 body::before {
@@ -65,7 +64,7 @@ body::before {
     top: 0px;
     width: 100%;
     z-index: -1;
-    background-image: url(data:image/svg+xml;charset=utf8,%3C%21--%20%28c%29%20Carrd%20Inc.%20All%20rights%20reserved.%20--%3E%0A%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20preserveAspectRatio%3D%22none%22%3E%0A%09%3Cstyle%3E%0A%09%09line%20%7B%0A%09%09%09stroke-linecap%3A%20square%3B%0A%09%09%09stroke-width%3A%202.01px%3B%0A%09%09%09stroke%3A%20%2300000080%3B%0A%09%09%09vector-effect%3A%20non-scaling-stroke%3B%0A%09%09%7D%0A%09%3C/style%3E%0A%09%3Cline%20x1%3D%22256%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%22256%22%20/%3E%0A%09%3Cline%20x1%3D%22256%22%20y1%3D%22512%22%20x2%3D%22512%22%20y2%3D%22256%22%20/%3E%0A%3C/svg%3E);
+    background-image: url(/IMG/lines.svg);
     background-size: 8px;
     background-position: center center;
     background-repeat: repeat;
@@ -79,6 +78,7 @@ header.navScrolled .logo
 {  
 
     fill: var(--contrast);
+    transition-duration: .15s;
 
 }
 
@@ -87,6 +87,7 @@ header .logo:focus
 {
 
     fill: var(--accent);
+    transition-duration: .15s;
 }
 
 
@@ -107,39 +108,45 @@ footer
 
 .skip-nav-link,
 .menu ul li a:hover,
+.menu ul li div:hover,
 .menu ul li a:focus,
 .dropdown-sub:checked + label,
-.dropdown.parent:checked + label
+.dropdown.parent:checked + label,
+label.for-dropdown-sub:hover,
+.dropdown-sub:focus + label,
+.dropdown.parent:focus + label
 
 {
 color: var(--accent);
-    
+  transition-duration: .15s;
 }
 
 .menu ul li:hover,
 .menu ul li:focus,
 .menu ul li:focus-within {
     border-bottom-color: var(--accent);
+    
 }
 
 
 .menu ul li a,
 .menu ul li div,
 main::after,
-footer
-
-{
-
-    color: var(--contrast);
-    
-    
-}
-
-h1, h2, h3, h4, h5, h6,
+footer,
 p
+
 {
+
     color: var(--contrast);
+    
+    
 }
+
+h1, h2, h3, h4, h5, h6
+{
+      color: var(--accent);
+}
+
 
 /* FONTS */
 
@@ -156,8 +163,18 @@ header a {
 }
 
 .dropdown a {
-    color: var(--contrast)
+    color: var(--contrast);
+      transition-duration: .15s;
 }
+
+
+#combination-name {
+    color: var(--contrast);
+}
+
+
+
+
 
 
 i.ms-w {color: var(--mtg-w);}

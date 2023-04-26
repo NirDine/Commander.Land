@@ -1,9 +1,6 @@
 :root {
-    --bradius: 5px;
-    
-    
-    
-    
+    --bradius: 20px;
+
 }
 
 
@@ -24,19 +21,22 @@ body {
     transition: 0.2s;
     overflow-x: hidden;
     text-rendering: optimizeSpeed;
+    padding-top: 25%;
 
 }
 
-
+p {
+    font: 1.3em 'Open Sans', sans-serif;
+    padding: 2px 0px;
+}
 
 header
 {
   position: fixed;
-
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 5vw 40px 5vw;
+  padding: 15px 4vw 5px 6vw;
   z-index: 9999;
   display: flex;
   justify-content: space-between;
@@ -50,8 +50,7 @@ header .logo
     align-content: center;
     stroke: none;
     fill: var(--contrast);
-    height: 5.5em;
-
+    height: 2.5em;
 
 }
 
@@ -70,11 +69,11 @@ body.active header .logo {
 .toggle
 {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 60px;
+  height: 60px;
   background: url(/img/buttons/menu.svg);
   background-repeat: no-repeat;
-  background-size: 60px;
+  background-size: 30px;
   background-position: center;
   cursor: pointer;
 }
@@ -87,7 +86,7 @@ body.active header .logo {
 {
   background: url(/img/buttons/close.svg);
   background-repeat: no-repeat;
-  background-size: 50px;
+  background-size: 25px;
   background-position: center;
   cursor: pointer;
     right:1em;
@@ -106,9 +105,9 @@ body.active header .logo {
     display: flex;
     position: fixed;
     top: 0;
-    right: -500px;
+    right: -250px;
     height: 100%;
-    width: 500;
+    width: 250;
     flex-direction: column;
     justify-content: space-between;
     align-items: right;
@@ -170,7 +169,10 @@ body.active .menu {
     border-top: 1px solid #00000010;
     width: 100%;
     justify-content: flex-end;
+
 }
+
+
 
 .menu ul li div.section-dropdown-sub a {
     font-size: 1.1em;
@@ -220,21 +222,34 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     
 }
 
+.content {
+    padding-inline:3em;
+}
+
 .content h1 {
+    font-size: 2.5rem;
+    font-family:OpineHeavy;
+ 
+}
+
+.content h2 {
     font-size: 1.75rem;
-    font-family:OpineHeavy
+ 
 }
 
 
-.content textarea {
-    padding: 1em;
-    margin-block: 0.2em;
-    border: 1px solid #00000010;
-    border-radius: 10px;
+.content textarea
+{
+    line-height: 20.8px;
+    border-radius: 20px;
+}
+
+.backdrop {
+    border-radius: 20px;
 }
 
 .content textarea:focus {
@@ -352,11 +367,16 @@ footer span {
   transition: all 200ms linear;
 }
 
-.dropdown:checked ~ .section-dropdown{
+.dropdown:checked ~ .section-dropdown,
+.dropdown:focus ~ .section-dropdown,
+.dropdown ~ .section-dropdown:has(input:focus),
+.dropdown ~ .section-dropdown:has(a:focus){
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
+
+
 
 
 .dropdown-sub:checked + label,
@@ -393,7 +413,9 @@ footer span {
   transition: all 200ms linear;
 }
 
-.dropdown-sub:checked + label + .section-dropdown-sub{
+.dropdown-sub:checked + label + .section-dropdown-sub,
+.dropdown-sub:focus + label + .section-dropdown-sub,
+.dropdown-sub + label + .section-dropdown-sub:has(a:focus){
   pointer-events: auto;
   opacity: 1;
   max-height: 999px;
@@ -404,3 +426,129 @@ footer span {
 
 
 
+.bottom {
+    display: flex;
+
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.bottom .explore,
+.bottom .analyze {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 50%;
+}
+
+
+.bottom .explore {
+    display: none;
+}
+
+.bottom .button {
+    margin-top: 30px;
+}
+
+.explain {
+    margin-bottom: 30px;
+}
+
+
+.backdrop, textarea {
+    height: 16vh;
+    width: 90vw;
+
+}
+
+.highlights, textarea {
+  padding: 10px;
+  font-size: 1.3em;
+
+  letter-spacing: 1px;
+}
+
+
+.backdrop {
+  position: absolute;
+  z-index: 1;
+  border: 2px solid #685972;
+  background-color: #020202db;
+  overflow: auto;
+  pointer-events: none;
+  transition: transform 1s;
+}
+
+.highlights {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	color: transparent;
+}
+
+textarea {
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  border-radius: 0;
+  color: var(--contrast);
+  background-color: transparent;
+  overflow: auto;
+  resize: none;
+  transition: transform 1s;
+}
+
+mark {
+  border-radius: 3px;
+  color: transparent;
+  background-color: var(--accent);
+}
+
+
+
+.bottom .button input {
+  background-image: linear-gradient(92.88deg, #b76c8e 9.16%, var(--accent));
+  border-radius: 20px;
+  border-style: none;
+  box-sizing: border-box;
+  color: var(--contrast);
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: var(--navFont);
+  font-size: 16px;
+  font-weight: 500;
+  height: 4rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+   width: 90vw;
+}
+
+.bottom .button input:disabled {
+    filter:grayscale(1);
+    opacity: 0.7;
+    cursor:not-allowed;
+}
+
+
+.bottom .button input:hover,
+.mana label:hover,
+.bottom .button input:focus,
+.mana input:focus + label {
+  box-shadow: #d1408178 0 1px 30px;
+  transition-duration: .15s;
+}
+
+@media (min-width: 768px) {
+  .bottom .button input {
+    padding: 0 2.6rem;
+  }
+}
+
+.content > div{
+    padding: 0px 0px 30px 0px;
+}

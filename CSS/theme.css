@@ -74,11 +74,18 @@ a {
     text-decoration: none;
 }
 
+
+
+header .logo 
+{
+
+    fill: var(--contrast);
+
+}
+
 header.navScrolled .logo
 {  
 
-    fill: var(--contrast);
-    transition-duration: .15s;
 
 }
 
@@ -116,11 +123,13 @@ label.for-dropdown-sub:hover,
 .dropdown-sub:focus + label,
 .dropdown.parent:focus + label
 
+
 {
 color: var(--accent);
   transition-duration: .15s;
 }
 
+.skip-nav-link,
 .menu ul li:hover,
 .menu ul li:focus,
 .menu ul li:focus-within {
@@ -148,20 +157,6 @@ h1, h2, h3, h4, h5, h6
 }
 
 
-/* FONTS */
-
-p,
-textarea,
-span {
-    font-family: var(--font);
-}
-
-.dropdown:checked + label,
-.dropdown:not(:checked) + label,
-header a {
-    font-family: var(--navFont);
-}
-
 .dropdown a {
     color: var(--contrast);
       transition-duration: .15s;
@@ -172,10 +167,26 @@ header a {
     color: var(--contrast);
 }
 
+.bottom .button input:hover,
+.mana label:hover,
+.bottom .button input:focus-visible,
+.mana input:focus-visible + label {
+  box-shadow: #d1408178 0 1px 30px;
+  transition-duration: .15s;
+}
 
 
+.bottom .button input {
+  background-image: linear-gradient(92.88deg, #b76c8e 9.16%, var(--accent));
+  color: var(--contrast);
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+}
 
+.section-dropdown {
+  box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
+      background-color: var(--mainBG);
 
+}
 
 i.ms-w {color: var(--mtg-w);}
 i.ms-u {color: var(--mtg-u);}
@@ -183,3 +194,23 @@ i.ms-b {color: var(--mtg-b);}
 i.ms-r {color: var(--mtg-r);}
 i.ms-g {color: var(--mtg-g);}
 i.ms-c {color: var(--mtg-c);}
+
+
+/* FONTS */
+
+p,
+textarea,
+span {
+    font-family: var(--font);
+}
+
+.content h1 {
+    font-family:OpineHeavy;
+ 
+}
+
+.dropdown:checked + label,
+.dropdown:not(:checked) + label,
+header a {
+    font-family: var(--navFont);
+}

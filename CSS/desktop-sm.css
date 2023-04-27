@@ -76,4 +76,15 @@
     height: 50vh;
 }
     
+    
+    #combination-name {
+        visibility: hidden;
+    }
+    
+    .color-picker:has(input:checked) #combination-name { visibility: visible;
+    }
+    
+
+    
+    
 }

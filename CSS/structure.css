@@ -1,6 +1,6 @@
 :root {
     --bradius: 20px;
-
+    --half-bradius: 0px 0px 20px 20px;
 }
 
 
@@ -26,7 +26,7 @@ body {
 }
 
 p {
-    font: 1.3em 'Open Sans', sans-serif;
+    font-size: 1.3em;
     padding: 2px 0px;
 }
 
@@ -49,12 +49,9 @@ header .logo
 {  display: flex;
     align-content: center;
     stroke: none;
-    fill: var(--contrast);
     height: 2.5em;
 
 }
-
-
 
 
 body.active header .logo {
@@ -89,6 +86,7 @@ body.active header .logo {
   background-size: 25px;
   background-position: center;
   cursor: pointer;
+    top:-0.30em;
     right:1em;
     transition: right 0.5s;
 }
@@ -96,8 +94,6 @@ body.active header .logo {
 .navScrolled .toggle.active {
     background-image: url(/img/buttons/close-contrast.svg);
 }
-
-
 
 
 
@@ -112,7 +108,6 @@ body.active header .logo {
     justify-content: space-between;
     align-items: right;
     z-index: 99999;
-
     transition: 0.25s;
 
 }
@@ -149,12 +144,9 @@ body.active .menu {
 {
     display: flex;
     justify-content: flex-end;
-
     font-size: 1.3em;
     padding: 25px 25px 14px;
-
     border-top: 1px solid #00000010;
-
     font-weight: 300;
     width: 100%;
 
@@ -166,7 +158,6 @@ body.active .menu {
     font-size: 1.3em;
     padding: 25px 25px 14px;
     font-weight: 300;
-    border-top: 1px solid #00000010;
     width: 100%;
     justify-content: flex-end;
 
@@ -232,8 +223,6 @@ main {
 
 .content h1 {
     font-size: 2.5rem;
-    font-family:OpineHeavy;
- 
 }
 
 .content h2 {
@@ -245,14 +234,14 @@ main {
 .content textarea
 {
     line-height: 20.8px;
-    border-radius: 20px;
+    border-radius: var(--bradius);
 }
 
 .backdrop {
-    border-radius: 20px;
+    border-radius: var(--bradius);
 }
 
-.content textarea:focus {
+.content textarea:focus-visible {
     filter: brightness(102%);
     border: 1px solid var(--contrast);
 }
@@ -266,7 +255,7 @@ main {
 .content input[type=submit]:hover,
 .content input[type=submit]:focus {
 
-    outline:none;
+    outline-color: transparent;
     
 }
 
@@ -306,124 +295,12 @@ footer span {
 
 
 .sec-center {
-  position: relative;
-  max-width: 100%;
-  text-align: center;
-  z-index: 200;
-}
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked){
-  position: absolute;
-  left: -9999px;
-  opacity: 0;
-  pointer-events: none;
+    display: none;
 }
 
-
-.dropdown:checked + label,
-.dropdown:not(:checked) + label{
-  position: relative;
-
-  transition: all 200ms linear;
-
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-
-  cursor: pointer;
-
+#navColorsMobile {
+    display: block;
 }
-
-.dropdown:checked + label:before,
-.dropdown:not(:checked) + label:before{
-  position: fixed;
-  top: 0;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  cursor: auto;
-  pointer-events: none;
-}
-.dropdown:checked + label:before{
-  pointer-events: auto;
-}
-
-.section-dropdown {
-  position: absolute;
-  padding: 5px;
-  background-color: #111;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  border-radius: 4px;
-  display: block;
-  box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
-  z-index: 2;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(20px);
-  transition: all 200ms linear;
-}
-
-.dropdown:checked ~ .section-dropdown,
-.dropdown:focus ~ .section-dropdown,
-.dropdown ~ .section-dropdown:has(input:focus),
-.dropdown ~ .section-dropdown:has(a:focus){
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-
-
-
-.dropdown-sub:checked + label,
-.dropdown-sub:not(:checked) + label{
-  position: relative;
-  color: #fff;
-  transition: all 200ms linear;
-  text-decoration: none;
-  display: -ms-flexbox;
-  display: flex;
-    cursor: pointer;
-    font-size: 1.3em;
-    padding: 25px 25px 14px;
-}
-
-.menu ul li div a i + i {
-  margin-left: 1px;
-}
-
-.menu ul li div a i:last-child {
-  margin-right: 10px;
-}
-
-.section-dropdown-sub {
-  position: relative;
-  display: block;
-  width: 100%;
-  pointer-events: none;
-  opacity: 0;
-  max-height: 0;
-  padding-left: 10px;
-  padding-right: 3px;
-  overflow: hidden;
-  transition: all 200ms linear;
-}
-
-.dropdown-sub:checked + label + .section-dropdown-sub,
-.dropdown-sub:focus + label + .section-dropdown-sub,
-.dropdown-sub + label + .section-dropdown-sub:has(a:focus){
-  pointer-events: auto;
-  opacity: 1;
-  max-height: 999px;
-}
-.section-dropdown-sub a {
-  font-size: 14px;
-}
-
 
 
 .bottom {
@@ -508,11 +385,9 @@ mark {
 
 
 .bottom .button input {
-  background-image: linear-gradient(92.88deg, #b76c8e 9.16%, var(--accent));
-  border-radius: 20px;
+  border-radius: var(--bradius);
   border-style: none;
   box-sizing: border-box;
-  color: var(--contrast);
   cursor: pointer;
   flex-shrink: 0;
   font-family: var(--navFont);
@@ -520,7 +395,6 @@ mark {
   font-weight: 500;
   height: 4rem;
   text-align: center;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
   transition: all .5s;
   user-select: none;
   -webkit-user-select: none;
@@ -534,14 +408,6 @@ mark {
     cursor:not-allowed;
 }
 
-
-.bottom .button input:hover,
-.mana label:hover,
-.bottom .button input:focus,
-.mana input:focus + label {
-  box-shadow: #d1408178 0 1px 30px;
-  transition-duration: .15s;
-}
 
 @media (min-width: 768px) {
   .bottom .button input {

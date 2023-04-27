@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1200px) {
     
     :root {
-    --bradius: 0px 0px 20px 20px;
+
     }    
     
     html {
@@ -48,7 +48,7 @@
         right: auto;
         left: auto;
         top: auto;
-        border-radius: var(--bradius);
+        border-radius: var(--half-bradius);
 
     }
     
@@ -64,9 +64,24 @@
         height: 3em;
         padding: 0px 20px;
     }
-
-
     
+
+    body.active header .logo {
+        display: flex;
+    }
+    
+    .toggle.active {
+        display: none;
+    }
+
+    .skip-nav-link,
+    .menu ul li:hover,
+    .menu ul li:focus-within{
+    border-bottom-width: 5px  ;
+        border-style: solid;
+    padding-bottom: 0px;
+
+}
     
     .skip-nav-link {
         display: block;
@@ -119,6 +134,141 @@
        border-right: 0px;
     }
     
+    
+    
+   #navColors {
+        display: block;
+        position: relative;
+        max-width: 100%;
+        text-align: center;
+        z-index: 200;
+    }
+    
+    #navColorsMobile {
+        display: none;
+    }
+    
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked){
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.dropdown:checked + label,
+.dropdown:not(:checked) + label{
+  position: relative;
+
+  transition: all 200ms linear;
+
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+
+  cursor: pointer;
+
+}
+
+.dropdown:checked + label:before,
+.dropdown:not(:checked) + label:before{
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  cursor: auto;
+  pointer-events: none;
+}
+    
+.dropdown:checked + label:before{
+  pointer-events: auto;
+}
+
+
+.section-dropdown {
+  position: absolute;
+  padding: 5px;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  border-radius: var(--half-bradius);
+  display: block;
+  z-index: 2;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: all 200ms linear;
+}
+
+.dropdown:checked ~ .section-dropdown,
+.dropdown:focus-visible ~ .section-dropdown,
+.dropdown ~ .section-dropdown:has(input:focus-visible),
+.dropdown ~ .section-dropdown:has(a:focus-visible){
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.dropdown-sub:checked + label,
+.dropdown-sub:not(:checked) + label{
+  position: relative;
+  color: #fff;
+  transition: all 200ms linear;
+  text-decoration: none;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  font-size: 1.3em;
+  padding: 25px 25px 14px;
+}
+
+.menu ul li div a i + i {
+  margin-left: 1px;
+}
+
+.menu ul li div a i:last-child {
+  margin-right: 10px;
+}
+
+.section-dropdown-sub {
+  position: relative;
+  display: none;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+  max-height: 0;
+  padding-left: 10px;
+  padding-right: 3px;
+  overflow: hidden;
+  transition: all 200ms linear;
+}
+
+.dropdown:checked ~ .section-dropdown .section-dropdown-sub,
+.dropdown:focus-visible ~ .section-dropdown .section-dropdown-sub,
+.dropdown ~ .section-dropdown:focus-within .section-dropdown-sub,
+.dropdown ~ .section-dropdown:focus-within .section-dropdown-sub
+{
+    display: block;
+    
+}
+
+.dropdown-sub:checked + label + .section-dropdown-sub,
+.dropdown-sub:focus-visible + label + .section-dropdown-sub,
+.dropdown-sub + label + .section-dropdown-sub:focus-within {
+  opacity: 1;
+  max-height: 999px;
+  pointer-events: auto;
+
+}
+
+
+.section-dropdown-sub a {
+  font-size: 14px;
+}
     
     
     .dropdown:checked + label,

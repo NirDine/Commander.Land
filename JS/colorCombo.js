@@ -18,7 +18,8 @@ $(document).on('click', '.colorless', function() {
                 var mList = "";
                 var mVal;
                 if (this.value == 'c') {
-                    mList = this.value;
+                    mVal = (this.checked ? this.value : "")
+                    mList += (mList=="" ? mVal : mVal);
                 }
                 else {
                 
@@ -28,9 +29,15 @@ $(document).on('click', '.colorless', function() {
                 });
                 
                 }
-                 console.log (mList);
+                
+                if ((mList !== "")) {
+                    $('#explore').removeAttr('disabled');
+                } 
+                else {$('#explore').attr('disabled', 'disabled');} 
+                            
 
                 $('#combination-name').html(combinations[mList]);
+             console.log (mList);
 		});    
     });
 

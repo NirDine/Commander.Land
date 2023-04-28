@@ -4,87 +4,131 @@
         overflow: auto;
         padding-top: 12%;
     }
-    
+
     header {
-          padding: 20px 10% 20px 13%;
+        padding: 20px 10% 20px 13%;
     }
 
 
-
-    footer {
-        margin-top: 10em;
-    }
     
-
     .bottom .explore {
-    display: flex;
-    padding: 30px 0px;
-}
-    
+        display: flex;
+        padding: 30px 0px;
+    }
+
     .explain p {
-    text-align: left;
-}
+        text-align: left;
+    }
 
+    .color-picker {
+        display: grid;
+        grid-template:
+            'c c c'
+            'c c c'
+            'n n n';
+        grid-gap: 0.5em;
+    }
 
-.color-picker {
-    display: grid;
-    grid-template:
-        'c c c'
-        'c c c'
-        'n n n';
-    grid-gap: 0.5em;
-}
+    .explore .name {
+        grid-area: n;
+        margin-top: 10px;
+        text-align: center;
+    }
 
-.explore .name {
-    grid-area: n;
-    margin-top: 10px;
-    text-align: center;
-}
-
-#combination-name {
-    padding: 5px;
-    font-size: 1.3em;
-    font-weight: 400;
-}
+    #combination-name {
+        padding: 5px;
+        font-size: 1.3em;
+        font-weight: 400;
+    }
 
     .bottom {
-     flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
 
-.bottom .mana label {
-    display: inline-flex;
-    padding: 25px;
-    background: #ffffff14;
-    border-radius: 20px;
-    border: 2px solid #0000006e;
-    
-}
+    .bottom .mana label {
+        display: inline-flex;
+        padding: 25px;
+        background: #ffffff14;
+        border-radius: 20px;
+        border: 2px solid #0000006e;
 
-.mana:has(input[type="checkbox"]:checked) label {
-    background: #4f1e37;
-    border-color: var(--accent);
-}
-    
-    
+    }
+
+    .mana:has(input[type="checkbox"]:checked) label {
+        background: #4f1e37;
+        border-color: var(--accent);
+    }
+
     .bottom .button input {
 
-   width: auto;
-    
- }
-    
-.backdrop, textarea {
-    height: 50vh;
-}
-    
-    
+        width: auto;
+
+    }
+
+    .backdrop, textarea {
+        height: 50vh;
+    }
+
+
     #combination-name {
         visibility: hidden;
     }
-    
-    .color-picker:has(input:checked) #combination-name { visibility: visible;
+
+    .color-picker:has(input:checked) #combination-name {
+        visibility: visible;
     }
     
+    footer {
+        display: grid;
+        grid-auto-columns: 5fr 1fr 4fr;
+        grid-template:
+        'disclaimer manaFont map'
+        'copyright copyright copyright';
+        padding-inline:10%;
+    }
+    
+    .footer div {
+        padding: 0em;
+    }
 
     
     
+    footer ul {
+
+    flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    
+    footer div div:has(ul.socials) {
+
+    flex-direction: row;
+
+    }
+    
+    footer ul.socials {
+    margin-bottom: 0px;
+    }
+
+    footer ul:not(.socials) li { 
+    border-left: 1px solid #0000002b;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+
+    }
+    
+    footer ul li:first-child { 
+
+
+    border-left-width: 0px;
+
+    }
+    
+    .copyright {
+        grid-area: copyright;
+    }
+
+
+
+
 }

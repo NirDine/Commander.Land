@@ -1,25 +1,21 @@
 @media only screen and (min-width: 1200px) {
-    
-    :root {
 
-    }    
-    
+    :root {}
+
     html {
-        
 
-    scroll-padding-top: 87.39; /* height of sticky header */
+        scroll-padding-top: 87.39;
+        /* height of sticky header */
 
-
-    
     }
-    
+
     body {
         padding-top: 0px;
 
 
     }
-    
-    
+
+
     img {
         -webkit-user-drag: none;
         -khtml-user-drag: none;
@@ -28,20 +24,20 @@
         user-drag: none;
     }
 
-    
+
     p {
-    padding: 2px 40px;
+        padding: 2px 40px;
     }
-    
+
     .container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 80%;
     }
-    
+
     /* HEADER */
-    
+
     header {
         position: relative;
         padding: 10px;
@@ -51,39 +47,39 @@
         border-radius: var(--half-bradius);
 
     }
-    
+
     header.navScrolled {
         position: fixed;
         top: 0px;
         border-top-left-radius: 0px;
         border-top-right-radius: 0px;
-        
+
     }
-    
-    header .logo {
+
+    .logo {
         height: 3em;
         padding: 0px 20px;
     }
-    
 
-    body.active header .logo {
+
+    body.active .logo {
         display: flex;
     }
-    
+
     .toggle.active {
         display: none;
     }
 
-    .skip-nav-link,
+    .skipNavLink,
     .menu ul li:hover,
-    .menu ul li:focus-within{
-    border-bottom-width: 5px  ;
+    .menu ul li:focus-within {
+        border-bottom-width: 5px;
         border-style: solid;
-    padding-bottom: 0px;
+        padding-bottom: 0px;
 
-}
-    
-    .skip-nav-link {
+    }
+
+    .skipNavLink {
         display: block;
         left: 10%;
         position: absolute;
@@ -93,20 +89,19 @@
         border-radius: 0px 0px 5px 5px;
         box-shadow: 2px 1px 0px 0px rgb(0 0 0 / 20%);
         transition: transform 0.1s ease-in-out;
-        z-index: 99999        ;
+        z-index: 99999;
     }
 
-    .skip-nav-link:focus {
-            transform: translateY(10%);
+    .skipNavLink:focus {
+        transform: translateY(10%);
     }
 
-    
-    .toggle
-    {
+
+    .toggle {
         display: none;
     }
-    
-    
+
+
     .menu {
         position: relative;
         right: 0;
@@ -115,165 +110,159 @@
         transition: 0s;
 
     }
-    
+
     .menu ul {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-    
+
     .menu ul li {
-       border-right: 1px solid #0000002b;
+        border-right: 1px solid #0000002b;
 
     }
-    
-        
+
+
     .menu ul li:last-child,
     .menu ul li.lastMenuOption {
-       border-right: 0px;
+        border-right: 0px;
+    }
+
+
+    li:has(#navColors) {
+        display: block;
     }
     
-    
-    
-   #navColors {
-        display: block;
+    #navColors {
         position: relative;
         max-width: 100%;
         text-align: center;
         z-index: 200;
     }
-    
+
     #navColorsMobile {
         display: none;
     }
-    
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked){
-  position: absolute;
-  left: -9999px;
-  opacity: 0;
-  pointer-events: none;
-}
 
 
-.dropdown:checked + label,
-.dropdown:not(:checked) + label{
-  position: relative;
 
-  transition: all 200ms linear;
+    .dropdown:checked+label,
+    .dropdown:not(:checked)+label {
+        position: relative;
 
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+        transition: all 200ms linear;
 
-  cursor: pointer;
+        display: -webkit-inline-flex;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
 
-}
+        cursor: pointer;
 
-.dropdown:checked + label:before,
-.dropdown:not(:checked) + label:before{
-  position: fixed;
-  top: 0;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  cursor: auto;
-  pointer-events: none;
-}
-    
-.dropdown:checked + label:before{
-  pointer-events: auto;
-}
+    }
 
+    .dropdown:checked+label:before,
+    .dropdown:not(:checked)+label:before {
+        position: fixed;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        cursor: auto;
+        pointer-events: none;
+    }
 
-.section-dropdown {
-  position: absolute;
-  padding: 5px;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  border-radius: var(--half-bradius);
-  display: block;
-  z-index: 2;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(20px);
-  transition: all 200ms linear;
-}
-
-.dropdown:checked ~ .section-dropdown,
-.dropdown:focus-visible ~ .section-dropdown,
-.dropdown ~ .section-dropdown:has(input:focus-visible),
-.dropdown ~ .section-dropdown:has(a:focus-visible){
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-.dropdown-sub:checked + label,
-.dropdown-sub:not(:checked) + label{
-  position: relative;
-  color: #fff;
-  transition: all 200ms linear;
-  text-decoration: none;
-  display: -ms-flexbox;
-  display: flex;
-  cursor: pointer;
-  font-size: 1.3em;
-  padding: 25px 25px 14px;
-}
-
-.menu ul li div a i + i {
-  margin-left: 1px;
-}
-
-.menu ul li div a i:last-child {
-  margin-right: 10px;
-}
-
-.section-dropdown-sub {
-  position: relative;
-  display: none;
-  width: 100%;
-  pointer-events: none;
-  opacity: 0;
-  max-height: 0;
-  padding-left: 10px;
-  padding-right: 3px;
-  overflow: hidden;
-  transition: all 200ms linear;
-}
-
-.dropdown:checked ~ .section-dropdown .section-dropdown-sub,
-.dropdown:focus-visible ~ .section-dropdown .section-dropdown-sub,
-.dropdown ~ .section-dropdown:focus-within .section-dropdown-sub,
-.dropdown ~ .section-dropdown:focus-within .section-dropdown-sub
-{
-    display: block;
-    
-}
-
-.dropdown-sub:checked + label + .section-dropdown-sub,
-.dropdown-sub:focus-visible + label + .section-dropdown-sub,
-.dropdown-sub + label + .section-dropdown-sub:focus-within {
-  opacity: 1;
-  max-height: 999px;
-  pointer-events: auto;
-
-}
+    .dropdown:checked+label:before {
+        pointer-events: auto;
+    }
 
 
-.section-dropdown-sub a {
-  font-size: 14px;
-}
-    
-    
-    .dropdown:checked + label,
-    .dropdown:not(:checked) + label,
-    .menu ul li a{
+    .section-dropdown {
+        position: absolute;
+        padding: 5px;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        border-radius: var(--half-bradius);
+        display: block;
+        z-index: 2;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(20px);
+        transition: all 200ms linear;
+    }
+
+    .dropdown:checked~.section-dropdown,
+    .dropdown:focus-visible~.section-dropdown,
+    .dropdown~.section-dropdown:has(input:focus-visible),
+    .dropdown~.section-dropdown:has(a:focus-visible) {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    .dropdown-sub:checked+label,
+    .dropdown-sub:not(:checked)+label {
+        position: relative;
+        color: #fff;
+        transition: all 200ms linear;
+        text-decoration: none;
+        display: -ms-flexbox;
+        display: flex;
+        cursor: pointer;
+        font-size: 1.3em;
+        padding: 25px 25px 14px;
+    }
+
+    .menu ul li div a i+i {
+        margin-left: 1px;
+    }
+
+    .menu ul li div a i:last-child {
+        margin-right: 10px;
+    }
+
+    .section-dropdown-sub {
+        position: relative;
+        display: none;
+        width: 100%;
+        pointer-events: none;
+        opacity: 0;
+        max-height: 0;
+        padding-left: 10px;
+        padding-right: 3px;
+        overflow: hidden;
+        transition: all 200ms linear;
+    }
+
+    .dropdown:checked~.section-dropdown .section-dropdown-sub,
+    .dropdown:focus-visible~.section-dropdown .section-dropdown-sub,
+    .dropdown~.section-dropdown:focus-within .section-dropdown-sub,
+    .dropdown~.section-dropdown:focus-within .section-dropdown-sub {
+        display: block;
+
+    }
+
+    .dropdown-sub:checked+label+.section-dropdown-sub,
+    .dropdown-sub:focus-visible+label+.section-dropdown-sub,
+    .dropdown-sub+label+.section-dropdown-sub:focus-within {
+        opacity: 1;
+        max-height: 999px;
+        pointer-events: auto;
+
+    }
+
+
+    .section-dropdown-sub a {
+        font-size: 14px;
+    }
+
+
+    .dropdown:checked+label,
+    .dropdown:not(:checked)+label,
+    .menu ul li a {
 
         min-width: 130px;
         justify-content: center;
@@ -282,38 +271,38 @@
         padding: 1em;
         font-weight: 300;
     }
-    
-    .menu ul li div a {
-    justify-content: flex-start;
-}
 
-    
-        .section-dropdown {
+    .menu ul li div a {
+        justify-content: flex-start;
+    }
+
+
+    .section-dropdown {
         width: 200%;
     }
-    
-    
+
+
     .bottom {
         flex-direction: row;
     }
-    
+
     .bottom .explore {
-    padding: 0px;
+        padding: 0px;
     }
-    
+
     .bottom .button input {
-   width: auto;
-    
+        width: auto;
+
     }
-    
-    
-    
-    
-        
-    
+
+
+
+
+
+
     main {
         z-index: 2;
-       height: 80%;
+        height: 80%;
     }
 
     main .content {
@@ -323,23 +312,95 @@
         justify-content: center;
         align-items: center;
     }
-    
-    
+
+
     .content textarea,
     .backdrop {
-    height: 30vh;
-    width: 35vw;
+        height: 30vh;
+        width: 35vw;
     }
 
+    .hidden {
+        opacity: 0;  
+        transition: 1s ease-out;
+    }
     
+ 
+    .color-picker:not(:has(input:checked)) .mana.show,
+    .analyze .addDeck:has(textarea:not(:placeholder-shown)) ~ .button input:not(:disabled),
+    .explore .color-picker:has(input:checked) ~ .button input {
+            -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+            animation-delay: calc(var(--hiddenCount) * 1s);
+            -webkit-animation-fill-mode: both; 
+            animation-fill-mode: both; 
+            -webkit-animation-name: bounce; 
+            animation-name: bounce; 
 
+    }
+    
+    
+    
+    
+    @media (prefers-reduced-motion) {
+      /* styles to apply if the user's settings are set to reduced motion */
+         .hidden {
+             transition:none;
+             -webkit-animation-name: none; 
+            animation-name: none; 
+         }
+    }
+    
+    
+    
+    .show {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    
+    
+    
+    
+    
+    
     
     footer {
-        width:80%;
         z-index: 2;
     }
 
+
+
+
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @keyframes tilt-shaking {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(5deg); }
+      50% { transform: rotate(0eg); }
+      75% { transform: rotate(-5deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+        40% {transform: translateY(-15px);} 
+        60% {transform: translateY(-7.5px);} 
+    } 
+
 }
-     
-    

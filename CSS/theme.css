@@ -1,59 +1,66 @@
+/* ----- FONTS ----- */
+
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
+/* Set font variables */
 :root {
-    --accent: #D14081;
-    --primary: #CDDEFF;
-    --contrast: #eef2ff;
-    --mainBG: #2E2E3A;
-    --dark: #F8F1FF;
-    --selection: #00000096;
-    --bg-art: url(/img/art/bg2.webp);
     --font: ;
     --navFont: 'Archivo', sans-serif;
+}
+
+/* Set font families for elements */
+p,
+textarea,
+span {
+    font-family: var(--font);
+}
+
+.content h1 {
+    font-family: OpineHeavy;
+}
+
+.dropdown:checked+label,
+.dropdown:not(:checked)+label,
+header a {
+    font-family: var(--navFont);
+}
+
+italitcs {font-style: italic;}
+
+
+
+/* ----- COLORS ----- */
+
+/* Set color variables */
+:root {
+    --accent: #D14081;
+    --contrast: #eef2ff;
+    --mainBG: #2E2E3A;
+    --selection: ;
+    --bg-art: url(/img/art/bg2.webp);
+    --discord: #5865f2;
+    --patreon: #ff424d;
     --mtg-w: #f8f6d8;
     --mtg-u: #c1d7e9;
     --mtg-b: #cac5c0;
     --mtg-r: #e49977;
     --mtg-g: #a3c095;
     --mtg-c: #cac5c0;
-
 }
 
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: var(--contrast) #ffffff00;
-  }
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 7px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #ffffff00;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: var(--contrast);
-    border-radius: 10px;
-    border: 1px solid #ffffff00;
-  }
-
-body{
+/* Set colors for elements */
+body {
     background:
-        linear-gradient(
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 1)
-    ), var(--bg-art);
+        linear-gradient(rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 1)), var(--bg-art);
     background-color: #000;
     background-position: top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
-    }
+}
 
 body::before {
     content: "";
@@ -76,90 +83,84 @@ a {
 
 
 
-header .logo 
-{
-
+.logo {
     fill: var(--contrast);
-
-}
-
-header.navScrolled .logo
-{  
-
-
 }
 
 header .logo:hover,
-header .logo:focus
-{
-
+header .logo:focus {
     fill: var(--accent);
     transition-duration: .15s;
 }
 
+header.navScrolled .logo {}
 
-/* BACKGROUNDS */
-
-.skip-nav-link,
+.skipNavLink,
 .menu,
 header.navScrolled,
 header,
-footer
-
-{
-
+footer {
     background: var(--mainBG);
-    
-    
 }
 
-.skip-nav-link,
+
+
+.skipNavLink,
 .menu ul li a:hover,
 .menu ul li div:hover,
 .menu ul li a:focus,
-.dropdown-sub:checked + label,
-.dropdown.parent:checked + label,
+.dropdown-sub:checked+label,
+.dropdown.parent:checked+label,
 label.for-dropdown-sub:hover,
-.dropdown-sub:focus + label,
-.dropdown.parent:focus + label
-
-
-{
-color: var(--accent);
-  transition-duration: .15s;
+.dropdown-sub:focus+label,
+.dropdown.parent:focus+label,
+footer ul li a:hover,
+footer ul li a:focus-visible,
+footer p a:focus-visible,
+footer p a:hover {
+    color: var(--accent);
+    transition-duration: .15s;
 }
 
-.skip-nav-link,
+
+.cls-discord3{fill:var(--contrast);}
+
+.discord:hover .cls-discord3,
+.discord:focus-visible .cls-discord3 {
+    fill:var(--discord);
+}
+
+
+
+.cls-patreon{fill:var(--contrast);}
+
+.patreon:hover .cls-patreon,
+.patreon:focus-visible .cls-patreon {
+    fill:var(--patreon);
+}
+
+.skipNavLink,
 .menu ul li:hover,
 .menu ul li:focus,
 .menu ul li:focus-within {
     border-bottom-color: var(--accent);
-    
 }
-
 
 .menu ul li a,
 .menu ul li div,
 main::after,
-footer,
-p
-
-{
-
+p, 
+a:visited {
     color: var(--contrast);
-    
-    
 }
 
-h1, h2, h3, h4, h5, h6
-{
-      color: var(--accent);
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent);
 }
-
 
 .dropdown a {
     color: var(--contrast);
-      transition-duration: .15s;
+    transition-duration: .15s;
 }
 
 
@@ -170,47 +171,73 @@ h1, h2, h3, h4, h5, h6
 .bottom .button input:hover,
 .mana label:hover,
 .bottom .button input:focus-visible,
-.mana input:focus-visible + label {
-  box-shadow: #d1408178 0 1px 30px;
-  transition-duration: .15s;
+.mana input:focus-visible+label {
+    box-shadow: #d1408178 0 1px 30px;
+   transition: box-shadow 0.15s ease-in-out 0s;
 }
 
 
 .bottom .button input {
-  background-image: linear-gradient(92.88deg, #b76c8e 9.16%, var(--accent));
-  color: var(--contrast);
-  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    background-image: linear-gradient(92.88deg, #b76c8e 9.16%, var(--accent));
+    color: var(--contrast);
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
 }
 
 .section-dropdown {
-  box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
-      background-color: var(--mainBG);
+    box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.4);
+    background-color: var(--mainBG);
 
 }
 
-i.ms-w {color: var(--mtg-w);}
-i.ms-u {color: var(--mtg-u);}
-i.ms-b {color: var(--mtg-b);}
-i.ms-r {color: var(--mtg-r);}
-i.ms-g {color: var(--mtg-g);}
-i.ms-c {color: var(--mtg-c);}
-
-
-/* FONTS */
-
-p,
-textarea,
-span {
-    font-family: var(--font);
+i.ms-w {
+    color: var(--mtg-w);
+}
+i.ms-u {
+    color: var(--mtg-u);
+}
+i.ms-b {
+    color: var(--mtg-b);
+}
+i.ms-r {
+    color: var(--mtg-r);
+}
+i.ms-g {
+    color: var(--mtg-g);
+}
+i.ms-c {
+    color: var(--mtg-c);
 }
 
-.content h1 {
-    font-family:OpineHeavy;
- 
+footer p a,
+footer span a {
+    color: var(--contrast);
+    opacity: 0.3;
 }
 
-.dropdown:checked + label,
-.dropdown:not(:checked) + label,
-header a {
-    font-family: var(--navFont);
+footer p a:focus-visible,
+footer p a:hover {
+    opacity: 1;
+}
+
+
+/*  ----- SCROLLBAR ----- */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--contrast) #ffffff00;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff00;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--contrast);
+    border-radius: 10px;
+    border: 1px solid #ffffff00;
 }

@@ -1,623 +1,734 @@
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=5, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
     <title>Commander.Land</title>
-
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/structure.css">
-
     <link rel="stylesheet" href="css/desktop-sm.css" media="screen and (min-device-width: 768px)">
     <link rel="stylesheet" href="css/desktop-md.css" media="screen and (min-device-width: 1200px)">
-
     <link rel="stylesheet" href="css/theme.css">
     <link href="//cdn.jsdelivr.net/npm/mana-font@latest/css/mana.css" rel="stylesheet" type="text/css" />
-
-   
-   <!-- JQUERY  -->
+    <!-- JQUERY  -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-
-
-</head>
-
-<body class="fallback buffet" style="">
-
+  </head>
+  <body class="fallback buffet" style="">
     <a href="#cardSuggestions" class="skipNavLink" id="skip">Skip Navigation</a>
-
     <div class="lightsOff"></div>
     <div class="container">
-        <header>
-            <a href="/" class="logo" aria-label="Link to reload page">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1282.12 342.2">
-                    <defs>
-                        <style>
-                        .cls-1 {
-                            fill: #f8f6d8;
-                        }
+      <header>
+        <a href="/" class="logo" aria-label="Link to reload page">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1282.12 342.2">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #f8f6d8;
+                }
 
-                        .cls-2 {
-                            fill: #c1d7e9;
-                        }
+                .cls-2 {
+                  fill: #c1d7e9;
+                }
 
-                        .cls-3 {
-                            fill: #cac5c0;
-                        }
+                .cls-3 {
+                  fill: #cac5c0;
+                }
 
-                        .cls-4 {
-                            fill: #e49977;
-                        }
+                .cls-4 {
+                  fill: #e49977;
+                }
 
-                        .cls-5 {
-                            fill: #a3c095;
-                        }
+                .cls-5 {
+                  fill: #a3c095;
+                }
 
-                        .cls-6 {
-                            font-size: 182.96px;
-                            font-family: OpineHeavy;
-                        }
-                        </style>
-                    </defs>
-                    <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_1-2" data-name="Layer 1">
-                            <rect class="cls-1" x="3.57" y="167.86" width="133.94" height="131" rx="2.1" />
-                            <rect class="cls-2" x="156.09" y="167.86" width="133.94" height="131" rx="2.1" />
-                            <rect class="cls-3" x="309.58" y="167.86" width="133.94" height="131" rx="2.1" />
-                            <rect class="cls-4" x="461.13" y="167.86" width="133.94" height="131" rx="2.1" />
-                            <rect class="cls-5" x="614.62" y="167.86" width="133.94" height="131" rx="2.1" /><text class="cls-6" transform="translate(0 157.34) scale(1.02 1)">COMMA</text><text class="cls-6" transform="translate(757.86 157.34)">NDER</text><text class="cls-6" transform="translate(759.92 299.2)">LAND</text></g>
-                    </g>
-                </svg>
-            </a>
-            <div class="toggle"></div>
-            <nav class="menu">
-                <ul>
-                    <li><a href="/" style="--indexCount: 0;" id="navHome" aria-label="Link to top of the page">Home</a></li>
-                    <li><a href="/buffet.html" style="--indexCount: 1;" id="" aria-label="Link to By Color section">Explore</a></li>
-                    <li>
-                        <div class="sec-center" id="navColors">
-                            <input class="dropdown parent" type="checkbox" id="dropdown" name="dropdown" />
-                            <label class="for-dropdown" for="dropdown" style="--indexCount: 2;" aria-label="Link to By Color section">By color</label>
-                            <div class="section-dropdown">
-                                <input class="dropdown-sub" type="checkbox" id="dropdown-sub1" name="dropdown-sub1" />
-                                <label class="for-dropdown-sub" for="dropdown-sub1">1 Color</label>
-                                <div class="section-dropdown-sub">
-                                    <a href="/buffet.html?colors=w"><i class="ms ms-w"></i> White</a>
-                                    <a href="/buffet.html?colors=u"><i class="ms ms-u"></i> Blue</a>
-                                    <a href="/buffet.html?colors=b"><i class="ms ms-b"></i> Black</a>
-                                    <a href="/buffet.html?colors=r"><i class="ms ms-r"></i> Red</a>
-                                    <a href="/buffet.html?colors=g"><i class="ms ms-g"></i> Green</a>
-                                    <a href="/buffet.html?colors=c"><i class="ms ms-c"></i> Colorless</a>
-                                </div>
-                                <input class="dropdown-sub" type="checkbox" id="dropdown-sub2" name="dropdown-sub2" />
-                                <label class="for-dropdown-sub" for="dropdown-sub2">2 Colors</label>
-                                <div class="section-dropdown-sub">
-                                    <a href="/buffet.html?colors=w,u">
-                                        <i class="ms ms-w"></i>
-                                        <i class="ms ms-u"></i>Azorius</a>
-                                    <a href="/buffet.html?colors=u,b">
-                                        <i class="ms ms-u"></i>
-                                        <i class="ms ms-b"></i>Dimir</a>
-                                    <a href="/buffet.html?colors=b,r">
-                                        <i class="ms ms-b"></i>
-                                        <i class="ms ms-r"></i>Rakdos</a>
-                                    <a href="/buffet.html?colors=r,g">
-                                        <i class="ms ms-r"></i>
-                                        <i class="ms ms-g"></i>Gruul</a>
-                                    <a href="/buffet.html?colors=w,g">
-                                        <i class="ms ms-w"></i>
-                                        <i class="ms ms-g"></i>Selesnya</a>
-                                    <a href="/buffet.html?colors=w,b">
-                                        <i class="ms ms-w"></i>
-                                        <i class="ms ms-b"></i>Orzhov</a>
-                                    <a href="/buffet.html?colors=u,r">
-                                        <i class="ms ms-u"></i>
-                                        <i class="ms ms-r"></i>Izzet</a>
-                                    <a href="/buffet.html?colors=b,g">
-                                        <i class="ms ms-b"></i>
-                                        <i class="ms ms-g"></i>Golgari</a>
-                                    <a href="/buffet.html?colors=w,r">
-                                        <i class="ms ms-w"></i>
-                                        <i class="ms ms-r"></i>Boros</a>
-                                    <a href="/buffet.html?colors=u,g">
-                                        <i class="ms ms-u"></i>
-                                        <i class="ms ms-g"></i>Simic</a>
-                                </div>
-                                <input class="dropdown-sub" type="checkbox" id="dropdown-sub3" name="dropdown-sub3" />
-                                <label class="for-dropdown-sub" for="dropdown-sub3">3 Colors</label>
-                                <div class="section-dropdown-sub">
-                                    <a href="/buffet.html?colors=w,u,b">
-                                        <i class="ms ms-w"></i>
-                                        <i class="ms ms-u"></i>
-                                        <i class="ms ms-b"></i> Esper</a>
-                                    <a href="/buffet.html?colors=u,b,r">
-                                        <i class="ms ms-u"></i>
-                                        <i class="ms ms-b"></i>
-                                        <i class="ms ms-r"></i> Grixis</a>
-                                    <a href="/buffet.html?colors=b,r,g">
-                                        <i class="ms ms-b"></i>
-                                        <i class="ms ms-r"></i>
-                                        <i class="ms ms-g"></i> Jund</a>
-                                    <a href="/buffet.html?colors=w,r,g">
-                                        <i class="ms ms-r"></i>
-                                        <i class="ms ms-g"></i>
-                                        <i class="ms ms-w"></i> Naya</a>
-                                    <a href="/buffet.html?colors=w,u,g">
-                                        <i class="ms ms-g"></i>
-                                        <i class="ms ms-w"></i>
-                                        <i class="ms ms-u"></i> Bant</a>
-                                    <a href="/buffet.html?colors=w,b,g">
-                                        <i class="ms ms-w"></i>
-                                        <i class="ms ms-b"></i>
-                                        <i class="ms ms-g"></i> Abzan</a>
-                                    <a href="/buffet.html?colors=w,u,r">
-                                        <i class="ms ms-u"></i>
-                                        <i class="ms ms-r"></i>
-                                        <i class="ms ms-w"></i> Jeskai</a>
-                                    <a href="/buffet.html?colors=u,g,b">
-                                        <i class="ms ms-b"></i>
-                                        <i class="ms ms-g"></i>
-                                        <i class="ms ms-u"></i> Sultai</a>
-                                    <a href="/buffet.html?colors=w,b,r">
-                                        <i class="ms ms-r"></i>
-                                        <i class="ms ms-w"></i>
-                                        <i class="ms ms-b"></i> Mardu</a>
-                                    <a href="/buffet.html?colors=u,r,g">
-                                        <i class="ms ms-g"></i>
-                                        <i class="ms ms-u"></i>
-                                        <i class="ms ms-r"></i> Temur</a>
-                                </div>
-                                <input class="dropdown-sub" type="checkbox" id="dropdown-sub4" name="dropdown-sub4" />
-                                <label class="for-dropdown-sub" for="dropdown-sub4">4 Colors</label>
-                                <div class="section-dropdown-sub">
-                                    <a href="/buffet.html?colors=w,u,b,r">
-                                        <i class="ms ms-w"></i>
-                                        <i class="ms ms-u"></i>
-                                        <i class="ms ms-b"></i>
-                                        <i class="ms ms-r"></i> Yore-Tiller</a>
-                                    <a href="/buffet.html?colors=u,b,r,g">
-                                        <i class="ms ms-u"></i>
-                                        <i class="ms ms-b"></i>
-                                        <i class="ms ms-r"></i>
-                                        <i class="ms ms-g"></i> Glint-Eye</a>
-                                    <a href="/buffet.html?colors=w,b,r,g">
-                                        <i class="ms ms-b"></i>
-                                        <i class="ms ms-r"></i>
-                                        <i class="ms ms-g"></i>
-                                        <i class="ms ms-w"></i> Dune-Brood</a>
-                                    <a href="/buffet.html?colors=w,u,r,g">
-                                        <i class="ms ms-r"></i>
-                                        <i class="ms ms-g"></i>
-                                        <i class="ms ms-w"></i>
-                                        <i class="ms ms-u"></i> Ink-Treader</a>
-                                    <a href="/buffet.html?colors=w,u,b,g">
-                                        <i class="ms ms-g"></i>
-                                        <i class="ms ms-w"></i>
-                                        <i class="ms ms-u"></i>
-                                        <i class="ms ms-b"></i> Witch-Maw</a>
-                                </div>
-                                <a href="/buffet.html?colors=w,u,b,r,g">All colors</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class=""><a class="" href="#contact" style="--indexCount: 3;" id="navDonate" aria-label="Link to Donate section">About</a></li>
-                    <li class=""><a class="" href="#contact" style="--indexCount: 4;" id="navDonate" aria-label="Link to Donate section">Donate</a></li>
-                    <li class=""><a class="lastMenuOption" href="#contact" style="--indexCount: 5;" id="navContact" aria-label="Link to Contact section">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="content">
-                <div class="top">
-                    <div class="buffet-filters">
-                        <div class="color-picker">
-                            <div class="mana hidden desktop" style="--hiddenCount: 5;">
-                                <input class="color" type="checkbox" id="mana-w" name="mana-w" value="w" />
-                                <label class="mana-w" for="mana-w"><i class="ms ms-w"></i></label>
-                            </div>
-                            <div class="mana hidden desktop" style="--hiddenCount: 5.5;">
-                                <input class="color" type="checkbox" id="mana-u" name="mana-u" value="u" />
-                                <label class="mana-u" for="mana-u"><i class="ms ms-u"></i></label>
-                            </div>
-                            <div class="mana hidden desktop" style="--hiddenCount: 6;">
-                                <input class="color" type="checkbox" id="mana-b" name="mana-b" value="b" />
-                                <label class="mana-b" for="mana-b"><i class="ms ms-b"></i></label>
-                            </div>
-                            <div class="mana hidden desktop" style="--hiddenCount: 6.5;">
-                                <input class="color" type="checkbox" id="mana-r" name="mana-r" value="r" />
-                                <label class="mana-r" for="mana-r"><i class="ms ms-r"></i></label>
-                            </div>
-                            <div class="mana hidden desktop" style="--hiddenCount: 7;">
-                                <input class="color" type="checkbox" id="mana-g" name="mana-g" value="g" />
-                                <label class="mana-g" for="mana-g"><i class="ms ms-g"></i></label>
-                            </div>
-                            <div class="mana hidden desktop" style="--hiddenCount: 7.5;">
-                                <input class="colorless" type="checkbox" id="mana-c" name="mana-c" value="c" />
-                                <label class="mana-c" for="mana-c"><i class="ms ms-c"></i></label>
-                            </div>
-                           <div class="color-picker mobile">
-                                <div class="filters" id="mobileColorFilters">
-                                        <input class="dropdown parent" type="checkbox" id="mobileColorFiltersInput" name="extraFilters" style="--hiddenCount: 9.5;" />
-                                        <label class="for-dropdown for-filters mobileColorTarget" for="mobileColorFiltersInput" title="Filter by color"><i class="ms ms-multicolor"></i></label>
-                                    <div class="section-dropdown">
-                                        <div class="filter-picker">
-                            <div class="mana hidden" style="--hiddenCount: 5;">
-                                <label class="mana-w" for="mana-w"><i class="ms ms-w"></i></label>
-                            </div>
-                            <div class="mana hidden" style="--hiddenCount: 5.5;">
-                                <label class="mana-u" for="mana-u"><i class="ms ms-u"></i></label>
-                            </div>
-                            <div class="mana hidden" style="--hiddenCount: 6;">
-                                <label class="mana-b" for="mana-b"><i class="ms ms-b"></i></label>
-                            </div>
-                            <div class="mana hidden" style="--hiddenCount: 6.5;">
-                                <label class="mana-r" for="mana-r"><i class="ms ms-r"></i></label>
-                            </div>
-                            <div class="mana hidden" style="--hiddenCount: 7;">
-                                <label class="mana-g" for="mana-g"><i class="ms ms-g"></i></label>
-                            </div>
-                            <div class="mana hidden" style="--hiddenCount: 7.5;">
-                                <label class="mana-c" for="mana-c"><i class="ms ms-c"></i></label>
-                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="filters hidden" id="extraFilters">
-                                <input class="dropdown parent" type="checkbox" id="extraFiltersInput" name="extraFiltersInput" style="--hiddenCount: 9.5;" />
-                                <label class="for-dropdown for-filters propertyTarget" for="extraFiltersInput" title="More filters"><i class="ms ms-land"></i></label>
-                                <div class="section-dropdown">
-                                    <div class="filter-picker">
-                                        <div class="mana hidden" style="--hiddenCount: 8;">
-                                            <input class="property" type="checkbox" id="land-ability" name="land-ability" value="ability-activated"/>
-                                            <label class="land-ability" for="land-ability"  title="Has an activated ability"><i class="ms ms-ability-activated"></i></label>
-                                        </div>
-                                        <div class="mana hidden " style="--hiddenCount: 8.5;">
-                                            <input class="property" type="checkbox" id="land-t" name="land-t" value="tap"/>
-                                            <label class="land-t" for="land-t" title="Enters the battlefield tapped"><i class="ms ms-tap"></i></label>
-                                        </div>
-                                        <div class="mana hidden" style="--hiddenCount: 9;">
-                                            <input class="property" type="checkbox" id="land-u" name="land-u" value="untap" />
-                                            <label class="land-u" for="land-u" title="Enters the battlefield untapped"><i class="ms ms-untap"></i></label>
-                                        </div>  
-                                        <div class="mana hidden" style="--hiddenCount: 8;">
-                                            <input class="property" type="checkbox" id="land-a" name="land-a" value="artifact" />
-                                            <label class="land-a" for="land-a" title="Is an artifact land"><i class="ms ms-artifact"></i></label>
-                                        </div>
-                                        <div class="mana hidden" style="--hiddenCount: 8;">
-                                            <input class="property" type="checkbox" id="land-m" name="land-m" value="creature" />
-                                            <label class="land-m" for="land-m" title="Can turn into a creature"><i class="ms ms-creature"></i></label>
-                                        </div>
-                                            <div class="mana hidden" style="--hiddenCount: 8;">
-                                            <input class="property" type="checkbox" id="land-modal" name="land-modal" value="dfc-modal-face" />
-                                            <label class="land-modal" for="land-modal" title="It's a double-faced card"><i class="ms ms-dfc-modal-face"></i></label>
-                                        </div>
-                                       <div class="mana hidden" style="--hiddenCount: 8;">
-                                            <input class="property" type="checkbox" id="land-s" name="land-s" value="s" />
-                                            <label class="land-s" for="land-s" title="It's a snow land"><i class="ms ms-s"></i></label>
-                                        </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        </div>
-                    </div>
-                    
-                    
-                        <div class="buffet-filters right">
-                           <div class="color-picker">
-
-                        <div class="searchBox hidden" style="--hiddenCount:10.5;">
-                                <input id="search" type="search" placeholder="Filter by name...">
-                        </div>
-
-                        <div class="mana hidden" style="--hiddenCount: 10;">
-                            <input class="reset-filters" type="button" id="reset-filters" name="reset-filters" />
-                            <label class="reset" for="reset-filters">Clear</label>
-                        </div>
-                    </div>
-                    </div>
+                .cls-6 {
+                  font-size: 182.96px;
+                  font-family: OpineHeavy;
+                }
+              </style>
+            </defs>
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <rect class="cls-1" x="3.57" y="167.86" width="133.94" height="131" rx="2.1" />
+                <rect class="cls-2" x="156.09" y="167.86" width="133.94" height="131" rx="2.1" />
+                <rect class="cls-3" x="309.58" y="167.86" width="133.94" height="131" rx="2.1" />
+                <rect class="cls-4" x="461.13" y="167.86" width="133.94" height="131" rx="2.1" />
+                <rect class="cls-5" x="614.62" y="167.86" width="133.94" height="131" rx="2.1" />
+                <text class="cls-6" transform="translate(0 157.34) scale(1.02 1)">COMMA</text>
+                <text class="cls-6" transform="translate(757.86 157.34)">NDER</text>
+                <text class="cls-6" transform="translate(759.92 299.2)">LAND</text>
+              </g>
+            </g>
+          </svg>
+        </a>
+        <div class="toggle"></div>
+        <nav class="menu">
+          <ul>
+            <li>
+              <a href="/" style="--indexCount: 0;" id="navHome" aria-label="Link to top of the page">Home</a>
+            </li>
+            <li>
+              <a href="/buffet.html" style="--indexCount: 1;" id="" aria-label="Link to By Color section">Explore</a>
+            </li>
+            <li>
+              <div class="sec-center" id="navColors">
+                <input class="dropdown parent" type="checkbox" id="dropdown" name="dropdown" />
+                <label class="for-dropdown" for="dropdown" style="--indexCount: 2;" aria-label="Link to By Color section">By color</label>
+                <div class="section-dropdown">
+                  <input class="dropdown-sub" type="checkbox" id="dropdown-sub1" name="dropdown-sub1" />
+                  <label class="for-dropdown-sub" for="dropdown-sub1">1 Color</label>
+                  <div class="section-dropdown-sub">
+                    <a href="/buffet.html?colors=w">
+                      <i class="ms ms-w"></i> White </a>
+                    <a href="/buffet.html?colors=u">
+                      <i class="ms ms-u"></i> Blue </a>
+                    <a href="/buffet.html?colors=b">
+                      <i class="ms ms-b"></i> Black </a>
+                    <a href="/buffet.html?colors=r">
+                      <i class="ms ms-r"></i> Red </a>
+                    <a href="/buffet.html?colors=g">
+                      <i class="ms ms-g"></i> Green </a>
+                    <a href="/buffet.html?colors=c">
+                      <i class="ms ms-c"></i> Colorless </a>
+                  </div>
+                  <input class="dropdown-sub" type="checkbox" id="dropdown-sub2" name="dropdown-sub2" />
+                  <label class="for-dropdown-sub" for="dropdown-sub2">2 Colors</label>
+                  <div class="section-dropdown-sub">
+                    <a href="/buffet.html?colors=w,u">
+                      <i class="ms ms-w"></i>
+                      <i class="ms ms-u"></i>Azorius </a>
+                    <a href="/buffet.html?colors=u,b">
+                      <i class="ms ms-u"></i>
+                      <i class="ms ms-b"></i>Dimir </a>
+                    <a href="/buffet.html?colors=b,r">
+                      <i class="ms ms-b"></i>
+                      <i class="ms ms-r"></i>Rakdos </a>
+                    <a href="/buffet.html?colors=r,g">
+                      <i class="ms ms-r"></i>
+                      <i class="ms ms-g"></i>Gruul </a>
+                    <a href="/buffet.html?colors=w,g">
+                      <i class="ms ms-w"></i>
+                      <i class="ms ms-g"></i>Selesnya </a>
+                    <a href="/buffet.html?colors=w,b">
+                      <i class="ms ms-w"></i>
+                      <i class="ms ms-b"></i>Orzhov </a>
+                    <a href="/buffet.html?colors=u,r">
+                      <i class="ms ms-u"></i>
+                      <i class="ms ms-r"></i>Izzet </a>
+                    <a href="/buffet.html?colors=b,g">
+                      <i class="ms ms-b"></i>
+                      <i class="ms ms-g"></i>Golgari </a>
+                    <a href="/buffet.html?colors=w,r">
+                      <i class="ms ms-w"></i>
+                      <i class="ms ms-r"></i>Boros </a>
+                    <a href="/buffet.html?colors=u,g">
+                      <i class="ms ms-u"></i>
+                      <i class="ms ms-g"></i>Simic </a>
+                  </div>
+                  <input class="dropdown-sub" type="checkbox" id="dropdown-sub3" name="dropdown-sub3" />
+                  <label class="for-dropdown-sub" for="dropdown-sub3">3 Colors</label>
+                  <div class="section-dropdown-sub">
+                    <a href="/buffet.html?colors=w,u,b">
+                      <i class="ms ms-w"></i>
+                      <i class="ms ms-u"></i>
+                      <i class="ms ms-b"></i> Esper </a>
+                    <a href="/buffet.html?colors=u,b,r">
+                      <i class="ms ms-u"></i>
+                      <i class="ms ms-b"></i>
+                      <i class="ms ms-r"></i> Grixis </a>
+                    <a href="/buffet.html?colors=b,r,g">
+                      <i class="ms ms-b"></i>
+                      <i class="ms ms-r"></i>
+                      <i class="ms ms-g"></i> Jund </a>
+                    <a href="/buffet.html?colors=w,r,g">
+                      <i class="ms ms-r"></i>
+                      <i class="ms ms-g"></i>
+                      <i class="ms ms-w"></i> Naya </a>
+                    <a href="/buffet.html?colors=w,u,g">
+                      <i class="ms ms-g"></i>
+                      <i class="ms ms-w"></i>
+                      <i class="ms ms-u"></i> Bant </a>
+                    <a href="/buffet.html?colors=w,b,g">
+                      <i class="ms ms-w"></i>
+                      <i class="ms ms-b"></i>
+                      <i class="ms ms-g"></i> Abzan </a>
+                    <a href="/buffet.html?colors=w,u,r">
+                      <i class="ms ms-u"></i>
+                      <i class="ms ms-r"></i>
+                      <i class="ms ms-w"></i> Jeskai </a>
+                    <a href="/buffet.html?colors=u,g,b">
+                      <i class="ms ms-b"></i>
+                      <i class="ms ms-g"></i>
+                      <i class="ms ms-u"></i> Sultai </a>
+                    <a href="/buffet.html?colors=w,b,r">
+                      <i class="ms ms-r"></i>
+                      <i class="ms ms-w"></i>
+                      <i class="ms ms-b"></i> Mardu </a>
+                    <a href="/buffet.html?colors=u,r,g">
+                      <i class="ms ms-g"></i>
+                      <i class="ms ms-u"></i>
+                      <i class="ms ms-r"></i> Temur </a>
+                  </div>
+                  <input class="dropdown-sub" type="checkbox" id="dropdown-sub4" name="dropdown-sub4" />
+                  <label class="for-dropdown-sub" for="dropdown-sub4">4 Colors</label>
+                  <div class="section-dropdown-sub">
+                    <a href="/buffet.html?colors=w,u,b,r">
+                      <i class="ms ms-w"></i>
+                      <i class="ms ms-u"></i>
+                      <i class="ms ms-b"></i>
+                      <i class="ms ms-r"></i> Yore-Tiller </a>
+                    <a href="/buffet.html?colors=u,b,r,g">
+                      <i class="ms ms-u"></i>
+                      <i class="ms ms-b"></i>
+                      <i class="ms ms-r"></i>
+                      <i class="ms ms-g"></i> Glint-Eye </a>
+                    <a href="/buffet.html?colors=w,b,r,g">
+                      <i class="ms ms-b"></i>
+                      <i class="ms ms-r"></i>
+                      <i class="ms ms-g"></i>
+                      <i class="ms ms-w"></i> Dune-Brood </a>
+                    <a href="/buffet.html?colors=w,u,r,g">
+                      <i class="ms ms-r"></i>
+                      <i class="ms ms-g"></i>
+                      <i class="ms ms-w"></i>
+                      <i class="ms ms-u"></i> Ink-Treader </a>
+                    <a href="/buffet.html?colors=w,u,b,g">
+                      <i class="ms ms-g"></i>
+                      <i class="ms ms-w"></i>
+                      <i class="ms ms-u"></i>
+                      <i class="ms ms-b"></i> Witch-Maw </a>
+                  </div>
+                  <a href="/buffet.html?colors=w,u,b,r,g">All colors</a>
                 </div>
-                <div class="bottom">
-                     <div id="cardSuggestions" class="cardSuggestions">
-                       <!-- Card -->
-                        <div class="card" data-card-name="Plains" data-colors="w" data-properties="" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/Plains.jpg" alt="Plains">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Plains</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Island" data-colors="u" data-properties="" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/Island.jpg" alt="Island">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Island</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Swamp" data-colors="b" data-properties="" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/Swamp.jpg" alt="Swamp">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Swamp</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Mountain" data-colors="r" data-properties="" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/Mountain.jpg" alt="Mountain">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Mountain</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Forest" data-colors="g" data-properties="" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/forst.jpg" alt="Forest">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Forest</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Wastes" data-colors="c" data-properties="" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/Wastes.jpg" alt="Wastes">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Wastes</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Academy Ruins" data-colors="u" data-properties="ability-activated,untap" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/Academy-Ruins.jpg" alt="Academy Ruins">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Academy Ruins</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Ancient Spring" data-colors="w,u,b" data-properties="tap" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/Ancient-Spring.jpg" alt="Ancient Spring">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Ancient Spring</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Arcane Sanctum" data-colors="w,u,b" data-properties="tap" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/arcane-sanctum.jpg" alt="Arcane Sanctum">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Arcane Sanctum</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Frostwalk Bastion" data-colors="c" data-properties="creature" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/frostwalk-bastion.jpg" alt="Frostwalk Bastion">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Frostwalk Bastion</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card dfc" data-card-name="Glasspool Mimic" data-colors="u" data-properties="tap,creature,dfc-modal-face" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/glasspool-mimic.jpg" alt="Glasspool Mimic">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Glasspool Mimic</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Lair of the Hydra" data-colors="g" data-properties="untap,creature" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/lair-of-the-hydra.jpg" alt="Lair of the Hydra">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Lair of the Hydra</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Lavaclaw Reaches" data-colors="b,r" data-properties="ability-activated,tap,creature" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/lavaclaw-reaches.jpg" alt="Lavaclaw Reaches">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Lavaclaw Reaches</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Memorial to Glory" data-colors="u" data-properties="ability-activated,tap" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/Memorial-to-Glory.jpg" alt="Memorial to Glory">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Memorial to Glory</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Nimbus Maze" data-colors="w,u" data-properties="untap" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/Nimbus-Maze.jpg" alt="Nimbus Maze">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Nimbus Maze</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Snowfield Sinkhole" data-colors="w,b" data-properties="tap,s" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/Snowfield-Sinkhole.jpg" alt="Snowfield Sinkhole">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Snowfield Sinkhole</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Taiga" data-colors="r,g" data-properties="untap" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/Taiga.jpg" alt="Taiga">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Taiga</span>
-                        </div>
-                        <!-- End Card -->
-                        <!-- Card -->
-                        <div class="card" data-card-name="Thornglint Bridge" data-colors="w,g" data-properties="tap,artifact" tabindex="0">
-                                <div class="cardContent">
-                                <div class="artContainer">
-                                    <img src="IMG/cards/thornglint-bridge.jpg" alt="Thornglint Bridge">
-                                </div>
-
-                                </div>
-                            <span class="cardName">Thornglint Bridge</span>
-                        </div>
-                        <!-- End Card -->
-                     </div>
+              </div>
+            </li>
+            <li class="">
+              <a class="" href="#contact" style="--indexCount: 3;" id="navDonate" aria-label="Link to Donate section">About</a>
+            </li>
+            <li class="">
+              <a class="" href="#contact" style="--indexCount: 4;" id="navDonate" aria-label="Link to Donate section">Donate</a>
+            </li>
+            <li class="">
+              <a class="lastMenuOption" href="#contact" style="--indexCount: 5;" id="navContact" aria-label="Link to Contact section">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="content">
+          <div class="top">
+            <div class="buffet-filters">
+              <div class="color-picker">
+                <div class="mana hidden desktop" style="--hiddenCount: 5;">
+                  <input class="color" type="checkbox" id="mana-w" name="mana-w" value="w" />
+                  <label class="mana-w" for="mana-w">
+                    <i class="ms ms-w"></i>
+                  </label>
                 </div>
+                <div class="mana hidden desktop" style="--hiddenCount: 5.5;">
+                  <input class="color" type="checkbox" id="mana-u" name="mana-u" value="u" />
+                  <label class="mana-u" for="mana-u">
+                    <i class="ms ms-u"></i>
+                  </label>
+                </div>
+                <div class="mana hidden desktop" style="--hiddenCount: 6;">
+                  <input class="color" type="checkbox" id="mana-b" name="mana-b" value="b" />
+                  <label class="mana-b" for="mana-b">
+                    <i class="ms ms-b"></i>
+                  </label>
+                </div>
+                <div class="mana hidden desktop" style="--hiddenCount: 6.5;">
+                  <input class="color" type="checkbox" id="mana-r" name="mana-r" value="r" />
+                  <label class="mana-r" for="mana-r">
+                    <i class="ms ms-r"></i>
+                  </label>
+                </div>
+                <div class="mana hidden desktop" style="--hiddenCount: 7;">
+                  <input class="color" type="checkbox" id="mana-g" name="mana-g" value="g" />
+                  <label class="mana-g" for="mana-g">
+                    <i class="ms ms-g"></i>
+                  </label>
+                </div>
+                <div class="mana hidden desktop" style="--hiddenCount: 7.5;">
+                  <input class="colorless" type="checkbox" id="mana-c" name="mana-c" value="c" />
+                  <label class="mana-c" for="mana-c">
+                    <i class="ms ms-c"></i>
+                  </label>
+                </div>
+                <div class="color-picker mobile">
+                  <div class="filters" id="mobileColorFilters">
+                    <input class="dropdown parent" type="checkbox" id="mobileColorFiltersInput" name="extraFilters" style="--hiddenCount: 9.5;" />
+                    <label class="for-dropdown for-filters mobileColorTarget" for="mobileColorFiltersInput" title="Filter by color">
+                      <i class="ms ms-multicolor"></i>
+                    </label>
+                    <div class="section-dropdown">
+                      <div class="filter-picker">
+                        <div class="mana hidden" style="--hiddenCount: 5;">
+                          <label class="mana-w" for="mana-w">
+                            <i class="ms ms-w"></i>
+                          </label>
+                        </div>
+                        <div class="mana hidden" style="--hiddenCount: 5.5;">
+                          <label class="mana-u" for="mana-u">
+                            <i class="ms ms-u"></i>
+                          </label>
+                        </div>
+                        <div class="mana hidden" style="--hiddenCount: 6;">
+                          <label class="mana-b" for="mana-b">
+                            <i class="ms ms-b"></i>
+                          </label>
+                        </div>
+                        <div class="mana hidden" style="--hiddenCount: 6.5;">
+                          <label class="mana-r" for="mana-r">
+                            <i class="ms ms-r"></i>
+                          </label>
+                        </div>
+                        <div class="mana hidden" style="--hiddenCount: 7;">
+                          <label class="mana-g" for="mana-g">
+                            <i class="ms ms-g"></i>
+                          </label>
+                        </div>
+                        <div class="mana hidden" style="--hiddenCount: 7.5;">
+                          <label class="mana-c" for="mana-c">
+                            <i class="ms ms-c"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="filters hidden" id="extraFilters">
+                  <input class="dropdown parent" type="checkbox" id="extraFiltersInput" name="extraFiltersInput" style="--hiddenCount: 9.5;" />
+                  <label class="for-dropdown for-filters propertyTarget" for="extraFiltersInput" title="More filters">
+                    <i class="ms ms-land"></i>
+                  </label>
+                  <div class="section-dropdown">
+                    <div class="filter-picker">
+                      <div class="mana hidden" style="--hiddenCount: 8;">
+                        <input class="property" type="checkbox" id="land-ability" name="land-ability" value="ability-activated" />
+                        <label class="land-ability" for="land-ability" title="Has an activated ability">
+                          <i class="ms ms-ability-activated"></i>
+                        </label>
+                      </div>
+                      <div class="mana hidden " style="--hiddenCount: 8.5;">
+                        <input class="property" type="checkbox" id="land-t" name="land-t" value="tap" />
+                        <label class="land-t" for="land-t" title="Enters the battlefield tapped">
+                          <i class="ms ms-tap"></i>
+                        </label>
+                      </div>
+                      <div class="mana hidden" style="--hiddenCount: 9;">
+                        <input class="property" type="checkbox" id="land-u" name="land-u" value="untap" />
+                        <label class="land-u" for="land-u" title="Enters the battlefield untapped">
+                          <i class="ms ms-untap"></i>
+                        </label>
+                      </div>
+                      <div class="mana hidden" style="--hiddenCount: 8;">
+                        <input class="property" type="checkbox" id="land-a" name="land-a" value="artifact" />
+                        <label class="land-a" for="land-a" title="Is an artifact land">
+                          <i class="ms ms-artifact"></i>
+                        </label>
+                      </div>
+                      <div class="mana hidden" style="--hiddenCount: 8;">
+                        <input class="property" type="checkbox" id="land-m" name="land-m" value="creature" />
+                        <label class="land-m" for="land-m" title="Can turn into a creature">
+                          <i class="ms ms-creature"></i>
+                        </label>
+                      </div>
+                      <div class="mana hidden" style="--hiddenCount: 8;">
+                        <input class="property" type="checkbox" id="land-modal" name="land-modal" value="dfc-modal-face" />
+                        <label class="land-modal" for="land-modal" title="It's a double-faced card">
+                          <i class="ms ms-dfc-modal-face"></i>
+                        </label>
+                      </div>
+                      <div class="mana hidden" style="--hiddenCount: 8;">
+                        <input class="property" type="checkbox" id="land-s" name="land-s" value="s" />
+                        <label class="land-s" for="land-s" title="It's a snow land">
+                          <i class="ms ms-s"></i>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </main>
+            <div class="buffet-filters right">
+              <div class="color-picker">
+                <div class="searchBox hidden" style="--hiddenCount:10.5;">
+                  <input id="search" type="search" placeholder="Filter by name...">
+                </div>
+                <div class="mana hidden" style="--hiddenCount: 10;">
+                  <input class="reset-filters" type="button" id="reset-filters" name="reset-filters" />
+                  <label class="reset" for="reset-filters">Clear</label>
+                </div>
+              </div>
+            </div>
           </div>
-           <div id="cardHolder">
-            <input class="dropdown-sub" type="checkbox" id="cardHolderInput" name="cardHolderInput" />
-            <label class="for-dropdown-sub cardHolderLabel" for="cardHolderInput">
-             <div class="chFooter">
-                 <ul>
-                     <li class="tracker white"><span><current>0</current>/<total>27</total></span><i class="ms ms-w"></i><div class="border progress" id="coloranalysis_prod_w" data-progress><div class="progress-bar progress-bar-w" style="width: 11.4286%;">11%</div></div></li>
-                     <li class="tracker blue"><span><current>0</current>/<total>27</total></span><i class="ms ms-u"></i><div class="border progress" id="coloranalysis_prod_u"><div class="progress-bar progress-bar-u" style="width: 51.4286%;">51%</div></div></li>
-                     <li class="tracker black"><span><current>0</current>/<total>27</total></span><i class="ms ms-b"></i><div class="border progress" id="coloranalysis_prod_b"> <div class="progress-bar progress-bar-b" style="width: 51.4286%;">51%</div></div></li>
-                     <li class="tracker red"><span><current>0</current>/<total>27</total></span><i class="ms ms-r"></i><div class="border progress" id="coloranalysis_prod_r"><div class="progress-bar progress-bar-r" style="width: 51.4286%;">51%</div></div></li>
-                     <li class="tracker green"><span><current>0</current>/<total>27</total></span><i class="ms ms-g"></i><div class="border progress" id="coloranalysis_prod_g"><div class="progress-bar progress-bar-g" style="width: 51.4286%;">51%</div></div></li>
-                     <li class="tracker colorless"><span><current>0</current>/<total>27</total></span><i class="ms ms-c"></i><div class="border progress" id="coloranalysis_prod_c"><div class="progress-bar progress-bar-c" style="width: 51.4286%;">51%</div></div></li>
-                 </ul>
-                 <div class="totalCards">      
-                    <current>0</current>/<total>100</total>
-                 </div>
-             </div>
-             </label>
-             <div class="chContainer">
-
-             </div>
-         </div>
-        <footer>
-            <div class="wizards">
-                <p>Commander.Land is not produced by or endorsed by Wizards of the Coast.</p>
-                <p>All card images, mana symbols, and Oracle text are copyright Wizards of the Coast and are used under the Wizards of the Coast Fan Content Policy. (<a href="https://magicthegathering.com/">https://magicthegathering.com/</a>)</p>
-                <p>Background art: Karplusan Forest from Dominaria United by Sam Burley for Wizards of the Coast. (<a href="https://twitter.com/samburleyart">@samburleyart</a>)</p>
-                <p>The Mana font by Andrew Gioia (<a href="https://mana.andrewgioia.com/">https://mana.andrewgioia.com/</a>)</p>
-                <p>The Mana font is licensed under the the SIL OFL 1.1 (<a href="http://scripts.sil.org/OFL">http://scripts.sil.org/OFL</a>)</p>
-                <p>Mana CSS, LESS, and Sass files are licensed under the MIT License (<a href="http://opensource.org/licenses/mit-license.htm">http://opensource.org/licenses/mit-license.htm</a>)</p>
-                    </div>
-            <div class="buffer">
-
+          <div class="bottom">
+            <div id="cardSuggestions" class="cardSuggestions">
+              <!-- Card -->
+              <div class="card" data-card-name="Plains" data-colors="w" data-properties="" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/Plains.jpg" alt="Plains">
+                  </div>
+                </div>
+                <span class="cardName">Plains</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Island" data-colors="u" data-properties="" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/Island.jpg" alt="Island">
+                  </div>
+                </div>
+                <span class="cardName">Island</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Swamp" data-colors="b" data-properties="" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/Swamp.jpg" alt="Swamp">
+                  </div>
+                </div>
+                <span class="cardName">Swamp</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Mountain" data-colors="r" data-properties="" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/Mountain.jpg" alt="Mountain">
+                  </div>
+                </div>
+                <span class="cardName">Mountain</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Forest" data-colors="g" data-properties="" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/forst.jpg" alt="Forest">
+                  </div>
+                </div>
+                <span class="cardName">Forest</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Wastes" data-colors="c" data-properties="" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/Wastes.jpg" alt="Wastes">
+                  </div>
+                </div>
+                <span class="cardName">Wastes</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Academy Ruins" data-colors="u" data-properties="ability-activated,untap" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/Academy-Ruins.jpg" alt="Academy Ruins">
+                  </div>
+                </div>
+                <span class="cardName">Academy Ruins</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Ancient Spring" data-colors="w,u,b" data-properties="tap" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/Ancient-Spring.jpg" alt="Ancient Spring">
+                  </div>
+                </div>
+                <span class="cardName">Ancient Spring</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Arcane Sanctum" data-colors="w,u,b" data-properties="tap" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/arcane-sanctum.jpg" alt="Arcane Sanctum">
+                  </div>
+                </div>
+                <span class="cardName">Arcane Sanctum</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Frostwalk Bastion" data-colors="c" data-properties="creature" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/frostwalk-bastion.jpg" alt="Frostwalk Bastion">
+                  </div>
+                </div>
+                <span class="cardName">Frostwalk Bastion</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card dfc" data-card-name="Glasspool Mimic" data-colors="u" data-properties="tap,creature,dfc-modal-face" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/glasspool-mimic.jpg" alt="Glasspool Mimic">
+                  </div>
+                </div>
+                <span class="cardName">Glasspool Mimic</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Lair of the Hydra" data-colors="g" data-properties="untap,creature" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/lair-of-the-hydra.jpg" alt="Lair of the Hydra">
+                  </div>
+                </div>
+                <span class="cardName">Lair of the Hydra</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Lavaclaw Reaches" data-colors="b,r" data-properties="ability-activated,tap,creature" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/lavaclaw-reaches.jpg" alt="Lavaclaw Reaches">
+                  </div>
+                </div>
+                <span class="cardName">Lavaclaw Reaches</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Memorial to Glory" data-colors="w" data-properties="ability-activated,tap" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/Memorial-to-Glory.jpg" alt="Memorial to Glory">
+                  </div>
+                </div>
+                <span class="cardName">Memorial to Glory</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Nimbus Maze" data-colors="w,u" data-properties="untap" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/Nimbus-Maze.jpg" alt="Nimbus Maze">
+                  </div>
+                </div>
+                <span class="cardName">Nimbus Maze</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Snowfield Sinkhole" data-colors="w,b" data-properties="tap,s" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/Snowfield-Sinkhole.jpg" alt="Snowfield Sinkhole">
+                  </div>
+                </div>
+                <span class="cardName">Snowfield Sinkhole</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Taiga" data-colors="r,g" data-properties="untap" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/Taiga.jpg" alt="Taiga">
+                  </div>
+                </div>
+                <span class="cardName">Taiga</span>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div class="card" data-card-name="Thornglint Bridge" data-colors="w,g" data-properties="tap,artifact" tabindex="0">
+                <div class="cardContent">
+                  <div class="artContainer">
+                    <img src="IMG/cards/thornglint-bridge.jpg" alt="Thornglint Bridge">
+                  </div>
+                </div>
+                <span class="cardName">Thornglint Bridge</span>
+              </div>
+              <!-- End Card -->
             </div>
-            <div class="siteMap">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/buffet.html">Explore</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Donate</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-             <div>
-                    <ul class="socials">
-                    <li><a href="#" class="social discord" aria-label="Link to join the Discord server"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 71 54.12"><defs><style>.cls-discord1{fill:none;}.cls-discord2{clip-path:url(#clip-path);}</style><clipPath id="clip-path" transform="translate(0 -0.41)"><rect class="cls-discord1" width="71" height="55"/></clipPath></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-discord2"><path class="cls-discord3" d="M60.1,4.9A58,58,0,0,0,45.65.42a.21.21,0,0,0-.23.11,40.45,40.45,0,0,0-1.8,3.69,53.85,53.85,0,0,0-16.23,0A36.14,36.14,0,0,0,25.56.53a.21.21,0,0,0-.23-.11A58.23,58.23,0,0,0,10.88,4.9a.16.16,0,0,0-.1.08C1.58,18.73-.94,32.14.29,45.39a.27.27,0,0,0,.1.17,59,59,0,0,0,17.72,9,.23.23,0,0,0,.25-.08A41.53,41.53,0,0,0,22,48.54a.22.22,0,0,0-.12-.31,40.22,40.22,0,0,1-5.54-2.64.23.23,0,0,1,0-.38l1.1-.86a.2.2,0,0,1,.23,0,42,42,0,0,0,35.68,0,.21.21,0,0,1,.23,0c.36.3.73.59,1.1.87a.23.23,0,0,1,0,.38,36.52,36.52,0,0,1-5.54,2.63.24.24,0,0,0-.12.32,48.6,48.6,0,0,0,3.63,5.9.23.23,0,0,0,.25.08,58.75,58.75,0,0,0,17.75-9,.2.2,0,0,0,.09-.17A59.58,59.58,0,0,0,60.2,5,.16.16,0,0,0,60.1,4.9ZM23.73,37.33c-3.5,0-6.38-3.22-6.38-7.16S20.17,23,23.73,23s6.43,3.24,6.38,7.16S27.28,37.33,23.73,37.33Zm23.59,0c-3.5,0-6.38-3.22-6.38-7.16S43.76,23,47.32,23s6.43,3.24,6.38,7.16S50.9,37.33,47.32,37.33Z" transform="translate(0 -0.41)"/></g></g></g></svg></a></li>
-                    <li><a href="#" class="social patreon" aria-label="Link to join our Patreon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 467.29 448.67"><defs></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-patreon" d="M131.14,168.19C131.34,74.12,208.69-2,303.14,0,395.21,2,469,78.76,467.26,171.85c-1.72,90.88-77.06,166.54-171.49,164.59C205.7,334.58,131.09,260.87,131.14,168.19Z"/><path class="cls-patreon" d="M0,448.67V.07H81.76v448.6Z"/></g></g></svg></a></li>
-                </ul>
-                <a class="logo" aria-label="Link to reload page" tabindex="-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1282.12 342.2">
-                    <defs>
-                    </defs>
-                    <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_1-2" data-name="Layer 1">
-                            <rect class="cls-1" x="3.57" y="167.86" width="133.94" height="131" rx="2.1" />
-                            <rect class="cls-2" x="156.09" y="167.86" width="133.94" height="131" rx="2.1" />
-                            <rect class="cls-3" x="309.58" y="167.86" width="133.94" height="131" rx="2.1" />
-                            <rect class="cls-4" x="461.13" y="167.86" width="133.94" height="131" rx="2.1" />
-                            <rect class="cls-5" x="614.62" y="167.86" width="133.94" height="131" rx="2.1" /><text class="cls-6" transform="translate(0 157.34) scale(1.02 1)">COMMA</text><text class="cls-6" transform="translate(757.86 157.34)">NDER</text><text class="cls-6" transform="translate(759.92 299.2)">LAND</text></g>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="cardHolder">
+      <input class="dropdown-sub" type="checkbox" id="cardHolderInput" name="cardHolderInput" />
+      <label class="for-dropdown-sub cardHolderLabel" for="cardHolderInput">
+        <div class="chFooter">
+          <ul>
+            <li class="tracker tracker-w">
+              <span>
+                <current>0</current> <total></total>
+              </span>
+              <i class="ms ms-w"></i>
+              <div class="border progress" id="coloranalysis_prod_w">
+                <div class="progress-bar progress-bar-w" style=""></div>
+              </div>
+            </li>
+            <li class="tracker tracker-u">
+              <span>
+                <current>0</current> <total data-recommended="3"></total>
+              </span>
+              <i class="ms ms-u"></i>
+              <div class="border progress" id="coloranalysis_prod_u">
+                <div class="progress-bar progress-bar-u" style=""></div>
+              </div>
+            </li>
+            <li class="tracker tracker-b">
+              <span>
+                <current>0</current> <total></total>
+              </span>
+              <i class="ms ms-b"></i>
+              <div class="border progress" id="coloranalysis_prod_b">
+                <div class="progress-bar progress-bar-b" style=""></div>
+              </div>
+            </li>
+            <li class="tracker tracker-r">
+              <span>
+                <current>0</current> <total></total>
+              </span>
+              <i class="ms ms-r"></i>
+              <div class="border progress" id="coloranalysis_prod_r">
+                <div class="progress-bar progress-bar-r" style=""></div>
+              </div>
+            </li>
+            <li class="tracker tracker-g">
+              <span>
+                <current>0</current> <total></total>
+              </span>
+              <i class="ms ms-g"></i>
+              <div class="border progress" id="coloranalysis_prod_g">
+                <div class="progress-bar progress-bar-g" style=""></div>
+              </div>
+            </li>
+            <li class="tracker tracker-c">
+              <span>
+                <current>0</current> <total></total>
+              </span>
+              <i class="ms ms-c"></i>
+              <div class="border progress" id="coloranalysis_prod_c">
+                <div class="progress-bar progress-bar-c" style=""></div>
+              </div>
+            </li>
+          </ul>
+          <div class="totalCards">
+            <current>0</current>/ <total>100</total>
+          </div>
+        </div>
+      </label>
+      <div class="chContainer"></div>
+    </div>
+    <footer>
+      <div class="wizards">
+        <p>Commander.Land is not produced by or endorsed by Wizards of the Coast.</p>
+        <p>All card images, mana symbols, and Oracle text are copyright Wizards of the Coast and are used under the Wizards of the Coast Fan Content Policy. ( <a href="https://magicthegathering.com/">https://magicthegathering.com/</a>) </p>
+        <p>Background art: Karplusan Forest from Dominaria United by Sam Burley for Wizards of the Coast. ( <a href="https://twitter.com/samburleyart">@samburleyart</a>) </p>
+        <p>The Mana font by Andrew Gioia ( <a href="https://mana.andrewgioia.com/">https://mana.andrewgioia.com/</a>) </p>
+        <p>The Mana font is licensed under the the SIL OFL 1.1 ( <a href="http://scripts.sil.org/OFL">http://scripts.sil.org/OFL</a>) </p>
+        <p>Mana CSS, LESS, and Sass files are licensed under the MIT License ( <a href="http://opensource.org/licenses/mit-license.htm">http://opensource.org/licenses/mit-license.htm</a>) </p>
+      </div>
+      <div class="buffer"></div>
+      <div class="siteMap">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/buffet.html">Explore</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Donate</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="socials">
+            <li>
+              <a href="#" class="social discord" aria-label="Link to join the Discord server">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 71 54.12">
+                  <defs>
+                    <style>
+                      .cls-discord1 {
+                        fill: none;
+                      }
+
+                      .cls-discord2 {
+                        clip-path: url(#clip-path);
+                      }
+                    </style>
+                    <clipPath id="clip-path" transform="translate(0 -0.41)">
+                      <rect class="cls-discord1" width="71" height="55" />
+                    </clipPath>
+                  </defs>
+                  <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                      <g class="cls-discord2">
+                        <path class="cls-discord3" d="M60.1,4.9A58,58,0,0,0,45.65.42a.21.21,0,0,0-.23.11,40.45,40.45,0,0,0-1.8,3.69,53.85,53.85,0,0,0-16.23,0A36.14,36.14,0,0,0,25.56.53a.21.21,0,0,0-.23-.11A58.23,58.23,0,0,0,10.88,4.9a.16.16,0,0,0-.1.08C1.58,18.73-.94,32.14.29,45.39a.27.27,0,0,0,.1.17,59,59,0,0,0,17.72,9,.23.23,0,0,0,.25-.08A41.53,41.53,0,0,0,22,48.54a.22.22,0,0,0-.12-.31,40.22,40.22,0,0,1-5.54-2.64.23.23,0,0,1,0-.38l1.1-.86a.2.2,0,0,1,.23,0,42,42,0,0,0,35.68,0,.21.21,0,0,1,.23,0c.36.3.73.59,1.1.87a.23.23,0,0,1,0,.38,36.52,36.52,0,0,1-5.54,2.63.24.24,0,0,0-.12.32,48.6,48.6,0,0,0,3.63,5.9.23.23,0,0,0,.25.08,58.75,58.75,0,0,0,17.75-9,.2.2,0,0,0,.09-.17A59.58,59.58,0,0,0,60.2,5,.16.16,0,0,0,60.1,4.9ZM23.73,37.33c-3.5,0-6.38-3.22-6.38-7.16S20.17,23,23.73,23s6.43,3.24,6.38,7.16S27.28,37.33,23.73,37.33Zm23.59,0c-3.5,0-6.38-3.22-6.38-7.16S43.76,23,47.32,23s6.43,3.24,6.38,7.16S50.9,37.33,47.32,37.33Z" transform="translate(0 -0.41)" />
+                      </g>
                     </g>
+                  </g>
                 </svg>
-            </a>
-             </div>
-            </div>
-            <div class="copyright">
-                <span>All other content © 2023 Commander.Land.  <br>Designed and developed by NirDine (<a href="https://nirdine.com">https://NirDine.com</a>) and Lau</span>
-            </div>
-        </footer>
-
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social patreon" aria-label="Link to join our Patreon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 467.29 448.67">
+                  <defs></defs>
+                  <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                      <path class="cls-patreon" d="M131.14,168.19C131.34,74.12,208.69-2,303.14,0,395.21,2,469,78.76,467.26,171.85c-1.72,90.88-77.06,166.54-171.49,164.59C205.7,334.58,131.09,260.87,131.14,168.19Z" />
+                      <path class="cls-patreon" d="M0,448.67V.07H81.76v448.6Z" />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="logo" aria-label="Link to reload page" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1282.12 342.2">
+              <defs></defs>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="Layer_1-2" data-name="Layer 1">
+                  <rect class="cls-1" x="3.57" y="167.86" width="133.94" height="131" rx="2.1" />
+                  <rect class="cls-2" x="156.09" y="167.86" width="133.94" height="131" rx="2.1" />
+                  <rect class="cls-3" x="309.58" y="167.86" width="133.94" height="131" rx="2.1" />
+                  <rect class="cls-4" x="461.13" y="167.86" width="133.94" height="131" rx="2.1" />
+                  <rect class="cls-5" x="614.62" y="167.86" width="133.94" height="131" rx="2.1" />
+                  <text class="cls-6" transform="translate(0 157.34) scale(1.02 1)">COMMA</text>
+                  <text class="cls-6" transform="translate(757.86 157.34)">NDER</text>
+                  <text class="cls-6" transform="translate(759.92 299.2)">LAND</text>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>All other content © 2023 Commander.Land. <br>Designed and developed by NirDine ( <a href="https://nirdine.com">https://NirDine.com</a>) and Lau </span>
+      </div>
+    </footer>
     <!-- JQUERY  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    
     <!-- MOBILE MENU -->
     <script type="text/javascript" src="JS/menuHandler.js"></script>
-        
     <!-- COLOR COMBINATION -->
     <script type="text/javascript" src="JS/colorCombo.js"></script>
-
     <!-- ANIMATIONS -->
     <script type="text/javascript" src="JS/animations.js"></script>
-    
     <!-- SEARCH SUGGESTIONS -->
     <script type="text/javascript" src="JS/searchSuggestions.js"></script>
-    
     <!-- CARD LIST ADDER -->
     <script type="text/javascript" src="JS/cardHolder.js"></script>
-    
     <script>
-        $( function() {
-        $( document ).tooltip();
-        } );
+      $(function() {
+        $(document).tooltip();
+      });
     </script>
-
-</body>
-
+  </body>
 </html>

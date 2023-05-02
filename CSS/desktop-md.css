@@ -1,356 +1,310 @@
 @media only screen and (min-width: 1200px) {
-
-    :root {}
-    
-    html {
-
-        scroll-padding-top: 87.39;
-        /* height of sticky header */
-
-    }
-
-    body {
-        padding-top: 0px;
-
-
-    }
-
-
-    img {
-        -webkit-user-drag: none;
-        -khtml-user-drag: none;
-        -moz-user-drag: none;
-        -o-user-drag: none;
-        user-drag: none;
-    }
-
-
-    p {
-        padding: 2px 40px;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-
-    /* HEADER */
-
-    header {
-        position: relative;
-        padding: 10px;
-        right: auto;
-        left: auto;
-        top: auto;
-        border-radius: var(--half-bradius);
-
-    }
-
-    header.navScrolled {
-        position: fixed;
-        top: 0px;
-        border-top-left-radius: 0px;
-        border-top-right-radius: 0px;
-
-    }
-
-    .logo {
-        height: 3em;
-        padding: 0px 20px;
-    }
-
-
-    body.active .logo {
-        display: flex;
-    }
-
-    .toggle.active {
-        display: none;
-    }
-
-    
-    .menu ul li a{
-        border-top: 0px;
-        
-    }
-    
-    .skipNavLink,
-    .menu ul li:hover,
-    .menu ul li:focus-within {
-        border-bottom-width: 5px;
-        border-style: solid;
-        padding-bottom: 0px;
-
-    }
-
-    .skipNavLink {
-        display: block;
-        left: 10%;
-        position: absolute;
-        top: -10px;
-        transform: translateY(-120%);
-        padding: 30px;
-        border-radius: 0px 0px 5px 5px;
-        box-shadow: 2px 1px 0px 0px rgb(0 0 0 / 20%);
-        transition: transform 0.1s ease-in-out;
-        z-index: 99999;
-    }
-
-    .skipNavLink:focus {
-        transform: translateY(10%);
-    }
-
-
-    .toggle {
-        display: none;
-    }
-
-
-    .menu {
-        position: relative;
-        right: 0;
-        width: auto;
-        height: auto;
-        transition: 0s;
-
-    }
-
-    .menu ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .menu ul li {
-        border-right: 1px solid #0000002b;
-
-    }
-
-
-    .menu ul li:last-child,
-    .menu ul li.lastMenuOption {
-        border-right: 0px;
-    }
-
-
-    li:has(#navColors) {
-        display: block;
-    }
-    
-    #navColors, .filters {
-        position: relative;
-        max-width: 100%;
-        text-align: center;
-        z-index: 200;
-    }
-    
-
-
-    .menu ul li div a i+i {
-        margin-left: 1px;
-    }
-
-    .menu ul li div a i:last-child {
-        margin-right: 10px;
-    }
-
-
-    .menu ul li div a {
-        justify-content: flex-start;
-    }
-
-
-    .section-dropdown {
-        width: 210%;
-    }
-
-
-    .bottom {
-        flex-direction: row;
-    }
-
-    .bottom .explore {
-        padding: 0px;
-    }
-
-    .bottom .button input {
-        width: auto;
-
-    }
-
-    main {
-        z-index: 2;
-        height: 80%;
-    }
-
-    main .content {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .content textarea,
-    .backdrop {
-        height: 30vh;
-        width: 35vw;
-    }
-
-    .hidden {
-        opacity: 0;  
-        transition: 1s ease-out;
-    }
-    
- 
-    .home .color-picker:not(:has(input:checked)) .mana.show,
-    .home .analyze .addDeck:has(textarea:not(:placeholder-shown)) ~ .button input:not(:disabled),
-    .explore .color-picker:has(input:checked) ~ .button input {
-            -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-            animation-delay: calc(var(--hiddenCount) * 1s);
-            -webkit-animation-fill-mode: both; 
-            animation-fill-mode: both; 
-            -webkit-animation-name: bounce; 
-            animation-name: bounce; 
-
-    }
-    
-    
-    
-    
-    @media (prefers-reduced-motion) {
-      /* styles to apply if the user's settings are set to reduced motion */
-         .hidden {
-             transition:none;
-             -webkit-animation-name: none; 
-            animation-name: none; 
-         }
-        
-        .color-picker:not(:has(input:checked)) .mana.show,
-        .analyze .addDeck:has(textarea:not(:placeholder-shown)) ~ .button input:not(:disabled),
-        .explore .color-picker:has(input:checked) ~ .button input {
-
-            -webkit-animation-name: none; 
-            animation-name: none; 
-
-        }
-    }
-    
-    
-    
-    .show {
-        opacity: 1;
-        transform: translateX(0);
-    }  
-    
-    footer {
-        z-index: 2;
-        margin-top: 2em;
-    }
-
- 
-    footer div div:has(ul.socials) {
-
-    flex-direction: row;
-
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    .filters .section-dropdown {
-
-        margin-top: 0.25em;
-    }
-    
-    
-    
-    
-.buffet-filters .color-picker {
-    grid-template:
-    'c c c c c c c';
-     margin-right: 0;
-}
-    
-
-
-    .buffet-filters:has(#mobileColorFilters) {
-        position: static;
-        margin-left: 0px;
-    }
-    
-    
-    .searchbox {
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    .searchBox #search {
-    width: auto;
-    }
-    
-    .filters .section-dropdown .filter-picker {
-        grid-template:
-        'c c c'
-        'c c c';
-    }
-    
-    
-    .filters .section-dropdown {
-        width:auto;
-        top: 70px;
-        right: auto;
-        left: auto;
-    }
-
-
-
-    
-    
-    
-    
-
-    @keyframes tilt-shaking {
-      0% { transform: rotate(0deg); }
-      25% { transform: rotate(5deg); }
-      50% { transform: rotate(0eg); }
-      75% { transform: rotate(-5deg); }
-      100% { transform: rotate(0deg); }
-    }
-
-    @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-        40% {transform: translateY(-15px);} 
-        60% {transform: translateY(-7.5px);} 
-    } 
-
-    
-    .desktop { 
+  :root {
+  }
+
+  html {
+    scroll-padding-top: 87.39;
+    /* height of sticky header */
+  }
+
+  body {
+    padding-top: 0px;
+  }
+
+  img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
+
+  p {
+    padding: 2px 40px;
+  }
+
+  .container {
     display: flex;
-    }
-    
-    .mobile { 
+    flex-direction: column;
+    width: 80%;
+  }
+
+  /* HEADER */
+
+  header {
+    position: relative;
+    padding: 10px;
+    right: auto;
+    left: auto;
+    top: auto;
+    border-radius: var(--half-bradius);
+  }
+
+  header.navScrolled {
+    position: fixed;
+    top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .logo {
+    height: 3em;
+    padding: 0px 20px;
+  }
+
+  body.active .logo {
+    display: flex;
+  }
+
+  .toggle.active {
     display: none;
+  }
+
+  .menu ul li a {
+    border-top: 0px;
+  }
+
+  .skipNavLink,
+  .menu ul li:hover,
+  .menu ul li:focus-within {
+    border-bottom-width: 5px;
+    border-style: solid;
+    padding-bottom: 0px;
+  }
+
+  .skipNavLink {
+    display: block;
+    left: 10%;
+    position: absolute;
+    top: -10px;
+    transform: translateY(-120%);
+    padding: 30px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 2px 1px 0px 0px rgb(0 0 0 / 20%);
+    transition: transform 0.1s ease-in-out;
+    z-index: 99999;
+  }
+
+  .skipNavLink:focus {
+    transform: translateY(10%);
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  .menu {
+    position: relative;
+    right: 0;
+    width: auto;
+    height: auto;
+    transition: 0s;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu ul li {
+    border-right: 1px solid #0000002b;
+  }
+
+  .menu ul li:last-child,
+  .menu ul li.lastMenuOption {
+    border-right: 0px;
+  }
+
+  li:has(#navColors) {
+    display: block;
+  }
+
+  #navColors,
+  .filters {
+    position: relative;
+    max-width: 100%;
+    text-align: center;
+    z-index: 200;
+  }
+
+  .menu ul li div a i + i {
+    margin-left: 1px;
+  }
+
+  .menu ul li div a i:last-child {
+    margin-right: 10px;
+  }
+
+  .menu ul li div a {
+    justify-content: flex-start;
+  }
+
+  .section-dropdown {
+    width: 210%;
+  }
+
+  .bottom {
+    flex-direction: row;
+  }
+
+  .bottom .explore {
+    padding: 0px;
+  }
+
+  .bottom .button input {
+    width: auto;
+  }
+
+  main {
+    z-index: 2;
+    height: 80%;
+  }
+
+  main .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .content textarea,
+  .backdrop {
+    height: 30vh;
+    width: 35vw;
+  }
+
+  .hidden {
+    opacity: 0;
+    transition: 1s ease-out;
+  }
+
+  .home .color-picker:not(:has(input:checked)) .mana.show,
+  .home
+    .analyze
+    .addDeck:has(textarea:not(:placeholder-shown))
+    ~ .button
+    input:not(:disabled),
+  .explore .color-picker:has(input:checked) ~ .button input {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-delay: calc(var(--hiddenCount) * 1s);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+  }
+
+  @media (prefers-reduced-motion) {
+    /* styles to apply if the user's settings are set to reduced motion */
+    .hidden {
+      transition: none;
+      -webkit-animation-name: none;
+      animation-name: none;
     }
 
+    .color-picker:not(:has(input:checked)) .mana.show,
+    .analyze
+      .addDeck:has(textarea:not(:placeholder-shown))
+      ~ .button
+      input:not(:disabled),
+    .explore .color-picker:has(input:checked) ~ .button input {
+      -webkit-animation-name: none;
+      animation-name: none;
+    }
+  }
+
+  .show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  footer {
+    z-index: 2;
+    margin-top: 2em;
+  }
+
+  footer div div:has(ul.socials) {
+    flex-direction: row;
+  }
+
+  .filters .section-dropdown {
+    margin-top: 0.25em;
+  }
+
+  .buffet-filters .color-picker {
+    grid-template: "c c c c c c c";
+    margin-right: 0;
+  }
+
+  .buffet-filters:has(#mobileColorFilters) {
+    position: static;
+    margin-left: 0px;
+  }
+
+  .searchbox {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .searchBox #search {
+    width: auto;
+  }
+
+  .filters .section-dropdown .filter-picker {
+    grid-template:
+      "c c c"
+      "c c c";
+  }
+
+  .filters .section-dropdown {
+    width: auto;
+    top: 70px;
+    right: auto;
+    left: auto;
+  }
+
+  @keyframes tilt-shaking {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(0eg);
+    }
+    75% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-15px);
+    }
+    60% {
+      transform: translateY(-7.5px);
+    }
+  }
+
+  .desktop {
+    display: flex;
+  }
+
+  .mobile {
+    display: none;
+  }
 }

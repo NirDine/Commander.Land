@@ -1,77 +1,59 @@
 @media only screen and (min-width: 768px) {
+  body {
+    overflow: auto;
+    padding-top: 12%;
+  }
 
+  header {
+    padding: 20px 10% 20px 13%;
+  }
 
-    body {
-        overflow: auto;
-        padding-top: 12%;
-    }
+  .bottom .explore {
+    display: flex;
+    padding: 30px 0px;
+  }
 
-    header {
-        padding: 20px 10% 20px 13%;
-    }
+  .explain p {
+    text-align: left;
+  }
 
-    
-    .bottom .explore {
-        display: flex;
-        padding: 30px 0px;
-    }
+  footer {
+    display: grid;
+    grid-auto-columns: 5fr 1fr 4fr;
+    grid-template:
+      "disclaimer manaFont map"
+      "copyright copyright copyright";
+    padding-inline: 10%;
+  }
 
-    .explain p {
-        text-align: left;
-    }
+  .footer div {
+    padding: 0em;
+  }
 
-    
-    footer {
-        display: grid;
-        grid-auto-columns: 5fr 1fr 4fr;
-        grid-template:
-        'disclaimer manaFont map'
-        'copyright copyright copyright';
-        padding-inline:10%;
-    }
-    
-    .footer div {
-        padding: 0em;
-    }
-
-    
-    
-    footer ul {
-
+  footer ul {
     flex-direction: row;
+  }
 
-
-    }
-   
-    
-    footer ul.socials {
+  footer ul.socials {
     margin-bottom: 0px;
-    }
+  }
 
-    footer ul:not(.socials) li { 
+  footer ul:not(.socials) li {
     border-left: 1px solid #0000002b;
     border-bottom-width: 0px;
     border-top-width: 0px;
+  }
 
-    }
-    
-    footer ul li:first-child { 
-
-
+  footer ul li:first-child {
     border-left-width: 0px;
+  }
 
-    }
-    
-    .copyright {
-        grid-area: copyright;
-    }
+  .copyright {
+    grid-area: copyright;
+  }
 
-
-
-
-.progress {
-    
-    --bs-progress-font-size: .75rem;
+  .progress {
+    --bs-progress-font-size: 0.75rem;
     --bs-progress-bg: var(--dark);
     display: flex;
     overflow: hidden;
@@ -82,15 +64,12 @@
     width: 150px;
     max-width: 185px;
     margin: auto;
+  }
 
-}
+  .progress-bar-striped {
+  }
 
-
-.progress-bar-striped {
-
-}
-
-.progress-bar {
+  .progress-bar {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,15 +77,9 @@
     text-align: center;
     white-space: nowrap;
     height: 100%;
-}
-    
+  }
 
-.buffet .top {
-
+  .buffet .top {
     flex-direction: row;
-
-}
-    
-
-
+  }
 }

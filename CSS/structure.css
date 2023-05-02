@@ -862,3 +862,38 @@ body.buffet:has(#cardHolderInput:checked) {
 .desktop {
   display: none;
 }
+
+
+.wip-disclaimer {
+    bottom: 6em;
+    position: fixed;
+    z-index: 1000;
+    background: var(--mainBG);
+    color: var(--contrast);
+    border-radius: var(--bradius);
+    padding: 20px;
+    display: none;
+}
+
+.wip-disclaimer p {
+        font-size: 1.1em;
+}
+
+.wip-disclaimer a {
+    color: #646672;
+}
+
+.wip-disclaimer button {
+    background-image: linear-gradient(92.88deg, #b76c8e 9.16%, var(--accent));
+    color: var(--contrast);
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    padding: 0.6em;
+    border: 0px;
+    border-radius: var(--bradius);
+    cursor: pointer;
+    width: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

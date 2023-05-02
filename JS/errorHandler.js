@@ -13,9 +13,9 @@ const nameErrors = {
 
 // Define correct names in an object for easier interaction
 const namesCorrect = {
-    string1: 'Correcto 1',
-    string2: 'Correcto 2',
-    string3: 'Correcto 3'
+    string1: 'Correct 1',
+    string2: 'Correct 2',
+    string3: 'Correct 3'
 }
 
 // Detect the user agent to handle different browsers

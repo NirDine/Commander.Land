@@ -225,7 +225,7 @@
             <div class="explore">
               <div class="explain">
                 <h2 class="hidden" style="--hiddenCount: 4;">Explore all lands in your colors...</h2>
-                <p class="hidden" style="--hiddenCount: 4;">Select the colors of your deck and look through all the lands yourself. As you pick the lands you like, we will keep track of everything else and show you your mana distribution in real time! Once you're done, just copy the list, and voila! Deck-building has never been so easy!</p>
+                <p class="hidden" style="--hiddenCount: 4;">Select the colors of your deck and look through all the lands yourself. As you pick the lands you like, we will keep track of everything else and show you your mana distribution in real time! Once you're done, just copy the list, and voilà! Deck-building has never been so easy!</p>
               </div>
               <div class="color-picker">
                 <div class="mana hidden" style="--hiddenCount: 5;">
@@ -386,6 +386,42 @@
         <span>All other content © 2023 Commander.Land. <br>Designed and developed by NirDine ( <a href="https://nirdine.com">https://NirDine.com</a>) and Lau </span>
       </div>
     </footer>
+    
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    const disclaimerBtn = document.querySelector('.wip-disclaimer .wip-accept');
+    const wipDisclaimerAccepted = localStorage.getItem('wipDisclaimerAccepted');
+
+    if (disclaimerBtn) {
+      disclaimerBtn.addEventListener('click', function() {
+        const disclaimer = document.querySelector('.wip-disclaimer');
+        if (disclaimer) {
+          disclaimer.classList.add('hidden');
+          localStorage.setItem('wipDisclaimerAccepted', 'true');
+        }
+      });
+    }
+
+    if (!wipDisclaimerAccepted) {
+      const disclaimer = document.querySelector('.wip-disclaimer');
+      if (disclaimer) {
+        disclaimer.style.display = 'flex';
+      }
+    }
+  });
+</script>
+
+
+<div class="wip-disclaimer">
+  <p>This site is currently under construction, and none of the features currently work. This version of the site is online simply to test out our interfase. <br>
+  If you have any feedback, you can contact us at <a href="mailto:hi@nirdine.com">hi@nirdine.com</a>.</p>
+
+  <button class="wip-accept">Okay</button>
+</div>
+
+
+    
     <!-- MOBILE MENU HANDLER -->
     <script type="text/javascript" src="JS/menuHandler.js"></script>
     <!-- COLOR COMBINATION HANDLER -->

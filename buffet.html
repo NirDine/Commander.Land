@@ -712,6 +712,42 @@
         <span>All other content © 2023 Commander.Land. <br>Designed and developed by NirDine ( <a href="https://nirdine.com">https://NirDine.com</a>) and Lau </span>
       </div>
     </footer>
+    
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        const disclaimerBtn = document.querySelector('.wip-disclaimer .wip-accept');
+        const wipDisclaimerAccepted = localStorage.getItem('wipDisclaimerAccepted');
+
+        if (disclaimerBtn) {
+          disclaimerBtn.addEventListener('click', function() {
+            const disclaimer = document.querySelector('.wip-disclaimer');
+            if (disclaimer) {
+              disclaimer.classList.add('hidden');
+              localStorage.setItem('wipDisclaimerAccepted', 'true');
+            }
+          });
+        }
+
+        if (!wipDisclaimerAccepted) {
+          const disclaimer = document.querySelector('.wip-disclaimer');
+          if (disclaimer) {
+            disclaimer.style.display = 'flex';
+          }
+        }
+      });
+    </script>
+
+
+    <div class="wip-disclaimer">
+      <p>This site is currently under construction, and none of the features currently work. This version of the site is online simply to test out our interfase. <br>
+      If you have any feedback, you can contact us at <a href="mailto:hi@nirdine.com">hi@nirdine.com</a>.</p>
+
+      <button class="wip-accept">Okay</button>
+    </div>
+
+    
+    
+    
     <!-- JQUERY  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
@@ -725,6 +761,8 @@
     <script type="text/javascript" src="JS/searchSuggestions.js"></script>
     <!-- CARD LIST ADDER -->
     <script type="text/javascript" src="JS/cardHolder.js"></script>
+    
+    
     <script>
       $(function() {
         $(document).tooltip();

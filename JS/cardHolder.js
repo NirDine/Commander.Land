@@ -43,30 +43,25 @@ window.addEventListener('load', setTrackerTotals);
 
 const addCard = (card) => {
   const cardName = card.dataset.cardName;
-  let cardColors = card.dataset.colors.split(',');
-  let cardAdds = card.dataset.adds;
-  let colorCountsDoubleCount;
-  if (cardAdds) {
-    cardAdds = cardAdds.split(',');
-    cardAdds.forEach(color => {
-      if (colorCountsDoubleCount.has(color)) {
-        colorCountsDoubleCount.set(color, colorCountsDoubleCount.get(color) + 1);
-      } else {
-        colorCountsDoubleCount.set(color, 1);
-      }
-    });
-    cardColors = cardColors.concat(cardAdds);
+  let cardColors;
+  let cardAdds;
+
+  if (card.dataset.adds) {
+    cardAdds = card.dataset.adds.split(',');
+    cardColors = cardAdds;
+  } else {
+    cardColors = card.dataset.colors.split(',');
+    cardAdds = [];
   }
+
   if (selectedCards.has(cardName)) {
     selectedCards.delete(cardName);
     card.classList.remove('selected', 'active');
     document.querySelector(`.addedCard[data-card-name="${cardName}"]`).remove();
-    cardColors.forEach(color => {
-      colorCounts.set(color, colorCounts.get(color) - 1);
-      if (colorCountsDoubleCount.has(color)) {
-        colorCountsDoubleCount.set(color, colorCountsDoubleCount.get(color) - 1);
-      }
-    });
+    cardAdds.forEach(color => colorCounts.set(color, colorCounts.get(color) - 1));
+    if (cardAdds.length === 0) {
+      cardColors.forEach(color => colorCounts.set(color, colorCounts.get(color) - 1));
+    }
   } else {
     selectedCards.add(cardName);
     card.classList.add('selected');
@@ -74,31 +69,34 @@ const addCard = (card) => {
     addedCard.classList.remove('card');
     addedCard.classList.add('addedCard');
     document.querySelector('.chContainer').appendChild(addedCard);
-    cardColors.forEach(color => {
-      colorCounts.set(color, colorCounts.get(color) + 1);
-      if (colorCountsDoubleCount.has(color)) {
-        colorCountsDoubleCount.set(color, colorCountsDoubleCount.get(color) + 1);
-      }
-    });
-  }
-  cards.forEach(card => {
-    let cardColors = card.dataset.colors.split(',');
-    let cardAdds = card.dataset.adds;
-    if (cardAdds) {
-      cardAdds = cardAdds.split(',');
-      cardColors = cardColors.concat(cardAdds);
+    cardAdds.forEach(color => colorCounts.set(color, colorCounts.get(color) + 1));
+    if (cardAdds.length === 0) {
+      cardColors.forEach(color => colorCounts.set(color, colorCounts.get(color) + 1));
     }
+  }
+
+  cards.forEach(card => {
+    let cardColors;
+    let cardAdds;
+
+    if (card.dataset.adds) {
+      cardAdds = card.dataset.adds.split(',');
+      cardColors = cardAdds;
+    } else {
+      cardColors = card.dataset.colors.split(',');
+      cardAdds = [];
+    }
+
     const shouldShowCard = Array.from(selectedColorCheckboxes).every(checkbox => !checkbox.checked || cardColors.includes(checkbox.value));
     const addedCard = document.querySelector(`.addedCard[data-card-name="${card.dataset.cardName}"]`);
     card.classList.toggle('hide-card', !shouldShowCard);
     if (addedCard) addedCard.classList.toggle('hide-card', !shouldShowCard);
   });
+
   updateCardsVisibility();
   updateProgressBar();
   console.log(colorCounts);
-  console.log(colorCountsDoubleCount);
 };
-
 
 
 const removeAddedCard = (addedCard) => {
@@ -108,12 +106,23 @@ const removeAddedCard = (addedCard) => {
   const correspondingCard = document.querySelector(`.card[data-card-name="${cardName}"]`);
   if (correspondingCard) {
     correspondingCard.classList.remove('selected');
+    const cardAdds = correspondingCard.dataset.adds ? correspondingCard.dataset.adds.split(',') : [];
     const cardColors = correspondingCard.dataset.colors.split(',');
-    cardColors.forEach(color => colorCounts.set(color, colorCounts.get(color) - 1));
+    cardAdds.forEach(color => colorCounts.set(color, colorCounts.get(color) - 1));
+    if (cardAdds.length === 0) {
+      cardColors.forEach(color => colorCounts.set(color, colorCounts.get(color) - 1));
+    }
+  }
+  // remove .selected class from corresponding .card element if it exists
+  const selectedCard = document.querySelector(`.card.selected[data-card-name="${cardName}"]`);
+  if (selectedCard) {
+    selectedCard.classList.remove('selected');
   }
   updateProgressBar();
   console.log(colorCounts);
 };
+
+
 
 document.querySelector('.chContainer').addEventListener('click', (event) => {
   const addedCard = event.target.closest('.addedCard');
@@ -150,9 +159,6 @@ function updateProgressBar() {
     }
   });
 }
-
-
-
 
 
 

@@ -823,11 +823,13 @@ body.buffet:has(#cardHolderInput:checked) {
 }
 
 .chFooter ul .tracker span total {
-
+    position: absolute;
+    font-size: 0.8em;
 }
 
 .chFooter ul .tracker span total::before {
-     content: '/'
+     content: '/';
+         font-size: 1em;
 }
 
 .progress {

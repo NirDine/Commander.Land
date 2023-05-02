@@ -42,54 +42,85 @@ window.addEventListener('load', setTrackerTotals);
 
 
 const addCard = (card) => {
-    const cardName = card.dataset.cardName;
-    const cardColors = card.dataset.colors.split(',');
-
-    if (selectedCards.has(cardName)) {
-        selectedCards.delete(cardName);
-        card.classList.remove('selected', 'active');
-        document.querySelector(`.addedCard[data-card-name="${cardName}"]`).remove();
-        cardColors.forEach(color => colorCounts.set(color, colorCounts.get(color) - 1));
-    } else {
-        selectedCards.add(cardName);
-        card.classList.add('selected');
-        const addedCard = card.cloneNode(true);
-        addedCard.classList.remove('card');
-        addedCard.classList.add('addedCard');
-        document.querySelector('.chContainer').appendChild(addedCard);
-        cardColors.forEach(color => colorCounts.set(color, colorCounts.get(color) + 1));
-    }
-
-    cards.forEach(card => {
-        const cardColors = card.dataset.colors.split(',');
-        const shouldShowCard = Array.from(selectedColorCheckboxes).every(checkbox => !checkbox.checked || cardColors.includes(checkbox.value));
-        const addedCard = document.querySelector(`.addedCard[data-card-name="${card.dataset.cardName}"]`);
-        card.classList.toggle('hide-card', !shouldShowCard);
-        if (addedCard) addedCard.classList.toggle('hide-card', !shouldShowCard);
+  const cardName = card.dataset.cardName;
+  let cardColors = card.dataset.colors.split(',');
+  let cardAdds = card.dataset.adds;
+  let colorCountsDoubleCount;
+  if (cardAdds) {
+    cardAdds = cardAdds.split(',');
+    cardAdds.forEach(color => {
+      if (colorCountsDoubleCount.has(color)) {
+        colorCountsDoubleCount.set(color, colorCountsDoubleCount.get(color) + 1);
+      } else {
+        colorCountsDoubleCount.set(color, 1);
+      }
     });
-
-    updateCardsVisibility();
-    updateProgressBar();
-    console.log(colorCounts);
+    cardColors = cardColors.concat(cardAdds);
+  }
+  if (selectedCards.has(cardName)) {
+    selectedCards.delete(cardName);
+    card.classList.remove('selected', 'active');
+    document.querySelector(`.addedCard[data-card-name="${cardName}"]`).remove();
+    cardColors.forEach(color => {
+      colorCounts.set(color, colorCounts.get(color) - 1);
+      if (colorCountsDoubleCount.has(color)) {
+        colorCountsDoubleCount.set(color, colorCountsDoubleCount.get(color) - 1);
+      }
+    });
+  } else {
+    selectedCards.add(cardName);
+    card.classList.add('selected');
+    const addedCard = card.cloneNode(true);
+    addedCard.classList.remove('card');
+    addedCard.classList.add('addedCard');
+    document.querySelector('.chContainer').appendChild(addedCard);
+    cardColors.forEach(color => {
+      colorCounts.set(color, colorCounts.get(color) + 1);
+      if (colorCountsDoubleCount.has(color)) {
+        colorCountsDoubleCount.set(color, colorCountsDoubleCount.get(color) + 1);
+      }
+    });
+  }
+  cards.forEach(card => {
+    let cardColors = card.dataset.colors.split(',');
+    let cardAdds = card.dataset.adds;
+    if (cardAdds) {
+      cardAdds = cardAdds.split(',');
+      cardColors = cardColors.concat(cardAdds);
+    }
+    const shouldShowCard = Array.from(selectedColorCheckboxes).every(checkbox => !checkbox.checked || cardColors.includes(checkbox.value));
+    const addedCard = document.querySelector(`.addedCard[data-card-name="${card.dataset.cardName}"]`);
+    card.classList.toggle('hide-card', !shouldShowCard);
+    if (addedCard) addedCard.classList.toggle('hide-card', !shouldShowCard);
+  });
+  updateCardsVisibility();
+  updateProgressBar();
+  console.log(colorCounts);
+  console.log(colorCountsDoubleCount);
 };
 
+
+
 const removeAddedCard = (addedCard) => {
-    const cardName = addedCard.dataset.cardName;
-    selectedCards.delete(cardName);
-    addedCard.remove();
-    addedCard.dataset.colors.split(',').forEach(color => colorCounts.set(color, colorCounts.get(color) - 1));
-    const correspondingCard = document.querySelector(`.card[data-card-name="${cardName}"]`);
-    if (correspondingCard) {
-        correspondingCard.classList.remove('selected');
-    }
-    updateProgressBar();
-    console.log(colorCounts);
+  const cardName = addedCard.dataset.cardName;
+  selectedCards.delete(cardName);
+  addedCard.remove();
+  const correspondingCard = document.querySelector(`.card[data-card-name="${cardName}"]`);
+  if (correspondingCard) {
+    correspondingCard.classList.remove('selected');
+    const cardColors = correspondingCard.dataset.colors.split(',');
+    cardColors.forEach(color => colorCounts.set(color, colorCounts.get(color) - 1));
+  }
+  updateProgressBar();
+  console.log(colorCounts);
 };
 
 document.querySelector('.chContainer').addEventListener('click', (event) => {
-    const addedCard = event.target.closest('.addedCard');
-    if (addedCard) removeAddedCard(addedCard);
+  const addedCard = event.target.closest('.addedCard');
+  if (addedCard) removeAddedCard(addedCard);
 });
+
+
 
 
 function updateProgressBar() {
@@ -100,20 +131,28 @@ function updateProgressBar() {
   colorCounts.forEach((count, color) => {
     const percentage = totalColorCount === 0 ? 0 : Math.round(count / totalColorCount * 100);
     const progressBar = document.querySelector(`.progress-bar-${color}`);
-    progressBar.style.width = `${percentage}%`;
+    if (progressBar) {
+      progressBar.style.width = `${percentage}%`;
+      progressBar.textContent = `${percentage}%`;
+    }
 
     const currentCount = document.querySelector(`.tracker-${color} current`);
-    currentCount.textContent = count || 0;
+    if (currentCount) {
+      currentCount.textContent = count || 0;
+    }
 
     const total = document.querySelector(`.tracker-${color} total`);
     const recommendedCount = total.dataset.recommended;
-    if (currentCount.textContent >= recommendedCount) {
+    if (currentCount && currentCount.textContent === recommendedCount) {
       currentCount.classList.add('quotaFilled');
-    } else {
+    } else if (currentCount) {
       currentCount.classList.remove('quotaFilled');
     }
   });
 }
+
+
+
 
 
 

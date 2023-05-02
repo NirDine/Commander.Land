@@ -1,5 +1,6 @@
 @media only screen and (min-width: 768px) {
 
+
     body {
         overflow: auto;
         padding-top: 12%;
@@ -8,7 +9,6 @@
     header {
         padding: 20px 10% 20px 13%;
     }
-
 
     
     .bottom .explore {
@@ -20,63 +20,6 @@
         text-align: left;
     }
 
-    .color-picker {
-        display: grid;
-        grid-template:
-            'c c c'
-            'c c c'
-            'n n n';
-        grid-gap: 0.5em;
-    }
-
-    .explore .name {
-        grid-area: n;
-        margin-top: 10px;
-        text-align: center;
-    }
-
-    #combination-name {
-        padding: 5px;
-        font-size: 1.3em;
-        font-weight: 400;
-    }
-
-    .bottom {
-        flex-direction: column-reverse;
-    }
-
-    .bottom .mana label {
-        display: inline-flex;
-        padding: 25px;
-        background: #ffffff14;
-        border-radius: 20px;
-        border: 2px solid #0000006e;
-
-    }
-
-    .mana:has(input[type="checkbox"]:checked) label {
-        background: #4f1e37;
-        border-color: var(--accent);
-    }
-
-    .bottom .button input {
-
-        width: auto;
-
-    }
-
-    .backdrop, textarea {
-        height: 50vh;
-    }
-
-
-    #combination-name {
-        visibility: hidden;
-    }
-
-    .color-picker:has(input:checked) #combination-name {
-        visibility: visible;
-    }
     
     footer {
         display: grid;
@@ -96,15 +39,10 @@
     footer ul {
 
     flex-direction: row;
-        flex-wrap: wrap;
+
 
     }
-    
-    footer div div:has(ul.socials) {
-
-    flex-direction: row;
-
-    }
+   
     
     footer ul.socials {
     margin-bottom: 0px;
@@ -129,6 +67,46 @@
     }
 
 
+
+
+.progress {
+    
+    --bs-progress-font-size: .75rem;
+    --bs-progress-bg: var(--dark);
+    display: flex;
+    overflow: hidden;
+    font-size: var(--bs-progress-font-size);
+    background-color: var(--bs-progress-bg);
+    border-radius: 5px;
+    height: 18px;
+    width: 150px;
+    max-width: 185px;
+    margin: auto;
+
+}
+
+
+.progress-bar-striped {
+
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    height: 100%;
+}
+    
+
+.buffet .top {
+
+    flex-direction: row;
+
+}
+    
 
 
 }

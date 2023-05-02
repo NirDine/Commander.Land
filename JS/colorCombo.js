@@ -1,47 +1,45 @@
 $(document).ready(function() {
   const manaCombinations = {
-    w: "White",
-    u: "Blue",
-    b: "Black",
-    r: "Red",
-    g: "Green",
-    c: "Colorless",
-    wu: "Azorius",
-    ub: "Dimir",
-    br: "Rakdos",
-    rg: "Gruul",
-    wg: "Selesnya",
-    wb: "Orzhov",
-    ur: "Izzet",
-    bg: "Golgari",
-    wr: "Boros",
-    ug: "Simic",
-    wub: "Esper",
-    ubr: "Grixis",
-    brg: "Jund",
-    wrg: "Naya",
-    wug: "Bant",
-    wbg: "Abzan",
-    wur: "Jeskai",
-    ubg: "Sultai",
-    wbr: "Mardu",
-    urg: "Temur",
-    wubr: "Yore-Tiller",
-    ubrg: "Glint-Eye",
-    wbrg: "Dune-Brood",
-    wurg: "Ink-Treader",
-    wubg: "Witch-Maw",
-    wubrg: "All colors"
+    "w": "White",
+    "u": "Blue",
+    "b": "Black",
+    "r": "Red",
+    "g": "Green",
+    "c": "Colorless",
+    "w,u": "Azorius",
+    "u,b": "Dimir",
+    "b,r": "Rakdos",
+    "r,g": "Gruul",
+    "w,g": "Selesnya",
+    "w,b": "Orzhov",
+    "u,r": "Izzet",
+    "b,g": "Golgari",
+    "w,r": "Boros",
+    "u,g": "Simic",
+    "w,u,b": "Esper",
+    "u,b,r": "Grixis",
+    "b,r,g": "Jund",
+    "w,r,g": "Naya",
+    "w,u,g": "Bant",
+    "w,b,g": "Abzan",
+    "w,u,r": "Jeskai",
+    "u,b,g": "Sultai",
+    "w,b,r": "Mardu",
+    "u,r,g": "Temur",
+    "w,u,b,r": "Yore-Tiller",
+    "u,b,r,g": "Glint-Eye",
+    "w,b,r,g": "Dune-Brood",
+    "w,u,r,g": "Ink-Treader",
+    "w,u,b,g": "Witch-Maw",
+    "w,u,b,r,g": "All colors"
   };
 
   // Cache commonly used DOM elements
-    const $colorless = $('.colorless');
-    const $colors = $('.color');
-    const $combinationName = $('#combination-name');
-    const $textarea = $('#deckList')
-    const $explore = $('#explore');
-    const $analyze = $('#analyze');
-    
+  const $colorless = $('.colorless');
+  const $colors = $('.color');
+  const $combinationName = $('#combination-name');
+  const $explore = $('#explore');
+  let manaList = '';
 
   // Click event handler for colorless checkbox
   $colorless.on('click', function() {
@@ -55,7 +53,6 @@ $(document).ready(function() {
 
   // Click event handler for mana checkboxes
   $('.mana input[type=checkbox]').on('click', function() {
-    let manaList = '';
     let $checked = $colors.filter(':checked');
 
     // If colorless checkbox is checked, set manaList to 'c'
@@ -63,7 +60,11 @@ $(document).ready(function() {
       manaList = 'c';
     } else if ($checked.length) {
       // Build manaList from checked colored checkboxes
-      $checked.each(function() {
+      manaList = '';
+      $checked.each(function(index) {
+        if (index > 0) {
+          manaList += ',';
+        }
         manaList += this.value;
       });
     }
@@ -73,8 +74,11 @@ $(document).ready(function() {
       
     // Set combination name based on manaList
     $combinationName.html(manaCombinations[manaList]);
-
-    console.log(manaList);
+      console.log(manaList);
   });
-    
+
+  // Click event handler for explore button
+  $explore.on('click', function() {
+    window.location.href = 'buffet.html?colors=' + manaList;
+  });
 });

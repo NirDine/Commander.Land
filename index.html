@@ -15,16 +15,19 @@
     <link rel="stylesheet" href="css/theme.css">
     <link href="//cdn.jsdelivr.net/npm/mana-font@latest/css/mana.css" rel="stylesheet" type="text/css" />
 
+    <!-- JQUERY  -->
+    <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+
 </head>
 
-<body class="fallback" style="">
+<body class="fallback home" style="">
 
     <a href="#deckList" class="skipNavLink" id="skip">Skip Navigation</a>
 
     <div class="lightsOff"></div>
     <div class="container">
         <header>
-            <a href="#" class="logo" aria-label="Link to reload page">
+            <a href="/" class="logo" aria-label="Link to reload page">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1282.12 342.2">
                     <defs>
                         <style>
@@ -67,96 +70,97 @@
             <div class="toggle"></div>
             <nav class="menu">
                 <ul>
-                    <li><a href="#" style="--indexCount: 0;" id="navHome" aria-label="Link to top of the page">Home</a></li>
+                    <li><a href="/" style="--indexCount: 0;" id="navHome" aria-label="Link to top of the page">Home</a></li>
+                    <li><a href="/buffet.html" style="--indexCount: 1;" id="" aria-label="Link to By Color section">Explore</a></li>
                     <li>
                         <div class="sec-center" id="navColors">
                             <input class="dropdown parent" type="checkbox" id="dropdown" name="dropdown" />
-                            <label class="for-dropdown" for="dropdown" style="--indexCount: 1;" aria-label="Link to By Color section">By color</label>
+                            <label class="for-dropdown" for="dropdown" style="--indexCount: 2;" aria-label="Link to By Color section">By color</label>
                             <div class="section-dropdown">
                                 <input class="dropdown-sub" type="checkbox" id="dropdown-sub1" name="dropdown-sub1" />
                                 <label class="for-dropdown-sub" for="dropdown-sub1">1 Color</label>
                                 <div class="section-dropdown-sub">
-                                    <a href="#"><i class="ms ms-w"></i> White</a>
-                                    <a href="#"><i class="ms ms-u"></i> Blue</a>
-                                    <a href="#"><i class="ms ms-b"></i> Black</a>
-                                    <a href="#"><i class="ms ms-r"></i> Red</a>
-                                    <a href="#"><i class="ms ms-g"></i> Green</a>
-                                    <a href="#"><i class="ms ms-c"></i> Colorless</a>
+                                    <a href="/buffet.html?colors=w"><i class="ms ms-w"></i> White</a>
+                                    <a href="/buffet.html?colors=u"><i class="ms ms-u"></i> Blue</a>
+                                    <a href="/buffet.html?colors=b"><i class="ms ms-b"></i> Black</a>
+                                    <a href="/buffet.html?colors=r"><i class="ms ms-r"></i> Red</a>
+                                    <a href="/buffet.html?colors=g"><i class="ms ms-g"></i> Green</a>
+                                    <a href="/buffet.html?colors=c"><i class="ms ms-c"></i> Colorless</a>
                                 </div>
                                 <input class="dropdown-sub" type="checkbox" id="dropdown-sub2" name="dropdown-sub2" />
                                 <label class="for-dropdown-sub" for="dropdown-sub2">2 Colors</label>
                                 <div class="section-dropdown-sub">
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=w,u">
                                         <i class="ms ms-w"></i>
                                         <i class="ms ms-u"></i>Azorius</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=u,b">
                                         <i class="ms ms-u"></i>
                                         <i class="ms ms-b"></i>Dimir</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=b,r">
                                         <i class="ms ms-b"></i>
                                         <i class="ms ms-r"></i>Rakdos</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=r,g">
                                         <i class="ms ms-r"></i>
                                         <i class="ms ms-g"></i>Gruul</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=w,g">
                                         <i class="ms ms-w"></i>
                                         <i class="ms ms-g"></i>Selesnya</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=w,b">
                                         <i class="ms ms-w"></i>
                                         <i class="ms ms-b"></i>Orzhov</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=u,r">
                                         <i class="ms ms-u"></i>
                                         <i class="ms ms-r"></i>Izzet</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=b,g">
                                         <i class="ms ms-b"></i>
                                         <i class="ms ms-g"></i>Golgari</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=w,r">
                                         <i class="ms ms-w"></i>
                                         <i class="ms ms-r"></i>Boros</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=u,g">
                                         <i class="ms ms-u"></i>
                                         <i class="ms ms-g"></i>Simic</a>
                                 </div>
                                 <input class="dropdown-sub" type="checkbox" id="dropdown-sub3" name="dropdown-sub3" />
                                 <label class="for-dropdown-sub" for="dropdown-sub3">3 Colors</label>
                                 <div class="section-dropdown-sub">
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=w,u,b">
                                         <i class="ms ms-w"></i>
                                         <i class="ms ms-u"></i>
                                         <i class="ms ms-b"></i> Esper</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=u,b,r">
                                         <i class="ms ms-u"></i>
                                         <i class="ms ms-b"></i>
                                         <i class="ms ms-r"></i> Grixis</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=b,r,g">
                                         <i class="ms ms-b"></i>
                                         <i class="ms ms-r"></i>
                                         <i class="ms ms-g"></i> Jund</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=w,r,g">
                                         <i class="ms ms-r"></i>
                                         <i class="ms ms-g"></i>
                                         <i class="ms ms-w"></i> Naya</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=w,u,g">
                                         <i class="ms ms-g"></i>
                                         <i class="ms ms-w"></i>
                                         <i class="ms ms-u"></i> Bant</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=w,b,g">
                                         <i class="ms ms-w"></i>
                                         <i class="ms ms-b"></i>
                                         <i class="ms ms-g"></i> Abzan</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=w,u,r">
                                         <i class="ms ms-u"></i>
                                         <i class="ms ms-r"></i>
                                         <i class="ms ms-w"></i> Jeskai</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=u,g,b">
                                         <i class="ms ms-b"></i>
                                         <i class="ms ms-g"></i>
                                         <i class="ms ms-u"></i> Sultai</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=w,b,r">
                                         <i class="ms ms-r"></i>
                                         <i class="ms ms-w"></i>
                                         <i class="ms ms-b"></i> Mardu</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=u,r,g">
                                         <i class="ms ms-g"></i>
                                         <i class="ms ms-u"></i>
                                         <i class="ms ms-r"></i> Temur</a>
@@ -164,37 +168,36 @@
                                 <input class="dropdown-sub" type="checkbox" id="dropdown-sub4" name="dropdown-sub4" />
                                 <label class="for-dropdown-sub" for="dropdown-sub4">4 Colors</label>
                                 <div class="section-dropdown-sub">
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=w,u,b,r">
                                         <i class="ms ms-w"></i>
                                         <i class="ms ms-u"></i>
                                         <i class="ms ms-b"></i>
                                         <i class="ms ms-r"></i> Yore-Tiller</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=u,b,r,g">
                                         <i class="ms ms-u"></i>
                                         <i class="ms ms-b"></i>
                                         <i class="ms ms-r"></i>
                                         <i class="ms ms-g"></i> Glint-Eye</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=w,b,r,g">
                                         <i class="ms ms-b"></i>
                                         <i class="ms ms-r"></i>
                                         <i class="ms ms-g"></i>
                                         <i class="ms ms-w"></i> Dune-Brood</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=w,u,r,g">
                                         <i class="ms ms-r"></i>
                                         <i class="ms ms-g"></i>
                                         <i class="ms ms-w"></i>
                                         <i class="ms ms-u"></i> Ink-Treader</a>
-                                    <a href="#">
+                                    <a href="/buffet.html?colors=w,u,b,g">
                                         <i class="ms ms-g"></i>
                                         <i class="ms ms-w"></i>
                                         <i class="ms ms-u"></i>
                                         <i class="ms ms-b"></i> Witch-Maw</a>
                                 </div>
-                                <a href="#">All colors</a>
+                                <a href="/buffet.html?colors=w,u,b,r,g">All colors</a>
                             </div>
                         </div>
                     </li>
-                    <li><a href="#about" style="--indexCount: 2;" id="navColorsMobile" aria-label="Link to By Color section">By color</a></li>
                     <li class=""><a class="" href="#contact" style="--indexCount: 3;" id="navDonate" aria-label="Link to Donate section">About</a></li>
                     <li class=""><a class="" href="#contact" style="--indexCount: 4;" id="navDonate" aria-label="Link to Donate section">Donate</a></li>
                     <li class=""><a class="lastMenuOption" href="#contact" style="--indexCount: 5;" id="navContact" aria-label="Link to Contact section">Contact</a></li>
@@ -205,7 +208,11 @@
             <div class="content">
                 <div class="top">
                     <h1 class="hidden" style="--hiddenCount: 2;">Build your perfect mana base!</h1>
-                    <p class="hidden" style="--hiddenCount: 2;">Commander.Land is a Magic: The Gathering (MTG) companion tool for the Commander (EDH) format, designed to help players in the deck-building process by streamlining the construction of a reliable mana base. It allows new players and veterans alike a fast and easy way to access the vast array of the best land cards available in their colors. The tool analyzes your deck and offers suggestions tailored to your specific list for a more efficient mana base. It considers factors such as mana curves, color distribution, and land count to ensure that the deck has the appropriate amount of land and color fixing for optimal performance. Whether you're a new player looking to improve your deck or an experienced player seeking a competitive edge, Commander.Land can help you perfect your mana base and take your game to the next level!</p>
+                    <p class="hidden" style="--hiddenCount: 2;">Commander.Land is a Magic: The Gathering (MTG) companion tool for the Commander (EDH) format designed to help players in the deck-building process <strong>by streamlining the construction of a reliable mana base</strong>. 
+                    
+                    It allows new players and veterans alike a fast and easy way to access the vast array of the best land cards available in their colors. 
+                    <br>
+                    The tool analyzes your deck and offers suggestions tailored to your specific list for a more efficient mana base. It considers factors such as <strong>mana curves, color distribution, and land count</strong> to ensure that the deck has the appropriate amount of land and color fixing <strong>for optimal performance</strong>. Whether you're a new player looking to improve your deck or an experienced player seeking a competitive edge, Commander.Land can help you perfect your mana base and take your game to the next level!</p>
                 </div>
                 <div class="bottom">
                     <div class="explore">
@@ -251,7 +258,7 @@
                     <div class="analyze">
                         <div class="explain">
                             <h2 class="hidden" style="--hiddenCount: 6;">...or just let us take care of the hard part!</h2>
-                            <p class="hidden" style="--hiddenCount: 6;">Give us your decklist. We'll do some <italitcs>definitely-not-witchcraft™</italitcs> and analyze the whole thing, taking into account mana values, color distribution, non-land mana sources, and even the lands you've already added! Then, we'll give you recommendations on how many lands and colored sources you should be playing. All that's left is for you to pick them!</p>
+                            <p class="hidden" style="--hiddenCount: 6;">Give us your decklist. We'll do some <italics>definitely-not-witchcraft™</italics> and analyze the whole thing, taking into account mana values, color distribution, non-land mana sources, and even the lands you've already added! Then, we'll give you <strong>recommendations on how many lands and colored sources you should be playing</strong>. All that's left is for you to pick them!</p>
                         </div>
                         <div class="addDeck hidden" style="--hiddenCount: 7;">
                             <div class="backdrop">
@@ -276,6 +283,7 @@
             <div class="wizards">
                 <p>Commander.Land is not produced by or endorsed by Wizards of the Coast.</p>
                 <p>All card images, mana symbols, and Oracle text are copyright Wizards of the Coast and are used under the Wizards of the Coast Fan Content Policy. (<a href="https://magicthegathering.com/">https://magicthegathering.com/</a>)</p>
+                <p>Background art: Karplusan Forest from Dominaria United by Sam Burley for Wizards of the Coast. (<a href="https://twitter.com/samburleyart">@samburleyart</a>)</p>
                 <p>The Mana font by Andrew Gioia (<a href="https://mana.andrewgioia.com/">https://mana.andrewgioia.com/</a>)</p>
                 <p>The Mana font is licensed under the the SIL OFL 1.1 (<a href="http://scripts.sil.org/OFL">http://scripts.sil.org/OFL</a>)</p>
                 <p>Mana CSS, LESS, and Sass files are licensed under the MIT License (<a href="http://opensource.org/licenses/mit-license.htm">http://opensource.org/licenses/mit-license.htm</a>)</p>
@@ -285,8 +293,8 @@
             </div>
             <div class="siteMap">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">By color</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/buffet.html">Explore</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Donate</a></li>
                     <li><a href="#">Contact</a></li>
@@ -314,13 +322,9 @@
              </div>
             </div>
             <div class="copyright">
-                <span>Designed and developed by NirDine (<a href="https://nirdine.com">https://NirDine.com</a>) and NAME (LINK) <br> All other content © 2023 Commander.Land.</span>
+                <span>All other content © 2023 Commander.Land.  <br>Designed and developed by NirDine (<a href="https://nirdine.com">https://NirDine.com</a>) and Lau</span>
             </div>
         </footer>
-  
-   
-    <!-- JQUERY  -->
-    <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
 
     <!-- MOBILE MENU HANDLER -->
     <script type="text/javascript" src="JS/menuHandler.js"></script>

@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1200px) {
 
     :root {}
-
+    
     html {
 
         scroll-padding-top: 87.39;
@@ -32,7 +32,6 @@
     .container {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         width: 80%;
     }
 
@@ -70,6 +69,12 @@
         display: none;
     }
 
+    
+    .menu ul li a{
+        border-top: 0px;
+        
+    }
+    
     .skipNavLink,
     .menu ul li:hover,
     .menu ul li:focus-within {
@@ -134,87 +139,14 @@
         display: block;
     }
     
-    #navColors {
+    #navColors, .filters {
         position: relative;
         max-width: 100%;
         text-align: center;
         z-index: 200;
     }
+    
 
-    #navColorsMobile {
-        display: none;
-    }
-
-
-
-    .dropdown:checked+label,
-    .dropdown:not(:checked)+label {
-        position: relative;
-
-        transition: all 200ms linear;
-
-        display: -webkit-inline-flex;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-
-        cursor: pointer;
-
-    }
-
-    .dropdown:checked+label:before,
-    .dropdown:not(:checked)+label:before {
-        position: fixed;
-        top: 0;
-        left: 0;
-        content: '';
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        cursor: auto;
-        pointer-events: none;
-    }
-
-    .dropdown:checked+label:before {
-        pointer-events: auto;
-    }
-
-
-    .section-dropdown {
-        position: absolute;
-        padding: 5px;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        border-radius: var(--half-bradius);
-        display: block;
-        z-index: 2;
-        opacity: 0;
-        pointer-events: none;
-        transform: translateY(20px);
-        transition: all 200ms linear;
-    }
-
-    .dropdown:checked~.section-dropdown,
-    .dropdown:focus-visible~.section-dropdown,
-    .dropdown~.section-dropdown:has(input:focus-visible),
-    .dropdown~.section-dropdown:has(a:focus-visible) {
-        opacity: 1;
-        pointer-events: auto;
-        transform: translateY(0);
-    }
-
-    .dropdown-sub:checked+label,
-    .dropdown-sub:not(:checked)+label {
-        position: relative;
-        color: #fff;
-        transition: all 200ms linear;
-        text-decoration: none;
-        display: -ms-flexbox;
-        display: flex;
-        cursor: pointer;
-        font-size: 1.3em;
-        padding: 25px 25px 14px;
-    }
 
     .menu ul li div a i+i {
         margin-left: 1px;
@@ -224,53 +156,6 @@
         margin-right: 10px;
     }
 
-    .section-dropdown-sub {
-        position: relative;
-        display: none;
-        width: 100%;
-        pointer-events: none;
-        opacity: 0;
-        max-height: 0;
-        padding-left: 10px;
-        padding-right: 3px;
-        overflow: hidden;
-        transition: all 200ms linear;
-    }
-
-    .dropdown:checked~.section-dropdown .section-dropdown-sub,
-    .dropdown:focus-visible~.section-dropdown .section-dropdown-sub,
-    .dropdown~.section-dropdown:focus-within .section-dropdown-sub,
-    .dropdown~.section-dropdown:focus-within .section-dropdown-sub {
-        display: block;
-
-    }
-
-    .dropdown-sub:checked+label+.section-dropdown-sub,
-    .dropdown-sub:focus-visible+label+.section-dropdown-sub,
-    .dropdown-sub+label+.section-dropdown-sub:focus-within {
-        opacity: 1;
-        max-height: 999px;
-        pointer-events: auto;
-
-    }
-
-
-    .section-dropdown-sub a {
-        font-size: 14px;
-    }
-
-
-    .dropdown:checked+label,
-    .dropdown:not(:checked)+label,
-    .menu ul li a {
-
-        min-width: 130px;
-        justify-content: center;
-        border-top: 0px;
-        margin-bottom: 0px;
-        padding: 1em;
-        font-weight: 300;
-    }
 
     .menu ul li div a {
         justify-content: flex-start;
@@ -278,7 +163,7 @@
 
 
     .section-dropdown {
-        width: 200%;
+        width: 210%;
     }
 
 
@@ -294,11 +179,6 @@
         width: auto;
 
     }
-
-
-
-
-
 
     main {
         z-index: 2;
@@ -326,8 +206,8 @@
     }
     
  
-    .color-picker:not(:has(input:checked)) .mana.show,
-    .analyze .addDeck:has(textarea:not(:placeholder-shown)) ~ .button input:not(:disabled),
+    .home .color-picker:not(:has(input:checked)) .mana.show,
+    .home .analyze .addDeck:has(textarea:not(:placeholder-shown)) ~ .button input:not(:disabled),
     .explore .color-picker:has(input:checked) ~ .button input {
             -webkit-animation-duration: 1s;
             animation-duration: 1s;
@@ -349,6 +229,15 @@
              -webkit-animation-name: none; 
             animation-name: none; 
          }
+        
+        .color-picker:not(:has(input:checked)) .mana.show,
+        .analyze .addDeck:has(textarea:not(:placeholder-shown)) ~ .button input:not(:disabled),
+        .explore .color-picker:has(input:checked) ~ .button input {
+
+            -webkit-animation-name: none; 
+            animation-name: none; 
+
+        }
     }
     
     
@@ -356,39 +245,91 @@
     .show {
         opacity: 1;
         transform: translateX(0);
-    }
-    
-    
-    
-    
-    
-    
-    
+    }  
     
     footer {
         z-index: 2;
+        margin-top: 2em;
+    }
+
+ 
+    footer div div:has(ul.socials) {
+
+    flex-direction: row;
+
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .filters .section-dropdown {
+
+        margin-top: 0.25em;
+    }
+    
+    
+    
+    
+.buffet-filters .color-picker {
+    grid-template:
+    'c c c c c c c';
+     margin-right: 0;
+}
+    
+
+
+    .buffet-filters:has(#mobileColorFilters) {
+        position: static;
+        margin-left: 0px;
+    }
+    
+    
+    .searchbox {
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .searchBox #search {
+    width: auto;
+    }
+    
+    .filters .section-dropdown .filter-picker {
+        grid-template:
+        'c c c'
+        'c c c';
+    }
+    
+    
+    .filters .section-dropdown {
+        width:auto;
+        top: 70px;
+        right: auto;
+        left: auto;
     }
 
 
 
+    
+    
+    
+    
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     @keyframes tilt-shaking {
       0% { transform: rotate(0deg); }
       25% { transform: rotate(5deg); }
@@ -402,5 +343,14 @@
         40% {transform: translateY(-15px);} 
         60% {transform: translateY(-7.5px);} 
     } 
+
+    
+    .desktop { 
+    display: flex;
+    }
+    
+    .mobile { 
+    display: none;
+    }
 
 }

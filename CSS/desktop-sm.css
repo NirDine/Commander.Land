@@ -81,5 +81,12 @@
 
   .buffet .top {
     flex-direction: row;
+    padding-inline: 0.5em;
   }
+    
+    
+    .buffet .container {
+        width: 100%;
+    }
+    
 }

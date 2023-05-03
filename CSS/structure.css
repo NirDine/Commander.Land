@@ -630,7 +630,7 @@ mark {
 .buffet .top {
   display: flex;
   justify-content: space-between;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   gap: 0.5em;
 }
@@ -668,7 +668,7 @@ mark {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  margin-right: 0.5em;
+
 }
 
 .filters .section-dropdown {
@@ -702,6 +702,36 @@ mark {
   border-color: rgba(0, 0, 0, 0.43);
 }
 
+
+@media only screen and (min-width: 320px) { 
+    .buffet .top {
+        flex-direction: column;
+    }
+    
+    .buffet .buffet-filters .right {
+        width: max-content;
+    }
+    .buffet #search {
+        width: 15em;
+    }
+}
+
+@media only screen and (min-width: 375px) { 
+    .buffet .top {
+        flex-direction: column;
+    }
+    
+    .buffet-filters.right .color-picker {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .buffet .searchBox {
+        width: 70%
+    }
+    .buffet #search {
+        width: -webkit-fill-available;
+    }
+}
 .cardSuggestions {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(244px, 1fr));
@@ -811,26 +841,35 @@ body.buffet:has(#cardHolderInput:checked) {
   align-items: center;
   padding-inline: 15px;
   width: calc(100% / 7);
+    opacity: 0.5;
+}
+
+.chFooter ul .tracker:has(.hasMana),
+.chFooter ul .tracker:has(.recommended) {
+    opacity: 1;
 }
 
 .chFooter ul .tracker i {
-  padding-inline: 5px;
+  padding-inline: 6px;
 }
 
-.chFooter ul .tracker span {
+.chFooter ul .tracker span:has(.current) {
   margin-right: 0.5em;
   font-size: 0.7em;
 }
 
-.chFooter ul .tracker span total {
+.chFooter ul .tracker span .total {
     position: absolute;
     font-size: 0.8em;
 }
 
-.chFooter ul .tracker span total::before {
+.chFooter ul .tracker span .total::before {
      content: '/';
-         font-size: 1em;
+     font-size: 1em;
 }
+
+
+
 
 .progress {
   display: none;
@@ -838,6 +877,8 @@ body.buffet:has(#cardHolderInput:checked) {
 
 
 .chContainer {
+  display: flex;
+    justify-content: space-between;
   height: 400px;
   width: 100%;
   background-color: var(--dark);
@@ -845,10 +886,76 @@ body.buffet:has(#cardHolderInput:checked) {
   width: 100%;
   pointer-events: none;
   opacity: 0;
-  overflow-x: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(244px, 1fr));
-  gap: 1em;
+
+}
+
+.chCardWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(244px, auto));
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+    grid-column-gap: 0.25em;
+    grid-row-gap: 1em;
+    width: 100%;
+    overflow: auto;
+    
+}
+
+.chCardWrapper .combination {
+    display: none;
+}
+
+.chCardWrapper .combination:has(.addedCard){
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.chCardWrapper h3 {
+    background: var(--mainBG);
+}
+
+.chCardWrapper h3,
+.chCardWrapper li {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0.5em;
+    margin: 0.5em 0.5em 0.5em 0em;
+    color: var(--contrast);
+}
+
+.chCardWrapper li::after {
+    content: '';
+    background: url(/img/buttons/close-contrast.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+    top: -0.3em;
+    right: 1em;
+    transition: right 0.5s;
+}
+
+
+.chCardWrapper h3 .total::before {
+    content: '('
+}
+
+.chCardWrapper h3 .total::after {
+    content: ')'
+}
+
+
+
+
+
+
+
+
+.chUserActionContainer {
+    width: 20em;
+    background: red;
+    z-index: 999999;
 }
 
 #cardHolder:has(.dropdown-sub:checked) {

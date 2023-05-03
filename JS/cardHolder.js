@@ -27,10 +27,11 @@ const cards = document.querySelectorAll('.card');
 
 
 function setTrackerTotals() {
-  const trackerTotals = document.querySelectorAll('[class^="tracker tracker-"] total');
+  const trackerTotals = document.querySelectorAll('[class^="tracker tracker-"] .total');
   trackerTotals.forEach(total => {
     const recommendedCount = total.dataset.recommended;
     if (recommendedCount) {
+      total.classList.add('recommended');
       total.textContent = recommendedCount;
     } else {
      total.style.display = 'none';
@@ -54,10 +55,17 @@ const addCard = (card) => {
     cardAdds = [];
   }
 
+
   if (selectedCards.has(cardName)) {
     selectedCards.delete(cardName);
     card.classList.remove('selected', 'active');
-    document.querySelector(`.addedCard[data-card-name="${cardName}"]`).remove();
+     if (card.dataset.adds) {
+          cardColors = card.dataset.colors.split(',');
+      }
+    const addedCard = document.querySelector(`[data-combination*="${cardColors.join('')}"] .addedCard[data-card-name="${cardName}"]`);
+    addedCard.remove();
+    const totalElement = document.querySelector(`[data-combination*="${cardColors.join('')}"] h3 .total`);
+    totalElement.textContent = parseInt(totalElement.textContent) - 1;
     cardAdds.forEach(color => colorCounts.set(color, colorCounts.get(color) - 1));
     if (cardAdds.length === 0) {
       cardColors.forEach(color => colorCounts.set(color, colorCounts.get(color) - 1));
@@ -65,42 +73,43 @@ const addCard = (card) => {
   } else {
     selectedCards.add(cardName);
     card.classList.add('selected');
-    const addedCard = card.cloneNode(true);
-    addedCard.classList.remove('card');
+      if (card.dataset.adds) {
+          cardColors = card.dataset.colors.split(',');
+      }
+    const cardCombination = cardColors.sort((a, b) => "wubrgc".indexOf(a) - "wubrgc".indexOf(b)).join('');
+    let cardWrapper = document.querySelector(`[data-combination*="${cardCombination}"]`);
+    if (!cardWrapper) {
+      cardWrapper = document.createElement('div');
+      cardWrapper.dataset.combination = cardCombination;
+      cardWrapper.innerHTML = `
+        <h3>${cardColors.map(color => `Category not found `).join('')}<total>0</total></h3>
+        <ul></ul>
+      `;
+      document.querySelector('.chCardWrapper').appendChild(cardWrapper);
+    }
+    const addedCard = document.createElement('li');
     addedCard.classList.add('addedCard');
-    document.querySelector('.chContainer').appendChild(addedCard);
+    addedCard.dataset.cardName = card.dataset.cardName;
+    addedCard.dataset.colors = card.dataset.colors;
+    addedCard.textContent = card.dataset.cardName;
+    cardWrapper.querySelector('ul').appendChild(addedCard);
+    const totalElement = cardWrapper.querySelector('h3 .total');
+    totalElement.textContent = parseInt(totalElement.textContent) + 1;
     cardAdds.forEach(color => colorCounts.set(color, colorCounts.get(color) + 1));
     if (cardAdds.length === 0) {
       cardColors.forEach(color => colorCounts.set(color, colorCounts.get(color) + 1));
     }
   }
 
-  cards.forEach(card => {
-    let cardColors;
-    let cardAdds;
-
-    if (card.dataset.adds) {
-      cardAdds = card.dataset.adds.split(',');
-      cardColors = cardAdds;
-    } else {
-      cardColors = card.dataset.colors.split(',');
-      cardAdds = [];
-    }
-
-    const shouldShowCard = Array.from(selectedColorCheckboxes).every(checkbox => !checkbox.checked || cardColors.includes(checkbox.value));
-    const addedCard = document.querySelector(`.addedCard[data-card-name="${card.dataset.cardName}"]`);
-    card.classList.toggle('hide-card', !shouldShowCard);
-    if (addedCard) addedCard.classList.toggle('hide-card', !shouldShowCard);
-  });
-
   updateCardsVisibility();
   updateProgressBar();
-  console.log(colorCounts);
+
 };
 
 
 const removeAddedCard = (addedCard) => {
   const cardName = addedCard.dataset.cardName;
+  const cardColors = addedCard.dataset.colors;
   selectedCards.delete(cardName);
   addedCard.remove();
   const correspondingCard = document.querySelector(`.card[data-card-name="${cardName}"]`);
@@ -108,23 +117,37 @@ const removeAddedCard = (addedCard) => {
     correspondingCard.classList.remove('selected');
     const cardAdds = correspondingCard.dataset.adds ? correspondingCard.dataset.adds.split(',') : [];
     const cardColors = correspondingCard.dataset.colors.split(',');
+
     cardAdds.forEach(color => colorCounts.set(color, colorCounts.get(color) - 1));
     if (cardAdds.length === 0) {
       cardColors.forEach(color => colorCounts.set(color, colorCounts.get(color) - 1));
     }
   }
+
+    
+  // Sort cardColors before using it to find the corresponding colorList
+  const sortedCardColors = cardColors.split(',').sort((a, b) => "wubrgc".indexOf(a) - "wubrgc".indexOf(b)).join('');
+
+  // Update the list with the corresponding cardColors
+  const colorList = document.querySelector(`div[data-combination="${sortedCardColors}"] ul`);
+  if (colorList) {
+    const totalElement = document.querySelector(`[data-combination*="${sortedCardColors}"] h3 .total`);
+    totalElement.textContent = parseInt(totalElement.textContent) - 1;
+  }
+
   // remove .selected class from corresponding .card element if it exists
   const selectedCard = document.querySelector(`.card.selected[data-card-name="${cardName}"]`);
   if (selectedCard) {
     selectedCard.classList.remove('selected');
   }
   updateProgressBar();
-  console.log(colorCounts);
 };
 
 
 
-document.querySelector('.chContainer').addEventListener('click', (event) => {
+
+
+document.querySelector('.chCardWrapper').addEventListener('click', (event) => {
   const addedCard = event.target.closest('.addedCard');
   if (addedCard) removeAddedCard(addedCard);
 });
@@ -141,18 +164,24 @@ function updateProgressBar() {
     const percentage = totalColorCount === 0 ? 0 : Math.round(count / totalColorCount * 100);
     const progressBar = document.querySelector(`.progress-bar-${color}`);
     if (progressBar) {
+        if (count != 0) {
+            progressBar.classList.add('hasMana');
+        }
+        else {
+            progressBar.classList.remove('hasMana');
+        }
       progressBar.style.width = `${percentage}%`;
       progressBar.textContent = `${percentage}%`;
     }
 
-    const currentCount = document.querySelector(`.tracker-${color} current`);
+    const currentCount = document.querySelector(`.tracker-${color} .current`);
     if (currentCount) {
       currentCount.textContent = count || 0;
     }
 
-    const total = document.querySelector(`.tracker-${color} total`);
+    const total = document.querySelector(`.tracker-${color} .total`);
     const recommendedCount = total.dataset.recommended;
-    if (currentCount && currentCount.textContent === recommendedCount) {
+    if (currentCount && currentCount.textContent >= recommendedCount) {
       currentCount.classList.add('quotaFilled');
     } else if (currentCount) {
       currentCount.classList.remove('quotaFilled');

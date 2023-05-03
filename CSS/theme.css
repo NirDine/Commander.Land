@@ -140,7 +140,7 @@ footer ul li a:hover,
 footer ul li a:focus-visible,
 footer p a:focus-visible,
 footer p a:hover,
-.quotaFilled {
+.chFooter span:has(.quotaFilled) span {
   color: var(--accent);
   transition-duration: 0.15s;
 }
@@ -239,8 +239,8 @@ span#combination-name {
 
 /* The mobile labels were a problem for the updateFiltersFromUrl script, so I had to somehow use the same inputs. To ensure that when the original inputs are checks, the mobile inputs are also correctly styled, I added this "temoprary" code. */
 
-/*  PARENT */
-.buffet-filters:has(input[type="checkbox"]:checked) .filters  label.mobileColorTarget,
+/*  PARENT COLORS */
+.buffet-filters:has(input[type="checkbox"]:checked:not(.parent):not(.property)) .filters  label.mobileColorTarget,
 
 /*  WHITE */
 .buffet-filters:has(#mana-w:checked) .section-dropdown label.mana-w,

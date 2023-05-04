@@ -375,7 +375,7 @@ footer ul.socials {
 }
 
 footer ul li {
-  flex-basis: calc((100% -4px) / 5);
+  flex-basis: calc((100% -3px) / 4);
   min-width: 100px;
   padding: 1em 0em;
   display: flex;
@@ -491,7 +491,7 @@ li:has(#navColors) {
   display: inline-flex;
   padding: 25px;
   background: #ffffff14;
-  border-radius: 20px;
+  border-radius: var(--bradius);
   border: 2px solid #0000006e;
 }
 
@@ -650,12 +650,22 @@ mark {
 
 .filters .section-dropdown {
   width: auto;
-  border-radius: 20px;
+  border-radius: var(--bradius)
 }
 
 .buffet-filters .color-picker {
   grid-template: "c c";
 }
+
+
+.mana:has(.isAdded) {
+    /* ACA  display: none; */
+}
+
+.mana.hasCards:has(.isAdded) {
+    display: flex;
+}
+
 
 .filters .section-dropdown .filter-picker {
   display: grid;
@@ -692,46 +702,16 @@ mark {
 }
 
 .buffet #search {
-  border-radius: 20px;
+  border-radius: var(--bradius);
   color: var(--contrast);
   padding: 25px;
   background: rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
   border-width: 2px;
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.43);
 }
 
 
-@media only screen and (min-width: 320px) { 
-    .buffet .top {
-        flex-direction: column;
-    }
-    
-    .buffet .buffet-filters .right {
-        width: max-content;
-    }
-    .buffet #search {
-        width: 15em;
-    }
-}
-
-@media only screen and (min-width: 375px) { 
-    .buffet .top {
-        flex-direction: column;
-    }
-    
-    .buffet-filters.right .color-picker {
-        width: 100%;
-        flex-wrap: nowrap;
-    }
-    .buffet .searchBox {
-        width: 70%
-    }
-    .buffet #search {
-        width: -webkit-fill-available;
-    }
-}
 .cardSuggestions {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(244px, 1fr));
@@ -827,6 +807,7 @@ body.buffet:has(#cardHolderInput:checked) {
   border-top: 2px solid #eef2ff0f;
   padding: 18px 10%;
   min-height: 3em;
+  border-bottom:1px solid #00000010;
 }
 
 .chFooter ul {
@@ -875,34 +856,43 @@ body.buffet:has(#cardHolderInput:checked) {
   display: none;
 }
 
+.totalCards {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
 
 .chContainer {
   display: flex;
     justify-content: space-between;
   height: 400px;
   width: 100%;
-  background-color: var(--dark);
   position: relative;
   width: 100%;
   pointer-events: none;
   opacity: 0;
-
+  background-color: var(--mainBG);
 }
 
 .chCardWrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(244px, auto));
-    grid-auto-rows: 100px;
-    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(244px, auto));
     grid-column-gap: 0.25em;
     grid-row-gap: 1em;
     width: 100%;
     overflow: auto;
-    
+    background-color: var(--dark);
+    border-top-right-radius: 20px;
 }
 
 .chCardWrapper .combination {
     display: none;
+}
+
+.chCardWrapper .combination ul {
+    background: #26272e;
+    margin-inline: 0.5em;
 }
 
 .chCardWrapper .combination:has(.addedCard){
@@ -911,18 +901,23 @@ body.buffet:has(#cardHolderInput:checked) {
     
 }
 
-.chCardWrapper h3 {
-    background: var(--mainBG);
-}
 
 .chCardWrapper h3,
 .chCardWrapper li {
     display: flex;
     justify-content: space-between;
     padding: 1em 0.5em;
-    margin: 0.5em 0.5em 0.5em 0em;
+    margin-inline: 0.5em;
+    border-radius: var(--bradius) var(--bradius) 0px 0px;
     color: var(--contrast);
 }
+
+.chCardWrapper h3 {
+    background: var(--mainBG);
+    margin-top: 0.5em;
+    padding-inline: 0.75em;
+}
+
 
 .chCardWrapper li::after {
     content: '';
@@ -931,8 +926,11 @@ body.buffet:has(#cardHolderInput:checked) {
     background-size: 25px;
     background-position: center;
     cursor: pointer;
-    top: -0.3em;
-    right: 1em;
+    height: 0.5em;
+    width: 0.5em;
+    top: 0.25em;
+    right: auto;
+    position: relative;
     transition: right 0.5s;
 }
 
@@ -954,9 +952,49 @@ body.buffet:has(#cardHolderInput:checked) {
 
 .chUserActionContainer {
     width: 20em;
-    background: red;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #26272e;
     z-index: 999999;
 }
+
+.chUserActionContainer ul:first-child {
+    display: flex;
+}
+
+
+.chUserActionContainer ul li:not(.undo) {
+    width: 100%;
+    width: -moz-available;          /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+    width: fill-available;
+
+}
+
+.chUserActionContainer ul:first-child li:has(.undo)  {
+    transform: rotate(270deg);
+    width:70px;
+
+
+}
+
+
+.chUserActionContainer ul:first-child button:has(.undo) {
+
+
+}
+
+.userAction {
+    width: 100%;
+    padding: 1.5em;
+    background: var(--mainBG);
+    color: var(--contrast);
+    border: 0px;
+    cursor: pointer;
+}
+
+
 
 #cardHolder:has(.dropdown-sub:checked) {
   bottom: 0px;
@@ -965,6 +1003,71 @@ body.buffet:has(#cardHolderInput:checked) {
   opacity: 1;
   pointer-events: auto;
 }
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 320px) { 
+    .buffet .top {
+        flex-direction: column;
+    }
+    
+    .buffet .buffet-filters .right {
+        width: max-content;
+    }
+    .buffet #search {
+        width: 15em;
+    }
+    
+    .chCardWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+@media only screen and (max-width: 375px) { 
+    .buffet .top {
+        flex-direction: column;
+    }
+    
+    .buffet-filters.right .color-picker {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .buffet .searchBox {
+        width: 70%
+    }
+    .buffet #search {
+        width: 100%;
+        width: -moz-available;          /* WebKit-based browsers will ignore this. */
+        width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+        width: fill-available;
+    }
+    
+    .chCardWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .desktop {
   display: none;

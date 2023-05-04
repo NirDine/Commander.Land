@@ -140,7 +140,12 @@ footer ul li a:hover,
 footer ul li a:focus-visible,
 footer p a:focus-visible,
 footer p a:hover,
-.chFooter span:has(.quotaFilled) span {
+.chFooter span:has(.quotaFilled) span,
+.userAction:focus-visible,
+.userAction:hover,
+.userAction:focus-visible i,
+.userAction:hover i
+{
   color: var(--accent);
   transition-duration: 0.15s;
 }
@@ -216,12 +221,15 @@ span#combination-name {
 .bottom .button input:focus-visible,
 .mana input:focus-visible + label,
 #cardHolder input:focus-visible ~ .cardHolderLabel,
-.card:focus-visible {
+.card:focus-visible,
+.chUserActionContainer .export:focus-visible,
+.chUserActionContainer .export:hover {
   box-shadow: #d1408178 0 1px 30px;
   transition: box-shadow 0.15s ease-in-out 0s;
 }
 
-.bottom .button input {
+.bottom .button input,
+.chUserActionContainer .export {
   background-image: linear-gradient(92.88deg, #b76c8e 9.16%, var(--accent));
   color: var(--contrast);
   text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;

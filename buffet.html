@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/desktop-md.css" media="screen and (min-device-width: 1200px)">
     <link rel="stylesheet" href="css/theme.css">
     <link href="//cdn.jsdelivr.net/npm/mana-font@latest/css/mana.css" rel="stylesheet" type="text/css" />
+
     <!-- JQUERY  -->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   </head>
@@ -950,13 +951,15 @@
           </div>
           <div class="chUserActionContainer">
               <ul>
-                  <li><button class="userAction">Clear list</button></li>
-                  <li><button class="userAction" title="Undo">
+                  <li><button class="userAction clearList">Clear list</button></li>
+                  <li><button class="userAction undoButton" title="Undo">
                   <i class="ms ms-untap undo"></i></button></li>
               </ul>
               <ul>
                   <li><button class="userAction">See in-depth statistics</button></li>
-                  <li><button class="userAction export">Export list</button></li>
+                  <li><button class="userAction">Download as .txt</button></li>
+                  <li><button class="userAction">Export lands</button></li>
+                  <li><button class="userAction export">Export complete list</button></li>
               </ul>
           </div>
       </div>
@@ -1093,8 +1096,6 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- MOBILE MENU -->
     <script type="text/javascript" src="JS/menuHandler.js"></script>
-    <!-- COLOR COMBINATION -->
-    <script type="text/javascript" src="JS/colorCombo.js"></script>
     <!-- ANIMATIONS -->
     <script type="text/javascript" src="JS/animations.js"></script>
     <!-- SEARCH SUGGESTIONS -->

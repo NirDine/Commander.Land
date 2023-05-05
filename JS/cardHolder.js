@@ -42,6 +42,8 @@ function setTrackerTotals() {
 window.addEventListener('load', setTrackerTotals);
 
 
+let numCardsAdded = 0;
+
 const addCard = (card) => {
   const cardName = card.dataset.cardName;
   let cardColors;
@@ -70,6 +72,17 @@ const addCard = (card) => {
     if (cardAdds.length === 0) {
       cardColors.forEach(color => colorCounts.set(color, colorCounts.get(color) - 1));
     }
+      
+       
+  const addedCardsElement = document.querySelector('.added-cards i');
+  addedCardsElement.classList.remove(`ms-${numCardsAdded}`); 
+  numCardsAdded--; 
+  addedCardsElement.classList.add(`ms-${numCardsAdded}`);  
+    if (numCardsAdded === 0) {
+      const addedCardsInput = document.querySelector('.isAdded');
+      addedCardsInput.checked = false;
+    }
+
   } else {
     selectedCards.add(cardName);
     card.classList.add('selected');
@@ -99,7 +112,16 @@ const addCard = (card) => {
     if (cardAdds.length === 0) {
       cardColors.forEach(color => colorCounts.set(color, colorCounts.get(color) + 1));
     }
+  
+  const addedCardsElement = document.querySelector('.added-cards i');
+  addedCardsElement.classList.remove(`ms-${numCardsAdded}`); 
+  numCardsAdded++; 
+  addedCardsElement.classList.add(`ms-${numCardsAdded}`);   
+
+  
   }
+    
+    
 
   updateCardsVisibility();
   updateProgressBar();
@@ -124,7 +146,6 @@ const removeAddedCard = (addedCard) => {
     }
   }
 
-    
   // Sort cardColors before using it to find the corresponding colorList
   const sortedCardColors = cardColors.split(',').sort((a, b) => "wubrgc".indexOf(a) - "wubrgc".indexOf(b)).join('');
 
@@ -140,10 +161,66 @@ const removeAddedCard = (addedCard) => {
   if (selectedCard) {
     selectedCard.classList.remove('selected');
   }
+
+  const addedCardsElement = document.querySelector('.added-cards i');
+  addedCardsElement.classList.remove(`ms-${numCardsAdded}`);
+  numCardsAdded--;
+  addedCardsElement.classList.add(`ms-${numCardsAdded}`);
+  if (numCardsAdded === 0) {
+    const addedCardsInput = document.querySelector('.isAdded');
+    addedCardsInput.checked = false;
+  }
+
+  // Store a copy of the card node instead of a reference to the original node
+
+  updateCardsVisibility();
   updateProgressBar();
 };
 
+// define a global variable to store previously selected cards
+let previousSelectedCards = new Set();
 
+const clearSelectedCards = () => {
+  if (selectedCards.size === 0) {
+    return;
+  }
+  // store the current set of selected cards before clearing
+  previousSelectedCards = new Set(selectedCards);
+  selectedCards.clear();
+  document.querySelectorAll('.card.selected').forEach(card => {
+    card.classList.remove('selected', 'active');
+  });
+  document.querySelectorAll('.addedCard').forEach(card => {
+    card.remove();
+  });
+  colorCounts.forEach((count, color) => {
+    colorCounts.set(color, 0);
+  });
+    const totalElements = document.querySelectorAll('.combination h3 .total');
+    totalElements.forEach((totalElement) => {
+      totalElement.textContent = '0';
+    });
+    const addedCardsElement = document.querySelector('.added-cards i');
+    addedCardsElement.classList.remove(`ms-${numCardsAdded}`);
+    numCardsAdded = 0;
+    addedCardsElement.classList.add(`ms-${numCardsAdded}`);
+    const addedCardsInput = document.querySelector('.isAdded');
+    addedCardsInput.checked = false;
+    
+    updateCardsVisibility();
+    updateProgressBar();
+};
+
+const undoClearSelectedCards = () => {
+  // re-select previously selected cards
+  previousSelectedCards.forEach(cardName => {
+    const card = document.querySelector(`.card[data-card-name="${cardName}"]`);
+    addCard(card);
+  });
+};
+
+document.querySelector('.clearList').addEventListener('click', clearSelectedCards);
+document.querySelector('.undoButton').addEventListener('click', undoClearSelectedCards);
 
 
 
@@ -192,7 +269,6 @@ function updateProgressBar() {
 
 
 
-
 const updateCardsVisibility = () => {
     const selectedColors = Array.from(document.querySelectorAll('.color:checked, .colorless:checked')).map(checkbox => checkbox.value);
     const selectedProperties = Array.from(document.querySelectorAll('.property:checked')).map(checkbox => checkbox.value);
@@ -201,14 +277,20 @@ const updateCardsVisibility = () => {
         const cardColors = card.dataset.colors?.split(',') ?? [];
         const cardProperties = card.dataset.properties?.split(',') ?? [];
 
-        const shouldShowCard =
-            (selectedColors.length === 0 || cardColors.some(color => selectedColors.includes(color))) &&
-            (selectedProperties.length === 0 || cardProperties.some(prop => selectedProperties.includes(prop)));
+        const shouldShowColor = selectedColors.length === 0 ||
+            cardColors.length === 0 ||
+            cardColors.every(color => selectedColors.includes(color));
 
-        card.classList.toggle('hide-card', !shouldShowCard);
+        const shouldShowProperties = selectedProperties.length === 0 ||
+            cardProperties.length === 0 ||
+            selectedProperties.every(property => cardProperties.includes(property));
+
+        card.classList.toggle('hide-card', !(shouldShowColor && shouldShowProperties));
     });
     updateMobileColorFilters();
 };
+
+
 
 
 document.querySelectorAll('.buffet-filters .parent').forEach(parentCheckbox => {

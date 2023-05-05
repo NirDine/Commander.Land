@@ -1,0 +1,273 @@
+
+.card {
+  display: block;
+}
+
+body
+:has(.color:checked) .card,
+body
+:has(.colorless:checked) .card,
+body:has(.property:checked) .card{
+  display: none;
+}
+
+
+
+/*            {COLORS}            */
+
+/* WHITE */
+body
+:has(.color[value="w"]:checked) 
+.card[data-colors="w"],
+
+/* BLUE */
+body
+:has(.color[value="u"]:checked) 
+.card[data-colors="u"],
+
+/* BLACK */
+body
+:has(.color[value="b"]:checked) 
+.card[data-colors="b"],
+
+/* RED */
+body
+:has(.color[value="r"]:checked) 
+.card[data-colors="r"],
+
+/* GREEN */
+body
+:has(.color[value="g"]:checked) 
+.card[data-colors="g"],
+
+/* COLORLESS */
+body
+:has(.colorless[value="c"]:checked) 
+.card[data-colors="c"],
+
+
+/* AZORIUS */
+body
+:has(.color[value="w"]:checked)
+:has(.color[value="u"]:checked) 
+.card[data-colors="w,u"],
+
+/* DIMIR */
+body
+:has(.color[value="u"]:checked)
+:has(.color[value="b"]:checked) 
+.card[data-colors="u,b"],
+
+/* RAKDOS */
+body
+:has(.color[value="b"]:checked)
+:has(.color[value="r"]:checked) 
+.card[data-colors="b,r"],
+
+/* GRUUL */
+body
+:has(.color[value="r"]:checked)
+:has(.color[value="g"]:checked) 
+.card[data-colors="r,g"],
+
+/* SELESNYA */
+body
+:has(.color[value="w"]:checked)
+:has(.color[value="g"]:checked) 
+.card[data-colors="w,g"],
+
+/* ORZHOV */
+body
+:has(.color[value="w"]:checked)
+:has(.color[value="b"]:checked) 
+.card[data-colors="w,b"],
+
+/* IZZET */
+body
+:has(.color[value="u"]:checked)
+:has(.color[value="r"]:checked) 
+.card[data-colors="u,r"],
+
+/* GOLGARI */
+body
+:has(.color[value="b"]:checked)
+:has(.color[value="g"]:checked) 
+.card[data-colors="b,g"],
+
+/* BOROS */
+body
+:has(.color[value="u"]:checked)
+:has(.color[value="r"]:checked) 
+.card[data-colors="u,r"],
+
+/* SIMIC */
+body
+:has(.color[value="u"]:checked)
+:has(.color[value="g"]:checked) 
+.card[data-colors="u,g"],
+
+/* ESPER */
+body
+:has(.color[value="w"]:checked)
+:has(.color[value="u"]:checked)
+:has(.color[value="b"]:checked)
+.card[data-colors="w,u,b"], 
+
+/* GRIXIS */
+body
+:has(.color[value="u"]:checked)
+:has(.color[value="b"]:checked)
+:has(.color[value="r"]:checked)
+.card[data-colors="u,b,r"], 
+
+/* JUND */
+body
+:has(.color[value="b"]:checked)
+:has(.color[value="r"]:checked)
+:has(.color[value="g"]:checked)
+.card[data-colors="b,r,g"], 
+
+/* NAYA */
+body
+:has(.color[value="w"]:checked)
+:has(.color[value="r"]:checked)
+:has(.color[value="g"]:checked)
+.card[data-colors="w,r,g"], 
+
+/* BANT */
+body
+:has(.color[value="w"]:checked)
+:has(.color[value="u"]:checked)
+:has(.color[value="g"]:checked)
+.card[data-colors="w,u,g"], 
+
+/* ABZAN */
+body
+:has(.color[value="w"]:checked)
+:has(.color[value="b"]:checked)
+:has(.color[value="g"]:checked)
+.card[data-colors="w,b,g"], 
+
+/* JESKAI */
+body
+:has(.color[value="w"]:checked)
+:has(.color[value="u"]:checked)
+:has(.color[value="r"]:checked)
+.card[data-colors="w,u,r"], 
+
+/* SULTAI */
+body
+:has(.color[value="u"]:checked)
+:has(.color[value="b"]:checked)
+:has(.color[value="g"]:checked)
+.card[data-colors="u,b,g"], 
+
+/* MARDU */
+body
+:has(.color[value="w"]:checked)
+:has(.color[value="b"]:checked)
+:has(.color[value="r"]:checked)
+.card[data-colors="w,b,r"], 
+
+/* TEMUR */
+body
+:has(.color[value="u"]:checked)
+:has(.color[value="r"]:checked)
+:has(.color[value="g"]:checked)
+.card[data-colors="u,r,g"], 
+
+/* YORE-TILLER */
+body
+:has(.color[value="w"]:checked)
+:has(.color[value="u"]:checked)
+:has(.color[value="b"]:checked)
+:has(.color[value="r"]:checked)
+.card[data-colors="w,u,b,r"], 
+
+/* GLINT-EYE */
+body
+:has(.color[value="u"]:checked)
+:has(.color[value="b"]:checked)
+:has(.color[value="r"]:checked)
+:has(.color[value="g"]:checked)
+.card[data-colors="u,b,r,g"], 
+
+/* DUNE-BROOD */
+body
+:has(.color[value="w"]:checked)
+:has(.color[value="b"]:checked)
+:has(.color[value="r"]:checked)
+:has(.color[value="g"]:checked)
+.card[data-colors="w,b,r,g"], 
+
+/* INK-TREADER */
+body
+:has(.color[value="w"]:checked)
+:has(.color[value="u"]:checked)
+:has(.color[value="r"]:checked)
+:has(.color[value="g"]:checked)
+.card[data-colors="w,u,r,g"], 
+
+/* WITCH-MAW */
+body
+:has(.color[value="w"]:checked)
+:has(.color[value="u"]:checked)
+:has(.color[value="b"]:checked)
+:has(.color[value="g"]:checked)
+.card[data-colors="w,u,b,g"], 
+
+/* ALL-COLORS */
+body
+:has(.color[value="w"]:checked)
+:has(.color[value="u"]:checked)
+:has(.color[value="b"]:checked)
+:has(.color[value="r"]:checked)
+:has(.color[value="g"]:checked)
+.card[data-colors="w,u,b,r,g"],
+
+
+
+/*            {PROPERTIES}            */
+
+/* ACTIVATED ABILITIES */
+body
+:has(.property[value="ability-activated"]:checked)
+.card[data-properties*="ability-activated"],
+
+/* TAP */
+body
+:has(.property[value="tap"]:checked)
+.card[data-properties*="tap"],
+
+/* UNTAP */
+body
+:has(.property[value="untap"]:checked)
+.card[data-properties*="untap"],
+
+/* ARTIFACTS */
+body
+:has(.property[value="artifact"]:checked)
+.card[data-properties*="artifact"],
+
+/* CREATURE LANDS */
+body
+:has(.property[value="creature"]:checked)
+.card[data-properties*="creature"],
+
+/* DOUBLE-FACED */
+body
+:has(.property[value="dfc-modal-face"]:checked)
+.card[data-properties*="dfc-modal-face"],
+
+/* SNOW */
+body
+:has(.property[value="s"]:checked)
+.card[data-properties*="s"]
+
+
+{
+  display: block;
+}
+
+
+

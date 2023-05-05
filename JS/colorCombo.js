@@ -68,6 +68,9 @@ $(document).ready(function() {
                 manaList += this.value;
             });
         }
+        else {
+            manaList = ''
+        }
 
         // Enable or disable explore button based on whether manaList is empty
         $explore.prop('disabled', manaList === '');

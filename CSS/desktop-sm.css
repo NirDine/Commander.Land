@@ -1,6 +1,5 @@
 @media only screen and (min-width: 768px) {
   body {
-    overflow: auto;
     padding-top: 12%;
   }
 
@@ -52,6 +51,35 @@
     grid-area: copyright;
   }
 
+    
+    .buffet-filters.right {
+      justify-content: flex-end;
+    }
+    
+    .cardSuggestions {
+      grid-template-columns: repeat(auto-fill, minmax(244px, 1fr));
+    }
+    
+    
+    .cardSuggestions img,
+    .card,
+    .card.selected:after {
+        max-height: 340px;
+    }
+    
+    .chFooter {
+      justify-content: space-between;
+      
+    }
+
+    .chFooter ul .tracker {
+      justify-content: flex-start;
+      padding-inline: 15px;
+      width: calc(100% / 7);
+    }
+
+
+    
   .progress {
     --bs-progress-font-size: 0.75rem;
     --bs-progress-bg: var(--dark);
@@ -79,14 +107,36 @@
     height: 100%;
   }
 
+  .totalCards {
+        display: flex;
+        flex-wrap: nowrap;
+    }  
+    
+    
+    
   .buffet .top {
     flex-direction: row;
     padding-inline: 0.5em;
   }
     
     
-    .buffet .container {
-        width: 100%;
+    
+    .chCardWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(244px, auto));
+    grid-column-gap: 0.25em;
+    grid-row-gap: 1em;
     }
     
+    
+    
+    .wip-disclaimer {
+    flex-direction: row;
+
+    }
+
+    .wip-disclaimer button {
+        margin-top: 0;
+    }
+
 }

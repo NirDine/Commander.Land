@@ -1,7 +1,10 @@
-<html>
+<!DOCTYPE html>
+ <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=5, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+    <meta name="description" content="Magic: the Gathering mana base builder, explore page">
+    <meta name="keywords" content="Commander, EDH, Mana, Builder, Lands, Fixing">
     <title>Commander.Land</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
@@ -9,59 +12,17 @@
     <link rel="stylesheet" href="css/desktop-sm.css" media="screen and (min-device-width: 768px)">
     <link rel="stylesheet" href="css/desktop-md.css" media="screen and (min-device-width: 1200px)">
     <link rel="stylesheet" href="css/theme.css">
-    <link href="//cdn.jsdelivr.net/npm/mana-font@latest/css/mana.css" rel="stylesheet" type="text/css" />
+    <link href="//cdn.jsdelivr.net/npm/mana-font@latest/css/mana.css" rel="stylesheet" type="text/css" rel="preload" as="style" />
 
     <!-- JQUERY  -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="preload" as="style">
   </head>
   <body class="fallback buffet" style="">
     <a href="#cardSuggestions" class="skipNavLink" id="skip">Skip Navigation</a>
     <div class="lightsOff"></div>
     <div class="container">
-      <header>
+<header>
         <a href="/" class="logo" aria-label="Link to reload page">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1282.12 342.2">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: #f8f6d8;
-                }
-
-                .cls-2 {
-                  fill: #c1d7e9;
-                }
-
-                .cls-3 {
-                  fill: #cac5c0;
-                }
-
-                .cls-4 {
-                  fill: #e49977;
-                }
-
-                .cls-5 {
-                  fill: #a3c095;
-                }
-
-                .cls-6 {
-                  font-size: 182.96px;
-                  font-family: OpineHeavy;
-                }
-              </style>
-            </defs>
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <rect class="cls-1" x="3.57" y="167.86" width="133.94" height="131" rx="2.1" />
-                <rect class="cls-2" x="156.09" y="167.86" width="133.94" height="131" rx="2.1" />
-                <rect class="cls-3" x="309.58" y="167.86" width="133.94" height="131" rx="2.1" />
-                <rect class="cls-4" x="461.13" y="167.86" width="133.94" height="131" rx="2.1" />
-                <rect class="cls-5" x="614.62" y="167.86" width="133.94" height="131" rx="2.1" />
-                <text class="cls-6" transform="translate(0 157.34) scale(1.02 1)">COMMA</text>
-                <text class="cls-6" transform="translate(757.86 157.34)">NDER</text>
-                <text class="cls-6" transform="translate(759.92 299.2)">LAND</text>
-              </g>
-            </g>
-          </svg>
         </a>
         <div class="toggle"></div>
         <nav class="menu">
@@ -205,10 +166,10 @@
               </div>
             </li>
             <li class="">
-              <a class="" href="#contact" style="--indexCount: 3;" id="navDonate" aria-label="Link to Donate section">About</a>
+              <a class="" href="#contact" style="--indexCount: 3;" id="navAbout" aria-label="Link to Donate section">About</a>
             </li>
             <li class="">
-              <a class="lastMenuOption" href="#donate" style="--indexCount: 4;" id="navDonate" aria-label="Link to Donate section">Donate</a>
+              <a  class="lastMenuOption" href="#donate" style="--indexCount: 4;" id="navDonate" aria-label="Link to Donate section">Donate</a>
             </li>
           </ul>
         </nav>
@@ -254,10 +215,10 @@
                     <i class="ms ms-c"></i>
                   </label>
                 </div>
-                <div class="color-picker mobile">
+                <div class="mobile">
                   <div class="filters" id="mobileColorFilters">
                     <input class="dropdown parent" type="checkbox" id="mobileColorFiltersInput" name="extraFilters" style="--hiddenCount: 9.5;" />
-                    <label class="for-dropdown for-filters mobileColorTarget" for="mobileColorFiltersInput" title="Filter by color">
+                    <label class="for-dropdown for-filters mobileColorTarget" for="mobileColorFiltersInput">
                       <i class="ms ms-multicolor"></i>
                     </label>
                     <div class="section-dropdown">
@@ -298,7 +259,7 @@
                 </div>
                 <div class="filters hidden" id="extraFilters">
                   <input class="dropdown parent" type="checkbox" id="extraFiltersInput" name="extraFiltersInput" style="--hiddenCount: 9.5;" />
-                  <label class="for-dropdown for-filters propertyTarget" for="extraFiltersInput" title="More filters">
+                  <label class="for-dropdown for-filters propertyTarget" for="extraFiltersInput" >
                     <i class="ms ms-land"></i>
                   </label>
                   <div class="section-dropdown">
@@ -376,7 +337,7 @@
               <div class="card" data-card-name="Plains" data-colors="w" data-properties="" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/Plains.jpg" alt="Plains">
+                    <img loading="lazy" src="img/cards/small/plains.webp" alt="Plains">
                   </div>
                 </div>
                 <span class="cardName">Plains</span>
@@ -386,7 +347,7 @@
               <div class="card" data-card-name="Island" data-colors="u" data-properties="" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/Island.jpg" alt="Island">
+                    <img loading="lazy" src="img/cards/small/island.webp" alt="Island">
                   </div>
                 </div>
                 <span class="cardName">Island</span>
@@ -396,7 +357,7 @@
               <div class="card" data-card-name="Swamp" data-colors="b" data-properties="" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/Swamp.jpg" alt="Swamp">
+                    <img loading="lazy" src="img/cards/small/swamp.webp" alt="Swamp">
                   </div>
                 </div>
                 <span class="cardName">Swamp</span>
@@ -406,7 +367,7 @@
               <div class="card" data-card-name="Mountain" data-colors="r" data-properties="" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/Mountain.jpg" alt="Mountain">
+                    <img loading="lazy" src="img/cards/small/mountain.webp" alt="Mountain">
                   </div>
                 </div>
                 <span class="cardName">Mountain</span>
@@ -416,7 +377,7 @@
               <div class="card" data-card-name="Forest" data-colors="g" data-properties="" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/forst.jpg" alt="Forest">
+                    <img loading="lazy" src="img/cards/small/forst.webp" alt="Forest">
                   </div>
                 </div>
                 <span class="cardName">Forest</span>
@@ -426,7 +387,7 @@
               <div class="card" data-card-name="Wastes" data-colors="c" data-properties="" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/Wastes.jpg" alt="Wastes">
+                    <img loading="lazy" src="img/cards/small/wastes.webp" alt="Wastes">
                   </div>
                 </div>
                 <span class="cardName">Wastes</span>
@@ -436,7 +397,7 @@
               <div class="card" data-card-name="Academy Ruins" data-colors="u" data-adds="c" data-properties="ability-activated,untap" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/Academy-Ruins.jpg" alt="Academy Ruins">
+                    <img loading="lazy" src="img/cards/small/academy-ruins.webp" alt="Academy Ruins">
                   </div>
                 </div>
                 <span class="cardName">Academy Ruins</span>
@@ -446,7 +407,7 @@
               <div class="card" data-card-name="Ancient Spring" data-colors="w,u,b" data-properties="tap" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/Ancient-Spring.jpg" alt="Ancient Spring">
+                    <img loading="lazy" src="img/cards/small/ancient-spring.webp" alt="Ancient Spring">
                   </div>
                 </div>
                 <span class="cardName">Ancient Spring</span>
@@ -456,7 +417,7 @@
               <div class="card" data-card-name="Arcane Sanctum" data-colors="w,u,b" data-properties="tap" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/arcane-sanctum.jpg" alt="Arcane Sanctum">
+                    <img loading="lazy" src="img/cards/small/arcane-sanctum.webp" alt="Arcane Sanctum">
                   </div>
                 </div>
                 <span class="cardName">Arcane Sanctum</span>
@@ -466,7 +427,7 @@
               <div class="card" data-card-name="Frostwalk Bastion" data-colors="c" data-properties="creature" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/frostwalk-bastion.jpg" alt="Frostwalk Bastion">
+                    <img loading="lazy" src="img/cards/small/frostwalk-bastion.webp" alt="Frostwalk Bastion">
                   </div>
                 </div>
                 <span class="cardName">Frostwalk Bastion</span>
@@ -476,7 +437,7 @@
               <div class="card dfc" data-card-name="Glasspool Mimic" data-colors="u" data-properties="tap,creature,dfc-modal-face" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/glasspool-mimic.jpg" alt="Glasspool Mimic">
+                    <img loading="lazy" src="img/cards/small/glasspool-mimic.webp" alt="Glasspool Mimic">
                   </div>
                 </div>
                 <span class="cardName">Glasspool Mimic</span>
@@ -486,7 +447,7 @@
               <div class="card" data-card-name="Lair of the Hydra" data-colors="g" data-properties="untap,creature" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/lair-of-the-hydra.jpg" alt="Lair of the Hydra">
+                    <img loading="lazy" src="img/cards/small/lair-of-the-hydra.webp" alt="Lair of the Hydra">
                   </div>
                 </div>
                 <span class="cardName">Lair of the Hydra</span>
@@ -496,7 +457,7 @@
               <div class="card" data-card-name="Lavaclaw Reaches" data-colors="b,r" data-properties="ability-activated,tap,creature" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/lavaclaw-reaches.jpg" alt="Lavaclaw Reaches">
+                    <img loading="lazy" src="img/cards/small/lavaclaw-reaches.webp" alt="Lavaclaw Reaches">
                   </div>
                 </div>
                 <span class="cardName">Lavaclaw Reaches</span>
@@ -506,7 +467,7 @@
               <div class="card" data-card-name="Memorial to Glory" data-colors="w" data-properties="ability-activated,tap" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/Memorial-to-Glory.jpg" alt="Memorial to Glory">
+                    <img loading="lazy" src="img/cards/small/memorial-to-glory.webp" alt="Memorial to Glory">
                   </div>
                 </div>
                 <span class="cardName">Memorial to Glory</span>
@@ -516,7 +477,7 @@
               <div class="card" data-card-name="Nimbus Maze" data-colors="w,u" data-adds="w,u,c" data-properties="untap" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/Nimbus-Maze.jpg" alt="Nimbus Maze">
+                    <img loading="lazy" src="img/cards/small/nimbus-maze.webp" alt="Nimbus Maze">
                   </div>
                 </div>
                 <span class="cardName">Nimbus Maze</span>
@@ -526,7 +487,7 @@
               <div class="card" data-card-name="Snowfield Sinkhole" data-colors="w,b" data-properties="tap,s" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/Snowfield-Sinkhole.jpg" alt="Snowfield Sinkhole">
+                    <img loading="lazy" src="img/cards/small/snowfield-sinkhole.webp" alt="Snowfield Sinkhole">
                   </div>
                 </div>
                 <span class="cardName">Snowfield Sinkhole</span>
@@ -536,7 +497,7 @@
               <div class="card" data-card-name="Taiga" data-colors="r,g" data-properties="untap" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/Taiga.jpg" alt="Taiga">
+                    <img loading="lazy" loading="lazy" src="img/cards/small/taiga.webp" alt="Taiga">
                   </div>
                 </div>
                 <span class="cardName">Taiga</span>
@@ -546,57 +507,7 @@
               <div class="card" data-card-name="Thornglint Bridge" data-colors="w,g" data-properties="tap,artifact" tabindex="0">
                 <div class="cardContent">
                   <div class="artContainer">
-                    <img src="IMG/cards/thornglint-bridge.jpg" alt="Thornglint Bridge">
-                  </div>
-                </div>
-                <span class="cardName">Thornglint Bridge</span>
-              </div>
-              <!-- End Card -->
-              <!-- Card -->
-              <div class="card" data-card-name="a" data-colors="w,g" data-properties="tap,artifact" tabindex="0">
-                <div class="cardContent">
-                  <div class="artContainer">
-                    <img src="IMG/cards/thornglint-bridge.jpg" alt="Thornglint Bridge">
-                  </div>
-                </div>
-                <span class="cardName">Thornglint Bridge</span>
-              </div>
-              <!-- End Card -->
-              <!-- Card -->
-              <div class="card" data-card-name="b" data-colors="w,g" data-properties="tap,artifact" tabindex="0">
-                <div class="cardContent">
-                  <div class="artContainer">
-                    <img src="IMG/cards/thornglint-bridge.jpg" alt="Thornglint Bridge">
-                  </div>
-                </div>
-                <span class="cardName">Thornglint Bridge</span>
-              </div>
-              <!-- End Card -->
-              <!-- Card -->
-              <div class="card" data-card-name="c" data-colors="w,g" data-properties="tap,artifact" tabindex="0">
-                <div class="cardContent">
-                  <div class="artContainer">
-                    <img src="IMG/cards/thornglint-bridge.jpg" alt="Thornglint Bridge">
-                  </div>
-                </div>
-                <span class="cardName">Thornglint Bridge</span>
-              </div>
-              <!-- End Card -->
-              <!-- Card -->
-              <div class="card" data-card-name="d" data-colors="w,g" data-properties="tap,artifact" tabindex="0">
-                <div class="cardContent">
-                  <div class="artContainer">
-                    <img src="IMG/cards/thornglint-bridge.jpg" alt="Thornglint Bridge">
-                  </div>
-                </div>
-                <span class="cardName">Thornglint Bridge</span>
-              </div>
-              <!-- End Card -->
-              <!-- Card -->
-              <div class="card" data-card-name="e" data-colors="w,g" data-properties="tap,artifact" tabindex="0">
-                <div class="cardContent">
-                  <div class="artContainer">
-                    <img src="IMG/cards/thornglint-bridge.jpg" alt="Thornglint Bridge">
+                    <img loading="lazy" src="img/cards/small/thornglint-bridge.webp" alt="Thornglint Bridge">
                   </div>
                 </div>
                 <span class="cardName">Thornglint Bridge</span>
@@ -964,7 +875,7 @@
           </div>
       </div>
     </div>
-    <footer>
+        <footer>
       <div class="wizards">
         <p>Commander.Land is not produced by or endorsed by Wizards of the Coast.</p>
         <p>All card images, mana symbols, and Oracle text are copyright Wizards of the Coast and are used under the Wizards of the Coast Fan Content Policy. ( <a href="https://magicthegathering.com/">https://magicthegathering.com/</a>) </p>
@@ -993,61 +904,16 @@
           <ul class="socials">
             <li>
               <a href="#" class="social discord" aria-label="Link to join the Discord server">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 71 54.12">
-                  <defs>
-                    <style>
-                      .cls-discord1 {
-                        fill: none;
-                      }
-
-                      .cls-discord2 {
-                        clip-path: url(#clip-path);
-                      }
-                    </style>
-                    <clipPath id="clip-path" transform="translate(0 -0.41)">
-                      <rect class="cls-discord1" width="71" height="55" />
-                    </clipPath>
-                  </defs>
-                  <g id="Layer_2" data-name="Layer 2">
-                    <g id="Layer_1-2" data-name="Layer 1">
-                      <g class="cls-discord2">
-                        <path class="cls-discord3" d="M60.1,4.9A58,58,0,0,0,45.65.42a.21.21,0,0,0-.23.11,40.45,40.45,0,0,0-1.8,3.69,53.85,53.85,0,0,0-16.23,0A36.14,36.14,0,0,0,25.56.53a.21.21,0,0,0-.23-.11A58.23,58.23,0,0,0,10.88,4.9a.16.16,0,0,0-.1.08C1.58,18.73-.94,32.14.29,45.39a.27.27,0,0,0,.1.17,59,59,0,0,0,17.72,9,.23.23,0,0,0,.25-.08A41.53,41.53,0,0,0,22,48.54a.22.22,0,0,0-.12-.31,40.22,40.22,0,0,1-5.54-2.64.23.23,0,0,1,0-.38l1.1-.86a.2.2,0,0,1,.23,0,42,42,0,0,0,35.68,0,.21.21,0,0,1,.23,0c.36.3.73.59,1.1.87a.23.23,0,0,1,0,.38,36.52,36.52,0,0,1-5.54,2.63.24.24,0,0,0-.12.32,48.6,48.6,0,0,0,3.63,5.9.23.23,0,0,0,.25.08,58.75,58.75,0,0,0,17.75-9,.2.2,0,0,0,.09-.17A59.58,59.58,0,0,0,60.2,5,.16.16,0,0,0,60.1,4.9ZM23.73,37.33c-3.5,0-6.38-3.22-6.38-7.16S20.17,23,23.73,23s6.43,3.24,6.38,7.16S27.28,37.33,23.73,37.33Zm23.59,0c-3.5,0-6.38-3.22-6.38-7.16S43.76,23,47.32,23s6.43,3.24,6.38,7.16S50.9,37.33,47.32,37.33Z" transform="translate(0 -0.41)" />
-                      </g>
-                    </g>
-                  </g>
-                </svg>
+                <img src="img/logos/discord.svg" alt="Logo">
               </a>
             </li>
             <li>
               <a href="#" class="social patreon" aria-label="Link to join our Patreon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 467.29 448.67">
-                  <defs></defs>
-                  <g id="Layer_2" data-name="Layer 2">
-                    <g id="Layer_1-2" data-name="Layer 1">
-                      <path class="cls-patreon" d="M131.14,168.19C131.34,74.12,208.69-2,303.14,0,395.21,2,469,78.76,467.26,171.85c-1.72,90.88-77.06,166.54-171.49,164.59C205.7,334.58,131.09,260.87,131.14,168.19Z" />
-                      <path class="cls-patreon" d="M0,448.67V.07H81.76v448.6Z" />
-                    </g>
-                  </g>
-                </svg>
+                <img src="img/logos/patreon.svg" alt="Logo">
               </a>
             </li>
           </ul>
-          <a class="logo" aria-label="Link to reload page" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1282.12 342.2">
-              <defs></defs>
-              <g id="Layer_2" data-name="Layer 2">
-                <g id="Layer_1-2" data-name="Layer 1">
-                  <rect class="cls-1" x="3.57" y="167.86" width="133.94" height="131" rx="2.1" />
-                  <rect class="cls-2" x="156.09" y="167.86" width="133.94" height="131" rx="2.1" />
-                  <rect class="cls-3" x="309.58" y="167.86" width="133.94" height="131" rx="2.1" />
-                  <rect class="cls-4" x="461.13" y="167.86" width="133.94" height="131" rx="2.1" />
-                  <rect class="cls-5" x="614.62" y="167.86" width="133.94" height="131" rx="2.1" />
-                  <text class="cls-6" transform="translate(0 157.34) scale(1.02 1)">COMMA</text>
-                  <text class="cls-6" transform="translate(757.86 157.34)">NDER</text>
-                  <text class="cls-6" transform="translate(759.92 299.2)">LAND</text>
-                </g>
-              </g>
-            </svg>
+          <a href="/" class="logo" aria-label="Link to reload page" tabindex="-1">
           </a>
         </div>
       </div>
@@ -1083,25 +949,22 @@
 
     <div class="wip-disclaimer">
       <p>This site is currently under construction, and none of the features currently work. This version of the site is online simply to test out our interfase. <br>
-      If you have any feedback, you can contact us at <a href="mailto:hi@nirdine.com">hi@nirdine.com</a>.</p>
+      If you have any feedback, you can contact us at <a href="mailto:hi@commander.land">hi@commander.land</a>.</p>
 
       <button class="wip-accept">Okay</button>
     </div>
-
-    
-    
     
     <!-- JQUERY  -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- MOBILE MENU -->
-    <script type="text/javascript" src="JS/menuHandler.js"></script>
+    <script type="text/javascript" src="js/menuHandler.js"></script>
     <!-- ANIMATIONS -->
-    <script type="text/javascript" src="JS/animations.js"></script>
+    <script type="text/javascript" src="js/animations.js"></script>
     <!-- SEARCH SUGGESTIONS -->
-    <script type="text/javascript" src="JS/searchSuggestions.js"></script>
+    <script type="text/javascript" src="js/searchSuggestions.js" defer></script>
     <!-- CARD LIST ADDER -->
-    <script type="text/javascript" src="JS/cardHolder.js"></script>
+    <script type="text/javascript" src="js/cardHolder.js" defer></script>
     
     
     <script>

@@ -1,7 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=5, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+    <meta name="description" content="Magic: the Gathering mana base builder">
+    <meta name="keywords" content="Commander, EDH, Mana, Builder, Lands, Fixing">
     <title>Commander.Land</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css">
@@ -9,7 +12,7 @@
     <link rel="stylesheet" href="css/desktop-sm.css" media="screen and (min-device-width: 768px)">
     <link rel="stylesheet" href="css/desktop-md.css" media="screen and (min-device-width: 1200px)">
     <link rel="stylesheet" href="css/theme.css">
-    <link href="//cdn.jsdelivr.net/npm/mana-font@latest/css/mana.css" rel="stylesheet" type="text/css" />
+    <link href="//cdn.jsdelivr.net/npm/mana-font@latest/css/mana.css" rel="stylesheet" type="text/css" rel="preload" as="style" />
     <!-- JQUERY  -->
     <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
   </head>
@@ -19,48 +22,6 @@
     <div class="container">
       <header>
         <a href="/" class="logo" aria-label="Link to reload page">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1282.12 342.2">
-            <defs>
-              <style>
-                .cls-1 {
-                  fill: #f8f6d8;
-                }
-
-                .cls-2 {
-                  fill: #c1d7e9;
-                }
-
-                .cls-3 {
-                  fill: #cac5c0;
-                }
-
-                .cls-4 {
-                  fill: #e49977;
-                }
-
-                .cls-5 {
-                  fill: #a3c095;
-                }
-
-                .cls-6 {
-                  font-size: 182.96px;
-                  font-family: OpineHeavy;
-                }
-              </style>
-            </defs>
-            <g id="Layer_2" data-name="Layer 2">
-              <g id="Layer_1-2" data-name="Layer 1">
-                <rect class="cls-1" x="3.57" y="167.86" width="133.94" height="131" rx="2.1" />
-                <rect class="cls-2" x="156.09" y="167.86" width="133.94" height="131" rx="2.1" />
-                <rect class="cls-3" x="309.58" y="167.86" width="133.94" height="131" rx="2.1" />
-                <rect class="cls-4" x="461.13" y="167.86" width="133.94" height="131" rx="2.1" />
-                <rect class="cls-5" x="614.62" y="167.86" width="133.94" height="131" rx="2.1" />
-                <text class="cls-6" transform="translate(0 157.34) scale(1.02 1)">COMMA</text>
-                <text class="cls-6" transform="translate(757.86 157.34)">NDER</text>
-                <text class="cls-6" transform="translate(759.92 299.2)">LAND</text>
-              </g>
-            </g>
-          </svg>
         </a>
         <div class="toggle"></div>
         <nav class="menu">
@@ -204,7 +165,7 @@
               </div>
             </li>
             <li class="">
-              <a class="" href="#contact" style="--indexCount: 3;" id="navDonate" aria-label="Link to Donate section">About</a>
+              <a class="" href="#contact" style="--indexCount: 3;" id="navAbout" aria-label="Link to Donate section">About</a>
             </li>
             <li class="">
               <a  class="lastMenuOption" href="#donate" style="--indexCount: 4;" id="navDonate" aria-label="Link to Donate section">Donate</a>
@@ -266,12 +227,12 @@
                 </div>
               </div>
               <div class="button">
-                <input class="hidden" style="--hiddenCount: 2;" type="submit" name="Explore" value="I want to do it myself" id="explore" disabled>
+                <input class="hidden" style="--hiddenCount: 2;" type="submit" name="Explore" value="Explore these colors" id="explore" disabled>
               </div>
             </div>
             <div class="analyze">
               <div class="explain">
-                <h2 class="hidden" style="--hiddenCount: 6;">...or just let us take care of the hard part!</h2>
+                <h2 class="hidden" style="--hiddenCount: 6;">Let us take care of the hard part!</h2>
                 <p class="hidden" style="--hiddenCount: 6;">Give us your decklist. We'll do some <italics>definitely-not-witchcraft™</italics> and analyze the whole thing, taking into account mana values, color distribution, non-land mana sources, and even the lands you've already added! Then, we'll give you <strong>recommendations on how many lands and colored sources you should be playing</strong>. All that's left is for you to pick them! </p>
               </div>
               <div class="addDeck hidden" style="--hiddenCount: 7;">
@@ -318,61 +279,17 @@
           <ul class="socials">
             <li>
               <a href="#" class="social discord" aria-label="Link to join the Discord server">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 71 54.12">
-                  <defs>
-                    <style>
-                      .cls-discord1 {
-                        fill: none;
-                      }
-
-                      .cls-discord2 {
-                        clip-path: url(#clip-path);
-                      }
-                    </style>
-                    <clipPath id="clip-path" transform="translate(0 -0.41)">
-                      <rect class="cls-discord1" width="71" height="55" />
-                    </clipPath>
-                  </defs>
-                  <g id="Layer_2" data-name="Layer 2">
-                    <g id="Layer_1-2" data-name="Layer 1">
-                      <g class="cls-discord2">
-                        <path class="cls-discord3" d="M60.1,4.9A58,58,0,0,0,45.65.42a.21.21,0,0,0-.23.11,40.45,40.45,0,0,0-1.8,3.69,53.85,53.85,0,0,0-16.23,0A36.14,36.14,0,0,0,25.56.53a.21.21,0,0,0-.23-.11A58.23,58.23,0,0,0,10.88,4.9a.16.16,0,0,0-.1.08C1.58,18.73-.94,32.14.29,45.39a.27.27,0,0,0,.1.17,59,59,0,0,0,17.72,9,.23.23,0,0,0,.25-.08A41.53,41.53,0,0,0,22,48.54a.22.22,0,0,0-.12-.31,40.22,40.22,0,0,1-5.54-2.64.23.23,0,0,1,0-.38l1.1-.86a.2.2,0,0,1,.23,0,42,42,0,0,0,35.68,0,.21.21,0,0,1,.23,0c.36.3.73.59,1.1.87a.23.23,0,0,1,0,.38,36.52,36.52,0,0,1-5.54,2.63.24.24,0,0,0-.12.32,48.6,48.6,0,0,0,3.63,5.9.23.23,0,0,0,.25.08,58.75,58.75,0,0,0,17.75-9,.2.2,0,0,0,.09-.17A59.58,59.58,0,0,0,60.2,5,.16.16,0,0,0,60.1,4.9ZM23.73,37.33c-3.5,0-6.38-3.22-6.38-7.16S20.17,23,23.73,23s6.43,3.24,6.38,7.16S27.28,37.33,23.73,37.33Zm23.59,0c-3.5,0-6.38-3.22-6.38-7.16S43.76,23,47.32,23s6.43,3.24,6.38,7.16S50.9,37.33,47.32,37.33Z" transform="translate(0 -0.41)" />
-                      </g>
-                    </g>
-                  </g>
-                </svg>
+                <img src="img/logos/discord.svg" alt="Logo">
               </a>
             </li>
             <li>
               <a href="#" class="social patreon" aria-label="Link to join our Patreon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 467.29 448.67">
-                  <defs></defs>
-                  <g id="Layer_2" data-name="Layer 2">
-                    <g id="Layer_1-2" data-name="Layer 1">
-                      <path class="cls-patreon" d="M131.14,168.19C131.34,74.12,208.69-2,303.14,0,395.21,2,469,78.76,467.26,171.85c-1.72,90.88-77.06,166.54-171.49,164.59C205.7,334.58,131.09,260.87,131.14,168.19Z" />
-                      <path class="cls-patreon" d="M0,448.67V.07H81.76v448.6Z" />
-                    </g>
-                  </g>
-                </svg>
+                <img src="img/logos/patreon.svg" alt="Logo">
               </a>
             </li>
           </ul>
-          <a class="logo" aria-label="Link to reload page" tabindex="-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1282.12 342.2">
-              <defs></defs>
-              <g id="Layer_2" data-name="Layer 2">
-                <g id="Layer_1-2" data-name="Layer 1">
-                  <rect class="cls-1" x="3.57" y="167.86" width="133.94" height="131" rx="2.1" />
-                  <rect class="cls-2" x="156.09" y="167.86" width="133.94" height="131" rx="2.1" />
-                  <rect class="cls-3" x="309.58" y="167.86" width="133.94" height="131" rx="2.1" />
-                  <rect class="cls-4" x="461.13" y="167.86" width="133.94" height="131" rx="2.1" />
-                  <rect class="cls-5" x="614.62" y="167.86" width="133.94" height="131" rx="2.1" />
-                  <text class="cls-6" transform="translate(0 157.34) scale(1.02 1)">COMMA</text>
-                  <text class="cls-6" transform="translate(757.86 157.34)">NDER</text>
-                  <text class="cls-6" transform="translate(759.92 299.2)">LAND</text>
-                </g>
-              </g>
-            </svg>
+          <a href="/"class="logo" aria-label="Link to reload page" tabindex="-1">
+
           </a>
         </div>
       </div>
@@ -391,7 +308,7 @@
       disclaimerBtn.addEventListener('click', function() {
         const disclaimer = document.querySelector('.wip-disclaimer');
         if (disclaimer) {
-          disclaimer.classList.add('hidden');
+          disclaimer.style.display = 'none';
           localStorage.setItem('wipDisclaimerAccepted', 'true');
         }
       });
@@ -409,7 +326,7 @@
 
 <div class="wip-disclaimer">
   <p>This site is currently under construction, and none of the features currently work. This version of the site is online simply to test out our interfase. <br>
-  If you have any feedback, you can contact us at <a href="mailto:hi@nirdine.com">hi@nirdine.com</a>.</p>
+  If you have any feedback, you can contact us at <a href="mailto:hi@commander.land">hi@commander.land</a>.</p>
 
   <button class="wip-accept">Okay</button>
 </div>
@@ -417,12 +334,12 @@
 
     
     <!-- MOBILE MENU HANDLER -->
-    <script type="text/javascript" src="JS/menuHandler.js"></script>
+    <script type="text/javascript" src="js/menuHandler.js"></script>
     <!-- COLOR COMBINATION HANDLER -->
-    <script type="text/javascript" src="JS/colorCombo.js"></script>
+    <script type="text/javascript" src="js/colorCombo.js" defer></script>
     <!-- TEXTAREA ERROR HANDLER -->
-    <script type="text/javascript" src="JS/errorHandler.js"></script>
+    <script type="text/javascript" src="js/errorHandler.js" defer></script>
     <!-- ANIMATIONS HANDLER -->
-    <script type="text/javascript" src="JS/animations.js"></script>
+    <script type="text/javascript" src="js/animations.js"></script>
   </body>
 </html>

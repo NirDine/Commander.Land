@@ -49,6 +49,7 @@
 
   .logo {
     height: 3em;
+      width: 11em;
     padding: 0px 20px;
   }
 
@@ -187,7 +188,9 @@
     .addDeck:has(textarea:not(:placeholder-shown))
     ~ .button
     input:not(:disabled),
-  .explore .color-picker:has(input:checked) ~ .button input {
+  .explore .color-picker:has(input:checked) ~ .button input,
+  .buffet:has(.card.selected) #cardHolder
+    {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     animation-delay: calc(var(--hiddenCount) * 1s);
@@ -210,7 +213,9 @@
       .addDeck:has(textarea:not(:placeholder-shown))
       ~ .button
       input:not(:disabled),
-    .explore .color-picker:has(input:checked) ~ .button input {
+    .explore .color-picker:has(input:checked) ~ .button input,
+    .buffet:has(.card.selected) #cardHolder
+      {
       -webkit-animation-name: none;
       animation-name: none;
     }
@@ -270,6 +275,30 @@
     .buffet .container {
         width: 80%;
     }
+    
+    
+    
+    
+    
+      
+    .chFooter {
+      padding: 18px 10%;
+
+    }  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   @keyframes tilt-shaking {
     0% {
       transform: rotate(0deg);

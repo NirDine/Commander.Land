@@ -30,7 +30,7 @@ body {
 }
 
 p {
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 2px 0px;
 }
 
@@ -49,8 +49,11 @@ header {
 .logo {
   display: flex;
   align-content: center;
-  stroke: none;
   height: 2.5em;
+  width: 7em;
+  background-image: url(/img/logos/logo.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 body.active .logo {
@@ -156,7 +159,7 @@ body.active .menu {
   content: "";
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 2;
   cursor: auto;
   pointer-events: none;
 }
@@ -172,7 +175,7 @@ body.active .menu {
   width: 100%;
   border-radius: var(--half-bradius);
   display: block;
-  z-index: 2;
+  z-index: 4;
   opacity: 0;
   pointer-events: none;
   transform: translateY(20px);
@@ -374,6 +377,10 @@ footer ul.socials {
   margin-bottom: 0.5em;
 }
 
+footer ul.socials img {
+    height: 40px;
+}
+
 footer ul li {
   flex-basis: calc((100% -3px) / 4);
   min-width: 100px;
@@ -406,9 +413,7 @@ footer .logo {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 204px;
-  height: 1em;
-  cursor: default;
+  cursor: pointer;
 }
 
 footer .discord {
@@ -447,10 +452,11 @@ li:has(#navColors) {
   justify-content: space-between;
   align-items: center;
   flex-basis: 50%;
+  margin-bottom: 2em;
 }
 
-.bottom .explore {
-  display: none;
+.buffet .top {
+    margin-bottom: 30px;
 }
 
 .bottom .button {
@@ -487,12 +493,20 @@ li:has(#navColors) {
 }
 
 .mana label,
-.Filters label {
+.filters label {
   display: inline-flex;
   padding: 25px;
   background: #ffffff14;
   border-radius: var(--bradius);
   border: 2px solid #0000006e;
+}
+
+.explore label {
+    padding: 30px;
+}
+
+.explore label i {
+    font-size: 1.3em;
 }
 
 .bottom .button input {
@@ -599,11 +613,6 @@ mark {
   cursor: not-allowed;
 }
 
-.content > div {
-  padding: 0px 0px 30px 0px;
-  padding: 0px 0px 30px 0px;
-}
-
 @media (min-width: 768px) {
   .button input {
     padding: 0 2.6rem;
@@ -618,9 +627,14 @@ mark {
   align-items: flex-start;
 }
 
+.buffet .container {
+    width: calc(100% - 1em);
+}
+
 .buffet .bottom {
   height: 100%;
 }
+
 
 .buffet .content {
   width: 100%;
@@ -645,16 +659,16 @@ mark {
 }
 
 .buffet-filters.right {
-  justify-content: flex-end;
+  justify-content: center;
 }
-
+ 
 .filters .section-dropdown {
   width: auto;
   border-radius: var(--bradius)
 }
 
 .buffet-filters .color-picker {
-  grid-template: "c c";
+  grid-template: "c c c";
 }
 
 .mana:has(.isAdded)  {
@@ -730,7 +744,7 @@ body
 
 .cardSuggestions {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(244px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-column-gap: 0.25em;
   grid-row-gap: 1em;
   width: 100%;
@@ -777,11 +791,10 @@ body
 }
 
 .cardSuggestions img,
-.addedCard img,
 .card,
 .card.selected:after {
   border-radius: 4.25%;
-  max-height: 340px;
+  max-height: 270px;
 }
 
 .hide-card {
@@ -818,12 +831,12 @@ body.buffet:has(#cardHolderInput:checked) {
 
 .chFooter {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   background-color: var(--mainBG);
   border-top: 2px solid #eef2ff0f;
-  padding: 18px 10%;
+  padding: 0px 10px;
   min-height: 3em;
   border-bottom:1px solid #00000010;
 }
@@ -832,14 +845,15 @@ body.buffet:has(#cardHolderInput:checked) {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+    width: 95%;
 }
 
 .chFooter ul .tracker {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-inline: 15px;
-  width: calc(100% / 7);
+  padding-inline: 8px;
+  width: calc(100% / 6);
     opacity: 0.5;
 }
 
@@ -868,15 +882,12 @@ body.buffet:has(#cardHolderInput:checked) {
 }
 
 
-
-
 .progress {
   display: none;
 }
 
 .totalCards {
-    display: flex;
-    flex-wrap: nowrap;
+    display: none;
 }
 
 
@@ -889,19 +900,17 @@ body.buffet:has(#cardHolderInput:checked) {
   position: relative;
   width: 100%;
   pointer-events: none;
-  opacity: 0;
   background-color: var(--mainBG);
 }
 
 .chCardWrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(244px, auto));
-    grid-column-gap: 0.25em;
-    grid-row-gap: 1em;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     overflow: auto;
     background-color: var(--dark);
     border-top-right-radius: 20px;
+    overflow-x: hidden;
 }
 
 .chCardWrapper .combination {
@@ -1039,38 +1048,10 @@ body.buffet:has(#cardHolderInput:checked) {
   bottom: 0px;
 }
 .dropdown-sub:checked ~ .chContainer {
-  opacity: 1;
+
   pointer-events: auto;
 }
 
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 320px) { 
-    .buffet .top {
-        flex-direction: column;
-    }
-    
-    .buffet .buffet-filters .right {
-        width: max-content;
-    }
-    .buffet #search {
-        width: 15em;
-    }
-    
-    .chCardWrapper {
-        display: flex;
-        flex-direction: column;
-    }
-    
-}
-
-@media only screen and (max-width: 375px) { 
     .buffet .top {
         flex-direction: column;
     }
@@ -1080,7 +1061,7 @@ body.buffet:has(#cardHolderInput:checked) {
         flex-wrap: nowrap;
     }
     .buffet .searchBox {
-        width: 70%
+        width: -webkit-fill-available;
     }
     .buffet #search {
         width: 100%;
@@ -1088,12 +1069,30 @@ body.buffet:has(#cardHolderInput:checked) {
         width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
         width: fill-available;
     }
+
+
+@media only screen and (max-width: 375px) { 
+    .buffet .top {
+        flex-direction: column;
+    }
     
+    .buffet .buffet-filters .right {
+        width: max-content;
+    }
+
     .chCardWrapper {
         display: flex;
         flex-direction: column;
     }
+    
+    .cardSuggestions img,
+    .card,
+    .card.selected:after {
+        max-height: 340px;
+    }
+    
 }
+
 
 
 
@@ -1122,10 +1121,8 @@ body.buffet:has(#cardHolderInput:checked) {
     border-radius: var(--bradius);
     padding: 20px;
     display: none;
-}
-
-.wip-disclaimer p {
-        font-size: 1.1em;
+    align-items: center;
+    flex-direction: column;
 }
 
 .wip-disclaimer a {
@@ -1136,7 +1133,6 @@ body.buffet:has(#cardHolderInput:checked) {
     background-image: linear-gradient(92.88deg, #b76c8e 9.16%, var(--accent));
     color: var(--contrast);
     text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
-    padding: 0.6em;
     border: 0px;
     border-radius: var(--bradius);
     cursor: pointer;
@@ -1144,5 +1140,8 @@ body.buffet:has(#cardHolderInput:checked) {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    padding: 1em;
+    margin-top: 0.5em;
     
 }

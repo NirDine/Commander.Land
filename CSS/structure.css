@@ -701,18 +701,18 @@ body
     display: flex;
 }
 
-.dfc.card {
+.card:has(.dfc) {
     height: var(--cardSizeHeight);
     width: var(--cardSizeWidth);
 }
 
-.dfc.card::after {
+.card:has(.dfc)::after {
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     z-index: 100;
 }
 
-.dfc.card .artContainer {
+.card:has(.dfc) .artContainer {
     display: flex;
     justify-content: center;
     -webkit-transform-style: preserve-3d;
@@ -726,11 +726,11 @@ body
     right: -50%;
 }
     
-.dfc.card .artContainer img {
+.card:has(.dfc) .artContainer img {
     position: absolute;
 }
 
-.dfc.card.flipped .artContainer {
+.card:has(.dfc).flipped .artContainer {
     -webkit-transition: -webkit-transform 750ms;
     transition: -webkit-transform 750ms;
     -o-transition: -o-transform 750ms;
@@ -741,7 +741,7 @@ body
 }
 
 
-.dfc.card .artContainer .front {
+.card:has(.dfc) .artContainer .front {
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
 
@@ -749,20 +749,20 @@ body
 
 
 
-.dfc.card .artContainer .back {
+.card:has(.dfc) .artContainer .back {
 -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 
 
 }
 
-.dfc.card.flipped .artContainer .front {
+.card:has(.dfc).flipped .artContainer .front {
     backface-visibility: hidden;
 
     
 }
 
-.dfc.card.flipped .artContainer .back {
+.card:has(.dfc).flipped .artContainer .back {
 
 }
 
@@ -772,7 +772,7 @@ body
     background: white;
     -webkit-border-radius: 100%;
     border-radius: 100%;
-    border: 2px solid #343242;
+    border: 2px solid var(--mainBG);
     display: block;
     height: 44px;
     width: 44px;
@@ -788,13 +788,24 @@ body
     z-index: 1000;
     -webkit-transform: translateZ(0.01px);
     transform: translateZ(0.01px);
+    background-image: url(/img/buttons/flip-dark.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(0deg);
+    transition: all 500ms;
 }
 
 .flipped .flip-button  {
     background: #000;
 }
-.flipped .flip-button path {
-    fill: #FFF;
+.flipped .flip-button  {
+    background-image: url(/img/buttons/flip.svg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(360deg);
+    transition: all 500ms;
 }
 
 .filters .section-dropdown .filter-picker {

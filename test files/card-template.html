@@ -1,0 +1,72 @@
+<!-- Card -->
+  <div class="card {dfc}" data-card-id="id" data-card-name="{name}" data-colors="{color_identity}" data-properties="{MYOWN-properties}" tabindex="0">
+	<div class="cardContent">
+	  <div class="artContainer">
+		<img class="{back}" loading="eager" src="{card_faces.object.card_face[1].image_uris.small}" alt="{card_faces.object.card_face[1].name}">
+		<img class="{front}" loading="eager" src="{image_uris.small}" alt="{card_faces.object.card_face[0].name}">
+	  </div>
+	</div>
+	<span class="cardName">{name}</span>
+	{<button type="button" title="Transform" tabindex="-1" class="flip-button"></button>}
+  </div>
+<!-- End Card -->
+
+ -type:basic legal:commander  (oracle:{W} or oracle:{U} or oracle:{B} or oracle:{R} or oracle:{G} or oracle:{C}) type:land (game:paper)
+
+card types exclude “basic” and the card types include “land” and it’s legal in Commander and (the text includes “{w}”, “{u}”, “{b}”, “{r}”, “{g}” or “{c}” and the card is available on Paper.
+
+El script tiene que:
+	- Iterar por sobre cada carta e injectar en pantalla cartas en pagination de a 40.
+	- El orden de las cartas va a estar determinado en un principio por el edhrec_rank.
+	- Cada carta lleva id, nombre, imagen, color identity, y mana producido.
+	- Si la carta tiene dos caras, se agrega la segunda imagen en .artContainer con la clase .back (es importante que se renderice primero la carta con .back)
+	- Hay que iterar sobre cada carta, buscando keywords en el oracle_text para encontrar si la carta entra girada, se transforma en criatura, o tiene habilidades activas, y luego agregar esas propiedades.
+	- Revisar el type_line, fijarse si la carta es Snow, Gate, o Artefacto.
+
+
+id
+name
+lang	
+image_uris:{"small"}
+oracle_text
+type_line
+color_identity
+card_faces
+	card_face
+		oracle_text
+			image_uris (small)
+produced_mana
+legalities:{
+	"commander",
+	"paupercommander",
+	"duel",
+	"predh"
+}
+games: {"paper"}
+edhrec_rank
+prices: {"usd"}
+
+
+
+
+Formato actual:
+
+<div class="card" data-card-name="Ancient Spring" data-colors="w,u,b" data-properties="tap" tabindex="0">
+	<div class="cardContent">
+	  <div class="artContainer">
+		<img loading="eager" src="img/cards/small/ancient-spring.webp" alt="Ancient Spring">
+	  </div>
+	</div>
+	<span class="cardName">Ancient Spring</span>
+</div>
+
+Properties pueden ser:
+
+ability-activated:	Tiene una habilidad activa
+tap: 				Siempre entra girada
+untap:				Entra enderezada o tiene una condición por la cual puede entrar enderezada
+creature:			Se puede transformar en criatura, o una de sus caras es una criatura
+dfc-modal-face		Tiene dos caras
+artifact:			Tiene tipo Artifact
+s: 					Tiene tipo Snow
+gtc: 				Tiene tipo Gate

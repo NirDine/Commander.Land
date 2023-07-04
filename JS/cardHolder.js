@@ -24,7 +24,7 @@ const properties = new Map([
 ]);
 
 const cards = document.querySelectorAll('.card');
-const dfcs = document.querySelectorAll('.dfc');
+const dfcs = document.querySelectorAll('.card:has(.dfc)');
 
 function setTrackerTotals() {
   const trackerTotals = document.querySelectorAll('[class^="tracker tracker-"] .total');
@@ -266,10 +266,11 @@ function updateProgressBar() {
   });
 }
 
-const flipCard = (dfc) => {
-const dfcCard = event.target.closest('.dfc');
-  if (dfcCard) dfcCard.classList.toggle('flipped');
-};
+$(document).on('click', '.flip-button', function() {
+  const card = $(this).closest('.card');
+  card.toggleClass('flipped');
+});
+
 
 
 const updateCardsVisibility = () => {
@@ -368,11 +369,27 @@ const updateMobileColorFilters = () => {
     const propertyElements = document.querySelectorAll('.propertyTarget');
     propertyElements.forEach(target => {
         target.querySelectorAll('i').forEach(i => i.remove());
-        Array.from(selectedPropertyCheckboxes).forEach(cb => {
-            const i = document.createElement('i');
-            i.classList.add('ms', 'ms-' + cb.value);
-            target.appendChild(i);
-        });
+
+        
+ Array.from(selectedPropertyCheckboxes).forEach(cb => {
+  const i = document.createElement('i');
+  if (cb.value !== 'gtc') {
+    i.classList.add('ms', 'ms-' + cb.value);
+    
+  } else {
+    i.classList.add('ss', 'ss-' + cb.value);
+
+  }
+
+  target.appendChild(i);
+});
+
+        
+        
+        
+        
+        
+        
         if (selectedPropertyCheckboxes.length === 0) {
             const i = document.createElement('i');
             i.classList.add('ms', 'ms-land');

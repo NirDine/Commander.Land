@@ -273,7 +273,8 @@ span#combination-name {
 }
 
 i.ms,
-label.reset {
+label.reset,
+i.ss {
   color: var(--mtg-c);
 }
 

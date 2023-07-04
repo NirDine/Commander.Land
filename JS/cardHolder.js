@@ -24,7 +24,7 @@ const properties = new Map([
 ]);
 
 const cards = document.querySelectorAll('.card');
-
+const dfcs = document.querySelectorAll('.dfc');
 
 function setTrackerTotals() {
   const trackerTotals = document.querySelectorAll('[class^="tracker tracker-"] .total');
@@ -266,7 +266,10 @@ function updateProgressBar() {
   });
 }
 
-
+const flipCard = (dfc) => {
+const dfcCard = event.target.closest('.dfc');
+  if (dfcCard) dfcCard.classList.toggle('flipped');
+};
 
 
 const updateCardsVisibility = () => {
@@ -320,11 +323,24 @@ resetFiltersButton.addEventListener('click', () => {
 checkboxes.forEach(checkbox => checkbox.addEventListener('change', updateCardsVisibility));
 
 cards.forEach(card => {
-    card.addEventListener('click', () => addCard(card));
-    card.addEventListener('keydown', event => (event.code === 'Enter' || event.code === 'Space') && addCard(card));
+  const flipButton = card.querySelector('.flip-button');
+  
+  const handleClick = event => {
+    // Check if the clicked element is the flip button or its descendant
+    if (!flipButton || !flipButton.contains(event.target)) {
+      addCard(card);
+    }
+  };
+  
+  card.addEventListener('click', handleClick);
+  card.addEventListener('keydown', event => (event.code === 'Enter' || event.code === 'Space') && handleClick(event));
 });
 
 
+dfcs.forEach(dfc => {
+  const dfcButton = dfc.querySelector('.flip-button');
+  dfcButton.addEventListener('click', () => flipCard(dfc));
+});
 
 
 const updateMobileColorFilters = () => {

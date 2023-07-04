@@ -1,6 +1,8 @@
 :root {
   --bradius: 20px;
   --half-bradius: 0px 0px 20px 20px;
+  --cardSizeHeight: 270px;
+  --cardSizeWidth: 193.76px;
 }
 
 html {
@@ -51,7 +53,7 @@ header {
   align-content: center;
   height: 2.5em;
   width: 7em;
-  background-image: url(/img/logos/logo.svg);
+  background-image: url(/img/logos/logo-mobile.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -489,7 +491,12 @@ li:has(#navColors) {
 }
 
 .bottom {
+  margin-top:30px;
   flex-direction: column-reverse;
+}
+
+.top + .top {
+     margin-top:30px;
 }
 
 .mana label,
@@ -694,7 +701,101 @@ body
     display: flex;
 }
 
+.dfc.card {
+    height: var(--cardSizeHeight);
+    width: var(--cardSizeWidth);
+}
 
+.dfc.card::after {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 100;
+}
+
+.dfc.card .artContainer {
+    display: flex;
+    justify-content: center;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: -webkit-tra1nsform 200ms;
+    transition: -webkit-transform 200ms;
+    -o-transition: -o-transform 200ms;
+    transition: transform 200ms;
+    transition: transform 200ms, -webkit-transform 200ms, -o-transform 200ms;
+    position: relative;
+    right: -50%;
+}
+    
+.dfc.card .artContainer img {
+    position: absolute;
+}
+
+.dfc.card.flipped .artContainer {
+    -webkit-transition: -webkit-transform 750ms;
+    transition: -webkit-transform 750ms;
+    -o-transition: -o-transform 750ms;
+    transition: transform 750ms;
+    transition: transform 750ms;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+
+.dfc.card .artContainer .front {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+
+}
+
+
+
+.dfc.card .artContainer .back {
+-webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+
+
+}
+
+.dfc.card.flipped .artContainer .front {
+    backface-visibility: hidden;
+
+    
+}
+
+.dfc.card.flipped .artContainer .back {
+
+}
+
+.flip-button {
+    position: absolute;
+    opacity: 0.60;
+    background: white;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid #343242;
+    display: block;
+    height: 44px;
+    width: 44px;
+    padding: 7px;
+    cursor: pointer;
+    top: 26%;
+    left: 75%;
+    -webkit-transform-style: flat;
+    transform-style: flat;
+    -webkit-transition: background-color 200ms linear, opacity 50ms linear;
+    -o-transition: background-color 200ms linear, opacity 50ms linear;
+    transition: background-color 200ms linear, opacity 50ms linear;
+    z-index: 1000;
+    -webkit-transform: translateZ(0.01px);
+    transform: translateZ(0.01px);
+}
+
+.flipped .flip-button  {
+    background: #000;
+}
+.flipped .flip-button path {
+    fill: #FFF;
+}
 
 .filters .section-dropdown .filter-picker {
   display: grid;
@@ -779,20 +880,48 @@ body
   height: 100%;
 }
 
-.card.selected:after {
-  content: "";
-  display: block;
+.card.selected::after {
+  content: "✔";
+  display: flex;
   position: absolute;
+  justify-content: center;
+  align-items: center;
+  font-size: 10em;
+  font-weight: 300;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: var(--cardSizeWidth);
+  height: var(--cardSizeHeight);
+  z-index: 2;
+}
+
+.card.basic.selected::after {
+  content: "-";
+  height: var(--cardSizeHeight) / 2 ;
+  bottom: 0;
+  top: auto;
+  font-size: 10em;
+}
+
+.card.basic.selected::before {
+    content: "+";
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  font-size: 10em;
+  font-weight: 700;
+  top: 0;
+  left: 0;
+  width: var(--cardSizeWidth);
+  height: var(--cardSizeHeight) / 2 ;
   z-index: 2;
 }
 
 .cardSuggestions img,
 .card,
-.card.selected:after {
+.card.selected::after, 
+.card.basic.selected::before {
   border-radius: 4.25%;
   max-height: 270px;
 }
@@ -937,10 +1066,12 @@ body.buffet:has(#cardHolderInput:checked) {
 .chCardWrapper li {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 1em 0.5em;
     margin-inline: 0.5em;
     border-radius: var(--bradius) var(--bradius) 0px 0px;
     color: var(--contrast);
+    pointer-events: none;
 }
 
 .chCardWrapper h3 {
@@ -954,7 +1085,7 @@ body.buffet:has(#cardHolderInput:checked) {
     content: '';
     background: url(/img/buttons/close-contrast.svg);
     background-repeat: no-repeat;
-    background-size: 25px;
+    background-size: 15px;
     background-position: center;
     cursor: pointer;
     height: 0.5em;
@@ -963,6 +1094,8 @@ body.buffet:has(#cardHolderInput:checked) {
     right: auto;
     position: relative;
     transition: right 0.5s;
+    padding: 10px;
+    pointer-events: all;
 }
 
 
@@ -1087,8 +1220,11 @@ body.buffet:has(#cardHolderInput:checked) {
     
     .cardSuggestions img,
     .card,
-    .card.selected:after {
-        max-height: 340px;
+    .card.selected:after,
+    .card.basic.selected::before {
+        --cardSizeHeight: 340px;
+        --cardSizeWidth: 244px;
+        max-height: var(--cardSizeHeight);
     }
     
 }
@@ -1143,5 +1279,17 @@ body.buffet:has(#cardHolderInput:checked) {
     height: 100%;
     padding: 1em;
     margin-top: 0.5em;
+    
+}
+
+.changelog * {
+    padding-block: 5px;
+}
+
+.changelog p.log { 
+    margin-inline: 70px;
+    padding: 10px;
+    border-radius: calc(var(--bradius) / 2);
+    background: var(--mainBG);
     
 }

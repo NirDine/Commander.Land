@@ -1,34 +1,61 @@
+let selectedCards = []; // Declare selectedCards as an empty array
 
-const cards = document.querySelectorAll('.card');
-const dfcs = document.querySelectorAll('.card:has(.dfc)');
-
-
-$(document).on('click', '.flip-button', function() {
-  const card = $(this).closest('.card');
-  card.toggleClass('flipped');
-});
+// Retrieve selectedCards from localStorage
+const storedSelectedCards = localStorage.getItem('selectedCards');
+selectedCards = storedSelectedCards ? JSON.parse(storedSelectedCards) : [];
 
 
-cards.forEach(card => {
-  const flipButton = card.querySelector('.flip-button');
-  
-  const handleClick = event => {
-    // Check if the clicked element is the flip button or its descendant
-    if (!flipButton || !flipButton.contains(event.target)) {
-      addCard(card);
+
+function handleCardInteraction(card) {
+  const cardId = card.data('card-id');
+  const isSelected = card.hasClass('selected');
+
+  if (!isSelected) {
+    card.addClass('selected');
+    selectedCards.push(cardId);
+  } else {
+    card.removeClass('selected');
+    const index = selectedCards.indexOf(cardId);
+    if (index !== -1) {
+      selectedCards.splice(index, 1);
     }
-  };
-  
-  card.addEventListener('click', handleClick);
-  card.addEventListener('keydown', event => (event.code === 'Enter' || event.code === 'Space') && handleClick(event));
-});
+  }
+  // Update ms-0 class of .added-cards i
+    $(".added-cards i").removeClass(function(index, className) {
+      return (className.match(/(^|\s)ms-\S+/g) || []).join(' ');
+    }).addClass(`ms-${selectedCards.length}`);
+ // Check and hide/show the #isAdded checkbox
+    if (selectedCards.length > 0) {
+        $("#isAdded").show();
+      
+    } else {
+      $("#isAdded").prop("checked", false).hide();
+    }
+  // Save selectedCards to localStorage 
+  localStorage.setItem('selectedCards', JSON.stringify(selectedCards));
+  console.log(selectedCards);
+}
+
+    // Event handler for card click
+    function handleCardClick(event) {
+      const card = $(event.currentTarget);
+      const flipButton = card.find('.flip-button');
+
+      // Check if the clicked element is the flip button or its descendant
+      if (!flipButton || !flipButton.is(event.target) && !flipButton.has(event.target).length) {
+        handleCardInteraction(card);
+      }
+    }
 
 
-dfcs.forEach(dfc => {
-  const dfcButton = dfc.querySelector('.flip-button');
-  dfcButton.addEventListener('click', () => flipCard(dfc));
-});
+  // Event handler for key press (Space or Enter)
+  function handleKeyPress(event) {
+    if (event.keyCode === 32 || event.keyCode === 13) {
+      const card = $(event.currentTarget);
+      handleCardInteraction(card);
+    }
+  }
 
-
-
-
+  // Attach event listeners to the cards
+  $(document).on('click', '.card', handleCardClick);
+  $(document).on('keypress', '.card', handleKeyPress);

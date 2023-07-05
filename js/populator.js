@@ -11,7 +11,7 @@ let filteredData = []; // Declare the filteredData variable
 function createCardElement(card) {
   const cardElement = $(`
     <!-- Card -->
-    <div class="card" data-card-name="${card.name}" data-colors="${card.color_identity}" data-properties="${card.properties}" data-rank="${card.edhrec_rank}" tabindex="0"></div>
+    <div class="card" data-card-id="${card.id}" data-card-name="${card.name}" data-colors="${card.color_identity}" data-properties="${card.properties}" data-rank="${card.edhrec_rank}" tabindex="0"></div>
     <!-- End Card -->
   `);
 
@@ -71,8 +71,6 @@ function filterCards() {
     return matchesSearch && (isSubset || showCard);
   });
 
-  console.log('Filtered Data:', filteredData); // Log filtered data
-
   startIndex = 0;
   endIndex = cardsPerPage;
   cardSuggestions.empty(); // Clear the card pool
@@ -95,7 +93,6 @@ function loadCards() {
     // No matching cards found, do not load any cards
     return;
   }
-
   const sortedData = filteredData.sort((a, b) => a.edhrec_rank - b.edhrec_rank);
 
   for (let i = startIndex; i < endIndex; i++) {
@@ -109,10 +106,17 @@ function loadCards() {
 
     if (!isDuplicate) {
       const cardElement = createCardElement(card);
+
+      // Check if the card is already selected
+      if (selectedCards.includes(card.id)) {
+        cardElement.addClass('selected');
+      }
+
       cardSuggestions.append(cardElement);
     }
   }
 }
+
 
 // Initialize debouncer
 var debounceTimeout;
@@ -179,19 +183,17 @@ $.getJSON('../lands/lands.json')
   .done(function(responseData) {
     data = responseData;
 
-    
     // Update filter checkboxes from URL
     updateFiltersFromUrl();
-    
-    
-        filterCards();
+
+    filterCards();
 
     // Scroll event listener
     $(window).on('scroll', function() {
       const cardSuggestionsOffset = cardSuggestions.offset().top + cardSuggestions.height();
       const windowOffset = $(window).scrollTop() + $(window).height();
 
-      if (windowOffset >= cardSuggestionsOffset - offset) {
+      if (!$("#isAdded").is(":checked") && windowOffset >= cardSuggestionsOffset - offset) {
         startIndex += cardsPerPage;
         endIndex += cardsPerPage;
 
@@ -200,10 +202,13 @@ $.getJSON('../lands/lands.json')
         }
       }
     });
-
+    // Update ms-0 class of .added-cards i
+    $(".added-cards i").removeClass(function(index, className) {
+      return (className.match(/(^|\s)ms-\S+/g) || []).join(' ');
+    }).addClass(`ms-${selectedCards.length}`);
   })
   .fail(function(error) {
-    console.error('Error:', error);
+    console.error('JSON Error:', error);
   });
 
 // Add event listener to color and property checkboxes

@@ -1,7 +1,5 @@
-
 const cards = document.querySelectorAll('.card');
 const dfcs = document.querySelectorAll('.card:has(.dfc)');
-
 
 $(document).on('click', '.flip-button', function() {
   const card = $(this).closest('.card');
@@ -15,7 +13,7 @@ cards.forEach(card => {
   const handleClick = event => {
     // Check if the clicked element is the flip button or its descendant
     if (!flipButton || !flipButton.contains(event.target)) {
-      addCard(card);
+      return;
     }
   };
   
@@ -28,7 +26,5 @@ dfcs.forEach(dfc => {
   const dfcButton = dfc.querySelector('.flip-button');
   dfcButton.addEventListener('click', () => flipCard(dfc));
 });
-
-
 
 

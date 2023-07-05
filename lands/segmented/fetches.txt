@@ -1,0 +1,6470 @@
+{
+  "object": "list",
+  "total_cards": 15,
+  "data": [
+    {
+      "object": "card",
+      "id": "25ac5405-df7b-4097-914a-022cb18e20d4",
+      "multiverse_ids": [
+        522320
+      ],
+      "name": "Arid Mesa",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/5/25ac5405-df7b-4097-914a-022cb18e20d4.jpg?1626099519",
+        "normal": "https://cards.scryfall.io/normal/front/2/5/25ac5405-df7b-4097-914a-022cb18e20d4.jpg?1626099519",
+        "png": "https://cards.scryfall.io/png/front/2/5/25ac5405-df7b-4097-914a-022cb18e20d4.png?1626099519"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice Arid Mesa: Search your library for a Mountain or Plains card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Raymond Swanland",
+      "artist_ids": [
+        "e956bacc-077d-4c12-b6bc-ba798b718af9"
+      ],
+      "edhrec_rank": 53,
+      "prices": {
+        "usd": "13.55"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "ca79caa8-9893-49be-bc39-f021adb28220",
+      "multiverse_ids": [
+        578813
+      ],
+      "name": "Bad River",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/a/ca79caa8-9893-49be-bc39-f021adb28220.jpg?1673305916",
+        "normal": "https://cards.scryfall.io/normal/front/c/a/ca79caa8-9893-49be-bc39-f021adb28220.jpg?1673305916",
+        "png": "https://cards.scryfall.io/png/front/c/a/ca79caa8-9893-49be-bc39-f021adb28220.png?1673305916"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Bad River enters the battlefield tapped.\n{T}, Sacrifice Bad River: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Nils Hamm",
+      "artist_ids": [
+        "c540d1fc-1500-457f-93cf-d6069ee66546"
+      ],
+      "edhrec_rank": 3967,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.50"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "7f430794-0d86-4f6a-97e0-4bbb6716d613",
+      "multiverse_ids": [
+        386495
+      ],
+      "name": "Bloodstained Mire",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/7/f/7f430794-0d86-4f6a-97e0-4bbb6716d613.jpg?1571667959",
+        "normal": "https://cards.scryfall.io/normal/front/7/f/7f430794-0d86-4f6a-97e0-4bbb6716d613.jpg?1571667959",
+        "png": "https://cards.scryfall.io/png/front/7/f/7f430794-0d86-4f6a-97e0-4bbb6716d613.png?1571667959"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice Bloodstained Mire: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Daarken",
+      "artist_ids": [
+        "e607a0d4-fc12-4c01-9e3f-501f5269b9cb"
+      ],
+      "edhrec_rank": 63,
+      "prices": {
+        "usd": "29.28"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "8c2996d9-3287-4480-8c04-7a378e37e3cf",
+      "multiverse_ids": [
+        386537
+      ],
+      "name": "Flooded Strand",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/8/c/8c2996d9-3287-4480-8c04-7a378e37e3cf.jpg?1571667973",
+        "normal": "https://cards.scryfall.io/normal/front/8/c/8c2996d9-3287-4480-8c04-7a378e37e3cf.jpg?1571667973",
+        "png": "https://cards.scryfall.io/png/front/8/c/8c2996d9-3287-4480-8c04-7a378e37e3cf.png?1571667973"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice Flooded Strand: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Andreas Rocha",
+      "artist_ids": [
+        "d084e74b-f63a-4107-b72c-ed6250ecc93b"
+      ],
+      "edhrec_rank": 60,
+      "prices": {
+        "usd": "30.97"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "83ccb446-3e8a-436e-99b5-a1b2d57ab72f",
+      "multiverse_ids": [
+        578826
+      ],
+      "name": "Flood Plain",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/8/3/83ccb446-3e8a-436e-99b5-a1b2d57ab72f.jpg?1673306027",
+        "normal": "https://cards.scryfall.io/normal/front/8/3/83ccb446-3e8a-436e-99b5-a1b2d57ab72f.jpg?1673306027",
+        "png": "https://cards.scryfall.io/png/front/8/3/83ccb446-3e8a-436e-99b5-a1b2d57ab72f.png?1673306027"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Flood Plain enters the battlefield tapped.\n{T}, Sacrifice Flood Plain: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Pat Lewis",
+      "artist_ids": [
+        "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
+      ],
+      "edhrec_rank": 2720,
+      "prices": {
+        "usd": "0.19"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "60bef70c-ded1-4645-8c6d-3f9ad032957f",
+      "multiverse_ids": [
+        578830
+      ],
+      "name": "Grasslands",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/0/60bef70c-ded1-4645-8c6d-3f9ad032957f.jpg?1673306061",
+        "normal": "https://cards.scryfall.io/normal/front/6/0/60bef70c-ded1-4645-8c6d-3f9ad032957f.jpg?1673306061",
+        "png": "https://cards.scryfall.io/png/front/6/0/60bef70c-ded1-4645-8c6d-3f9ad032957f.png?1673306061"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Grasslands enters the battlefield tapped.\n{T}, Sacrifice Grasslands: Search your library for a Forest or Plains card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "John Avon",
+      "artist_ids": [
+        "798f3932-30e0-4420-aa3f-db4d613f89ca"
+      ],
+      "edhrec_rank": 2298,
+      "prices": {
+        "usd": "0.18"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "9db3ba6d-eb7f-4f5b-9a3b-c6239c3baa42",
+      "multiverse_ids": [
+        522324
+      ],
+      "name": "Marsh Flats",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/d/9db3ba6d-eb7f-4f5b-9a3b-c6239c3baa42.jpg?1626099665",
+        "normal": "https://cards.scryfall.io/normal/front/9/d/9db3ba6d-eb7f-4f5b-9a3b-c6239c3baa42.jpg?1626099665",
+        "png": "https://cards.scryfall.io/png/front/9/d/9db3ba6d-eb7f-4f5b-9a3b-c6239c3baa42.png?1626099665"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice Marsh Flats: Search your library for a Plains or Swamp card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Izzy",
+      "artist_ids": [
+        "2c3d2473-ff5d-4309-8194-e0b2def2ab65"
+      ],
+      "edhrec_rank": 42,
+      "prices": {
+        "usd": "10.53"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "88231c0d-0cc8-44ec-bf95-81d1710ac141",
+      "multiverse_ids": [
+        522326
+      ],
+      "name": "Misty Rainforest",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/8/8/88231c0d-0cc8-44ec-bf95-81d1710ac141.jpg?1626099715",
+        "normal": "https://cards.scryfall.io/normal/front/8/8/88231c0d-0cc8-44ec-bf95-81d1710ac141.jpg?1626099715",
+        "png": "https://cards.scryfall.io/png/front/8/8/88231c0d-0cc8-44ec-bf95-81d1710ac141.png?1626099715"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice Misty Rainforest: Search your library for a Forest or Island card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Shelly Wan",
+      "artist_ids": [
+        "bc1722f2-95d4-462d-948b-35be540ef4c2"
+      ],
+      "edhrec_rank": 41,
+      "prices": {
+        "usd": "16.99"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "1acef291-70ad-4196-9276-de7b4d31016d",
+      "multiverse_ids": [
+        578835
+      ],
+      "name": "Mountain Valley",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/a/1acef291-70ad-4196-9276-de7b4d31016d.jpg?1673306110",
+        "normal": "https://cards.scryfall.io/normal/front/1/a/1acef291-70ad-4196-9276-de7b4d31016d.jpg?1673306110",
+        "png": "https://cards.scryfall.io/png/front/1/a/1acef291-70ad-4196-9276-de7b4d31016d.png?1673306110"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Mountain Valley enters the battlefield tapped.\n{T}, Sacrifice Mountain Valley: Search your library for a Mountain or Forest card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Kari Johnson",
+      "artist_ids": [
+        "5253a25f-c71e-47d0-b4ca-5a5dcab4e405"
+      ],
+      "edhrec_rank": 3044,
+      "prices": {
+        "usd": "0.39"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "ff2f5f58-9a95-4ca6-93a0-813738f0072f",
+      "multiverse_ids": [
+        386627
+      ],
+      "name": "Polluted Delta",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/f/ff2f5f58-9a95-4ca6-93a0-813738f0072f.jpg?1571667978",
+        "normal": "https://cards.scryfall.io/normal/front/f/f/ff2f5f58-9a95-4ca6-93a0-813738f0072f.jpg?1571667978",
+        "png": "https://cards.scryfall.io/png/front/f/f/ff2f5f58-9a95-4ca6-93a0-813738f0072f.png?1571667978"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice Polluted Delta: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Vincent Proce",
+      "artist_ids": [
+        "d82b1138-76d3-49f7-9d8c-bc2e2d3e0b0a"
+      ],
+      "edhrec_rank": 50,
+      "prices": {
+        "usd": "32.20"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "41c99349-2181-4eee-bf71-717e1dc94f7f",
+      "multiverse_ids": [
+        578844
+      ],
+      "name": "Rocky Tar Pit",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/1/41c99349-2181-4eee-bf71-717e1dc94f7f.jpg?1673306185",
+        "normal": "https://cards.scryfall.io/normal/front/4/1/41c99349-2181-4eee-bf71-717e1dc94f7f.jpg?1673306185",
+        "png": "https://cards.scryfall.io/png/front/4/1/41c99349-2181-4eee-bf71-717e1dc94f7f.png?1673306185"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Rocky Tar Pit enters the battlefield tapped.\n{T}, Sacrifice Rocky Tar Pit: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Jeff Miracola",
+      "artist_ids": [
+        "9b465bde-3656-4495-ace4-af4ce29999ed"
+      ],
+      "edhrec_rank": 2693,
+      "prices": {
+        "usd": "0.24"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "71e491c5-8c07-449b-b2f1-ffa052e6d311",
+      "multiverse_ids": [
+        522330
+      ],
+      "name": "Scalding Tarn",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/7/1/71e491c5-8c07-449b-b2f1-ffa052e6d311.jpg?1626099812",
+        "normal": "https://cards.scryfall.io/normal/front/7/1/71e491c5-8c07-449b-b2f1-ffa052e6d311.jpg?1626099812",
+        "png": "https://cards.scryfall.io/png/front/7/1/71e491c5-8c07-449b-b2f1-ffa052e6d311.png?1626099812"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice Scalding Tarn: Search your library for an Island or Mountain card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Philip Straub",
+      "artist_ids": [
+        "43cdce85-e4bc-424e-ac95-fd0886b66ff3"
+      ],
+      "edhrec_rank": 48,
+      "prices": {
+        "usd": "17.33"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "94c229ea-90da-4aa0-bfda-b162fb3b5b8b",
+      "multiverse_ids": [
+        522336
+      ],
+      "name": "Verdant Catacombs",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/4/94c229ea-90da-4aa0-bfda-b162fb3b5b8b.jpg?1626099986",
+        "normal": "https://cards.scryfall.io/normal/front/9/4/94c229ea-90da-4aa0-bfda-b162fb3b5b8b.jpg?1626099986",
+        "png": "https://cards.scryfall.io/png/front/9/4/94c229ea-90da-4aa0-bfda-b162fb3b5b8b.png?1626099986"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice Verdant Catacombs: Search your library for a Swamp or Forest card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Vance Kovacs",
+      "artist_ids": [
+        "b5516011-4722-4fc8-8542-102cecc52b71"
+      ],
+      "edhrec_rank": 44,
+      "prices": {
+        "usd": "13.51"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "e7b28650-cddc-4878-b1d1-b5a764f4df49",
+      "multiverse_ids": [
+        386725
+      ],
+      "name": "Windswept Heath",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/e/7/e7b28650-cddc-4878-b1d1-b5a764f4df49.jpg?1571667973",
+        "normal": "https://cards.scryfall.io/normal/front/e/7/e7b28650-cddc-4878-b1d1-b5a764f4df49.jpg?1571667973",
+        "png": "https://cards.scryfall.io/png/front/e/7/e7b28650-cddc-4878-b1d1-b5a764f4df49.png?1571667973"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice Windswept Heath: Search your library for a Forest or Plains card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Yeong-Hao Han",
+      "artist_ids": [
+        "f8e7f8d6-6dde-4059-973c-30f1fd1bbe4e"
+      ],
+      "edhrec_rank": 61,
+      "prices": {
+        "usd": "20.34"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "a8503cca-7e7d-44c4-8587-81376b396398",
+      "multiverse_ids": [
+        386729
+      ],
+      "name": "Wooded Foothills",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/a/8/a8503cca-7e7d-44c4-8587-81376b396398.jpg?1571667977",
+        "normal": "https://cards.scryfall.io/normal/front/a/8/a8503cca-7e7d-44c4-8587-81376b396398.jpg?1571667977",
+        "png": "https://cards.scryfall.io/png/front/a/8/a8503cca-7e7d-44c4-8587-81376b396398.png?1571667977"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice Wooded Foothills: Search your library for a Mountain or Forest card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Jonas De Ro",
+      "artist_ids": [
+        "561ebf9e-8d93-4b57-8156-8826d0c19601"
+      ],
+      "edhrec_rank": 66,
+      "prices": {
+        "usd": "30.22"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+	{
+      "object": "card",
+      "id": "73403d04-fe97-4830-8b80-16dd1a1a6cc1",
+      "multiverse_ids": [
+        382852
+      ],
+      "name": "Badlands",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.jpg?1562918068",
+        "normal": "https://cards.scryfall.io/normal/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.jpg?1562918068",
+        "png": "https://cards.scryfall.io/png/front/7/3/73403d04-fe97-4830-8b80-16dd1a1a6cc1.png?1562918068"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Mountain",
+      "oracle_text": "({T}: Add {B} or {R}.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Daarken",
+      "artist_ids": [
+        "e607a0d4-fc12-4c01-9e3f-501f5269b9cb"
+      ],
+      "edhrec_rank": 426,
+      "prices": {
+        "usd": null
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "bd7567df-b4d8-41a8-8eac-c05afa784bfe",
+      "multiverse_ids": [
+        382860
+      ],
+      "name": "Bayou",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.jpg?1562933075",
+        "normal": "https://cards.scryfall.io/normal/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.jpg?1562933075",
+        "png": "https://cards.scryfall.io/png/front/b/d/bd7567df-b4d8-41a8-8eac-c05afa784bfe.png?1562933075"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Forest",
+      "oracle_text": "({T}: Add {B} or {G}.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Karl Kopinski",
+      "artist_ids": [
+        "0fad2c48-a56e-4a0b-b512-224f6f238f20"
+      ],
+      "edhrec_rank": 441,
+      "prices": {
+        "usd": null
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "bb979a96-a57d-4fb5-8ebe-0bd398272abe",
+      "multiverse_ids": [
+        383049
+      ],
+      "name": "Plateau",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/b/bb979a96-a57d-4fb5-8ebe-0bd398272abe.jpg?1562932720",
+        "normal": "https://cards.scryfall.io/normal/front/b/b/bb979a96-a57d-4fb5-8ebe-0bd398272abe.jpg?1562932720",
+        "png": "https://cards.scryfall.io/png/front/b/b/bb979a96-a57d-4fb5-8ebe-0bd398272abe.png?1562932720"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain Plains",
+      "oracle_text": "({T}: Add {R} or {W}.)",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Noah Bradley",
+      "artist_ids": [
+        "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
+      ],
+      "edhrec_rank": 517,
+      "prices": {
+        "usd": null
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "b0d161fc-4a2a-4f1d-82b4-a746552552df",
+      "multiverse_ids": [
+        383079
+      ],
+      "name": "Savannah",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/0/b0d161fc-4a2a-4f1d-82b4-a746552552df.jpg?1562930574",
+        "normal": "https://cards.scryfall.io/normal/front/b/0/b0d161fc-4a2a-4f1d-82b4-a746552552df.jpg?1562930574",
+        "png": "https://cards.scryfall.io/png/front/b/0/b0d161fc-4a2a-4f1d-82b4-a746552552df.png?1562930574"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Forest Plains",
+      "oracle_text": "({T}: Add {G} or {W}.)",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Charles Urbach",
+      "artist_ids": [
+        "507c67d2-1514-40ab-b7cb-a9f3b96a08e8"
+      ],
+      "edhrec_rank": 503,
+      "prices": {
+        "usd": null
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "9d471e36-a3ab-4a96-ba4b-8eca921ea37a",
+      "multiverse_ids": [
+        383083
+      ],
+      "name": "Scrubland",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/d/9d471e36-a3ab-4a96-ba4b-8eca921ea37a.jpg?1562926691",
+        "normal": "https://cards.scryfall.io/normal/front/9/d/9d471e36-a3ab-4a96-ba4b-8eca921ea37a.jpg?1562926691",
+        "png": "https://cards.scryfall.io/png/front/9/d/9d471e36-a3ab-4a96-ba4b-8eca921ea37a.png?1562926691"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Plains Swamp",
+      "oracle_text": "({T}: Add {W} or {B}.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Eytan Zana",
+      "artist_ids": [
+        "0d8d6726-4051-445a-8374-a919aad98f38"
+      ],
+      "edhrec_rank": 428,
+      "prices": {
+        "usd": null
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "0c2c39fc-b564-4ab5-833c-ff029760b7a7",
+      "multiverse_ids": [
+        383122
+      ],
+      "name": "Taiga",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.jpg?1562897467",
+        "normal": "https://cards.scryfall.io/normal/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.jpg?1562897467",
+        "png": "https://cards.scryfall.io/png/front/0/c/0c2c39fc-b564-4ab5-833c-ff029760b7a7.png?1562897467"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain Forest",
+      "oracle_text": "({T}: Add {R} or {G}.)",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Sam Burley",
+      "artist_ids": [
+        "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
+      ],
+      "edhrec_rank": 481,
+      "prices": {
+        "usd": null
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "47033ba4-8f26-4a6b-97bd-5b366327325e",
+      "multiverse_ids": [
+        383138
+      ],
+      "name": "Tropical Island",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/7/47033ba4-8f26-4a6b-97bd-5b366327325e.jpg?1632873386",
+        "normal": "https://cards.scryfall.io/normal/front/4/7/47033ba4-8f26-4a6b-97bd-5b366327325e.jpg?1632873386",
+        "png": "https://cards.scryfall.io/png/front/4/7/47033ba4-8f26-4a6b-97bd-5b366327325e.png?1632873386"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Forest Island",
+      "oracle_text": "({T}: Add {G} or {U}.)",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "40cc6b1c-8f3d-4128-97ac-33381868ddd2",
+          "component": "combo_piece",
+          "name": "Shoreline Scout",
+          "type_line": "Creature — Merfolk Scout"
+        },
+        {
+          "object": "related_card",
+          "id": "47033ba4-8f26-4a6b-97bd-5b366327325e",
+          "component": "combo_piece",
+          "name": "Tropical Island",
+          "type_line": "Land — Forest Island"
+        }
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Franz Vohwinkel",
+      "artist_ids": [
+        "3a243c17-3baa-4b53-9599-645311cd7d3d"
+      ],
+      "edhrec_rank": 423,
+      "prices": {
+        "usd": null
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "efd35cb4-862d-4699-a197-b744989b3ceb",
+      "multiverse_ids": [
+        383139
+      ],
+      "name": "Tundra",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/e/f/efd35cb4-862d-4699-a197-b744989b3ceb.jpg?1562943174",
+        "normal": "https://cards.scryfall.io/normal/front/e/f/efd35cb4-862d-4699-a197-b744989b3ceb.jpg?1562943174",
+        "png": "https://cards.scryfall.io/png/front/e/f/efd35cb4-862d-4699-a197-b744989b3ceb.png?1562943174"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Plains Island",
+      "oracle_text": "({T}: Add {W} or {U}.)",
+      "colors": [],
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Lars Grant-West",
+      "artist_ids": [
+        "21ed6499-c4d3-4965-ab02-6c7228275bec"
+      ],
+      "edhrec_rank": 433,
+      "prices": {
+        "usd": null
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "26cee543-6eab-494e-a803-33a5d48d7d74",
+      "multiverse_ids": [
+        383142
+      ],
+      "name": "Underground Sea",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/6/26cee543-6eab-494e-a803-33a5d48d7d74.jpg?1562902883",
+        "normal": "https://cards.scryfall.io/normal/front/2/6/26cee543-6eab-494e-a803-33a5d48d7d74.jpg?1562902883",
+        "png": "https://cards.scryfall.io/png/front/2/6/26cee543-6eab-494e-a803-33a5d48d7d74.png?1562902883"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Swamp",
+      "oracle_text": "({T}: Add {U} or {B}.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Cliff Childs",
+      "artist_ids": [
+        "ed6f7e03-20ba-4c73-bdda-4a4928480721"
+      ],
+      "edhrec_rank": 356,
+      "prices": {
+        "usd": null
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "2f607e7e-30c0-45e9-8f61-bf6e9fe63f2b",
+      "multiverse_ids": [
+        383147
+      ],
+      "name": "Volcanic Island",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/f/2f607e7e-30c0-45e9-8f61-bf6e9fe63f2b.jpg?1562904669",
+        "normal": "https://cards.scryfall.io/normal/front/2/f/2f607e7e-30c0-45e9-8f61-bf6e9fe63f2b.jpg?1562904669",
+        "png": "https://cards.scryfall.io/png/front/2/f/2f607e7e-30c0-45e9-8f61-bf6e9fe63f2b.png?1562904669"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Mountain",
+      "oracle_text": "({T}: Add {U} or {R}.)",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Noah Bradley",
+      "artist_ids": [
+        "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
+      ],
+      "edhrec_rank": 452,
+      "prices": {
+        "usd": null
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+	{
+      "object": "card",
+      "id": "5faba6c8-3463-47c1-ba01-09eb87fcb2d5",
+      "multiverse_ids": [
+        457389
+      ],
+      "name": "Blood Crypt",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/f/5faba6c8-3463-47c1-ba01-09eb87fcb2d5.jpg?1584832229",
+        "normal": "https://cards.scryfall.io/normal/front/5/f/5faba6c8-3463-47c1-ba01-09eb87fcb2d5.jpg?1584832229",
+        "png": "https://cards.scryfall.io/png/front/5/f/5faba6c8-3463-47c1-ba01-09eb87fcb2d5.png?1584832229"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Mountain",
+      "oracle_text": "({T}: Add {B} or {R}.)\nAs Blood Crypt enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "rakdos",
+      "artist": "Adam Paquette",
+      "artist_ids": [
+        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+      ],
+      "edhrec_rank": 74,
+      "preview": {
+      },
+      "prices": {
+        "usd": "16.71"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "bb54233c-0844-4965-9cde-e8a4ef3e11b8",
+      "multiverse_ids": [
+        457390
+      ],
+      "name": "Breeding Pool",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/b/bb54233c-0844-4965-9cde-e8a4ef3e11b8.jpg?1584832238",
+        "normal": "https://cards.scryfall.io/normal/front/b/b/bb54233c-0844-4965-9cde-e8a4ef3e11b8.jpg?1584832238",
+        "png": "https://cards.scryfall.io/png/front/b/b/bb54233c-0844-4965-9cde-e8a4ef3e11b8.png?1584832238"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Forest Island",
+      "oracle_text": "({T}: Add {G} or {U}.)\nAs Breeding Pool enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "simic",
+      "artist": "Ravenna Tran",
+      "artist_ids": [
+        "e24bc1d0-446b-45e0-b215-89f581837aa4"
+      ],
+      "edhrec_rank": 72,
+      "preview": {
+      },
+      "prices": {
+        "usd": "20.25"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "ced4c824-2dfc-42ae-84e6-09f8e3f51b5b",
+      "multiverse_ids": [
+        457392
+      ],
+      "name": "Godless Shrine",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/e/ced4c824-2dfc-42ae-84e6-09f8e3f51b5b.jpg?1584832255",
+        "normal": "https://cards.scryfall.io/normal/front/c/e/ced4c824-2dfc-42ae-84e6-09f8e3f51b5b.jpg?1584832255",
+        "png": "https://cards.scryfall.io/png/front/c/e/ced4c824-2dfc-42ae-84e6-09f8e3f51b5b.png?1584832255"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Plains Swamp",
+      "oracle_text": "({T}: Add {W} or {B}.)\nAs Godless Shrine enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "orzhov",
+      "artist": "Ravenna Tran",
+      "artist_ids": [
+        "e24bc1d0-446b-45e0-b215-89f581837aa4"
+      ],
+      "edhrec_rank": 68,
+      "preview": {
+      },
+      "prices": {
+        "usd": "10.02"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "f97a6d34-03ab-49f1-b02e-405b733f8843",
+      "multiverse_ids": [
+        457395
+      ],
+      "name": "Hallowed Fountain",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/9/f97a6d34-03ab-49f1-b02e-405b733f8843.jpg?1584832278",
+        "normal": "https://cards.scryfall.io/normal/front/f/9/f97a6d34-03ab-49f1-b02e-405b733f8843.jpg?1584832278",
+        "png": "https://cards.scryfall.io/png/front/f/9/f97a6d34-03ab-49f1-b02e-405b733f8843.png?1584832278"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Plains Island",
+      "oracle_text": "({T}: Add {W} or {U}.)\nAs Hallowed Fountain enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "azorius",
+      "artist": "Jedd Chevrier",
+      "artist_ids": [
+        "ebde5690-d401-46ba-8fd3-b9c07d5ef5a7"
+      ],
+      "edhrec_rank": 71,
+      "preview": {
+      },
+      "prices": {
+        "usd": "10.81"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "eff1f52c-5c43-4260-aaa0-6920846a191c",
+      "multiverse_ids": [
+        453003
+      ],
+      "name": "Overgrown Tomb",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/e/f/eff1f52c-5c43-4260-aaa0-6920846a191c.jpg?1572894177",
+        "normal": "https://cards.scryfall.io/normal/front/e/f/eff1f52c-5c43-4260-aaa0-6920846a191c.jpg?1572894177",
+        "png": "https://cards.scryfall.io/png/front/e/f/eff1f52c-5c43-4260-aaa0-6920846a191c.png?1572894177"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Forest",
+      "oracle_text": "({T}: Add {B} or {G}.)\nAs Overgrown Tomb enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "golgari",
+      "artist": "Yeong-Hao Han",
+      "artist_ids": [
+        "f8e7f8d6-6dde-4059-973c-30f1fd1bbe4e"
+      ],
+      "edhrec_rank": 69,
+      "prices": {
+        "usd": "14.06"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "b7b598d0-535d-477d-a33d-d6a10ff5439a",
+      "multiverse_ids": [
+        453004
+      ],
+      "name": "Sacred Foundry",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/7/b7b598d0-535d-477d-a33d-d6a10ff5439a.jpg?1572894184",
+        "normal": "https://cards.scryfall.io/normal/front/b/7/b7b598d0-535d-477d-a33d-d6a10ff5439a.jpg?1572894184",
+        "png": "https://cards.scryfall.io/png/front/b/7/b7b598d0-535d-477d-a33d-d6a10ff5439a.png?1572894184"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain Plains",
+      "oracle_text": "({T}: Add {R} or {W}.)\nAs Sacred Foundry enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "boros",
+      "artist": "Adam Paquette",
+      "artist_ids": [
+        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+      ],
+      "edhrec_rank": 87,
+      "prices": {
+        "usd": "18.47"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "b8ebe3cf-7143-453a-b0ef-2f5bdaac3185",
+      "multiverse_ids": [
+        453007
+      ],
+      "name": "Steam Vents",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/8/b8ebe3cf-7143-453a-b0ef-2f5bdaac3185.jpg?1572894204",
+        "normal": "https://cards.scryfall.io/normal/front/b/8/b8ebe3cf-7143-453a-b0ef-2f5bdaac3185.jpg?1572894204",
+        "png": "https://cards.scryfall.io/png/front/b/8/b8ebe3cf-7143-453a-b0ef-2f5bdaac3185.png?1572894204"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Mountain",
+      "oracle_text": "({T}: Add {U} or {R}.)\nAs Steam Vents enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "izzet",
+      "artist": "Jonas De Ro",
+      "artist_ids": [
+        "561ebf9e-8d93-4b57-8156-8826d0c19601"
+      ],
+      "edhrec_rank": 76,
+      "prices": {
+        "usd": "14.65"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "dcaa1ff6-304e-4660-9df3-36de8e89592e",
+      "multiverse_ids": [
+        457403
+      ],
+      "name": "Stomping Ground",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/c/dcaa1ff6-304e-4660-9df3-36de8e89592e.jpg?1584832363",
+        "normal": "https://cards.scryfall.io/normal/front/d/c/dcaa1ff6-304e-4660-9df3-36de8e89592e.jpg?1584832363",
+        "png": "https://cards.scryfall.io/png/front/d/c/dcaa1ff6-304e-4660-9df3-36de8e89592e.png?1584832363"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain Forest",
+      "oracle_text": "({T}: Add {R} or {G}.)\nAs Stomping Ground enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "gruul",
+      "artist": "James Paick",
+      "artist_ids": [
+        "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
+      ],
+      "edhrec_rank": 73,
+      "preview": {
+      },
+      "prices": {
+        "usd": "10.14"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "2b9b0195-beda-403e-bc27-7ae3be9f318c",
+      "multiverse_ids": [
+        453008
+      ],
+      "name": "Temple Garden",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/b/2b9b0195-beda-403e-bc27-7ae3be9f318c.jpg?1572894210",
+        "normal": "https://cards.scryfall.io/normal/front/2/b/2b9b0195-beda-403e-bc27-7ae3be9f318c.jpg?1572894210",
+        "png": "https://cards.scryfall.io/png/front/2/b/2b9b0195-beda-403e-bc27-7ae3be9f318c.png?1572894210"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Forest Plains",
+      "oracle_text": "({T}: Add {G} or {W}.)\nAs Temple Garden enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "selesnya",
+      "artist": "Titus Lunter",
+      "artist_ids": [
+        "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
+      ],
+      "edhrec_rank": 78,
+      "prices": {
+        "usd": "12.65"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "7d4595f2-9297-40dc-b2dd-7144bbb401f7",
+      "multiverse_ids": [
+        453009
+      ],
+      "name": "Watery Grave",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/7/d/7d4595f2-9297-40dc-b2dd-7144bbb401f7.jpg?1572894217",
+        "normal": "https://cards.scryfall.io/normal/front/7/d/7d4595f2-9297-40dc-b2dd-7144bbb401f7.jpg?1572894217",
+        "png": "https://cards.scryfall.io/png/front/7/d/7d4595f2-9297-40dc-b2dd-7144bbb401f7.png?1572894217"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Swamp",
+      "oracle_text": "({T}: Add {U} or {B}.)\nAs Watery Grave enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "dimir",
+      "artist": "Cliff Childs",
+      "artist_ids": [
+        "ed6f7e03-20ba-4c73-bdda-4a4928480721"
+      ],
+      "edhrec_rank": 56,
+      "prices": {
+        "usd": "12.62"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "6bb570f4-de68-4d8c-a9f3-8a3294163aa8",
+      "multiverse_ids": [
+        574725
+      ],
+      "name": "Contaminated Aquifer",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/b/6bb570f4-de68-4d8c-a9f3-8a3294163aa8.jpg?1673308293",
+        "normal": "https://cards.scryfall.io/normal/front/6/b/6bb570f4-de68-4d8c-a9f3-8a3294163aa8.jpg?1673308293",
+        "png": "https://cards.scryfall.io/png/front/6/b/6bb570f4-de68-4d8c-a9f3-8a3294163aa8.png?1673308293"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Swamp",
+      "oracle_text": "({T}: Add {U} or {B}.)\nContaminated Aquifer enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Robin Olausson",
+      "artist_ids": [
+        "adb9ad6d-6173-454b-8b50-a102b182548b"
+      ],
+      "edhrec_rank": 2885,
+      "prices": {
+        "usd": "0.33"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "1e62fe57-4fa4-4bfd-8e31-9f6db774d7e2",
+      "multiverse_ids": [
+        574727
+      ],
+      "name": "Geothermal Bog",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/e/1e62fe57-4fa4-4bfd-8e31-9f6db774d7e2.jpg?1673308307",
+        "normal": "https://cards.scryfall.io/normal/front/1/e/1e62fe57-4fa4-4bfd-8e31-9f6db774d7e2.jpg?1673308307",
+        "png": "https://cards.scryfall.io/png/front/1/e/1e62fe57-4fa4-4bfd-8e31-9f6db774d7e2.png?1673308307"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Mountain",
+      "oracle_text": "({T}: Add {B} or {R}.)\nGeothermal Bog enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Gabor Szikszai",
+      "artist_ids": [
+        "44c3877f-8771-43dc-9e40-f4c765f59d2e"
+      ],
+      "edhrec_rank": 3199,
+      "prices": {
+        "usd": "0.18"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "16f5e958-56e6-4666-a534-24deba6f652d",
+      "multiverse_ids": [
+        574728
+      ],
+      "name": "Haunted Mire",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/6/16f5e958-56e6-4666-a534-24deba6f652d.jpg?1673308314",
+        "normal": "https://cards.scryfall.io/normal/front/1/6/16f5e958-56e6-4666-a534-24deba6f652d.jpg?1673308314",
+        "png": "https://cards.scryfall.io/png/front/1/6/16f5e958-56e6-4666-a534-24deba6f652d.png?1673308314"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Forest",
+      "oracle_text": "({T}: Add {B} or {G}.)\nHaunted Mire enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Bruce Brenneise",
+      "artist_ids": [
+        "91d65465-e8a6-4a4e-8b0e-0e07466cfa0f"
+      ],
+      "edhrec_rank": 1721,
+      "prices": {
+        "usd": "0.27"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "c50ec22c-decb-419f-ae52-78ea1706eb11",
+      "multiverse_ids": [
+        574729
+      ],
+      "name": "Idyllic Beachfront",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/5/c50ec22c-decb-419f-ae52-78ea1706eb11.jpg?1677292234",
+        "normal": "https://cards.scryfall.io/normal/front/c/5/c50ec22c-decb-419f-ae52-78ea1706eb11.jpg?1677292234",
+        "png": "https://cards.scryfall.io/png/front/c/5/c50ec22c-decb-419f-ae52-78ea1706eb11.png?1677292234"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Plains Island",
+      "oracle_text": "({T}: Add {W} or {U}.)\nIdyllic Beachfront enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Robin Olausson",
+      "artist_ids": [
+        "adb9ad6d-6173-454b-8b50-a102b182548b"
+      ],
+      "edhrec_rank": 3119,
+      "prices": {
+        "usd": "0.20"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "20aff4af-5128-432f-a8c8-65b6909d31ac",
+      "multiverse_ids": [
+        574731
+      ],
+      "name": "Molten Tributary",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/0/20aff4af-5128-432f-a8c8-65b6909d31ac.jpg?1673308337",
+        "normal": "https://cards.scryfall.io/normal/front/2/0/20aff4af-5128-432f-a8c8-65b6909d31ac.jpg?1673308337",
+        "png": "https://cards.scryfall.io/png/front/2/0/20aff4af-5128-432f-a8c8-65b6909d31ac.png?1673308337"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Mountain",
+      "oracle_text": "({T}: Add {U} or {R}.)\nMolten Tributary enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Yeong-Hao Han",
+      "artist_ids": [
+        "f8e7f8d6-6dde-4059-973c-30f1fd1bbe4e"
+      ],
+      "edhrec_rank": 2599,
+      "prices": {
+        "usd": "0.17"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "e0f9dca6-e5ae-4714-8a59-2ef1d8f1e82d",
+      "multiverse_ids": [
+        574733
+      ],
+      "name": "Radiant Grove",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/e/0/e0f9dca6-e5ae-4714-8a59-2ef1d8f1e82d.jpg?1673308352",
+        "normal": "https://cards.scryfall.io/normal/front/e/0/e0f9dca6-e5ae-4714-8a59-2ef1d8f1e82d.jpg?1673308352",
+        "png": "https://cards.scryfall.io/png/front/e/0/e0f9dca6-e5ae-4714-8a59-2ef1d8f1e82d.png?1673308352"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Forest Plains",
+      "oracle_text": "({T}: Add {G} or {W}.)\nRadiant Grove enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Lorenzo Lanfranconi",
+      "artist_ids": [
+        "334dd388-1e26-4181-8eca-f9c097e29c5e"
+      ],
+      "edhrec_rank": 2076,
+      "prices": {
+        "usd": "0.19"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "24957d64-ad17-4d4f-8a00-3cdd83e1ce88",
+      "multiverse_ids": [
+        574734
+      ],
+      "name": "Sacred Peaks",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/4/24957d64-ad17-4d4f-8a00-3cdd83e1ce88.jpg?1673308359",
+        "normal": "https://cards.scryfall.io/normal/front/2/4/24957d64-ad17-4d4f-8a00-3cdd83e1ce88.jpg?1673308359",
+        "png": "https://cards.scryfall.io/png/front/2/4/24957d64-ad17-4d4f-8a00-3cdd83e1ce88.png?1673308359"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain Plains",
+      "oracle_text": "({T}: Add {R} or {W}.)\nSacred Peaks enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Kamila Szutenberg",
+      "artist_ids": [
+        "bec9ba7f-594e-4ff0-8172-9ec1fc909607"
+      ],
+      "edhrec_rank": 2632,
+      "prices": {
+        "usd": "0.21"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "f0588fbf-3c05-452a-b3f7-67604c1f921d",
+      "multiverse_ids": [
+        574737
+      ],
+      "name": "Sunlit Marsh",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/0/f0588fbf-3c05-452a-b3f7-67604c1f921d.jpg?1673308381",
+        "normal": "https://cards.scryfall.io/normal/front/f/0/f0588fbf-3c05-452a-b3f7-67604c1f921d.jpg?1673308381",
+        "png": "https://cards.scryfall.io/png/front/f/0/f0588fbf-3c05-452a-b3f7-67604c1f921d.png?1673308381"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Plains Swamp",
+      "oracle_text": "({T}: Add {W} or {B}.)\nSunlit Marsh enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Marc Simonetti",
+      "artist_ids": [
+        "8089db55-5105-47b0-8c64-f320e08c97f0"
+      ],
+      "edhrec_rank": 2556,
+      "prices": {
+        "usd": "0.24"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "4a325fb4-fe71-47f1-9a2f-05b8cfe88fe6",
+      "multiverse_ids": [
+        574738
+      ],
+      "name": "Tangled Islet",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/a/4a325fb4-fe71-47f1-9a2f-05b8cfe88fe6.jpg?1673308388",
+        "normal": "https://cards.scryfall.io/normal/front/4/a/4a325fb4-fe71-47f1-9a2f-05b8cfe88fe6.jpg?1673308388",
+        "png": "https://cards.scryfall.io/png/front/4/a/4a325fb4-fe71-47f1-9a2f-05b8cfe88fe6.png?1673308388"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Forest Island",
+      "oracle_text": "({T}: Add {G} or {U}.)\nTangled Islet enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Randy Gallegos",
+      "artist_ids": [
+        "a5048cc7-438a-4378-98e4-da99b78e1db0"
+      ],
+      "edhrec_rank": 1655,
+      "prices": {
+        "usd": "0.18"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "ef074a2e-a387-4af8-a180-74b145d93992",
+      "multiverse_ids": [
+        574739
+      ],
+      "name": "Thran Portal",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/e/f/ef074a2e-a387-4af8-a180-74b145d93992.jpg?1673308396",
+        "normal": "https://cards.scryfall.io/normal/front/e/f/ef074a2e-a387-4af8-a180-74b145d93992.jpg?1673308396",
+        "png": "https://cards.scryfall.io/png/front/e/f/ef074a2e-a387-4af8-a180-74b145d93992.png?1673308396"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Gate",
+      "oracle_text": "Thran Portal enters the battlefield tapped unless you control two or fewer other lands.\nAs Thran Portal enters the battlefield, choose a basic land type.\nThran Portal is the chosen type in addition to its other types.\nMana abilities of Thran Portal cost an additional 1 life to activate.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Sarah Finnigan",
+      "artist_ids": [
+        "e31f5891-08f7-4e5a-bac9-8b4570b8c1ab"
+      ],
+      "edhrec_rank": 4726,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.29"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "e8e31184-dca4-48b1-be9d-581247c41d99",
+      "multiverse_ids": [
+        574740
+      ],
+      "name": "Wooded Ridgeline",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/e/8/e8e31184-dca4-48b1-be9d-581247c41d99.jpg?1673308403",
+        "normal": "https://cards.scryfall.io/normal/front/e/8/e8e31184-dca4-48b1-be9d-581247c41d99.jpg?1673308403",
+        "png": "https://cards.scryfall.io/png/front/e/8/e8e31184-dca4-48b1-be9d-581247c41d99.png?1673308403"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain Forest",
+      "oracle_text": "({T}: Add {R} or {G}.)\nWooded Ridgeline enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Jinho Bae",
+      "artist_ids": [
+        "0cd53596-1525-42af-83ae-ff02401311ee"
+      ],
+      "edhrec_rank": 2180,
+      "prices": {
+        "usd": "0.16"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "989b299b-daa9-4bda-94e2-9a2f0e8f2bce",
+      "multiverse_ids": [
+        555449
+      ],
+      "name": "Brokers Hideout",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/8/989b299b-daa9-4bda-94e2-9a2f0e8f2bce.jpg?1664414401",
+        "normal": "https://cards.scryfall.io/normal/front/9/8/989b299b-daa9-4bda-94e2-9a2f0e8f2bce.jpg?1664414401",
+        "png": "https://cards.scryfall.io/png/front/9/8/989b299b-daa9-4bda-94e2-9a2f0e8f2bce.png?1664414401"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "When Brokers Hideout enters the battlefield, sacrifice it. When you do, search your library for a basic Forest, Plains, or Island card, put it onto the battlefield tapped, then shuffle and you gain 1 life.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "brokers",
+      "artist": "James Paick",
+      "artist_ids": [
+        "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
+      ],
+      "edhrec_rank": 1293,
+      "prices": {
+        "usd": "0.22"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "9dda1e1c-b330-42e0-8547-97e2afc7615f",
+      "multiverse_ids": [
+        555450
+      ],
+      "name": "Cabaretti Courtyard",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/d/9dda1e1c-b330-42e0-8547-97e2afc7615f.jpg?1664414420",
+        "normal": "https://cards.scryfall.io/normal/front/9/d/9dda1e1c-b330-42e0-8547-97e2afc7615f.jpg?1664414420",
+        "png": "https://cards.scryfall.io/png/front/9/d/9dda1e1c-b330-42e0-8547-97e2afc7615f.png?1664414420"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "When Cabaretti Courtyard enters the battlefield, sacrifice it. When you do, search your library for a basic Mountain, Forest, or Plains card, put it onto the battlefield tapped, then shuffle and you gain 1 life.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "cabaretti",
+      "artist": "Kasia 'Kafis' Zielińska",
+      "artist_ids": [
+        "a662cb71-4770-4b49-8b03-2cf8497049a7"
+      ],
+      "edhrec_rank": 1158,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.23"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "3ebce74e-35e8-4e19-9979-01b9e2c100f7",
+      "multiverse_ids": [
+        612641
+      ],
+      "name": "Canopy Vista",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/3/e/3ebce74e-35e8-4e19-9979-01b9e2c100f7.jpg?1682210355",
+        "normal": "https://cards.scryfall.io/normal/front/3/e/3ebce74e-35e8-4e19-9979-01b9e2c100f7.jpg?1682210355",
+        "png": "https://cards.scryfall.io/png/front/3/e/3ebce74e-35e8-4e19-9979-01b9e2c100f7.png?1682210355"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Forest Plains",
+      "oracle_text": "({T}: Add {G} or {W}.)\nCanopy Vista enters the battlefield tapped unless you control two or more basic lands.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Adam Paquette",
+      "artist_ids": [
+        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+      ],
+      "edhrec_rank": 132,
+      "prices": {
+        "usd": "0.44"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "179e6e1d-cc0e-4937-b0ce-6d03cbe576b7",
+      "multiverse_ids": [
+        612643
+      ],
+      "name": "Cinder Glade",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/7/179e6e1d-cc0e-4937-b0ce-6d03cbe576b7.jpg?1682210373",
+        "normal": "https://cards.scryfall.io/normal/front/1/7/179e6e1d-cc0e-4937-b0ce-6d03cbe576b7.jpg?1682210373",
+        "png": "https://cards.scryfall.io/png/front/1/7/179e6e1d-cc0e-4937-b0ce-6d03cbe576b7.png?1682210373"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain Forest",
+      "oracle_text": "({T}: Add {R} or {G}.)\nCinder Glade enters the battlefield tapped unless you control two or more basic lands.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Adam Paquette",
+      "artist_ids": [
+        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+      ],
+      "edhrec_rank": 103,
+      "prices": {
+        "usd": "0.23"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "5c83074d-0c9b-4b58-94ca-d75240485579",
+      "multiverse_ids": [
+        473205
+      ],
+      "name": "Dwarven Mine",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/c/5c83074d-0c9b-4b58-94ca-d75240485579.jpg?1572491198",
+        "normal": "https://cards.scryfall.io/normal/front/5/c/5c83074d-0c9b-4b58-94ca-d75240485579.jpg?1572491198",
+        "png": "https://cards.scryfall.io/png/front/5/c/5c83074d-0c9b-4b58-94ca-d75240485579.png?1572491198"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain",
+      "oracle_text": "({T}: Add {R}.)\nDwarven Mine enters the battlefield tapped unless you control three or more other Mountains.\nWhen Dwarven Mine enters the battlefield untapped, create a 1/1 red Dwarf creature token.",
+      "colors": [],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "cab5d0dd-8095-4410-8feb-8c13edfcb2e5",
+          "component": "token",
+          "name": "Dwarf",
+          "type_line": "Token Creature — Dwarf"
+        },
+        {
+          "object": "related_card",
+          "id": "5c83074d-0c9b-4b58-94ca-d75240485579",
+          "component": "combo_piece",
+          "name": "Dwarven Mine",
+          "type_line": "Land — Mountain"
+        }
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Alexander Forssberg",
+      "artist_ids": [
+        "85908891-3cc7-42b0-9b54-27ed0fe89c53"
+      ],
+      "edhrec_rank": 2035,
+      "prices": {
+        "usd": "0.25"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "3b583cc8-95e6-4772-afe3-d405b65836e0",
+      "multiverse_ids": [
+        519325
+      ],
+      "name": "Gingerbread Cabin",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/3/b/3b583cc8-95e6-4772-afe3-d405b65836e0.jpg?1625980155",
+        "normal": "https://cards.scryfall.io/normal/front/3/b/3b583cc8-95e6-4772-afe3-d405b65836e0.jpg?1625980155",
+        "png": "https://cards.scryfall.io/png/front/3/b/3b583cc8-95e6-4772-afe3-d405b65836e0.png?1625980155"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Forest",
+      "oracle_text": "({T}: Add {G}.)\nGingerbread Cabin enters the battlefield tapped unless you control three or more other Forests.\nWhen Gingerbread Cabin enters the battlefield untapped, create a Food token. (It's an artifact with \"{2}, {T}, Sacrifice this artifact: You gain 3 life.\")",
+      "colors": [],
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Food"
+      ],
+      "produced_mana": [
+        "G"
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "965bef73-eb93-4512-91b4-bf2ce7d27d42",
+          "component": "token",
+          "name": "Food",
+          "type_line": "Token Artifact — Food"
+        },
+        {
+          "object": "related_card",
+          "id": "3b583cc8-95e6-4772-afe3-d405b65836e0",
+          "component": "combo_piece",
+          "name": "Gingerbread Cabin",
+          "type_line": "Land — Forest"
+        }
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Chris Ostrowski",
+      "artist_ids": [
+        "b5f1bd34-abee-40c9-99f7-a6ee089fb30b"
+      ],
+      "edhrec_rank": 2572,
+      "prices": {
+        "usd": "0.14"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "ca2c611c-3a6f-44b0-9daa-837a465845e0",
+      "multiverse_ids": [
+        473208
+      ],
+      "name": "Idyllic Grange",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/a/ca2c611c-3a6f-44b0-9daa-837a465845e0.jpg?1572491225",
+        "normal": "https://cards.scryfall.io/normal/front/c/a/ca2c611c-3a6f-44b0-9daa-837a465845e0.jpg?1572491225",
+        "png": "https://cards.scryfall.io/png/front/c/a/ca2c611c-3a6f-44b0-9daa-837a465845e0.png?1572491225"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Plains",
+      "oracle_text": "({T}: Add {W}.)\nIdyllic Grange enters the battlefield tapped unless you control three or more other Plains.\nWhen Idyllic Grange enters the battlefield untapped, put a +1/+1 counter on target creature you control.",
+      "colors": [],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Howard Lyon",
+      "artist_ids": [
+        "6dd06426-59fe-4b9c-aad5-6da8446a5c3d"
+      ],
+      "edhrec_rank": 3221,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.10"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "51eb4a44-a5c8-49ed-b440-2462626bb638",
+      "multiverse_ids": [
+        555452
+      ],
+      "name": "Maestros Theater",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/1/51eb4a44-a5c8-49ed-b440-2462626bb638.jpg?1664414458",
+        "normal": "https://cards.scryfall.io/normal/front/5/1/51eb4a44-a5c8-49ed-b440-2462626bb638.jpg?1664414458",
+        "png": "https://cards.scryfall.io/png/front/5/1/51eb4a44-a5c8-49ed-b440-2462626bb638.png?1664414458"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "When Maestros Theater enters the battlefield, sacrifice it. When you do, search your library for a basic Island, Swamp, or Mountain card, put it onto the battlefield tapped, then shuffle and you gain 1 life.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "maestros",
+      "artist": "Jokubas Uogintas",
+      "artist_ids": [
+        "2c14303e-97a3-45fa-9bd8-59e5332a65f9"
+      ],
+      "edhrec_rank": 1203,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.26"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "170e792c-80d5-4775-ad95-37614574ab84",
+      "multiverse_ids": [
+        473209
+      ],
+      "name": "Mystic Sanctuary",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/7/170e792c-80d5-4775-ad95-37614574ab84.jpg?1613386906",
+        "normal": "https://cards.scryfall.io/normal/front/1/7/170e792c-80d5-4775-ad95-37614574ab84.jpg?1613386906",
+        "png": "https://cards.scryfall.io/png/front/1/7/170e792c-80d5-4775-ad95-37614574ab84.png?1613386906"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island",
+      "oracle_text": "({T}: Add {U}.)\nMystic Sanctuary enters the battlefield tapped unless you control three or more other Islands.\nWhen Mystic Sanctuary enters the battlefield untapped, you may put target instant or sorcery card from your graveyard on top of your library.",
+      "colors": [],
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Randy Vargas",
+      "artist_ids": [
+        "d20672ca-0555-4238-a984-fd171d36b247"
+      ],
+      "edhrec_rank": 112,
+      "preview": {
+      },
+      "prices": {
+        "usd": "1.93"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "1016b884-9a4c-41de-bd65-14271f4f6f9a",
+      "multiverse_ids": [
+        555453
+      ],
+      "name": "Obscura Storefront",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/0/1016b884-9a4c-41de-bd65-14271f4f6f9a.jpg?1664414480",
+        "normal": "https://cards.scryfall.io/normal/front/1/0/1016b884-9a4c-41de-bd65-14271f4f6f9a.jpg?1664414480",
+        "png": "https://cards.scryfall.io/png/front/1/0/1016b884-9a4c-41de-bd65-14271f4f6f9a.png?1664414480"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "When Obscura Storefront enters the battlefield, sacrifice it. When you do, search your library for a basic Plains, Island, or Swamp card, put it onto the battlefield tapped, then shuffle and you gain 1 life.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "obscura",
+      "artist": "Muhammad Firdaus",
+      "artist_ids": [
+        "185ea3f2-0b95-4f96-ab62-f7754ba591d8"
+      ],
+      "edhrec_rank": 1331,
+      "prices": {
+        "usd": "0.27"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "9f1e7a15-c067-4093-bfdb-a6b4efe7c5b9",
+      "multiverse_ids": [
+        612668
+      ],
+      "name": "Prairie Stream",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/f/9f1e7a15-c067-4093-bfdb-a6b4efe7c5b9.jpg?1682210601",
+        "normal": "https://cards.scryfall.io/normal/front/9/f/9f1e7a15-c067-4093-bfdb-a6b4efe7c5b9.jpg?1682210601",
+        "png": "https://cards.scryfall.io/png/front/9/f/9f1e7a15-c067-4093-bfdb-a6b4efe7c5b9.png?1682210601"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Plains Island",
+      "oracle_text": "({T}: Add {W} or {U}.)\nPrairie Stream enters the battlefield tapped unless you control two or more basic lands.",
+      "colors": [],
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Adam Paquette",
+      "artist_ids": [
+        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+      ],
+      "edhrec_rank": 119,
+      "prices": {
+        "usd": "0.21"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "1d161f81-c01a-4c91-b025-52dcb1881638",
+      "multiverse_ids": [
+        555456
+      ],
+      "name": "Riveteers Overlook",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/d/1d161f81-c01a-4c91-b025-52dcb1881638.jpg?1664414539",
+        "normal": "https://cards.scryfall.io/normal/front/1/d/1d161f81-c01a-4c91-b025-52dcb1881638.jpg?1664414539",
+        "png": "https://cards.scryfall.io/png/front/1/d/1d161f81-c01a-4c91-b025-52dcb1881638.png?1664414539"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "When Riveteers Overlook enters the battlefield, sacrifice it. When you do, search your library for a basic Swamp, Mountain, or Forest card, put it onto the battlefield tapped, then shuffle and you gain 1 life.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "riveteers",
+      "artist": "Lucas Staniec",
+      "artist_ids": [
+        "b4344292-387b-4aa0-8225-13f1fbe77808"
+      ],
+      "edhrec_rank": 1055,
+      "prices": {
+        "usd": "0.26"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "5613def4-c9fe-48e0-920d-48dd3a193ecc",
+      "multiverse_ids": [
+        578850
+      ],
+      "name": "Smoldering Marsh",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/6/5613def4-c9fe-48e0-920d-48dd3a193ecc.jpg?1673306234",
+        "normal": "https://cards.scryfall.io/normal/front/5/6/5613def4-c9fe-48e0-920d-48dd3a193ecc.jpg?1673306234",
+        "png": "https://cards.scryfall.io/png/front/5/6/5613def4-c9fe-48e0-920d-48dd3a193ecc.png?1673306234"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Mountain",
+      "oracle_text": "({T}: Add {B} or {R}.)\nSmoldering Marsh enters the battlefield tapped unless you control two or more basic lands.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Adam Paquette",
+      "artist_ids": [
+        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+      ],
+      "edhrec_rank": 131,
+      "prices": {
+        "usd": "0.32"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "213caef8-d475-452a-973a-ce3c93830f7c",
+      "multiverse_ids": [
+        612676
+      ],
+      "name": "Sunken Hollow",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/1/213caef8-d475-452a-973a-ce3c93830f7c.jpg?1682210673",
+        "normal": "https://cards.scryfall.io/normal/front/2/1/213caef8-d475-452a-973a-ce3c93830f7c.jpg?1682210673",
+        "png": "https://cards.scryfall.io/png/front/2/1/213caef8-d475-452a-973a-ce3c93830f7c.png?1682210673"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Swamp",
+      "oracle_text": "({T}: Add {U} or {B}.)\nSunken Hollow enters the battlefield tapped unless you control two or more basic lands.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Adam Paquette",
+      "artist_ids": [
+        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+      ],
+      "edhrec_rank": 96,
+      "prices": {
+        "usd": "0.26"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "b87891cd-b457-4dff-8d18-a7eaf6748fc6",
+      "multiverse_ids": [
+        473211
+      ],
+      "name": "Witch's Cottage",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/8/b87891cd-b457-4dff-8d18-a7eaf6748fc6.jpg?1572491253",
+        "normal": "https://cards.scryfall.io/normal/front/b/8/b87891cd-b457-4dff-8d18-a7eaf6748fc6.jpg?1572491253",
+        "png": "https://cards.scryfall.io/png/front/b/8/b87891cd-b457-4dff-8d18-a7eaf6748fc6.png?1572491253"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp",
+      "oracle_text": "({T}: Add {B}.)\nWitch's Cottage enters the battlefield tapped unless you control three or more other Swamps.\nWhen Witch's Cottage enters the battlefield untapped, you may put target creature card from your graveyard on top of your library.",
+      "colors": [],
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Gabor Szikszai",
+      "artist_ids": [
+        "44c3877f-8771-43dc-9e40-f4c765f59d2e"
+      ],
+      "edhrec_rank": 700,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.45"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "8cb273d9-466d-416d-b27d-d1bc8a249076",
+      "multiverse_ids": [
+        426941
+      ],
+      "name": "Canyon Slough",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/8/c/8cb273d9-466d-416d-b27d-d1bc8a249076.jpg?1543676351",
+        "normal": "https://cards.scryfall.io/normal/front/8/c/8cb273d9-466d-416d-b27d-d1bc8a249076.jpg?1543676351",
+        "png": "https://cards.scryfall.io/png/front/8/c/8cb273d9-466d-416d-b27d-d1bc8a249076.png?1543676351"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Mountain",
+      "oracle_text": "({T}: Add {B} or {R}.)\nCanyon Slough enters the battlefield tapped.\nCycling {2} ({2}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "B",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Titus Lunter",
+      "artist_ids": [
+        "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
+      ],
+      "edhrec_rank": 1426,
+      "prices": {
+        "usd": "1.91"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "ae703d94-6f1f-463b-ab25-1b3f462e7e78",
+      "multiverse_ids": [
+        426945
+      ],
+      "name": "Fetid Pools",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/a/e/ae703d94-6f1f-463b-ab25-1b3f462e7e78.jpg?1543676378",
+        "normal": "https://cards.scryfall.io/normal/front/a/e/ae703d94-6f1f-463b-ab25-1b3f462e7e78.jpg?1543676378",
+        "png": "https://cards.scryfall.io/png/front/a/e/ae703d94-6f1f-463b-ab25-1b3f462e7e78.png?1543676378"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Swamp",
+      "oracle_text": "({T}: Add {U} or {B}.)\nFetid Pools enters the battlefield tapped.\nCycling {2} ({2}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "B",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Jonas De Ro",
+      "artist_ids": [
+        "561ebf9e-8d93-4b57-8156-8826d0c19601"
+      ],
+      "edhrec_rank": 1372,
+      "prices": {
+        "usd": "2.92"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "4d87fcc0-cef5-4410-adf1-91c5f50c1d01",
+      "multiverse_ids": [
+        426947
+      ],
+      "name": "Irrigated Farmland",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/d/4d87fcc0-cef5-4410-adf1-91c5f50c1d01.jpg?1543676393",
+        "normal": "https://cards.scryfall.io/normal/front/4/d/4d87fcc0-cef5-4410-adf1-91c5f50c1d01.jpg?1543676393",
+        "png": "https://cards.scryfall.io/png/front/4/d/4d87fcc0-cef5-4410-adf1-91c5f50c1d01.png?1543676393"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Plains Island",
+      "oracle_text": "({T}: Add {W} or {U}.)\nIrrigated Farmland enters the battlefield tapped.\nCycling {2} ({2}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Jonas De Ro",
+      "artist_ids": [
+        "561ebf9e-8d93-4b57-8156-8826d0c19601"
+      ],
+      "edhrec_rank": 848,
+      "prices": {
+        "usd": "1.13"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "ccb541aa-3bf6-41f3-89e5-9c6c56ea210a",
+      "multiverse_ids": [
+        426949
+      ],
+      "name": "Scattered Groves",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/c/ccb541aa-3bf6-41f3-89e5-9c6c56ea210a.jpg?1543676407",
+        "normal": "https://cards.scryfall.io/normal/front/c/c/ccb541aa-3bf6-41f3-89e5-9c6c56ea210a.jpg?1543676407",
+        "png": "https://cards.scryfall.io/png/front/c/c/ccb541aa-3bf6-41f3-89e5-9c6c56ea210a.png?1543676407"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Forest Plains",
+      "oracle_text": "({T}: Add {G} or {W}.)\nScattered Groves enters the battlefield tapped.\nCycling {2} ({2}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Christine Choi",
+      "artist_ids": [
+        "b8266529-1ffe-41e7-9969-fcf39f61426b"
+      ],
+      "edhrec_rank": 1322,
+      "prices": {
+        "usd": "1.50"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "d23cd764-3f5c-4c93-ba83-e5ff397003a2",
+      "multiverse_ids": [
+        426950
+      ],
+      "name": "Sheltered Thicket",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/2/d23cd764-3f5c-4c93-ba83-e5ff397003a2.jpg?1543676414",
+        "normal": "https://cards.scryfall.io/normal/front/d/2/d23cd764-3f5c-4c93-ba83-e5ff397003a2.jpg?1543676414",
+        "png": "https://cards.scryfall.io/png/front/d/2/d23cd764-3f5c-4c93-ba83-e5ff397003a2.png?1543676414"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain Forest",
+      "oracle_text": "({T}: Add {R} or {G}.)\nSheltered Thicket enters the battlefield tapped.\nCycling {2} ({2}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Sung Choi",
+      "artist_ids": [
+        "4b149402-618d-4f54-9db8-788e4a5bce70"
+      ],
+      "edhrec_rank": 1300,
+      "prices": {
+        "usd": "1.69"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "8702d6b9-bb01-4841-a76d-4a576066c772",
+      "multiverse_ids": [
+        503864
+      ],
+      "name": "Alpine Meadow",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/8/7/8702d6b9-bb01-4841-a76d-4a576066c772.jpg?1631052433",
+        "normal": "https://cards.scryfall.io/normal/front/8/7/8702d6b9-bb01-4841-a76d-4a576066c772.jpg?1631052433",
+        "png": "https://cards.scryfall.io/png/front/8/7/8702d6b9-bb01-4841-a76d-4a576066c772.png?1631052433"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Snow Land — Mountain Plains",
+      "oracle_text": "({T}: Add {R} or {W}.)\nAlpine Meadow enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Piotr Dura",
+      "artist_ids": [
+        "aff176e8-1d15-432e-ad1d-207a474decba"
+      ],
+      "frame_effects": [
+        "snow"
+      ],
+      "edhrec_rank": 1763,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.23"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "b20e3117-f1e4-4449-ae9d-0b66abfc717d",
+      "multiverse_ids": [
+        503865
+      ],
+      "name": "Arctic Treeline",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/2/b20e3117-f1e4-4449-ae9d-0b66abfc717d.jpg?1631052462",
+        "normal": "https://cards.scryfall.io/normal/front/b/2/b20e3117-f1e4-4449-ae9d-0b66abfc717d.jpg?1631052462",
+        "png": "https://cards.scryfall.io/png/front/b/2/b20e3117-f1e4-4449-ae9d-0b66abfc717d.png?1631052462"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Snow Land — Forest Plains",
+      "oracle_text": "({T}: Add {G} or {W}.)\nArctic Treeline enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Alayna Danner",
+      "artist_ids": [
+        "bb677b1a-ce51-4888-83d6-5a94de461ff9"
+      ],
+      "frame_effects": [
+        "snow"
+      ],
+      "edhrec_rank": 1385,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.31"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "9de5fadd-4559-479f-b45d-abe792f0f6e5",
+      "multiverse_ids": [
+        503876
+      ],
+      "name": "Glacial Floodplain",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/d/9de5fadd-4559-479f-b45d-abe792f0f6e5.jpg?1631052764",
+        "normal": "https://cards.scryfall.io/normal/front/9/d/9de5fadd-4559-479f-b45d-abe792f0f6e5.jpg?1631052764",
+        "png": "https://cards.scryfall.io/png/front/9/d/9de5fadd-4559-479f-b45d-abe792f0f6e5.png?1631052764"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Snow Land — Plains Island",
+      "oracle_text": "({T}: Add {W} or {U}.)\nGlacial Floodplain enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Sarah Finnigan",
+      "artist_ids": [
+        "e31f5891-08f7-4e5a-bac9-8b4570b8c1ab"
+      ],
+      "frame_effects": [
+        "snow"
+      ],
+      "edhrec_rank": 1579,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.17"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "682eee5f-7986-45d3-910f-407303fdbcc4",
+      "multiverse_ids": [
+        503881
+      ],
+      "name": "Highland Forest",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/8/682eee5f-7986-45d3-910f-407303fdbcc4.jpg?1631052904",
+        "normal": "https://cards.scryfall.io/normal/front/6/8/682eee5f-7986-45d3-910f-407303fdbcc4.jpg?1631052904",
+        "png": "https://cards.scryfall.io/png/front/6/8/682eee5f-7986-45d3-910f-407303fdbcc4.png?1631052904"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Snow Land — Mountain Forest",
+      "oracle_text": "({T}: Add {R} or {G}.)\nHighland Forest enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Alayna Danner",
+      "artist_ids": [
+        "bb677b1a-ce51-4888-83d6-5a94de461ff9"
+      ],
+      "frame_effects": [
+        "snow"
+      ],
+      "edhrec_rank": 1163,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.25"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "8cff3ef0-4dfb-472e-aa1e-77613dd0f6d8",
+      "multiverse_ids": [
+        503882
+      ],
+      "name": "Ice Tunnel",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/8/c/8cff3ef0-4dfb-472e-aa1e-77613dd0f6d8.jpg?1631052930",
+        "normal": "https://cards.scryfall.io/normal/front/8/c/8cff3ef0-4dfb-472e-aa1e-77613dd0f6d8.jpg?1631052930",
+        "png": "https://cards.scryfall.io/png/front/8/c/8cff3ef0-4dfb-472e-aa1e-77613dd0f6d8.png?1631052930"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Snow Land — Island Swamp",
+      "oracle_text": "({T}: Add {U} or {B}.)\nIce Tunnel enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Johannes Voss",
+      "artist_ids": [
+        "3593dd7e-c547-4a32-81cd-7da725f60118"
+      ],
+      "frame_effects": [
+        "snow"
+      ],
+      "edhrec_rank": 1405,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.35"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "da1db084-f235-4e26-8867-5f0835a0d283",
+      "multiverse_ids": [
+        503886
+      ],
+      "name": "Rimewood Falls",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/a/da1db084-f235-4e26-8867-5f0835a0d283.jpg?1631053035",
+        "normal": "https://cards.scryfall.io/normal/front/d/a/da1db084-f235-4e26-8867-5f0835a0d283.jpg?1631053035",
+        "png": "https://cards.scryfall.io/png/front/d/a/da1db084-f235-4e26-8867-5f0835a0d283.png?1631053035"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Snow Land — Forest Island",
+      "oracle_text": "({T}: Add {G} or {U}.)\nRimewood Falls enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Piotr Dura",
+      "artist_ids": [
+        "aff176e8-1d15-432e-ad1d-207a474decba"
+      ],
+      "frame_effects": [
+        "snow"
+      ],
+      "edhrec_rank": 945,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.58"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "6611dc5e-6acc-48df-b8c4-4b327314578b",
+      "multiverse_ids": [
+        503889
+      ],
+      "name": "Snowfield Sinkhole",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/6/6611dc5e-6acc-48df-b8c4-4b327314578b.jpg?1631053122",
+        "normal": "https://cards.scryfall.io/normal/front/6/6/6611dc5e-6acc-48df-b8c4-4b327314578b.jpg?1631053122",
+        "png": "https://cards.scryfall.io/png/front/6/6/6611dc5e-6acc-48df-b8c4-4b327314578b.png?1631053122"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Snow Land — Plains Swamp",
+      "oracle_text": "({T}: Add {W} or {B}.)\nSnowfield Sinkhole enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Marta Nael",
+      "artist_ids": [
+        "266ab861-ed64-4ba5-865c-f18758421cc3"
+      ],
+      "frame_effects": [
+        "snow"
+      ],
+      "edhrec_rank": 1564,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.17"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "35ebe245-ebb5-493c-b9c1-56fbfda9bd66",
+      "multiverse_ids": [
+        503890
+      ],
+      "name": "Sulfurous Mire",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/3/5/35ebe245-ebb5-493c-b9c1-56fbfda9bd66.jpg?1631053148",
+        "normal": "https://cards.scryfall.io/normal/front/3/5/35ebe245-ebb5-493c-b9c1-56fbfda9bd66.jpg?1631053148",
+        "png": "https://cards.scryfall.io/png/front/3/5/35ebe245-ebb5-493c-b9c1-56fbfda9bd66.png?1631053148"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Snow Land — Swamp Mountain",
+      "oracle_text": "({T}: Add {B} or {R}.)\nSulfurous Mire enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Titus Lunter",
+      "artist_ids": [
+        "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
+      ],
+      "frame_effects": [
+        "snow"
+      ],
+      "edhrec_rank": 1980,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.19"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "f2392fbb-d9c4-4688-b99c-4e7614c60c12",
+      "multiverse_ids": [
+        503893
+      ],
+      "name": "Volatile Fjord",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/2/f2392fbb-d9c4-4688-b99c-4e7614c60c12.jpg?1631053228",
+        "normal": "https://cards.scryfall.io/normal/front/f/2/f2392fbb-d9c4-4688-b99c-4e7614c60c12.jpg?1631053228",
+        "png": "https://cards.scryfall.io/png/front/f/2/f2392fbb-d9c4-4688-b99c-4e7614c60c12.png?1631053228"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Snow Land — Island Mountain",
+      "oracle_text": "({T}: Add {U} or {R}.)\nVolatile Fjord enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Randy Vargas",
+      "artist_ids": [
+        "d20672ca-0555-4238-a984-fd171d36b247"
+      ],
+      "frame_effects": [
+        "snow"
+      ],
+      "edhrec_rank": 1992,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.33"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "b2dd0b71-5a60-418c-82fc-f13d1b5075d0",
+      "multiverse_ids": [
+        503894
+      ],
+      "name": "Woodland Chasm",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/2/b2dd0b71-5a60-418c-82fc-f13d1b5075d0.jpg?1631053258",
+        "normal": "https://cards.scryfall.io/normal/front/b/2/b2dd0b71-5a60-418c-82fc-f13d1b5075d0.jpg?1631053258",
+        "png": "https://cards.scryfall.io/png/front/b/2/b2dd0b71-5a60-418c-82fc-f13d1b5075d0.png?1631053258"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Snow Land — Swamp Forest",
+      "oracle_text": "({T}: Add {B} or {G}.)\nWoodland Chasm enters the battlefield tapped.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Titus Lunter",
+      "artist_ids": [
+        "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
+      ],
+      "frame_effects": [
+        "snow"
+      ],
+      "edhrec_rank": 983,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.44"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "2b74bb81-fb9a-40e5-a941-e517430b52f5",
+      "multiverse_ids": [
+        479768
+      ],
+      "name": "Indatha Triome",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/b/2b74bb81-fb9a-40e5-a941-e517430b52f5.jpg?1636491374",
+        "normal": "https://cards.scryfall.io/normal/front/2/b/2b74bb81-fb9a-40e5-a941-e517430b52f5.jpg?1636491374",
+        "png": "https://cards.scryfall.io/png/front/2/b/2b74bb81-fb9a-40e5-a941-e517430b52f5.png?1636491374"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Plains Swamp Forest",
+      "oracle_text": "({T}: Add {W}, {B}, or {G}.)\nIndatha Triome enters the battlefield tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "G",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Noah Bradley",
+      "artist_ids": [
+        "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
+      ],
+      "edhrec_rank": 319,
+      "preview": {
+      },
+      "prices": {
+        "usd": "15.09"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "26d40e03-6de4-4373-9fbf-04c1dd79e995",
+      "multiverse_ids": [
+        555451
+      ],
+      "name": "Jetmir's Garden",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/6/26d40e03-6de4-4373-9fbf-04c1dd79e995.jpg?1664414440",
+        "normal": "https://cards.scryfall.io/normal/front/2/6/26d40e03-6de4-4373-9fbf-04c1dd79e995.jpg?1664414440",
+        "png": "https://cards.scryfall.io/png/front/2/6/26d40e03-6de4-4373-9fbf-04c1dd79e995.png?1664414440"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain Forest Plains",
+      "oracle_text": "({T}: Add {R}, {G}, or {W}.)\nJetmir's Garden enters the battlefield tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "G",
+        "R",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "cabaretti",
+      "artist": "Kasia 'Kafis' Zielińska",
+      "artist_ids": [
+        "a662cb71-4770-4b49-8b03-2cf8497049a7"
+      ],
+      "edhrec_rank": 450,
+      "prices": {
+        "usd": "7.51"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "a249b1f4-2b22-4b67-a207-e0c4ae95d2e1",
+      "multiverse_ids": [
+        479770
+      ],
+      "name": "Ketria Triome",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/a/2/a249b1f4-2b22-4b67-a207-e0c4ae95d2e1.jpg?1601241399",
+        "normal": "https://cards.scryfall.io/normal/front/a/2/a249b1f4-2b22-4b67-a207-e0c4ae95d2e1.jpg?1601241399",
+        "png": "https://cards.scryfall.io/png/front/a/2/a249b1f4-2b22-4b67-a207-e0c4ae95d2e1.png?1601241399"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Forest Island Mountain",
+      "oracle_text": "({T}: Add {G}, {U}, or {R}.)\nKetria Triome enters the battlefield tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "G",
+        "R",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Sam Burley",
+      "artist_ids": [
+        "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
+      ],
+      "edhrec_rank": 323,
+      "preview": {
+      },
+      "prices": {
+        "usd": "13.38"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "a2c56479-4bee-4edb-80d7-4af010b7c793",
+      "multiverse_ids": [
+        555455
+      ],
+      "name": "Raffine's Tower",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/a/2/a2c56479-4bee-4edb-80d7-4af010b7c793.jpg?1664414518",
+        "normal": "https://cards.scryfall.io/normal/front/a/2/a2c56479-4bee-4edb-80d7-4af010b7c793.jpg?1664414518",
+        "png": "https://cards.scryfall.io/png/front/a/2/a2c56479-4bee-4edb-80d7-4af010b7c793.png?1664414518"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Plains Island Swamp",
+      "oracle_text": "({T}: Add {W}, {U}, or {B}.)\nRaffine's Tower enters the battlefield tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "B",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "obscura",
+      "artist": "Sam White",
+      "artist_ids": [
+        "66756146-32f8-4513-9aae-75a8e5117585"
+      ],
+      "edhrec_rank": 438,
+      "prices": {
+        "usd": "9.19"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "02138fbb-3962-4348-8d31-faaefba0b8b2",
+      "multiverse_ids": [
+        479771
+      ],
+      "name": "Raugrin Triome",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/2/02138fbb-3962-4348-8d31-faaefba0b8b2.jpg?1591228666",
+        "normal": "https://cards.scryfall.io/normal/front/0/2/02138fbb-3962-4348-8d31-faaefba0b8b2.jpg?1591228666",
+        "png": "https://cards.scryfall.io/png/front/0/2/02138fbb-3962-4348-8d31-faaefba0b8b2.png?1591228666"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Mountain Plains",
+      "oracle_text": "({T}: Add {U}, {R}, or {W}.)\nRaugrin Triome enters the battlefield tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Jonas De Ro",
+      "artist_ids": [
+        "561ebf9e-8d93-4b57-8156-8826d0c19601"
+      ],
+      "edhrec_rank": 403,
+      "preview": {
+      },
+      "prices": {
+        "usd": "11.25"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "748e6a61-9c1f-4225-9f04-e54002f63ac3",
+      "multiverse_ids": [
+        479773
+      ],
+      "name": "Savai Triome",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/7/4/748e6a61-9c1f-4225-9f04-e54002f63ac3.jpg?1591228681",
+        "normal": "https://cards.scryfall.io/normal/front/7/4/748e6a61-9c1f-4225-9f04-e54002f63ac3.jpg?1591228681",
+        "png": "https://cards.scryfall.io/png/front/7/4/748e6a61-9c1f-4225-9f04-e54002f63ac3.png?1591228681"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain Plains Swamp",
+      "oracle_text": "({T}: Add {R}, {W}, or {B}.)\nSavai Triome enters the battlefield tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "B",
+        "R",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Titus Lunter",
+      "artist_ids": [
+        "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
+      ],
+      "edhrec_rank": 338,
+      "preview": {
+      },
+      "prices": {
+        "usd": "13.13"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "7363f1fb-9af3-4212-921f-d59533faf0e5",
+      "multiverse_ids": [
+        555458
+      ],
+      "name": "Spara's Headquarters",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/7/3/7363f1fb-9af3-4212-921f-d59533faf0e5.jpg?1664414585",
+        "normal": "https://cards.scryfall.io/normal/front/7/3/7363f1fb-9af3-4212-921f-d59533faf0e5.jpg?1664414585",
+        "png": "https://cards.scryfall.io/png/front/7/3/7363f1fb-9af3-4212-921f-d59533faf0e5.png?1664414585"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Forest Plains Island",
+      "oracle_text": "({T}: Add {G}, {W}, or {U}.)\nSpara's Headquarters enters the battlefield tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "G",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "brokers",
+      "artist": "Kieran Yanner",
+      "artist_ids": [
+        "aa7e89ed-d294-4633-9057-ce04dacfcfa4"
+      ],
+      "edhrec_rank": 472,
+      "prices": {
+        "usd": "7.81"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "54f449ff-4025-465e-9ec5-a5cf42c4c9d3",
+      "multiverse_ids": [
+        555461
+      ],
+      "name": "Xander's Lounge",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/4/54f449ff-4025-465e-9ec5-a5cf42c4c9d3.jpg?1664414651",
+        "normal": "https://cards.scryfall.io/normal/front/5/4/54f449ff-4025-465e-9ec5-a5cf42c4c9d3.jpg?1664414651",
+        "png": "https://cards.scryfall.io/png/front/5/4/54f449ff-4025-465e-9ec5-a5cf42c4c9d3.png?1664414651"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Swamp Mountain",
+      "oracle_text": "({T}: Add {U}, {B}, or {R}.)\nXander's Lounge enters the battlefield tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "B",
+        "R",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "maestros",
+      "artist": "James Paick",
+      "artist_ids": [
+        "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
+      ],
+      "edhrec_rank": 543,
+      "prices": {
+        "usd": "7.75"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "cc520518-2063-4b57-a0d4-10cf62a7175e",
+      "multiverse_ids": [
+        479779
+      ],
+      "name": "Zagoth Triome",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/c/cc520518-2063-4b57-a0d4-10cf62a7175e.jpg?1591228738",
+        "normal": "https://cards.scryfall.io/normal/front/c/c/cc520518-2063-4b57-a0d4-10cf62a7175e.jpg?1591228738",
+        "png": "https://cards.scryfall.io/png/front/c/c/cc520518-2063-4b57-a0d4-10cf62a7175e.png?1591228738"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Forest Island",
+      "oracle_text": "({T}: Add {B}, {G}, or {U}.)\nZagoth Triome enters the battlefield tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Eytan Zana",
+      "artist_ids": [
+        "0d8d6726-4051-445a-8374-a919aad98f38"
+      ],
+      "edhrec_rank": 295,
+      "preview": {
+      },
+      "prices": {
+        "usd": "14.05"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "75fdce80-e338-4a50-bdc6-786511feaeef",
+      "multiverse_ids": [
+        555462
+      ],
+      "name": "Ziatora's Proving Ground",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/7/5/75fdce80-e338-4a50-bdc6-786511feaeef.jpg?1664414670",
+        "normal": "https://cards.scryfall.io/normal/front/7/5/75fdce80-e338-4a50-bdc6-786511feaeef.jpg?1664414670",
+        "png": "https://cards.scryfall.io/png/front/7/5/75fdce80-e338-4a50-bdc6-786511feaeef.png?1664414670"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Mountain Forest",
+      "oracle_text": "({T}: Add {B}, {R}, or {G}.)\nZiatora's Proving Ground enters the battlefield tapped.\nCycling {3} ({3}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "watermark": "riveteers",
+      "artist": "Viko Menezes",
+      "artist_ids": [
+        "92dfef2a-d0fa-42fd-bdd6-bc4c9286cb56"
+      ],
+      "edhrec_rank": 536,
+      "prices": {
+        "usd": "5.74"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "0348247d-0a70-4961-8590-9de41386c69b",
+      "multiverse_ids": [
+        189271
+      ],
+      "name": "Ancient Ziggurat",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/3/0348247d-0a70-4961-8590-9de41386c69b.jpg?1562799113",
+        "normal": "https://cards.scryfall.io/normal/front/0/3/0348247d-0a70-4961-8590-9de41386c69b.jpg?1562799113",
+        "png": "https://cards.scryfall.io/png/front/0/3/0348247d-0a70-4961-8590-9de41386c69b.png?1562799113"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color. Spend this mana only to cast a creature spell.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "John Avon",
+      "artist_ids": [
+        "798f3932-30e0-4420-aa3f-db4d613f89ca"
+      ],
+      "edhrec_rank": 2906,
+      "prices": {
+        "usd": "2.69"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "bed4a63d-632a-4a3a-b35f-f8e155237d27",
+      "multiverse_ids": [
+        571654
+      ],
+      "name": "City of Brass",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/e/bed4a63d-632a-4a3a-b35f-f8e155237d27.jpg?1673149483",
+        "normal": "https://cards.scryfall.io/normal/front/b/e/bed4a63d-632a-4a3a-b35f-f8e155237d27.jpg?1673149483",
+        "png": "https://cards.scryfall.io/png/front/b/e/bed4a63d-632a-4a3a-b35f-f8e155237d27.png?1673149483"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Whenever City of Brass becomes tapped, it deals 1 damage to you.\n{T}: Add one mana of any color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Kirsten Zirngibl",
+      "artist_ids": [
+        "8d06986a-b58c-4243-8a02-6c19a6bd2feb"
+      ],
+      "edhrec_rank": 91,
+      "preview": {
+      },
+      "prices": {
+        "usd": "11.22"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "96b9b04d-a486-40e6-8d2c-eaaa74668b8c",
+      "multiverse_ids": [],
+      "name": "Command Tower",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/6/96b9b04d-a486-40e6-8d2c-eaaa74668b8c.jpg?1684198454",
+        "normal": "https://cards.scryfall.io/normal/front/9/6/96b9b04d-a486-40e6-8d2c-eaaa74668b8c.jpg?1684198454",
+        "png": "https://cards.scryfall.io/png/front/9/6/96b9b04d-a486-40e6-8d2c-eaaa74668b8c.png?1684198454"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color in your commander's color identity.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Ryan Yee",
+      "artist_ids": [
+        "8955dca7-3e37-42b4-83a9-167c78a2178f"
+      ],
+      "edhrec_rank": 2,
+      "prices": {
+        "usd": "0.26"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "309a6684-ecb3-491c-899a-3aa15a51130b",
+      "multiverse_ids": [
+        572993
+      ],
+      "name": "Cryptic Spires",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/3/0/309a6684-ecb3-491c-899a-3aa15a51130b.jpg?1682718911",
+        "normal": "https://cards.scryfall.io/normal/front/3/0/309a6684-ecb3-491c-899a-3aa15a51130b.jpg?1682718911",
+        "png": "https://cards.scryfall.io/png/front/3/0/309a6684-ecb3-491c-899a-3aa15a51130b.png?1682718911"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "As you create your deck, circle two of the colors below.\nCryptic Spires enters the battlefield tapped.\n{T}: Add one mana of either of the circled colors.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Sam Burley",
+      "artist_ids": [
+        "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
+      ],
+      "frame_effects": [
+        "inverted"
+      ],
+      "edhrec_rank": 5075,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.07"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "bb3a843b-2dea-4b44-be74-c09c18b9b969",
+      "multiverse_ids": [
+        509642
+      ],
+      "name": "Dryad Arbor",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/b/bb3a843b-2dea-4b44-be74-c09c18b9b969.jpg?1619399228",
+        "normal": "https://cards.scryfall.io/normal/front/b/b/bb3a843b-2dea-4b44-be74-c09c18b9b969.jpg?1619399228",
+        "png": "https://cards.scryfall.io/png/front/b/b/bb3a843b-2dea-4b44-be74-c09c18b9b969.png?1619399228"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land Creature — Forest Dryad",
+      "oracle_text": "(Dryad Arbor isn't a spell, it's affected by summoning sickness, and it has \"{T}: Add {G}.\")",
+      "power": "1",
+      "toughness": "1",
+      "colors": [
+        "G"
+      ],
+      "color_indicator": [
+        "G"
+      ],
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Eric Fortune",
+      "artist_ids": [
+        "c5562592-3387-495a-96fb-618a6a424a45"
+      ],
+      "edhrec_rank": 614,
+      "preview": {
+      },
+      "prices": {
+        "usd": "3.49"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "a7b4b602-ea21-4798-af07-3a713aafee41",
+      "multiverse_ids": [],
+      "name": "Exotic Orchard",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/a/7/a7b4b602-ea21-4798-af07-3a713aafee41.jpg?1684198503",
+        "normal": "https://cards.scryfall.io/normal/front/a/7/a7b4b602-ea21-4798-af07-3a713aafee41.jpg?1684198503",
+        "png": "https://cards.scryfall.io/png/front/a/7/a7b4b602-ea21-4798-af07-3a713aafee41.png?1684198503"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color that a land an opponent controls could produce.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Steven Belledin",
+      "artist_ids": [
+        "f07d73b9-52a0-4fe5-858b-61f7b42174a5"
+      ],
+      "edhrec_rank": 9,
+      "prices": {
+        "usd": "0.15"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "d2d5124b-4d73-4aa9-9331-88e03779ffad",
+      "multiverse_ids": [
+        397726
+      ],
+      "name": "Eye of Ugin",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/2/d2d5124b-4d73-4aa9-9331-88e03779ffad.jpg?1562267867",
+        "normal": "https://cards.scryfall.io/normal/front/d/2/d2d5124b-4d73-4aa9-9331-88e03779ffad.jpg?1562267867",
+        "png": "https://cards.scryfall.io/png/front/d/2/d2d5124b-4d73-4aa9-9331-88e03779ffad.png?1562267867"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Legendary Land",
+      "oracle_text": "Colorless Eldrazi spells you cast cost {2} less to cast.\n{7}, {T}: Search your library for a colorless creature card, reveal it, put it into your hand, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "James Paick",
+      "artist_ids": [
+        "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
+      ],
+      "edhrec_rank": 3125,
+      "prices": {
+        "usd": "10.98"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "d313d051-7295-4884-8cbf-f2f835fd45f4",
+      "multiverse_ids": [
+        485569
+      ],
+      "name": "Fabled Passage",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/3/d313d051-7295-4884-8cbf-f2f835fd45f4.jpg?1594737636",
+        "normal": "https://cards.scryfall.io/normal/front/d/3/d313d051-7295-4884-8cbf-f2f835fd45f4.jpg?1594737636",
+        "png": "https://cards.scryfall.io/png/front/d/3/d313d051-7295-4884-8cbf-f2f835fd45f4.png?1594737636"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Sacrifice Fabled Passage: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle. Then if you control four or more lands, untap that land.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Howard Lyon",
+      "artist_ids": [
+        "6dd06426-59fe-4b9c-aad5-6da8446a5c3d"
+      ],
+      "edhrec_rank": 59,
+      "preview": {
+      },
+      "prices": {
+        "usd": "5.03"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "17db644c-1acf-477d-9c20-f72221f1108a",
+      "multiverse_ids": [
+        571656
+      ],
+      "name": "Forbidden Orchard",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/7/17db644c-1acf-477d-9c20-f72221f1108a.jpg?1673149497",
+        "normal": "https://cards.scryfall.io/normal/front/1/7/17db644c-1acf-477d-9c20-f72221f1108a.jpg?1673149497",
+        "png": "https://cards.scryfall.io/png/front/1/7/17db644c-1acf-477d-9c20-f72221f1108a.png?1673149497"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color.\nWhenever you tap Forbidden Orchard for mana, target opponent creates a 1/1 colorless Spirit creature token.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "c672ee51-0e77-463f-8586-191b413c44dd",
+          "component": "token",
+          "name": "Spirit",
+          "type_line": "Token Creature — Spirit"
+        },
+        {
+          "object": "related_card",
+          "id": "8eb3e78b-4ca4-444a-9661-c0df4e36226e",
+          "component": "combo_piece",
+          "name": "Forbidden Orchard",
+          "type_line": "Land"
+        }
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Daniel Ljunggren",
+      "artist_ids": [
+        "0fbd4798-76eb-46d5-a5d4-1e3a25870e34"
+      ],
+      "edhrec_rank": 436,
+      "prices": {
+        "usd": "4.45"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "676703fe-bd80-413c-8704-1da5d3248b7e",
+      "multiverse_ids": [
+        25893
+      ],
+      "name": "Forsaken City",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/7/676703fe-bd80-413c-8704-1da5d3248b7e.jpg?1562916623",
+        "normal": "https://cards.scryfall.io/normal/front/6/7/676703fe-bd80-413c-8704-1da5d3248b7e.jpg?1562916623",
+        "png": "https://cards.scryfall.io/png/front/6/7/676703fe-bd80-413c-8704-1da5d3248b7e.png?1562916623"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Forsaken City doesn't untap during your untap step.\nAt the beginning of your upkeep, you may exile a card from your hand. If you do, untap Forsaken City.\n{T}: Add one mana of any color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Dana Knutson",
+      "artist_ids": [
+        "4eac683c-8c96-4f57-b8a4-ad7f7b7c44c7"
+      ],
+      "edhrec_rank": 16741,
+      "prices": {
+        "usd": "2.11"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "81d69cf2-8643-4926-857e-febbd54d870f",
+      "multiverse_ids": [
+        461173
+      ],
+      "name": "Gateway Plaza",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/8/1/81d69cf2-8643-4926-857e-febbd54d870f.jpg?1557577465",
+        "normal": "https://cards.scryfall.io/normal/front/8/1/81d69cf2-8643-4926-857e-febbd54d870f.jpg?1557577465",
+        "png": "https://cards.scryfall.io/png/front/8/1/81d69cf2-8643-4926-857e-febbd54d870f.png?1557577465"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Gate",
+      "oracle_text": "Gateway Plaza enters the battlefield tapped.\nWhen Gateway Plaza enters the battlefield, sacrifice it unless you pay {1}.\n{T}: Add one mana of any color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Sung Choi",
+      "artist_ids": [
+        "4b149402-618d-4f54-9db8-788e4a5bce70"
+      ],
+      "edhrec_rank": 1568,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.08"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "26794aa3-7532-4611-a591-51a51e5f9189",
+      "multiverse_ids": [
+        109761
+      ],
+      "name": "Gemstone Mine",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/6/26794aa3-7532-4611-a591-51a51e5f9189.jpg?1562773338",
+        "normal": "https://cards.scryfall.io/normal/front/2/6/26794aa3-7532-4611-a591-51a51e5f9189.jpg?1562773338",
+        "png": "https://cards.scryfall.io/png/front/2/6/26794aa3-7532-4611-a591-51a51e5f9189.png?1562773338"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Gemstone Mine enters the battlefield with three mining counters on it.\n{T}, Remove a mining counter from Gemstone Mine: Add one mana of any color. If there are no mining counters on Gemstone Mine, sacrifice it.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Brom",
+      "artist_ids": [
+        "bd79c951-2552-45dd-aae7-a333c2b7c1ef"
+      ],
+      "edhrec_rank": 2818,
+      "prices": {
+        "usd": "3.54"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "4a639687-d9e3-46a8-bc9f-6ca3912c46ab",
+      "multiverse_ids": [
+        489992
+      ],
+      "name": "Glimmervoid",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/a/4a639687-d9e3-46a8-bc9f-6ca3912c46ab.jpg?1599710492",
+        "normal": "https://cards.scryfall.io/normal/front/4/a/4a639687-d9e3-46a8-bc9f-6ca3912c46ab.jpg?1599710492",
+        "png": "https://cards.scryfall.io/png/front/4/a/4a639687-d9e3-46a8-bc9f-6ca3912c46ab.png?1599710492"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "At the beginning of the end step, if you control no artifacts, sacrifice Glimmervoid.\n{T}: Add one mana of any color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Lars Grant-West",
+      "artist_ids": [
+        "21ed6499-c4d3-4965-ab02-6c7228275bec"
+      ],
+      "edhrec_rank": 3018,
+      "preview": {
+      },
+      "prices": {
+        "usd": "3.09"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "0e013033-3995-4ba8-b0c3-0614c79aaaab",
+      "multiverse_ids": [
+        467003
+      ],
+      "name": "Lotus Field",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/e/0e013033-3995-4ba8-b0c3-0614c79aaaab.jpg?1592517825",
+        "normal": "https://cards.scryfall.io/normal/front/0/e/0e013033-3995-4ba8-b0c3-0614c79aaaab.jpg?1592517825",
+        "png": "https://cards.scryfall.io/png/front/0/e/0e013033-3995-4ba8-b0c3-0614c79aaaab.png?1592517825"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Hexproof\nLotus Field enters the battlefield tapped.\nWhen Lotus Field enters the battlefield, sacrifice two lands.\n{T}: Add three mana of any one color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Hexproof"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "John Avon",
+      "artist_ids": [
+        "798f3932-30e0-4420-aa3f-db4d613f89ca"
+      ],
+      "edhrec_rank": 1059,
+      "preview": {
+      },
+      "prices": {
+        "usd": "3.74"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "2e5cd12a-2a07-44a8-8eac-de00d26fe9e3",
+      "multiverse_ids": [
+        4593
+      ],
+      "name": "Lotus Vale",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/e/2e5cd12a-2a07-44a8-8eac-de00d26fe9e3.jpg?1562800046",
+        "normal": "https://cards.scryfall.io/normal/front/2/e/2e5cd12a-2a07-44a8-8eac-de00d26fe9e3.jpg?1562800046",
+        "png": "https://cards.scryfall.io/png/front/2/e/2e5cd12a-2a07-44a8-8eac-de00d26fe9e3.png?1562800046"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "If Lotus Vale would enter the battlefield, sacrifice two untapped lands instead. If you do, put Lotus Vale onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add three mana of any one color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "John Avon",
+      "artist_ids": [
+        "798f3932-30e0-4420-aa3f-db4d613f89ca"
+      ],
+      "edhrec_rank": 6501,
+      "prices": {
+        "usd": "31.47"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "504a69eb-3c2d-4bb1-b117-252b15acf0c2",
+      "multiverse_ids": [
+        380453
+      ],
+      "name": "Mana Confluence",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/0/504a69eb-3c2d-4bb1-b117-252b15acf0c2.jpg?1593096534",
+        "normal": "https://cards.scryfall.io/normal/front/5/0/504a69eb-3c2d-4bb1-b117-252b15acf0c2.jpg?1593096534",
+        "png": "https://cards.scryfall.io/png/front/5/0/504a69eb-3c2d-4bb1-b117-252b15acf0c2.png?1593096534"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life: Add one mana of any color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Richard Wright",
+      "artist_ids": [
+        "7b1b0ce9-2c58-4321-a2a7-cdc94feae082"
+      ],
+      "edhrec_rank": 94,
+      "prices": {
+        "usd": "33.44"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "043a2299-1cfc-4732-a10a-58c773b9992c",
+      "multiverse_ids": [
+        25979
+      ],
+      "name": "Meteor Crater",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/4/043a2299-1cfc-4732-a10a-58c773b9992c.jpg?1562895865",
+        "normal": "https://cards.scryfall.io/normal/front/0/4/043a2299-1cfc-4732-a10a-58c773b9992c.jpg?1562895865",
+        "png": "https://cards.scryfall.io/png/front/0/4/043a2299-1cfc-4732-a10a-58c773b9992c.png?1562895865"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Choose a color of a permanent you control. Add one mana of that color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "John Avon",
+      "artist_ids": [
+        "798f3932-30e0-4420-aa3f-db4d613f89ca"
+      ],
+      "edhrec_rank": 9656,
+      "prices": {
+        "usd": "5.20"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "cbd35684-4ce2-45e7-9858-4d2a9efe2e54",
+      "multiverse_ids": [],
+      "name": "Path of Ancestry",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/b/cbd35684-4ce2-45e7-9858-4d2a9efe2e54.jpg?1684198561",
+        "normal": "https://cards.scryfall.io/normal/front/c/b/cbd35684-4ce2-45e7-9858-4d2a9efe2e54.jpg?1684198561",
+        "png": "https://cards.scryfall.io/png/front/c/b/cbd35684-4ce2-45e7-9858-4d2a9efe2e54.png?1684198561"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Path of Ancestry enters the battlefield tapped.\n{T}: Add one mana of any color in your commander's color identity. When that mana is spent to cast a creature spell that shares a creature type with your commander, scry 1. (Look at the top card of your library. You may put that card on the bottom of your library.)",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Scry"
+      ],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Alayna Danner",
+      "artist_ids": [
+        "bb677b1a-ce51-4888-83d6-5a94de461ff9"
+      ],
+      "edhrec_rank": 26,
+      "prices": {
+        "usd": "0.16"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "4c66bacf-ad9a-40c3-a2b7-464be8d4dd24",
+      "multiverse_ids": [
+        571661
+      ],
+      "name": "Pillar of the Paruns",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/c/4c66bacf-ad9a-40c3-a2b7-464be8d4dd24.jpg?1673149534",
+        "normal": "https://cards.scryfall.io/normal/front/4/c/4c66bacf-ad9a-40c3-a2b7-464be8d4dd24.jpg?1673149534",
+        "png": "https://cards.scryfall.io/png/front/4/c/4c66bacf-ad9a-40c3-a2b7-464be8d4dd24.png?1673149534"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color. Spend this mana only to cast a multicolored spell.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Dany Orizio",
+      "artist_ids": [
+        "fcd5ea36-64e0-4af0-992a-3c68a34a400f"
+      ],
+      "edhrec_rank": 6513,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.89"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "d64026d0-c126-4407-869e-a48c09d017c0",
+      "multiverse_ids": [
+        417488
+      ],
+      "name": "Leechridden Swamp",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/6/d64026d0-c126-4407-869e-a48c09d017c0.jpg?1562230166",
+        "normal": "https://cards.scryfall.io/normal/front/d/6/d64026d0-c126-4407-869e-a48c09d017c0.jpg?1562230166",
+        "png": "https://cards.scryfall.io/png/front/d/6/d64026d0-c126-4407-869e-a48c09d017c0.png?1562230166"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp",
+      "oracle_text": "({T}: Add {B}.)\nLeechridden Swamp enters the battlefield tapped.\n{B}, {T}: Each opponent loses 1 life. Activate only if you control two or more black permanents.",
+      "colors": [],
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Lars Grant-West",
+      "artist_ids": [
+        "21ed6499-c4d3-4965-ab02-6c7228275bec"
+      ],
+      "edhrec_rank": 3369,
+      "prices": {
+        "usd": "0.95"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "513adae2-6436-4284-9f23-87ef627e81b7",
+      "multiverse_ids": [
+        141959
+      ],
+      "name": "Madblind Mountain",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/1/513adae2-6436-4284-9f23-87ef627e81b7.jpg?1562830130",
+        "normal": "https://cards.scryfall.io/normal/front/5/1/513adae2-6436-4284-9f23-87ef627e81b7.jpg?1562830130",
+        "png": "https://cards.scryfall.io/png/front/5/1/513adae2-6436-4284-9f23-87ef627e81b7.png?1562830130"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain",
+      "oracle_text": "({T}: Add {R}.)\nMadblind Mountain enters the battlefield tapped.\n{R}, {T}: Shuffle your library. Activate only if you control two or more red permanents.",
+      "colors": [],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Fred Fields",
+      "artist_ids": [
+        "9c77c81a-3b3f-4e94-a834-327d01cd6b35"
+      ],
+      "edhrec_rank": 9169,
+      "prices": {
+        "usd": "0.31"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "724acbe2-4c82-4360-a738-38cc6aa0c4a4",
+      "multiverse_ids": [
+        456843
+      ],
+      "name": "Mistveil Plains",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/7/2/724acbe2-4c82-4360-a738-38cc6aa0c4a4.jpg?1547518720",
+        "normal": "https://cards.scryfall.io/normal/front/7/2/724acbe2-4c82-4360-a738-38cc6aa0c4a4.jpg?1547518720",
+        "png": "https://cards.scryfall.io/png/front/7/2/724acbe2-4c82-4360-a738-38cc6aa0c4a4.png?1547518720"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Plains",
+      "oracle_text": "({T}: Add {W}.)\nMistveil Plains enters the battlefield tapped.\n{W}, {T}: Put target card from your graveyard on the bottom of your library. Activate only if you control two or more white permanents.",
+      "colors": [],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Ralph Horsley",
+      "artist_ids": [
+        "a51444a8-eb4b-4615-a663-d1d418591ccb"
+      ],
+      "edhrec_rank": 1860,
+      "prices": {
+        "usd": "1.85"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "64b36993-666c-40d0-b61a-1d162bd06dcc",
+      "multiverse_ids": [
+        141943
+      ],
+      "name": "Moonring Island",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/4/64b36993-666c-40d0-b61a-1d162bd06dcc.jpg?1562830955",
+        "normal": "https://cards.scryfall.io/normal/front/6/4/64b36993-666c-40d0-b61a-1d162bd06dcc.jpg?1562830955",
+        "png": "https://cards.scryfall.io/png/front/6/4/64b36993-666c-40d0-b61a-1d162bd06dcc.png?1562830955"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island",
+      "oracle_text": "({T}: Add {U}.)\nMoonring Island enters the battlefield tapped.\n{U}, {T}: Look at the top card of target player's library. Activate only if you control two or more blue permanents.",
+      "colors": [],
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Brandon Kitkouski",
+      "artist_ids": [
+        "0330b5e8-2cf0-4ecb-8fd7-e20a18bdeb20"
+      ],
+      "edhrec_rank": 9219,
+      "prices": {
+        "usd": "0.21"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "e37da81e-be12-45a2-9128-376f1ad7b3e8",
+      "multiverse_ids": [
+        464193
+      ],
+      "name": "Prismatic Vista",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/e/3/e37da81e-be12-45a2-9128-376f1ad7b3e8.jpg?1562202585",
+        "normal": "https://cards.scryfall.io/normal/front/e/3/e37da81e-be12-45a2-9128-376f1ad7b3e8.jpg?1562202585",
+        "png": "https://cards.scryfall.io/png/front/e/3/e37da81e-be12-45a2-9128-376f1ad7b3e8.png?1562202585"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life, Sacrifice Prismatic Vista: Search your library for a basic land card, put it onto the battlefield, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Sam Burley",
+      "artist_ids": [
+        "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
+      ],
+      "edhrec_rank": 118,
+      "preview": {
+      },
+      "prices": {
+        "usd": "23.54"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "18a1b3f5-473d-45ca-be0d-e67e77ba30ce",
+      "multiverse_ids": [
+        563241
+      ],
+      "name": "Reflecting Pool",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/8/18a1b3f5-473d-45ca-be0d-e67e77ba30ce.jpg?1674138220",
+        "normal": "https://cards.scryfall.io/normal/front/1/8/18a1b3f5-473d-45ca-be0d-e67e77ba30ce.jpg?1674138220",
+        "png": "https://cards.scryfall.io/png/front/1/8/18a1b3f5-473d-45ca-be0d-e67e77ba30ce.png?1674138220"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any type that a land you control could produce.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Alayna Danner",
+      "artist_ids": [
+        "bb677b1a-ce51-4888-83d6-5a94de461ff9"
+      ],
+      "edhrec_rank": 190,
+      "prices": {
+        "usd": "5.52"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "4ae74463-4426-4ad4-b7a2-324694854245",
+      "multiverse_ids": [
+        24685
+      ],
+      "name": "Rhystic Cave",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/a/4ae74463-4426-4ad4-b7a2-324694854245.jpg?1562908673",
+        "normal": "https://cards.scryfall.io/normal/front/4/a/4ae74463-4426-4ad4-b7a2-324694854245.jpg?1562908673",
+        "png": "https://cards.scryfall.io/png/front/4/a/4ae74463-4426-4ad4-b7a2-324694854245.png?1562908673"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Choose a color. Add one mana of that color unless any player pays {1}. Activate only as an instant.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Rob Alexander",
+      "artist_ids": [
+        "35906871-6c78-4ab2-9ed1-e6792c8efb74"
+      ],
+      "edhrec_rank": 16115,
+      "prices": {
+        "usd": "0.24"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "c7ef4b15-efab-4255-ac2d-7794f253aa52",
+      "multiverse_ids": [
+        497875
+      ],
+      "name": "Rupture Spire",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/7/c7ef4b15-efab-4255-ac2d-7794f253aa52.jpg?1608911838",
+        "normal": "https://cards.scryfall.io/normal/front/c/7/c7ef4b15-efab-4255-ac2d-7794f253aa52.jpg?1608911838",
+        "png": "https://cards.scryfall.io/png/front/c/7/c7ef4b15-efab-4255-ac2d-7794f253aa52.png?1608911838"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Rupture Spire enters the battlefield tapped.\nWhen Rupture Spire enters the battlefield, sacrifice it unless you pay {1}.\n{T}: Add one mana of any color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Jaime Jones",
+      "artist_ids": [
+        "92f6c2c1-fa57-4b52-99c4-0fd866c13dc9"
+      ],
+      "edhrec_rank": 2626,
+      "prices": {
+        "usd": "0.01"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "81d3099d-4f22-425c-8955-903b6cfb88d3",
+      "multiverse_ids": [
+        519348
+      ],
+      "name": "Sapseep Forest",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/8/1/81d3099d-4f22-425c-8955-903b6cfb88d3.jpg?1625980885",
+        "normal": "https://cards.scryfall.io/normal/front/8/1/81d3099d-4f22-425c-8955-903b6cfb88d3.jpg?1625980885",
+        "png": "https://cards.scryfall.io/png/front/8/1/81d3099d-4f22-425c-8955-903b6cfb88d3.png?1625980885"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Forest",
+      "oracle_text": "({T}: Add {G}.)\nSapseep Forest enters the battlefield tapped.\n{G}, {T}: You gain 1 life. Activate only if you control two or more green permanents.",
+      "colors": [],
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Aleksi Briclot",
+      "artist_ids": [
+        "5e470014-31cb-41b0-b054-e23374484449"
+      ],
+      "edhrec_rank": 4657,
+      "prices": {
+        "usd": "0.15"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "f09d98db-0176-41a7-b99b-ead29876cdab",
+      "multiverse_ids": [
+        503887
+      ],
+      "name": "Shimmerdrift Vale",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/0/f09d98db-0176-41a7-b99b-ead29876cdab.jpg?1631053062",
+        "normal": "https://cards.scryfall.io/normal/front/f/0/f09d98db-0176-41a7-b99b-ead29876cdab.jpg?1631053062",
+        "png": "https://cards.scryfall.io/png/front/f/0/f09d98db-0176-41a7-b99b-ead29876cdab.png?1631053062"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Snow Land",
+      "oracle_text": "Shimmerdrift Vale enters the battlefield tapped.\nAs Shimmerdrift Vale enters the battlefield, choose a color.\n{T}: Add one mana of the chosen color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Titus Lunter",
+      "artist_ids": [
+        "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
+      ],
+      "frame_effects": [
+        "snow"
+      ],
+      "edhrec_rank": 3713,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.07"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "0c79b3c6-ccbe-48ae-a1f7-ddfd37ecdbf5",
+      "multiverse_ids": [
+        527547
+      ],
+      "name": "Temple of the Dragon Queen",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/c/0c79b3c6-ccbe-48ae-a1f7-ddfd37ecdbf5.jpg?1627710370",
+        "normal": "https://cards.scryfall.io/normal/front/0/c/0c79b3c6-ccbe-48ae-a1f7-ddfd37ecdbf5.jpg?1627710370",
+        "png": "https://cards.scryfall.io/png/front/0/c/0c79b3c6-ccbe-48ae-a1f7-ddfd37ecdbf5.png?1627710370"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "As Temple of the Dragon Queen enters the battlefield, you may reveal a Dragon card from your hand. Temple of the Dragon Queen enters the battlefield tapped unless you revealed a Dragon card this way or you control a Dragon.\nAs Temple of the Dragon Queen enters the battlefield, choose a color.\n{T}: Add one mana of the chosen color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Cliff Childs",
+      "artist_ids": [
+        "ed6f7e03-20ba-4c73-bdda-4a4928480721"
+      ],
+      "edhrec_rank": 2236,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.21"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "85d416ad-5715-4795-9c28-5e385bd70062",
+      "multiverse_ids": [],
+      "name": "Terramorphic Expanse",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/8/5/85d416ad-5715-4795-9c28-5e385bd70062.jpg?1684198633",
+        "normal": "https://cards.scryfall.io/normal/front/8/5/85d416ad-5715-4795-9c28-5e385bd70062.jpg?1684198633",
+        "png": "https://cards.scryfall.io/png/front/8/5/85d416ad-5715-4795-9c28-5e385bd70062.png?1684198633"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Sacrifice Terramorphic Expanse: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Dan Scott",
+      "artist_ids": [
+        "f852fa13-137e-40f2-bbc1-0f01df09c0e0"
+      ],
+      "edhrec_rank": 22,
+      "prices": {
+        "usd": "0.17"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "4b2d6c41-7d82-4062-a783-37d88536279c",
+      "multiverse_ids": [
+        8828
+      ],
+      "name": "Thran Quarry",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/b/4b2d6c41-7d82-4062-a783-37d88536279c.jpg?1562910753",
+        "normal": "https://cards.scryfall.io/normal/front/4/b/4b2d6c41-7d82-4062-a783-37d88536279c.jpg?1562910753",
+        "png": "https://cards.scryfall.io/png/front/4/b/4b2d6c41-7d82-4062-a783-37d88536279c.png?1562910753"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "At the beginning of the end step, if you control no creatures, sacrifice Thran Quarry.\n{T}: Add one mana of any color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Michael Sutfin",
+      "artist_ids": [
+        "5ce7b3bd-53d2-49e6-b504-37191e8e9b17"
+      ],
+      "edhrec_rank": 8667,
+      "prices": {
+        "usd": "5.80"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "a0baaa39-7fce-4feb-9118-b1d6bc24f548",
+      "multiverse_ids": [
+        500979
+      ],
+      "name": "Transguild Promenade",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/a/0/a0baaa39-7fce-4feb-9118-b1d6bc24f548.jpg?1608918152",
+        "normal": "https://cards.scryfall.io/normal/front/a/0/a0baaa39-7fce-4feb-9118-b1d6bc24f548.jpg?1608918152",
+        "png": "https://cards.scryfall.io/png/front/a/0/a0baaa39-7fce-4feb-9118-b1d6bc24f548.png?1608918152"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Transguild Promenade enters the battlefield tapped.\nWhen Transguild Promenade enters the battlefield, sacrifice it unless you pay {1}.\n{T}: Add one mana of any color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Noah Bradley",
+      "artist_ids": [
+        "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
+      ],
+      "edhrec_rank": 4377,
+      "prices": {
+        "usd": "0.08"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "5f6e8830-5e62-4945-8b73-60f0628d38e7",
+      "multiverse_ids": [
+        3755
+      ],
+      "name": "Undiscovered Paradise",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/f/5f6e8830-5e62-4945-8b73-60f0628d38e7.jpg?1562277673",
+        "normal": "https://cards.scryfall.io/normal/front/5/f/5f6e8830-5e62-4945-8b73-60f0628d38e7.jpg?1562277673",
+        "png": "https://cards.scryfall.io/png/front/5/f/5f6e8830-5e62-4945-8b73-60f0628d38e7.png?1562277673"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add one mana of any color. During your next untap step, as you untap your permanents, return Undiscovered Paradise to its owner's hand.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "David O'Connor",
+      "artist_ids": [
+        "bd8dcf6f-4ab3-4854-bfb0-f2e21610fc16"
+      ],
+      "edhrec_rank": 12146,
+      "prices": {
+        "usd": "13.49"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "9e1a9e38-6ffc-490f-b0be-23ba4e8204c6",
+      "multiverse_ids": [
+        509652
+      ],
+      "name": "Urborg, Tomb of Yawgmoth",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/e/9e1a9e38-6ffc-490f-b0be-23ba4e8204c6.jpg?1619399578",
+        "normal": "https://cards.scryfall.io/normal/front/9/e/9e1a9e38-6ffc-490f-b0be-23ba4e8204c6.jpg?1619399578",
+        "png": "https://cards.scryfall.io/png/front/9/e/9e1a9e38-6ffc-490f-b0be-23ba4e8204c6.png?1619399578"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Legendary Land",
+      "oracle_text": "Each land is a Swamp in addition to its other land types.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "John Avon",
+      "artist_ids": [
+        "798f3932-30e0-4420-aa3f-db4d613f89ca"
+      ],
+      "frame_effects": [
+      ],
+      "edhrec_rank": 55,
+      "preview": {
+      },
+      "prices": {
+        "usd": "30.60"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "0726f70a-c1c4-4edb-86fb-9be280d9ea73",
+      "multiverse_ids": [
+        509654
+      ],
+      "name": "Vesuva",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/7/0726f70a-c1c4-4edb-86fb-9be280d9ea73.jpg?1619399642",
+        "normal": "https://cards.scryfall.io/normal/front/0/7/0726f70a-c1c4-4edb-86fb-9be280d9ea73.jpg?1619399642",
+        "png": "https://cards.scryfall.io/png/front/0/7/0726f70a-c1c4-4edb-86fb-9be280d9ea73.png?1619399642"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "You may have Vesuva enter the battlefield tapped as a copy of any land on the battlefield.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Zoltan Boros & Gabor Szikszai",
+      "artist_ids": [
+        "1885e6cb-c827-4896-994e-3d0a027d602f",
+        "44c3877f-8771-43dc-9e40-f4c765f59d2e"
+      ],
+      "edhrec_rank": 1243,
+      "preview": {
+      },
+      "prices": {
+        "usd": "10.09"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "543c08bc-f8ce-4324-b78d-891c49f3a24a",
+      "multiverse_ids": [
+        159820
+      ],
+      "name": "Vesuvan Doppelganger",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/4/543c08bc-f8ce-4324-b78d-891c49f3a24a.jpg?1559592571",
+        "normal": "https://cards.scryfall.io/normal/front/5/4/543c08bc-f8ce-4324-b78d-891c49f3a24a.jpg?1559592571",
+        "png": "https://cards.scryfall.io/png/front/5/4/543c08bc-f8ce-4324-b78d-891c49f3a24a.png?1559592571"
+      },
+      "mana_cost": "{3}{U}{U}",
+      "cmc": 5,
+      "type_line": "Creature — Shapeshifter",
+      "oracle_text": "You may have Vesuvan Doppelganger enter the battlefield as a copy of any creature on the battlefield, except it doesn't copy that creature's color and it has \"At the beginning of your upkeep, you may have this creature become a copy of target creature, except it doesn't copy that creature's color and it has this ability.\"",
+      "power": "0",
+      "toughness": "0",
+      "colors": [
+        "U"
+      ],
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Quinton Hoover",
+      "artist_ids": [
+        "1a2db619-92a5-431a-822b-101cdcc5bd5d"
+      ],
+      "edhrec_rank": 11651,
+      "prices": {
+        "usd": null
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "f2785902-2757-406b-bc75-6f05e0edc98d",
+      "multiverse_ids": [
+        615403
+      ],
+      "name": "Vesuvan Drifter",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/2/f2785902-2757-406b-bc75-6f05e0edc98d.jpg?1684340527",
+        "normal": "https://cards.scryfall.io/normal/front/f/2/f2785902-2757-406b-bc75-6f05e0edc98d.jpg?1684340527",
+        "png": "https://cards.scryfall.io/png/front/f/2/f2785902-2757-406b-bc75-6f05e0edc98d.png?1684340527"
+      },
+      "mana_cost": "{2}{U}",
+      "cmc": 3,
+      "type_line": "Creature — Shapeshifter",
+      "oracle_text": "Flying\nYou may look at the top card of your library any time.\nAt the beginning of each combat, you may reveal the top card of your library. If you reveal a creature card this way, Vesuvan Drifter becomes a copy of that card until end of turn, except it has flying.",
+      "power": "2",
+      "toughness": "4",
+      "colors": [
+        "U"
+      ],
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Flying"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Julia Metzger",
+      "artist_ids": [
+        "6e76edce-99a8-4f87-95d0-e316c378fa8b"
+      ],
+      "edhrec_rank": 13755,
+      "prices": {
+        "usd": "0.85"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "9a2119bc-a377-4156-89d4-56e7b5b494a8",
+      "multiverse_ids": [
+        574553
+      ],
+      "name": "Vesuvan Duplimancy",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/a/9a2119bc-a377-4156-89d4-56e7b5b494a8.jpg?1673306915",
+        "normal": "https://cards.scryfall.io/normal/front/9/a/9a2119bc-a377-4156-89d4-56e7b5b494a8.jpg?1673306915",
+        "png": "https://cards.scryfall.io/png/front/9/a/9a2119bc-a377-4156-89d4-56e7b5b494a8.png?1673306915"
+      },
+      "mana_cost": "{3}{U}",
+      "cmc": 4,
+      "type_line": "Enchantment",
+      "oracle_text": "Whenever you cast a spell that targets only a single artifact or creature you control, create a token that's a copy of that artifact or creature, except it's not legendary.",
+      "colors": [
+        "U"
+      ],
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "47ab9af3-718e-49fa-96d3-da67bc55c7d4",
+          "component": "combo_piece",
+          "name": "Vesuvan Duplimancy",
+          "type_line": "Enchantment"
+        },
+        {
+          "object": "related_card",
+          "id": "43ec2f4d-d988-49a8-b2ac-598703fe8b26",
+          "component": "token",
+          "name": "Copy",
+          "type_line": "Token"
+        }
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Wylie Beckert",
+      "artist_ids": [
+        "074daf3d-0849-4c4a-b5a5-c276384e81e5"
+      ],
+      "edhrec_rank": 3362,
+      "preview": {
+      },
+      "prices": {
+        "usd": "2.34"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "f06c8847-f11f-40ad-aecf-36ca709b5ca0",
+      "multiverse_ids": [],
+      "name": "Vesuvan Mist",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/0/f06c8847-f11f-40ad-aecf-36ca709b5ca0.jpg?1665000427",
+        "normal": "https://cards.scryfall.io/normal/front/f/0/f06c8847-f11f-40ad-aecf-36ca709b5ca0.jpg?1665000427",
+        "png": "https://cards.scryfall.io/png/front/f/0/f06c8847-f11f-40ad-aecf-36ca709b5ca0.png?1665000427"
+      },
+      "mana_cost": "{1}{U}",
+      "cmc": 2,
+      "type_line": "Instant",
+      "oracle_text": "Kicker {1}{B}\nReturn target nontoken, nonland permanent to its owner's hand. If this spell was kicked, conjure a duplicate of that card into your hand. It perpetually gains \"You may spend mana as though it were mana of any color to cast this spell.\"",
+      "colors": [
+        "U"
+      ],
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [
+        "Conjure",
+        "Kicker"
+      ],
+      "legalities": {
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Monztre",
+      "artist_ids": [
+        "79f1426a-bb52-4801-ad62-eddf0daa5b22"
+      ],
+      "prices": {
+        "usd": null
+      },
+      "related_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "0b1b59d2-ad4b-4dc6-a730-0d19f2774ae9",
+      "multiverse_ids": [
+        509462
+      ],
+      "name": "Vesuvan Shapeshifter",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/b/0b1b59d2-ad4b-4dc6-a730-0d19f2774ae9.jpg?1619394946",
+        "normal": "https://cards.scryfall.io/normal/front/0/b/0b1b59d2-ad4b-4dc6-a730-0d19f2774ae9.jpg?1619394946",
+        "png": "https://cards.scryfall.io/png/front/0/b/0b1b59d2-ad4b-4dc6-a730-0d19f2774ae9.png?1619394946"
+      },
+      "mana_cost": "{3}{U}{U}",
+      "cmc": 5,
+      "type_line": "Creature — Shapeshifter",
+      "oracle_text": "As Vesuvan Shapeshifter enters the battlefield or is turned face up, you may choose another creature on the battlefield. If you do, until Vesuvan Shapeshifter is turned face down, it becomes a copy of that creature, except it has \"At the beginning of your upkeep, you may turn this creature face down.\"\nMorph {1}{U}",
+      "power": "0",
+      "toughness": "0",
+      "colors": [
+        "U"
+      ],
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Morph"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Quinton Hoover",
+      "artist_ids": [
+        "1a2db619-92a5-431a-822b-101cdcc5bd5d"
+      ],
+      "edhrec_rank": 4278,
+      "preview": {
+      },
+      "prices": {
+        "usd": "0.20"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "4e4b6e22-93b2-4896-bba5-0ceaa5d8ea3c",
+      "multiverse_ids": [
+        522337
+      ],
+      "name": "Yavimaya, Cradle of Growth",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/e/4e4b6e22-93b2-4896-bba5-0ceaa5d8ea3c.jpg?1626100009",
+        "normal": "https://cards.scryfall.io/normal/front/4/e/4e4b6e22-93b2-4896-bba5-0ceaa5d8ea3c.jpg?1626100009",
+        "png": "https://cards.scryfall.io/png/front/4/e/4e4b6e22-93b2-4896-bba5-0ceaa5d8ea3c.png?1626100009"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Legendary Land",
+      "oracle_text": "Each land is a Forest in addition to its other land types.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist": "Sarah Finnigan",
+      "artist_ids": [
+        "e31f5891-08f7-4e5a-bac9-8b4570b8c1ab"
+      ],
+      "frame_effects": [
+      ],
+      "edhrec_rank": 82,
+      "preview": {
+      },
+      "prices": {
+        "usd": "7.35"
+      },
+      "related_uris": {
+      },
+      "properties": {
+      }
+    }
+  ]
+}

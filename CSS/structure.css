@@ -659,6 +659,7 @@ mark {
 
 .buffet-filters {
   display: flex;
+  flex-direction: column;
   width: auto;
 }
 
@@ -679,28 +680,13 @@ mark {
   grid-template: "c c c";
 }
 
-.mana:has(.isAdded)  {
-    display: none;
+
+.mana .added-cards {
+    color: var(--mtg-c);
+    font-size: 1.7em;
+    padding: 0.722em 25px;
 }
 
-body
-:has(.card.selected)
-.mana:has(.isAdded) {
-    display: flex;
-}
-
-
-body
-:has(.isAdded:checked)
-.card:not(.selected) {
-    display: none;
-}
-
-body
-:has(.isAdded:checked)
-:not(:has(.selected)) .card{
-    display: flex;
-}
 
 .card:has(.dfc) {
     height: var(--cardSizeHeight);
@@ -882,7 +868,7 @@ body
   font-family: sans-serif;
   pointer-events: none;
   font-size: 0.91em;
-  padding-top: 1.2em;
+  padding-top: 1.35em;
   padding-left: 1.35em;
 }
 
@@ -1068,9 +1054,6 @@ body.buffet:has(#cardHolderInput:checked) {
 .chCardWrapper .combination:has(.addedCard){
     display: flex;
     flex-direction: column;
-
-    
-
     
 }
 
@@ -1142,7 +1125,11 @@ body.buffet:has(#cardHolderInput:checked) {
      flex-direction: column;
 }
 
-
+.chUserActionContainer ul button:disabled {
+    color: grey;
+    background: #1c1c1c;
+    cursor: not-allowed;
+}
 
 .chUserActionContainer ul:first-child li:not(.undo) {
     width: 100%;
@@ -1165,11 +1152,16 @@ body.buffet:has(#cardHolderInput:checked) {
 
 
 .chUserActionContainer ul:first-child button:has(.undo) {
-    transform: rotate(270deg);
-    padding: 1.55em;
-    border-radius: 5px 0px 0px 5px;
+    
+    border-radius: 0px 0px 0px 5px;
 
 }
+.chUserActionContainer ul:first-child button:has(.undo) i {
+    
+    transform: rotate(270deg);
+
+}
+
 
 
 .chUserActionContainer ul:last-child li:first-child button {

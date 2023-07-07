@@ -7,6 +7,8 @@ const offset = 100; // Offset in pixels from the bottom of the container
 let data; // Declare the data variable
 let totalCards; // Declare the totalCards variable
 let filteredData = []; // Declare the filteredData variable
+let selectedCards = [];
+let maxCardSelected = 100;
 
 function createCardElement(card) {
   const cardElement = $(`
@@ -19,8 +21,8 @@ function createCardElement(card) {
     cardElement.html(`
       <div class="cardContent dfc">
         <div class="artContainer">
-          <img class="back" loading="eager" src="${card.card_faces[1].image_uris.normal}" alt="${card.card_faces[1].name}">
-          <img class="front" loading="eager" src="${card.card_faces[0].image_uris.normal}" alt="${card.card_faces[0].name}">
+          <img class="back" loading="eager" src="${card.card_faces[1].image_uris.normal}" alt="${card.card_faces[1].name}" aria-oracle="${card.name}. It reads: ${card.oracle_text}">
+          <img class="front" loading="eager" src="${card.card_faces[0].image_uris.normal}" alt="${card.card_faces[0].name}" aria-oracle="${card.name}. It reads: ${card.oracle_text}">
         </div>
       </div>
       <span class="cardName">${card.name}</span>
@@ -30,7 +32,7 @@ function createCardElement(card) {
     cardElement.html(`
       <div class="cardContent">
         <div class="artContainer">
-          <img loading="eager" src="${card.image_uris.normal}" alt="${card.name}">
+          <img loading="eager" src="${card.image_uris.normal}" alt="${card.name}" aria-oracle="${card.name}. It reads: ${card.oracle_text}">
         </div>
       </div>
       <span class="cardName">${card.name}</span>
@@ -39,6 +41,63 @@ function createCardElement(card) {
 
   return cardElement;
 }
+
+// Event listener for search input
+$('#search').on('input', debounce(function() {
+  filterCards();
+}, 300));
+
+// Automatically focus search input when typing starts with letters
+$(document).on('keydown', function(event) {
+  const searchInput = $('#search');
+  const key = event.key;
+
+  // Check if the key is an alphabetic character
+  if (/^[a-zA-Z]$/.test(key)) {
+    searchInput.focus();
+  }
+});
+
+
+// Function to load and append cards to the card pool
+function loadCards() {
+  if (!filteredData || filteredData.length === 0 || !data) {
+    // No matching cards found or data is not available, do not load any cards
+    return;
+  }
+
+  let cardsToAdd = [];
+
+  if ($("#isAdded").is(":checked")) {
+    // Filter cardsToAdd based on selectedCards
+    cardsToAdd = selectedCards
+      .map(cardId => filteredData.find(card => card.id === cardId))
+      .filter(card => card !== undefined); // Exclude undefined values
+  } else {
+    // Filter cardsToAdd to exclude already loaded cards
+    const sortedData = filteredData.sort((a, b) => a.edhrec_rank - b.edhrec_rank);
+    cardsToAdd = sortedData
+      .slice(startIndex, endIndex)
+      .filter(card => !cardSuggestions.find(`[data-card-id="${card.id}"]`).length);
+  }
+
+  for (let i = 0; i < cardsToAdd.length; i++) {
+    const card = cardsToAdd[i];
+    const cardElement = createCardElement(card);
+
+    // Check if the card is already selected
+    if (selectedCards.includes(card.id)) {
+      cardElement.addClass('selected');
+    }
+
+    const isDuplicate = cardSuggestions.find(`[data-card-name="${card.name}"]`).length > 0;
+
+    if (!isDuplicate) {
+      cardSuggestions.append(cardElement);
+    }
+  }
+}
+
 
 // Function to filter cards based on search value and selected colors
 function filterCards() {
@@ -49,13 +108,17 @@ function filterCards() {
     return $(this).val().toLowerCase(); // Convert to lowercase
   }).get();
 
-  filteredData = data.data.filter(function(card) {
+  filteredData = data?.data.filter(function(card) {
     const formattedCardName = formatCardName(card.name);
+    const formattedCardType = formatCardName(card.type_line);
+    const formattedCardText = formatCardName(card.oracle_text);
     const cardColors = card.color_identity.map(function(color) {
       return color.toLowerCase(); // Convert to lowercase
     });
 
-    const matchesSearch = formattedCardName.includes(formattedSearchValue);
+    const matchesSearch = formattedCardName.includes(formattedSearchValue) ||
+      formattedCardType.includes(formattedSearchValue) ||
+      formattedCardText.includes(formattedSearchValue);
 
     // Check if card has color identity
     const hasColorIdentity = cardColors.length > 0;
@@ -77,46 +140,6 @@ function filterCards() {
   loadCards();
 }
 
-// Event listener for search input
-$('#search').on('input', debounce(function() {
-  filterCards();
-}, 300));
-
-// Event listener for color checkboxes
-$('.color').on('change', function() {
-  filterCards();
-});
-
-// Function to load and append cards to the card pool
-function loadCards() {
-  if (!filteredData) {
-    // No matching cards found, do not load any cards
-    return;
-  }
-  const sortedData = filteredData.sort((a, b) => a.edhrec_rank - b.edhrec_rank);
-
-  for (let i = startIndex; i < endIndex; i++) {
-    if (i >= sortedData.length) {
-      break;
-    }
-
-    const card = sortedData[i];
-    const cardName = card.name;
-    const isDuplicate = cardSuggestions.find(`[data-card-name="${cardName}"]`).length > 0;
-
-    if (!isDuplicate) {
-      const cardElement = createCardElement(card);
-
-      // Check if the card is already selected
-      if (selectedCards.includes(card.id)) {
-        cardElement.addClass('selected');
-      }
-
-      cardSuggestions.append(cardElement);
-    }
-  }
-}
-
 
 // Initialize debouncer
 var debounceTimeout;
@@ -131,9 +154,11 @@ function debounce(func, delay) {
   };
 }
 
-// Function to format card name for search
 function formatCardName(cardName) {
-  return cardName.replace(/[^\w\s]|_/g, "").toLowerCase();
+  if (typeof cardName === 'string' && cardName.trim().length > 0) {
+    return cardName.replace(/[^\w\s]|_/g, "").toLowerCase();
+  }
+  return '';
 }
 
 // Function to update filters based on URL parameters
@@ -179,40 +204,107 @@ const updateUrlFromFilters = () => {
   window.history.replaceState({ path: newUrl }, '', newUrl);
 };
 
-$.getJSON('../lands/lands.json')
-  .done(function(responseData) {
-    data = responseData;
 
-    // Update filter checkboxes from URL
-    updateFiltersFromUrl();
+// Check if the data is already stored in localStorage
+const storedData = localStorage.getItem('landsData');
 
-    filterCards();
+if (storedData) {
+  // If the data is already present in localStorage, parse and assign it to the data variable
+  data = JSON.parse(storedData);
 
-    // Scroll event listener
-    $(window).on('scroll', function() {
-      const cardSuggestionsOffset = cardSuggestions.offset().top + cardSuggestions.height();
-      const windowOffset = $(window).scrollTop() + $(window).height();
+  // Retrieve selectedCards from localStorage
+  const storedSelectedCards = localStorage.getItem('selectedCards');
+  selectedCards = storedSelectedCards ? JSON.parse(storedSelectedCards) : [];
 
-      if (!$("#isAdded").is(":checked") && windowOffset >= cardSuggestionsOffset - offset) {
-        startIndex += cardsPerPage;
-        endIndex += cardsPerPage;
+  // Update filter checkboxes from URL
+  updateFiltersFromUrl();
+  filterCards();
 
-        if (endIndex <= filteredData.length) {
-          loadCards();
-        }
-      }
+} else {
+  // If the data is not present in localStorage, fetch it from the JSON file
+  $.getJSON('../lands/lands.json')
+    .done(function(responseData) {
+      // Store the fetched data in localStorage
+      localStorage.setItem('landsData', JSON.stringify(responseData));
+
+      // Assign the data to the data variable
+      data = responseData;
+
+      // Retrieve selectedCards from localStorage
+      const storedSelectedCards = localStorage.getItem('selectedCards');
+      selectedCards = storedSelectedCards ? JSON.parse(storedSelectedCards) : [];
+
+      // Update filter checkboxes from URL
+      updateFiltersFromUrl();
+      filterCards();
+
+
+    })
+    .fail(function(error) {
+      console.error('JSON Error:', error);
     });
-    // Update ms-0 class of .added-cards i
-    $(".added-cards i").removeClass(function(index, className) {
-      return (className.match(/(^|\s)ms-\S+/g) || []).join(' ');
-    }).addClass(`ms-${selectedCards.length}`);
-  })
-  .fail(function(error) {
-    console.error('JSON Error:', error);
-  });
+}
+// Update filter checkboxes from URL
+updateFiltersFromUrl();
+filterCards();
+
+// Scroll event listener
+$(window).on('scroll', function() {
+  const cardSuggestionsOffset = cardSuggestions.offset().top + cardSuggestions.height();
+  const windowOffset = $(window).scrollTop() + $(window).height();
+
+  if (!$("#isAdded").is(":checked") && windowOffset >= cardSuggestionsOffset - offset) {
+    startIndex += cardsPerPage;
+    endIndex += cardsPerPage;
+
+    if (filteredData && endIndex <= filteredData.length) {
+      loadCards();
+    }
+  }
+});
+
+
+
+// Check and hide/show the #isAdded checkbox
+if (selectedCards.length > 0) {
+  $(".mana:has(#isAdded)").show();
+} else {
+  $(".mana:has(#isAdded)").prop("checked", false).hide();
+  $("#isAdded").prop("checked", false);
+  loadCards();
+}
+
+
 
 // Add event listener to color and property checkboxes
 $('.color, .property').on('change', function() {
   filterCards();
   updateUrlFromFilters();
 });
+
+$('#isAdded').on('change', function() {
+  const isChecked = $(this).is(':checked');
+  
+  if (isChecked) {
+    // Load and append cards from selectedCards
+    cardSuggestions.empty(); // Clear the card pool
+    startIndex = 0;
+    endIndex = cardsPerPage;
+    loadCards();
+  } else {
+    // Reset the card pool to show filtered cards
+    filterCards();
+  }
+});
+
+$('.reset-filters').on('click', function() {
+
+    $('.color, .property, #isAdded').each(function() {
+        const checkbox = $(this);
+        const value = checkbox.val();
+        checkbox.prop('checked', false);
+      });
+    $('#search').val('');
+    filterCards();
+});
+

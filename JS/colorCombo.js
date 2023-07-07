@@ -82,6 +82,12 @@ $(document).ready(function() {
 
     // Click event handler for explore button
     $explore.on('click', function() {
-        window.location.href = 'buffet.html?colors=' + manaList;
+        if ($colorless.prop('checked')) {
+           window.location.href = 'buffet.html?colors=' + manaList;
+        }
+        else {
+           window.location.href = 'buffet.html?colors=' + manaList + ',c'; 
+        }
+        
     });
 });

@@ -194,7 +194,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.chFooter span.overLimit {
   color: var(--accent);
 }
 
@@ -297,27 +298,27 @@ i.ms-c {
   color: var(--mtg-c);
 }
 
-.progress-bar-w {
+.progress-bar-W {
   background-color: var(--mtg-w);
 }
 
-.progress-bar-u {
+.progress-bar-U {
   background-color: var(--mtg-u);
 }
 
-.progress-bar-b {
+.progress-bar-B {
   background-color: var(--mtg-b);
 }
 
-.progress-bar-r {
+.progress-bar-R {
   background-color: var(--mtg-r);
 }
 
-.progress-bar-g {
+.progress-bar-G {
   background-color: var(--mtg-g);
 }
 
-.progress-bar-c {
+.progress-bar-C {
   background-color: var(--mtg-c);
 }
 

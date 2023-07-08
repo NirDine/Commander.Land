@@ -118,9 +118,9 @@ a {
     background-image: url(/img/logos/logo-mobile-hover.svg);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
 
-    .logo:focus-visible,
+.logo:focus-visible,
 .logo:hover {
     background-image: url(/img/logos/logo-colors.svg);
 }
@@ -333,8 +333,7 @@ footer p a:hover {
   opacity: 1;
 }
 
-.card.selected:after,
-.card.basic.selected::before {
+.card.selected:after {
   color: var(--contrast);
   background: #d140816b;
     opacity: 0.7;

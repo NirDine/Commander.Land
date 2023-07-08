@@ -103,7 +103,7 @@ body.active .logo {
   top: 0;
   right: -250px;
   height: 100%;
-  width: 250;
+  width: 250px;
   flex-direction: column;
   justify-content: space-between;
   align-items: right;
@@ -659,7 +659,6 @@ mark {
 
 .buffet-filters {
   display: flex;
-  flex-direction: column;
   width: auto;
 }
 
@@ -753,7 +752,9 @@ mark {
 
 }
 
-.flip-button {
+.flip-button,
+.remove-basic-button
+{
     position: absolute;
     opacity: 0.60;
     background: white;
@@ -782,6 +783,37 @@ mark {
     transform: rotate(0deg);
     transition: all 500ms;
 }
+
+.remove-basic-button
+{
+ display: none;
+ top: 5%;
+ background-image: none;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.totalBasics {
+    position: absolute;
+    font-size: 4em;
+    color: var(--contrast);
+    font-weight: 700;
+    text-shadow: 5px 4px 1px black;
+    background: ;
+    display: none;
+    height: 44px;
+    bottom: 5%;
+    right: -6%;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.selected:has(.basic) .remove-basic-button,
+.selected:has(.basic) .totalBasics {
+    display: block;
+}
+
 
 .flipped .flip-button  {
     background: #000;
@@ -893,33 +925,16 @@ mark {
   z-index: 2;
 }
 
-.card.basic.selected::after {
-  content: "-";
-  height: var(--cardSizeHeight) / 2 ;
-  bottom: 0;
-  top: auto;
-  font-size: 10em;
-}
-
-.card.basic.selected::before {
-    content: "+";
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  font-size: 10em;
+.card.selected:has(.basic)::after {
+  content: "+";
   font-weight: 700;
-  top: 0;
-  left: 0;
-  width: var(--cardSizeWidth);
-  height: var(--cardSizeHeight) / 2 ;
-  z-index: 2;
+    font-size: 14em;
+
 }
 
 .cardSuggestions img,
 .card,
-.card.selected::after, 
-.card.basic.selected::before {
+.card.selected::after {
   border-radius: 4.25%;
   max-height: 270px;
 }
@@ -1076,6 +1091,13 @@ body.buffet:has(#cardHolderInput:checked) {
     padding-inline: 0.75em;
 }
 
+.chCardWrapper .chCardTextContainer{ 
+display: flex;
+gap: 10px;
+}
+
+
+
 
 .chCardWrapper li::after {
     content: '';
@@ -1225,8 +1247,7 @@ body.buffet:has(#cardHolderInput:checked) {
     
     .cardSuggestions img,
     .card,
-    .card.selected:after,
-    .card.basic.selected::before {
+    .card.selected:after {
         --cardSizeHeight: 340px;
         --cardSizeWidth: 244px;
         max-height: var(--cardSizeHeight);

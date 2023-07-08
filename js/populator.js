@@ -13,7 +13,7 @@ let maxCardSelected = 100;
 function createCardElement(card) {
   const cardElement = $(`
     <!-- Card -->
-    <div class="card" data-card-id="${card.id}" data-card-name="${card.name}" data-colors="${card.color_identity}" data-properties="${card.properties}" data-rank="${card.edhrec_rank}" tabindex="0"></div>
+    <div class="card" data-card-id="${card.id}" data-card-name="${card.name}" data-colors="${card.color_identity}" data-properties="${card.properties}" data-rank="${card.edhrec_rank}" data-basic="${card.is_basic}" tabindex="0"></div>
     <!-- End Card -->
   `);
 
@@ -28,7 +28,20 @@ function createCardElement(card) {
       <span class="cardName">${card.name}</span>
       <button type="button hidden" title="Transform" tabindex="-1" class="flip-button" style="--hiddenCount: 12;"></button>
     `);
-  } else {
+  } 
+  else if (card.is_basic) {
+    cardElement.html(`
+      <div class="cardContent basic">
+        <div class="artContainer">
+          <img loading="eager" src="${card.image_uris.normal}" alt="${card.name}" aria-oracle="${card.name}. It reads: ${card.oracle_text}">
+        </div>
+      </div>
+      <span class="cardName">${card.name}</span>
+      <button type="button hidden" title="Remove  ${card.name}" tabindex="-1" class="remove-basic-button" style="--hiddenCount: 12;">—</button>
+      <span class="totalBasics"></span>
+    `);
+  }
+    else {
     cardElement.html(`
       <div class="cardContent">
         <div class="artContainer">
@@ -44,7 +57,13 @@ function createCardElement(card) {
 
 // Event listener for search input
 $('#search').on('input', debounce(function() {
-  filterCards();
+  const searchValue = $(this).val().trim();
+  const nonSymbolCharsCount = searchValue.replace(/[^a-zA-Z0-9]/g, '').length;
+
+  if (nonSymbolCharsCount >= 3 || nonSymbolCharsCount === 0) {
+    filterCards();
+  updateBasicCardsCount(); 
+  }
 }, 300));
 
 // Automatically focus search input when typing starts with letters
@@ -98,8 +117,7 @@ function loadCards() {
   }
 }
 
-
-// Function to filter cards based on search value and selected colors
+// Function to filter cards based on search value, selected colors, and card properties
 function filterCards() {
   const searchValue = $('#search').val();
   const formattedSearchValue = formatCardName(searchValue);
@@ -108,17 +126,27 @@ function filterCards() {
     return $(this).val().toLowerCase(); // Convert to lowercase
   }).get();
 
+  const selectedProperties = $('.property:checked').map(function() {
+    return $(this).val().toLowerCase(); // Convert to lowercase
+  }).get();
+
   filteredData = data?.data.filter(function(card) {
     const formattedCardName = formatCardName(card.name);
     const formattedCardType = formatCardName(card.type_line);
     const formattedCardText = formatCardName(card.oracle_text);
-    const cardColors = card.color_identity.map(function(color) {
+    const cardColors = card.color_identity?.map(function(color) {
       return color.toLowerCase(); // Convert to lowercase
-    });
+    }) || [];
+    const cardProperties = card.properties?.map(function(property) {
+      return property.toLowerCase(); // Convert to lowercase
+    }) || [];
 
     const matchesSearch = formattedCardName.includes(formattedSearchValue) ||
       formattedCardType.includes(formattedSearchValue) ||
-      formattedCardText.includes(formattedSearchValue);
+      formattedCardText.includes(formattedSearchValue) ||
+      cardProperties.some(function(property) {
+        return formatCardName(property).includes(formattedSearchValue);
+      });
 
     // Check if card has color identity
     const hasColorIdentity = cardColors.length > 0;
@@ -131,7 +159,15 @@ function filterCards() {
       return selectedColors.includes(color);
     });
 
-    return matchesSearch && (isSubset || showCard);
+    // Check if any selected properties match any card properties
+    const hasMatchingProperties = selectedProperties.some(function(property) {
+      if (property === 'untap') {
+        return !cardProperties.includes('tapland');
+      }
+      return cardProperties.includes(property);
+    });
+
+    return matchesSearch && (isSubset || showCard) && (hasMatchingProperties || selectedProperties.length === 0);
   });
 
   startIndex = 0;
@@ -139,7 +175,6 @@ function filterCards() {
   cardSuggestions.empty(); // Clear the card pool
   loadCards();
 }
-
 
 // Initialize debouncer
 var debounceTimeout;
@@ -205,13 +240,61 @@ const updateUrlFromFilters = () => {
 };
 
 
+const updateMobileColorFilters = () => {
+  const selectedColorCheckboxes = $('.color:checked, .colorless:checked');
+  const selectedPropertyCheckboxes = $('.section-dropdown .property:checked');
+
+  const iElements = selectedColorCheckboxes.map(function() {
+    const i = $('<i></i>').addClass('ms ms-' + $(this).val());
+    return i[0];
+  }).get();
+
+  if (selectedColorCheckboxes.length === 0) {
+    const i = $('<i></i>').addClass('ms ms-multicolor');
+    iElements.push(i[0]);
+  }
+
+  const targetElements = $('.mobileColorTarget');
+  targetElements.each(function() {
+    $(this).find('i').remove();
+    $(this).append(iElements);
+  });
+
+  const propertyElements = $('.propertyTarget');
+  propertyElements.each(function() {
+    $(this).find('i').remove();
+
+    selectedPropertyCheckboxes.each(function() {
+      const i = $('<i></i>');
+
+      if ($(this).val() !== 'gtc') {
+        i.addClass('ms ms-' + $(this).val());
+      } else {
+        i.addClass('ss ss-' + $(this).val());
+      }
+
+      $(this).parent().append(i);
+    });
+  });
+};
+
+
 // Check if the data is already stored in localStorage
 const storedData = localStorage.getItem('landsData');
+const storedVersion = localStorage.getItem('landsDataVersion');
+const currentVersion = '1.0'; // Replace with the current version of the JSON data
 
-if (storedData) {
-  // If the data is already present in localStorage, parse and assign it to the data variable
+if (!storedVersion) {
+    console.log('No data found.');
+}
+else if (storedData && storedVersion !== currentVersion) {
+    console.log('Current data version: ' + storedVersion);
+}
+
+if (storedData && storedVersion === currentVersion) {
+  // If the data is already present in localStorage and has the same version, parse and assign it to the data variable
   data = JSON.parse(storedData);
-
+  console.log("Current data version: " + currentVersion + ".");
   // Retrieve selectedCards from localStorage
   const storedSelectedCards = localStorage.getItem('selectedCards');
   selectedCards = storedSelectedCards ? JSON.parse(storedSelectedCards) : [];
@@ -219,16 +302,18 @@ if (storedData) {
   // Update filter checkboxes from URL
   updateFiltersFromUrl();
   filterCards();
-
+  console.log("No new data to load.");
 } else {
-  // If the data is not present in localStorage, fetch it from the JSON file
+  // If the data is not present in localStorage or has a different version, fetch it from the JSON file
   $.getJSON('../lands/lands.json')
     .done(function(responseData) {
-      // Store the fetched data in localStorage
-      localStorage.setItem('landsData', JSON.stringify(responseData));
-
       // Assign the data to the data variable
       data = responseData;
+      console.log("Newest data version: " + currentVersion + ".");
+      console.log("Loading new data...");
+      // Store the fetched data and the version in localStorage
+      localStorage.setItem('landsData', JSON.stringify(data));
+      localStorage.setItem('landsDataVersion', currentVersion);
 
       // Retrieve selectedCards from localStorage
       const storedSelectedCards = localStorage.getItem('selectedCards');
@@ -237,13 +322,17 @@ if (storedData) {
       // Update filter checkboxes from URL
       updateFiltersFromUrl();
       filterCards();
-
-
+      console.log("Data loaded correctly.");
     })
     .fail(function(error) {
       console.error('JSON Error:', error);
     });
 }
+
+// Update filter checkboxes from URL
+updateFiltersFromUrl();
+filterCards();
+
 // Update filter checkboxes from URL
 updateFiltersFromUrl();
 filterCards();
@@ -280,6 +369,7 @@ if (selectedCards.length > 0) {
 $('.color, .property').on('change', function() {
   filterCards();
   updateUrlFromFilters();
+  updateBasicCardsCount();
 });
 
 $('#isAdded').on('change', function() {
@@ -294,7 +384,9 @@ $('#isAdded').on('change', function() {
   } else {
     // Reset the card pool to show filtered cards
     filterCards();
+
   }
+   updateBasicCardsCount();
 });
 
 $('.reset-filters').on('click', function() {
@@ -306,5 +398,6 @@ $('.reset-filters').on('click', function() {
       });
     $('#search').val('');
     filterCards();
+    updateBasicCardsCount(); 
 });
 

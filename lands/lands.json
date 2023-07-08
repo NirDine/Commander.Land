@@ -1,7 +1,7 @@
 {
   "object": "list",
   "total_cards": 1021,
-  "versioN": 1,
+  "version": 1.0,
   "data": [
 	{
       "object": "card",
@@ -40,7 +40,9 @@
         "usd": "13.55"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:fetchland"
+	  ]
     },
     {
       "object": "card",
@@ -80,7 +82,10 @@
         "usd": "0.50"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+		"is:tapland",
+		"slow"
+	  ]
     },
     {
       "object": "card",
@@ -119,7 +124,9 @@
         "usd": "29.28"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:fetchland"
+	  ]
     },
     {
       "object": "card",
@@ -197,7 +204,9 @@
         "usd": "0.19"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:fetchland"
+	  ]
     },
     {
       "object": "card",
@@ -236,7 +245,10 @@
         "usd": "0.18"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland",
+	  "slow"
+	  ]
     },
     {
       "object": "card",
@@ -275,7 +287,9 @@
         "usd": "10.53"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:fetchland"
+	  ]
     },
     {
       "object": "card",
@@ -314,7 +328,9 @@
         "usd": "16.99"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:fetchland"
+	  ]
     },
     {
       "object": "card",
@@ -353,7 +369,10 @@
         "usd": "0.39"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland",
+	  "is:fetchland"
+	  ]
     },
     {
       "object": "card",
@@ -392,7 +411,9 @@
         "usd": "32.20"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:fetchland"
+	  ]
     },
     {
       "object": "card",
@@ -431,7 +452,10 @@
         "usd": "0.24"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland",
+	  "is:fetchland"
+	  ]
     },
     {
       "object": "card",
@@ -470,7 +494,9 @@
         "usd": "17.33"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:fetchland"
+	  ]
     },
     {
       "object": "card",
@@ -509,7 +535,9 @@
         "usd": "13.51"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:fetchland"
+	  ]
     },
     {
       "object": "card",
@@ -548,7 +576,9 @@
         "usd": "20.34"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:fetchland"
+	  ]
     },
     {
       "object": "card",
@@ -587,7 +617,9 @@
         "usd": "30.22"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:fetchland"
+	  ]
     },
     {
       "object": "card",
@@ -633,7 +665,9 @@
         "usd": null
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:dualland"
+	  ]
     },
     {
       "object": "card",
@@ -679,7 +713,9 @@
         "usd": null
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:dualland"
+	  ]
     },
     {
       "object": "card",
@@ -725,7 +761,9 @@
         "usd": null
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:dualland"
+	  ]
     },
     {
       "object": "card",
@@ -771,7 +809,9 @@
         "usd": null
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:dualland"
+	  ]
     },
     {
       "object": "card",
@@ -817,7 +857,9 @@
         "usd": null
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:dualland"
+	  ]
     },
     {
       "object": "card",
@@ -863,7 +905,9 @@
         "usd": null
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:dualland"
+	  ]
     },
     {
       "object": "card",
@@ -925,7 +969,9 @@
         "usd": null
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:dualland"
+	  ]
     },
     {
       "object": "card",
@@ -971,7 +1017,9 @@
         "usd": null
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:dualland"
+	  ]
     },
     {
       "object": "card",
@@ -1017,7 +1065,9 @@
         "usd": null
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:dualland"
+	  ]
     },
     {
       "object": "card",
@@ -1063,7 +1113,9 @@
         "usd": null
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:dualland"
+	  ]
     },
     {
       "object": "card",
@@ -1111,7 +1163,9 @@
         "usd": "16.71"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:shockland"
+	  ]
     },
     {
       "object": "card",
@@ -1159,7 +1213,9 @@
         "usd": "20.25"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:shockland"
+	  ]
     },
     {
       "object": "card",
@@ -1207,7 +1263,9 @@
         "usd": "10.02"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:shockland"
+	  ]
     },
     {
       "object": "card",
@@ -1255,7 +1313,9 @@
         "usd": "10.81"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:shockland"
+	  ]
     },
     {
       "object": "card",
@@ -1302,7 +1362,9 @@
         "usd": "14.06"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:shockland"
+	  ]
     },
     {
       "object": "card",
@@ -1349,7 +1411,9 @@
         "usd": "18.47"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:shockland"
+	  ]
     },
     {
       "object": "card",
@@ -1396,7 +1460,9 @@
         "usd": "14.65"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:shockland"
+	  ]
     },
     {
       "object": "card",
@@ -1444,7 +1510,9 @@
         "usd": "10.14"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:shockland"
+	  ]
     },
     {
       "object": "card",
@@ -1491,7 +1559,9 @@
         "usd": "12.65"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:shockland"
+	  ]
     },
     {
       "object": "card",
@@ -1538,7 +1608,9 @@
         "usd": "12.62"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:shockland"
+	  ]
     },
     {
       "object": "card",
@@ -1584,7 +1656,9 @@
         "usd": "0.33"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland"
+	  ]
     },
     {
       "object": "card",
@@ -1630,7 +1704,9 @@
         "usd": "0.18"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland"
+	  ]
     },
     {
       "object": "card",
@@ -1676,7 +1752,9 @@
         "usd": "0.27"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland"
+	  ]
     },
     {
       "object": "card",
@@ -1722,7 +1800,9 @@
         "usd": "0.20"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland"
+	  ]
     },
     {
       "object": "card",
@@ -1768,7 +1848,9 @@
         "usd": "0.17"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland"
+	  ]
     },
     {
       "object": "card",
@@ -1814,7 +1896,9 @@
         "usd": "0.19"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland"
+	  ]
     },
     {
       "object": "card",
@@ -1860,7 +1944,9 @@
         "usd": "0.21"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland"
+	  ]
     },
     {
       "object": "card",
@@ -1906,7 +1992,9 @@
         "usd": "0.24"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland"
+	  ]
     },
     {
       "object": "card",
@@ -1952,7 +2040,9 @@
         "usd": "0.18"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland"
+	  ]
     },
     {
       "object": "card",
@@ -1992,7 +2082,10 @@
         "usd": "0.29"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:painland",
+	  "is:gate"
+	  ]
     },
     {
       "object": "card",
@@ -2038,7 +2131,9 @@
         "usd": "0.16"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland"
+	  ]
     },
     {
       "object": "card",
@@ -2078,7 +2173,10 @@
         "usd": "0.22"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:fetchland",
+	  "is:tapland"
+	  ]
     },
     {
       "object": "card",
@@ -2119,7 +2217,10 @@
         "usd": "0.23"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:fetchland",
+	  "is:tapland"
+	  ]
     },
     {
       "object": "card",
@@ -2165,7 +2266,10 @@
         "usd": "0.44"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tangoland",
+	  "is:battleland"
+	  ]
     },
     {
       "object": "card",
@@ -2211,7 +2315,10 @@
         "usd": "0.23"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tangoland",
+	  "is:battleland"
+	  ]
     },
     {
       "object": "card",
@@ -2271,7 +2378,10 @@
         "usd": "0.25"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:mandland",
+	  "creature"
+	  ]
     },
     {
       "object": "card",
@@ -2419,7 +2529,9 @@
         "usd": "0.26"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:triome"
+	  ]
     },
     {
       "object": "card",
@@ -2504,7 +2616,9 @@
         "usd": "0.27"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:triome"
+	  ]
     },
     {
       "object": "card",
@@ -2550,7 +2664,10 @@
         "usd": "0.21"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tangoland",
+	  "is:battleland"
+	  ]
     },
     {
       "object": "card",
@@ -2590,7 +2707,9 @@
         "usd": "0.26"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:triome"
+	  ]
     },
     {
       "object": "card",
@@ -2636,7 +2755,9 @@
         "usd": "0.32"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:triome"
+	  ]
     },
     {
       "object": "card",
@@ -2682,7 +2803,10 @@
         "usd": "0.26"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tangoland",
+	  "is:battleland"
+	  ]
     },
     {
       "object": "card",
@@ -2775,7 +2899,9 @@
         "usd": "1.91"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:bicycleland"
+	  ]
     },
     {
       "object": "card",
@@ -2823,7 +2949,9 @@
         "usd": "2.92"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:bicycleland"
+	  ]
     },
     {
       "object": "card",
@@ -2871,7 +2999,9 @@
         "usd": "1.13"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:bicycleland"
+	  ]
     },
     {
       "object": "card",
@@ -2919,7 +3049,9 @@
         "usd": "1.50"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:bicycleland"
+	  ]
     },
     {
       "object": "card",
@@ -2967,7 +3099,9 @@
         "usd": "1.69"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:bicycleland"
+	  ]
     },
     {
       "object": "card",
@@ -3017,7 +3151,10 @@
         "usd": "0.23"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland",
+	  "is:snowland"
+	  ]
     },
     {
       "object": "card",
@@ -3067,7 +3204,10 @@
         "usd": "0.31"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland",
+	  "is:snowland"
+	  ]
     },
     {
       "object": "card",
@@ -3117,7 +3257,10 @@
         "usd": "0.17"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland",
+	  "is:snowland"
+	  ]
     },
     {
       "object": "card",
@@ -3167,7 +3310,10 @@
         "usd": "0.25"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:tapland",
+	  "is:snowland"
+	  ]
     },
     {
       "object": "card",
@@ -3217,7 +3363,10 @@
         "usd": "0.35"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:tapland",
+	  "is:snowland"
+	  ]
     },
     {
       "object": "card",
@@ -3267,7 +3416,10 @@
         "usd": "0.58"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:tapland",
+	  "is:snowland"
+	  ]
     },
     {
       "object": "card",
@@ -3317,7 +3469,10 @@
         "usd": "0.17"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:tapland",
+	  "is:snowland"
+	  ]
     },
     {
       "object": "card",
@@ -3367,7 +3522,10 @@
         "usd": "0.19"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:tapland",
+	  "is:snowland"
+	  ]
     },
     {
       "object": "card",
@@ -3417,7 +3575,10 @@
         "usd": "0.33"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:tapland",
+	  "is:snowland"
+	  ]
     },
     {
       "object": "card",
@@ -3467,7 +3628,10 @@
         "usd": "0.44"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:tapland",
+	  "is:snowland"
+	  ]
     },
     {
       "object": "card",
@@ -3518,7 +3682,9 @@
         "usd": "15.09"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:triome"
+	  ]
     },
     {
       "object": "card",
@@ -3569,7 +3735,9 @@
         "usd": "7.51"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:triome"
+	  ]
     },
     {
       "object": "card",
@@ -3620,7 +3788,9 @@
         "usd": "13.38"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:triome"
+	  ]
     },
     {
       "object": "card",
@@ -3671,7 +3841,9 @@
         "usd": "9.19"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:triome"
+	  ]
     },
     {
       "object": "card",
@@ -3722,7 +3894,9 @@
         "usd": "11.25"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:triome"
+	  ]
     },
     {
       "object": "card",
@@ -3773,7 +3947,9 @@
         "usd": "13.13"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:triome"
+	  ]
     },
     {
       "object": "card",
@@ -3824,7 +4000,9 @@
         "usd": "7.81"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:triome"
+	  ]
     },
     {
       "object": "card",
@@ -3875,7 +4053,9 @@
         "usd": "7.75"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:triome"
+	  ]
     },
     {
       "object": "card",
@@ -3926,7 +4106,9 @@
         "usd": "14.05"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:triome"
+	  ]
     },
     {
       "object": "card",
@@ -3977,7 +4159,9 @@
         "usd": "5.74"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:triome"
+	  ]
     },
     {
       "object": "card",
@@ -4023,7 +4207,10 @@
         "usd": "2.69"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:tribal",
+	  "is:typal"
+	  ]
     },
     {
       "object": "card",
@@ -4070,7 +4257,9 @@
         "usd": "11.22"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:painland"
+	  ]
     },
     {
       "object": "card",
@@ -4216,7 +4405,9 @@
         "usd": "3.49"
       },
       "related_uris": {},
-      "properties": []
+	  "properties": [
+	  "is:manland"
+	  ]
     },
     {
       "object": "card",
@@ -5399,7 +5590,9 @@
         "usd": "0.17"
       },
       "related_uris": {},
-      "properties": []
+      "properties": [
+	  "is:tapland"
+	  ]
     },
     {
       "object": "card",
@@ -5690,7 +5883,8 @@
 	  "edhrec_rank": 5,
       "prices": {
         "usd": null
-      }
+      },
+	  "is_basic": true
     },
     {
       "object": "card",
@@ -5712,7 +5906,8 @@
 	  "edhrec_rank": 2,
       "prices": {
         "usd": null
-      }
+      },
+	  "is_basic": true
     },
     {
       "object": "card",
@@ -5736,7 +5931,8 @@
 	  "edhrec_rank": 4,
       "prices": {
         "usd": null
-      }
+      },
+	  "is_basic": true
     },
     {
       "object": "card",
@@ -5760,7 +5956,8 @@
 	  "edhrec_rank": 1,
       "prices": {
         "usd": null
-      }
+      },
+	  "is_basic": true
     },
     {
       "object": "card",
@@ -5783,7 +5980,8 @@
 	  "edhrec_rank": 3,
       "prices": {
         "usd": null
-      }
+      },
+	  "is_basic": true
     },
     {
       "object": "card",
@@ -5804,7 +6002,8 @@
 	  "edhrec_rank": 6,
       "prices": {
         "usd": null
-      }
+      },
+	  "is_basic": true
     },
 	{
       "object": "card",

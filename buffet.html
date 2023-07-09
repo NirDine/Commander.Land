@@ -279,13 +279,13 @@
                   <div class="section-dropdown">
                     <div class="filter-picker">
                       <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="property" type="checkbox" id="land-ability" name="land-ability" value="ability-activated" />
+                        <input class="property" type="checkbox" id="land-ability" name="land-ability" value="activated ability" />
                         <label class="land-ability" for="land-ability" title="Has an activated ability">
                           <i class="ms ms-ability-activated"></i>
                         </label>
                       </div>
                       <div class="mana hidden " style="--hiddenCount: 8.5;">
-                        <input class="property" type="checkbox" id="land-t" name="land-t" value="tapland" />
+                        <input class="property" type="checkbox" id="land-t" name="land-t" value="is:tapland" />
                         <label class="land-t" for="land-t" title="Enters the battlefield tapped">
                           <i class="ms ms-tap"></i>
                         </label>
@@ -297,7 +297,7 @@
                         </label>
                       </div>
                       <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="property" type="checkbox" id="land-a" name="land-a" value="artifact" />
+                        <input class="property" type="checkbox" id="land-a" name="land-a" value="is:artifact" />
                         <label class="land-a" for="land-a" title="Is an artifact land">
                           <i class="ms ms-artifact"></i>
                         </label>
@@ -309,19 +309,19 @@
                         </label>
                       </div>
                       <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="property" type="checkbox" id="land-modal" name="land-modal" value="dfc-modal-face" />
+                        <input class="property" type="checkbox" id="land-modal" name="land-modal" value="is:dfc" />
                         <label class="land-modal" for="land-modal" title="It's a double-faced card">
                           <i class="ms ms-dfc-modal-face"></i>
                         </label>
                       </div>
                       <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="property" type="checkbox" id="land-s" name="land-s" value="s" />
+                        <input class="property" type="checkbox" id="land-s" name="land-s" value="is:snowland" />
                         <label class="land-s" for="land-s" title="It's a snow land">
                           <i class="ms ms-s"></i>
                         </label>
                       </div>
                       <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="property" type="checkbox" id="land-gate" name="land-gate" value="gtc" />
+                        <input class="property" type="checkbox" id="land-gate" name="land-gate" value="is:gate" />
                         <label class="land-gate" for="land-gate" title="It's a snow land">
                           <i class="ss ss-gtc"></i>
                         </label>
@@ -419,8 +419,15 @@
                       </div>
                     </li>
                   </ul>
-                  <div class="totalCards">
-                    <span class="current">0</span>/ <span class="total">100</span>
+                  <div class="totalCardCountContainer">
+                        <div class="totalCards">
+                        <span class="current"></span>/ <span class="total">100</span>
+                      </div>
+                    <div class="totalNonLands">
+                    
+                     <span class="">(<span class="nonLands">99</span> non-lands)</span>
+                  </div>
+ 
                   </div>
                 </div>
               </label>
@@ -812,6 +819,8 @@
     <script type="text/javascript" src="js/dfcFlipper.js" defer></script>
     <!-- ADD CARDS TO THE CARD HOLDER -->
     <script type="text/javascript" src="js/cardHolder.js" defer></script>
+    <!-- ADD CARDS TO THE CARD HOLDER -->
+    <script type="text/javascript" src="js/userList.js" defer></script>
     
     
     <script>

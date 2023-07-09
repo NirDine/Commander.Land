@@ -1,0 +1,915 @@
+{
+  "object": "list",
+  "total_cards": 29,
+  "has_more": false,
+  "data": [
+    {
+      "object": "card",
+      "id": "32865e68-5842-4f17-b2ea-4ffa743b511f",
+      "oracle_id": "bf29b215-d4f5-4641-97ef-b65d4c463e72",
+      "multiverse_ids": [
+        1698
+      ],
+      "name": "Adventurers' Guildhouse",
+      "released_at": "1994-06-01",
+      "uri": "https://api.scryfall.com/cards/32865e68-5842-4f17-b2ea-4ffa743b511f",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/3/2/32865e68-5842-4f17-b2ea-4ffa743b511f.jpg?1562858255",
+        "normal": "https://cards.scryfall.io/normal/front/3/2/32865e68-5842-4f17-b2ea-4ffa743b511f.jpg?1562858255",
+        "png": "https://cards.scryfall.io/png/front/3/2/32865e68-5842-4f17-b2ea-4ffa743b511f.png?1562858255"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Green legendary creatures you control have \"bands with other legendary creatures.\" (Any legendary creatures can attack in a band as long as at least one has \"bands with other legendary creatures.\" Bands are blocked as a group. If at least two legendary creatures you control, one of which has \"bands with other legendary creatures,\" are blocking or being blocked by the same creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.)",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "c4e0aa7c-a008-4d71-80ce-d5a1ca0b251b"
+      ],
+      "illustration_id": "d7c30ae9-ba78-4c03-b465-1f48a108c350",
+      "frame": "1993",
+      "full_art": false,
+      "edhrec_rank": 17332,
+      "prices": {
+        "usd": "8.35"
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "e5b7afa9-e07a-4a84-a41f-7a8bc5c1d274",
+      "oracle_id": "12326d23-1fb5-4084-a23a-d6e2c90ea36c",
+      "multiverse_ids": [
+        109739
+      ],
+      "name": "Arena",
+      "released_at": "2006-10-06",
+      "uri": "https://api.scryfall.com/cards/e5b7afa9-e07a-4a84-a41f-7a8bc5c1d274",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/e/5/e5b7afa9-e07a-4a84-a41f-7a8bc5c1d274.jpg?1562785361",
+        "normal": "https://cards.scryfall.io/normal/front/e/5/e5b7afa9-e07a-4a84-a41f-7a8bc5c1d274.jpg?1562785361",
+        "png": "https://cards.scryfall.io/png/front/e/5/e5b7afa9-e07a-4a84-a41f-7a8bc5c1d274.png?1562785361"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{3}, {T}: Tap target creature you control and target creature of an opponent's choice they control. Those creatures fight each other. (Each deals damage equal to its power to the other.)",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Fight"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "35906871-6c78-4ab2-9ed1-e6792c8efb74"
+      ],
+      "illustration_id": "5de809a1-34f1-44ef-856d-dc2fa1db6b98",
+      "frame": "1997",
+      "full_art": false,
+      "edhrec_rank": 8279,
+      "prices": {
+        "usd": "4.54"
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "e65356e6-0ead-49fd-b069-be1ea9b1c105",
+      "oracle_id": "4b9922b9-c5b5-467e-8a5b-1e45e862194d",
+      "multiverse_ids": [
+        1699
+      ],
+      "name": "Cathedral of Serra",
+      "released_at": "1994-06-01",
+      "uri": "https://api.scryfall.com/cards/e65356e6-0ead-49fd-b069-be1ea9b1c105",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/e/6/e65356e6-0ead-49fd-b069-be1ea9b1c105.jpg?1562861376",
+        "normal": "https://cards.scryfall.io/normal/front/e/6/e65356e6-0ead-49fd-b069-be1ea9b1c105.jpg?1562861376",
+        "png": "https://cards.scryfall.io/png/front/e/6/e65356e6-0ead-49fd-b069-be1ea9b1c105.png?1562861376"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "White legendary creatures you control have \"bands with other legendary creatures.\" (Any legendary creatures can attack in a band as long as at least one has \"bands with other legendary creatures.\" Bands are blocked as a group. If at least two legendary creatures you control, one of which has \"bands with other legendary creatures,\" are blocking or being blocked by the same creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.)",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
+      ],
+      "illustration_id": "b012ba77-9c51-444a-ad2b-d10154036da4",
+      "frame": "1993",
+      "full_art": false,
+      "edhrec_rank": 16806,
+      "prices": {
+        "usd": "14.28"
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "00cb17a0-5a13-4d02-b7fb-f99531bc8ca5",
+      "oracle_id": "c9b82110-7dfd-4617-9399-9510be449043",
+      "multiverse_ids": [
+        489987
+      ],
+      "name": "Dark Depths",
+      "released_at": "2020-08-07",
+      "uri": "https://api.scryfall.com/cards/00cb17a0-5a13-4d02-b7fb-f99531bc8ca5",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/0/00cb17a0-5a13-4d02-b7fb-f99531bc8ca5.jpg?1599710396",
+        "normal": "https://cards.scryfall.io/normal/front/0/0/00cb17a0-5a13-4d02-b7fb-f99531bc8ca5.jpg?1599710396",
+        "png": "https://cards.scryfall.io/png/front/0/0/00cb17a0-5a13-4d02-b7fb-f99531bc8ca5.png?1599710396"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Legendary Snow Land",
+      "oracle_text": "Dark Depths enters the battlefield with ten ice counters on it.\n{3}: Remove an ice counter from Dark Depths.\nWhen Dark Depths has no ice counters on it, sacrifice it. If you do, create Marit Lage, a legendary 20/20 black Avatar creature token with flying and indestructible.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+	  "card_faces": [
+        {
+          "object": "card_face",
+          "name": "",
+          "mana_cost": "",
+          "type_line": "Legendary Snow Land",
+		  "oracle_text": "Dark Depths enters the battlefield with ten ice counters on it.\n{3}: Remove an ice counter from Dark Depths.\nWhen Dark Depths has no ice counters on it, sacrifice it. If you do, create Marit Lage, a legendary 20/20 black Avatar creature token with flying and indestructible.",
+          "colors": [],
+		  "image_uris": {
+			"small": "https://cards.scryfall.io/small/front/0/0/00cb17a0-5a13-4d02-b7fb-f99531bc8ca5.jpg?1599710396",
+			"normal": "https://cards.scryfall.io/normal/front/0/0/00cb17a0-5a13-4d02-b7fb-f99531bc8ca5.jpg?1599710396",
+			"png": "https://cards.scryfall.io/png/front/0/0/00cb17a0-5a13-4d02-b7fb-f99531bc8ca5.png?1599710396"
+		  }
+        },
+        {
+          "object": "card_face",
+          "name": "Marit Lage",
+          "mana_cost": "",
+          "type_line": "Token Legendary Creature — Avatar",
+          "oracle_text": "Flying, indestructible",
+		  "power": "20",
+		  "toughness": "20",
+		  "colors": [
+			"B"
+		  ],
+		  "color_identity": [
+			"B"
+		  ],
+		  "keywords": [
+			"Flying",
+			"Indestructible"
+		  ],
+		  "image_uris": {
+			"small": "https://cards.scryfall.io/small/front/f/b/fb248ba0-2ee7-4994-be57-2bcc8df29680.jpg?1598311645",
+			"normal": "https://cards.scryfall.io/normal/front/f/b/fb248ba0-2ee7-4994-be57-2bcc8df29680.jpg?1598311645",
+			"png": "https://cards.scryfall.io/png/front/f/b/fb248ba0-2ee7-4994-be57-2bcc8df29680.png?1598311645"
+			}
+		}
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "2ae0dd12-047c-4efb-80d7-bccc3bac5fba"
+      ],
+      "illustration_id": "120fda7c-20f6-4f5d-8e99-73ca3c121a9e",
+      "frame": "2015",
+      "frame_effects": [
+        "legendary"
+      ],
+      "security_stamp": "oval",
+      "full_art": false,
+      "edhrec_rank": 1655,
+      "preview": {
+        "source": "Emma Handy",
+        "source_uri": "https://www.twitch.tv/videos/686584286",
+        "previewed_at": "2020-07-21"
+      },
+      "prices": {
+        "usd": "6.26"
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "37ccc3ab-9875-4bd2-bdbd-e3af5e01d682",
+      "oracle_id": "84cef34a-c3e1-4059-b4cd-c481938a53a5",
+      "multiverse_ids": [
+        159124
+      ],
+      "name": "Diamond Valley",
+      "released_at": "2007-09-10",
+      "uri": "https://api.scryfall.com/cards/37ccc3ab-9875-4bd2-bdbd-e3af5e01d682",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/3/7/37ccc3ab-9875-4bd2-bdbd-e3af5e01d682.jpg?1559592435",
+        "normal": "https://cards.scryfall.io/normal/front/3/7/37ccc3ab-9875-4bd2-bdbd-e3af5e01d682.jpg?1559592435",
+        "png": "https://cards.scryfall.io/png/front/3/7/37ccc3ab-9875-4bd2-bdbd-e3af5e01d682.png?1559592435"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Sacrifice a creature: You gain life equal to the sacrificed creature's toughness.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "770b4e16-de76-49ed-949f-84e6d2e06d25"
+      ],
+      "illustration_id": "16674f11-6cd8-41f6-ae6a-f8578187287c",
+      "frame": "1997",
+      "full_art": false,
+      "edhrec_rank": 13509,
+      "prices": {
+        "usd": null
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "0c008129-daba-46bc-829c-d2c0c13ecdd3",
+      "oracle_id": "73e7a2ad-d11c-4867-b97d-f971809da778",
+      "multiverse_ids": [
+        184631
+      ],
+      "name": "Glacial Chasm",
+      "released_at": "2008-09-22",
+      "uri": "https://api.scryfall.com/cards/0c008129-daba-46bc-829c-d2c0c13ecdd3",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/c/0c008129-daba-46bc-829c-d2c0c13ecdd3.jpg?1562867827",
+        "normal": "https://cards.scryfall.io/normal/front/0/c/0c008129-daba-46bc-829c-d2c0c13ecdd3.jpg?1562867827",
+        "png": "https://cards.scryfall.io/png/front/0/c/0c008129-daba-46bc-829c-d2c0c13ecdd3.png?1562867827"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Cumulative upkeep—Pay 2 life. (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)\nWhen Glacial Chasm enters the battlefield, sacrifice a land.\nCreatures you control can't attack.\nPrevent all damage that would be dealt to you.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Cumulative upkeep"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "5a5ee217-9d28-419a-b92a-a2376c7d18b3"
+      ],
+      "illustration_id": "7d808fef-41f4-4156-a414-c2961f7aaa87",
+      "frame": "1997",
+      "full_art": false,
+      "edhrec_rank": 2120,
+      "prices": {
+        "usd": null
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "b926a189-90b6-47bb-b5d6-b033e57007b4",
+      "oracle_id": "57d7deaf-ee08-49ab-b239-1c77a1f65225",
+      "multiverse_ids": [
+        2753
+      ],
+      "name": "Halls of Mist",
+      "released_at": "1995-06-03",
+      "uri": "https://api.scryfall.com/cards/b926a189-90b6-47bb-b5d6-b033e57007b4",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/9/b926a189-90b6-47bb-b5d6-b033e57007b4.jpg?1562929498",
+        "normal": "https://cards.scryfall.io/normal/front/b/9/b926a189-90b6-47bb-b5d6-b033e57007b4.jpg?1562929498",
+        "png": "https://cards.scryfall.io/png/front/b/9/b926a189-90b6-47bb-b5d6-b033e57007b4.png?1562929498"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Cumulative upkeep {1} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)\nCreatures that attacked during their controller's last turn can't attack.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Cumulative upkeep"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
+      ],
+      "illustration_id": "1e93299a-a3de-4c57-a7bc-ac5fd8ff3b07",
+      "frame": "1993",
+      "full_art": false,
+      "edhrec_rank": 16031,
+      "prices": {
+        "usd": "3.87"
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "9a974983-b9aa-4f12-8279-2e74089f7f31",
+      "oracle_id": "cfaaead2-09e8-47cb-9e39-8570b8d8de86",
+      "multiverse_ids": [
+        184633
+      ],
+      "name": "Ice Floe",
+      "released_at": "2008-09-22",
+      "uri": "https://api.scryfall.com/cards/9a974983-b9aa-4f12-8279-2e74089f7f31",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/a/9a974983-b9aa-4f12-8279-2e74089f7f31.jpg?1562869979",
+        "normal": "https://cards.scryfall.io/normal/front/9/a/9a974983-b9aa-4f12-8279-2e74089f7f31.jpg?1562869979",
+        "png": "https://cards.scryfall.io/png/front/9/a/9a974983-b9aa-4f12-8279-2e74089f7f31.png?1562869979"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "You may choose not to untap Ice Floe during your untap step.\n{T}: Tap target creature without flying that's attacking you. It doesn't untap during its controller's untap step for as long as Ice Floe remains tapped.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "14a1de4b-1237-4e7b-8868-b71e87c9a46e"
+      ],
+      "illustration_id": "2c1dc139-2f59-40b1-8623-56979e2f8461",
+      "frame": "1997",
+      "full_art": false,
+      "edhrec_rank": 13204,
+      "prices": {
+        "usd": null
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "17f4a1aa-395f-423c-b70c-00cf178bb84d",
+      "oracle_id": "d427e61d-5b30-4d2a-bad2-2e7f016036ca",
+      "multiverse_ids": [
+        159763
+      ],
+      "name": "Island of Wak-Wak",
+      "released_at": "2007-09-10",
+      "uri": "https://api.scryfall.com/cards/17f4a1aa-395f-423c-b70c-00cf178bb84d",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/7/17f4a1aa-395f-423c-b70c-00cf178bb84d.jpg?1559592395",
+        "normal": "https://cards.scryfall.io/normal/front/1/7/17f4a1aa-395f-423c-b70c-00cf178bb84d.jpg?1559592395",
+        "png": "https://cards.scryfall.io/png/front/1/7/17f4a1aa-395f-423c-b70c-00cf178bb84d.png?1559592395"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Target creature with flying has base power 0 until end of turn.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "flavor_text": "The Isle of Wak-Wak, home to a tribe of winged folk, is named for a peculiar fruit that grows there. The fruit looks like a woman's head, and when ripe speaks the word \"Wak.\"",
+      "artist_ids": [
+        "a9ddb513-51c7-455c-ab8f-5b90aae9f75b"
+      ],
+      "illustration_id": "69c26e77-9c75-433a-88cc-b6074840afe2",
+      "frame": "1997",
+      "full_art": false,
+      "edhrec_rank": 17619,
+      "prices": {
+        "usd": null
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "78114f25-f40a-4e2e-bf89-29ea9b3500e2",
+      "oracle_id": "38a12bd7-4394-44a8-91a0-6a4ff7fa4f71",
+      "multiverse_ids": [
+        489995
+      ],
+      "name": "Maze of Ith",
+      "released_at": "2020-08-07",
+      "uri": "https://api.scryfall.com/cards/78114f25-f40a-4e2e-bf89-29ea9b3500e2",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/7/8/78114f25-f40a-4e2e-bf89-29ea9b3500e2.jpg?1599710557",
+        "normal": "https://cards.scryfall.io/normal/front/7/8/78114f25-f40a-4e2e-bf89-29ea9b3500e2.jpg?1599710557",
+        "png": "https://cards.scryfall.io/png/front/7/8/78114f25-f40a-4e2e-bf89-29ea9b3500e2.png?1599710557"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Untap target attacking creature. Prevent all combat damage that would be dealt to and dealt by that creature this turn.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "f8e7f8d6-6dde-4059-973c-30f1fd1bbe4e"
+      ],
+      "illustration_id": "4ca4f8bb-0cd1-4f86-86f2-592488a6401f",
+      "frame": "2015",
+      "security_stamp": "oval",
+      "full_art": false,
+      "edhrec_rank": 558,
+      "preview": {
+        "source": "Arin Hanson",
+        "source_uri": "https://twitter.com/egoraptor/status/1287848948615413760",
+        "previewed_at": "2020-07-27"
+      },
+      "prices": {
+        "usd": "3.47"
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "314fd1d7-4bd8-4d95-b7c2-1aa6660ab88a",
+      "oracle_id": "af147bb6-aa46-4fc9-af96-de3740c19fd5",
+      "multiverse_ids": [
+        1702
+      ],
+      "name": "Mountain Stronghold",
+      "released_at": "1994-06-01",
+      "uri": "https://api.scryfall.com/cards/314fd1d7-4bd8-4d95-b7c2-1aa6660ab88a",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/3/1/314fd1d7-4bd8-4d95-b7c2-1aa6660ab88a.jpg?1562858248",
+        "normal": "https://cards.scryfall.io/normal/front/3/1/314fd1d7-4bd8-4d95-b7c2-1aa6660ab88a.jpg?1562858248",
+        "png": "https://cards.scryfall.io/png/front/3/1/314fd1d7-4bd8-4d95-b7c2-1aa6660ab88a.png?1562858248"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Red legendary creatures you control have \"bands with other legendary creatures.\" (Any legendary creatures can attack in a band as long as at least one has \"bands with other legendary creatures.\" Bands are blocked as a group. If at least two legendary creatures you control, one of which has \"bands with other legendary creatures,\" are blocking or being blocked by the same creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.)",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "c4e0aa7c-a008-4d71-80ce-d5a1ca0b251b"
+      ],
+      "illustration_id": "63e8f92f-af44-4c45-9b4d-38ba60c30dbb",
+      "frame": "1993",
+      "full_art": false,
+      "edhrec_rank": 19457,
+      "prices": {
+        "usd": "5.42"
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "4949330d-9f12-459a-8a64-bd304fc53954",
+      "oracle_id": "4533ce78-0594-4195-96fb-46cbadd0db69",
+      "multiverse_ids": [
+        202521
+      ],
+      "name": "Oasis",
+      "released_at": "2011-01-10",
+      "uri": "https://api.scryfall.com/cards/4949330d-9f12-459a-8a64-bd304fc53954",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/9/4949330d-9f12-459a-8a64-bd304fc53954.jpg?1562912163",
+        "normal": "https://cards.scryfall.io/normal/front/4/9/4949330d-9f12-459a-8a64-bd304fc53954.jpg?1562912163",
+        "png": "https://cards.scryfall.io/png/front/4/9/4949330d-9f12-459a-8a64-bd304fc53954.png?1562912163"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Prevent the next 1 damage that would be dealt to target creature this turn.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "770b4e16-de76-49ed-949f-84e6d2e06d25"
+      ],
+      "illustration_id": "e93cd666-4173-442d-bbc8-978a2aed0c66",
+      "frame": "1997",
+      "full_art": false,
+      "edhrec_rank": 15327,
+      "prices": {
+        "usd": null
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "d130205f-53e3-4c04-967c-4808d7945880",
+      "oracle_id": "8f7f4061-8998-40e9-b980-c63f27e7a5cd",
+      "multiverse_ids": [
+        107275
+      ],
+      "name": "Safe Haven",
+      "released_at": "2006-10-06",
+      "uri": "https://api.scryfall.com/cards/d130205f-53e3-4c04-967c-4808d7945880",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/1/d130205f-53e3-4c04-967c-4808d7945880.jpg?1562784189",
+        "normal": "https://cards.scryfall.io/normal/front/d/1/d130205f-53e3-4c04-967c-4808d7945880.jpg?1562784189",
+        "png": "https://cards.scryfall.io/png/front/d/1/d130205f-53e3-4c04-967c-4808d7945880.png?1562784189"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{2}, {T}: Exile target creature you control.\nAt the beginning of your upkeep, you may sacrifice Safe Haven. If you do, return each card exiled with Safe Haven to the battlefield under its owner's control.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "c96773f0-346c-4f7d-9271-2d98cc5d86e1"
+      ],
+      "illustration_id": "970f1b73-5d8a-421c-bd6d-ca9532776f63",
+      "frame": "1997",
+      "full_art": false,
+      "edhrec_rank": 12981,
+      "prices": {
+        "usd": "0.40"
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "66641d88-b3f0-4bcd-8d2d-29aa2de69e30",
+      "oracle_id": "f71f01bc-caae-426b-a25a-bfbfeb9feb67",
+      "multiverse_ids": [
+        1704
+      ],
+      "name": "Seafarer's Quay",
+      "released_at": "1994-06-01",
+      "uri": "https://api.scryfall.com/cards/66641d88-b3f0-4bcd-8d2d-29aa2de69e30",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/6/66641d88-b3f0-4bcd-8d2d-29aa2de69e30.jpg?1562859209",
+        "normal": "https://cards.scryfall.io/normal/front/6/6/66641d88-b3f0-4bcd-8d2d-29aa2de69e30.jpg?1562859209",
+        "png": "https://cards.scryfall.io/png/front/6/6/66641d88-b3f0-4bcd-8d2d-29aa2de69e30.png?1562859209"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Blue legendary creatures you control have \"bands with other legendary creatures.\" (Any legendary creatures can attack in a band as long as at least one has \"bands with other legendary creatures.\" Bands are blocked as a group. If at least two legendary creatures you control, one of which has \"bands with other legendary creatures,\" are blocking or being blocked by the same creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.)",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "c4e0aa7c-a008-4d71-80ce-d5a1ca0b251b"
+      ],
+      "illustration_id": "3ed2da93-d8fb-4ca8-b71c-1caac88c5a91",
+      "frame": "1993",
+      "full_art": false,
+      "edhrec_rank": 20695,
+      "prices": {
+        "usd": "5.63"
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "9347f02e-270b-44da-988c-d99a0fc5dfcb",
+      "oracle_id": "5419eae0-3c12-4748-9cf8-d927752e527e",
+      "multiverse_ids": [
+        201268
+      ],
+      "name": "Sorrow's Path",
+      "released_at": "2009-09-07",
+      "uri": "https://api.scryfall.com/cards/9347f02e-270b-44da-988c-d99a0fc5dfcb",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/3/9347f02e-270b-44da-988c-d99a0fc5dfcb.jpg?1562926135",
+        "normal": "https://cards.scryfall.io/normal/front/9/3/9347f02e-270b-44da-988c-d99a0fc5dfcb.jpg?1562926135",
+        "png": "https://cards.scryfall.io/png/front/9/3/9347f02e-270b-44da-988c-d99a0fc5dfcb.png?1562926135"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Choose two target blocking creatures an opponent controls. If each of those creatures could block all creatures that the other is blocking, remove both of them from combat. Each one then blocks all creatures the other was blocking.\nWhenever Sorrow's Path becomes tapped, it deals 2 damage to you and each creature you control.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "d2da8270-bbdb-4c49-b84d-bf5a380e8a78"
+      ],
+      "illustration_id": "f161f0ec-fdbb-4e3e-ac60-bba566821b00",
+      "frame": "1997",
+      "full_art": false,
+      "edhrec_rank": 18765,
+      "prices": {
+        "usd": null
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "397facec-f473-45a5-a4ce-02cb56e7bfab",
+      "oracle_id": "c6792d9f-8b74-43c4-814f-ba4adab2fdea",
+      "multiverse_ids": [
+        383128
+      ],
+      "name": "Thawing Glaciers",
+      "released_at": "2014-06-16",
+      "uri": "https://api.scryfall.com/cards/397facec-f473-45a5-a4ce-02cb56e7bfab",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/3/9/397facec-f473-45a5-a4ce-02cb56e7bfab.jpg?1562906577",
+        "normal": "https://cards.scryfall.io/normal/front/3/9/397facec-f473-45a5-a4ce-02cb56e7bfab.jpg?1562906577",
+        "png": "https://cards.scryfall.io/png/front/3/9/397facec-f473-45a5-a4ce-02cb56e7bfab.png?1562906577"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Thawing Glaciers enters the battlefield tapped.\n{1}, {T}: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle. Return Thawing Glaciers to its owner's hand at the beginning of the next cleanup step.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "aa9f64d1-29e1-4c82-877e-44c18183f40b"
+      ],
+      "illustration_id": "b3124b09-ee03-4ed1-afa0-1cd7fe58cfe6",
+      "frame": "2015",
+      "security_stamp": "oval",
+      "full_art": false,
+      "edhrec_rank": 8027,
+      "prices": {
+        "usd": null
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "cd3f7f4e-cb25-4121-96a0-a4dc530420b9",
+      "oracle_id": "69b409b3-fa16-4c79-8b46-215a7036ed46",
+      "multiverse_ids": [
+        201236
+      ],
+      "name": "The Tabernacle at Pendrell Vale",
+      "released_at": "2009-09-07",
+      "uri": "https://api.scryfall.com/cards/cd3f7f4e-cb25-4121-96a0-a4dc530420b9",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/d/cd3f7f4e-cb25-4121-96a0-a4dc530420b9.jpg?1562938371",
+        "normal": "https://cards.scryfall.io/normal/front/c/d/cd3f7f4e-cb25-4121-96a0-a4dc530420b9.jpg?1562938371",
+        "png": "https://cards.scryfall.io/png/front/c/d/cd3f7f4e-cb25-4121-96a0-a4dc530420b9.png?1562938371"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Legendary Land",
+      "oracle_text": "All creatures have \"At the beginning of your upkeep, destroy this creature unless you pay {1}.\"",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "banned",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "3de0bcf5-44b7-4c1e-9040-04c5396e79b0"
+      ],
+      "illustration_id": "9da32220-142e-40dc-ab89-47bbf1efc1fd",
+      "frame": "1997",
+      "full_art": false,
+      "edhrec_rank": 7000,
+      "prices": {
+        "usd": null
+      },
+      "purchase_uris": {
+      }
+    },
+    {
+      "object": "card",
+      "id": "9de534ff-fb48-4692-bd0f-dd237ca28502",
+      "oracle_id": "d410027b-1c22-461e-939d-06a2c851352e",
+      "multiverse_ids": [
+        1706
+      ],
+      "name": "Unholy Citadel",
+      "released_at": "1994-06-01",
+      "uri": "https://api.scryfall.com/cards/9de534ff-fb48-4692-bd0f-dd237ca28502",
+      "highres_image": true,
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/d/9de534ff-fb48-4692-bd0f-dd237ca28502.jpg?1562860166",
+        "normal": "https://cards.scryfall.io/normal/front/9/d/9de534ff-fb48-4692-bd0f-dd237ca28502.jpg?1562860166",
+        "png": "https://cards.scryfall.io/png/front/9/d/9de534ff-fb48-4692-bd0f-dd237ca28502.png?1562860166"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Black legendary creatures you control have \"bands with other legendary creatures.\" (Any legendary creatures can attack in a band as long as at least one has \"bands with other legendary creatures.\" Bands are blocked as a group. If at least two legendary creatures you control, one of which has \"bands with other legendary creatures,\" are blocking or being blocked by the same creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.)",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "legal"
+      },
+      "games": [
+      ],
+      "finishes": [
+      ],
+      "artist_ids": [
+        "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
+      ],
+      "illustration_id": "00cb6e5f-a5ed-493a-8197-1f279bd690d3",
+      "frame": "1993",
+      "full_art": false,
+      "edhrec_rank": 20049,
+      "prices": {
+        "usd": "7.53"
+      },
+      "purchase_uris": {
+      }
+    }
+  ]
+}

@@ -82,8 +82,21 @@
     
     .chFooter {
       justify-content: space-between;
+
+  padding: 0px 2.5em;
+
       
     }
+    
+    
+.totalCardCountContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
 
     .chFooter ul .tracker {
       justify-content: flex-start;
@@ -125,7 +138,19 @@
         flex-wrap: nowrap;
     }  
     
-    
+  .totalNonLands {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5em;
+    margin-bottom: 0.5em;
+    }
+    .totalNonLands > span {
+     position: absolute;
+        
+
+    }  
     
   .buffet .top {
     flex-direction: row;

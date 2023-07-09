@@ -357,7 +357,7 @@ footer div {
   justify-content: flex-end;
   flex-direction: column;
   width: 100%;
-  z-index: 1000;
+
   padding: 0em 1em;
 }
 
@@ -562,6 +562,7 @@ textarea {
   white-space: pre-wrap;
   word-wrap: break-word;
   color: transparent;
+    font-family: Graphik, sans-serif;
 }
 
 textarea {
@@ -773,7 +774,7 @@ mark {
     -webkit-transition: background-color 200ms linear, opacity 50ms linear;
     -o-transition: background-color 200ms linear, opacity 50ms linear;
     transition: background-color 200ms linear, opacity 50ms linear;
-    z-index: 1000;
+    z-index: 3;
     -webkit-transform: translateZ(0.01px);
     transform: translateZ(0.01px);
     background-image: url(/img/buttons/flip-dark.svg);
@@ -807,6 +808,7 @@ mark {
     justify-content: center;
     align-items: center;
     z-index: 3;
+    user-select: none;
 }
 
 .selected:has(.basic) .remove-basic-button,
@@ -887,6 +889,7 @@ mark {
   width: max-content;
   height: max-content;
     cursor: pointer;
+    user-select: none;
 }
 
 
@@ -983,6 +986,36 @@ body.buffet:has(#cardHolderInput:checked) {
   border-bottom:1px solid #00000010;
 }
 
+.chFooter::after,
+.chFooter::before {
+    content: '';
+    position: absolute;
+    right: 0.1em;
+    top: 0.4em;
+    background-image: url(/img/buttons/close.svg);
+    background-repeat: no-repeat;
+    background-position: 0px -8px;
+    width: 16px;
+    height: 16px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-inline: 20px;
+    opacity: 0.3;
+}
+
+.chFooter::before {
+    left: 0.4em;
+
+}
+
+#cardHolderInput:checked + label .chFooter::before,
+#cardHolderInput:checked + label .chFooter::after {
+ transform: rotate(180deg);
+     top: 0px;
+}
 .chFooter ul {
   display: flex;
   justify-content: flex-start;
@@ -1029,9 +1062,14 @@ body.buffet:has(#cardHolderInput:checked) {
   display: none;
 }
 
+.totalCardCountContainer {
+    display: none;
+}
+
 .totalCards {
     display: none;
 }
+
 
 
 

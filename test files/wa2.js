@@ -1,12 +1,3 @@
-const basicCardsCount = {
-    W: 0,
-    U: 0,
-    B: 0,
-    R: 0,
-    G: 0,
-    C: 0
-  };
-
 // Retrieve selectedCards from localStorage
 const storedSelectedCards = localStorage.getItem('selectedCards');
 selectedCards = storedSelectedCards ? JSON.parse(storedSelectedCards) : [];
@@ -36,23 +27,23 @@ function updateCardList() {
 
     // Check if the card is already present in the combination element
     if (!combinationElement.find(`[data-card-id="${card.id}"]`).length) {
-      cardLiElement = $(`<li class="addedCard" data-card-id="${card.id}" data-card-name="${card.name}" data-colors="${card.color_identity}" data-properties="${card.properties}"><span class="chCardTextContainer"><span class="basicTotal"></span><span>${card.name}</span></span></li>`);
+      const cardLiElement = $('<li></li>')
+        .addClass('addedCard')
+        .attr('data-card-id', card.id)
+        .attr('data-card-name', card.name)
+        .attr('data-colors', card.color_identity || '')
+        .attr('tabindex', '-1')
+        .text(card.name);
 
       combinationElement.find('ul').append(cardLiElement);
+
+      if (!combinations[colorIdentity]) {
+        combinations[colorIdentity] = 1;
+      } else {
+        combinations[colorIdentity]++;
+      }
     }
-
-  // Update the card count for the color combination
-  const cardCount = selectedCards.filter(cardId => {
-    const selectedCard = data?.data.find(item => item.id === cardId);
-    return (
-  (selectedCard?.color_identity?.join('') === colorIdentity) ||
-  (colorIdentity === 'C')
-);
-
-  }).length;
-  
-  combinations[colorIdentity] = cardCount;
-});
+  });
 
 
   // Update the totalSpan for each combination and remove combinations with count 0
@@ -66,36 +57,11 @@ function updateCardList() {
       combinationElement.remove();
     }
   }
-
-  const colorCount = countProducedManaColors();
-  updateManaColorProgress();
-  updateBasicCardsCount();
+    
+   const colorCount = countProducedManaColors();
+    console.log(colorCount);
+    updateManaColorProgress();
 }
-
-
-function updateBasicCardsCount() {
-  selectedCards.forEach(cardId => {
-    const card = data?.data.find(item => item.id === cardId);
-    if (card && card.is_basic && card.color_identity) {
-      const count = selectedCards.filter(id => id === cardId).length;
-      const cardInMenu = $(`.addedCard[data-card-id="${cardId}"] .basicTotal`)[0];
-      const cardInPool = $(`.selected[data-card-id="${cardId}"] .totalBasics`)[0];
-      if (cardInMenu !== undefined && cardInPool !== undefined) {
-        cardInMenu.textContent = count;
-        cardInPool.textContent = "x" + count;
-
-        card.color_identity.forEach(color => {
-          if (basicCardsCount.hasOwnProperty(color)) {
-            basicCardsCount[color] += count;
-          }
-        });
-      }
-    }
-  });
-
-}
-
-
 
 function countProducedManaColors() {
   const colorCount = {
@@ -284,47 +250,23 @@ function downloadCardList(action) {
         } else {
             $(".mana:has(#isAdded)").prop("checked", false).hide();
             $("#isAdded").prop("checked", false);
-
             filterCards();
-            startIndex += cardsPerPage;
-            endIndex += cardsPerPage;
-
-            loadCards();
         }
     }
     
-function handleCardInteraction(card) {
+  function handleCardInteraction(card) {
   const cardId = card.data('card-id');
-  const cardIsBasic = card.data('basic' || false);
   const isSelected = card.hasClass('selected');
   recordSelectedCards();
-
-
-  if (cardIsBasic === true && !card.find('.remove-basic-button').is(event.target) && isSelected) {
+  if (!isSelected) {
+    card.addClass('selected');
     selectedCards.push(cardId);
-  } else if (cardIsBasic && isSelected) {
+  } else {
+    card.removeClass('selected');
     const index = selectedCards.indexOf(cardId);
     if (index !== -1) {
       selectedCards.splice(index, 1);
-      if (selectedCards.filter(id => id === cardId).length === 0) {
-        // If it's the last card with the same ID, remove the .selected class from the card
-        card.removeClass('selected');
-      }
-    }
-  } else {
-    if (!isSelected) {
-      card.addClass('selected');
-      selectedCards.push(cardId);
-    } else {
-      card.removeClass('selected');
-      const index = selectedCards.indexOf(cardId);
-      if (index !== -1) {
-        selectedCards.splice(index, 1);
-        if (selectedCards.filter(id => id === cardId).length === 0) {
-          // If it's the last card with the same ID, remove the .selected class from the card
-          card.removeClass('selected');
-        }
-      }
+     
     }
   }
   
@@ -335,11 +277,8 @@ function handleCardInteraction(card) {
 
   // Update the card list
   updateCardList();
-}
-
-
-
-
+}  
+    
 // Event handler for card click
 function handleCardClick(event) {
   const card = $(event.currentTarget);
@@ -385,6 +324,5 @@ $(document).on('click', '.copyAsTxt', function() {
 
 
 // Initialize card list on page load
-totalCardCount();
-updateBasicCardsCount();
 updateCardList();
+totalCardCount();

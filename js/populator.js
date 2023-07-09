@@ -331,10 +331,7 @@ if (storedData && storedVersion === currentVersion) {
 
 // Update filter checkboxes from URL
 updateFiltersFromUrl();
-filterCards();
 
-// Update filter checkboxes from URL
-updateFiltersFromUrl();
 filterCards();
 
 // Scroll event listener
@@ -378,6 +375,7 @@ $('#isAdded').on('change', function() {
   if (isChecked) {
     // Load and append cards from selectedCards
     cardSuggestions.empty(); // Clear the card pool
+
     startIndex = 0;
     endIndex = cardsPerPage;
     loadCards();

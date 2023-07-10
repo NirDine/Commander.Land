@@ -199,15 +199,24 @@ function formatCardName(cardName) {
 // Function to update filters based on URL parameters
 const updateFiltersFromUrl = () => {
   const queryParams = new URLSearchParams(window.location.search);
+  const searchTerms = queryParams.get('q') || ''; // Get the search terms from the URL query parameter 'q'
   const selectedColors = queryParams.get('colors')?.split(',') ?? [];
   const selectedProperties = queryParams.get('properties')?.split(',') ?? [];
 
+  // Set the search input value
+  $('#search').val(searchTerms);
+
+  // Filter cards based on the search input
+  filterCards();
+
+  // Set the selected colors
   $('.color').each(function() {
     const checkbox = $(this);
     const value = checkbox.val();
     checkbox.prop('checked', selectedColors.includes(value));
   });
 
+  // Set the selected properties
   $('.property').each(function() {
     const checkbox = $(this);
     const value = checkbox.val();
@@ -215,6 +224,7 @@ const updateFiltersFromUrl = () => {
   });
 };
 
+  
 // Function to update URL parameters based on filters
 const updateUrlFromFilters = () => {
   const selectedColors = $('.color:checked').map(function() {
@@ -225,7 +235,12 @@ const updateUrlFromFilters = () => {
     return $(this).val();
   }).get();
 
+  const searchTerms = $('#search').val().trim(); // Get the search terms from the search input
   const queryParams = new URLSearchParams();
+
+  if (searchTerms !== '') {
+    queryParams.set('q', searchTerms); // Set the search terms in the URL query parameter 'q'
+  }
 
   if (selectedColors.length > 0) {
     queryParams.set('colors', selectedColors.join(','));
@@ -238,7 +253,6 @@ const updateUrlFromFilters = () => {
   const newUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}?${queryParams.toString()}${window.location.hash}`;
   window.history.replaceState({ path: newUrl }, '', newUrl);
 };
-
 
 const updateMobileColorFilters = () => {
   const selectedColorCheckboxes = $('.color:checked, .colorless:checked');

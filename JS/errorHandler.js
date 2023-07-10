@@ -10,7 +10,9 @@ const isIE = !!ua.match(/msie|trident\/7|edge/);
 const isWinPhone = ua.indexOf('windows phone') !== -1;
 const isIOS = !isWinPhone && !!ua.match(/ipad|iphone|ipod/);
 
-let nameErrors = []; // Initialize nameErrors as an empty array
+let nameErrors = []; // Initialize nameErrors as an empty
+let responseData;
+let userList;
 
 // Scryfall API endpoint
 const scryfallEndpoint = 'https://api.scryfall.com/cards/collection';
@@ -68,6 +70,7 @@ $analyze.on('click', function() {
     data: JSON.stringify(payload),
     success: function(response) {
       console.log('Request successful!');
+      responseData = response;
       nameErrors = response.not_found.map(card => card.name.toLowerCase());
       const namesCorrect = response.data.map(cardData => cardData.name);
 
@@ -111,17 +114,24 @@ $analyze.on('click', function() {
       console.log('Errors:', nameErrors);
       console.log('Matches:', namesCorrect);
 
-      // Console.log positive message if no errors
-      if (!hasErrors) {
-        console.log('All card names found!');
+// Console.log positive message if no errors
+if (!hasErrors) {
+  console.log('All card names found!');
 
-        // Save user list and JSON response in localStorage
-        localStorage.setItem('userList', JSON.stringify(orderedCardNames));
-        localStorage.setItem('responseData', JSON.stringify(response));
 
-        // Redirect to /buffet.html
-        window.location.href = '/buffet.html';
-      }
+  // Update the orderedCardNames with cardId from responseData
+  const updatedUserList = orderedCardNames.map(card => ({
+    quantity: card.quantity,
+    cardId: getCardIdByName(card.name)
+  }));
+  // Save updated user list and JSON response in localStorage
+  localStorage.setItem('userList', JSON.stringify(updatedUserList));
+    localStorage.setItem('responseData', JSON.stringify(response));
+
+  // Redirect to /buffet.html
+  window.location.href = '/buffet.html';
+}
+
     },
     error: function(xhr, status, error) {
       console.error('Error retrieving card data:', error);
@@ -135,7 +145,11 @@ $analyze.on('click', function() {
   });
 });
 
-
+// Function to get the card ID by name from responseData
+function getCardIdByName(name) {
+  const matchedCard = responseData?.data.find(item => item.name.toLowerCase() === name.toLowerCase());
+  return matchedCard?.id;
+}
 
 // Function to apply highlights
 function applyHighlights(cardNames, nameErrors) {

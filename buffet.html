@@ -714,10 +714,21 @@
                           <i class="ms ms-untap undo"></i></button></li>
                       </ul>
                       <ul>
-                          <li><button class="userAction">See in-depth statistics</button></li>
-                          <li><button class="userAction downloadAsTxt">Download as .txt</button></li>
-                          <li><button class="userAction copyAsTxt">Copy to clipboard</button></li>
-                          <li><button class="userAction export">Export complete list</button></li>
+                          <li><button class="userAction disabled" title="This is still being developed" disabled><span>See in-depth statistics</span></button></li>
+                          <li class="exportButtonHolder exportToMoxfield">                            <button class="userAction">
+                                <span>Export to Moxfield</span>
+                                <i class="moxfield"></i>
+                            </button>
+                          </li>
+                          <li class="exportButtonHolder exportToArchidekt">                            <button class="userAction">
+                                <span>Export to Archidekt</span>
+                                <i class="archidekt"></i>
+                            </button>
+                          </li>
+                          <li class=""><button class="userAction copyAsTxt"><span>Copy to clipboard</span></button></li>
+                          <li class="">
+                            <button class="userAction downloadAsTxt export"><span>Download as .txt</span></button>
+                          </li>
                       </ul>
                   </div>
               </div>
@@ -813,14 +824,14 @@
     <script type="text/javascript" src="js/menuHandler.js"></script>
     <!-- ANIMATIONS -->
     <script type="text/javascript" src="js/animations.js"></script>
+    <!-- ADD CARDS TO THE CARD HOLDER -->
+    <script type="text/javascript" src="js/userList.js" defer></script>
     <!-- POPULATE CARD POOL -->
     <script type="text/javascript" src="js/populator.js" rel="preload"></script>
     <!-- FLIP DOUBLE-FACED CARDS -->
     <script type="text/javascript" src="js/dfcFlipper.js" defer></script>
     <!-- ADD CARDS TO THE CARD HOLDER -->
     <script type="text/javascript" src="js/cardHolder.js" defer></script>
-    <!-- ADD CARDS TO THE CARD HOLDER -->
-    <script type="text/javascript" src="js/userList.js" defer></script>
     
     
     <script>

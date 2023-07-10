@@ -215,33 +215,37 @@ function updateManaColorProgress() {
   }
 }
 
+
+function getUniqueCardList(storedCards) {
+  const cardCount = {};
+  const uniqueCardList = [];
+
+  // Count the occurrences of each card ID
+  storedCards.forEach(cardId => {
+    cardCount[cardId] = (cardCount[cardId] || 0) + 1;
+  });
+
+  // Generate the formatted list with quantities and names
+  Object.entries(cardCount).forEach(([cardId, quantity]) => {
+    const card = data?.data.find(item => item.id === cardId);
+    if (card) {
+      const formattedCard = `${quantity} ${card.name}`;
+      uniqueCardList.push(formattedCard);
+    }
+  });
+
+  // Return the unique card list with line breaks
+  return uniqueCardList.join('\n');
+}
+
 function downloadCardList(action) {
   if (selectedCards.length > 1) {
-    const cardNames = selectedCards.map(cardId => {
-      const card = data?.data.find(item => item.id === cardId);
-      return card ? card.name : '';
-    });
-
-    cardNames.sort((a, b) => {
-      const aIsBasic = data?.data.find(card => card.name === a)?.type_line.includes('Basic');
-      const bIsBasic = data?.data.find(card => card.name === b)?.type_line.includes('Basic');
-
-      // Sort cards with "basic" in type_line first
-      if (aIsBasic && !bIsBasic) {
-        return -1;
-      } else if (!aIsBasic && bIsBasic) {
-        return 1;
-      }
-
-      // Sort alphabetically otherwise
-      return a.localeCompare(b);
-    });
-
-    const cardListText = cardNames.join('\n');
+    // Get the unique card list with quantities and names
+    const uniqueCardList = getUniqueCardList(selectedCards);
 
     if (action === 'download') {
       // Download the text file
-      const blob = new Blob([cardListText], { type: 'text/plain' });
+      const blob = new Blob([uniqueCardList], { type: 'text/plain' });
       const url = URL.createObjectURL(blob);
 
       const a = document.createElement('a');
@@ -254,7 +258,7 @@ function downloadCardList(action) {
       URL.revokeObjectURL(url);
     } else if (action === 'copy') {
       // Copy the text to clipboard
-      navigator.clipboard.writeText(cardListText)
+      navigator.clipboard.writeText(uniqueCardList)
         .then(() => {
           console.log('Text copied to clipboard');
           // Show a success message or perform any additional actions
@@ -266,6 +270,7 @@ function downloadCardList(action) {
     }
   }
 }
+
 
     function totalCardCount() {
         totalSelectedCards = selectedCards.length;
@@ -357,6 +362,7 @@ function handleMenuCardClick(event) {
   const card = $(event.currentTarget);
     card.addClass('selected');
     handleCardInteraction(card)
+
   }
  
     
@@ -368,6 +374,17 @@ function handleKeyPress(event) {
     handleCardInteraction(card);
   }
 }
+
+function handleExportToPlatform(platformUrl) {
+  const uniqueCardList = getUniqueCardList(selectedCards);
+
+  const encodedCardList = encodeURIComponent(uniqueCardList);
+  const url = `${platformUrl}${encodedCardList}`;
+  window.location.href = url;
+}
+
+
+
 
 // Attach event listeners to the cards
 $(document).on('click', '.card', handleCardClick);
@@ -382,7 +399,13 @@ $(document).on('click', '.downloadAsTxt', function() {
 $(document).on('click', '.copyAsTxt', function() {
   downloadCardList('copy');
 });
+$(document).on('click', '.exportToArchidekt', function() {
+  handleExportToPlatform('https://archidekt.com/cardImport?c=');
+});
 
+$(document).on('click', '.exportToMoxfield', function() {
+  handleExportToPlatform('https://www.moxfield.com/import?c=');
+});
 
 // Initialize card list on page load
 totalCardCount();

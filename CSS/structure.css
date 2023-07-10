@@ -1070,6 +1070,9 @@ body.buffet:has(#cardHolderInput:checked) {
     display: none;
 }
 
+.totalNonLands {
+    display: none;
+}
 
 
 
@@ -1228,6 +1231,37 @@ gap: 10px;
     border-radius: 5px 5px 0px 0px;
 }
 
+.chUserActionContainer ul li.exportButtonHolder {
+}
+
+.chUserActionContainer ul li.exportButtonHolder button {
+   display: grid;
+   grid-template-columns: 1fr 20px;
+    align-items: center;
+    
+}
+.archidekt,
+.moxfield {
+    content: '';
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.archidekt {
+    background-image: url(../img/logos/archidekt_basic.svg);
+
+}
+
+.moxfield {
+    background-image: url(../img/logos/moxfield-white.png);
+
+}
+
 
 
 
@@ -1238,6 +1272,7 @@ gap: 10px;
     color: var(--contrast);
     border: 0px;
     cursor: pointer;
+    text-align: left;
 }
 
 

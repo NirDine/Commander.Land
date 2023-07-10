@@ -7,7 +7,7 @@ const offset = 100; // Offset in pixels from the bottom of the container
 let data; // Declare the data variable
 let totalCards; // Declare the totalCards variable
 let filteredData = []; // Declare the filteredData variable
-let selectedCards = [];
+let storedCards = localStorage.getItem('storedCards') || [];
 let maxCardSelected = 100;
 
 function createCardElement(card) {

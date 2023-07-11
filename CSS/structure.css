@@ -990,8 +990,8 @@ body.buffet:has(#cardHolderInput:checked) {
 .chFooter::before {
     content: '';
     position: absolute;
-    right: 0.1em;
-    top: 0.4em;
+    right: 0em;
+    top: 0.25em;
     background-image: url(/img/buttons/close.svg);
     background-repeat: no-repeat;
     background-position: 0px -8px;
@@ -1007,7 +1007,7 @@ body.buffet:has(#cardHolderInput:checked) {
 }
 
 .chFooter::before {
-    left: 0.4em;
+    left: 0em;
 
 }
 
@@ -1024,19 +1024,21 @@ body.buffet:has(#cardHolderInput:checked) {
 }
 
 .chFooter ul .tracker {
-  display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-inline: 8px;
   width: calc(100% / 6);
-    opacity: 0.5;
+  display: none;
 }
 
 .chFooter ul .tracker:has(.hasMana),
 .chFooter ul .tracker:has(.recommended) {
-    opacity: 1;
+  display: flex;
 }
 
+.chFooter ul .tracker .noRec {
+    display: none;
+}
 .chFooter ul .tracker i {
   padding-inline: 6px;
 }
@@ -1046,32 +1048,46 @@ body.buffet:has(#cardHolderInput:checked) {
   font-size: 0.7em;
 }
 
-.chFooter ul .tracker span .total {
-    position: absolute;
-    font-size: 0.8em;
+.chFooter ul .tracker span:has(.total) {
+    display: flex;
+
 }
 
-/* 
-.chFooter ul .tracker span .total::before {
-     content: '/';
-     font-size: 1em;
+.chFooter ul .tracker span .total,
+.totalCards .total {
+    font-size: 0.8em;
+
+} 
+
+
+.chFooter ul .tracker .recommended::before,
+.totalCards .total.hasUserData::before {
+    content: '/';
+
 }
-*/
+
 
 .progress {
   display: none;
 }
 
 .totalCardCountContainer {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .totalCards {
-    display: none;
+    display: flex;
+    justify-content: center;
+
 }
 
-.totalNonLands {
-    display: none;
+
+
+.totalLands {
+    font-size: 0.6em;
 }
 
 

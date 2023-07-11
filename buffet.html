@@ -186,6 +186,7 @@
         </nav>
       </header>
       <main>
+       <div class="recommended"></div>
         <div class="content">
           <div class="top">
             <div class="buffet-filters">
@@ -366,7 +367,7 @@
                   <ul>
                     <li class="tracker tracker-W">
                       <span>
-                        <span class="current">0</span> <span class="total" data-recommended="7"></span>
+                        <span class="current">0</span> <span class="total noRec" data-recommended="7"></span>
                       </span>
                       <i class="ms ms-w"></i>
                       <div class="border progress" id="coloranalysis_prod_w">
@@ -375,7 +376,7 @@
                     </li>
                     <li class="tracker tracker-U">
                       <span>
-                        <span class="current">0</span> <span class="total" data-recommended="3"></span>
+                        <span class="current">0</span> <span class="total noRec" data-recommended="3"></span>
                       </span>
                       <i class="ms ms-u"></i>
                       <div class="border progress" id="coloranalysis_prod_u">
@@ -384,7 +385,7 @@
                     </li>
                     <li class="tracker tracker-B">
                       <span>
-                        <span class="current">0</span> <span class="total"  data-recommended="5"></span>
+                        <span class="current">0</span> <span class="total noRec"  data-recommended="5"></span>
                       </span>
                       <i class="ms ms-b"></i>
                       <div class="border progress" id="coloranalysis_prod_b">
@@ -393,7 +394,7 @@
                     </li>
                     <li class="tracker tracker-R">
                       <span>
-                        <span class="current">0</span> <span class="total"></span>
+                        <span class="current">0</span> <span class="total noRec"></span>
                       </span>
                       <i class="ms ms-r"></i>
                       <div class="border progress" id="coloranalysis_prod_r">
@@ -402,7 +403,7 @@
                     </li>
                     <li class="tracker tracker-G">
                       <span>
-                        <span class="current">0</span> <span class="total"></span>
+                        <span class="current">0</span> <span class="total noRec"></span>
                       </span>
                       <i class="ms ms-g"></i>
                       <div class="border progress" id="coloranalysis_prod_g">
@@ -411,7 +412,7 @@
                     </li>
                     <li class="tracker tracker-C">
                       <span>
-                        <span class="current">0</span> <span class="total"></span>
+                        <span class="current">0</span> <span class="total noRec"></span>
                       </span>
                       <i class="ms ms-c"></i>
                       <div class="border progress" id="coloranalysis_prod_c">
@@ -423,9 +424,9 @@
                         <div class="totalCards">
                         <span class="current"></span> <span class="total"></span>
                       </div>
-                    <div class="totalNonLands">
+                    <div class="totalLands">
                     
-                     <span class="">(<span class="nonLands"></span> non-lands)</span>
+                     <span class="">Lands</span>
                   </div>
  
                   </div>
@@ -824,10 +825,10 @@
     <script type="text/javascript" src="js/menuHandler.js"></script>
     <!-- ANIMATIONS -->
     <script type="text/javascript" src="js/animations.js"></script>
-    <!-- ADD CARDS TO THE CARD HOLDER -->
-    <script type="text/javascript" src="js/userList.js" defer></script>
     <!-- POPULATE CARD POOL -->
     <script type="text/javascript" src="js/populator.js" rel="preload"></script>
+    <!-- ADD CARDS TO THE CARD HOLDER -->
+    <script type="text/javascript" src="js/userList.js" defer></script>
     <!-- FLIP DOUBLE-FACED CARDS -->
     <script type="text/javascript" src="js/dfcFlipper.js" defer></script>
     <!-- ADD CARDS TO THE CARD HOLDER -->

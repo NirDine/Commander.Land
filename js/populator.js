@@ -319,7 +319,7 @@ if (storedData && storedVersion === currentVersion) {
   console.log("No new data to load.");
 } else {
   // If the data is not present in localStorage or has a different version, fetch it from the JSON file
-  $.getJSON('../lands/lands.json')
+  $.getJSON('../data/lands.json')
     .done(function(responseData) {
       // Assign the data to the data variable
       data = responseData;

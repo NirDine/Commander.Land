@@ -180,6 +180,13 @@ function updateManaColorProgress() {
 
       // Save the updated selectedCards to localStorage
       localStorage.setItem('selectedCards', JSON.stringify(selectedCards));
+
+    const storedResponseData = localStorage.getItem('responseData');
+
+    // Check if responseData is present in localStorage
+        if (storedResponseData) {
+          localStorage.removeItem('responseData');
+        }
     }
 
 

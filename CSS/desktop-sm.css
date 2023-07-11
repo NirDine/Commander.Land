@@ -95,6 +95,8 @@
     align-items: center;
     flex-direction: column;
     gap: 5px;
+    margin-right: 0em;
+    margin-bottom: 0.2em;
 }
 
 
@@ -136,6 +138,10 @@
   .totalCards {
         display: flex;
         flex-wrap: nowrap;
+
+    margin-bottom: -0.2em;
+
+
     }  
     
   .totalNonLands {

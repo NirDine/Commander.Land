@@ -186,7 +186,13 @@
         </nav>
       </header>
       <main>
-       <div class="recommended"></div>
+       <div class="recommended hidden" style="--hiddenCount: 12;">
+           <div>
+               <h4>Recommendations</h4>
+               <p>After analyzing your deck's mana values, non-land mana producers <span class="manaProducers"></span>, and total cards, we've determined that your optimal land count is: <span class="recommendedLandCount"></span>.</p>
+               <p>To be able to play all your cards consistently, you need <span class="recommendedManaPips"></span> mana sources.</p>
+           </div>
+       </div>
         <div class="content">
           <div class="top">
             <div class="buffet-filters">

@@ -242,6 +242,13 @@ span#combination-name {
   background-color: var(--mainBG);
 }
 
+.recommended div {
+
+    color: var(--contrast);
+    border-radius: var(--bradius);
+    background: #ffffff14;
+}
+
 .mana:has(input[type="checkbox"]:checked) label,
 
 

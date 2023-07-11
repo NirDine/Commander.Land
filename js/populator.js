@@ -7,7 +7,7 @@ const offset = 100; // Offset in pixels from the bottom of the container
 let data; // Declare the data variable
 let totalCards; // Declare the totalCards variable
 let filteredData = []; // Declare the filteredData variable
-let storedCards = localStorage.getItem('storedCards') || [];
+let selectedCards = localStorage.getItem('selectedCards') || [];
 let maxCardSelected = 100;
 
 function createCardElement(card) {
@@ -296,7 +296,7 @@ const updateMobileColorFilters = () => {
 // Check if the data is already stored in localStorage
 const storedData = localStorage.getItem('landsData');
 const storedVersion = localStorage.getItem('landsDataVersion');
-const currentVersion = '1.0'; // Replace with the current version of the JSON data
+const currentVersion = '1.1'; // Replace with the current version of the JSON data
 
 if (!storedVersion) {
     console.log('No data found.');

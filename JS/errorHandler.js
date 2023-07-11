@@ -24,6 +24,7 @@ let requestInProgress = false;
 $analyze.prop('disabled', true);
 
 // Update textarea and highlights when analyze button is clicked
+// Update textarea and highlights when analyze button is clicked
 $analyze.on('click', function() {
   // Check if a request is already in progress
   if (requestInProgress) {
@@ -48,9 +49,9 @@ $analyze.on('click', function() {
       const cardName = match[2].trim();
       const normalizedCardName = cardName.toLowerCase();
       if (cardNames[normalizedCardName]) {
-        cardNames[normalizedCardName] += quantity;
+        cardNames[normalizedCardName].quantity += quantity;
       } else {
-        cardNames[normalizedCardName] = quantity;
+        cardNames[normalizedCardName] = { name: cardName, quantity };
       }
     }
   });
@@ -60,90 +61,124 @@ $analyze.on('click', function() {
   const payload = { identifiers };
 
   console.log('Sending request...');
-  // Make the request to the Scryfall API
-  requestInProgress = true;
-  $.ajax({
-    url: scryfallEndpoint,
-    type: 'POST',
-    dataType: 'json',
-    contentType: 'application/json',
-    data: JSON.stringify(payload),
-    success: function(response) {
-      console.log('Request successful!');
-      responseData = response;
-      nameErrors = response.not_found.map(card => card.name.toLowerCase());
-      const namesCorrect = response.data.map(cardData => cardData.name);
+  // Make the requests with a delay of 100ms between each request
+  let currentOffset = 0;
+  let requestsMade = 0;
+  let responseData = [];
 
-      // Order the card names based on the textarea order
-      const orderedCardNames = [];
+  function makeRequest() {
+    const requestPayload = {
+      identifiers: payload.identifiers.slice(currentOffset, currentOffset + 70)
+    };
 
-      // Add error cards first
-      Object.entries(cardNames).forEach(([name, quantity]) => {
-        if (nameErrors.includes(name)) {
-          orderedCardNames.push({ name, quantity });
+    $.ajax({
+      url: scryfallEndpoint,
+      type: 'POST',
+      dataType: 'json',
+      contentType: 'application/json',
+      data: JSON.stringify(requestPayload),
+      success: function(response) {
+        console.log('Request successful!', response);
+        responseData = responseData.concat(response.data);
+        nameErrors = response.not_found.map(card => card.name.toLowerCase());
+        const namesCorrect = response.data.map(cardData => cardData.name);
+
+        // Order the card names based on the textarea order
+        const orderedCardNames = [];
+
+        // Add error cards first
+        Object.entries(cardNames).forEach(([name, card]) => {
+          if (nameErrors.includes(name)) {
+            orderedCardNames.push({ ...card, card: null });
+          }
+        });
+
+        // Add remaining card names from responseData
+        Object.entries(cardNames).forEach(([name, card]) => {
+          const normalizedCardName = name.toLowerCase();
+          if (!nameErrors.includes(normalizedCardName)) {
+            const matchingCardData = responseData.find(cardData => cardData.name.toLowerCase() === normalizedCardName);
+            orderedCardNames.push({ ...card, card: matchingCardData });
+          }
+        });
+
+        // Order the highlights based on the ordered card names
+        const orderedHighlights = applyHighlights(
+          orderedCardNames.map(card => card.name),
+          nameErrors
+        );
+
+        // Update the textarea with the ordered card names and quantities
+        const updatedLines = orderedCardNames.map(
+          card => (card.quantity > 1 ? `${card.quantity} ${card.name}` : '1' + ' ' + card.name)
+        );
+        $textarea.val(updatedLines.join('\n'));
+
+        // Update the highlights with the ordered highlights
+        $highlights.html(orderedHighlights);
+
+        // Enable or disable analyze button based on whether there are errors
+        const hasErrors = nameErrors.length > 0;
+        $analyze.prop('disabled', hasErrors);
+
+        // Console.log errors and matches
+        console.log('Errors:', nameErrors);
+        console.log('Matches:', namesCorrect);
+
+        // Check if there are more requests to be made
+        requestsMade++;
+        if (requestsMade < Math.ceil(payload.identifiers.length / 70)) {
+          // Increment the offset for the next request
+          currentOffset += 70;
+
+          // Delay the next request by 100ms
+          setTimeout(makeRequest, 100);
+        } else {
+          // All requests completed
+          console.log('All requests completed!');
+
+          // Check if there are no errors
+          if (!hasErrors) {
+            console.log('All card names found!');
+
+            // Update the orderedCardNames with cardId from responseData
+            const updatedUserList = orderedCardNames.map(card => ({
+              quantity: card.quantity,
+              cardId: card.card ? card.card.id : null,
+              name: card.name
+            }));
+            // Save updated user list and JSON response in localStorage
+            localStorage.setItem('userList', JSON.stringify(updatedUserList));
+            localStorage.setItem('responseData', JSON.stringify(responseData));
+
+            localStorage.removeItem('selectedCards');
+            // Redirect to /buffet.html
+            window.location.href = '/buffet.html';
+          } else {
+            console.log('Card names not found!');
+          }
         }
-      });
+      },
+      error: function(xhr, status, error) {
+        console.error('Error retrieving card data:', error);
+      },
+      fail: function() {
+        console.error('Request failed!');
+      },
+      complete: function() {
+        // Enable analyze button after a delay of 100 milliseconds
+        setTimeout(function() {
+          requestInProgress = false;
+        }, 100);
+      }
+    });
+  }
 
-      // Add remaining card names
-      Object.entries(cardNames).forEach(([name, quantity]) => {
-        if (!nameErrors.includes(name)) {
-          orderedCardNames.push({ name, quantity });
-        }
-      });
-
-      // Order the highlights based on the ordered card names
-      const orderedHighlights = applyHighlights(
-        orderedCardNames.map(card => card.name),
-        nameErrors
-      );
-
-      // Update the textarea with the ordered card names and quantities
-      const updatedLines = orderedCardNames.map(card =>
-        card.quantity > 1 ? `${card.quantity} ${card.name}` : '1' + " " + card.name
-      );
-      $textarea.val(updatedLines.join('\n'));
-
-      // Update the highlights with the ordered highlights
-      $highlights.html(orderedHighlights);
-
-      // Enable or disable analyze button based on whether there are errors
-      const hasErrors = nameErrors.length > 0;
-      $analyze.prop('disabled', hasErrors);
-
-      // Console.log errors and matches
-      console.log('Errors:', nameErrors);
-      console.log('Matches:', namesCorrect);
-
-// Console.log positive message if no errors
-if (!hasErrors) {
-  console.log('All card names found!');
-
-
-  // Update the orderedCardNames with cardId from responseData
-  const updatedUserList = orderedCardNames.map(card => ({
-    quantity: card.quantity,
-    cardId: getCardIdByName(card.name)
-  }));
-  // Save updated user list and JSON response in localStorage
-  localStorage.setItem('userList', JSON.stringify(updatedUserList));
-    localStorage.setItem('responseData', JSON.stringify(response));
-
-  // Redirect to /buffet.html
-  window.location.href = '/buffet.html';
-}
-
-    },
-    error: function(xhr, status, error) {
-      console.error('Error retrieving card data:', error);
-    },
-    complete: function() {
-      // Enable analyze button after a delay of 50 milliseconds
-      setTimeout(function() {
-        requestInProgress = false;
-      }, 100);
-    }
-  });
+  // Make the first request
+  makeRequest();
 });
+
+
 
 // Function to get the card ID by name from responseData
 function getCardIdByName(name) {

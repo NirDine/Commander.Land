@@ -11,7 +11,7 @@
     if (userList.length === 0) {
       // No need to update selectedCards if userList is empty
       // Clear the userList once cards are added
-      localStorage.removeItem('userList');
+      //localStorage.removeItem('userList');
       return;
     }
 
@@ -53,14 +53,13 @@
     });
 
     // Clear the userList once cards are added
-    localStorage.removeItem('userList');
+    //localStorage.removeItem('userList');
 
     // Store updated selectedCards in localStorage
     localStorage.setItem('selectedCards', JSON.stringify(selectedCards));
 
   }
 })();
-
 
 // Retrieve responseData from localStorage
 const storedResponseData = localStorage.getItem('responseData');
@@ -70,8 +69,8 @@ if (storedResponseData) {
   const responseData = JSON.parse(storedResponseData);
     
 // Analyze responseData and calculate cmc, colorWeight, and hybridPips for each card
-const analyzedData = responseData.data.map(card => {
-  console.log(`Analyzing card: ${card.name}`);
+const analyzedData = responseData.map(card => {
+
   
   let cmc = card.cmc;
   let colorWeight = {};
@@ -80,7 +79,7 @@ const analyzedData = responseData.data.map(card => {
     colors: []
   };
 
-  const manaCost = card.mana_cost;
+  const manaCost = card.mana_cost || ''; // Add this line to handle missing mana_cost property
   const manaSymbols = manaCost.match(/{.*?}/g) || [];
 
   manaSymbols.forEach(symbol => {
@@ -115,7 +114,6 @@ const analyzedData = responseData.data.map(card => {
   };
 });
 
-  console.log(analyzedData);
 
   // Store analyzedData in local storage as a JSON string
   localStorage.setItem('analyzedData', JSON.stringify(analyzedData));
@@ -158,7 +156,7 @@ analyzedData.forEach(card => {
 // Create an array of color recommendations with the highest result per color
 const colorRecommendations = Object.entries(highestResults).map(([color, result]) => ({ color, result }));
 
-console.log(colorRecommendations);
+
 updateColorTracker(colorRecommendations);
 
 });
@@ -177,17 +175,19 @@ if (storedResponseData) {
   const responseData = JSON.parse(storedResponseData);
 
   // Calculate the average cmc of all cards in responseData
-  const cardCount = responseData.data.length;
-  const totalCmc = responseData.data.reduce((sum, card) => sum + card.cmc, 0);
+  const cardCount = responseData.length;
+  const totalCmc = responseData.reduce((sum, card) => sum + card.cmc, 0);
   const averageCmc = totalCmc / cardCount;
 
   // Count the number of cards with non-zero produced_mana value and cmc between 1 and 3 (inclusive)
-  const nonLandManaProducers = responseData.data.filter(card => card.produced_mana && card.cmc >= 1 && card.cmc <= 3).length;
+  const nonLandManaProducers = responseData.filter(card => card.produced_mana && card.cmc >= 1 && card.cmc <= 3).length;
 
   // Calculate the recommendedLandCount using the formula
   let recommendedLandCount = 31.42 + (3.13 * averageCmc) - (0.28 * nonLandManaProducers);
   recommendedLandCount = Math.round(recommendedLandCount);
   $(`.totalCards .total`).text(recommendedLandCount).addClass('hasUserData');
+  $(`.recommended .manaProducers`).text('(' + nonLandManaProducers + ')');  
+  $(`.recommended .recommendedLandCount`).text(recommendedLandCount);
   console.log('Average CMC:', averageCmc);
   console.log('Non-Land Mana Producers (1-3 CMC):', nonLandManaProducers);
   console.log('Recommended Land Count:', recommendedLandCount);
@@ -195,15 +195,39 @@ if (storedResponseData) {
   console.log('responseData not found in localStorage');
 }
 
-
 function updateColorTracker(colorRecommendations) {
-  // Iterate over the colorRecommendations data
-  colorRecommendations.forEach(({ color, result }) => {
-    // Check if the color recommendation exists
-
-      $(`.tracker-${color} span .total`).text(result).removeClass('noRec').addClass('recommended');
+    const recommended = $('.recommended');
+  const recommendedManaPips = $('.recommendedManaPips');
+  
+  // Empty the recommendedManaPips element
+  recommendedManaPips.empty();
+      // Define the color order
+    const colorOrder = ['W', 'U', 'B', 'R', 'G', 'C'];
+  // Iterate over the colorOrder
+  colorOrder.forEach(color => {
+    // Find the color recommendation in colorRecommendations
+    const colorRecommendation = colorRecommendations.find(recommendation => recommendation.color === color);
+    if (colorRecommendation) {
+      const { result } = colorRecommendation;
       
 
 
+
+
+
+
+      // Create a new span element with the color recommendation
+      const span = $('<span>', { text: result });
+      
+      const lowerCaseColor = color.toLowerCase();
+      // Create a new i element with the corresponding icon classes
+      const icon = $('<i>', { class: `msRec ms ms-${lowerCaseColor}` });
+      
+      // Append the span and icon to the recommendedManaPips element
+      recommendedManaPips.append(span, icon);
+    }
   });
+  
+recommended.show();
 }
+

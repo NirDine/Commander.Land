@@ -18,48 +18,68 @@
     // Retrieve selectedCards from localStorage
     const storedSelectedCards = localStorage.getItem('selectedCards');
     let selectedCards = storedSelectedCards ? JSON.parse(storedSelectedCards) : [];
-
     // Track the processed non-basic lands
     const processedNonBasicLands = [];
 
     // Iterate over each entry in userList
     userList.forEach(userCard => {
-      const cardId = userCard.cardId;
       const quantity = userCard.quantity;
-
-      // Find the corresponding card in landsData based on card ID
-      const matchedCard = landsData.data.find(card => card.id === cardId);
+      const cardName = userCard.name;
+      
+      // Find the corresponding card in landsData based on card name
+      const matchedCard = landsData.data.find(card => {
+        if (card.card_faces && card.card_faces.length > 1) {
+          // Check if the card has two faces
+          const frontFaceName = card.card_faces[0].name;
+          const backFaceName = card.card_faces[1].name;
+          // Match the card names with both the front face name and the combined name of frontName // backName
+          return cardName === frontFaceName || cardName === `${frontFaceName} // ${backFaceName}`;
+        } else {
+          // For cards without two faces, match the card name directly
+          return card.name === cardName;
+        }
+      });
 
       // Check if a match is found and the card is a basic land
       if (matchedCard && matchedCard.is_basic) {
-        // Add the card ID to selectedCards multiple times based on quantity
+        // Add the card name to selectedCards multiple times based on quantity
         for (let i = 0; i < quantity; i++) {
-          selectedCards.push(cardId);
+          selectedCards.push(cardName);
         }
-      } else if (matchedCard && !matchedCard.is_basic && !processedNonBasicLands.includes(cardId)) {
+      } else if (matchedCard && !matchedCard.is_basic && !processedNonBasicLands.includes(cardName)) {
         // Add non-basic land card only once
-        selectedCards.push(cardId);
-        processedNonBasicLands.push(cardId);
+        if (matchedCard.card_faces) {
+          const frontFaceName = matchedCard.card_faces[0].name;
+          const backFaceName = matchedCard.card_faces[1].name;
+        selectedCards.push(frontFaceName + ' // ' + backFaceName);
+        }
+        else {
+            selectedCards.push(cardName);
+        }
+
+        processedNonBasicLands.push(cardName);
+      
+      } else {
+
       }
-        
+
       for (let i = 0; i < quantity; i++) {
-            
         // Check if the card is already selected in the UI
-            const cardElement = cardSuggestions.find(`[data-card-id="${cardId}"]`);
-            if (cardElement && !cardElement.hasClass('selected')) {
-            cardElement.addClass('selected');
-          }
-        } 
+        const cardElement = cardSuggestions.find(`[data-card-name="${cardName}"]`);
+        if (cardElement && !cardElement.hasClass('selected')) {
+          cardElement.addClass('selected');
+        }
+      }
     });
 
     // Clear the userList once cards are added
-    localStorage.removeItem('userList');
+      localStorage.removeItem('userList');
 
     // Store updated selectedCards in localStorage
     localStorage.setItem('selectedCards', JSON.stringify(selectedCards));
-
   }
 })();
+
 
 // Retrieve responseData from localStorage
 const storedResponseData = localStorage.getItem('responseData');
@@ -73,6 +93,7 @@ const analyzedData = responseData.map(card => {
 
   
   let cmc = card.cmc;
+  let analyzedCardName = card.name;
   let colorWeight = {};
   let hybridPips = {
     total: 0,
@@ -107,7 +128,6 @@ const analyzedData = responseData.map(card => {
 
   return {
     name: card.name,
-    id: card.id,
     cmc,
     colorWeight,
     hybridPips,
@@ -147,6 +167,9 @@ analyzedData.forEach(card => {
           highestResults[color] = result;
         }
       }
+    console.log(`Card CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}`);
+    
+    
     });
     
   } else {
@@ -180,7 +203,9 @@ if (storedResponseData) {
   const averageCmc = totalCmc / cardCount;
 
   // Count the number of cards with non-zero produced_mana value and cmc between 1 and 3 (inclusive)
-  const nonLandManaProducers = responseData.filter(card => card.produced_mana && card.cmc >= 1 && card.cmc <= 3).length;
+    const nonLandManaProducers = responseData.filter(card => 
+      card.produced_mana && card.cmc <= 3 && !card.type_line.includes("Land")
+    ).length;
 
   // Calculate the recommendedLandCount using the formula
   let recommendedLandCount = 31.42 + (3.13 * averageCmc) - (0.28 * nonLandManaProducers);
@@ -188,9 +213,9 @@ if (storedResponseData) {
   $(`.totalCards .total`).text(recommendedLandCount).addClass('hasUserData');
   $(`.recommended .manaProducers`).text('(' + nonLandManaProducers + ')');  
   $(`.recommended .recommendedLandCount`).text(recommendedLandCount);
-  console.log('Average CMC:', averageCmc);
-  console.log('Non-Land Mana Producers (1-3 CMC):', nonLandManaProducers);
-  console.log('Recommended Land Count:', recommendedLandCount);
+ console.log('Average CMC:', averageCmc);
+ console.log('Non-Land Mana Producers (1-3 CMC):', nonLandManaProducers);
+ console.log('Recommended Land Count:', recommendedLandCount);
 } else {
   console.log('responseData not found in localStorage');
 }

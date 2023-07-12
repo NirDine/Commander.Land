@@ -25,7 +25,7 @@ function updateCardList() {
 
   // Sort selectedCards by card name in alphabetical order
   const sortedSelectedCards = selectedCards
-    .map(cardId => data.data.find(card => card.id === cardId))
+    .map(cardName => data.data.find(card => card.name === cardName))
     .filter(card => card !== undefined)
     .sort((a, b) => a.name.localeCompare(b.name));
 
@@ -35,15 +35,15 @@ function updateCardList() {
     const combinationElement = $(`.combination[data-combination="${colorIdentity}"]`);
 
     // Check if the card is already present in the combination element
-    if (!combinationElement.find(`[data-card-id="${card.id}"]`).length) {
+    if (!combinationElement.find(`[data-card-name="${card.name}"]`).length) {
       cardLiElement = $(`<li class="addedCard" data-card-id="${card.id}" data-card-name="${card.name}" data-colors="${card.color_identity}" data-properties="${card.properties}"><span class="chCardTextContainer"><span class="basicTotal"></span><span>${card.name}</span></span></li>`);
 
       combinationElement.find('ul').append(cardLiElement);
     }
 
   // Update the card count for the color combination
-  const cardCount = selectedCards.filter(cardId => {
-    const selectedCard = data?.data.find(item => item.id === cardId);
+  const cardCount = selectedCards.filter(cardName => {
+    const selectedCard = data?.data.find(item => item.name === cardName);
     return (
   (selectedCard?.color_identity?.join('') === colorIdentity) ||
   (colorIdentity === 'C')
@@ -74,12 +74,12 @@ function updateCardList() {
 
 
 function updateBasicCardsCount() {
-  selectedCards.forEach(cardId => {
-    const card = data?.data.find(item => item.id === cardId);
+  selectedCards.forEach(cardName => {
+    const card = data?.data.find(item => item.name === cardName);
     if (card && card.is_basic && card.color_identity) {
-      const count = selectedCards.filter(id => id === cardId).length;
-      const cardInMenu = $(`.addedCard[data-card-id="${cardId}"] .basicTotal`)[0];
-      const cardInPool = $(`.selected[data-card-id="${cardId}"] .totalBasics`)[0];
+      const count = selectedCards.filter(name => name === cardName).length;
+      const cardInMenu = $(`.addedCard[data-card-name="${cardName}"] .basicTotal`)[0];
+      const cardInPool = $(`.selected[data-card-name="${cardName}"] .totalBasics`)[0];
       if (cardInMenu !== undefined && cardInPool !== undefined) {
         cardInMenu.textContent = count;
         cardInPool.textContent = "x" + count;
@@ -115,8 +115,8 @@ function countProducedManaColors() {
     return colorCount;
   }
 
-  selectedCards.forEach((cardId) => {
-    const card = data?.data.find((item) => item.id === cardId);
+  selectedCards.forEach((cardName) => {
+    const card = data?.data.find((item) => item.name === cardName);
 
     if (card && card.produced_mana && card.produced_mana.length > 0) {
       card.produced_mana.forEach((color) => {
@@ -196,17 +196,17 @@ function updateManaColorProgress() {
         const previousSelectedCards = selectedCardsHistory.pop();
 
         // Iterate over the current selectedCards and remove the .selected class from the cards that are being removed
-        selectedCards.forEach(cardId => {
-          if (!previousSelectedCards.includes(cardId)) {
-            const cardElement = $(`.card[data-card-id="${cardId}"]`);
+        selectedCards.forEach(cardName => {
+          if (!previousSelectedCards.includes(cardName)) {
+            const cardElement = $(`.card[data-card-name="${cardName}"]`);
             cardElement.removeClass('selected');
           }
     });
 
     // Iterate over the previous selectedCards and add the .selected class to the cards that are being added back
-    previousSelectedCards.forEach(cardId => {
-      if (!selectedCards.includes(cardId)) {
-        const cardElement = $(`.card[data-card-id="${cardId}"]`);
+    previousSelectedCards.forEach(cardName => {
+      if (!selectedCards.includes(cardName)) {
+        const cardElement = $(`.card[data-card-name="${cardName}"]`);
         cardElement.addClass('selected');
       }
     });
@@ -228,13 +228,13 @@ function getUniqueCardList(storedCards) {
   const uniqueCardList = [];
 
   // Count the occurrences of each card ID
-  storedCards.forEach(cardId => {
-    cardCount[cardId] = (cardCount[cardId] || 0) + 1;
+  storedCards.forEach(cardName => {
+    cardCount[cardName] = (cardCount[cardName] || 0) + 1;
   });
 
   // Generate the formatted list with quantities and names
-  Object.entries(cardCount).forEach(([cardId, quantity]) => {
-    const card = data?.data.find(item => item.id === cardId);
+  Object.entries(cardCount).forEach(([cardName, quantity]) => {
+    const card = data?.data.find(item => item.name === cardName);
     if (card) {
       const formattedCard = `${quantity} ${card.name}`;
       uniqueCardList.push(formattedCard);
@@ -306,19 +306,19 @@ function downloadCardList(action) {
     }
     
 function handleCardInteraction(card) {
-  const cardId = card.data('card-id');
+  const cardName = card.data('card-name');
   const cardIsBasic = card.data('basic' || false);
   const isSelected = card.hasClass('selected');
   recordSelectedCards();
 
 
   if (cardIsBasic === true && !card.find('.remove-basic-button').is(event.target) && isSelected) {
-    selectedCards.push(cardId);
+    selectedCards.push(cardName);
   } else if (cardIsBasic && isSelected) {
-    const index = selectedCards.indexOf(cardId);
+    const index = selectedCards.indexOf(cardName);
     if (index !== -1) {
       selectedCards.splice(index, 1);
-      if (selectedCards.filter(id => id === cardId).length === 0) {
+      if (selectedCards.filter(name => name === cardName).length === 0) {
         // If it's the last card with the same ID, remove the .selected class from the card
         card.removeClass('selected');
       }
@@ -326,13 +326,13 @@ function handleCardInteraction(card) {
   } else {
     if (!isSelected) {
       card.addClass('selected');
-      selectedCards.push(cardId);
+      selectedCards.push(cardName);
     } else {
       card.removeClass('selected');
-      const index = selectedCards.indexOf(cardId);
+      const index = selectedCards.indexOf(cardName);
       if (index !== -1) {
         selectedCards.splice(index, 1);
-        if (selectedCards.filter(id => id === cardId).length === 0) {
+        if (selectedCards.filter(name => name === cardName).length === 0) {
           // If it's the last card with the same ID, remove the .selected class from the card
           card.removeClass('selected');
         }

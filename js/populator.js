@@ -90,14 +90,14 @@ function loadCards() {
   if ($("#isAdded").is(":checked")) {
     // Filter cardsToAdd based on selectedCards
     cardsToAdd = selectedCards
-      .map(cardId => filteredData.find(card => card.id === cardId))
+      .map(cardName => filteredData.find(card => card.name === cardName))
       .filter(card => card !== undefined); // Exclude undefined values
   } else {
     // Filter cardsToAdd to exclude already loaded cards
     const sortedData = filteredData.sort((a, b) => a.edhrec_rank - b.edhrec_rank);
     cardsToAdd = sortedData
       .slice(startIndex, endIndex)
-      .filter(card => !cardSuggestions.find(`[data-card-id="${card.id}"]`).length);
+      .filter(card => !cardSuggestions.find(`[data-card-name="${card.name}"]`).length);
   }
 
   for (let i = 0; i < cardsToAdd.length; i++) {
@@ -105,7 +105,7 @@ function loadCards() {
     const cardElement = createCardElement(card);
 
     // Check if the card is already selected
-    if (selectedCards.includes(card.id)) {
+    if (selectedCards.includes(card.name)) {
       cardElement.addClass('selected');
     }
 

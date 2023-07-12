@@ -24,7 +24,6 @@ let requestInProgress = false;
 $analyze.prop('disabled', true);
 
 // Update textarea and highlights when analyze button is clicked
-// Update textarea and highlights when analyze button is clicked
 $analyze.on('click', function() {
   // Check if a request is already in progress
   if (requestInProgress) {
@@ -44,6 +43,8 @@ $analyze.on('click', function() {
 
     
 const storedData = localStorage.getItem('landsData');
+
+    
 if (storedData) {
   data = JSON.parse(storedData);
 } else {
@@ -52,8 +53,8 @@ if (storedData) {
       // Assign the data to the data variable
       data = responseData;
       localStorage.setItem('landsData', JSON.stringify(data));
+});
 }
-    
     
     
     
@@ -156,19 +157,20 @@ if (storedData) {
           if (!hasErrors) {
             console.log('All card names found!');
 
-            // Update the orderedCardNames with cardId from responseData
+            // Update the orderedCardNames with cardName from responseData
             const updatedUserList = orderedCardNames.map(card => ({
               quantity: card.quantity,
-              cardId: card.card ? card.card.id : null,
-              name: card.name
+              name: card.card ? card.card.name : card.name
             }));
             // Save updated user list and JSON response in localStorage
             localStorage.setItem('userList', JSON.stringify(updatedUserList));
             localStorage.setItem('responseData', JSON.stringify(responseData));
 
             localStorage.removeItem('selectedCards');
-            // Redirect to /buffet.html
-            window.location.href = '/buffet.html';
+            // Determine the colorIdentity
+            const colorIdentity = determineColorIdentity(responseData);
+            // Redirect to /buffet.html with colorIdentity as query parameter
+            window.location.href = `/buffet.html?colors=${colorIdentity.toLowerCase()}`;
           } else {
             console.log('Card names not found!');
           }
@@ -193,13 +195,24 @@ if (storedData) {
   makeRequest();
 });
 
+// Function to determine the colorIdentity from the response data
+function determineColorIdentity(responseData) {
+  const colors = new Set();
 
+  responseData.forEach(cardData => {
+    if (cardData.color_identity) {
+      cardData.color_identity.forEach(color => {
+        colors.add(color);
+      });
+    }
+  });
 
-// Function to get the card ID by name from responseData
-function getCardIdByName(name) {
-  const matchedCard = responseData?.data.find(item => item.name.toLowerCase() === name.toLowerCase());
-  return matchedCard?.id;
+  colors.add('c'); // Add "c" to the set of colors
+
+  const colorIdentity = Array.from(colors).join(',');
+  return colorIdentity;
 }
+
 
 // Function to apply highlights
 function applyHighlights(cardNames, nameErrors) {

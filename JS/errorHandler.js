@@ -42,6 +42,21 @@ $analyze.on('click', function() {
   // Extract card names and quantities
   const cardNames = {};
 
+    
+const storedData = localStorage.getItem('landsData');
+if (storedData) {
+  data = JSON.parse(storedData);
+} else {
+  $.getJSON('../data/lands.json')
+    .done(function(responseData) {
+      // Assign the data to the data variable
+      data = responseData;
+      localStorage.setItem('landsData', JSON.stringify(data));
+}
+    
+    
+    
+    
   nonEmptyLines.forEach(line => {
     const match = line.match(/^(\d+)?x?\s?(.*)$/i);
     if (match) {

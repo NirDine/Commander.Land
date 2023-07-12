@@ -97,6 +97,8 @@
     gap: 5px;
     margin-right: 0em;
     margin-bottom: 0.2em;
+    position: relative;
+    bottom: 2px;
 }
 
 

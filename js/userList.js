@@ -11,7 +11,7 @@
     if (userList.length === 0) {
       // No need to update selectedCards if userList is empty
       // Clear the userList once cards are added
-      //localStorage.removeItem('userList');
+      localStorage.removeItem('userList');
       return;
     }
 
@@ -53,7 +53,7 @@
     });
 
     // Clear the userList once cards are added
-    //localStorage.removeItem('userList');
+    localStorage.removeItem('userList');
 
     // Store updated selectedCards in localStorage
     localStorage.setItem('selectedCards', JSON.stringify(selectedCards));

@@ -1088,11 +1088,13 @@ body.buffet:has(#cardHolderInput:checked) {
   padding-inline: 8px;
   width: calc(100% / 6);
   display: flex;
+    opacity: 0.5;
 }
 
 .chFooter ul .tracker:has(.hasMana),
 .chFooter ul .tracker:has(.recommended) {
   display: flex;
+    opacity: 1;
 }
 
 .chFooter ul .tracker .noRec {

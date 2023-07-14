@@ -113,6 +113,10 @@ a {
   text-decoration: none;
 }
 
+p a { 
+    color: var(--accent);
+}
+
 .logo:focus-visible,
 .logo:hover {
     background-image: url(/img/logos/logo-mobile-hover.svg);
@@ -182,7 +186,6 @@ footer p a:hover,
 .menu ul li div,
 main::after,
 p,
-a:visited,
 footer ul li a,
 .chFooter span,
 .totalCards {

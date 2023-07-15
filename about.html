@@ -191,26 +191,40 @@
             </p>
             <p class="hidden" style="--hiddenCount: 2;"> Turns out, there's a lot of information about how to build an effective mana base, but very little of that information is comfortably available for players. So, what the site does, is put an interface in front of the math so that you can focus less on the "my deck keeps screwing me" part of the game and more on the "I cast Progenitus" part.
             </p>
-            <h2 class="hidden" style="--hiddenCount: 2;">Who are you?</h2>
-            <p class="hidden" style="--hiddenCount: 2;"> 
-            My name is Martín Davico; I go by NirDine on the internets. I'm a student from and currently living in Argentina. I'm currently working as a QA Tester for various games, and previously I made some <a href="https://nirdine.com/" target="_blank">TTRPG content</a>.
+            <h2 class="hidden" style="--hiddenCount: 3;">Who are you?</h2>
+            <p class="hidden" style="--hiddenCount: 3;"> 
+            My name is Martín Davico; I go by NirDine on the internets. I'm a student from, and currently living in, Argentina. Right now, I'm working as a QA Tester for various games, and previously I made some <a href="https://nirdine.com/" target="_blank">TTRPG content</a>.
             </p>
-            <h2 class="hidden" style="--hiddenCount: 2;">Who does the site work?</h2>
-            <p class="hidden" style="--hiddenCount: 2;"> Morbi luctus libero vel tincidunt ullamcorper. Donec vulputate eget justo cursus egestas. Nam at fringilla velit. Cras sapien neque, ullamcorper porta risus sit amet, accumsan cursus leo. Sed mattis quam urna, a porta mauris imperdiet sed. Aenean convallis, ipsum non fringilla dapibus, nisl nunc feugiat massa, porta lobortis leo neque nec magna. Nulla venenatis hendrerit scelerisque. Pellentesque orci sem, mattis ac lorem vel, gravida commodo nunc. Donec dapibus iaculis leo, id vestibulum lorem ultrices non. Morbi auctor sodales sodales. Curabitur euismod odio libero, eu viverra enim cursus sed. Integer imperdiet et massa eu faucibus. Nullam nulla leo, eleifend in consectetur eu, sodales ac nulla.
+            <h2 class="hidden" style="--hiddenCount: 4;">Who does the site work?</h2>
+            <p class="hidden" style="--hiddenCount: 4;"> 
+            We have the essential data of every land stored, courtesy of the Scryfall API, which we use to determine color identity and added colors. This is the data that we use to keep track of the number of colored mana sources you're adding to your list and to populate the buffet.
             </p>
-            <h2 class="hidden" style="--hiddenCount: 2;">Why did you make it?</h2>
-            <p class="hidden" style="--hiddenCount: 2;"> Morbi luctus libero vel tincidunt ullamcorper. Donec vulputate eget justo cursus egestas. Nam at fringilla velit. Cras sapien neque, ullamcorper porta risus sit amet, accumsan cursus leo. Sed mattis quam urna, a porta mauris imperdiet sed. Aenean convallis, ipsum non fringilla dapibus, nisl nunc feugiat massa, porta lobortis leo neque nec magna. Nulla venenatis hendrerit scelerisque. Pellentesque orci sem, mattis ac lorem vel, gravida commodo nunc. Donec dapibus iaculis leo, id vestibulum lorem ultrices non. Morbi auctor sodales sodales. Curabitur euismod odio libero, eu viverra enim cursus sed. Integer imperdiet et massa eu faucibus. Nullam nulla leo, eleifend in consectetur eu, sodales ac nulla.
+            <p class="hidden" style="--hiddenCount: 4;"> 
+            When you provide us with a decklist, we make a request to Scryfall, and they give us all the data from cards on your deck. First, we check if you have any lands in the mix, and if you do, we make sure to add them to the selected cards list. 
+            </p>
+            <p class="hidden" style="--hiddenCount: 4;"> 
+            After that, we use the mana value of each card to determine its color weight. For each mana symbol in its casting cos, we assign the card a corresponding weight that we'll use to recommend how many colored sources of that color you need. So, for example, a 1 <i class="ms ms-w"></i> card will always have a lower color weight for white than a <i class="ms ms-w"></i> <i class="ms ms-w"></i> card, which will affect how many white mana sources you need in your deck to consistantly cast these cards.
+            </p>
+            <p class="hidden" style="--hiddenCount: 4;"> 
+            After that, we just give you the numbers.
+            </p>
+            <h2 class="hidden" style="--hiddenCount: 5;">Why did you make it?</h2>
+            <p class="hidden" style="--hiddenCount: 5;">
+            This site is actually my university final year project. I had to make an online tool and decided to go with Magic. 
+
+            </p>
+            <p class="hidden" style="--hiddenCount: 5;">
+            Why this specifically? Well, Magic is a complicated game, and having a good mana base is one of the most intricate aspects of it. The information is all there, but there's a huge leap between knowing that you can technically build a better mana base with the information provided and actually doing it. Having an interface—and a good-looking one, if I do say so myself—does wonders to help people breach that gap.
+
+            </p>
+            <p class="hidden" style="--hiddenCount: 5;">
+            My aim with this is just to provide a tool that makes deck construction easier so that people can enjoy the game more. Also, my friends suck at building mana bases, and I'm tired of winning games because they don't draw enough lands.
             </p>
           </div>
-          <div class="top">
-            <div class="changelog">
-              <div class="explain">
-                <h2 class="hidden" style="--hiddenCount: 4;">Changelog...</h2>
-                <p class="hidden" style="--hiddenCount: 4;">Select the colors of your deck and look through all the lands yourself.</p>
-                <p class="hidden log" style="--hiddenCount: 4;">Select the colors of your deck and look through all the lands yourself. As you pick the lands you like, we will keep track of everything else and show you your mana distribution in real time! Once you're done, just copy the list, and voilà! Deck-building has never been so easy!</p>
-              </div>
-            </div>
-            <div class="analyze">
+          <div class="bottom">
+            <div class="changelog hidden"style="--hiddenCount: 4;" >
+            <h2 class="hidden" style="--hiddenCount: 4;">Changelog...</h2>
+
             </div>
           </div>
         </div>
@@ -298,10 +312,13 @@
 </div>
 
 
-    
+    <!-- JQUERY  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
     <!-- MOBILE MENU HANDLER -->
     <script type="text/javascript" src="js/menuHandler.js"></script>
     <!-- ANIMATIONS HANDLER -->
     <script type="text/javascript" src="js/animations.js"></script>
+    <!-- CHANGELOG POPULATOR -->
+    <script type="text/javascript" src="js/changelog.js" defer></script>
   </body>
 </html>

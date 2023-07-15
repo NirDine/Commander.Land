@@ -740,6 +740,15 @@ mark {
 }
 
 
+
+/* Remove once the properties are added to cards */
+
+#extraFilters {
+    display: none;
+}
+
+
+
 .mana .added-cards {
     color: var(--mtg-c);
     font-size: 1.7em;
@@ -1341,12 +1350,24 @@ gap: 10px;
 
 }
 
+
+.userAction:hover .archidekt,
+.userAction:focus-visible .archidekt {
+    background-image: url(../img/logos/archidekt.svg);
+
+}
+
+
 .moxfield {
     background-image: url(../img/logos/moxfield-white.png);
 
 }
 
+.userAction:hover .moxfield,
+.userAction:focus-visible .moxfield  {
+    background-image: url(../img/logos/moxfield.png);
 
+}
 
 
 .userAction {
@@ -1465,14 +1486,24 @@ gap: 10px;
     
 }
 
+.changelog {
+    width: 100%;
+}
+
 .changelog * {
     padding-block: 5px;
 }
 
-.changelog p.log { 
-    margin-inline: 2.5%;
+.changelog .log { 
+    margin: 1em 2.5%;
     padding: 10px;
     border-radius: calc(var(--bradius) / 2);
     background: var(--mainBG);
-    
+}
+
+.changelog .logChanges {
+    padding: 10px 40px;
+    list-style: circle;
+    color: var(--contrast);
+    font-family: var(--font);
 }

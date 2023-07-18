@@ -2530,7 +2530,8 @@
       },
       "related_uris": {},
       "properties": [
-	  "is:triome"
+	  "is:fetchland",
+	  "is:tapland"
 	  ]
     },
     {
@@ -2617,7 +2618,8 @@
       },
       "related_uris": {},
       "properties": [
-	  "is:triome"
+	  "is:fetchland",
+	  "is:tapland"
 	  ]
     },
     {
@@ -2708,7 +2710,8 @@
       },
       "related_uris": {},
       "properties": [
-	  "is:triome"
+	  "is:fetchland",
+	  "is:tapland"
 	  ]
     },
     {
@@ -2756,7 +2759,7 @@
       },
       "related_uris": {},
       "properties": [
-	  "is:triome"
+	  "is:tangoland"
 	  ]
     },
     {
@@ -7692,7 +7695,9 @@
       "prices": {
         "usd": "2.18"
       },
-      "properties": []
+      "properties": [
+	  "is:pathway"
+	  ]
     },
     {
       "object": "card",
@@ -8512,7 +8517,9 @@
       "prices": {
         "usd": "2.64"
       },
-      "properties": []
+      "properties": [
+	  "is:pathway"
+	  ]
     },
     {
       "object": "card",
@@ -9271,7 +9278,9 @@
       "prices": {
         "usd": "2.66"
       },
-      "properties": []
+      "properties": [
+	  "is:pathway"
+	  ]
     },
     {
       "object": "card",
@@ -9394,7 +9403,9 @@
       "prices": {
         "usd": "2.54"
       },
-      "properties": []
+      "properties": [
+	  "is:pathway"
+	  ]
     },
     {
       "object": "card",
@@ -10743,7 +10754,9 @@
       "prices": {
         "usd": "4.46"
       },
-      "properties": []
+      "properties": [
+	  "is:pathway"
+	  ]
     },
     {
       "object": "card",
@@ -11385,7 +11398,9 @@
       "prices": {
         "usd": "3.67"
       },
-      "properties": []
+      "properties": [
+	  "is:pathway"
+	  ]
     },
     {
       "object": "card",
@@ -12075,7 +12090,9 @@
       "prices": {
         "usd": "3.95"
       },
-      "properties": []
+      "properties": [
+	  "is:pathway"
+	  ]
     },
     {
       "object": "card",
@@ -18271,7 +18288,9 @@
       "prices": {
         "usd": "4.90"
       },
-      "properties": []
+      "properties": [
+	  "is:pathway"
+	  ]
     },
     {
       "object": "card",
@@ -26250,7 +26269,9 @@
       "prices": {
         "usd": "4.90"
       },
-      "properties": []
+      "properties": [
+	  "is:pathway"
+	  ]
     },
     {
       "object": "card",
@@ -31782,7 +31803,9 @@
       "prices": {
         "usd": "3.00"
       },
-      "properties": []
+      "properties": [
+	  "is:pathway"
+	  ]
     },
     {
       "object": "card",
@@ -34653,7 +34676,9 @@
       "prices": {
         "usd": "5.08"
       },
-      "properties": []
+      "properties": [
+	  "is:pathway"
+	  ]
     },
     {
       "object": "card",

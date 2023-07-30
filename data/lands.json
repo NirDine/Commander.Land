@@ -1,7 +1,7 @@
 {
   "object": "list",
   "total_cards": 1026,
-  "version": 1.2,
+  "version": 1.21,
   "data": [
 	{
       "object": "card",
@@ -5939,10 +5939,9 @@
       "id": "15b3f35e-451e-4de6-a4f7-249287566964",
       "name": "Forest",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/1/5/15b3f35e-451e-4de6-a4f7-249287566964.jpg?1683334664",
-        "normal": "https://cards.scryfall.io/normal/front/1/5/15b3f35e-451e-4de6-a4f7-249287566964.jpg?1683334664",
-        "png": "https://cards.scryfall.io/png/front/1/5/15b3f35e-451e-4de6-a4f7-249287566964.png?1683334664",
-        "border_crop": "https://cards.scryfall.io/border_crop/front/1/5/15b3f35e-451e-4de6-a4f7-249287566964.jpg?1683334664"
+         "small": "https://cards.scryfall.io/small/front/e/c/ecd6d8fb-780c-446c-a8bf-93386b22fe95.jpg?1690543325",
+        "normal": "https://cards.scryfall.io/normal/front/e/c/ecd6d8fb-780c-446c-a8bf-93386b22fe95.jpg?1690543325",
+        "png": "https://cards.scryfall.io/png/front/e/c/ecd6d8fb-780c-446c-a8bf-93386b22fe95.png?1690543325"
       },
       "type_line": "Basic Land — Forest",
       "oracle_text": "({T}: Add {G}.)",
@@ -5964,9 +5963,9 @@
       "id": "12b2aae2-a0b4-4c52-8a43-a4155527bae9",
       "name": "Island",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/1/2/12b2aae2-a0b4-4c52-8a43-a4155527bae9.jpg?1683334571",
-        "normal": "https://cards.scryfall.io/normal/front/1/2/12b2aae2-a0b4-4c52-8a43-a4155527bae9.jpg?1683334571",
-        "png": "https://cards.scryfall.io/png/front/1/2/12b2aae2-a0b4-4c52-8a43-a4155527bae9.png?1683334571"
+        "small": "https://cards.scryfall.io/small/front/b/d/bd4b4da4-83f6-4280-880b-b6033308f2a2.jpg?1690543315",
+        "normal": "https://cards.scryfall.io/normal/front/b/d/bd4b4da4-83f6-4280-880b-b6033308f2a2.jpg?1690543315",
+        "png": "https://cards.scryfall.io/png/front/b/d/bd4b4da4-83f6-4280-880b-b6033308f2a2.png?1690543315"
 		},
       "type_line": "Basic Land — Island",
       "oracle_text": "({T}: Add {U}.)",
@@ -5987,10 +5986,9 @@
       "id": "49f1fe4e-8da1-4879-8129-bd8a440a45be",
       "name": "Mountain",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/4/9/49f1fe4e-8da1-4879-8129-bd8a440a45be.jpg?1683334690",
-        "normal": "https://cards.scryfall.io/normal/front/4/9/49f1fe4e-8da1-4879-8129-bd8a440a45be.jpg?1683334690",
-        "png": "https://cards.scryfall.io/png/front/4/9/49f1fe4e-8da1-4879-8129-bd8a440a45be.png?1683334690",
-        "border_crop": "https://cards.scryfall.io/border_crop/front/4/9/49f1fe4e-8da1-4879-8129-bd8a440a45be.jpg?1683334690"
+		"small": "https://cards.scryfall.io/small/front/8/8/8822db23-34dc-452a-92bc-a3ceee4db375.jpg?1690543322",
+        "normal": "https://cards.scryfall.io/normal/front/8/8/8822db23-34dc-452a-92bc-a3ceee4db375.jpg?1690543322",
+        "png": "https://cards.scryfall.io/png/front/8/8/8822db23-34dc-452a-92bc-a3ceee4db375.png?1690543322"
       },
       "type_line": "Basic Land — Mountain",
       "oracle_text": "({T}: Add {R}.)",
@@ -6012,10 +6010,9 @@
       "id": "1aaea970-a19c-400a-a8cb-5d30f9cc2672",
       "name": "Plains",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/1/a/1aaea970-a19c-400a-a8cb-5d30f9cc2672.jpg?1683334677",
-        "normal": "https://cards.scryfall.io/normal/front/1/a/1aaea970-a19c-400a-a8cb-5d30f9cc2672.jpg?1683334677",
-        "png": "https://cards.scryfall.io/png/front/1/a/1aaea970-a19c-400a-a8cb-5d30f9cc2672.png?1683334677",
-        "border_crop": "https://cards.scryfall.io/border_crop/front/1/a/1aaea970-a19c-400a-a8cb-5d30f9cc2672.jpg?1683334677"
+        "small": "https://cards.scryfall.io/small/front/c/9/c9cd4d57-8c51-4fcf-8a9f-5d6a61c33e3d.jpg?1690543317",
+        "normal": "https://cards.scryfall.io/normal/front/c/9/c9cd4d57-8c51-4fcf-8a9f-5d6a61c33e3d.jpg?1690543317",
+        "png": "https://cards.scryfall.io/png/front/c/9/c9cd4d57-8c51-4fcf-8a9f-5d6a61c33e3d.png?1690543317"
       },
       "type_line": "Basic Land — Plains",
       "oracle_text": "({T}: Add {W}.)",
@@ -6037,9 +6034,9 @@
       "id": "1c5d8a2c-b98a-4dae-8b89-4a2435fa7103",
       "name": "Swamp",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/1/c/1c5d8a2c-b98a-4dae-8b89-4a2435fa7103.jpg?1683334713",
-        "normal": "https://cards.scryfall.io/normal/front/1/c/1c5d8a2c-b98a-4dae-8b89-4a2435fa7103.jpg?1683334713",
-        "png": "https://cards.scryfall.io/png/front/1/c/1c5d8a2c-b98a-4dae-8b89-4a2435fa7103.png?1683334713"
+        "small": "https://cards.scryfall.io/small/front/e/e/ee68f2cb-851b-4196-ac58-844d72628e6a.jpg?1690543320",
+        "normal": "https://cards.scryfall.io/normal/front/e/e/ee68f2cb-851b-4196-ac58-844d72628e6a.jpg?1690543320",
+        "png": "https://cards.scryfall.io/png/front/e/e/ee68f2cb-851b-4196-ac58-844d72628e6a.png?1690543320"
       },
       "type_line": "Basic Land — Swamp",
       "oracle_text": "({T}: Add {B}.)",
@@ -6061,9 +6058,9 @@
       "id": "9cc070d3-4b83-4684-9caf-063e5c473a77",
       "name": "Wastes",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/9/c/9cc070d3-4b83-4684-9caf-063e5c473a77.jpg?1657725364",
-        "normal": "https://cards.scryfall.io/normal/front/9/c/9cc070d3-4b83-4684-9caf-063e5c473a77.jpg?1657725364",
-        "png": "https://cards.scryfall.io/png/front/9/c/9cc070d3-4b83-4684-9caf-063e5c473a77.png?1657725364"
+        "small": "https://cards.scryfall.io/small/front/6/9/69b215fe-0d97-4ca1-9490-174220fd454b.jpg?1562916234",
+        "normal": "https://cards.scryfall.io/normal/front/6/9/69b215fe-0d97-4ca1-9490-174220fd454b.jpg?1562916234",
+        "png": "https://cards.scryfall.io/png/front/6/9/69b215fe-0d97-4ca1-9490-174220fd454b.jpg?1562916234"
       },
       "type_line": "Basic Land",
       "oracle_text": "{T}: Add {C}.",

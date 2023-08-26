@@ -1,0 +1,8 @@
+{
+    "title": "Version 1.0.1",
+    "paragraph": "",
+    "changes": [
+        "Fixed the highlighter on cards not found not taking into account quantity",
+        "Fixed land count not updating when using the 'Clear List' button. "
+    ]
+}

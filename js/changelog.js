@@ -24,23 +24,16 @@ const updatesDirectory = '../updates/';
 
 // Process and display the loaded updates
 function processUpdates(updates) {
-  updates.forEach(update => {
-    const title = update.title;
-    const changes = update.changes;
-    const paragraph = update.paragraph;
-
-    // Display the update information as needed
-    console.log('Title:', title);
-    console.log('Changes:', changes);
-    console.log('Paragraph:', paragraph);
-  });
-}
-
-// Process and display the loaded updates
-function processUpdates(updates) {
   const changelog = $('.changelog');
+  const maxUpdates = 5; // Maximum number of updates to display
 
-  updates.forEach(update => {
+  // Reverse the updates array to show newer updates first
+  updates.reverse();
+
+  // Slice the array to limit the updates
+  const limitedUpdates = updates.slice(0, maxUpdates);
+
+  limitedUpdates.forEach(update => {
     const title = update.title;
     const changes = update.changes;
     const paragraph = update.paragraph;

@@ -252,6 +252,17 @@ span#combination-name {
     background: #ffffff14;
 }
 
+.mana label,
+.filters label,
+.buffet #search,
+.moneyPls {
+  background: #ffffff14;
+  border: 2px solid #0000006e;
+}
+
+
+
+
 .mana:has(input[type="checkbox"]:checked) label,
 
 

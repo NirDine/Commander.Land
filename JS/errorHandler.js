@@ -120,7 +120,7 @@ if (storedData) {
 
         // Order the highlights based on the ordered card names
         const orderedHighlights = applyHighlights(
-          orderedCardNames.map(card => card.name),
+          orderedCardNames.map(card => ({ name: card.name, quantity: card.quantity })),
           nameErrors
         );
 
@@ -215,15 +215,16 @@ function determineColorIdentity(responseData) {
 
 
 // Function to apply highlights
-function applyHighlights(cardNames, nameErrors) {
+function applyHighlights(cardInfoArray, nameErrors) {
   let highlightedText = '';
 
   // Generate the highlighted text with correct ordering
-  cardNames.forEach(cardName => {
-    if (nameErrors.includes(cardName)) {
-      highlightedText += `<mark data-card-name="${cardName}">${cardName}</mark>\n`;
+  cardInfoArray.forEach(cardInfo => {
+    const { name, quantity } = cardInfo;
+    if (nameErrors.includes(name)) {
+      highlightedText += `<mark class="error" data-card-name="${name}">${quantity} ${name}</mark>\n`;
     } else {
-      highlightedText += `${cardName}\n`;
+      highlightedText += `${quantity} ${name}\n`;
     }
   });
 

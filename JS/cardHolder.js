@@ -187,6 +187,8 @@ function updateManaColorProgress() {
         if (storedResponseData) {
           localStorage.removeItem('responseData');
         }
+
+    totalCardCount();
     }
 
 
@@ -220,6 +222,8 @@ function updateManaColorProgress() {
     // Save the updated selectedCards to localStorage
     localStorage.setItem('selectedCards', JSON.stringify(selectedCards));
   }
+
+    totalCardCount();
 }
 
 

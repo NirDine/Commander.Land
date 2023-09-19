@@ -144,13 +144,10 @@ body.active .menu {
 .dropdown:checked + label,
 .dropdown:not(:checked) + label {
   position: relative;
-
   transition: all 200ms linear;
-
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-
   cursor: pointer;
 }
 

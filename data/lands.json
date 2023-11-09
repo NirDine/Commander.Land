@@ -1,7 +1,7 @@
 {
   "object": "list",
-  "total_cards": 1045,
-  "version": 1.4,
+  "total_cards": 1056,
+  "version": 1.5,
   "data": [
     {
       "object": "card",
@@ -48949,6 +48949,389 @@
         "tix": null
       },
       "properties": []
+    },
+	{
+      "object": "card",
+      "cardmarket_id": 744058,
+      "name": "Captivating Cave",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/d/1d1a645e-85c7-4044-b817-6e24744d245e.jpg?1699044664",
+        "normal": "https://cards.scryfall.io/normal/front/1/d/1d1a645e-85c7-4044-b817-6e24744d245e.jpg?1699044664",
+        "png": "https://cards.scryfall.io/png/front/1/d/1d1a645e-85c7-4044-b817-6e24744d245e.png?1699044664"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Cave",
+      "oracle_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{4}, {T}, Sacrifice Captivating Cave: Put two +1/+1 counters on target creature. Activate only as a sorcery.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 26055,
+      "prices": {
+        "usd": "0.36",
+        "eur": "0.14"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "name": "Cavernous Maw",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/a/2a51ebf6-a465-42e2-82b7-d2cb928ca632.jpg?1699044667",
+        "normal": "https://cards.scryfall.io/normal/front/2/a/2a51ebf6-a465-42e2-82b7-d2cb928ca632.jpg?1699044667",
+        "png": "https://cards.scryfall.io/png/front/2/a/2a51ebf6-a465-42e2-82b7-d2cb928ca632.png?1699044667"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Cave",
+      "oracle_text": "{T}: Add {C}.\n{2}: Cavernous Maw becomes a 3/3 Elemental creature until end of turn. It's still a Cave land. Activate only if the number of other Caves you control plus the number of Cave cards in your graveyard is three or greater.",
+      "colors": [],
+      "color_identity": [],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 25904,
+      "prices": {
+        "usd": "0.28",
+        "eur": "0.11"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "244c06b3-532d-426e-8bee-ee9461d092a6",
+      "name": "Echoing Deeps",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/4/244c06b3-532d-426e-8bee-ee9461d092a6.jpg?1699044671",
+        "normal": "https://cards.scryfall.io/normal/front/2/4/244c06b3-532d-426e-8bee-ee9461d092a6.jpg?1699044671",
+        "png": "https://cards.scryfall.io/png/front/2/4/244c06b3-532d-426e-8bee-ee9461d092a6.png?1699044671"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Cave",
+      "oracle_text": "You may have Echoing Deeps enter the battlefield tapped as a copy of any land card in a graveyard, except it's a Cave in addition to its other types.\n{T}: Add {C}.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 22823,
+      "prices": {
+        "usd": "8.71",
+        "eur": "7.29"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "de8c1c02-e533-46b2-a3eb-91dff561854b",
+      "name": "Forgotten Monument",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/e/de8c1c02-e533-46b2-a3eb-91dff561854b.jpg?1699044675",
+        "normal": "https://cards.scryfall.io/normal/front/d/e/de8c1c02-e533-46b2-a3eb-91dff561854b.jpg?1699044675",
+        "png": "https://cards.scryfall.io/png/front/d/e/de8c1c02-e533-46b2-a3eb-91dff561854b.png?1699044675"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Cave",
+      "oracle_text": "{T}: Add {C}.\nOther Caves you control have \"{T}, Pay 1 life: Add one mana of any color.\"",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 25873,
+      "prices": {
+        "usd": "0.84",
+        "eur": "0.46"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "name": "Hidden Cataract",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/9/69f317fc-f603-45b5-9208-545be4dcbf36.jpg?1699044678",
+        "normal": "https://cards.scryfall.io/normal/front/6/9/69f317fc-f603-45b5-9208-545be4dcbf36.jpg?1699044678",
+        "png": "https://cards.scryfall.io/png/front/6/9/69f317fc-f603-45b5-9208-545be4dcbf36.png?1699044678"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Cave",
+      "oracle_text": "Hidden Cataract enters the battlefield tapped.\n{T}: Add {U}.\n{4}{U}, {T}, Sacrifice Hidden Cataract: Discover 4. Activate only as a sorcery. (Exile cards from the top of your library until you exile a nonland card with mana value 4 or less. Cast it without paying its mana cost or put it into your hand. Put the rest on the bottom in a random order.)",
+      "colors": [],
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Discover"
+      ],
+      "produced_mana": [
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 23877,
+      "prices": {
+        "usd": "0.27",
+        "eur": "0.11"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "name": "Hidden Courtyard",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/8/b8685d46-99fc-44b3-be95-707a4b7b8327.jpg?1699044679",
+        "normal": "https://cards.scryfall.io/normal/front/b/8/b8685d46-99fc-44b3-be95-707a4b7b8327.jpg?1699044679",
+        "png": "https://cards.scryfall.io/png/front/b/8/b8685d46-99fc-44b3-be95-707a4b7b8327.png?1699044679"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Cave",
+      "oracle_text": "Hidden Courtyard enters the battlefield tapped.\n{T}: Add {W}.\n{4}{W}, {T}, Sacrifice Hidden Courtyard: Discover 4. Activate only as a sorcery. (Exile cards from the top of your library until you exile a nonland card with mana value 4 or less. Cast it without paying its mana cost or put it into your hand. Put the rest on the bottom in a random order.)",
+      "colors": [],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Discover"
+      ],
+      "produced_mana": [
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 23494,
+      "prices": {
+        "usd": "0.22",
+        "eur": "0.11"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "f67fd04f-05da-4418-97de-abeb7346cc69",
+      "name": "Hidden Necropolis",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/6/f67fd04f-05da-4418-97de-abeb7346cc69.jpg?1699044683",
+        "normal": "https://cards.scryfall.io/normal/front/f/6/f67fd04f-05da-4418-97de-abeb7346cc69.jpg?1699044683",
+        "png": "https://cards.scryfall.io/png/front/f/6/f67fd04f-05da-4418-97de-abeb7346cc69.png?1699044683"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Cave",
+      "oracle_text": "Hidden Necropolis enters the battlefield tapped.\n{T}: Add {B}.\n{4}{B}, {T}, Sacrifice Hidden Necropolis: Discover 4. Activate only as a sorcery. (Exile cards from the top of your library until you exile a nonland card with mana value 4 or less. Cast it without paying its mana cost or put it into your hand. Put the rest on the bottom in a random order.)",
+      "colors": [],
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [
+        "Discover"
+      ],
+      "produced_mana": [
+        "B"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 23851,
+      "prices": {
+        "usd": "0.28",
+        "eur": "0.12"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "a942939a-c06e-4b90-a404-ae5acfffcff9",
+      "name": "Hidden Nursery",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/a/9/a942939a-c06e-4b90-a404-ae5acfffcff9.jpg?1699044686",
+        "normal": "https://cards.scryfall.io/normal/front/a/9/a942939a-c06e-4b90-a404-ae5acfffcff9.jpg?1699044686",
+        "png": "https://cards.scryfall.io/png/front/a/9/a942939a-c06e-4b90-a404-ae5acfffcff9.png?1699044686"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Cave",
+      "oracle_text": "Hidden Nursery enters the battlefield tapped.\n{T}: Add {G}.\n{4}{G}, {T}, Sacrifice Hidden Nursery: Discover 4. Activate only as a sorcery. (Exile cards from the top of your library until you exile a nonland card with mana value 4 or less. Cast it without paying its mana cost or put it into your hand. Put the rest on the bottom in a random order.)",
+      "colors": [],
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Discover"
+      ],
+      "produced_mana": [
+        "G"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 22722,
+      "prices": {
+        "usd": "0.24",
+        "eur": "0.11"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "name": "Hidden Volcano",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/f/9fa06aed-52c1-48f1-9906-362db12a3cf7.jpg?1699044687",
+        "normal": "https://cards.scryfall.io/normal/front/9/f/9fa06aed-52c1-48f1-9906-362db12a3cf7.jpg?1699044687",
+        "png": "https://cards.scryfall.io/png/front/9/f/9fa06aed-52c1-48f1-9906-362db12a3cf7.png?1699044687"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Cave",
+      "oracle_text": "Hidden Volcano enters the battlefield tapped.\n{T}: Add {R}.\n{4}{R}, {T}, Sacrifice Hidden Volcano: Discover 4. Activate only as a sorcery. (Exile cards from the top of your library until you exile a nonland card with mana value 4 or less. Cast it without paying its mana cost or put it into your hand. Put the rest on the bottom in a random order.)",
+      "colors": [],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Discover"
+      ],
+      "produced_mana": [
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 22827,
+      "prices": {
+        "usd": "0.26",
+        "eur": "0.12"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "bc7d3957-b483-4a1f-a244-293c90032f5e",
+      "name": "Pit of Offerings",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/c/bc7d3957-b483-4a1f-a244-293c90032f5e.jpg?1699044691",
+        "normal": "https://cards.scryfall.io/normal/front/b/c/bc7d3957-b483-4a1f-a244-293c90032f5e.jpg?1699044691",
+        "png": "https://cards.scryfall.io/png/front/b/c/bc7d3957-b483-4a1f-a244-293c90032f5e.png?1699044691"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Cave",
+      "oracle_text": "Pit of Offerings enters the battlefield tapped.\nWhen Pit of Offerings enters the battlefield, exile up to three target cards from graveyards.\n{T}: Add {C}.\n{T}: Add one mana of any of the exiled cards' colors.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "games": [
+        "paper",
+        "mtgo",
+        "arena"
+      ],
+      "edhrec_rank": 23222,
+      "prices": {
+        "usd": "1.09",
+        "eur": "0.21"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "e9681a54-6413-4ff4-b6b1-ee4decb25bfa",
+      "name": "Promising Vein",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/e/9/e9681a54-6413-4ff4-b6b1-ee4decb25bfa.jpg?1699044695",
+        "normal": "https://cards.scryfall.io/normal/front/e/9/e9681a54-6413-4ff4-b6b1-ee4decb25bfa.jpg?1699044695",
+        "png": "https://cards.scryfall.io/png/front/e/9/e9681a54-6413-4ff4-b6b1-ee4decb25bfa.png?1699044695"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Cave",
+      "oracle_text": "{T}: Add {C}.\n{1}, {T}, Sacrifice Promising Vein: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 25599,
+      "prices": {
+        "usd": "0.39",
+        "eur": "0.25"
+      }
     }
   ]
 }

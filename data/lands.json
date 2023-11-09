@@ -1,7 +1,7 @@
 {
   "object": "list",
-  "total_cards": 1056,
-  "version": 1.5,
+  "total_cards": 1058,
+  "version": 1.6,
   "data": [
     {
       "object": "card",
@@ -49332,6 +49332,105 @@
         "usd": "0.39",
         "eur": "0.25"
       }
+    },
+	
+    {
+      "object": "card",
+      "id": "9385abf3-b067-4586-bf3d-175526cf8f0a",
+      "name": "Volatile Fault",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/3/9385abf3-b067-4586-bf3d-175526cf8f0a.jpg?1699044713",
+        "normal": "https://cards.scryfall.io/normal/front/9/3/9385abf3-b067-4586-bf3d-175526cf8f0a.jpg?1699044713",
+        "png": "https://cards.scryfall.io/png/front/9/3/9385abf3-b067-4586-bf3d-175526cf8f0a.png?1699044713"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Cave",
+      "oracle_text": "{T}: Add {C}.\n{1}, {T}, Sacrifice Volatile Fault: Destroy target nonbasic land an opponent controls. That player may search their library for a basic land card, put it onto the battlefield, then shuffle. You create a Treasure token.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Treasure"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "3dfaedeb-f8ec-4f0e-b243-c850770a86f2",
+          "component": "token",
+          "name": "Treasure",
+          "type_line": "Token Artifact — Treasure",
+          "uri": "https://api.scryfall.com/cards/3dfaedeb-f8ec-4f0e-b243-c850770a86f2"
+        },
+        {
+          "object": "related_card",
+          "id": "9385abf3-b067-4586-bf3d-175526cf8f0a",
+          "component": "combo_piece",
+          "name": "Volatile Fault",
+          "type_line": "Land — Cave",
+          "uri": "https://api.scryfall.com/cards/9385abf3-b067-4586-bf3d-175526cf8f0a"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [
+        "paper",
+        "arena",
+        "mtgo"
+      ],
+      "edhrec_rank": 24939,
+      "prices": {
+        "usd": "0.84",
+        "eur": "0.66"
+      },
+	  "properties": []
+    },
+    {
+      "object": "card",
+      "id": "3e1c9b1a-e306-47bb-9f68-2083660319c0",
+      "name": "Sunken Citadel",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/3/e/3e1c9b1a-e306-47bb-9f68-2083660319c0.jpg?1699044711",
+        "normal": "https://cards.scryfall.io/normal/front/3/e/3e1c9b1a-e306-47bb-9f68-2083660319c0.jpg?1699044711",
+        "png": "https://cards.scryfall.io/png/front/3/e/3e1c9b1a-e306-47bb-9f68-2083660319c0.png?1699044711"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Cave",
+      "oracle_text": "Sunken Citadel enters the battlefield tapped. As it enters, choose a color.\n{T}: Add one mana of the chosen color.\n{T}: Add two mana of the chosen color. Spend this mana only to activate abilities of land sources.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "edhrec_rank": 24642,
+      "prices": {
+        "usd": "0.83",
+        "eur": "0.53"
+      },
+	  "properties": []
     }
   ]
 }

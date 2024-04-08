@@ -1,0 +1,409 @@
+/* ----- FONTS ----- */
+
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: Graphik;
+  src: url("fonts/GraphikRegular.otf") format ("otf");
+}
+
+@font-face {
+  font-family: Planeswalker;
+  src: url("fonts/Planewalker-38m6.ttf") format ("ttf");
+}
+
+/* Set font variables */
+:root {
+  --font: Graphik, sans-serif;
+  --navFont: Graphik, sans-serif;
+}
+
+/* Set font families for elements */
+p,
+textarea,
+span {
+  font-family: var(--font);
+}
+
+.content h1 {
+  font-family: OpineHeavy;
+}
+
+.dropdown:checked + label,
+.dropdown:not(:checked) + label,
+header a {
+  font-family: var(--navFont);
+}
+
+italitcs {
+  font-size: italic;
+}
+
+strong {
+  font-size: bold;
+}
+
+.card .cardName {
+  font-family: Planeswalker;
+}
+
+/* ----- COLORS ----- */
+
+/* Set color variables */
+:root {
+  --accent: #d14081;
+  --contrast: #d5dae9;
+  /* Old contrast color 
+  --contrast: #eef2ff;  */
+  --mainBG: #2e2e3a;
+  --selection: ;
+  --dark: #1d1f21;
+  --bg-art: url(/img/art/bg2.webp);
+  --discord: #5865f2;
+  --patreon: #ff424d;
+
+/*
+  Colors gathered from the mana symbols
+
+  --mtg-w: #f8f6d8;
+  --mtg-u: #c1d7e9;
+  --mtg-b: #cac5c0;
+  --mtg-r: #e49977;
+  --mtg-g: #a3c095;
+  --mtg-c: #cac5c0;
+    
+*/
+  --mtg-w: #e7deb5;
+  --mtg-u: #b7cae8;
+  --mtg-b: #b4abb0;
+  --mtg-r: #d8917d;
+  --mtg-g: #bacbc1;
+  --mtg-c: #cac5c0;
+    
+}
+
+/* Set colors for elements */
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)),
+    var(--bg-art);
+  background-color: #000;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+  background-image: url(/img/lines.svg);
+  background-size: 8px;
+  background-position: center center;
+  background-repeat: repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+p a { 
+    color: var(--accent);
+}
+
+.logo:focus-visible,
+.logo:hover {
+    background-image: url(/img/logos/logo-mobile-hover.svg);
+}
+
+@media only screen and (min-width: 1200px) {
+
+.logo:focus-visible,
+.logo:hover {
+    background-image: url(/img/logos/logo-colors.svg);
+}
+
+}
+
+.skipNavLink,
+.menu,
+header.navScrolled,
+header,
+footer {
+  background: var(--mainBG);
+}
+
+strong {
+  background-color: #d1408191;
+}
+
+.card.selected::after {
+  background-color: var(--accent);
+}
+
+.skipNavLink,
+.menu ul li a:hover,
+.menu ul li div:hover,
+.menu ul li a:focus,
+header .dropdown-sub:checked + label,
+header .dropdown.parent:checked + label,
+header label.for-dropdown-sub:hover,
+header .dropdown-sub:focus + label,
+header .dropdown.parent:focus + label,
+footer ul li a:hover,
+footer ul li a:focus-visible,
+footer p a:focus-visible,
+footer p a:hover,
+.chFooter span:has(.quotaFilled) span,
+.userAction:focus-visible,
+.userAction:hover,
+.userAction:focus-visible i,
+.userAction:hover i
+{
+  color: var(--accent);
+  transition-duration: 0.15s;
+}
+
+.progress-bar {
+  color: var(--dark);
+  transition-duration: 0.15s;  
+}
+
+.skipNavLink,
+.menu ul li:hover,
+.menu ul li:focus,
+.menu ul li:focus-within {
+  border-bottom-color: var(--accent);
+}
+
+.menu ul li a,
+.menu ul li div,
+main::after,
+p,
+footer ul li a,
+.chFooter span,
+.totalCards {
+  color: var(--contrast);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.chFooter span.overLimit {
+  color: var(--accent);
+}
+
+.dropdown a {
+  color: var(--contrast);
+  transition-duration: 0.15s;
+}
+
+span#combination-name {
+  color: var(--contrast);
+}
+
+#cardHolder label:hover,
+#cardHolder label:focus-visibile {
+  color: var(--contrast);
+}
+
+.bottom .button input:hover,
+.mana label:hover,
+#cardHolder .cardHolderLabel:hover,
+.card:hover,
+.bottom .button input:focus-visible,
+.mana input:focus-visible + label,
+#cardHolder input:focus-visible ~ .cardHolderLabel,
+.card:focus-visible,
+.chUserActionContainer .export:focus-visible,
+.chUserActionContainer .export:hover,
+.filters label:hover,
+.filters label:focus-visible
+{
+  box-shadow: #d1408178 0 1px 30px;
+  transition: box-shadow 0.15s ease-in-out 0s;
+}
+
+.bottom .button input,
+.chUserActionContainer .export {
+  background-image: linear-gradient(92.88deg, #b76c8e 9.16%, var(--accent));
+  color: var(--contrast);
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+}
+
+.section-dropdown {
+  box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.4);
+  background-color: var(--mainBG);
+}
+
+.recommended div {
+
+    color: var(--contrast);
+    border-radius: var(--bradius);
+    background: #ffffff14;
+}
+
+.mana label,
+.filters label,
+.buffet #search,
+.moneyPls {
+  background: #ffffff14;
+  border: 2px solid #0000006e;
+}
+
+
+
+
+.mana:has(input[type="checkbox"]:checked) label,
+
+
+.filters:has(input[type="checkbox"]:checked) .parent ~ label,
+
+/* The mobile labels were a problem for the updateFiltersFromUrl script, so I had to somehow use the same inputs. To ensure that when the original inputs are checks, the mobile inputs are also correctly styled, I added this "temoprary" code. */
+
+/*  PARENT COLORS */
+.buffet-filters:has(input[type="checkbox"]:checked:not(.parent):not(.property):not(.isAdded)) .filters  label.mobileColorTarget,
+
+/*  WHITE */
+.buffet-filters:has(#mana-w:checked) .section-dropdown label.mana-w,
+
+/*  BLUE */
+.buffet-filters:has(#mana-u:checked) .section-dropdown .filter-picker label.mana-u,
+
+/*  BLACK */
+.buffet-filters:has(#mana-b:checked) .section-dropdown .filter-picker label.mana-b,
+
+/*  RED */
+.buffet-filters:has(#mana-r:checked) .section-dropdown .filter-picker label.mana-r,
+
+/*  GREEN */
+.buffet-filters:has(#mana-g:checked) .section-dropdown .filter-picker label.mana-g,
+
+/*  COLORLESS */
+.buffet-filters:has(#mana-c:checked) .section-dropdown .filter-picker label.mana-c {
+  background: #4f1e37;
+  border-color: var(--accent);
+}
+
+i.ms,
+label.reset,
+i.ss {
+  color: var(--mtg-c);
+}
+
+i.ms-w {
+  color: var(--mtg-w);
+}
+i.ms-u {
+  color: var(--mtg-u);
+}
+i.ms-b {
+  color: var(--mtg-b);
+}
+i.ms-r {
+  color: var(--mtg-r);
+}
+i.ms-g {
+  color: var(--mtg-g);
+}
+i.ms-c {
+  color: var(--mtg-c);
+}
+
+.progress-bar-W {
+  background-color: var(--mtg-w);
+}
+
+.progress-bar-U {
+  background-color: var(--mtg-u);
+}
+
+.progress-bar-B {
+  background-color: var(--mtg-b);
+}
+
+.progress-bar-R {
+  background-color: var(--mtg-r);
+}
+
+.progress-bar-G {
+  background-color: var(--mtg-g);
+}
+
+.progress-bar-C {
+  background-color: var(--mtg-c);
+}
+
+footer p a,
+footer span a {
+  color: var(--contrast);
+  opacity: 0.3;
+}
+
+footer p a:focus-visible,
+footer p a:hover {
+  opacity: 1;
+}
+
+.card.selected:after {
+  color: var(--contrast);
+  background: #d140816b;
+    opacity: 0.7;
+}
+/*  ----- SCROLLBAR ----- */
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--contrast) #ffffff00;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff00;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--contrast);
+  border-radius: 10px;
+  border: 1px solid #ffffff00;
+}
+
+.chContainer::-webkit-scrollbar {
+  width: 0px;
+}
+
+.chContainer::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chContainer::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: 0px;
+}
+
+button:active {
+
+    filter:brightness(1.3)
+    
+
+}
+
+button:not(.disabled):active {
+
+    filter:brightness(1.3)
+
+
+}

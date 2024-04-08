@@ -1,8 +1,511 @@
 {
   "object": "list",
-  "total_cards": 1058,
-  "version": 1.6,
+  "total_cards": 1070,
+  "version": 1.7,
   "data": [
+	    {
+      "object": "card",
+      "id": "73a8169f-b858-47a5-9c76-2e7c50ad4ecd",
+      "oracle_id": "7a30316b-dcd5-4a4b-b959-eecde7ca92e7",
+      "name": "Branch of Vitu-Ghazi",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/73a8169f-b858-47a5-9c76-2e7c50ad4ecd",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/7/3/73a8169f-b858-47a5-9c76-2e7c50ad4ecd.jpg?1705429512",
+        "normal": "https://cards.scryfall.io/normal/front/7/3/73a8169f-b858-47a5-9c76-2e7c50ad4ecd.jpg?1705429512",
+        "png": "https://cards.scryfall.io/png/front/7/3/73a8169f-b858-47a5-9c76-2e7c50ad4ecd.png?1705429512"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\nDisguise {3} (You may cast this card face down for {3} as a 2/2 creature with ward {2}. Turn it face up any time for its disguise cost.)\nWhen Branch of Vitu-Ghazi is turned face up, add two mana of any one color. Until end of turn, you don't lose this mana as steps and phases end.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 100,
+      "prices": {
+        "usd": "0.39",
+        "eur": "0.25"
+      }
+    },
+    {
+      "object": "card",
+      "id": "bf220c06-3cce-4bdd-aa58-83940c223e9c",
+      "oracle_id": "b33656ae-3473-4223-845f-f9147f87678b",
+      "name": "Commercial District",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/bf220c06-3cce-4bdd-aa58-83940c223e9c",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/f/bf220c06-3cce-4bdd-aa58-83940c223e9c.jpg?1705424367",
+        "normal": "https://cards.scryfall.io/normal/front/b/f/bf220c06-3cce-4bdd-aa58-83940c223e9c.jpg?1705424367",
+        "png": "https://cards.scryfall.io/png/front/b/f/bf220c06-3cce-4bdd-aa58-83940c223e9c.png?1705424367"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain Forest",
+      "oracle_text": "({T}: Add {R} or {G}.)\nCommercial District enters the battlefield tapped.\nWhen Commercial District enters the battlefield, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
+      "colors": [
+        "G",
+        "R"
+      ],
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 101,
+      "prices": {
+        "usd": "0.39",
+        "eur": "0.25"
+      }
+    },
+    {
+      "object": "card",
+      "id": "72c6d541-e2cb-4d6e-acac-90a8f53b7006",
+      "oracle_id": "9ea747cf-5d04-4aa7-bdc3-8145860cd1ba",
+      "name": "Elegant Parlor",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/72c6d541-e2cb-4d6e-acac-90a8f53b7006",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/7/2/72c6d541-e2cb-4d6e-acac-90a8f53b7006.jpg?1705424952",
+        "normal": "https://cards.scryfall.io/normal/front/7/2/72c6d541-e2cb-4d6e-acac-90a8f53b7006.jpg?1705424952",
+        "png": "https://cards.scryfall.io/png/front/7/2/72c6d541-e2cb-4d6e-acac-90a8f53b7006.png?1705424952"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain Plains",
+      "oracle_text": "({T}: Add {R} or {W}.)\nElegant Parlor enters the battlefield tapped.\nWhen Elegant Parlor enters the battlefield, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
+      "colors": [
+        "R",
+        "W"
+      ],
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 102,
+      "prices": {
+        "usd": "0.39",
+        "eur": "0.25"
+      }
+    },
+    {
+      "object": "card",
+      "id": "5260f8ae-805b-4eae-badf-62de0f768867",
+      "oracle_id": "ca4b6689-04ee-4227-9bdc-cb5a9590c745",
+      "name": "Hedge Maze",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/5260f8ae-805b-4eae-badf-62de0f768867",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/2/5260f8ae-805b-4eae-badf-62de0f768867.jpg?1705426640",
+        "normal": "https://cards.scryfall.io/normal/front/5/2/5260f8ae-805b-4eae-badf-62de0f768867.jpg?1705426640",
+        "png": "https://cards.scryfall.io/png/front/5/2/5260f8ae-805b-4eae-badf-62de0f768867.png?1705426640"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Forest Island",
+      "oracle_text": "({T}: Add {G} or {U}.)\nHedge Maze enters the battlefield tapped.\nWhen Hedge Maze enters the battlefield, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
+      "colors": [
+        "G",
+        "U"
+      ],
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 103,
+      "prices": {
+        "usd": "0.39",
+        "eur": "0.25"
+      }
+    },
+    {
+      "object": "card",
+      "id": "c17816e8-28b1-4295-a637-efb0e5c18873",
+      "oracle_id": "d51831b1-7394-456e-a1de-6787a59f5932",
+      "name": "Lush Portico",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/c17816e8-28b1-4295-a637-efb0e5c18873",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/1/c17816e8-28b1-4295-a637-efb0e5c18873.jpg?1705427741",
+        "normal": "https://cards.scryfall.io/normal/front/c/1/c17816e8-28b1-4295-a637-efb0e5c18873.jpg?1705427741",
+        "png": "https://cards.scryfall.io/png/front/c/1/c17816e8-28b1-4295-a637-efb0e5c18873.png?1705427741"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Forest Plains",
+      "oracle_text": "({T}: Add {G} or {W}.)\nLush Portico enters the battlefield tapped.\nWhen Lush Portico enters the battlefield, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
+      "colors": [
+        "G",
+        "W"
+      ],
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 104,
+      "prices": {
+        "usd": "0.39",
+        "eur": "0.25"
+      }
+    },
+    {
+      "object": "card",
+      "id": "652236c2-84ef-45e4-b5fc-ed6170bc3d6c",
+      "oracle_id": "ccfb8b4d-651c-418a-aa19-cb23105b3f2f",
+      "name": "Meticulous Archive",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/652236c2-84ef-45e4-b5fc-ed6170bc3d6c",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/5/652236c2-84ef-45e4-b5fc-ed6170bc3d6c.jpg?1705428237",
+        "normal": "https://cards.scryfall.io/normal/front/6/5/652236c2-84ef-45e4-b5fc-ed6170bc3d6c.jpg?1705428237",
+        "png": "https://cards.scryfall.io/png/front/6/5/652236c2-84ef-45e4-b5fc-ed6170bc3d6c.png?1705428237"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Plains Island",
+      "oracle_text": "({T}: Add {W} or {U}.)\nMeticulous Archive enters the battlefield tapped.\nWhen Meticulous Archive enters the battlefield, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
+      "colors": [
+        "U",
+        "W"
+      ],
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 105,
+      "prices": {
+        "usd": "0.39",
+        "eur": "0.25"
+      }
+    },
+    {
+      "object": "card",
+      "id": "1f8b915f-3e82-4b05-b963-01ebff7a8f7b",
+      "oracle_id": "de5b995c-9691-4555-9070-66bcbc29f955",
+      "name": "Public Thoroughfare",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/1f8b915f-3e82-4b05-b963-01ebff7a8f7b",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/f/1f8b915f-3e82-4b05-b963-01ebff7a8f7b.jpg?1705428476",
+        "normal": "https://cards.scryfall.io/normal/front/1/f/1f8b915f-3e82-4b05-b963-01ebff7a8f7b.jpg?1705428476",
+        "png": "https://cards.scryfall.io/png/front/1/f/1f8b915f-3e82-4b05-b963-01ebff7a8f7b.png?1705428476"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Public Thoroughfare enters the battlefield tapped.\nWhen Public Thoroughfare enters the battlefield, sacrifice it unless you tap an untapped artifact or land you control.\n{T}: Add one mana of any color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 106,
+      "prices": {
+        "usd": "0.39",
+        "eur": "0.25"
+      }
+    },
+    {
+      "object": "card",
+      "id": "b598c93e-dae1-4d71-a9e4-917abf76d2d0",
+      "oracle_id": "04e5e84f-8fd4-43ab-8f9d-5b24646f7ae5",
+      "name": "Raucous Theater",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/b598c93e-dae1-4d71-a9e4-917abf76d2d0",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/5/b598c93e-dae1-4d71-a9e4-917abf76d2d0.jpg?1705428509",
+        "normal": "https://cards.scryfall.io/normal/front/b/5/b598c93e-dae1-4d71-a9e4-917abf76d2d0.jpg?1705428509",
+        "png": "https://cards.scryfall.io/png/front/b/5/b598c93e-dae1-4d71-a9e4-917abf76d2d0.png?1705428509"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Mountain",
+      "oracle_text": "({T}: Add {B} or {R}.)\nRaucous Theater enters the battlefield tapped.\nWhen Raucous Theater enters the battlefield, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
+      "colors": [
+        "B",
+        "R"
+      ],
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [
+        "B",
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 107,
+      "prices": {
+        "usd": "0.39",
+        "eur": "0.25"
+      }
+    },
+    {
+      "object": "card",
+      "id": "de039992-631b-4feb-a522-acdb0a6d1f26",
+      "oracle_id": "ba11a517-1dbd-4797-9f5e-46ce0f6c77c0",
+      "name": "Scene of the Crime",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/de039992-631b-4feb-a522-acdb0a6d1f26",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/e/de039992-631b-4feb-a522-acdb0a6d1f26.jpg?1705428615",
+        "normal": "https://cards.scryfall.io/normal/front/d/e/de039992-631b-4feb-a522-acdb0a6d1f26.jpg?1705428615",
+        "png": "https://cards.scryfall.io/png/front/d/e/de039992-631b-4feb-a522-acdb0a6d1f26.png?1705428615"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Artifact Land — Clue",
+      "oracle_text": "Scene of the Crime enters the battlefield tapped.\n{T}: Add {C}.\n{T}, Tap an untapped creature you control: Add one mana of any color.\n{2}, Sacrifice Scene of the Crime: Draw a card.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 108,
+      "prices": {
+        "usd": "0.39",
+        "eur": "0.25"
+      }
+    },
+    {
+      "object": "card",
+      "id": "69c1b656-1d67-499c-bf0f-417682a86c7d",
+      "oracle_id": "216a2a92-9ca3-4ca3-8af7-686c13b04290",
+      "name": "Shadowy Backstreet",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/69c1b656-1d67-499c-bf0f-417682a86c7d",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/9/69c1b656-1d67-499c-bf0f-417682a86c7d.jpg?1705428679",
+        "normal": "https://cards.scryfall.io/normal/front/6/9/69c1b656-1d67-499c-bf0f-417682a86c7d.jpg?1705428679",
+        "png": "https://cards.scryfall.io/png/front/6/9/69c1b656-1d67-499c-bf0f-417682a86c7d.png?1705428679"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Plains Swamp",
+      "oracle_text": "({T}: Add {W} or {B}.)\nShadowy Backstreet enters the battlefield tapped.\nWhen Shadowy Backstreet enters the battlefield, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
+      "colors": [
+        "B",
+        "W"
+      ],
+      "color_identity": [
+        "B",
+        "W"
+      ],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [
+        "B",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 109,
+      "prices": {
+        "usd": "0.39",
+        "eur": "0.25"
+      }
+    },
+    {
+      "object": "card",
+      "id": "17260fff-b239-4af4-9306-3236ae3fa5a5",
+      "oracle_id": "d2bcff58-7a8a-46ef-b6b3-39501d4c8e6e",
+      "name": "Thundering Falls",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/17260fff-b239-4af4-9306-3236ae3fa5a5",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/7/17260fff-b239-4af4-9306-3236ae3fa5a5.jpg?1705429688",
+        "normal": "https://cards.scryfall.io/normal/front/1/7/17260fff-b239-4af4-9306-3236ae3fa5a5.jpg?1705429688",
+        "png": "https://cards.scryfall.io/png/front/1/7/17260fff-b239-4af4-9306-3236ae3fa5a5.png?1705429688"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Island Mountain",
+      "oracle_text": "({T}: Add {U} or {R}.)\nThundering Falls enters the battlefield tapped.\nWhen Thundering Falls enters the battlefield, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
+      "colors": [
+        "R",
+        "U"
+      ],
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 110,
+      "prices": {
+        "usd": "0.39",
+        "eur": "0.25"
+      }
+    },
+    {
+      "object": "card",
+      "id": "f6ca59cd-8779-4a84-a54b-e863b79c61f0",
+      "oracle_id": "840119bf-e60f-4ff7-9c9b-d420d09df545",
+      "name": "Underground Mortuary",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/f6ca59cd-8779-4a84-a54b-e863b79c61f0",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/6/f6ca59cd-8779-4a84-a54b-e863b79c61f0.jpg?1705429946",
+        "normal": "https://cards.scryfall.io/normal/front/f/6/f6ca59cd-8779-4a84-a54b-e863b79c61f0.jpg?1705429946",
+        "png": "https://cards.scryfall.io/png/front/f/6/f6ca59cd-8779-4a84-a54b-e863b79c61f0.png?1705429946"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Forest",
+      "oracle_text": "({T}: Add {B} or {G}.)\nUnderground Mortuary enters the battlefield tapped.\nWhen Underground Mortuary enters the battlefield, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)",
+      "colors": [
+        "B",
+        "G"
+      ],
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "predh": "legal"
+      },
+      "edhrec_rank": 111,
+      "prices": {
+        "usd": "0.39",
+        "eur": "0.25"
+      }
+    },
     {
       "object": "card",
       "id": "25ac5405-df7b-4097-914a-022cb18e20d4",

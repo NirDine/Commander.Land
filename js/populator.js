@@ -296,7 +296,7 @@ const updateMobileColorFilters = () => {
 // Check if the data is already stored in localStorage
 const storedData = localStorage.getItem('landsData');
 const storedVersion = localStorage.getItem('landsDataVersion');
-const currentVersion = '1.6'; // Replace with the current version of the JSON data
+const currentVersion = '1.7'; // Replace with the current version of the JSON data
 
 if (!storedVersion) {
     console.log('No data found.');

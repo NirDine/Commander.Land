@@ -206,16 +206,23 @@ if (storedResponseData) {
     const nonLandManaProducers = responseData.filter(card => 
       card.produced_mana && card.cmc <= 3 && !card.type_line.includes("Land")
     ).length;
+    
+    const cantrips = responseData.filter(card => 
+      (card.oracle_text.includes("Draw") || card.oracle_text.includes("draw")) &&
+      card.cmc <= 3 && 
+      !card.type_line.includes("Land")
+    ).length;
 
   // Calculate the recommendedLandCount using the formula
-  let recommendedLandCount = 31.42 + (3.13 * averageCmc) - (0.28 * nonLandManaProducers);
+  let recommendedLandCount = 31.42 + (3.13 * averageCmc) - (0.28 * (nonLandManaProducers + cantrips));
   recommendedLandCount = Math.round(recommendedLandCount);
   $(`.totalCards .total`).text(recommendedLandCount).addClass('hasUserData');
   $(`.recommended .manaProducers`).text('(' + nonLandManaProducers + ')');  
   $(`.recommended .recommendedLandCount`).text(recommendedLandCount);
  console.log('Average CMC:', averageCmc);
- console.log('Non-Land Mana Producers (1-3 CMC):', nonLandManaProducers);
- console.log('Recommended Land Count:', recommendedLandCount);
+ console.log('Non-Land mana producers (1-3 CMC):', nonLandManaProducers);
+ console.log('Card draw (1-3 CMC):',  cantrips);
+ console.log('Recommended land count:', recommendedLandCount);
 } else {
   console.log('responseData not found in localStorage');
 }

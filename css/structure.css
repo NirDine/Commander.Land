@@ -985,7 +985,7 @@ mark {
 }
 
 .card.selected::after {
-  content: "✔";
+  content: "\2713";
   display: flex;
   position: absolute;
   justify-content: center;

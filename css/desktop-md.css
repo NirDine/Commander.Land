@@ -52,7 +52,7 @@
       width: 11em;
     padding: 0px 20px;
    
-      background-image: url(/img/logos/logo.svg);
+      background-image: url(../img/logos/logo.svg);
     }
 
   body.active .logo {

@@ -59,7 +59,7 @@ strong {
   --mainBG: #2e2e3a;
   --selection: ;
   --dark: #1d1f21;
-  --bg-art: url(/img/art/bg2.webp);
+  --bg-art: url(../img/art/bg2.webp);
   --discord: #5865f2;
   --patreon: #ff424d;
 
@@ -103,7 +103,7 @@ body::before {
   top: 0px;
   width: 100%;
   z-index: -1;
-  background-image: url(/img/lines.svg);
+  background-image: url(../img/lines.svg);
   background-size: 8px;
   background-position: center center;
   background-repeat: repeat;
@@ -119,14 +119,14 @@ p a {
 
 .logo:focus-visible,
 .logo:hover {
-    background-image: url(/img/logos/logo-mobile-hover.svg);
+    background-image: url(../img/logos/logo-mobile-hover.svg);
 }
 
 @media only screen and (min-width: 1200px) {
 
 .logo:focus-visible,
 .logo:hover {
-    background-image: url(/img/logos/logo-colors.svg);
+    background-image: url(../img/logos/logo-colors.svg);
 }
 
 }

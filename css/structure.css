@@ -54,7 +54,7 @@ header {
   align-content: center;
   height: 2.5em;
   width: 2.5em;
-  background-image: url(/img/logos/logo-mobile.svg);
+  background-image: url(../img/logos/logo-mobile.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -71,7 +71,7 @@ body.active .logo {
   position: relative;
   width: 60px;
   height: 60px;
-  background: url(/img/buttons/menu.svg);
+  background: url(../img/buttons/menu.svg);
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center;
@@ -79,11 +79,11 @@ body.active .logo {
 }
 
 .navScrolled .toggle {
-  background-image: url(/img/buttons/menu-contrast.svg);
+  background-image: url(../img/buttons/menu-contrast.svg);
 }
 
 .toggle.active {
-  background: url(/img/buttons/close.svg);
+  background: url(../img/buttons/close.svg);
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
@@ -94,7 +94,7 @@ body.active .logo {
 }
 
 .navScrolled .toggle.active {
-  background-image: url(/img/buttons/close-contrast.svg);
+  background-image: url(../img/buttons/close-contrast.svg);
 }
 
 .menu {
@@ -850,7 +850,7 @@ mark {
     z-index: 3;
     -webkit-transform: translateZ(0.01px);
     transform: translateZ(0.01px);
-    background-image: url(/img/buttons/flip-dark.svg);
+    background-image: url(../img/buttons/flip-dark.svg);
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
@@ -894,7 +894,7 @@ mark {
     background: #000;
 }
 .flipped .flip-button  {
-    background-image: url(/img/buttons/flip.svg);
+    background-image: url(../img/buttons/flip.svg);
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
@@ -1063,7 +1063,7 @@ body.buffet:has(#cardHolderInput:checked) {
     position: absolute;
     right: 0em;
     top: 0.25em;
-    background-image: url(/img/buttons/close.svg);
+    background-image: url(../img/buttons/close.svg);
     background-repeat: no-repeat;
     background-position: 0px -8px;
     width: 16px;
@@ -1238,7 +1238,7 @@ gap: 10px;
 
 .chCardWrapper li::after {
     content: '';
-    background: url(/img/buttons/close-contrast.svg);
+    background: url(../img/buttons/close-contrast.svg);
     background-repeat: no-repeat;
     background-size: 15px;
     background-position: center;

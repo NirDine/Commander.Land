@@ -1,9 +1,1062 @@
 {
   "object": "list",
-  "total_cards": 1070,
-  "version": 1.7,
+  "total_cards": 1092,
+  "version": 1.8,
   "data": [
-	    {
+	      {
+      "object": "card",
+      "id": "19e96521-b4ce-4a36-a887-200e05ccc804",
+      "oracle_id": "ca7d093c-0533-493f-9ad3-8af30118fbfc",
+      "name": "Abraded Bluffs",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/19e96521-b4ce-4a36-a887-200e05ccc804",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/9/19e96521-b4ce-4a36-a887-200e05ccc804.jpg?1712356303",
+        "png": "https://cards.scryfall.io/png/front/1/9/19e96521-b4ce-4a36-a887-200e05ccc804.png?1712356303"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "Abraded Bluffs enters the battlefield tapped.\nWhen Abraded Bluffs enters the battlefield, it deals 1 damage to target opponent.\n{T}: Add {R} or {W}.",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "common",
+      "artist": "Piotr Dura",
+      "artist_ids": [
+        "aff176e8-1d15-432e-ad1d-207a474decba"
+      ],
+      "edhrec_rank": 19722,
+      "prices": {
+        "usd": "0.55"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "3f8c8fa2-12ab-4f6a-9f7a-2bc69e9ba024",
+      "oracle_id": "3be3d7e6-7860-438a-b8c8-ef154c18c163",
+      "name": "Arid Archway",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/3f8c8fa2-12ab-4f6a-9f7a-2bc69e9ba024",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/3/f/3f8c8fa2-12ab-4f6a-9f7a-2bc69e9ba024.jpg?1712356304",
+        "png": "https://cards.scryfall.io/png/front/3/f/3f8c8fa2-12ab-4f6a-9f7a-2bc69e9ba024.png?1712356304"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "Arid Archway enters the battlefield tapped.\nWhen Arid Archway enters the battlefield, return a land you control to its owner's hand. If another Desert was returned this way, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)\n{T}: Add {C}{C}.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "uncommon",
+      "artist": "Raymond Bonilla",
+      "artist_ids": [
+        "39fcaaac-bf5d-4c43-ae20-4cf4921a44fa"
+      ],
+      "edhrec_rank": 20218,
+      "prices": {
+        "usd": "0.34"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "d61dfeb7-7f6b-4601-8396-2cbb98165489",
+      "oracle_id": "9cbc9f83-8979-42a5-a466-a8d89c8e6de8",
+      "name": "Bristling Backwoods",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/d61dfeb7-7f6b-4601-8396-2cbb98165489",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/6/d61dfeb7-7f6b-4601-8396-2cbb98165489.jpg?1712356312",
+        "png": "https://cards.scryfall.io/png/front/d/6/d61dfeb7-7f6b-4601-8396-2cbb98165489.png?1712356312"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "Bristling Backwoods enters the battlefield tapped.\nWhen Bristling Backwoods enters the battlefield, it deals 1 damage to target opponent.\n{T}: Add {R} or {G}.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "common",
+      "artist": "Viko Menezes",
+      "artist_ids": [
+        "92dfef2a-d0fa-42fd-bdd6-bc4c9286cb56"
+      ],
+      "edhrec_rank": 20262,
+      "prices": {
+        "usd": "0.32"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "6c4f6b81-53d0-49fb-b404-c2ad67de7493",
+      "oracle_id": "8f5902bf-4bc4-4d0c-84ea-a425307a4eb2",
+      "name": "Bucolic Ranch",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/6c4f6b81-53d0-49fb-b404-c2ad67de7493",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/c/6c4f6b81-53d0-49fb-b404-c2ad67de7493.jpg?1712356362",
+        "png": "https://cards.scryfall.io/png/front/6/c/6c4f6b81-53d0-49fb-b404-c2ad67de7493.png?1712356362"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a Mount spell.\n{3}, {T}: Look at the top card of your library. If it's a Mount card, you may reveal it and put it into your hand. If you don't put it into your hand, you may put it on the bottom of your library.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "uncommon",
+      "artist": "Leonardo Borazio",
+      "artist_ids": [
+        "608e3b85-cdd3-4d1a-8a3a-7f1ed8856f6b"
+      ],
+      "edhrec_rank": 25383,
+      "prices": {
+        "usd": "0.70"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "5ffa48cc-b991-4d47-b7ec-cf678915c758",
+      "oracle_id": "37f924e1-7c25-4f06-88bb-054693a21e5a",
+      "name": "Conduit Pylons",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/5ffa48cc-b991-4d47-b7ec-cf678915c758",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/f/5ffa48cc-b991-4d47-b7ec-cf678915c758.jpg?1712356314",
+        "png": "https://cards.scryfall.io/png/front/5/f/5ffa48cc-b991-4d47-b7ec-cf678915c758.png?1712356314"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "When Conduit Pylons enters the battlefield, surveil 1. (Look at the top card of your library. You may put it into your graveyard.)\n{T}: Add {C}.\n{1}, {T}: Add one mana of any color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "common",
+      "artist": "Raymond Bonilla",
+      "artist_ids": [
+        "39fcaaac-bf5d-4c43-ae20-4cf4921a44fa"
+      ],
+      "edhrec_rank": 23353,
+      "prices": {
+        "usd": "0.28"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "c5523dac-7aa0-4486-89c8-3b22a1411f26",
+      "oracle_id": "c116b787-5f7e-47ef-a694-58709770dd32",
+      "name": "Creosote Heath",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/c5523dac-7aa0-4486-89c8-3b22a1411f26",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/5/c5523dac-7aa0-4486-89c8-3b22a1411f26.jpg?1712356321",
+        "png": "https://cards.scryfall.io/png/front/c/5/c5523dac-7aa0-4486-89c8-3b22a1411f26.png?1712356321"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "Creosote Heath enters the battlefield tapped.\nWhen Creosote Heath enters the battlefield, it deals 1 damage to target opponent.\n{T}: Add {G} or {W}.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "common",
+      "artist": "Leon Tukker",
+      "artist_ids": [
+        "669b8b90-758d-4f9e-b4f7-98cd6742eb97"
+      ],
+      "edhrec_rank": 20343,
+      "prices": {
+        "usd": "0.50"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "3e9bd49a-e9f1-4543-b04a-777a9e5a55ec",
+      "oracle_id": "88e29d50-1680-495d-be84-b92b4c9e636f",
+      "name": "Diamond City",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/3e9bd49a-e9f1-4543-b04a-777a9e5a55ec",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/3/e/3e9bd49a-e9f1-4543-b04a-777a9e5a55ec.jpg?1708742794",
+        "png": "https://cards.scryfall.io/png/front/3/e/3e9bd49a-e9f1-4543-b04a-777a9e5a55ec.png?1708742794"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Diamond City enters the battlefield with a shield counter on it. (If it would be dealt damage or destroyed, remove a shield counter from it instead.)\n{T}: Add {C}.\n{T}: Move a shield counter from Diamond City onto target creature. Activate only if two or more creatures entered the battlefield under your control this turn.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "pip",
+      "rarity": "rare",
+      "artist": "Pascal Quidault",
+      "artist_ids": [
+        "aabbf32e-5330-403a-8a99-a653c050e263"
+      ],
+      "edhrec_rank": 10268,
+      "prices": {
+        "usd": "1.10"
+      },
+      "related_uris": {
+        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=652234&printed=false"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "5c9d080f-28d7-41d6-a4e0-5b3e3a5ed770",
+      "oracle_id": "852c6520-d148-4923-a312-05a9af821f24",
+      "name": "Eroded Canyon",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/5c9d080f-28d7-41d6-a4e0-5b3e3a5ed770",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/c/5c9d080f-28d7-41d6-a4e0-5b3e3a5ed770.jpg?1712356324",
+        "png": "https://cards.scryfall.io/png/front/5/c/5c9d080f-28d7-41d6-a4e0-5b3e3a5ed770.png?1712356324"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "Eroded Canyon enters the battlefield tapped.\nWhen Eroded Canyon enters the battlefield, it deals 1 damage to target opponent.\n{T}: Add {U} or {R}.",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "common",
+      "artist": "Piotr Dura",
+      "artist_ids": [
+        "aff176e8-1d15-432e-ad1d-207a474decba"
+      ],
+      "edhrec_rank": 24177,
+      "prices": {
+        "usd": "0.51"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "4ad841eb-da0d-43d4-8b60-efe30922990b",
+      "oracle_id": "9d3b60af-3e38-4d36-95fc-11b31c38f955",
+      "name": "Festering Gulch",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/4ad841eb-da0d-43d4-8b60-efe30922990b",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/a/4ad841eb-da0d-43d4-8b60-efe30922990b.jpg?1712356329",
+        "png": "https://cards.scryfall.io/png/front/4/a/4ad841eb-da0d-43d4-8b60-efe30922990b.png?1712356329"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "Festering Gulch enters the battlefield tapped.\nWhen Festering Gulch enters the battlefield, it deals 1 damage to target opponent.\n{T}: Add {B} or {G}.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "common",
+      "artist": "Daniel Romanovsky",
+      "artist_ids": [
+        "878a38c8-617b-4c02-9b93-719c19413490"
+      ],
+      "edhrec_rank": 25612,
+      "prices": {
+        "usd": "0.55"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "a5433b98-4657-4bbe-9e72-d3c94c6aa8ef",
+      "oracle_id": "622a53bd-d894-422c-a606-7126041afa02",
+      "name": "Fomori Vault",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/a5433b98-4657-4bbe-9e72-d3c94c6aa8ef",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/a/5/a5433b98-4657-4bbe-9e72-d3c94c6aa8ef.jpg?1712352986",
+        "png": "https://cards.scryfall.io/png/front/a/5/a5433b98-4657-4bbe-9e72-d3c94c6aa8ef.png?1712352986"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{3}, {T}, Discard a card: Look at the top X cards of your library, where X is the number of artifacts you control. Put one of those cards into your hand and the rest on the bottom of your library in a random order.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "big",
+      "rarity": "mythic",
+      "artist": "Jonas De Ro",
+      "artist_ids": [
+        "561ebf9e-8d93-4b57-8156-8826d0c19601"
+      ],
+      "edhrec_rank": 26128,
+      "prices": {
+        "usd": "12.37"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "963c100e-4e12-438f-b5ae-14391406dff6",
+      "oracle_id": "ebb3e2ff-2214-4e11-88fb-e0fa84288cf1",
+      "name": "Forlorn Flats",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/963c100e-4e12-438f-b5ae-14391406dff6",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/6/963c100e-4e12-438f-b5ae-14391406dff6.jpg?1712356332",
+        "png": "https://cards.scryfall.io/png/front/9/6/963c100e-4e12-438f-b5ae-14391406dff6.png?1712356332"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "Forlorn Flats enters the battlefield tapped.\nWhen Forlorn Flats enters the battlefield, it deals 1 damage to target opponent.\n{T}: Add {W} or {B}.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "common",
+      "artist": "Robin Olausson",
+      "artist_ids": [
+        "adb9ad6d-6173-454b-8b50-a102b182548b"
+      ],
+      "edhrec_rank": 26162,
+      "prices": {
+        "usd": "0.57"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "4102d28e-437b-440b-bf9b-8b4f6fb85a6c",
+      "oracle_id": "cfb1a656-0bf1-484d-b099-33087914250b",
+      "name": "HELIOS One",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/4102d28e-437b-440b-bf9b-8b4f6fb85a6c",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/1/4102d28e-437b-440b-bf9b-8b4f6fb85a6c.jpg?1708742801",
+        "png": "https://cards.scryfall.io/png/front/4/1/4102d28e-437b-440b-bf9b-8b4f6fb85a6c.png?1708742801"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{1}, {T}: You get {E} (an energy counter).\n{3}, {T}, Pay X {E}, Sacrifice HELIOS One: Destroy target nonland permanent with mana value X. Activate only as a sorcery.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "2a794202-875f-4397-a8de-9722c8d78448",
+          "component": "combo_piece",
+          "name": "Energy Reserve",
+          "type_line": "Card",
+          "uri": "https://api.scryfall.com/cards/2a794202-875f-4397-a8de-9722c8d78448"
+        },
+        {
+          "object": "related_card",
+          "id": "3fcdab6a-2656-4515-baaa-47373253b6c8",
+          "component": "combo_piece",
+          "name": "HELIOS One",
+          "type_line": "Land",
+          "uri": "https://api.scryfall.com/cards/3fcdab6a-2656-4515-baaa-47373253b6c8"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "pip",
+      "rarity": "rare",
+      "artist": "Brian Valeza",
+      "artist_ids": [
+        "bb2a9339-bbe4-445f-9736-3c43379ee076"
+      ],
+      "edhrec_rank": 12067,
+      "prices": {
+        "usd": "0.13"
+      },
+      "related_uris": {
+        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=652236&printed=false"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "5d809f5b-d965-4cb1-a9f8-2048f8534373",
+      "oracle_id": "64ee02f1-afdb-474b-a893-31538ad7219a",
+      "name": "Jagged Barrens",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/5d809f5b-d965-4cb1-a9f8-2048f8534373",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/d/5d809f5b-d965-4cb1-a9f8-2048f8534373.jpg?1712356337",
+        "png": "https://cards.scryfall.io/png/front/5/d/5d809f5b-d965-4cb1-a9f8-2048f8534373.png?1712356337"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "Jagged Barrens enters the battlefield tapped.\nWhen Jagged Barrens enters the battlefield, it deals 1 damage to target opponent.\n{T}: Add {B} or {R}.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "R"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "common",
+      "artist": "Leonardo Borazio",
+      "artist_ids": [
+        "608e3b85-cdd3-4d1a-8a3a-7f1ed8856f6b"
+      ],
+      "edhrec_rank": 23667,
+      "prices": {
+        "usd": "0.51"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "5e24c687-f070-469d-a09d-acf4ac6ed374",
+      "oracle_id": "c470a802-931f-4b63-92fd-ef9cf2e796dd",
+      "name": "Junktown",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/5e24c687-f070-469d-a09d-acf4ac6ed374",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/e/5e24c687-f070-469d-a09d-acf4ac6ed374.jpg?1708742803",
+        "png": "https://cards.scryfall.io/png/front/5/e/5e24c687-f070-469d-a09d-acf4ac6ed374.png?1708742803"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{4}{R}, {T}, Sacrifice Junktown: Create three Junk tokens. (They're artifacts with \"{T}, Sacrifice this artifact: Exile the top card of your library. You may play that card this turn. Activate only as a sorcery.\")",
+      "colors": [],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "62c4a6f6-6425-4c0c-b35a-880fcab42aad",
+          "component": "token",
+          "name": "Junk",
+          "type_line": "Token Artifact — Junk",
+          "uri": "https://api.scryfall.com/cards/62c4a6f6-6425-4c0c-b35a-880fcab42aad"
+        },
+        {
+          "object": "related_card",
+          "id": "fe44c048-7b6b-442f-a389-f633d752d08e",
+          "component": "combo_piece",
+          "name": "Junktown",
+          "type_line": "Land",
+          "uri": "https://api.scryfall.com/cards/fe44c048-7b6b-442f-a389-f633d752d08e"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "pip",
+      "rarity": "rare",
+      "artist": "Calder Moore",
+      "artist_ids": [
+        "af6862b1-2e08-445f-b709-37ef4c00c4db"
+      ],
+      "edhrec_rank": 13853,
+      "prices": {
+        "usd": "0.18"
+      },
+      "related_uris": {
+        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=652237&printed=false"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "4b778b63-e5fc-4d63-a93b-4372f32cade2",
+      "oracle_id": "36508a8a-d1a4-400e-bfda-09436bc4d5d4",
+      "name": "Lonely Arroyo",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/4b778b63-e5fc-4d63-a93b-4372f32cade2",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/b/4b778b63-e5fc-4d63-a93b-4372f32cade2.jpg?1712356340",
+        "png": "https://cards.scryfall.io/png/front/4/b/4b778b63-e5fc-4d63-a93b-4372f32cade2.png?1712356340"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "Lonely Arroyo enters the battlefield tapped.\nWhen Lonely Arroyo enters the battlefield, it deals 1 damage to target opponent.\n{T}: Add {W} or {U}.",
+      "colors": [],
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "common",
+      "artist": "Josu Hernaiz",
+      "artist_ids": [
+        "74246024-92b4-43d0-a5af-a3f9f2a35d5f"
+      ],
+      "edhrec_rank": 26334,
+      "prices": {
+        "usd": "0.54"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "988e44c5-4632-4ebb-b6ae-c3886e49d637",
+      "oracle_id": "b6a965eb-cffb-41c1-925a-7cf3e8e2f248",
+      "name": "Lush Oasis",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/988e44c5-4632-4ebb-b6ae-c3886e49d637",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/8/988e44c5-4632-4ebb-b6ae-c3886e49d637.jpg?1712356345",
+        "png": "https://cards.scryfall.io/png/front/9/8/988e44c5-4632-4ebb-b6ae-c3886e49d637.png?1712356345"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "Lush Oasis enters the battlefield tapped.\nWhen Lush Oasis enters the battlefield, it deals 1 damage to target opponent.\n{T}: Add {G} or {U}.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "common",
+      "artist": "Piotr Dura",
+      "artist_ids": [
+        "aff176e8-1d15-432e-ad1d-207a474decba"
+      ],
+      "edhrec_rank": 25529,
+      "prices": {
+        "usd": "0.50"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "cd7be9d4-f9fa-44a3-9902-7e9e226ccf56",
+      "oracle_id": "f1e03d99-024a-430b-9342-ffd2268bd103",
+      "name": "Mariposa Military Base",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/cd7be9d4-f9fa-44a3-9902-7e9e226ccf56",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/d/cd7be9d4-f9fa-44a3-9902-7e9e226ccf56.jpg?1708742809",
+        "png": "https://cards.scryfall.io/png/front/c/d/cd7be9d4-f9fa-44a3-9902-7e9e226ccf56.png?1708742809"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "You may have Mariposa Military Base enter the battlefield tapped. If you do, you get two rad counters.\n{T}: Add {C}.\n{5}, {T}: Draw a card. This ability costs {1} less to activate for each rad counter you have.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "0886657d-afb0-4f1f-9af7-960724793077",
+          "component": "combo_piece",
+          "name": "Radiation",
+          "type_line": "Card",
+          "uri": "https://api.scryfall.com/cards/0886657d-afb0-4f1f-9af7-960724793077"
+        },
+        {
+          "object": "related_card",
+          "id": "2724c630-5638-4b6a-8f1e-0f764b11c8d8",
+          "component": "combo_piece",
+          "name": "Mariposa Military Base",
+          "type_line": "Land",
+          "uri": "https://api.scryfall.com/cards/2724c630-5638-4b6a-8f1e-0f764b11c8d8"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "pip",
+      "rarity": "rare",
+      "artist": "Alexander Forssberg",
+      "artist_ids": [
+        "85908891-3cc7-42b0-9b54-27ed0fe89c53"
+      ],
+      "edhrec_rank": 9732,
+      "prices": {
+        "usd": "0.16"
+      },
+      "related_uris": {
+        "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=652238&printed=false"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "c3d2e816-c06d-4c5d-98fe-c350d8cfab27",
+      "oracle_id": "e103f422-85c0-43f8-8a2f-8b7863e503fa",
+      "name": "Mirage Mesa",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/c3d2e816-c06d-4c5d-98fe-c350d8cfab27",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/3/c3d2e816-c06d-4c5d-98fe-c350d8cfab27.jpg?1712356348",
+        "png": "https://cards.scryfall.io/png/front/c/3/c3d2e816-c06d-4c5d-98fe-c350d8cfab27.png?1712356348"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "Mirage Mesa enters the battlefield tapped. As it enters, choose a color.\n{T}: Add one mana of the chosen color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "common",
+      "artist": "Andrew Mar",
+      "artist_ids": [
+        "adad79bf-cd52-456a-b170-740ed8bff0fc"
+      ],
+      "edhrec_rank": 23986,
+      "prices": {
+        "usd": "0.38"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "3ab4e0a4-2faf-456b-99e3-ee06c008538c",
+      "oracle_id": "de417a82-8f03-4d7e-aee7-48f7d7eba61a",
+      "name": "Sandstorm Verge",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/3ab4e0a4-2faf-456b-99e3-ee06c008538c",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/3/a/3ab4e0a4-2faf-456b-99e3-ee06c008538c.jpg?1712356353",
+        "png": "https://cards.scryfall.io/png/front/3/a/3ab4e0a4-2faf-456b-99e3-ee06c008538c.png?1712356353"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "{T}: Add {C}.\n{3}, {T}: Target creature can't block this turn. Activate only as a sorcery.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "uncommon",
+      "artist": "Jorge Jacinto",
+      "artist_ids": [
+        "05a3ac12-b25d-48e2-af5e-8a299fd3da14"
+      ],
+      "edhrec_rank": 22975,
+      "prices": {
+        "usd": "0.56"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "87870792-e429-4eba-8193-cdce5c7b6c55",
+      "oracle_id": "46a07b53-ff58-4bd6-80dd-ded2eb0e29a3",
+      "name": "Snow-Covered Wastes",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/87870792-e429-4eba-8193-cdce5c7b6c55",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/8/7/87870792-e429-4eba-8193-cdce5c7b6c55.jpg?1709152849",
+        "png": "https://cards.scryfall.io/png/front/8/7/87870792-e429-4eba-8193-cdce5c7b6c55.png?1709152849"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Basic Snow Land",
+      "oracle_text": "{T}: Add {C}.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "set": "mh3",
+      "rarity": "uncommon",
+      "artist": "Mark Poole",
+      "artist_ids": [
+        "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
+      ],
+      "prices": {
+        "usd": null
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "67daa31c-d9c4-4c22-b29c-1b8a17d577e5",
+      "oracle_id": "e579edd7-4f6c-4f22-a72f-0a20d7a698a2",
+      "name": "Soured Springs",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/67daa31c-d9c4-4c22-b29c-1b8a17d577e5",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/7/67daa31c-d9c4-4c22-b29c-1b8a17d577e5.jpg?1712356357",
+        "png": "https://cards.scryfall.io/png/front/6/7/67daa31c-d9c4-4c22-b29c-1b8a17d577e5.png?1712356357"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "Soured Springs enters the battlefield tapped.\nWhen Soured Springs enters the battlefield, it deals 1 damage to target opponent.\n{T}: Add {U} or {B}.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "U"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "otj",
+      "rarity": "common",
+      "artist": "Leonardo Borazio",
+      "artist_ids": [
+        "608e3b85-cdd3-4d1a-8a3a-7f1ed8856f6b"
+      ],
+      "edhrec_rank": 24959,
+      "prices": {
+        "usd": "0.59"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "962552a1-ec34-49e2-a23d-85dfb405d5e0",
+      "oracle_id": "b0be3f25-edb1-4299-959c-9aad909730ca",
+      "name": "Tarnation Vista",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/962552a1-ec34-49e2-a23d-85dfb405d5e0",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/6/962552a1-ec34-49e2-a23d-85dfb405d5e0.jpg?1712352996",
+        "png": "https://cards.scryfall.io/png/front/9/6/962552a1-ec34-49e2-a23d-85dfb405d5e0.png?1712352996"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Tarnation Vista enters the battlefield tapped. As it enters, choose a color.\n{T}: Add one mana of the chosen color.\n{1}, {T}: For each color among monocolored permanents you control, add one mana of that color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "set": "big",
+      "rarity": "mythic",
+      "artist": "Alayna Danner",
+      "artist_ids": [
+        "bb677b1a-ce51-4888-83d6-5a94de461ff9"
+      ],
+      "edhrec_rank": 26726,
+      "prices": {
+        "usd": "17.10"
+      },
+      "properties": []
+    },
+	{
       "object": "card",
       "id": "73a8169f-b858-47a5-9c76-2e7c50ad4ecd",
       "oracle_id": "7a30316b-dcd5-4a4b-b959-eecde7ca92e7",

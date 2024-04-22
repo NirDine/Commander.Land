@@ -1,7 +1,7 @@
 {
   "object": "list",
   "total_cards": 1092,
-  "version": 1.8,
+  "version": 1.9,
   "data": [
 	      {
       "object": "card",
@@ -20879,9 +20879,9 @@
       "multiverse_ids": [],
       "name": "Inventors' Fair",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/f/9/f917de1f-76f1-4859-a9f3-bcda6a9ca130.jpg?1661583450",
-        "normal": "https://cards.scryfall.io/normal/front/f/9/f917de1f-76f1-4859-a9f3-bcda6a9ca130.jpg?1661583450",
-        "png": "https://cards.scryfall.io/png/front/f/9/f917de1f-76f1-4859-a9f3-bcda6a9ca130.png?1661583450"
+        "small": "https://cards.scryfall.io/small/front/2/7/275471e3-ded1-40ac-91ef-369dce5764d9.jpg?1576383555",
+        "normal": "https://cards.scryfall.io/normal/front/2/7/275471e3-ded1-40ac-91ef-369dce5764d9.jpg?1576383555",
+        "png": "https://cards.scryfall.io/png/front/2/7/275471e3-ded1-40ac-91ef-369dce5764d9.png?1576383555"
       },
       "mana_cost": "",
       "cmc": 0,

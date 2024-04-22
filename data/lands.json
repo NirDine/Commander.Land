@@ -1,7 +1,7 @@
 {
   "object": "list",
   "total_cards": 1092,
-  "version": 1.9,
+  "version": 1.11,
   "data": [
 	      {
       "object": "card",
@@ -12,6 +12,7 @@
       "uri": "https://api.scryfall.com/cards/19e96521-b4ce-4a36-a887-200e05ccc804",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/1/9/19e96521-b4ce-4a36-a887-200e05ccc804.jpg?1712356303",
+        "normal": "https://cards.scryfall.io/normal/front/1/9/19e96521-b4ce-4a36-a887-200e05ccc804.jpg?1712356303",
         "png": "https://cards.scryfall.io/png/front/1/9/19e96521-b4ce-4a36-a887-200e05ccc804.png?1712356303"
       },
       "mana_cost": "",
@@ -57,8 +58,9 @@
       "lang": "en",
       "uri": "https://api.scryfall.com/cards/3f8c8fa2-12ab-4f6a-9f7a-2bc69e9ba024",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/3/f/3f8c8fa2-12ab-4f6a-9f7a-2bc69e9ba024.jpg?1712356304",
-        "png": "https://cards.scryfall.io/png/front/3/f/3f8c8fa2-12ab-4f6a-9f7a-2bc69e9ba024.png?1712356304"
+        "small": "https://cards.scryfall.io/small/front/3/f/3f8c8fa2-12ab-4f6a-9f7a-2bc69e9ba024.jpg?1713223021",
+        "normal": "https://cards.scryfall.io/normal/front/3/f/3f8c8fa2-12ab-4f6a-9f7a-2bc69e9ba024.jpg?1713223021",
+        "png": "https://cards.scryfall.io/png/front/3/f/3f8c8fa2-12ab-4f6a-9f7a-2bc69e9ba024.png?1713223021"
       },
       "mana_cost": "",
       "cmc": 0,
@@ -102,6 +104,7 @@
       "uri": "https://api.scryfall.com/cards/d61dfeb7-7f6b-4601-8396-2cbb98165489",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/d/6/d61dfeb7-7f6b-4601-8396-2cbb98165489.jpg?1712356312",
+        "normal": "https://cards.scryfall.io/normal/front/d/6/d61dfeb7-7f6b-4601-8396-2cbb98165489.jpg?1712356312",
         "png": "https://cards.scryfall.io/png/front/d/6/d61dfeb7-7f6b-4601-8396-2cbb98165489.png?1712356312"
       },
       "mana_cost": "",
@@ -148,6 +151,7 @@
       "uri": "https://api.scryfall.com/cards/6c4f6b81-53d0-49fb-b404-c2ad67de7493",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/6/c/6c4f6b81-53d0-49fb-b404-c2ad67de7493.jpg?1712356362",
+        "normal": "https://cards.scryfall.io/normal/front/6/c/6c4f6b81-53d0-49fb-b404-c2ad67de7493.jpg?1712356362",
         "png": "https://cards.scryfall.io/png/front/6/c/6c4f6b81-53d0-49fb-b404-c2ad67de7493.png?1712356362"
       },
       "mana_cost": "",
@@ -195,6 +199,7 @@
       "uri": "https://api.scryfall.com/cards/5ffa48cc-b991-4d47-b7ec-cf678915c758",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/5/f/5ffa48cc-b991-4d47-b7ec-cf678915c758.jpg?1712356314",
+        "normal": "https://cards.scryfall.io/normal/front/5/f/5ffa48cc-b991-4d47-b7ec-cf678915c758.jpg?1712356314",
         "png": "https://cards.scryfall.io/png/front/5/f/5ffa48cc-b991-4d47-b7ec-cf678915c758.png?1712356314"
       },
       "mana_cost": "",
@@ -244,6 +249,7 @@
       "uri": "https://api.scryfall.com/cards/c5523dac-7aa0-4486-89c8-3b22a1411f26",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/c/5/c5523dac-7aa0-4486-89c8-3b22a1411f26.jpg?1712356321",
+        "normal": "https://cards.scryfall.io/normal/front/c/5/c5523dac-7aa0-4486-89c8-3b22a1411f26.jpg?1712356321",
         "png": "https://cards.scryfall.io/png/front/c/5/c5523dac-7aa0-4486-89c8-3b22a1411f26.png?1712356321"
       },
       "mana_cost": "",
@@ -290,6 +296,7 @@
       "uri": "https://api.scryfall.com/cards/3e9bd49a-e9f1-4543-b04a-777a9e5a55ec",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/3/e/3e9bd49a-e9f1-4543-b04a-777a9e5a55ec.jpg?1708742794",
+        "normal": "https://cards.scryfall.io/normal/front/3/e/3e9bd49a-e9f1-4543-b04a-777a9e5a55ec.jpg?1708742794",
         "png": "https://cards.scryfall.io/png/front/3/e/3e9bd49a-e9f1-4543-b04a-777a9e5a55ec.png?1708742794"
       },
       "mana_cost": "",
@@ -335,6 +342,7 @@
       "uri": "https://api.scryfall.com/cards/5c9d080f-28d7-41d6-a4e0-5b3e3a5ed770",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/5/c/5c9d080f-28d7-41d6-a4e0-5b3e3a5ed770.jpg?1712356324",
+        "normal": "https://cards.scryfall.io/normal/front/5/c/5c9d080f-28d7-41d6-a4e0-5b3e3a5ed770.jpg?1712356324",
         "png": "https://cards.scryfall.io/png/front/5/c/5c9d080f-28d7-41d6-a4e0-5b3e3a5ed770.png?1712356324"
       },
       "mana_cost": "",
@@ -381,6 +389,7 @@
       "uri": "https://api.scryfall.com/cards/4ad841eb-da0d-43d4-8b60-efe30922990b",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/4/a/4ad841eb-da0d-43d4-8b60-efe30922990b.jpg?1712356329",
+        "normal": "https://cards.scryfall.io/normal/front/4/a/4ad841eb-da0d-43d4-8b60-efe30922990b.jpg?1712356329",
         "png": "https://cards.scryfall.io/png/front/4/a/4ad841eb-da0d-43d4-8b60-efe30922990b.png?1712356329"
       },
       "mana_cost": "",
@@ -427,6 +436,7 @@
       "uri": "https://api.scryfall.com/cards/a5433b98-4657-4bbe-9e72-d3c94c6aa8ef",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/a/5/a5433b98-4657-4bbe-9e72-d3c94c6aa8ef.jpg?1712352986",
+        "normal": "https://cards.scryfall.io/normal/front/a/5/a5433b98-4657-4bbe-9e72-d3c94c6aa8ef.jpg?1712352986",
         "png": "https://cards.scryfall.io/png/front/a/5/a5433b98-4657-4bbe-9e72-d3c94c6aa8ef.png?1712352986"
       },
       "mana_cost": "",
@@ -469,6 +479,7 @@
       "uri": "https://api.scryfall.com/cards/963c100e-4e12-438f-b5ae-14391406dff6",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/9/6/963c100e-4e12-438f-b5ae-14391406dff6.jpg?1712356332",
+        "normal": "https://cards.scryfall.io/normal/front/9/6/963c100e-4e12-438f-b5ae-14391406dff6.jpg?1712356332",
         "png": "https://cards.scryfall.io/png/front/9/6/963c100e-4e12-438f-b5ae-14391406dff6.png?1712356332"
       },
       "mana_cost": "",
@@ -515,6 +526,7 @@
       "uri": "https://api.scryfall.com/cards/4102d28e-437b-440b-bf9b-8b4f6fb85a6c",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/4/1/4102d28e-437b-440b-bf9b-8b4f6fb85a6c.jpg?1708742801",
+        "normal": "https://cards.scryfall.io/normal/front/4/1/4102d28e-437b-440b-bf9b-8b4f6fb85a6c.jpg?1708742801",
         "png": "https://cards.scryfall.io/png/front/4/1/4102d28e-437b-440b-bf9b-8b4f6fb85a6c.png?1708742801"
       },
       "mana_cost": "",
@@ -578,6 +590,7 @@
       "uri": "https://api.scryfall.com/cards/5d809f5b-d965-4cb1-a9f8-2048f8534373",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/5/d/5d809f5b-d965-4cb1-a9f8-2048f8534373.jpg?1712356337",
+        "normal": "https://cards.scryfall.io/normal/front/5/d/5d809f5b-d965-4cb1-a9f8-2048f8534373.jpg?1712356337",
         "png": "https://cards.scryfall.io/png/front/5/d/5d809f5b-d965-4cb1-a9f8-2048f8534373.png?1712356337"
       },
       "mana_cost": "",
@@ -624,6 +637,7 @@
       "uri": "https://api.scryfall.com/cards/5e24c687-f070-469d-a09d-acf4ac6ed374",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/5/e/5e24c687-f070-469d-a09d-acf4ac6ed374.jpg?1708742803",
+        "normal": "https://cards.scryfall.io/normal/front/5/e/5e24c687-f070-469d-a09d-acf4ac6ed374.jpg?1708742803",
         "png": "https://cards.scryfall.io/png/front/5/e/5e24c687-f070-469d-a09d-acf4ac6ed374.png?1708742803"
       },
       "mana_cost": "",
@@ -689,6 +703,7 @@
       "uri": "https://api.scryfall.com/cards/4b778b63-e5fc-4d63-a93b-4372f32cade2",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/4/b/4b778b63-e5fc-4d63-a93b-4372f32cade2.jpg?1712356340",
+        "normal": "https://cards.scryfall.io/normal/front/4/b/4b778b63-e5fc-4d63-a93b-4372f32cade2.jpg?1712356340",
         "png": "https://cards.scryfall.io/png/front/4/b/4b778b63-e5fc-4d63-a93b-4372f32cade2.png?1712356340"
       },
       "mana_cost": "",
@@ -735,6 +750,7 @@
       "uri": "https://api.scryfall.com/cards/988e44c5-4632-4ebb-b6ae-c3886e49d637",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/9/8/988e44c5-4632-4ebb-b6ae-c3886e49d637.jpg?1712356345",
+        "normal": "https://cards.scryfall.io/normal/front/9/8/988e44c5-4632-4ebb-b6ae-c3886e49d637.jpg?1712356345",
         "png": "https://cards.scryfall.io/png/front/9/8/988e44c5-4632-4ebb-b6ae-c3886e49d637.png?1712356345"
       },
       "mana_cost": "",
@@ -781,6 +797,7 @@
       "uri": "https://api.scryfall.com/cards/cd7be9d4-f9fa-44a3-9902-7e9e226ccf56",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/c/d/cd7be9d4-f9fa-44a3-9902-7e9e226ccf56.jpg?1708742809",
+        "normal": "https://cards.scryfall.io/normal/front/c/d/cd7be9d4-f9fa-44a3-9902-7e9e226ccf56.jpg?1708742809",
         "png": "https://cards.scryfall.io/png/front/c/d/cd7be9d4-f9fa-44a3-9902-7e9e226ccf56.png?1708742809"
       },
       "mana_cost": "",
@@ -844,6 +861,7 @@
       "uri": "https://api.scryfall.com/cards/c3d2e816-c06d-4c5d-98fe-c350d8cfab27",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/c/3/c3d2e816-c06d-4c5d-98fe-c350d8cfab27.jpg?1712356348",
+        "normal": "https://cards.scryfall.io/normal/front/c/3/c3d2e816-c06d-4c5d-98fe-c350d8cfab27.jpg?1712356348",
         "png": "https://cards.scryfall.io/png/front/c/3/c3d2e816-c06d-4c5d-98fe-c350d8cfab27.png?1712356348"
       },
       "mana_cost": "",
@@ -932,6 +950,7 @@
       "uri": "https://api.scryfall.com/cards/87870792-e429-4eba-8193-cdce5c7b6c55",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/8/7/87870792-e429-4eba-8193-cdce5c7b6c55.jpg?1709152849",
+        "normal": "https://cards.scryfall.io/normal/front/8/7/87870792-e429-4eba-8193-cdce5c7b6c55.jpg?1709152849",
         "png": "https://cards.scryfall.io/png/front/8/7/87870792-e429-4eba-8193-cdce5c7b6c55.png?1709152849"
       },
       "mana_cost": "",
@@ -973,6 +992,7 @@
       "uri": "https://api.scryfall.com/cards/67daa31c-d9c4-4c22-b29c-1b8a17d577e5",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/6/7/67daa31c-d9c4-4c22-b29c-1b8a17d577e5.jpg?1712356357",
+        "normal": "https://cards.scryfall.io/normal/front/6/7/67daa31c-d9c4-4c22-b29c-1b8a17d577e5.jpg?1712356357",
         "png": "https://cards.scryfall.io/png/front/6/7/67daa31c-d9c4-4c22-b29c-1b8a17d577e5.png?1712356357"
       },
       "mana_cost": "",
@@ -43914,9 +43934,9 @@
       "multiverse_ids": [],
       "name": "The World Tree",
       "image_uris": {
-        "small": "https://cards.scryfall.io/small/front/7/0/7008c605-e283-4fbe-9a05-c83ed462a151.jpg?1684198656",
-        "normal": "https://cards.scryfall.io/normal/front/7/0/7008c605-e283-4fbe-9a05-c83ed462a151.jpg?1684198656",
-        "png": "https://cards.scryfall.io/png/front/7/0/7008c605-e283-4fbe-9a05-c83ed462a151.png?1684198656"
+        "small": "https://cards.scryfall.io/small/front/a/7/a70cb6d9-3955-4064-917b-11dec26440c5.jpg?1631053286",
+        "normal": "https://cards.scryfall.io/normal/front/a/7/a70cb6d9-3955-4064-917b-11dec26440c5.jpg?1631053286",
+        "png": "https://cards.scryfall.io/png/front/a/7/a70cb6d9-3955-4064-917b-11dec26440c5.png?1631053286"
       },
       "mana_cost": "",
       "cmc": 0,

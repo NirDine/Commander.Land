@@ -202,26 +202,36 @@ if (storedResponseData) {
   const totalCmc = responseData.reduce((sum, card) => sum + card.cmc, 0);
   const averageCmc = totalCmc / cardCount;
 
+ // Count the number of unique non-land cards in the user's list
+  const NonLandCardsTotal = responseData.filter(card => 
+      !card.type_line.includes("Land")
+    ).length;
+    
   // Count the number of cards with non-zero produced_mana value and cmc between 1 and 3 (inclusive)
     const nonLandManaProducers = responseData.filter(card => 
       card.produced_mana && card.cmc <= 3 && !card.type_line.includes("Land")
     ).length;
     
+   // Count the number of cards that draw cards with cmc between 1 and 3 (inclusive)
     const cantrips = responseData.filter(card => 
       (card.oracle_text.includes("Draw") || card.oracle_text.includes("draw")) &&
       card.cmc <= 3 && 
       !card.type_line.includes("Land")
     ).length;
 
-    const NonLandCardsTotal = responseData.filter(card => 
+    // Count the number of cards that put lands into play with cmc between 1 and 3 (inclusive)
+    const ramp = responseData.filter(card => 
+      (card.cmc <= 3 &&
+      card.oracle_text.includes("land")) && 
+      card.oracle_text.includes("onto")) && card.oracle_text.includes("battlefield")) &&
       !card.type_line.includes("Land")
     ).length;
     
   // Calculate the recommendedLandCount using the formula
-  let recommendedLandCount = 31.42 + (3.13 * averageCmc) - (0.28 * (nonLandManaProducers + cantrips));
+  let recommendedLandCount = 31.42 + (3.13 * averageCmc) - (0.28 * (nonLandManaProducers + cantrips + ramp));
   recommendedLandCount = Math.round(recommendedLandCount);
   $(`.totalCards .total`).text(recommendedLandCount).addClass('hasUserData');
-  $(`.recommended .manaProducers`).text('(' + nonLandManaProducers + ')');  
+  $(`.recommended .manaProducers`).text('(' + nonLandManaProducers + ramp + ')');  
   $(`.recommended .recommendedLandCount`).text(recommendedLandCount);
   $(`.recommended .recommendedTotalCards`).text('(' + NonLandCardsTotal + ')');
  console.log('Average CMC:', averageCmc);

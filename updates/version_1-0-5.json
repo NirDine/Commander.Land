@@ -1,0 +1,9 @@
+{
+    "title": "Version 1.0.5",
+    "paragraph": "",
+    "changes": [
+        "Added cards that search for lands to non-land mana producers (like Rampant Growth)",
+		"Reduced mana requriments by 25% to make the data given to the user more actionable",
+		"Added some missing lands"
+    ]
+}

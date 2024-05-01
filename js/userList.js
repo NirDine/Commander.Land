@@ -219,6 +219,7 @@ if (storedResponseData) {
   $(`.totalCards .total`).text(recommendedLandCount).addClass('hasUserData');
   $(`.recommended .manaProducers`).text('(' + nonLandManaProducers + ')');  
   $(`.recommended .recommendedLandCount`).text(recommendedLandCount);
+  $(`.recommended .recommendedTotalCards`).text(cardCount);
  console.log('Average CMC:', averageCmc);
  console.log('Non-Land mana producers (1-3 CMC):', nonLandManaProducers);
  console.log('Card draw (1-3 CMC):',  cantrips);

@@ -220,18 +220,20 @@ if (storedResponseData) {
     ).length;
 
     // Count the number of cards that put lands into play with cmc between 1 and 3 (inclusive)
-    const ramp = responseData.filter(card => 
+    const landSearchers = responseData.filter(card => 
       card.cmc <= 3 &&
       card.oracle_text.includes("land") && 
       card.oracle_text.includes("onto") && card.oracle_text.includes("battlefield") &&
       !card.type_line.includes("Land")
     ).length;
     
+    const ramp = landSearchers + nonLandManaProducers;
+    
   // Calculate the recommendedLandCount using the formula
-  let recommendedLandCount = 31.42 + (3.13 * averageCmc) - (0.28 * (nonLandManaProducers + cantrips + ramp));
+  let recommendedLandCount = 31.42 + (3.13 * averageCmc) - (0.28 * (nonLandManaProducers + cantrips + landSearchers));
   recommendedLandCount = Math.round(recommendedLandCount);
   $(`.totalCards .total`).text(recommendedLandCount).addClass('hasUserData');
-  $(`.recommended .manaProducers`).text('(' + nonLandManaProducers + ramp + ')');  
+  $(`.recommended .manaProducers`).text('(' + ramp + ')');  
   $(`.recommended .recommendedLandCount`).text(recommendedLandCount);
   $(`.recommended .recommendedTotalCards`).text('(' + NonLandCardsTotal + ')');
  console.log('Average CMC:', averageCmc);

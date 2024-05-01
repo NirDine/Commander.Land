@@ -222,8 +222,8 @@ if (storedResponseData) {
     // Count the number of cards that put lands into play with cmc between 1 and 3 (inclusive)
     const ramp = responseData.filter(card => 
       (card.cmc <= 3 &&
-      card.oracle_text.includes("land")) && 
-      card.oracle_text.includes("onto")) && card.oracle_text.includes("battlefield")) &&
+      card.oracle_text.includes("land") && 
+      card.oracle_text.includes("onto") && card.oracle_text.includes("battlefield") &&
       !card.type_line.includes("Land")
     ).length;
     

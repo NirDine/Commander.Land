@@ -213,13 +213,17 @@ if (storedResponseData) {
       !card.type_line.includes("Land")
     ).length;
 
+    const NonLandCardsTotal = responseData.filter(card => 
+      !card.type_line.includes("Land")
+    ).length;
+    
   // Calculate the recommendedLandCount using the formula
   let recommendedLandCount = 31.42 + (3.13 * averageCmc) - (0.28 * (nonLandManaProducers + cantrips));
   recommendedLandCount = Math.round(recommendedLandCount);
   $(`.totalCards .total`).text(recommendedLandCount).addClass('hasUserData');
   $(`.recommended .manaProducers`).text('(' + nonLandManaProducers + ')');  
   $(`.recommended .recommendedLandCount`).text(recommendedLandCount);
-  $(`.recommended .recommendedTotalCards`).text(cardCount);
+  $(`.recommended .recommendedTotalCards`).text('(' + NonLandCardsTotal + ')');
  console.log('Average CMC:', averageCmc);
  console.log('Non-Land mana producers (1-3 CMC):', nonLandManaProducers);
  console.log('Card draw (1-3 CMC):',  cantrips);

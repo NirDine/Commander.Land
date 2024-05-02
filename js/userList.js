@@ -167,13 +167,13 @@ analyzedData.forEach(card => {
           highestResults[color] = result;
         }
       }
-    console.log(`${analyzedCardName}, CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}`);
+    console.log(`Card CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}`);
     
     
     });
     
   } else {
-    console.log(`${analyzedCardName}, CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}, Result: Not found`);
+    console.log(`Card CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}, Result: Not found`);
   }
     
 // Create an array of color recommendations with the highest result per color
@@ -201,6 +201,11 @@ if (storedResponseData) {
   const cardCount = responseData.length;
   const totalCmc = responseData.reduce((sum, card) => sum + card.cmc, 0);
   const averageCmc = totalCmc / cardCount;
+
+ // Count the number of unique non-land cards in the user's list
+  const NonLandCardsTotal = responseData.filter(card => 
+      !card.type_line.includes("Land")
+    ).length;
     
   // Count the number of cards with non-zero produced_mana value and cmc between 1 and 3 (inclusive)
     const nonLandManaProducers = responseData.filter(card => 
@@ -230,6 +235,7 @@ if (storedResponseData) {
   $(`.totalCards .total`).text(recommendedLandCount).addClass('hasUserData');
   $(`.recommended .manaProducers`).text('(' + ramp + ')');
   $(`.recommended .recommendedLandCount`).text(recommendedLandCount);
+  $(`.recommended .recommendedTotalCards`).text('(' + NonLandCardsTotal + ')');
  console.log('Average CMC:', averageCmc);
  console.log('Non-Land mana producers (1-3 CMC):', nonLandManaProducers);
  console.log('Card draw (1-3 CMC):',  cantrips);

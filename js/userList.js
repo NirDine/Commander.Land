@@ -139,7 +139,7 @@ const analyzedData = responseData.map(card => {
   localStorage.setItem('analyzedData', JSON.stringify(analyzedData));
     
 // Load recommendationsData from the recommendations.json file
-$.getJSON('data/recommendations.json', function(data) {
+$.getJSON('/Commander.Land/data/recommendations.json', function(data) {
   const recommendationsData = data;
 
   // Call the function that uses the recommendationsData

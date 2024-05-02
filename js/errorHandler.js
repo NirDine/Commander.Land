@@ -48,7 +48,7 @@ const storedData = localStorage.getItem('landsData');
 if (storedData) {
   data = JSON.parse(storedData);
 } else {
-  $.getJSON('/Commander.Land/data/lands.json')
+  $.getJSON('data/lands.json')
     .done(function(responseData) {
       // Assign the data to the data variable
       data = responseData;
@@ -170,7 +170,7 @@ if (storedData) {
             // Determine the colorIdentity
             const colorIdentity = determineColorIdentity(responseData);
             // Redirect to /buffet.html with colorIdentity as query parameter
-            window.location.href = `/Commander.Land/buffet.html?colors=${colorIdentity.toLowerCase()}`;
+            window.location.href = `buffet.html?colors=${colorIdentity.toLowerCase()}`;
           } else {
             console.log('Card names not found!');
           }

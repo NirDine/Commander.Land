@@ -139,7 +139,7 @@ const analyzedData = responseData.map(card => {
   localStorage.setItem('analyzedData', JSON.stringify(analyzedData));
     
 // Load recommendationsData from the recommendations.json file
-$.getJSON('/Commander.Land/data/recommendations.json', function(data) {
+$.getJSON('data/recommendations.json', function(data) {
   const recommendationsData = data;
 
   // Call the function that uses the recommendationsData
@@ -167,7 +167,7 @@ analyzedData.forEach(card => {
           highestResults[color] = result;
         }
       }
-    console.log(`Card CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}`);
+    console.log(`${name}, CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}`);
     
     
     });
@@ -201,11 +201,6 @@ if (storedResponseData) {
   const cardCount = responseData.length;
   const totalCmc = responseData.reduce((sum, card) => sum + card.cmc, 0);
   const averageCmc = totalCmc / cardCount;
-
- // Count the number of unique non-land cards in the user's list
-  const NonLandCardsTotal = responseData.filter(card => 
-      !card.type_line.includes("Land")
-    ).length;
     
   // Count the number of cards with non-zero produced_mana value and cmc between 1 and 3 (inclusive)
     const nonLandManaProducers = responseData.filter(card => 
@@ -213,7 +208,7 @@ if (storedResponseData) {
     ).length;
     
    // Count the number of cards that draw cards with cmc between 1 and 3 (inclusive)
-    const cantrips = responseData.filter(card => 
+   const cantrips = responseData.filter(card => 
       (card.oracle_text.includes("Draw") || card.oracle_text.includes("draw")) &&
       card.cmc <= 3 && 
       !card.type_line.includes("Land")
@@ -233,9 +228,8 @@ if (storedResponseData) {
   let recommendedLandCount = 31.42 + (3.13 * averageCmc) - (0.28 * (nonLandManaProducers + cantrips + landSearchers));
   recommendedLandCount = Math.round(recommendedLandCount);
   $(`.totalCards .total`).text(recommendedLandCount).addClass('hasUserData');
-  $(`.recommended .manaProducers`).text('(' + ramp + ')');  
+  $(`.recommended .manaProducers`).text('(' + ramp + ')');
   $(`.recommended .recommendedLandCount`).text(recommendedLandCount);
-  $(`.recommended .recommendedTotalCards`).text('(' + NonLandCardsTotal + ')');
  console.log('Average CMC:', averageCmc);
  console.log('Non-Land mana producers (1-3 CMC):', nonLandManaProducers);
  console.log('Card draw (1-3 CMC):',  cantrips);

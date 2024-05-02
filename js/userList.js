@@ -167,13 +167,13 @@ analyzedData.forEach(card => {
           highestResults[color] = result;
         }
       }
-    console.log(`${card.name}, CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}`);
+    // console.log(`${card.name}, CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}`);
     
     
     });
     
   } else {
-    console.log(` `);
+    //  console.log(` `);
   }
     
 // Create an array of color recommendations with the highest result per color
@@ -199,7 +199,9 @@ if (storedResponseData) {
 
   // Calculate the average cmc of all cards in responseData
   const cardCount = responseData.length;
+
   const totalCmc = responseData.reduce((sum, card) => sum + card.cmc, 0);
+    
   const averageCmc = totalCmc / cardCount;
 
  // Count the number of unique non-land cards in the user's list
@@ -212,8 +214,9 @@ if (storedResponseData) {
       card.produced_mana && card.cmc <= 3 && !card.type_line.includes("Land")
     ).length;
     
-   // Count the number of cards that draw cards with cmc between 1 and 3 (inclusive)
-   const cantrips = responseData.filter(card => 
+    // Count the number of cards that draw cards with cmc between 1 and 3 (inclusive)
+    const cantrips = responseData.filter(card => 
+      card.oracle_text && typeof card.oracle_text === 'string' && 
       (card.oracle_text.includes("Draw") || card.oracle_text.includes("draw")) &&
       card.cmc <= 3 && 
       !card.type_line.includes("Land")
@@ -222,6 +225,7 @@ if (storedResponseData) {
     // Count the number of cards that put lands into play with cmc between 1 and 3 (inclusive)
     const landSearchers = responseData.filter(card => 
       card.cmc <= 3 &&
+      card.oracle_text && typeof card.oracle_text === 'string' && 
       card.oracle_text.includes("land") && 
       card.oracle_text.includes("onto") && card.oracle_text.includes("battlefield") &&
       !card.type_line.includes("Land")

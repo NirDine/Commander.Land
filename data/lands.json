@@ -1,7 +1,7 @@
 {
   "object": "list",
   "total_cards": 1093,
-  "version": 1.12,
+  "version": 1.13,
   "data": [
     {
       "object": "card",
@@ -948,6 +948,7 @@
       "uri": "https://api.scryfall.com/cards/3ab4e0a4-2faf-456b-99e3-ee06c008538c",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/3/a/3ab4e0a4-2faf-456b-99e3-ee06c008538c.jpg?1712356353",
+        "normal": "https://cards.scryfall.io/normal/front/3/a/3ab4e0a4-2faf-456b-99e3-ee06c008538c.jpg?1712356353",
         "png": "https://cards.scryfall.io/png/front/3/a/3ab4e0a4-2faf-456b-99e3-ee06c008538c.png?1712356353"
       },
       "mana_cost": "",

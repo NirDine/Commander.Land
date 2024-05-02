@@ -106,7 +106,12 @@ const analyzedData = responseData.map(card => {
   manaSymbols.forEach(symbol => {
     const cleanSymbol = symbol.replace(/[{}]/g, '');
 
-    if (cleanSymbol.includes('/')) {
+    if (cleanSymbol.includes('P')) {
+      // Ignore hybrid pips with Phyrexian mana
+      return;
+        
+    }
+    else if (cleanSymbol.includes('/')) {
       // Hybrid pip detected
       hybridPips.total++;
       const colors = cleanSymbol.split('/');
@@ -114,9 +119,6 @@ const analyzedData = responseData.map(card => {
       colors.forEach(color => {
         colorWeight[color] = (colorWeight[color] || 0) + 1;
       });
-    } else if (cleanSymbol === 'P') {
-      // Ignore hybrid pips with Phyrexian mana
-      return;
     } else if (!isNaN(cleanSymbol)) {
       // Generic mana
       colorWeight['N'] = (colorWeight['N'] || 0) + parseInt(cleanSymbol);
@@ -167,13 +169,13 @@ analyzedData.forEach(card => {
           highestResults[color] = result;
         }
       }
-    // console.log(`${card.name}, CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}`);
+    console.log(`----- ${card.name} -----, CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}`);
     
     
     });
     
   } else {
-    //  console.log(` `);
+    console.log(`----- ${card.name} -----`);
   }
     
 // Create an array of color recommendations with the highest result per color

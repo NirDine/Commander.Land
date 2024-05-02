@@ -1,6 +1,6 @@
 // Fetch and load JSON files from the updates directory
 function loadUpdates() {
-const updatesDirectory = '../updates/';
+const updatesDirectory = 'updates';
 
 
   return fetch(updatesDirectory)

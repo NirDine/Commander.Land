@@ -1,0 +1,9 @@
+{
+    "title": "Version 1.0.6",
+    "paragraph": "",
+    "changes": [
+        "Phyrexian mana is now disregarded when calculating mana requirements",
+        "Fixed some links"
+        
+    ]
+}

@@ -1388,6 +1388,8 @@ gap: 10px;
 #cardHolder:has(.dropdown-sub:checked) {
   bottom: 0px;
 }
+
+
 .dropdown-sub:checked ~ .chContainer {
 
   pointer-events: auto;

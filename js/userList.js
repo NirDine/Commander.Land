@@ -167,13 +167,13 @@ analyzedData.forEach(card => {
           highestResults[color] = result;
         }
       }
-    console.log(`Card CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}`);
+    console.log(`${card.name}, CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}`);
     
     
     });
     
   } else {
-    console.log(`Card CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}, Result: Not found`);
+    console.log(`${card.name}, Result Not found`);
   }
     
 // Create an array of color recommendations with the highest result per color

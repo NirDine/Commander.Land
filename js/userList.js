@@ -154,6 +154,10 @@ function processCards(recommendationsData) {
 // Create an object to store the highest result per color
 const highestResults = {};
 
+/*
+
+// Log every card's weight and cmc 
+
 analyzedData.forEach(card => {
   const cmc = card.cmc;
   const colorWeight = card.colorWeight;
@@ -173,9 +177,11 @@ analyzedData.forEach(card => {
     });
     
   } else {
-    console.log(`${card.name}, Result Not found`);
+    console.log(` `);
   }
-    
+  
+*/
+
 // Create an array of color recommendations with the highest result per color
 const colorRecommendations = Object.entries(highestResults).map(([color, result]) => ({ color, result }));
 

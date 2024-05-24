@@ -173,6 +173,7 @@ if (storedData) {
             window.location.href = `buffet.html?colors=${colorIdentity.toLowerCase()}`;
           } else {
             console.log('Card names not found!');
+            applyHighlights();
           }
         }
       },

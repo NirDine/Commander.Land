@@ -1,8 +1,2705 @@
 {
   "object": "list",
-  "total_cards": 1094,
-  "version": 1.14,
+  "total_cards": 1138,
+  "version": 1.15,
   "data": [
+    {
+      "object": "card",
+      "id": "6a90f9e6-9251-4203-9599-cc4032a5e6e1",
+      "name": "Archway of Innovation",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/6a90f9e6-9251-4203-9599-cc4032a5e6e1",
+      "scryfall_uri": "https://scryfall.com/card/mh3/214/archway-of-innovation?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/a/6a90f9e6-9251-4203-9599-cc4032a5e6e1.jpg?1717047211",
+        "normal": "https://cards.scryfall.io/normal/front/6/a/6a90f9e6-9251-4203-9599-cc4032a5e6e1.jpg?1717047211",
+        "png": "https://cards.scryfall.io/png/front/6/a/6a90f9e6-9251-4203-9599-cc4032a5e6e1.png?1717047211"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Archway of Innovation enters the battlefield tapped unless you control an Island.\n{T}: Add {U}.\n{U}, {T}: The next spell you cast this turn has improvise. (Your artifacts can help cast that spell. Each artifact you tap after you're done activating mana abilities pays for {1}.)",
+      "colors": [],
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "rare",
+      "artist": "Yeong-Hao Han",
+      "artist_ids": [
+        "f8e7f8d6-6dde-4059-973c-30f1fd1bbe4e"
+      ],
+      "edhrec_rank": 21453,
+      "prices": {
+        "usd": "9.18",
+        "eur": "3.70"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "dd148edc-9e43-41aa-bb50-f912115d3e72",
+      "name": "Arena of Glory",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/dd148edc-9e43-41aa-bb50-f912115d3e72",
+      "scryfall_uri": "https://scryfall.com/card/mh3/215/arena-of-glory?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/d/dd148edc-9e43-41aa-bb50-f912115d3e72.jpg?1717047864",
+        "normal": "https://cards.scryfall.io/normal/front/d/d/dd148edc-9e43-41aa-bb50-f912115d3e72.jpg?1717047864",
+        "png": "https://cards.scryfall.io/png/front/d/d/dd148edc-9e43-41aa-bb50-f912115d3e72.png?1717047864"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Arena of Glory enters the battlefield tapped unless you control a Mountain.\n{T}: Add {R}.\n{R}, {T}, Exert Arena of Glory: Add {R}{R}. If that mana is spent on a creature spell, it gains haste until end of turn. (An exerted permanent won't untap during your next untap step.)",
+      "colors": [],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Exert"
+      ],
+      "produced_mana": [
+        "R"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "rare",
+      "artist": "Jorge Jacinto",
+      "artist_ids": [
+        "05a3ac12-b25d-48e2-af5e-8a299fd3da14"
+      ],
+      "edhrec_rank": 20453,
+      "prices": {
+        "usd": "7.79",
+        "eur": "6.19"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "0a08e0d2-1e60-47f5-9228-4c11a127089d",
+      "name": "Bloodsoaked Insight // Sanguine Morass",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/0a08e0d2-1e60-47f5-9228-4c11a127089d",
+      "scryfall_uri": "https://scryfall.com/card/mh3/252/bloodsoaked-insight-sanguine-morass?utm_source=api",
+      "cmc": 7,
+      "type_line": "Sorcery // Land",
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "R"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Bloodsoaked Insight",
+          "mana_cost": "{5}{B/R}{B/R}",
+          "type_line": "Sorcery",
+          "oracle_text": "This spell costs {1} less to cast for each 1 life your opponents have lost this turn.\nTarget opponent exiles the top three cards of their library. Until the end of your next turn, you may play those cards. If you cast a spell this way, mana of any type can be spent to cast it.",
+          "colors": [
+            "B",
+            "R"
+          ],
+          "artist": "David Álvarez",
+          "artist_id": "c3004e2c-d372-4faa-90db-f1274e75ef41",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/0/a/0a08e0d2-1e60-47f5-9228-4c11a127089d.jpg?1717013367",
+            "normal": "https://cards.scryfall.io/normal/front/0/a/0a08e0d2-1e60-47f5-9228-4c11a127089d.jpg?1717013367",
+            "png": "https://cards.scryfall.io/png/front/0/a/0a08e0d2-1e60-47f5-9228-4c11a127089d.png?1717013367"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Sanguine Morass",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "Sanguine Morass enters the battlefield tapped.\n{T}: Add {B} or {R}.",
+          "colors": [],
+          "flavor_text": "All who enter the bog despair, for the first thing it steals is hope.",
+          "artist": "David Álvarez",
+          "artist_id": "c3004e2c-d372-4faa-90db-f1274e75ef41",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/0/a/0a08e0d2-1e60-47f5-9228-4c11a127089d.jpg?1717013367",
+            "normal": "https://cards.scryfall.io/normal/back/0/a/0a08e0d2-1e60-47f5-9228-4c11a127089d.jpg?1717013367",
+            "png": "https://cards.scryfall.io/png/back/0/a/0a08e0d2-1e60-47f5-9228-4c11a127089d.png?1717013367"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "David Álvarez",
+      "artist_ids": [
+        "c3004e2c-d372-4faa-90db-f1274e75ef41"
+      ],
+      "edhrec_rank": 23020,
+      "prices": {
+        "usd": "1.67",
+        "eur": "0.17"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "d0d484a6-5610-4f1d-95ec-eda273c255e4",
+      "name": "Boggart Trawler // Boggart Bog",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/d0d484a6-5610-4f1d-95ec-eda273c255e4",
+      "scryfall_uri": "https://scryfall.com/card/mh3/243/boggart-trawler-boggart-bog?utm_source=api",
+      "cmc": 3,
+      "type_line": "Creature — Goblin // Land",
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Boggart Trawler",
+          "mana_cost": "{2}{B}",
+          "type_line": "Creature — Goblin",
+          "oracle_text": "When Boggart Trawler enters the battlefield, exile target player's graveyard.",
+          "colors": [
+            "B"
+          ],
+          "power": "3",
+          "toughness": "1",
+          "flavor_text": "\"Look what I found, and it's only been dead for a week!\"",
+          "artist": "Randy Gallegos",
+          "artist_id": "a5048cc7-438a-4378-98e4-da99b78e1db0",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/d/0/d0d484a6-5610-4f1d-95ec-eda273c255e4.jpg?1717013227",
+            "normal": "https://cards.scryfall.io/normal/front/d/0/d0d484a6-5610-4f1d-95ec-eda273c255e4.jpg?1717013227",
+            "png": "https://cards.scryfall.io/png/front/d/0/d0d484a6-5610-4f1d-95ec-eda273c255e4.png?1717013227"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Boggart Bog",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "As Boggart Bog enters the battlefield, you may pay 3 life. If you don't, it enters the battlefield tapped.\n{T}: Add {B}.",
+          "colors": [],
+          "flavor_text": "A boggart warren is usually located in a place rich with sensations... good and bad.",
+          "artist": "Randy Gallegos",
+          "artist_id": "a5048cc7-438a-4378-98e4-da99b78e1db0",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/d/0/d0d484a6-5610-4f1d-95ec-eda273c255e4.jpg?1717013227",
+            "normal": "https://cards.scryfall.io/normal/back/d/0/d0d484a6-5610-4f1d-95ec-eda273c255e4.jpg?1717013227",
+            "png": "https://cards.scryfall.io/png/back/d/0/d0d484a6-5610-4f1d-95ec-eda273c255e4.png?1717013227"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Randy Gallegos",
+      "artist_ids": [
+        "a5048cc7-438a-4378-98e4-da99b78e1db0"
+      ],
+      "edhrec_rank": 19839,
+      "prices": {
+        "usd": "1.11",
+        "eur": "0.47"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "b277752b-430a-4f09-8a98-b72f813dd52e",
+      "name": "Bountiful Landscape",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/b277752b-430a-4f09-8a98-b72f813dd52e",
+      "scryfall_uri": "https://scryfall.com/card/mh3/217/bountiful-landscape?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/2/b277752b-430a-4f09-8a98-b72f813dd52e.jpg?1717012959",
+        "normal": "https://cards.scryfall.io/normal/front/b/2/b277752b-430a-4f09-8a98-b72f813dd52e.jpg?1717012959",
+        "png": "https://cards.scryfall.io/png/front/b/2/b277752b-430a-4f09-8a98-b72f813dd52e.png?1717012959"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice Bountiful Landscape: Search your library for a basic Forest, Island, or Mountain card, put it onto the battlefield tapped, then shuffle.\nCycling {G}{U}{R} ({G}{U}{R}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "common",
+      "artist": "Mark Poole",
+      "artist_ids": [
+        "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
+      ],
+      "edhrec_rank": 25937,
+      "prices": {
+        "usd": "1.55",
+        "eur": "0.15"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "ebef3db0-2b58-4581-a79c-fbca9a059e63",
+      "name": "Bridgeworks Battle // Tanglespan Bridgeworks",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/ebef3db0-2b58-4581-a79c-fbca9a059e63",
+      "scryfall_uri": "https://scryfall.com/card/mh3/249/bridgeworks-battle-tanglespan-bridgeworks?utm_source=api",
+      "cmc": 3,
+      "type_line": "Sorcery // Land",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Fight"
+      ],
+      "produced_mana": [
+        "G"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Bridgeworks Battle",
+          "mana_cost": "{2}{G}",
+          "type_line": "Sorcery",
+          "oracle_text": "Target creature you control gets +2/+2 until end of turn. It fights up to one target creature you don't control. (Each deals damage equal to its power to the other.)",
+          "colors": [
+            "G"
+          ],
+          "flavor_text": "\"I thought trolls were supposed to be *under* bridges!\"\n—Nelvin, Vantress squire",
+          "artist": "Ron Spears",
+          "artist_id": "fce9030b-86bd-4439-b06a-920a1eeb184c",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/e/b/ebef3db0-2b58-4581-a79c-fbca9a059e63.jpg?1717013318",
+            "normal": "https://cards.scryfall.io/normal/front/e/b/ebef3db0-2b58-4581-a79c-fbca9a059e63.jpg?1717013318",
+            "png": "https://cards.scryfall.io/png/front/e/b/ebef3db0-2b58-4581-a79c-fbca9a059e63.png?1717013318"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Tanglespan Bridgeworks",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "As Tanglespan Bridgeworks enters the battlefield, you may pay 3 life. If you don't, it enters the battlefield tapped.\n{T}: Add {G}.",
+          "colors": [],
+          "flavor_text": "The chasm formed during the Phyrexian Invasion quickly filled with new life.",
+          "artist": "Ron Spears",
+          "artist_id": "fce9030b-86bd-4439-b06a-920a1eeb184c",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/e/b/ebef3db0-2b58-4581-a79c-fbca9a059e63.jpg?1717013318",
+            "normal": "https://cards.scryfall.io/normal/back/e/b/ebef3db0-2b58-4581-a79c-fbca9a059e63.jpg?1717013318",
+            "png": "https://cards.scryfall.io/png/back/e/b/ebef3db0-2b58-4581-a79c-fbca9a059e63.png?1717013318"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Ron Spears",
+      "artist_ids": [
+        "fce9030b-86bd-4439-b06a-920a1eeb184c"
+      ],
+      "edhrec_rank": 18410,
+      "prices": {
+        "usd": "1.12",
+        "eur": "0.26"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "e2312c49-1627-47ad-8113-78a999a97d8d",
+      "name": "Contaminated Landscape",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/e2312c49-1627-47ad-8113-78a999a97d8d",
+      "scryfall_uri": "https://scryfall.com/card/mh3/218/contaminated-landscape?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/e/2/e2312c49-1627-47ad-8113-78a999a97d8d.jpg?1717012967",
+        "normal": "https://cards.scryfall.io/normal/front/e/2/e2312c49-1627-47ad-8113-78a999a97d8d.jpg?1717012967",
+        "png": "https://cards.scryfall.io/png/front/e/2/e2312c49-1627-47ad-8113-78a999a97d8d.png?1717012967"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice Contaminated Landscape: Search your library for a basic Plains, Island, or Swamp card, put it onto the battlefield tapped, then shuffle.\nCycling {W}{U}{B} ({W}{U}{B}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "common",
+      "artist": "Donato Giancola",
+      "artist_ids": [
+        "90332db2-aecb-4d79-917b-95cbeb8d0cb6"
+      ],
+      "edhrec_rank": 26157,
+      "prices": {
+        "usd": "0.67",
+        "eur": "0.16"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "2ae6828e-ff19-45db-8b59-61616353491f",
+      "name": "Deceptive Landscape",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/2ae6828e-ff19-45db-8b59-61616353491f",
+      "scryfall_uri": "https://scryfall.com/card/mh3/219/deceptive-landscape?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/a/2ae6828e-ff19-45db-8b59-61616353491f.jpg?1717012976",
+        "normal": "https://cards.scryfall.io/normal/front/2/a/2ae6828e-ff19-45db-8b59-61616353491f.jpg?1717012976",
+        "png": "https://cards.scryfall.io/png/front/2/a/2ae6828e-ff19-45db-8b59-61616353491f.png?1717012976"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice Deceptive Landscape: Search your library for a basic Plains, Swamp, or Forest card, put it onto the battlefield tapped, then shuffle.\nCycling {W}{B}{G} ({W}{B}{G}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "G",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "common",
+      "artist": "Erikas Perl",
+      "artist_ids": [
+        "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
+      ],
+      "edhrec_rank": 25522,
+      "prices": {
+        "usd": "0.66",
+        "eur": "0.15"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "a8e9ea5a-5e10-4b77-baef-0352ff035483",
+      "name": "Disciple of Freyalise // Garden of Freyalise",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/a8e9ea5a-5e10-4b77-baef-0352ff035483",
+      "scryfall_uri": "https://scryfall.com/card/mh3/250/disciple-of-freyalise-garden-of-freyalise?utm_source=api",
+      "cmc": 6,
+      "type_line": "Creature — Elf Druid // Land",
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Disciple of Freyalise",
+          "mana_cost": "{3}{G}{G}{G}",
+          "type_line": "Creature — Elf Druid",
+          "oracle_text": "When Disciple of Freyalise enters the battlefield, you may sacrifice another creature. If you do, you gain X life and draw X cards, where X is that creature's power.",
+          "colors": [
+            "G"
+          ],
+          "power": "3",
+          "toughness": "3",
+          "flavor_text": "\"Freyalise is gone, but her song lives on.\"",
+          "artist": "Valera Lutfullina",
+          "artist_id": "76bc57c7-47c6-40c5-8797-8ffcce430ac7",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/a/8/a8e9ea5a-5e10-4b77-baef-0352ff035483.jpg?1717013335",
+            "normal": "https://cards.scryfall.io/normal/front/a/8/a8e9ea5a-5e10-4b77-baef-0352ff035483.jpg?1717013335",
+            "png": "https://cards.scryfall.io/png/front/a/8/a8e9ea5a-5e10-4b77-baef-0352ff035483.png?1717013335"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Garden of Freyalise",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "As Garden of Freyalise enters the battlefield, you may pay 3 life. If you don't, it enters the battlefield tapped.\n{T}: Add {G}.",
+          "colors": [],
+          "flavor_text": "The Juniper Order safeguards secret places that still thrum with traces of Freyalise's life-giving magic.",
+          "artist": "Valera Lutfullina",
+          "artist_id": "76bc57c7-47c6-40c5-8797-8ffcce430ac7",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/a/8/a8e9ea5a-5e10-4b77-baef-0352ff035483.jpg?1717013335",
+            "normal": "https://cards.scryfall.io/normal/back/a/8/a8e9ea5a-5e10-4b77-baef-0352ff035483.jpg?1717013335",
+            "png": "https://cards.scryfall.io/png/back/a/8/a8e9ea5a-5e10-4b77-baef-0352ff035483.png?1717013335"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Valera Lutfullina",
+      "artist_ids": [
+        "76bc57c7-47c6-40c5-8797-8ffcce430ac7"
+      ],
+      "edhrec_rank": 16173,
+      "prices": {
+        "usd": "1.61",
+        "eur": "0.28"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "7a1d3c1d-1373-4ac4-bb26-9780976efc4f",
+      "name": "Drowner of Truth // Drowned Jungle",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/7a1d3c1d-1373-4ac4-bb26-9780976efc4f",
+      "scryfall_uri": "https://scryfall.com/card/mh3/253/drowner-of-truth-drowned-jungle?utm_source=api",
+      "cmc": 7,
+      "type_line": "Creature — Eldrazi // Land",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Devoid"
+      ],
+      "produced_mana": [
+        "C",
+        "G",
+        "U"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Drowner of Truth",
+          "mana_cost": "{5}{G/U}{G/U}",
+          "type_line": "Creature — Eldrazi",
+          "oracle_text": "Devoid (This card has no color.)\nWhen you cast this spell, if {C} was spent to cast it, create two 0/1 colorless Eldrazi Spawn creature tokens with \"Sacrifice this creature: Add {C}.\"",
+          "colors": [],
+          "power": "7",
+          "toughness": "6",
+          "flavor_text": "\"Mangeni's children take their places among us.\"\n—Ayli, high priest of the Eternal Pilgrims",
+          "artist": "Nicholas Gregory",
+          "artist_id": "a1bba8ff-63b4-4786-b1c4-f1bfe5d3ab1c",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/7/a/7a1d3c1d-1373-4ac4-bb26-9780976efc4f.jpg?1717013383",
+            "normal": "https://cards.scryfall.io/normal/front/7/a/7a1d3c1d-1373-4ac4-bb26-9780976efc4f.jpg?1717013383",
+            "png": "https://cards.scryfall.io/png/front/7/a/7a1d3c1d-1373-4ac4-bb26-9780976efc4f.png?1717013383"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Drowned Jungle",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "Drowned Jungle enters the battlefield tapped.\n{T}: Add {G} or {U}.",
+          "colors": [],
+          "flavor_text": "\"Eldrazi scour the world of impurity so that we, the faithful, will inherit paradise.\"\n—Ayli, high priest of the Eternal Pilgrims",
+          "artist": "Nicholas Gregory",
+          "artist_id": "a1bba8ff-63b4-4786-b1c4-f1bfe5d3ab1c",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/7/a/7a1d3c1d-1373-4ac4-bb26-9780976efc4f.jpg?1717013383",
+            "normal": "https://cards.scryfall.io/normal/back/7/a/7a1d3c1d-1373-4ac4-bb26-9780976efc4f.jpg?1717013383",
+            "png": "https://cards.scryfall.io/png/back/7/a/7a1d3c1d-1373-4ac4-bb26-9780976efc4f.png?1717013383"
+          }
+        }
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "e32795e1-5548-43ef-8cd6-c605a19ef708",
+          "component": "token",
+          "name": "Eldrazi Spawn",
+          "type_line": "Token Creature — Eldrazi Spawn",
+          "uri": "https://api.scryfall.com/cards/e32795e1-5548-43ef-8cd6-c605a19ef708"
+        },
+        {
+          "object": "related_card",
+          "id": "7a1d3c1d-1373-4ac4-bb26-9780976efc4f",
+          "component": "combo_piece",
+          "name": "Drowner of Truth // Drowned Jungle",
+          "type_line": "Creature — Eldrazi // Land",
+          "uri": "https://api.scryfall.com/cards/7a1d3c1d-1373-4ac4-bb26-9780976efc4f"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Nicholas Gregory",
+      "artist_ids": [
+        "a1bba8ff-63b4-4786-b1c4-f1bfe5d3ab1c"
+      ],
+      "edhrec_rank": 21580,
+      "prices": {
+        "usd": "1.66",
+        "eur": "0.14"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "a3cb782d-c459-468d-9779-9b5669abc337",
+      "name": "Fell the Profane // Fell Mire",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/a3cb782d-c459-468d-9779-9b5669abc337",
+      "scryfall_uri": "https://scryfall.com/card/mh3/244/fell-the-profane-fell-mire?utm_source=api",
+      "cmc": 4,
+      "type_line": "Instant // Land",
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Fell the Profane",
+          "mana_cost": "{2}{B}{B}",
+          "type_line": "Instant",
+          "oracle_text": "Destroy target creature or planeswalker.",
+          "colors": [
+            "B"
+          ],
+          "flavor_text": "\"I can think of no fate more fitting for one so foul as you.\"\n—Aryel, knight of Windgrace",
+          "artist": "Yeong-Hao Han",
+          "artist_id": "f8e7f8d6-6dde-4059-973c-30f1fd1bbe4e",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/a/3/a3cb782d-c459-468d-9779-9b5669abc337.jpg?1717013242",
+            "normal": "https://cards.scryfall.io/normal/front/a/3/a3cb782d-c459-468d-9779-9b5669abc337.jpg?1717013242",
+            "png": "https://cards.scryfall.io/png/front/a/3/a3cb782d-c459-468d-9779-9b5669abc337.png?1717013242"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Fell Mire",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "As Fell Mire enters the battlefield, you may pay 3 life. If you don't, it enters the battlefield tapped.\n{T}: Add {B}.",
+          "colors": [],
+          "flavor_text": "\"The Nethermire is all the salvation you deserve.\"\n—Aryel, knight of Windgrace",
+          "artist": "Yeong-Hao Han",
+          "artist_id": "f8e7f8d6-6dde-4059-973c-30f1fd1bbe4e",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/a/3/a3cb782d-c459-468d-9779-9b5669abc337.jpg?1717013242",
+            "normal": "https://cards.scryfall.io/normal/back/a/3/a3cb782d-c459-468d-9779-9b5669abc337.jpg?1717013242",
+            "png": "https://cards.scryfall.io/png/back/a/3/a3cb782d-c459-468d-9779-9b5669abc337.png?1717013242"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Yeong-Hao Han",
+      "artist_ids": [
+        "f8e7f8d6-6dde-4059-973c-30f1fd1bbe4e"
+      ],
+      "edhrec_rank": 15698,
+      "prices": {
+        "usd": "1.51",
+        "eur": "0.71"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "57fb0fa7-0c5c-4a75-9461-c51403c30282",
+      "name": "Foreboding Landscape",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/57fb0fa7-0c5c-4a75-9461-c51403c30282",
+      "scryfall_uri": "https://scryfall.com/card/mh3/221/foreboding-landscape?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/7/57fb0fa7-0c5c-4a75-9461-c51403c30282.jpg?1717012992",
+        "normal": "https://cards.scryfall.io/normal/front/5/7/57fb0fa7-0c5c-4a75-9461-c51403c30282.jpg?1717012992",
+        "png": "https://cards.scryfall.io/png/front/5/7/57fb0fa7-0c5c-4a75-9461-c51403c30282.png?1717012992"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice Foreboding Landscape: Search your library for a basic Swamp, Forest, or Island card, put it onto the battlefield tapped, then shuffle.\nCycling {B}{G}{U} ({B}{G}{U}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "common",
+      "artist": "Erikas Perl",
+      "artist_ids": [
+        "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
+      ],
+      "edhrec_rank": 26521,
+      "prices": {
+        "usd": "0.79",
+        "eur": "0.16"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "90630b20-fc83-475f-bcd5-8bcfee0cf241",
+      "name": "Glasswing Grace // Age-Graced Chapel",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/90630b20-fc83-475f-bcd5-8bcfee0cf241",
+      "scryfall_uri": "https://scryfall.com/card/mh3/254/glasswing-grace-age-graced-chapel?utm_source=api",
+      "cmc": 5,
+      "type_line": "Enchantment — Aura // Land",
+      "color_identity": [
+        "B",
+        "W"
+      ],
+      "keywords": [
+        "Enchant"
+      ],
+      "produced_mana": [
+        "B",
+        "W"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Glasswing Grace",
+          "mana_cost": "{3}{W/B}{W/B}",
+          "type_line": "Enchantment — Aura",
+          "oracle_text": "Enchant creature\nEnchanted creature gets +2/+2 and has flying and lifelink.",
+          "colors": [
+            "B",
+            "W"
+          ],
+          "flavor_text": "Serra may be long gone, but Benalia's faithful still draw strength from her blessings.",
+          "artist": "Craig Elliott",
+          "artist_id": "b376cbb6-e0d5-41e9-bbb2-9fbd40c71147",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/9/0/90630b20-fc83-475f-bcd5-8bcfee0cf241.jpg?1717013398",
+            "normal": "https://cards.scryfall.io/normal/front/9/0/90630b20-fc83-475f-bcd5-8bcfee0cf241.jpg?1717013398",
+            "png": "https://cards.scryfall.io/png/front/9/0/90630b20-fc83-475f-bcd5-8bcfee0cf241.png?1717013398"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Age-Graced Chapel",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "Age-Graced Chapel enters the battlefield tapped.\n{T}: Add {W} or {B}.",
+          "colors": [],
+          "flavor_text": "\"Empires fall, cities crumble, righteousness remains.\"\n—Chapel inscription",
+          "artist": "Craig Elliott",
+          "artist_id": "b376cbb6-e0d5-41e9-bbb2-9fbd40c71147",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/9/0/90630b20-fc83-475f-bcd5-8bcfee0cf241.jpg?1717013398",
+            "normal": "https://cards.scryfall.io/normal/back/9/0/90630b20-fc83-475f-bcd5-8bcfee0cf241.jpg?1717013398",
+            "png": "https://cards.scryfall.io/png/back/9/0/90630b20-fc83-475f-bcd5-8bcfee0cf241.png?1717013398"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Craig Elliott",
+      "artist_ids": [
+        "b376cbb6-e0d5-41e9-bbb2-9fbd40c71147"
+      ],
+      "edhrec_rank": 22570,
+      "prices": {
+        "usd": "0.53",
+        "eur": "0.17"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "5ae3a9c8-194e-421b-b77d-9c8784442651",
+      "name": "Horizon of Progress",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/5ae3a9c8-194e-421b-b77d-9c8784442651",
+      "scryfall_uri": "https://scryfall.com/card/m3c/78/horizon-of-progress?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/a/5ae3a9c8-194e-421b-b77d-9c8784442651.jpg?1717189987",
+        "normal": "https://cards.scryfall.io/normal/front/5/a/5ae3a9c8-194e-421b-b77d-9c8784442651.jpg?1717189987",
+        "png": "https://cards.scryfall.io/png/front/5/a/5ae3a9c8-194e-421b-b77d-9c8784442651.png?1717189987"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life: Add one mana of any type that a land you control could produce.\n{3}, {T}: You may put a land card from your hand onto the battlefield tapped.\n{1}, {T}, Sacrifice Horizon of Progress: Draw a card.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "rare",
+      "artist": "Julian Kok Joon Wen",
+      "artist_ids": [
+        "7f1868e3-325f-4df9-8f27-a381fed4f0fc"
+      ],
+      "edhrec_rank": 21454,
+      "prices": {
+        "usd": "11.08",
+        "eur": null
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "8689ecd7-e9a6-458b-99d2-6dbaca527f00",
+      "name": "Hydroelectric Specimen // Hydroelectric Laboratory",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/8689ecd7-e9a6-458b-99d2-6dbaca527f00",
+      "scryfall_uri": "https://scryfall.com/card/mh3/240/hydroelectric-specimen-hydroelectric-laboratory?utm_source=api",
+      "cmc": 3,
+      "type_line": "Creature — Weird // Land",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Flash"
+      ],
+      "produced_mana": [
+        "U"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Hydroelectric Specimen",
+          "mana_cost": "{2}{U}",
+          "type_line": "Creature — Weird",
+          "oracle_text": "Flash\nWhen Hydroelectric Specimen enters the battlefield, you may change the target of target instant or sorcery spell with a single target to Hydroelectric Specimen.",
+          "colors": [
+            "U"
+          ],
+          "power": "1",
+          "toughness": "4",
+          "flavor_text": "Whenever the research team stepped out, the specimen emerged to conduct experiments of its own.",
+          "artist": "Raoul Vitale",
+          "artist_id": "c7c15d49-f84b-4d98-9a34-e80e8347b756",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/8/6/8689ecd7-e9a6-458b-99d2-6dbaca527f00.jpg?1717013178",
+            "normal": "https://cards.scryfall.io/normal/front/8/6/8689ecd7-e9a6-458b-99d2-6dbaca527f00.jpg?1717013178",
+            "png": "https://cards.scryfall.io/png/front/8/6/8689ecd7-e9a6-458b-99d2-6dbaca527f00.png?1717013178"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Hydroelectric Laboratory",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "As Hydroelectric Laboratory enters the battlefield, you may pay 3 life. If you don't, it enters the battlefield tapped.\n{T}: Add {U}.",
+          "colors": [],
+          "flavor_text": "As long as the scientists were present, the specimen floated patiently or swam quietly about, biding its time, watching.",
+          "artist": "Raoul Vitale",
+          "artist_id": "c7c15d49-f84b-4d98-9a34-e80e8347b756",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/8/6/8689ecd7-e9a6-458b-99d2-6dbaca527f00.jpg?1717013178",
+            "normal": "https://cards.scryfall.io/normal/back/8/6/8689ecd7-e9a6-458b-99d2-6dbaca527f00.jpg?1717013178",
+            "png": "https://cards.scryfall.io/png/back/8/6/8689ecd7-e9a6-458b-99d2-6dbaca527f00.png?1717013178"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Raoul Vitale",
+      "artist_ids": [
+        "c7c15d49-f84b-4d98-9a34-e80e8347b756"
+      ],
+      "edhrec_rank": 21106,
+      "prices": {
+        "usd": "0.97",
+        "eur": "0.34"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "ff73b7f3-62f3-4a05-b439-bae2d0f63d2f",
+      "name": "Lazotep Quarry",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/ff73b7f3-62f3-4a05-b439-bae2d0f63d2f",
+      "scryfall_uri": "https://scryfall.com/card/m3c/79/lazotep-quarry?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/f/ff73b7f3-62f3-4a05-b439-bae2d0f63d2f.jpg?1717189990",
+        "normal": "https://cards.scryfall.io/normal/front/f/f/ff73b7f3-62f3-4a05-b439-bae2d0f63d2f.jpg?1717189990",
+        "png": "https://cards.scryfall.io/png/front/f/f/ff73b7f3-62f3-4a05-b439-bae2d0f63d2f.png?1717189990"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Desert",
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice a creature: Add one mana of any color.\n{X}{2}, {T}, Sacrifice a Desert: Exile target creature card with mana value X from your graveyard. Create a token that's a copy of it, except it's a 4/4 black Zombie. Activate only as a sorcery.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "656ddd43-c70c-4927-9a02-fef5732708da",
+          "component": "combo_piece",
+          "name": "Lazotep Quarry",
+          "type_line": "Land — Desert",
+          "uri": "https://api.scryfall.com/cards/656ddd43-c70c-4927-9a02-fef5732708da"
+        },
+        {
+          "object": "related_card",
+          "id": "8a016157-6f3f-4fb2-b962-1f548d378545",
+          "component": "token",
+          "name": "Copy",
+          "type_line": "Token",
+          "uri": "https://api.scryfall.com/cards/8a016157-6f3f-4fb2-b962-1f548d378545"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "rare",
+      "artist": "Sam Burley",
+      "artist_ids": [
+        "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
+      ],
+      "edhrec_rank": 21455,
+      "prices": {
+        "usd": "10.53",
+        "eur": null
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "7676abd9-0a3d-4721-b17b-778d2e3c2e25",
+      "name": "Legion Leadership // Legion Stronghold",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/7676abd9-0a3d-4721-b17b-778d2e3c2e25",
+      "scryfall_uri": "https://scryfall.com/card/mh3/255/legion-leadership-legion-stronghold?utm_source=api",
+      "cmc": 2,
+      "type_line": "Instant // Land",
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Legion Leadership",
+          "mana_cost": "{1}{R/W}",
+          "type_line": "Instant",
+          "oracle_text": "Until end of turn, double target creature's power and it gains first strike.",
+          "colors": [
+            "R",
+            "W"
+          ],
+          "flavor_text": "\"The firemane angels are mighty, but their greatest value lies in the fervor their presence kindles in the heart of a soldier.\"\n—Agrus Kos",
+          "artist": "Ryan Valle",
+          "artist_id": "6190569f-5e77-4bc1-bf22-9f85dba3a139",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/7/6/7676abd9-0a3d-4721-b17b-778d2e3c2e25.jpg?1717013415",
+            "normal": "https://cards.scryfall.io/normal/front/7/6/7676abd9-0a3d-4721-b17b-778d2e3c2e25.jpg?1717013415",
+            "png": "https://cards.scryfall.io/png/front/7/6/7676abd9-0a3d-4721-b17b-778d2e3c2e25.png?1717013415"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Legion Stronghold",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "Legion Stronghold enters the battlefield tapped.\n{T}: Add {R} or {W}.",
+          "colors": [],
+          "flavor_text": "Boros fortresses bristle with high towers so that, even at rest, Legion soldiers can remain in the light of the sun.",
+          "artist": "Ryan Valle",
+          "artist_id": "6190569f-5e77-4bc1-bf22-9f85dba3a139",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/7/6/7676abd9-0a3d-4721-b17b-778d2e3c2e25.jpg?1717013415",
+            "normal": "https://cards.scryfall.io/normal/back/7/6/7676abd9-0a3d-4721-b17b-778d2e3c2e25.jpg?1717013415",
+            "png": "https://cards.scryfall.io/png/back/7/6/7676abd9-0a3d-4721-b17b-778d2e3c2e25.png?1717013415"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Ryan Valle",
+      "artist_ids": [
+        "6190569f-5e77-4bc1-bf22-9f85dba3a139"
+      ],
+      "edhrec_rank": 21377,
+      "prices": {
+        "usd": "0.51",
+        "eur": "0.19"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "62907e7b-e531-4f51-9a69-7e60ae525775",
+      "name": "Monumental Henge",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/62907e7b-e531-4f51-9a69-7e60ae525775",
+      "scryfall_uri": "https://scryfall.com/card/mh3/222/monumental-henge?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/2/62907e7b-e531-4f51-9a69-7e60ae525775.jpg?1717047281",
+        "normal": "https://cards.scryfall.io/normal/front/6/2/62907e7b-e531-4f51-9a69-7e60ae525775.jpg?1717047281",
+        "png": "https://cards.scryfall.io/png/front/6/2/62907e7b-e531-4f51-9a69-7e60ae525775.png?1717047281"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Monumental Henge enters the battlefield tapped unless you control a Plains.\n{T}: Add {W}.\n{2}{W}{W}, {T}: Look at the top five cards of your library. You may reveal a historic card from among them and put it into your hand. Put the rest on the bottom of your library in a random order.",
+      "colors": [],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "rare",
+      "artist": "Steven Belledin",
+      "artist_ids": [
+        "f07d73b9-52a0-4fe5-858b-61f7b42174a5"
+      ],
+      "edhrec_rank": 22731,
+      "prices": {
+        "usd": "7.03",
+        "eur": "3.24"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "7f1d8a22-e730-4344-bba9-7c495500f065",
+      "name": "Nesting Grounds",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/7f1d8a22-e730-4344-bba9-7c495500f065",
+      "scryfall_uri": "https://scryfall.com/card/mh3/302/nesting-grounds?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/7/f/7f1d8a22-e730-4344-bba9-7c495500f065.jpg?1717104213",
+        "normal": "https://cards.scryfall.io/normal/front/7/f/7f1d8a22-e730-4344-bba9-7c495500f065.jpg?1717104213",
+        "png": "https://cards.scryfall.io/png/front/7/f/7f1d8a22-e730-4344-bba9-7c495500f065.png?1717104213"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{1}, {T}: Move a counter from target permanent you control onto another target permanent. Activate only as a sorcery.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "watermark": "set",
+      "flavor_text": "Dappled coats become armored hides. Soft jaws become razor tusks. Nestling play becomes the fight for survival.",
+      "artist": "Yeong-Hao Han",
+      "artist_ids": [
+        "f8e7f8d6-6dde-4059-973c-30f1fd1bbe4e"
+      ],
+      "edhrec_rank": 1373,
+      "prices": {
+        "usd": "1.67",
+        "eur": "0.24"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "4b0bd07e-cf80-4d64-af29-f4cec6632b3e",
+      "name": "Perilous Landscape",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/4b0bd07e-cf80-4d64-af29-f4cec6632b3e",
+      "scryfall_uri": "https://scryfall.com/card/mh3/223/perilous-landscape?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/b/4b0bd07e-cf80-4d64-af29-f4cec6632b3e.jpg?1717013008",
+        "normal": "https://cards.scryfall.io/normal/front/4/b/4b0bd07e-cf80-4d64-af29-f4cec6632b3e.jpg?1717013008",
+        "png": "https://cards.scryfall.io/png/front/4/b/4b0bd07e-cf80-4d64-af29-f4cec6632b3e.png?1717013008"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice Perilous Landscape: Search your library for a basic Island, Mountain, or Plains card, put it onto the battlefield tapped, then shuffle.\nCycling {U}{R}{W} ({U}{R}{W}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "common",
+      "artist": "Alayna Danner",
+      "artist_ids": [
+        "bb677b1a-ce51-4888-83d6-5a94de461ff9"
+      ],
+      "edhrec_rank": 26034,
+      "prices": {
+        "usd": "0.73",
+        "eur": "0.18"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "24d4f26e-7f96-4b38-867e-4fac819b2679",
+      "name": "Pinnacle Monk // Mystic Peak",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/24d4f26e-7f96-4b38-867e-4fac819b2679",
+      "scryfall_uri": "https://scryfall.com/card/mh3/246/pinnacle-monk-mystic-peak?utm_source=api",
+      "cmc": 5,
+      "type_line": "Creature — Djinn Monk // Land",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Prowess"
+      ],
+      "produced_mana": [
+        "R"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Pinnacle Monk",
+          "mana_cost": "{3}{R}{R}",
+          "type_line": "Creature — Djinn Monk",
+          "oracle_text": "Prowess (Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn.)\nWhen Pinnacle Monk enters the battlefield, return target instant or sorcery card from your graveyard to your hand.",
+          "colors": [
+            "R"
+          ],
+          "power": "2",
+          "toughness": "2",
+          "flavor_text": "Narset brought the Jeskai djinn ancient wisdom and the promise to challenge the status quo.",
+          "artist": "Jason A. Engle",
+          "artist_id": "02e2b5de-4341-464c-8fdb-a1adbf873bc0",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/2/4/24d4f26e-7f96-4b38-867e-4fac819b2679.jpg?1717091314",
+            "normal": "https://cards.scryfall.io/normal/front/2/4/24d4f26e-7f96-4b38-867e-4fac819b2679.jpg?1717091314",
+            "png": "https://cards.scryfall.io/png/front/2/4/24d4f26e-7f96-4b38-867e-4fac819b2679.png?1717091314"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Mystic Peak",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "As Mystic Peak enters the battlefield, you may pay 3 life. If you don't, it enters the battlefield tapped.\n{T}: Add {R}.",
+          "colors": [],
+          "flavor_text": "\"Fear not the fall. Fear never reaching the pinnacle.\"\n—Narset",
+          "artist": "Jason A. Engle",
+          "artist_id": "02e2b5de-4341-464c-8fdb-a1adbf873bc0",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/2/4/24d4f26e-7f96-4b38-867e-4fac819b2679.jpg?1717091314",
+            "normal": "https://cards.scryfall.io/normal/back/2/4/24d4f26e-7f96-4b38-867e-4fac819b2679.jpg?1717091314",
+            "png": "https://cards.scryfall.io/png/back/2/4/24d4f26e-7f96-4b38-867e-4fac819b2679.png?1717091314"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Jason A. Engle",
+      "artist_ids": [
+        "02e2b5de-4341-464c-8fdb-a1adbf873bc0"
+      ],
+      "edhrec_rank": 21456,
+      "prices": {
+        "usd": "0.63",
+        "eur": "0.24"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "28603c1c-f9b4-4001-bc56-d1453d5cacf5",
+      "name": "Planar Nexus",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/28603c1c-f9b4-4001-bc56-d1453d5cacf5",
+      "scryfall_uri": "https://scryfall.com/card/m3c/80/planar-nexus?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/8/28603c1c-f9b4-4001-bc56-d1453d5cacf5.jpg?1717189995",
+        "normal": "https://cards.scryfall.io/normal/front/2/8/28603c1c-f9b4-4001-bc56-d1453d5cacf5.jpg?1717189995",
+        "png": "https://cards.scryfall.io/png/front/2/8/28603c1c-f9b4-4001-bc56-d1453d5cacf5.png?1717189995"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Planar Nexus is every nonbasic land type. (Nonbasic land types include Cave, Desert, Gate, Lair, Locus, Mine, Power-Plant, Sphere, Tower, and Urza's.)\n{T}: Add {C}.\n{1}, {T}: Add one mana of any color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "rare",
+      "flavor_text": "The violence of the Conflux gave way to rebirth.",
+      "artist": "Sam Burley",
+      "artist_ids": [
+        "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
+      ],
+      "edhrec_rank": 16262,
+      "prices": {
+        "usd": null,
+        "eur": null
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "57065dca-f90e-4184-bbc4-95d726a4160b",
+      "name": "Razorgrass Ambush // Razorgrass Field",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/57065dca-f90e-4184-bbc4-95d726a4160b",
+      "scryfall_uri": "https://scryfall.com/card/mh3/238/razorgrass-ambush-razorgrass-field?utm_source=api",
+      "cmc": 2,
+      "type_line": "Instant // Land",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Razorgrass Ambush",
+          "mana_cost": "{1}{W}",
+          "type_line": "Instant",
+          "oracle_text": "Razorgrass Ambush deals 3 damage to target attacking or blocking creature.",
+          "colors": [
+            "W"
+          ],
+          "flavor_text": "When disturbed, razorgrass skewers unwary intruders in violent, jingling bursts.",
+          "artist": "Cristi Balanescu",
+          "artist_id": "c09ede88-a1b5-4a18-9895-dc8a965d28a5",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/5/7/57065dca-f90e-4184-bbc4-95d726a4160b.jpg?1717013144",
+            "normal": "https://cards.scryfall.io/normal/front/5/7/57065dca-f90e-4184-bbc4-95d726a4160b.jpg?1717013144",
+            "png": "https://cards.scryfall.io/png/front/5/7/57065dca-f90e-4184-bbc4-95d726a4160b.png?1717013144"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Razorgrass Field",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "As Razorgrass Field enters the battlefield, you may pay 3 life. If you don't, it enters the battlefield tapped.\n{T}: Add {W}.",
+          "colors": [],
+          "flavor_text": "Leonin hide their dwellings within the Razor Fields, making approach deadly without knowledge of their secret paths.",
+          "artist": "Cristi Balanescu",
+          "artist_id": "c09ede88-a1b5-4a18-9895-dc8a965d28a5",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/5/7/57065dca-f90e-4184-bbc4-95d726a4160b.jpg?1717013144",
+            "normal": "https://cards.scryfall.io/normal/back/5/7/57065dca-f90e-4184-bbc4-95d726a4160b.jpg?1717013144",
+            "png": "https://cards.scryfall.io/png/back/5/7/57065dca-f90e-4184-bbc4-95d726a4160b.png?1717013144"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Cristi Balanescu",
+      "artist_ids": [
+        "c09ede88-a1b5-4a18-9895-dc8a965d28a5"
+      ],
+      "edhrec_rank": 20939,
+      "prices": {
+        "usd": "0.61",
+        "eur": "0.30"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "03522b6b-31ec-4126-8885-5dbb2248688b",
+      "name": "Revitalizing Repast // Old-Growth Grove",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/03522b6b-31ec-4126-8885-5dbb2248688b",
+      "scryfall_uri": "https://scryfall.com/card/mh3/256/revitalizing-repast-old-growth-grove?utm_source=api",
+      "cmc": 1,
+      "type_line": "Instant // Land",
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Revitalizing Repast",
+          "mana_cost": "{B/G}",
+          "type_line": "Instant",
+          "oracle_text": "Put a +1/+1 counter on target creature. It gains indestructible until end of turn.",
+          "colors": [
+            "B",
+            "G"
+          ],
+          "flavor_text": "\"Today, we feast! Tomorrow, we fight! Then, we feast again!\"\n—Harald, king of Skemfar",
+          "artist": "Raoul Vitale",
+          "artist_id": "c7c15d49-f84b-4d98-9a34-e80e8347b756",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/0/3/03522b6b-31ec-4126-8885-5dbb2248688b.jpg?1717013433",
+            "normal": "https://cards.scryfall.io/normal/front/0/3/03522b6b-31ec-4126-8885-5dbb2248688b.jpg?1717013433",
+            "png": "https://cards.scryfall.io/png/front/0/3/03522b6b-31ec-4126-8885-5dbb2248688b.png?1717013433"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Old-Growth Grove",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "Old-Growth Grove enters the battlefield tapped.\n{T}: Add {B} or {G}.",
+          "colors": [],
+          "flavor_text": "The most potent elvish tonics and potions are brewed from the trees containing their imprisoned gods, the Einir.",
+          "artist": "Raoul Vitale",
+          "artist_id": "c7c15d49-f84b-4d98-9a34-e80e8347b756",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/0/3/03522b6b-31ec-4126-8885-5dbb2248688b.jpg?1717013433",
+            "normal": "https://cards.scryfall.io/normal/back/0/3/03522b6b-31ec-4126-8885-5dbb2248688b.jpg?1717013433",
+            "png": "https://cards.scryfall.io/png/back/0/3/03522b6b-31ec-4126-8885-5dbb2248688b.png?1717013433"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Raoul Vitale",
+      "artist_ids": [
+        "c7c15d49-f84b-4d98-9a34-e80e8347b756"
+      ],
+      "edhrec_rank": 19528,
+      "prices": {
+        "usd": "1.13",
+        "eur": "0.80"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "70a25a3a-c12a-49d3-8a91-a108dfa9d3c5",
+      "name": "Rush of Inspiration // Crackling Falls",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/70a25a3a-c12a-49d3-8a91-a108dfa9d3c5",
+      "scryfall_uri": "https://scryfall.com/card/mh3/257/rush-of-inspiration-crackling-falls?utm_source=api",
+      "cmc": 3,
+      "type_line": "Instant // Land",
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Rush of Inspiration",
+          "mana_cost": "{1}{U/R}{U/R}",
+          "type_line": "Instant",
+          "oracle_text": "Draw two cards. Then discard a card at random unless you pay {E}{E} (two energy counters).",
+          "colors": [
+            "R",
+            "U"
+          ],
+          "flavor_text": "\"Insight is like a waterfall—near-limitless power, but only if properly harnessed.\"\n—Saheeli Rai",
+          "artist": "Jorge Jacinto",
+          "artist_id": "05a3ac12-b25d-48e2-af5e-8a299fd3da14",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/7/0/70a25a3a-c12a-49d3-8a91-a108dfa9d3c5.jpg?1717013452",
+            "normal": "https://cards.scryfall.io/normal/front/7/0/70a25a3a-c12a-49d3-8a91-a108dfa9d3c5.jpg?1717013452",
+            "png": "https://cards.scryfall.io/png/front/7/0/70a25a3a-c12a-49d3-8a91-a108dfa9d3c5.png?1717013452"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Crackling Falls",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "Crackling Falls enters the battlefield tapped.\n{T}: Add {U} or {R}.",
+          "colors": [],
+          "flavor_text": "In the wilds beyond Ghirapur, raw magical energy permeates the landscape.",
+          "artist": "Jorge Jacinto",
+          "artist_id": "05a3ac12-b25d-48e2-af5e-8a299fd3da14",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/7/0/70a25a3a-c12a-49d3-8a91-a108dfa9d3c5.jpg?1717013452",
+            "normal": "https://cards.scryfall.io/normal/back/7/0/70a25a3a-c12a-49d3-8a91-a108dfa9d3c5.jpg?1717013452",
+            "png": "https://cards.scryfall.io/png/back/7/0/70a25a3a-c12a-49d3-8a91-a108dfa9d3c5.png?1717013452"
+          }
+        }
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "1c516212-ad39-4396-8e05-ae57f100309f",
+          "component": "combo_piece",
+          "name": "Energy Reserve",
+          "type_line": "Card",
+          "uri": "https://api.scryfall.com/cards/1c516212-ad39-4396-8e05-ae57f100309f"
+        },
+        {
+          "object": "related_card",
+          "id": "70a25a3a-c12a-49d3-8a91-a108dfa9d3c5",
+          "component": "combo_piece",
+          "name": "Rush of Inspiration // Crackling Falls",
+          "type_line": "Instant // Land",
+          "uri": "https://api.scryfall.com/cards/70a25a3a-c12a-49d3-8a91-a108dfa9d3c5"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Jorge Jacinto",
+      "artist_ids": [
+        "05a3ac12-b25d-48e2-af5e-8a299fd3da14"
+      ],
+      "edhrec_rank": 23283,
+      "prices": {
+        "usd": "0.52",
+        "eur": "0.20"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "661fc907-7003-45c6-820c-9616e9a71c30",
+      "name": "Seething Landscape",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/661fc907-7003-45c6-820c-9616e9a71c30",
+      "scryfall_uri": "https://scryfall.com/card/mh3/225/seething-landscape?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/6/661fc907-7003-45c6-820c-9616e9a71c30.jpg?1717013025",
+        "normal": "https://cards.scryfall.io/normal/front/6/6/661fc907-7003-45c6-820c-9616e9a71c30.jpg?1717013025",
+        "png": "https://cards.scryfall.io/png/front/6/6/661fc907-7003-45c6-820c-9616e9a71c30.png?1717013025"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice Seething Landscape: Search your library for a basic Island, Swamp, or Mountain card, put it onto the battlefield tapped, then shuffle.\nCycling {U}{B}{R} ({U}{B}{R}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "R",
+        "U"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "common",
+      "artist": "Piotr Dura",
+      "artist_ids": [
+        "aff176e8-1d15-432e-ad1d-207a474decba"
+      ],
+      "edhrec_rank": 26474,
+      "prices": {
+        "usd": "0.77",
+        "eur": "0.19"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "b3da28c7-6e92-439d-a163-91682d4f11dc",
+      "name": "Shattered Landscape",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/b3da28c7-6e92-439d-a163-91682d4f11dc",
+      "scryfall_uri": "https://scryfall.com/card/mh3/226/shattered-landscape?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/3/b3da28c7-6e92-439d-a163-91682d4f11dc.jpg?1717013032",
+        "normal": "https://cards.scryfall.io/normal/front/b/3/b3da28c7-6e92-439d-a163-91682d4f11dc.jpg?1717013032",
+        "png": "https://cards.scryfall.io/png/front/b/3/b3da28c7-6e92-439d-a163-91682d4f11dc.png?1717013032"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice Shattered Landscape: Search your library for a basic Mountain, Plains, or Swamp card, put it onto the battlefield tapped, then shuffle.\nCycling {R}{W}{B} ({R}{W}{B}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "common",
+      "artist": "Erikas Perl",
+      "artist_ids": [
+        "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
+      ],
+      "edhrec_rank": 26224,
+      "prices": {
+        "usd": "0.85",
+        "eur": "0.16"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "0fe070f4-8877-4280-b8fd-869f3ac34ab6",
+      "name": "Sheltering Landscape",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/0fe070f4-8877-4280-b8fd-869f3ac34ab6",
+      "scryfall_uri": "https://scryfall.com/card/mh3/227/sheltering-landscape?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/f/0fe070f4-8877-4280-b8fd-869f3ac34ab6.jpg?1717013040",
+        "normal": "https://cards.scryfall.io/normal/front/0/f/0fe070f4-8877-4280-b8fd-869f3ac34ab6.jpg?1717013040",
+        "png": "https://cards.scryfall.io/png/front/0/f/0fe070f4-8877-4280-b8fd-869f3ac34ab6.png?1717013040"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice Sheltering Landscape: Search your library for a basic Mountain, Forest, or Plains card, put it onto the battlefield tapped, then shuffle.\nCycling {R}{G}{W} ({R}{G}{W}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "common",
+      "artist": "Erikas Perl",
+      "artist_ids": [
+        "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
+      ],
+      "edhrec_rank": 25863,
+      "prices": {
+        "usd": "0.78",
+        "eur": "0.16"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "059164e1-894d-4586-9800-e60d6fbd6eb6",
+      "name": "Shifting Woodland",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/059164e1-894d-4586-9800-e60d6fbd6eb6",
+      "scryfall_uri": "https://scryfall.com/card/mh3/228/shifting-woodland?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/5/059164e1-894d-4586-9800-e60d6fbd6eb6.jpg?1717013047",
+        "normal": "https://cards.scryfall.io/normal/front/0/5/059164e1-894d-4586-9800-e60d6fbd6eb6.jpg?1717013047",
+        "png": "https://cards.scryfall.io/png/front/0/5/059164e1-894d-4586-9800-e60d6fbd6eb6.png?1717013047"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Shifting Woodland enters the battlefield tapped unless you control a Forest.\n{T}: Add {G}.\nDelirium — {2}{G}{G}: Shifting Woodland becomes a copy of target permanent card in your graveyard until end of turn. Activate only if there are four or more card types among cards in your graveyard.",
+      "colors": [],
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Delirium"
+      ],
+      "produced_mana": [
+        "G"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "rare",
+      "artist": "Josu Hernaiz",
+      "artist_ids": [
+        "74246024-92b4-43d0-a5af-a3f9f2a35d5f"
+      ],
+      "edhrec_rank": 14923,
+      "prices": {
+        "usd": "21.95",
+        "eur": "17.12"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "5358b87a-1a29-426d-b165-40c97da2c14d",
+      "name": "Sink into Stupor // Soporific Springs",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/5358b87a-1a29-426d-b165-40c97da2c14d",
+      "scryfall_uri": "https://scryfall.com/card/mh3/241/sink-into-stupor-soporific-springs?utm_source=api",
+      "cmc": 3,
+      "type_line": "Instant // Land",
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Sink into Stupor",
+          "mana_cost": "{1}{U}{U}",
+          "type_line": "Instant",
+          "oracle_text": "Return target spell or nonland permanent an opponent controls to its owner's hand.",
+          "colors": [
+            "U"
+          ],
+          "flavor_text": "The kami help travelers find profound relief, by freeing them from their mortal concerns.",
+          "artist": "Peter Polach",
+          "artist_id": "3cb68fd9-a9e9-425d-85a3-c116318a880f",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/5/3/5358b87a-1a29-426d-b165-40c97da2c14d.jpg?1717013194",
+            "normal": "https://cards.scryfall.io/normal/front/5/3/5358b87a-1a29-426d-b165-40c97da2c14d.jpg?1717013194",
+            "png": "https://cards.scryfall.io/png/front/5/3/5358b87a-1a29-426d-b165-40c97da2c14d.png?1717013194"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Soporific Springs",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "As Soporific Springs enters the battlefield, you may pay 3 life. If you don't, it enters the battlefield tapped.\n{T}: Add {U}.",
+          "colors": [],
+          "flavor_text": "Desperate travelers journey from across Kamigawa, drawn by rumors of relief from all their troubles.",
+          "artist": "Peter Polach",
+          "artist_id": "3cb68fd9-a9e9-425d-85a3-c116318a880f",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/5/3/5358b87a-1a29-426d-b165-40c97da2c14d.jpg?1717013194",
+            "normal": "https://cards.scryfall.io/normal/back/5/3/5358b87a-1a29-426d-b165-40c97da2c14d.jpg?1717013194",
+            "png": "https://cards.scryfall.io/png/back/5/3/5358b87a-1a29-426d-b165-40c97da2c14d.png?1717013194"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Peter Polach",
+      "artist_ids": [
+        "3cb68fd9-a9e9-425d-85a3-c116318a880f"
+      ],
+      "edhrec_rank": 14527,
+      "prices": {
+        "usd": "2.71",
+        "eur": "1.52"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "3d5fbb30-abfc-4e79-8ce5-bbb04a241c9f",
+      "name": "Spymaster's Vault",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/3d5fbb30-abfc-4e79-8ce5-bbb04a241c9f",
+      "scryfall_uri": "https://scryfall.com/card/mh3/230/spymasters-vault?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/3/d/3d5fbb30-abfc-4e79-8ce5-bbb04a241c9f.jpg?1717013063",
+        "normal": "https://cards.scryfall.io/normal/front/3/d/3d5fbb30-abfc-4e79-8ce5-bbb04a241c9f.jpg?1717013063",
+        "png": "https://cards.scryfall.io/png/front/3/d/3d5fbb30-abfc-4e79-8ce5-bbb04a241c9f.png?1717013063"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Spymaster's Vault enters the battlefield tapped unless you control a Swamp.\n{T}: Add {B}.\n{B}, {T}: Target creature you control connives X, where X is the number of creatures that died this turn. (Draw X cards, then discard X cards. Put a +1/+1 counter on that creature for each nonland card discarded this way.)",
+      "colors": [],
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [
+        "Connive"
+      ],
+      "produced_mana": [
+        "B"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "rare",
+      "artist": "David Álvarez",
+      "artist_ids": [
+        "c3004e2c-d372-4faa-90db-f1274e75ef41"
+      ],
+      "edhrec_rank": 20475,
+      "prices": {
+        "usd": "8.87",
+        "eur": "3.97"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "a7143aa7-b16d-4e63-910c-6ceec55483f3",
+      "name": "Strength of the Harvest // Haven of the Harvest",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/a7143aa7-b16d-4e63-910c-6ceec55483f3",
+      "scryfall_uri": "https://scryfall.com/card/mh3/258/strength-of-the-harvest-haven-of-the-harvest?utm_source=api",
+      "cmc": 3,
+      "type_line": "Enchantment — Aura // Land",
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [
+        "Enchant"
+      ],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Strength of the Harvest",
+          "mana_cost": "{2}{G/W}",
+          "type_line": "Enchantment — Aura",
+          "oracle_text": "Enchant creature\nEnchanted creature gets +1/+1 for each creature and/or enchantment you control.",
+          "colors": [
+            "G",
+            "W"
+          ],
+          "flavor_text": "The Kelema Veil flows through Setessa, allowing Karametra's faithful followers direct access to her wisdom and power.",
+          "artist": "Paolo Parente",
+          "artist_id": "d48dd097-720d-476a-8722-6a02854ae28b",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/a/7/a7143aa7-b16d-4e63-910c-6ceec55483f3.jpg?1717013470",
+            "normal": "https://cards.scryfall.io/normal/front/a/7/a7143aa7-b16d-4e63-910c-6ceec55483f3.jpg?1717013470",
+            "png": "https://cards.scryfall.io/png/front/a/7/a7143aa7-b16d-4e63-910c-6ceec55483f3.png?1717013470"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Haven of the Harvest",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "Haven of the Harvest enters the battlefield tapped.\n{T}: Add {G} or {W}.",
+          "colors": [],
+          "flavor_text": "\"For us, a temple is a part of nature, not something we impose upon it.\"\n—Sythis, Harvest's Hand",
+          "artist": "Paolo Parente",
+          "artist_id": "d48dd097-720d-476a-8722-6a02854ae28b",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/a/7/a7143aa7-b16d-4e63-910c-6ceec55483f3.jpg?1717013470",
+            "normal": "https://cards.scryfall.io/normal/back/a/7/a7143aa7-b16d-4e63-910c-6ceec55483f3.jpg?1717013470",
+            "png": "https://cards.scryfall.io/png/back/a/7/a7143aa7-b16d-4e63-910c-6ceec55483f3.png?1717013470"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Paolo Parente",
+      "artist_ids": [
+        "d48dd097-720d-476a-8722-6a02854ae28b"
+      ],
+      "edhrec_rank": 21075,
+      "prices": {
+        "usd": "1.18",
+        "eur": "0.22"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "49974246-0a3b-4ec9-b5ea-2a89df9bb0b5",
+      "name": "Stump Stomp // Burnwillow Clearing",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/49974246-0a3b-4ec9-b5ea-2a89df9bb0b5",
+      "scryfall_uri": "https://scryfall.com/card/mh3/259/stump-stomp-burnwillow-clearing?utm_source=api",
+      "cmc": 2,
+      "type_line": "Sorcery // Land",
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Stump Stomp",
+          "mana_cost": "{1}{R/G}",
+          "type_line": "Sorcery",
+          "oracle_text": "Target creature you control deals damage equal to its power to target creature or planeswalker you don't control.",
+          "colors": [
+            "G",
+            "R"
+          ],
+          "flavor_text": "\"Don't be a superstitious coward. What's a tree going to do, slowly fall on us?\"\n—Sebastian the Logger",
+          "artist": "Volkan Baǵa",
+          "artist_id": "93bec3c0-0260-4d31-8064-5d01efb4153f",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/4/9/49974246-0a3b-4ec9-b5ea-2a89df9bb0b5.jpg?1717013490",
+            "normal": "https://cards.scryfall.io/normal/front/4/9/49974246-0a3b-4ec9-b5ea-2a89df9bb0b5.jpg?1717013490",
+            "png": "https://cards.scryfall.io/png/front/4/9/49974246-0a3b-4ec9-b5ea-2a89df9bb0b5.png?1717013490"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Burnwillow Clearing",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "Burnwillow Clearing enters the battlefield tapped.\n{T}: Add {R} or {G}.",
+          "colors": [],
+          "flavor_text": "The loggers never questioned why the last crew had abandoned camp.",
+          "artist": "Volkan Baǵa",
+          "artist_id": "93bec3c0-0260-4d31-8064-5d01efb4153f",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/4/9/49974246-0a3b-4ec9-b5ea-2a89df9bb0b5.jpg?1717013490",
+            "normal": "https://cards.scryfall.io/normal/back/4/9/49974246-0a3b-4ec9-b5ea-2a89df9bb0b5.jpg?1717013490",
+            "png": "https://cards.scryfall.io/png/back/4/9/49974246-0a3b-4ec9-b5ea-2a89df9bb0b5.png?1717013490"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Volkan Baǵa",
+      "artist_ids": [
+        "93bec3c0-0260-4d31-8064-5d01efb4153f"
+      ],
+      "edhrec_rank": 21137,
+      "prices": {
+        "usd": "0.80",
+        "eur": "0.18"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "50686ac7-346c-43d1-bdaa-28d46a12ad93",
+      "name": "Sundering Eruption // Volcanic Fissure",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/50686ac7-346c-43d1-bdaa-28d46a12ad93",
+      "scryfall_uri": "https://scryfall.com/card/mh3/248/sundering-eruption-volcanic-fissure?utm_source=api",
+      "cmc": 3,
+      "type_line": "Sorcery // Land",
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Sundering Eruption",
+          "mana_cost": "{2}{R}",
+          "type_line": "Sorcery",
+          "oracle_text": "Destroy target land. Its controller may search their library for a basic land card, put it onto the battlefield tapped, then shuffle. Creatures without flying can't block this turn.",
+          "colors": [
+            "R"
+          ],
+          "flavor_text": "\"Idea: Climbing boots also balanced for running.\"\n—Expedition journal entry, very scorched",
+          "artist": "Yohann Schepacz",
+          "artist_id": "c40c8ec8-d8b3-48a5-8de2-a7c96cbded5b",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/5/0/50686ac7-346c-43d1-bdaa-28d46a12ad93.jpg?1717013301",
+            "normal": "https://cards.scryfall.io/normal/front/5/0/50686ac7-346c-43d1-bdaa-28d46a12ad93.jpg?1717013301",
+            "png": "https://cards.scryfall.io/png/front/5/0/50686ac7-346c-43d1-bdaa-28d46a12ad93.png?1717013301"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Volcanic Fissure",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "As Volcanic Fissure enters the battlefield, you may pay 3 life. If you don't, it enters the battlefield tapped.\n{T}: Add {R}.",
+          "colors": [],
+          "flavor_text": "Even the most seasoned adventurers think twice before testing their fortunes on the volcanic teeth of Akoum.",
+          "artist": "Yohann Schepacz",
+          "artist_id": "c40c8ec8-d8b3-48a5-8de2-a7c96cbded5b",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/5/0/50686ac7-346c-43d1-bdaa-28d46a12ad93.jpg?1717013301",
+            "normal": "https://cards.scryfall.io/normal/back/5/0/50686ac7-346c-43d1-bdaa-28d46a12ad93.jpg?1717013301",
+            "png": "https://cards.scryfall.io/png/back/5/0/50686ac7-346c-43d1-bdaa-28d46a12ad93.png?1717013301"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Yohann Schepacz",
+      "artist_ids": [
+        "c40c8ec8-d8b3-48a5-8de2-a7c96cbded5b"
+      ],
+      "edhrec_rank": 19652,
+      "prices": {
+        "usd": "1.14",
+        "eur": "0.24"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "e44ee47c-95de-4090-97b6-188585d86b0c",
+      "name": "Sunken Palace",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/e44ee47c-95de-4090-97b6-188585d86b0c",
+      "scryfall_uri": "https://scryfall.com/card/m3c/81/sunken-palace?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/e/4/e44ee47c-95de-4090-97b6-188585d86b0c.jpg?1717189998",
+        "normal": "https://cards.scryfall.io/normal/front/e/4/e44ee47c-95de-4090-97b6-188585d86b0c.jpg?1717189998",
+        "png": "https://cards.scryfall.io/png/front/e/4/e44ee47c-95de-4090-97b6-188585d86b0c.png?1717189998"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Cave",
+      "oracle_text": "Sunken Palace enters the battlefield tapped.\n{T}: Add {U}.\n{1}{U}, {T}, Exile seven cards from your graveyard: Add {U}. When you spend this mana to cast a spell or activate an ability, copy that spell or ability. You may choose new targets for the copy. (Mana abilities can't be copied.)",
+      "colors": [],
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "rare",
+      "artist": "Julian Kok Joon Wen",
+      "artist_ids": [
+        "7f1868e3-325f-4df9-8f27-a381fed4f0fc"
+      ],
+      "edhrec_rank": 21457,
+      "prices": {
+        "usd": "8.66",
+        "eur": null
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "0cccd328-457a-48ab-97fb-4bc319db2e60",
+      "name": "Suppression Ray // Orderly Plaza",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/0cccd328-457a-48ab-97fb-4bc319db2e60",
+      "scryfall_uri": "https://scryfall.com/card/mh3/260/suppression-ray-orderly-plaza?utm_source=api",
+      "cmc": 5,
+      "type_line": "Sorcery // Land",
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Suppression Ray",
+          "mana_cost": "{3}{W/U}{W/U}",
+          "type_line": "Sorcery",
+          "oracle_text": "Tap all creatures target player controls. You may pay X {E}, then choose up to X creatures tapped this way. Put a stun counter on each of them. (If a permanent with a stun counter would become untapped, remove one from it instead.)",
+          "colors": [
+            "U",
+            "W"
+          ],
+          "flavor_text": "The Consulate's aether spotlights have a setting to incapacitate trespassers on contact.",
+          "artist": "Gabor Szikszai",
+          "artist_id": "44c3877f-8771-43dc-9e40-f4c765f59d2e",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/0/c/0cccd328-457a-48ab-97fb-4bc319db2e60.jpg?1717013507",
+            "normal": "https://cards.scryfall.io/normal/front/0/c/0cccd328-457a-48ab-97fb-4bc319db2e60.jpg?1717013507",
+            "png": "https://cards.scryfall.io/png/front/0/c/0cccd328-457a-48ab-97fb-4bc319db2e60.png?1717013507"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Orderly Plaza",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "Orderly Plaza enters the battlefield tapped.\n{T}: Add {W} or {U}.",
+          "colors": [],
+          "flavor_text": "\"Chaos fuels the flames of violence. Only through order can peace be assured.\"\n—Dovin Baan",
+          "artist": "Gabor Szikszai",
+          "artist_id": "44c3877f-8771-43dc-9e40-f4c765f59d2e",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/0/c/0cccd328-457a-48ab-97fb-4bc319db2e60.jpg?1717013507",
+            "normal": "https://cards.scryfall.io/normal/back/0/c/0cccd328-457a-48ab-97fb-4bc319db2e60.jpg?1717013507",
+            "png": "https://cards.scryfall.io/png/back/0/c/0cccd328-457a-48ab-97fb-4bc319db2e60.png?1717013507"
+          }
+        }
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "1c516212-ad39-4396-8e05-ae57f100309f",
+          "component": "combo_piece",
+          "name": "Energy Reserve",
+          "type_line": "Card",
+          "uri": "https://api.scryfall.com/cards/1c516212-ad39-4396-8e05-ae57f100309f"
+        },
+        {
+          "object": "related_card",
+          "id": "0cccd328-457a-48ab-97fb-4bc319db2e60",
+          "component": "combo_piece",
+          "name": "Suppression Ray // Orderly Plaza",
+          "type_line": "Sorcery // Land",
+          "uri": "https://api.scryfall.com/cards/0cccd328-457a-48ab-97fb-4bc319db2e60"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Gabor Szikszai",
+      "artist_ids": [
+        "44c3877f-8771-43dc-9e40-f4c765f59d2e"
+      ],
+      "edhrec_rank": 24134,
+      "prices": {
+        "usd": "0.54",
+        "eur": "0.16"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "de92facf-762b-4a23-8d5e-bb673b0500c0",
+      "name": "Talon Gates of Madara",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/de92facf-762b-4a23-8d5e-bb673b0500c0",
+      "scryfall_uri": "https://scryfall.com/card/m3c/82/talon-gates-of-madara?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/e/de92facf-762b-4a23-8d5e-bb673b0500c0.jpg?1717190007",
+        "normal": "https://cards.scryfall.io/normal/front/d/e/de92facf-762b-4a23-8d5e-bb673b0500c0.jpg?1717190007",
+        "png": "https://cards.scryfall.io/png/front/d/e/de92facf-762b-4a23-8d5e-bb673b0500c0.png?1717190007"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Gate",
+      "oracle_text": "When Talon Gates of Madara enters the battlefield, up to one target creature phases out.\n{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\n{4}: Put Talon Gates of Madara from your hand onto the battlefield.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "rare",
+      "artist": "Steven Belledin",
+      "artist_ids": [
+        "f07d73b9-52a0-4fe5-858b-61f7b42174a5"
+      ],
+      "edhrec_rank": 21186,
+      "prices": {
+        "usd": "18.52",
+        "eur": null
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "113f48b9-a972-4e2c-af95-05ab078e01f2",
+      "name": "Tranquil Landscape",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/113f48b9-a972-4e2c-af95-05ab078e01f2",
+      "scryfall_uri": "https://scryfall.com/card/mh3/231/tranquil-landscape?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/1/113f48b9-a972-4e2c-af95-05ab078e01f2.jpg?1717013071",
+        "normal": "https://cards.scryfall.io/normal/front/1/1/113f48b9-a972-4e2c-af95-05ab078e01f2.jpg?1717013071",
+        "png": "https://cards.scryfall.io/png/front/1/1/113f48b9-a972-4e2c-af95-05ab078e01f2.png?1717013071"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice Tranquil Landscape: Search your library for a basic Forest, Plains, or Island card, put it onto the battlefield tapped, then shuffle.\nCycling {G}{W}{U} ({G}{W}{U}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "U",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "common",
+      "artist": "Randy Gallegos",
+      "artist_ids": [
+        "a5048cc7-438a-4378-98e4-da99b78e1db0"
+      ],
+      "edhrec_rank": 25994,
+      "prices": {
+        "usd": "0.60",
+        "eur": "0.15"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "4afcabf8-8f84-489d-8496-5bec55b351bd",
+      "name": "Trenchpost",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/4afcabf8-8f84-489d-8496-5bec55b351bd",
+      "scryfall_uri": "https://scryfall.com/card/m3c/83/trenchpost?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/4/a/4afcabf8-8f84-489d-8496-5bec55b351bd.jpg?1717190009",
+        "normal": "https://cards.scryfall.io/normal/front/4/a/4afcabf8-8f84-489d-8496-5bec55b351bd.jpg?1717190009",
+        "png": "https://cards.scryfall.io/png/front/4/a/4afcabf8-8f84-489d-8496-5bec55b351bd.png?1717190009"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Locus",
+      "oracle_text": "{T}: Add {C}.\n{3}, {T}: Target player mills a card for each Locus you control.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Mill"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "rare",
+      "flavor_text": "What once watched from among the clouds now lies buried and forgotten beneath an artificial sky.",
+      "artist": "Carlos Palma Cruchaga",
+      "artist_ids": [
+        "f0c43e1b-1853-4abc-8a1b-d7dda6c1d592"
+      ],
+      "edhrec_rank": 21459,
+      "prices": {
+        "usd": "3.42",
+        "eur": null
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "d0e3e7b3-7ba9-47a2-b46c-a40bffb445e2",
+      "name": "Twisted Landscape",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/d0e3e7b3-7ba9-47a2-b46c-a40bffb445e2",
+      "scryfall_uri": "https://scryfall.com/card/mh3/232/twisted-landscape?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/0/d0e3e7b3-7ba9-47a2-b46c-a40bffb445e2.jpg?1717013079",
+        "normal": "https://cards.scryfall.io/normal/front/d/0/d0e3e7b3-7ba9-47a2-b46c-a40bffb445e2.jpg?1717013079",
+        "png": "https://cards.scryfall.io/png/front/d/0/d0e3e7b3-7ba9-47a2-b46c-a40bffb445e2.png?1717013079"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}, Sacrifice Twisted Landscape: Search your library for a basic Swamp, Mountain, or Forest card, put it onto the battlefield tapped, then shuffle.\nCycling {B}{R}{G} ({B}{R}{G}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "G",
+        "R"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "common",
+      "artist": "Piotr Dura",
+      "artist_ids": [
+        "aff176e8-1d15-432e-ad1d-207a474decba"
+      ],
+      "edhrec_rank": 25230,
+      "prices": {
+        "usd": "0.68",
+        "eur": "0.16"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "020e1348-1a35-4cc8-bad6-9fbddfa79277",
+      "name": "Ugin's Labyrinth",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/020e1348-1a35-4cc8-bad6-9fbddfa79277",
+      "scryfall_uri": "https://scryfall.com/card/mh3/233/ugins-labyrinth?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/2/020e1348-1a35-4cc8-bad6-9fbddfa79277.jpg?1717013086",
+        "normal": "https://cards.scryfall.io/normal/front/0/2/020e1348-1a35-4cc8-bad6-9fbddfa79277.jpg?1717013086",
+        "png": "https://cards.scryfall.io/png/front/0/2/020e1348-1a35-4cc8-bad6-9fbddfa79277.png?1717013086"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "Imprint — When Ugin's Labyrinth enters the battlefield, you may exile a colorless card with mana value 7 or greater from your hand.\n{T}: Add {C}. If a card is exiled with Ugin's Labyrinth, add {C}{C} instead.\n{T}: Return the exiled card to its owner's hand.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Imprint"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "mythic",
+      "artist": "Mark Poole",
+      "artist_ids": [
+        "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
+      ],
+      "edhrec_rank": 15787,
+      "prices": {
+        "usd": "82.29",
+        "eur": "54.98"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "926916ed-2f22-4ba9-9427-194886ad6c1e",
+      "name": "Urza's Cave",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/926916ed-2f22-4ba9-9427-194886ad6c1e",
+      "scryfall_uri": "https://scryfall.com/card/mh3/234/urzas-cave?utm_source=api",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/2/926916ed-2f22-4ba9-9427-194886ad6c1e.jpg?1717013094",
+        "normal": "https://cards.scryfall.io/normal/front/9/2/926916ed-2f22-4ba9-9427-194886ad6c1e.jpg?1717013094",
+        "png": "https://cards.scryfall.io/png/front/9/2/926916ed-2f22-4ba9-9427-194886ad6c1e.png?1717013094"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Urza's Cave",
+      "oracle_text": "{T}: Add {C}.\n{3}, {T}, Sacrifice Urza's Cave: Search your library for a land card, put it onto the battlefield tapped, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "flavor_text": "No matter how deep Urza delved, he couldn't escape his regrets.",
+      "artist": "Mark Poole",
+      "artist_ids": [
+        "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
+      ],
+      "edhrec_rank": 12833,
+      "prices": {
+        "usd": "7.34",
+        "eur": "2.19"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "060f9675-4921-4cbb-bae2-54c85c679fd4",
+      "name": "Waterlogged Teachings // Inundated Archive",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/060f9675-4921-4cbb-bae2-54c85c679fd4",
+      "scryfall_uri": "https://scryfall.com/card/mh3/261/waterlogged-teachings-inundated-archive?utm_source=api",
+      "cmc": 4,
+      "type_line": "Instant // Land",
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "U"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Waterlogged Teachings",
+          "mana_cost": "{3}{U/B}",
+          "type_line": "Instant",
+          "oracle_text": "Search your library for an instant card or a card with flash, reveal it, put it into your hand, then shuffle.",
+          "colors": [
+            "B",
+            "U"
+          ],
+          "flavor_text": "The long-dead librarians are still on hand to recommend selected titles.",
+          "artist": "Douglas Shuler",
+          "artist_id": "a9ddb513-51c7-455c-ab8f-5b90aae9f75b",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/0/6/060f9675-4921-4cbb-bae2-54c85c679fd4.jpg?1717013522",
+            "normal": "https://cards.scryfall.io/normal/front/0/6/060f9675-4921-4cbb-bae2-54c85c679fd4.jpg?1717013522",
+            "png": "https://cards.scryfall.io/png/front/0/6/060f9675-4921-4cbb-bae2-54c85c679fd4.png?1717013522"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Inundated Archive",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "Inundated Archive enters the battlefield tapped.\n{T}: Add {U} or {B}.",
+          "colors": [],
+          "flavor_text": "Moldering tomes line rotting shelves. Generations of priceless knowledge fade from memory beneath the waves.",
+          "artist": "Douglas Shuler",
+          "artist_id": "a9ddb513-51c7-455c-ab8f-5b90aae9f75b",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/0/6/060f9675-4921-4cbb-bae2-54c85c679fd4.jpg?1717013522",
+            "normal": "https://cards.scryfall.io/normal/back/0/6/060f9675-4921-4cbb-bae2-54c85c679fd4.jpg?1717013522",
+            "png": "https://cards.scryfall.io/png/back/0/6/060f9675-4921-4cbb-bae2-54c85c679fd4.png?1717013522"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Douglas Shuler",
+      "artist_ids": [
+        "a9ddb513-51c7-455c-ab8f-5b90aae9f75b"
+      ],
+      "edhrec_rank": 21156,
+      "prices": {
+        "usd": "1.01",
+        "eur": "0.35"
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "62061e7c-cf19-4f03-b8fa-2bdba62d6b0b",
+      "name": "Witch Enchanter // Witch-Blessed Meadow",
+      "lang": "en",
+      "uri": "https://api.scryfall.com/cards/62061e7c-cf19-4f03-b8fa-2bdba62d6b0b",
+      "scryfall_uri": "https://scryfall.com/card/mh3/239/witch-enchanter-witch-blessed-meadow?utm_source=api",
+      "cmc": 4,
+      "type_line": "Creature — Human Warlock // Land",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Witch Enchanter",
+          "mana_cost": "{3}{W}",
+          "type_line": "Creature — Human Warlock",
+          "oracle_text": "When Witch Enchanter enters the battlefield, destroy target artifact or enchantment an opponent controls.",
+          "colors": [
+            "W"
+          ],
+          "power": "2",
+          "toughness": "2",
+          "flavor_text": "Shilgengar's famine once starved Stensia into embracing vampirism. The Dawnhart Coven would not let the same happen to Kessig.",
+          "artist": "Tyler Walpole",
+          "artist_id": "70c4c8c7-61a8-44e7-8fb1-161b7f943e7e",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/6/2/62061e7c-cf19-4f03-b8fa-2bdba62d6b0b.jpg?1717013161",
+            "normal": "https://cards.scryfall.io/normal/front/6/2/62061e7c-cf19-4f03-b8fa-2bdba62d6b0b.jpg?1717013161",
+            "png": "https://cards.scryfall.io/png/front/6/2/62061e7c-cf19-4f03-b8fa-2bdba62d6b0b.png?1717013161"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Witch-Blessed Meadow",
+          "flavor_name": "",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "As Witch-Blessed Meadow enters the battlefield, you may pay 3 life. If you don't, it enters the battlefield tapped.\n{T}: Add {W}.",
+          "colors": [],
+          "flavor_text": "\"Ghrin-Danu will not let her people go hungry.\"\n—Katilda, Dawnhart Prime",
+          "artist": "Tyler Walpole",
+          "artist_id": "70c4c8c7-61a8-44e7-8fb1-161b7f943e7e",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/6/2/62061e7c-cf19-4f03-b8fa-2bdba62d6b0b.jpg?1717013161",
+            "normal": "https://cards.scryfall.io/normal/back/6/2/62061e7c-cf19-4f03-b8fa-2bdba62d6b0b.jpg?1717013161",
+            "png": "https://cards.scryfall.io/png/back/6/2/62061e7c-cf19-4f03-b8fa-2bdba62d6b0b.png?1717013161"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "not_legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "rarity": "uncommon",
+      "artist": "Tyler Walpole",
+      "artist_ids": [
+        "70c4c8c7-61a8-44e7-8fb1-161b7f943e7e"
+      ],
+      "edhrec_rank": 16340,
+      "prices": {
+        "usd": "2.15",
+        "eur": "0.36"
+      },
+      "properties": []
+    },
     {
       "object": "card",
       "id": "2b5801fb-2026-4f25-98bc-ebb2f99684b9",

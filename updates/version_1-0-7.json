@@ -1,0 +1,9 @@
+{
+    "title": "Version 1.0.7",
+    "paragraph": "The site hasn't worked on Firefox since its release because of an evergreen feature missing from the browser. It now has it, so it works! Thanks Firefox!",
+    "changes": [
+        "Site's now working on Firefox",
+        "Added Modern Horizon's 3 Lands"
+        
+    ]
+}

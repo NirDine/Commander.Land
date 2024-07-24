@@ -33030,7 +33030,8 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "properties": []
+      "properties": [],
+	  "is_basic":true
     },
     {
       "object": "card",
@@ -33073,7 +33074,8 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "properties": []
+      "properties": [],
+	  "is_basic":true
     },
     {
       "object": "card",
@@ -33116,7 +33118,8 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "properties": []
+      "properties": [],
+	  "is_basic":true
     },
     {
       "object": "card",
@@ -33159,7 +33162,8 @@
       "artist_ids": [
         "e31f5891-08f7-4e5a-bac9-8b4570b8c1ab"
       ],
-      "properties": []
+      "properties": [],
+	  "is_basic":true
     },
     {
       "object": "card",
@@ -33202,7 +33206,8 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "properties": []
+      "properties": [],
+	  "is_basic":true
     },
     {
       "object": "card",
@@ -33243,7 +33248,8 @@
       "artist_ids": [
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
-      "properties": []
+      "properties": [],
+	  "is_basic":true
     },
     {
       "object": "card",

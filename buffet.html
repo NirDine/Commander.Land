@@ -298,58 +298,54 @@
                 <div class="filters hidden" id="extraFilters">
                   <input class="dropdown parent" type="checkbox" id="extraFiltersInput" name="extraFiltersInput" style="--hiddenCount: 9.5;" />
                   <label class="for-dropdown for-filters propertyTarget" for="extraFiltersInput" >
-                    <i class="ms ms-land"></i>
+                    Sort by...
                   </label>
                   <div class="section-dropdown">
                     <div class="filter-picker">
+
+                    <!-- Start of sorting option -->
                       <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="property" type="checkbox" id="land-ability" name="land-ability" value="activated ability" />
-                        <label class="land-ability" for="land-ability" title="Has an activated ability">
-                          <i class="ms ms-ability-activated"></i>
+                        <input class="sorting" type="radio" id="sort-by-name" name="sorting" value="name" />
+                        <label class="sort-name" for="sort-by-name" title="Sort by name, from a to Z">
+                          <span class="sort-label">
+                              Name (A to Z)
+                          </span>
                         </label>
                       </div>
-                      <div class="mana hidden " style="--hiddenCount: 8.5;">
-                        <input class="property" type="checkbox" id="land-t" name="land-t" value="is:tapland" />
-                        <label class="land-t" for="land-t" title="Enters the battlefield tapped">
-                          <i class="ms ms-tap"></i>
-                        </label>
-                      </div>
-                      <div class="mana hidden" style="--hiddenCount: 9;">
-                        <input class="property" type="checkbox" id="land-u" name="land-u" value="untap" />
-                        <label class="land-u" for="land-u" title="Enters the battlefield untapped">
-                          <i class="ms ms-untap"></i>
-                        </label>
-                      </div>
+                    <!-- End of sorting option -->
+                    
+                    <!-- Start of sorting option -->
                       <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="property" type="checkbox" id="land-a" name="land-a" value="is:artifact" />
-                        <label class="land-a" for="land-a" title="Is an artifact land">
-                          <i class="ms ms-artifact"></i>
+                        <input class="sorting" type="radio" id="sort-by-rank" name="sorting" value="edhrec_rank" checked />
+                        <label class="sort-rank" for="sort-by-rank" title="Sort by EDHREC's ranking">
+                          <span class="sort-label">
+                              EDHREC ranking
+                          </span> 
                         </label>
                       </div>
+                    <!-- End of sorting option -->
+                                        
+                    <!-- Start of sorting option -->
                       <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="property" type="checkbox" id="land-m" name="land-m" value="is:manland" />
-                        <label class="land-m" for="land-m" title="Can turn into a creature">
-                          <i class="ms ms-creature"></i>
+                        <input class="sorting" type="radio" id="sort-by-release-date" name="sorting" value="released_at" />
+                        <label class="sort-release-date" for="sort-by-release-date" title="Newest first">
+                          <span class="sort-label">
+                              Newest first
+                          </span>
                         </label>
                       </div>
+                    <!-- End of sorting option -->
+                    
+                    <!-- Start of sorting option -->
                       <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="property" type="checkbox" id="land-modal" name="land-modal" value="is:dfc" />
-                        <label class="land-modal" for="land-modal" title="It's a double-faced card">
-                          <i class="ms ms-dfc-modal-face"></i>
+                        <input class="sorting" type="radio" id="sort-by-rarity" name="sorting" value="rarity" />
+                        <label class="sort-rarity" for="sort-by-rarity" title="Sort by rarity (rarest first)">
+                          <span class="sort-label">
+                               Rarity (common to mythic)
+                          </span>
                         </label>
                       </div>
-                      <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="property" type="checkbox" id="land-s" name="land-s" value="is:snowland" />
-                        <label class="land-s" for="land-s" title="It's a snow land">
-                          <i class="ms ms-s"></i>
-                        </label>
-                      </div>
-                      <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="property" type="checkbox" id="land-gate" name="land-gate" value="is:gate" />
-                        <label class="land-gate" for="land-gate" title="It's a snow land">
-                          <i class="ss ss-gtc"></i>
-                        </label>
-                      </div>
+                    <!-- End of sorting option -->
                     </div>
                   </div>
                 </div>
@@ -790,7 +786,7 @@
         <div>
           <ul class="socials">
             <li>
-              <a href="/discord" class="social discord" aria-label="Link to join the Discord server">
+              <a href="https://discord.com/invite/2RgU9wRTdu" class="social discord" aria-label="Link to join the Discord server">
                 <img src="img/logos/discord.svg" alt="Logo">
               </a>
             </li>

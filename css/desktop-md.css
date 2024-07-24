@@ -204,10 +204,6 @@
     animation-name: bounce;
   }
     
-    #cardHolder:hover:not(:has(.dropdown-sub:checked)) {
- bottom: -385px;
-}
-
   @media (prefers-reduced-motion) {
     /* styles to apply if the user's settings are set to reduced motion */
     .hidden {
@@ -271,10 +267,17 @@
   }
 
   .filters .section-dropdown .filter-picker {
-    grid-template:
-      "c c c"
-      "c c c";
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+      
   }
+    
+  .filters .section-dropdown .filter-picker .mana label  {
+    width: 300px;
+      
+  }
+
 
   .filters .section-dropdown {
     width: auto;

@@ -261,9 +261,13 @@ span#combination-name {
 }
 
 
+.filters:has(input[type="radio"]:checked) .parent ~ label,
 
+.mana:has(input[type="radio"]:checked) > label,
 
-.mana:has(input[type="checkbox"]:checked) label,
+input[type="radio"]:checked + label,
+
+.mana:has(input[type="checkbox"]:checked) > label,
 
 
 .filters:has(input[type="checkbox"]:checked) .parent ~ label,
@@ -296,7 +300,9 @@ span#combination-name {
 
 i.ms,
 label.reset,
-i.ss {
+i.ss,
+.propertyTarget,
+.buffet-filters .sort-label {
   color: var(--mtg-c);
 }
 

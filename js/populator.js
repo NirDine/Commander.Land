@@ -78,6 +78,7 @@ $(document).on('keydown', function(event) {
 });
 
 
+
 // Function to load and append cards to the card pool
 function loadCards() {
   if (!filteredData || filteredData.length === 0 || !data) {
@@ -93,12 +94,34 @@ function loadCards() {
       .map(cardName => filteredData.find(card => card.name === cardName))
       .filter(card => card !== undefined); // Exclude undefined values
   } else {
-    // Filter cardsToAdd to exclude already loaded cards
-    const sortedData = filteredData.sort((a, b) => a.edhrec_rank - b.edhrec_rank);
-    cardsToAdd = sortedData
-      .slice(startIndex, endIndex)
-      .filter(card => !cardSuggestions.find(`[data-card-name="${card.name}"]`).length);
-  }
+      // Get the sorting key from the sorting input
+      const sortingKey = $('.sorting:checked').val();
+      
+            // Predefined order for rarity
+      const rarityOrder = ['common', 'uncommon', 'rare', 'mythic'];
+
+      // Sort cards based on the sorting key
+      const sortedData = filteredData.sort((a, b) => {
+        if (sortingKey === 'released_at') {
+          // Inverse sorting for 'released_at'
+          return new Date(b[sortingKey]).getTime() - new Date(a[sortingKey]).getTime();
+        } else if (sortingKey === 'rarity') {
+          // Custom sorting for rarity
+          const aRarityIndex = rarityOrder.indexOf(a[sortingKey]) !== -1 ? rarityOrder.indexOf(a[sortingKey]) : rarityOrder.length;
+          const bRarityIndex = rarityOrder.indexOf(b[sortingKey]) !== -1 ? rarityOrder.indexOf(b[sortingKey]) : rarityOrder.length;
+          return aRarityIndex - bRarityIndex;
+        } else if (typeof a[sortingKey] === 'string') {
+          return a[sortingKey].localeCompare(b[sortingKey]);
+        } else {
+          return a[sortingKey] - b[sortingKey];
+        }
+      });
+      
+      // Filter cardsToAdd to exclude already loaded cards
+      cardsToAdd = sortedData
+        .slice(startIndex, endIndex)
+        .filter(card => !cardSuggestions.find(`[data-card-name="${card.name}"]`).length);
+    }
 
   for (let i = 0; i < cardsToAdd.length; i++) {
     const card = cardsToAdd[i];
@@ -126,13 +149,12 @@ function filterCards() {
     return $(this).val().toLowerCase(); // Convert to lowercase
   }).get();
 
-  const selectedProperties = $('.property:checked').map(function() {
-    return $(this).val().toLowerCase(); // Convert to lowercase
-  }).get();
 
   filteredData = data?.data.filter(function(card) {
     const formattedCardName = formatCardName(card.name);
     const formattedCardType = formatCardName(card.type_line);
+    const formattedCardSetName = formatCardName(card.set_name);
+    const formattedCardSet = formatCardName(card.set);
     const formattedCardText = formatCardName(card.oracle_text);
     const cardColors = card.color_identity?.map(function(color) {
       return color.toLowerCase(); // Convert to lowercase
@@ -143,6 +165,8 @@ function filterCards() {
 
     const matchesSearch = formattedCardName.includes(formattedSearchValue) ||
       formattedCardType.includes(formattedSearchValue) ||
+      formattedCardSet.includes(formattedSearchValue) ||
+      formattedCardSetName.includes(formattedSearchValue) ||
       formattedCardText.includes(formattedSearchValue) ||
       cardProperties.some(function(property) {
         return formatCardName(property).includes(formattedSearchValue);
@@ -159,15 +183,8 @@ function filterCards() {
       return selectedColors.includes(color);
     });
 
-    // Check if any selected properties match any card properties
-    const hasMatchingProperties = selectedProperties.some(function(property) {
-      if (property === 'untap') {
-        return !cardProperties.includes('tapland');
-      }
-      return cardProperties.includes(property);
-    });
 
-    return matchesSearch && (isSubset || showCard) && (hasMatchingProperties || selectedProperties.length === 0);
+    return matchesSearch && (isSubset || showCard);
   });
 
   startIndex = 0;
@@ -201,7 +218,6 @@ const updateFiltersFromUrl = () => {
   const queryParams = new URLSearchParams(window.location.search);
   const searchTerms = queryParams.get('q') || ''; // Get the search terms from the URL query parameter 'q'
   const selectedColors = queryParams.get('colors')?.split(',') ?? [];
-  const selectedProperties = queryParams.get('properties')?.split(',') ?? [];
 
   // Set the search input value
   $('#search').val(searchTerms);
@@ -228,10 +244,6 @@ const updateFiltersFromUrl = () => {
 // Function to update URL parameters based on filters
 const updateUrlFromFilters = () => {
   const selectedColors = $('.color:checked').map(function() {
-    return $(this).val();
-  }).get();
-
-  const selectedProperties = $('.property:checked').map(function() {
     return $(this).val();
   }).get();
 
@@ -296,7 +308,7 @@ const updateMobileColorFilters = () => {
 // Check if the data is already stored in localStorage
 const storedData = localStorage.getItem('landsData');
 const storedVersion = localStorage.getItem('landsDataVersion');
-const currentVersion = '1.15'; // Replace with the current version of the JSON data
+const currentVersion = '2.1'; // Replace with the current version of the JSON data
 
 if (!storedVersion) {
     console.log('No data found.');
@@ -377,7 +389,7 @@ if (selectedCards.length > 0) {
 
 
 // Add event listener to color and property checkboxes
-$('.color, .property').on('change', function() {
+$('.color, .property, .sorting').on('change', function() {
   filterCards();
   updateUrlFromFilters();
   updateBasicCardsCount();
@@ -403,7 +415,7 @@ $('#isAdded').on('change', function() {
 
 $('.reset-filters').on('click', function() {
 
-    $('.color, .property, #isAdded').each(function() {
+    $('.color, .property, #isAdded, .sorting').each(function() {
         const checkbox = $(this);
         const value = checkbox.val();
         checkbox.prop('checked', false);

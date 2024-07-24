@@ -2,12 +2,12 @@
     "title": "Version 1.0.7",
     "paragraph": "I've reworked the lands.json file that the site uses to store land data in order to store some more info. That should allow for more filter options in the future. It actually took away 7000 or so lines of text, so load times should improve.",
     "changes": [
-        "Reworked the lands.json file to allow for more filtering in the future",
+        "Reworked the lands.json file to allow for more filtering in the future.",
         "Compressed the lands.json file to reduce its file size.",
-        "Added rudimentary filtering options to allow for a better search experience",
-        "Added set names and set abbreviations to the search function, althoughn it only works with the present editions of the cards for now.",
-        "Added Modern Assassin's Creed's lands",
-        "Added Bloomburrow's lands",
+        "Added rudimentary filtering options to allow for a better search experience.",
+        "Added set names and set abbreviations to the search function, although it only works with the present editions of the cards for now.",
+        "Added Modern Assassin's Creed's lands.",
+        "Added Bloomburrow's lands.",
         "Updated Discord invite link. It now works!"
         
     ]

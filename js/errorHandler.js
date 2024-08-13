@@ -219,13 +219,27 @@ function determineColorIdentity(responseData) {
 function applyHighlights(cardInfoArray, nameErrors) {
   let highlightedText = '';
 
+  // Ensure cardInfoArray is an array and nameErrors is also an array
+  if (!Array.isArray(cardInfoArray) || !Array.isArray(nameErrors)) {
+    console.error("Invalid input: cardInfoArray or nameErrors is not an array");
+    return highlightedText;
+  }
+
   // Generate the highlighted text with correct ordering
   cardInfoArray.forEach(cardInfo => {
-    const { name, quantity } = cardInfo;
-    if (nameErrors.includes(name)) {
-      highlightedText += `<mark class="error" data-card-name="${name}">${quantity} ${name}</mark>\n`;
+    if (cardInfo && cardInfo.name && typeof cardInfo.quantity !== 'undefined') {
+      const { name, quantity } = cardInfo;
+
+      // Handle names with "//"
+      const sanitizedName = name.replace(/ \/\/ /g, ' // ');
+
+      if (nameErrors.includes(sanitizedName)) {
+        highlightedText += `<mark class="error" data-card-name="${sanitizedName}">${quantity} ${sanitizedName}</mark>\n`;
+      } else {
+        highlightedText += `${quantity} ${sanitizedName}\n`;
+      }
     } else {
-      highlightedText += `${quantity} ${name}\n`;
+      console.error("Invalid cardInfo object:", cardInfo);
     }
   });
 

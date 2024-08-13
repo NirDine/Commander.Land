@@ -2,7 +2,7 @@
     "title": "Version 1.0.9",
     "paragraph": "",
     "changes": [
-        "Fixed an issue where some high-ranked cards where being loaded towards the end of the list.",
+        "Fixed an issue where some high-raking cards (like Watery Grave) cards were being loaded towards the end of the list.",
         "Snow-Covered Basic Lands now don't appear on the list by default, but do appear when searched."
     ]
 }

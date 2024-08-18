@@ -1,5 +1,5 @@
 {
-    "title": "Version 1.0.7",
+    "title": "Version 1.0.8",
     "paragraph": "I've reworked the lands.json file that the site uses to store land data in order to store some more info. That should allow for more filter options in the future. It actually took away 7000 or so lines of text, so load times should improve.",
     "changes": [
         "Reworked the lands.json file to allow for more filtering in the future.",

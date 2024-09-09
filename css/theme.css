@@ -245,17 +245,22 @@ span#combination-name {
   background-color: var(--mainBG);
 }
 
-.recommended div {
+.recommended {
 
     color: var(--contrast);
     border-radius: var(--bradius);
     background: #ffffff14;
+    
+    .chartHolder {
+        
+    }
 }
 
 .mana label,
 .filters label,
-.buffet #search,
-.moneyPls {
+#search,
+.moneyPls,
+.analysisDescription {
   background: #ffffff14;
   border: 2px solid #0000006e;
 }

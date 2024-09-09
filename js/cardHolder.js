@@ -97,6 +97,143 @@ function updateBasicCardsCount() {
 
 
 
+// Function to record the selected cards and mana color counts in history
+function recordSelectedCards() {
+  // Create a deep copy of selectedCards array
+  const selectedCardsCopy = JSON.parse(JSON.stringify(selectedCards));
+
+  // Also record the current mana color counts
+  const currentColorCounts = JSON.parse(localStorage.getItem('manaColorCounts')) || {};
+
+  // Push the object with both selectedCards and manaColorCounts into selectedCardsHistory
+  selectedCardsHistory.push({
+    selectedCards: selectedCardsCopy,
+    manaColorCounts: currentColorCounts
+  });
+}
+
+// Function to clear selected cards and reset color counts
+function clearSelectedCards() {
+  recordSelectedCards(); // Record the current state before clearing
+
+  // Remove the .selected class from the cards being removed
+  $('.card.selected').removeClass('selected');
+
+  // Clear the selectedCards array
+  selectedCards = [];
+  
+  // Update the UI or perform any necessary actions to reflect the cleared selectedCards
+  updateCardList();
+
+  // Save the updated selectedCards to localStorage
+  localStorage.setItem('selectedCards', JSON.stringify(selectedCards));
+
+  // Clear the color counters and update the local storage
+  const colorCount = {
+    W: 0,
+    U: 0,
+    B: 0,
+    R: 0,
+    G: 0,
+    C: 0
+  };
+
+  Object.entries(colorCount).forEach(([color, _]) => {
+    $(`.tracker-${color} span .current`).text(0);
+  });
+
+  localStorage.setItem('manaColorCounts', JSON.stringify(colorCount));
+
+  // Optional: If responseData is no longer needed, you can clear it
+  localStorage.removeItem('responseData');
+
+  // Clear colorRecommendations from localStorage
+  localStorage.removeItem('colorRecommendations');
+
+  // Recalculate mana color counts
+  updateManaColorProgress();
+
+  totalCardCount();
+    updateChart();
+}
+
+
+// Function to undo the last clear action
+function undoClearSelectedCards() {
+  if (selectedCardsHistory.length > 0) {
+    // Retrieve the last recorded state
+    const previousState = selectedCardsHistory.pop();
+
+    // Ensure previousState is defined and has selectedCards and manaColorCounts
+    if (previousState && previousState.selectedCards && previousState.manaColorCounts) {
+      const previousSelectedCards = previousState.selectedCards;
+      const previousManaColorCounts = previousState.manaColorCounts;
+
+      // Iterate over the current selectedCards and remove the .selected class from the cards that are being removed
+      selectedCards.forEach(cardName => {
+        if (!previousSelectedCards.includes(cardName)) {
+          const cardElement = $(`.card[data-card-name="${cardName}"]`);
+          cardElement.removeClass('selected');
+            
+            
+        }
+      });
+
+      // Iterate over the previous selectedCards and add the .selected class to the cards that are being added back
+      previousSelectedCards.forEach(cardName => {
+        if (!selectedCards.includes(cardName)) {
+          const cardElement = $(`.card[data-card-name="${cardName}"]`);
+          cardElement.addClass('selected');
+        }
+      });
+
+      // Set selectedCards to the previous state
+      selectedCards = previousSelectedCards;
+
+      // Update the UI or perform any necessary actions based on the previous selectedCards state
+      updateCardList();
+
+      // Save the updated selectedCards to localStorage
+      localStorage.setItem('selectedCards', JSON.stringify(selectedCards));
+
+      // Restore the previous mana color counts and update the UI
+      Object.entries(previousManaColorCounts).forEach(([color, count]) => {
+        $(`.tracker-${color} span .current`).text(count);
+      });
+
+      localStorage.setItem('manaColorCounts', JSON.stringify(previousManaColorCounts));
+
+      // Recalculate mana color counts
+      updateManaColorProgress();
+    }
+  }
+  updateChart();
+  totalCardCount();
+}
+
+// Function to update mana color progress
+function updateManaColorProgress() {
+  const colorCounts = countProducedManaColors();
+
+  Object.entries(colorCounts).forEach(([color, count]) => {
+    const totalColorCount = Object.values(colorCounts).reduce((total, count) => total + count, 0);
+    const percentage = totalColorCount === 0 ? 0 : Math.round((count / totalColorCount) * 100);
+    const progressBar = $(`.progress-bar-${color}`);
+
+    if (progressBar.length) {
+      if (count !== 0) {
+        progressBar.addClass('hasMana');
+      } else {
+        progressBar.removeClass('hasMana');
+      }
+
+      progressBar.css('width', `${percentage}%`);
+      progressBar.text(`${percentage}%`);
+    }
+  });
+}
+
+// Function to count mana colors
 function countProducedManaColors() {
   const colorCount = {
     W: 0,
@@ -132,98 +269,11 @@ function countProducedManaColors() {
     $(`.tracker-${color} span .current`).text(count);
   });
 
+  // Store the colorCount in local storage
+  localStorage.setItem('manaColorCounts', JSON.stringify(colorCount));
+
+  updateChart();
   return colorCount;
-}
-
-
-
-function updateManaColorProgress() {
-  const colorCounts = countProducedManaColors();
-
-  Object.entries(colorCounts).forEach(([color, count]) => {
-    const totalColorCount = Object.values(colorCounts).reduce((total, count) => total + count, 0);
-    const percentage = totalColorCount === 0 ? 0 : Math.round((count / totalColorCount) * 100);
-    const progressBar = $(`.progress-bar-${color}`);
-
-    if (progressBar.length) {
-      if (count !== 0) {
-        progressBar.addClass('hasMana');
-      } else {
-        progressBar.removeClass('hasMana');
-      }
-
-      progressBar.css('width', `${percentage}%`);
-      progressBar.text(`${percentage}%`);
-    }
-  });
-}
-
-
-    
-    function recordSelectedCards() {
-      // Create a deep copy of selectedCards array
-      const selectedCardsCopy = JSON.parse(JSON.stringify(selectedCards));
-
-      // Push the copy into selectedCardsHistory
-      selectedCardsHistory.push(selectedCardsCopy);
-    }
-
-    function clearSelectedCards() {
-      // Remove the .selected class from the cards being removed
-      $('.card.selected').removeClass('selected');
-
-      // Clear the selectedCards array
-      selectedCards = [];
-      totalCardCount();
-      // Update the UI or perform any necessary actions to reflect the cleared selectedCards
-      updateCardList();
-
-      // Save the updated selectedCards to localStorage
-      localStorage.setItem('selectedCards', JSON.stringify(selectedCards));
-
-    const storedResponseData = localStorage.getItem('responseData');
-
-    // Check if responseData is present in localStorage
-        if (storedResponseData) {
-          localStorage.removeItem('responseData');
-        }
-
-    totalCardCount();
-    }
-
-
-    function undoClearSelectedCards() {
-        if (selectedCardsHistory.length > 0) {
-        // Retrieve the last recorded selectedCards state
-        const previousSelectedCards = selectedCardsHistory.pop();
-
-        // Iterate over the current selectedCards and remove the .selected class from the cards that are being removed
-        selectedCards.forEach(cardName => {
-          if (!previousSelectedCards.includes(cardName)) {
-            const cardElement = $(`.card[data-card-name="${cardName}"]`);
-            cardElement.removeClass('selected');
-          }
-    });
-
-    // Iterate over the previous selectedCards and add the .selected class to the cards that are being added back
-    previousSelectedCards.forEach(cardName => {
-      if (!selectedCards.includes(cardName)) {
-        const cardElement = $(`.card[data-card-name="${cardName}"]`);
-        cardElement.addClass('selected');
-      }
-    });
-
-    // Set selectedCards to the previous state
-    selectedCards = previousSelectedCards;
-
-    // Update the UI or perform any necessary actions based on the previous selectedCards state
-    updateCardList();
-
-    // Save the updated selectedCards to localStorage
-    localStorage.setItem('selectedCards', JSON.stringify(selectedCards));
-  }
-
-    totalCardCount();
 }
 
 
@@ -339,6 +389,20 @@ function handleCardInteraction(card) {
         if (selectedCards.filter(name => name === cardName).length === 0) {
           // If it's the last card with the same ID, remove the .selected class from the card
           card.removeClass('selected');
+            
+            if (selectedCards.length === 0) {
+                colorCount = {
+                    W: 0,
+                    U: 0,
+                    B: 0,
+                    R: 0,
+                    G: 0,
+                    C: 0
+                  };
+
+            localStorage.setItem('manaColorCounts', JSON.stringify(colorCount));
+            }
+    
         }
       }
     }
@@ -351,6 +415,8 @@ function handleCardInteraction(card) {
 
   // Update the card list
   updateCardList();
+
+
 }
 
 
@@ -419,6 +485,11 @@ $(document).on('click', '.exportToMoxfield', function() {
 });
 
 // Initialize card list on page load
-totalCardCount();
+
 updateBasicCardsCount();
+
+
+totalCardCount();
+
 updateCardList();
+countProducedManaColors();

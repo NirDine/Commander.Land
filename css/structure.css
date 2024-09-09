@@ -463,12 +463,14 @@ li:has(#navColors) {
     justify-content: center;
     align-items: center;
     padding-block: 0.5em;
-    margin: 0.5em;
+    margin-block: 0.5em;
     border-radius: var(--bradius);
 }
 
-.buffet .top {
+.buffet, .analyzer {
+    .top {
     margin-bottom: 30px;
+    }
 }
 
 .bottom .button {
@@ -637,52 +639,62 @@ mark {
 
 /* BUFFET */
 
-.buffet main {
+.buffet, .analyzer {
+    main {
   padding-top: 2em;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-.buffet .container {
+ .container {
     width: calc(100% - 1em);
 }
 
-.buffet .bottom {
+ .bottom {
   height: 100%;
 }
 
 
-.buffet .content {
+.content {
   width: 100%;
   padding-inline: 0;
 }
 
-.buffet .top {
+    .top {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   width: 100%;
   gap: 0.5em;
+    }
 }
 
+.recommended {
+       display: none;
+       flex-direction: column;
+}
 
 .recommended {
-    display: none;
+     
+ 
     width: 100%;
     padding-inline: 0.6em;
     margin-bottom: 0.5em;
-}
+    
 
-.recommended div {
+    div {
 
-    padding: 1em;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-.recommended div h4 {
+        padding: 1em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h4 {
     font-size: 1.2em
 
+    
+    } 
 }
 
 .recommended .recommendedManaPips,
@@ -945,12 +957,15 @@ mark {
   min-height: 70px;
 }
 
-.buffet #search {
-  border-radius: var(--bradius);
-  color: var(--contrast);
-  padding: 25px;
-  border-width: 2px;
-  border-style: solid;
+.buffet, .analyzer {
+    #search {
+        border-radius: var(--bradius);
+        color: var(--contrast);
+        padding: 25px;
+        border-width: 2px;
+        border-style: solid;
+    }
+    
 }
 
 
@@ -1049,7 +1064,7 @@ body.buffet {
   padding-bottom: 3em;
 }
 
-body.buffet:has(#cardHolderInput:checked) {
+body.buffet:has(#cardHolderInput:checked), body.analyzer:has(#cardHolderInput:checked) {
   padding-bottom: calc(400px + 3em);
 }
 
@@ -1403,31 +1418,36 @@ gap: 10px;
   pointer-events: auto;
 }
 
-    .buffet .top {
+.buffet, .analyzer {
+    
+ .top {
         flex-direction: column;
     }
+
     
     .buffet-filters.right .color-picker {
         width: 100%;
         flex-wrap: nowrap;
     }
-    .buffet .searchBox {
+     .searchBox {
         width: -webkit-fill-available;
     }
-    .buffet #search {
+     #search {
         width: 100%;
         width: -moz-available;          /* WebKit-based browsers will ignore this. */
         width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
         width: fill-available;
     }
 
+}
 
 @media only screen and (max-width: 375px) { 
-    .buffet .top {
+    .buffet, .analyzer {
+        .top {
         flex-direction: column;
     }
     
-    .buffet .buffet-filters .right {
+    .buffet-filters .right {
         width: max-content;
     }
 
@@ -1443,7 +1463,7 @@ gap: 10px;
         --cardSizeWidth: 244px;
         max-height: var(--cardSizeHeight);
     }
-    
+ } 
 }
 
 
@@ -1519,4 +1539,40 @@ gap: 10px;
     list-style: circle;
     color: var(--contrast);
     font-family: var(--font);
+}
+
+
+
+.analyzer {
+    
+    .content {
+        width: 100%;
+        padding: 0px;
+
+        .analysisDescription {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-block: 0.5em;
+            margin: 0.5em;
+            border-radius: var(--bradius);
+            
+        div {
+
+        padding: 1em;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+            
+        }
+
+        h4 {
+        font-size: 1.2em
+
+
+        } 
+
+        }
+        
+    }
 }

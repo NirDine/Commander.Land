@@ -57,7 +57,19 @@
     grid-area: copyright;
   }
 
-    
+  
+    .recommended {
+        
+        flex-direction: row;
+        justify-content: center;
+        
+        
+        .chartHolder {
+            flex-basis: 40%;
+            
+        }
+        
+    }
     .buffet-filters.right {
       justify-content: flex-end;
     }
@@ -158,10 +170,13 @@
 
     }  
     
-  .buffet .top {
+    .buffet, .analyzer {
+        
+    .top {
     flex-direction: row;
     padding-inline: 0.5em;
-  }
+      }
+    } 
     
     
     

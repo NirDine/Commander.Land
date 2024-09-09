@@ -39,7 +39,7 @@
       gtag('config', 'G-TDWP727MSY');
     </script>
     
-  <body class="fallback buffet" style="">
+  <body class="fallback analyzer" style="">
     <a href="#cardHolderInput" class="skipNavLink" id="skip">Skip Navigation</a>
     <div class="lightsOff"></div>
     <div class="container">
@@ -204,15 +204,11 @@
         </div>
           
       <div class="recommended hidden" style="--hiddenCount: 12;">
-           <div class="info">
+           <div>
                <h4>Recommendations</h4>
                <p>After analyzing your deck's mana values, non-land mana producers under 3 mana <span class="manaProducers"></span>, and total nonland cards <span class="recommendedTotalCards"></span>, we've determined that your optimal land count is: <span class="recommendedLandCount"></span>.</p>
                <p>To be able to play all your cards consistently, you need <span class="recommendedManaPips"></span> mana sources.</p>
            </div>
-           <div class="chartHolder">
-              <canvas height="402" width="402" id="myChart"></canvas>
-           </div>
-
        </div>
         <div class="content">
           <div class="top">
@@ -379,9 +375,10 @@
             </div>
           </div>
           <div class="bottom">
-            <div id="cardSuggestions" class="cardSuggestions">
+            <div id="" class="">
 
-           
+               <canvas height="800px" width="800px" id="myChart"></canvas>
+
             </div>
        <div id="cardHolder">
             <input class="dropdown-sub" type="checkbox" id="cardHolderInput" name="cardHolderInput" />
@@ -845,10 +842,6 @@
     <!-- JQUERY  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    <!-- CHART.JS FRAMEWORK -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
-    <!-- CHART BUILDER -->
-    <script type="text/javascript" src="js/charts.js" defer></script>
     <!-- MOBILE MENU -->
     <script type="text/javascript" src="js/menuHandler.js"></script>
     <!-- ANIMATIONS -->
@@ -861,7 +854,10 @@
     <script type="text/javascript" src="js/dfcFlipper.js" defer></script>
     <!-- ADD CARDS TO THE CARD HOLDER -->
     <script type="text/javascript" src="js/cardHolder.js" defer></script>
-
+    <!-- CHART.JS FRAMEWORK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+    <!-- CHART BUILDER -->
+    <script type="text/javascript" src="js/charts.js" defer></script>
     
     <script>
       $(function() {

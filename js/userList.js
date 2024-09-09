@@ -150,45 +150,43 @@ $.getJSON('data/recommendations.json', function(data) {
 
 
 });
-
+    
 function processCards(recommendationsData) {
+  // Create an object to store the highest result per color
+  const highestResults = {};
 
-// Create an object to store the highest result per color
-const highestResults = {};
+  analyzedData.forEach(card => {
+    const cmc = card.cmc;
+    const colorWeight = card.colorWeight;
+    const cmcData = recommendationsData[cmc];
 
-analyzedData.forEach(card => {
-  const cmc = card.cmc;
-  const colorWeight = card.colorWeight;
-  const cmcData = recommendationsData[cmc];
-
-  if (cmcData) {
-    Object.entries(colorWeight).forEach(([color, weight]) => {
-      if (color !== 'N' && color !== 'X' && cmcData.hasOwnProperty(weight)) {
-        const result = cmcData[weight];
-        if (!highestResults[color] || result > highestResults[color]) {
-          highestResults[color] = result;
+    if (cmcData) {
+      Object.entries(colorWeight).forEach(([color, weight]) => {
+        if (color !== 'N' && color !== 'X' && cmcData.hasOwnProperty(weight)) {
+          const result = cmcData[weight];
+          if (!highestResults[color] || result > highestResults[color]) {
+            highestResults[color] = result;
+          }
         }
-      }
-    console.log(`----- ${card.name} -----, CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}`);
+        console.log(`----- ${card.name} -----, CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}`);
+      });
+    } else {
+      console.log(`----- ${card.name} -----`);
+    }
+  });
+
+  // Create an array of color recommendations with the highest result per color
+  const colorRecommendations = Object.entries(highestResults).map(([color, result]) => ({ color, result }));
+
+  const manaColorCounts = Object.entries(highestResults).map(([color, result]) => ({ color, result }));
     
-    
-    });
-    
-  } else {
-    console.log(`----- ${card.name} -----`);
-  }
-    
-// Create an array of color recommendations with the highest result per color
-const colorRecommendations = Object.entries(highestResults).map(([color, result]) => ({ color, result }));
+  // Store colorRecommendations in localStorage
+  localStorage.setItem('colorRecommendations', JSON.stringify(colorRecommendations));
 
-
-updateColorTracker(colorRecommendations);
-
-});
-
-
-
+  // Call the function to update the UI or other components
+  updateColorTracker(colorRecommendations);
 }
+
 
 } else {
   console.log('responseData not found in localStorage');
@@ -283,6 +281,8 @@ function updateColorTracker(colorRecommendations) {
     }
   });
   
-recommended.show();
+recommended.css('display', 'flex');
+
+updateChart();
 }
 

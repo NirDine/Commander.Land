@@ -1,0 +1,7 @@
+{
+    "title": "Version 1.0.10",
+    "paragraph": "The graph right now should be working perfectly for larger displays, but mobile devices (especially smaller ones) might have issues. After some testing, I'll address them. Let me know how your experience using the site changes with the graph.",
+    "changes": [
+        "Added a graph to display mana distribution and mana requirements better."
+    ]
+}

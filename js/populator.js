@@ -77,8 +77,6 @@ $(document).on('keydown', function(event) {
   }
 });
 
-
-
 // Function to load and append cards to the card pool
 function loadCards() {
   if (!filteredData || filteredData.length === 0 || !data) {
@@ -117,8 +115,9 @@ function loadCards() {
         }
       });
       
-      // Filter cardsToAdd to exclude already loaded cards
-      cardsToAdd = sortedData
+  // Filter cardsToAdd to exclude already loaded cards
+   
+    cardsToAdd = sortedData
         .slice(startIndex, endIndex)
         .filter(card => !cardSuggestions.find(`[data-card-name="${card.name}"]`).length);
     }
@@ -241,9 +240,12 @@ const updateFiltersFromUrl = () => {
 };
 
   
-// Function to update URL parameters based on filters
 const updateUrlFromFilters = () => {
   const selectedColors = $('.color:checked').map(function() {
+    return $(this).val();
+  }).get();
+
+  const selectedProperties = $('.property:checked').map(function() { 
     return $(this).val();
   }).get();
 
@@ -265,6 +267,7 @@ const updateUrlFromFilters = () => {
   const newUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}?${queryParams.toString()}${window.location.hash}`;
   window.history.replaceState({ path: newUrl }, '', newUrl);
 };
+
 
 const updateMobileColorFilters = () => {
   const selectedColorCheckboxes = $('.color:checked, .colorless:checked');

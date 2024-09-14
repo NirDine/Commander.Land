@@ -2,6 +2,7 @@
     "title": "Version 1.0.11",
     "paragraph": "",
     "changes": [
-        "Added Duskmourn: House of Horror lands."
+        "Added Duskmourn: House of Horror lands.",
+        "Fixed a bug where you couldn't copy or download 1-card lists.",
     ]
 }

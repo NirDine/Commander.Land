@@ -300,7 +300,7 @@ function getUniqueCardList(storedCards) {
 }
 
 function downloadCardList(action) {
-  if (selectedCards.length > 1) {
+  if (selectedCards.length > 0) {
     // Get the unique card list with quantities and names
     const uniqueCardList = getUniqueCardList(selectedCards);
 

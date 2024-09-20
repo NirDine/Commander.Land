@@ -200,15 +200,18 @@ if (storedResponseData) {
   // Calculate the average cmc of all cards in responseData
   const cardCount = responseData.length;
 
-  const totalCmc = responseData.reduce((sum, card) => sum + card.cmc, 0);
-    
-  const averageCmc = totalCmc / cardCount;
-
+  const totalCmc = responseData.filter(card => 
+      !card.type_line.includes("Land")
+    ).reduce((sum, card) => sum + card.cmc, 0);
+  
  // Count the number of unique non-land cards in the user's list
   const NonLandCardsTotal = responseData.filter(card => 
       !card.type_line.includes("Land")
     ).length;
     
+  const averageCmc = totalCmc / NonLandCardsTotal;
+
+
   // Count the number of cards with non-zero produced_mana value and cmc between 1 and 3 (inclusive)
     const nonLandManaProducers = responseData.filter(card => 
       card.produced_mana && card.cmc <= 3 && !card.type_line.includes("Land")

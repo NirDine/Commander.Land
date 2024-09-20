@@ -1,0 +1,7 @@
+{
+    "title": "Version 1.0.12",
+    "paragraph": "The site's calculation for average mana value was taking into consideration land cards, so the results were a lot lower than normal. Moving forward, expect to see land count recommendations on the 36-39 range, instead of 28-33.",
+    "changes": [
+        "Fixed land count recommendations"
+    ]
+}

@@ -259,13 +259,41 @@ function applyHighlights(cardInfoArray, nameErrors) {
 // Function to handle input changes in the textarea
 function handleInput() {
   const text = $textarea.val().trim();
-  const cardNames = text.split('\n');
+  const lines = text.split('\n');
+  const currentCardNamesFromText = new Set();
 
-  // Remove mark tags from deleted nameErrors
-  nameErrors = nameErrors.filter(error => cardNames.includes(error));
+  lines.forEach(line => {
+    const match = line.match(/^(\d+)?x?\s?(.*)$/i);
+    if (match) {
+      // Ensure there's a name part; match[2] could be undefined if line is just "1x"
+      const cardNamePart = match[2] || ''; 
+      const cardName = cardNamePart.trim().toLowerCase();
+      if (cardName) { // Add only if cardName is not empty
+        currentCardNamesFromText.add(cardName);
+      }
+    }
+  });
 
-  // Apply highlights for the remaining card names
-  const highlightedText = applyHighlights(cardNames, nameErrors);
+  // Filter nameErrors: keep only errors for cards still present in the textarea
+  nameErrors = nameErrors.filter(errorKey => currentCardNamesFromText.has(errorKey));
+
+  // Reconstruct cardInfoArray for applyHighlights based on current textarea content
+  const cardInfoArrayForHighlights = lines.map(line => {
+    const match = line.match(/^(\d+)?x?\s?(.*)$/i);
+    if (match) {
+      const quantity = match[1] ? parseInt(match[1].trim().replace(/x/gi, '')) : 1;
+      // Ensure there's a name part for the object
+      const namePart = match[2] || ''; 
+      const name = namePart.trim();
+      // Return object only if name is not empty, otherwise it's not a valid card line
+      if (name) {
+        return { name, quantity };
+      }
+    }
+    return null;
+  }).filter(Boolean); // filter(Boolean) removes null entries
+
+  const highlightedText = applyHighlights(cardInfoArrayForHighlights, nameErrors);
   $highlights.html(highlightedText);
 
   // Check if the highlighted text contains the <mark> tag

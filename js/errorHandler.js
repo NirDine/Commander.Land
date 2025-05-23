@@ -73,8 +73,24 @@ $analyze.on('click', function() {
   
   let currentOffset = 0;
   let requestsMade = 0;
-  responseData = []; // Reset responseData for new analysis
-  let accumulatedNotFound = []; // Reset accumulatedNotFound
+  responseData = []; // General responseData, will be populated later from different phases
+  let accumulatedNotFound = []; // General accumulatedNotFound, will be populated later
+  
+  let responseDataFromCollection = [];
+  let accumulatedNotFoundFromCollection = [];
+  let specialLookupLowercasedNames = []; // Initialize list for special lookups
+  
+  let exactLookupFoundData = [];
+  let exactLookupNotFoundNames = [];
+
+  // Populate specialLookupLowercasedNames
+  const allLowercasedNamesFromInput = Object.keys(cardNames);
+  for (const lcName of allLowercasedNamesFromInput) {
+    if (lcName.includes('/') || lcName.includes('//')) { // Check for single or double slash
+      specialLookupLowercasedNames.push(lcName);
+    }
+  }
+  // console.log("Special lookup names:", specialLookupLowercasedNames); // For debugging
 
   function makeRequest() {
     const requestPayload = {
@@ -88,13 +104,15 @@ $analyze.on('click', function() {
       contentType: 'application/json',
       data: JSON.stringify(requestPayload),
       success: function(response) {
-        console.log('Request successful!', response);
-        responseData = responseData.concat(response.data);
+        console.log('Request successful (Phase 1 - Collection)!', response);
+        responseDataFromCollection = responseDataFromCollection.concat(response.data);
         
-        const currentBatchNotFoundNames = response.not_found.map(card => card.name.toLowerCase());
-        accumulatedNotFound = accumulatedNotFound.concat(currentBatchNotFoundNames);
+        // response.not_found contains identifier objects like {name: "transformed_name"}
+        // These names are already transformed as they were sent in the payload.
+        const currentBatchNotFoundNamesFromCollection = response.not_found.map(card => card.name); // Keep as is from Scryfall
+        accumulatedNotFoundFromCollection = accumulatedNotFoundFromCollection.concat(currentBatchNotFoundNamesFromCollection);
         
-        console.log('Batch Errors:', currentBatchNotFoundNames);
+        console.log('Batch Errors (Phase 1 - Collection):', currentBatchNotFoundNamesFromCollection);
         console.log('Matches:', response.data.map(cardData => cardData.name));
 
         requestsMade++;
@@ -102,19 +120,71 @@ $analyze.on('click', function() {
           currentOffset += 70;
           setTimeout(makeRequest, 100); // Scryfall API rate limit recommendation
         } else {
-          // All requests completed
-          console.log('All requests completed!');
-          nameErrors = [...new Set(accumulatedNotFound)]; // Finalize nameErrors
+          // All requests completed for Phase 1 (Collection lookup)
+          console.log('All requests for Phase 1 (Collection) completed!');
+          console.log("Starting Phase 2 (exact lookups for special names)...");
 
-          // Order the card names based on the textarea order, using original input from cardNames
+          await performExactLookups(); // Perform Phase 2
+
+          console.log("Phase 2 complete.");
+          console.log("Exact lookup found data:", exactLookupFoundData);
+          console.log("Exact lookup not found names:", exactLookupNotFoundNames);
+
+          // --- Phase 3: Merge Results ---
+          console.log("Starting Phase 3 (Merge Results)...");
+          let finalResponseData = [];
+          let finalAccumulatedNotFound = [];
+          const allUserInputLcNames = Object.keys(cardNames); // Already lowercased
+
+          for (const lcUserInputName of allUserInputLcNames) {
+            const scryfallComparableUserInputName = getScryfallComparableName(lcUserInputName);
+            if (specialLookupLowercasedNames.includes(lcUserInputName)) {
+              // Processed by Phase 2 (Exact Lookup)
+              if (exactLookupNotFoundNames.includes(lcUserInputName)) {
+                finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+              } else {
+                const foundCard = exactLookupFoundData.find(
+                  card => getScryfallComparableName(card.name.toLowerCase()) === scryfallComparableUserInputName
+                );
+                if (foundCard) {
+                  finalResponseData.push(foundCard);
+                } else {
+                  console.warn(`Phase 3 Warning: Card "${lcUserInputName}" was in specialLookup but not found in exactLookupFoundData or exactLookupNotFoundNames.`);
+                  finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+                }
+              }
+            } else {
+              // Processed by Phase 1 (Collection Lookup)
+              // Note: accumulatedNotFoundFromCollection stores names as transformed by getScryfallComparableName
+              if (accumulatedNotFoundFromCollection.includes(scryfallComparableUserInputName)) {
+                finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+              } else {
+                const foundCard = responseDataFromCollection.find(
+                  card => getScryfallComparableName(card.name.toLowerCase()) === scryfallComparableUserInputName
+                );
+                if (foundCard) {
+                  finalResponseData.push(foundCard);
+                } else {
+                  console.warn(`Phase 3 Warning: Card "${lcUserInputName}" (Comparable: "${scryfallComparableUserInputName}") not found in responseDataFromCollection or accumulatedNotFoundFromCollection.`);
+                  finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+                }
+              }
+            }
+          }
+
+          responseData = finalResponseData;
+          nameErrors = [...new Set(finalAccumulatedNotFound)];
+          console.log("Phase 3 (Merge Results) complete.");
+          console.log("Final responseData length:", responseData.length);
+          console.log("Final nameErrors:", nameErrors);
+
+          // --- Final UI Update ---
           const orderedCardNames = [];
           Object.entries(cardNames).forEach(([normalizedKey, originalCardDetails]) => {
             const scryfallComparableKey = getScryfallComparableName(normalizedKey);
             if (nameErrors.includes(scryfallComparableKey)) {
               orderedCardNames.push({ ...originalCardDetails, card: null });
             } else {
-              // When finding matching card data, ensure we use the same comparable key if Scryfall returns it that way,
-              // or compare against all known variations if necessary. For now, responseData names are generally canonical.
               const matchingCardData = responseData.find(rd => getScryfallComparableName(rd.name.toLowerCase()) === scryfallComparableKey);
               orderedCardNames.push({ 
                 name: matchingCardData ? matchingCardData.name : originalCardDetails.name, 
@@ -129,21 +199,18 @@ $analyze.on('click', function() {
             nameErrors
           );
           
-          // This update will trigger 'handleInput'
           $textarea.val(orderedCardNames.map(
-            card => (card.quantity > 1 ? `${card.quantity} ${card.name}` : `1 ${card.name}`) 
+            card => (card.quantity > 1 ? `${card.quantity}x ${card.name}` : `1x ${card.name}`) 
           ).join('\n'));
           
           $highlights.html(orderedHighlights);
 
           const hasErrors = nameErrors.length > 0;
-          // $analyze.prop('disabled', hasErrors); // Re-enabled by complete or handleInput
-
           if (!hasErrors) {
             console.log('All card names found!');
             const updatedUserList = orderedCardNames.map(card => ({
               quantity: card.quantity,
-              name: card.card ? card.card.name : card.name // Use Scryfall's name if available
+              name: card.card ? card.card.name : card.name
             }));
             localStorage.setItem('userList', JSON.stringify(updatedUserList));
             localStorage.setItem('responseData', JSON.stringify(responseData));
@@ -152,33 +219,84 @@ $analyze.on('click', function() {
             window.location.href = `buffet.html?colors=${colorIdentity.toLowerCase()}`;
           } else {
             console.log('Card names not found or other errors occurred.');
-             $analyze.prop('disabled', false); // Re-enable if errors and not redirecting
           }
-          // requestInProgress = false; // Moved to 'complete'
+          
+          requestInProgress = false;
+          $analyze.prop('disabled', hasErrors); // Re-enable button if errors, or if no errors and not redirecting (covered by redirection)
         }
       },
-      error: function(xhr, status, error) {
-        console.error('Error retrieving card data:', error);
-        // Handle cases where a batch might fail, potentially add all its names to accumulatedNotFound
-        const failedBatchIdentifiers = requestPayload.identifiers.map(id => id.name.toLowerCase());
-        accumulatedNotFound = accumulatedNotFound.concat(failedBatchIdentifiers);
+      error: async function(xhr, status, error) { // Make error handler async for await
+        console.error('Error retrieving card data (Phase 1):', error);
+        const failedBatchIdentifiers = requestPayload.identifiers.map(id => id.name);
+        accumulatedNotFoundFromCollection = accumulatedNotFoundFromCollection.concat(failedBatchIdentifiers);
         
-        requestsMade++; // Count this as a completed (though failed) request for batching logic
+        requestsMade++;
         if (requestsMade < Math.ceil(payload.identifiers.length / 70)) {
           currentOffset += 70;
           setTimeout(makeRequest, 100);
         } else {
-           // All requests completed (some might have failed)
-          console.log('All requests completed, with some batch errors!');
-          nameErrors = [...new Set(accumulatedNotFound)];
-          // Perform final UI update similar to success case, but knowing some data is missing
+          // All requests for Phase 1 completed (some batches failed)
+          console.log('All requests for Phase 1 (Collection) completed, with some batch errors!');
+          console.log("Starting Phase 2 (exact lookups for special names)...");
+          
+          await performExactLookups(); // Perform Phase 2 even if Phase 1 had errors
+
+          console.log("Phase 2 complete.");
+          console.log("Exact lookup found data:", exactLookupFoundData);
+          console.log("Exact lookup not found names:", exactLookupNotFoundNames);
+          
+          // --- Phase 3: Merge Results (Error Path) ---
+          console.log("Starting Phase 3 (Merge Results) after Phase 1 errors...");
+          let finalResponseData = []; // Should mostly be from exactLookupFoundData if Phase 1 failed badly
+          let finalAccumulatedNotFound = [];
+          const allUserInputLcNames = Object.keys(cardNames);
+
+          for (const lcUserInputName of allUserInputLcNames) {
+            const scryfallComparableUserInputName = getScryfallComparableName(lcUserInputName);
+            if (specialLookupLowercasedNames.includes(lcUserInputName)) {
+              if (exactLookupNotFoundNames.includes(lcUserInputName)) {
+                finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+              } else {
+                const foundCard = exactLookupFoundData.find(
+                  card => getScryfallComparableName(card.name.toLowerCase()) === scryfallComparableUserInputName
+                );
+                if (foundCard) {
+                  finalResponseData.push(foundCard);
+                } else {
+                  finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+                }
+              }
+            } else {
+              // Must have been in a failed Phase 1 batch or a successful one prior to failure
+              if (accumulatedNotFoundFromCollection.includes(scryfallComparableUserInputName)) {
+                 finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+              } else {
+                // Attempt to find in any data from successful Phase 1 batches
+                const foundCard = responseDataFromCollection.find( 
+                  card => getScryfallComparableName(card.name.toLowerCase()) === scryfallComparableUserInputName
+                );
+                if (foundCard) {
+                  finalResponseData.push(foundCard);
+                } else {
+                  // If not explicitly in accumulatedNotFoundFromCollection but also not in responseDataFromCollection,
+                  // it implies it was in a batch that might not have completed or was processed before a later batch failed.
+                  // Assume not found if not in successfully collected data.
+                  finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+                }
+              }
+            }
+          }
+          responseData = finalResponseData;
+          nameErrors = [...new Set(finalAccumulatedNotFound)];
+          console.log("Phase 3 (Merge Results) complete after Phase 1 errors.");
+          
+          // --- Final UI Update (Error Path) ---
           const orderedCardNames = [];
-           Object.entries(cardNames).forEach(([normalizedKey, originalCardDetails]) => {
-            const scryfallComparableKey = getScryfallComparableName(normalizedKey);
+          Object.entries(cardNames).forEach(([normalizedKey, originalCardDetails]) => {
+             const scryfallComparableKey = getScryfallComparableName(normalizedKey);
             if (nameErrors.includes(scryfallComparableKey)) {
               orderedCardNames.push({ ...originalCardDetails, card: null });
             } else {
-              // Should only be cards from successful batches, if any
               const matchingCardData = responseData.find(rd => getScryfallComparableName(rd.name.toLowerCase()) === scryfallComparableKey);
               orderedCardNames.push({ 
                 name: matchingCardData ? matchingCardData.name : originalCardDetails.name, 
@@ -192,28 +310,55 @@ $analyze.on('click', function() {
             nameErrors
           );
           $textarea.val(orderedCardNames.map(
-             card => (card.quantity > 1 ? `${card.quantity} ${card.name}` : `1 ${card.name}`) 
+             card => (card.quantity > 1 ? `${card.quantity}x ${card.name}` : `1x ${card.name}`) 
           ).join('\n'));
           $highlights.html(orderedHighlights);
-          $analyze.prop('disabled', false); // Re-enable button
-          // requestInProgress = false; // Moved to 'complete'
+
+          requestInProgress = false;
+          $analyze.prop('disabled', false); // Enable button as there were errors.
         }
       },
       complete: function() {
-        // Only set requestInProgress to false when the very last batch (successful or not) is done
-        if (requestsMade >= Math.ceil(payload.identifiers.length / 70)) {
-            requestInProgress = false;
-            // If not redirecting and button is still disabled, re-enable it.
-            // Redirection happens only if no errors. If errors, button should be enabled.
-            if (nameErrors.length > 0) {
-                 $analyze.prop('disabled', false);
-            }
-        }
+        // This 'complete' might be called for each batch. 
+        // We need a single point of completion after all phases.
+        // For now, requestInProgress and button state are handled at the end of Phase 2 logic.
+        // if (requestsMade >= Math.ceil(payload.identifiers.length / 70)) {
+        //     // This condition is met at the end of Phase 1.
+        //     // But we need to wait for Phase 2.
+        // }
       }
     });
   }
 
-  makeRequest(); // Initial call
+  // --- Definition of performExactLookups (Phase 2) ---
+  async function performExactLookups() {
+    console.log("Executing performExactLookups for:", specialLookupLowercasedNames);
+    for (const lcName of specialLookupLowercasedNames) {
+      // Scryfall API base URL is defined globally as scryfallApiBaseUrl
+      // However, if it's not, it should be: const scryfallApiBaseUrl = 'https://api.scryfall.com';
+      const scryfallCardUrl = `https://api.scryfall.com/cards/named?exact=${encodeURIComponent(lcName)}`;
+      try {
+        const response = await $.ajax({
+          url: scryfallCardUrl,
+          type: 'GET',
+          dataType: 'json'
+        });
+        exactLookupFoundData.push(response);
+        console.log(`Phase 2: Found "${lcName}"`);
+      } catch (error) {
+        if (error.status === 404) {
+          exactLookupNotFoundNames.push(lcName);
+          console.log(`Phase 2: Not found "${lcName}"`);
+        } else {
+          console.error(`Phase 2: API Error for "${lcName}":`, error.status, error.statusText, error.responseJSON);
+          exactLookupNotFoundNames.push(lcName); // Treat other errors as "not found" for this phase
+        }
+      }
+      await new Promise(resolve => setTimeout(resolve, 50)); // 50ms delay
+    }
+  }
+
+  makeRequest(); // Initial call to start Phase 1
 });
 
 // Function to determine the colorIdentity from the response data

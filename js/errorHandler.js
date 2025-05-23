@@ -11,8 +11,17 @@ const isWinPhone = ua.indexOf('windows phone') !== -1;
 const isIOS = !isWinPhone && !!ua.match(/ipad|iphone|ipod/);
 
 let nameErrors = []; // Initialize nameErrors as an empty
-let responseData;
-let userList;
+let responseData; // To be populated by Scryfall API
+let userList; // Not currently used, but was in original HTML
+
+// Helper function to get a Scryfall API comparable name
+function getScryfallComparableName(nameKey) { // nameKey is assumed lowercased
+  let scryfallName = nameKey;
+  if (nameKey.includes('//') && !nameKey.includes(' // ')) {
+    scryfallName = nameKey.replace('//', ' // ');
+  }
+  return scryfallName;
+}
 
 // Scryfall API endpoint
 const scryfallEndpoint = 'https://api.scryfall.com/cards/collection';
@@ -20,44 +29,22 @@ const scryfallEndpoint = 'https://api.scryfall.com/cards/collection';
 // Flag to track whether a request is in progress
 let requestInProgress = false;
 
-// Disable analyze button to prevent further requests
+// Disable analyze button to prevent further requests initially
 $analyze.prop('disabled', true);
 
 // Update textarea and highlights when analyze button is clicked
 $analyze.on('click', function() {
-  // Check if a request is already in progress
   if (requestInProgress) {
     return;
   }
+  requestInProgress = true;
+  $analyze.prop('disabled', true);
 
   const cardList = $textarea.val().trim();
-
-  // Split the card list into individual lines
   const lines = cardList.split('\n');
-
-  // Filter out empty lines
   const nonEmptyLines = lines.filter(line => line.trim() !== '');
 
-  // Extract card names and quantities
-  const cardNames = {};
-
-    
-const storedData = localStorage.getItem('landsData');
-
-    
-if (storedData) {
-  data = JSON.parse(storedData);
-} else {
-  $.getJSON('data/lands.json')
-    .done(function(responseData) {
-      // Assign the data to the data variable
-      data = responseData;
-      localStorage.setItem('landsData', JSON.stringify(data));
-});
-}
-    
-    
-    
+  const cardNames = {}; // Object to store card names and quantities
   nonEmptyLines.forEach(line => {
     const match = line.match(/^(\d+)?x?\s?(.*)$/i);
     if (match) {
@@ -72,16 +59,22 @@ if (storedData) {
     }
   });
 
-  // Prepare the payload with unique card names
-  const identifiers = [...new Set(Object.keys(cardNames))].map(cardName => ({ name: cardName }));
+  // Prepare the payload with unique card names (keys of cardNames are already normalized)
+  const identifiers = Object.keys(cardNames).map(key => {
+    let nameForScryfall = key; // key is a lowercased card name
+    if (key.includes('//') && !key.includes(' // ')) {
+      nameForScryfall = key.replace('//', ' // ');
+    }
+    return { name: nameForScryfall };
+  });
   const payload = { identifiers };
 
-  console.log('Sending request...');
-  // Make the requests with a delay of 100ms between each request
+  console.log('Sending request to Scryfall API...');
+  
   let currentOffset = 0;
   let requestsMade = 0;
-  let responseData = [];
-  let accumulatedNotFound = [];
+  responseData = []; // Reset responseData for new analysis
+  let accumulatedNotFound = []; // Reset accumulatedNotFound
 
   function makeRequest() {
     const requestPayload = {
@@ -97,118 +90,135 @@ if (storedData) {
       success: function(response) {
         console.log('Request successful!', response);
         responseData = responseData.concat(response.data);
-        // nameErrors = response.not_found.map(card => card.name.toLowerCase()); // Old logic
+        
         const currentBatchNotFoundNames = response.not_found.map(card => card.name.toLowerCase());
         accumulatedNotFound = accumulatedNotFound.concat(currentBatchNotFoundNames);
-        // nameErrors = accumulatedNotFound; // UI update and final nameErrors assignment moved to after all requests
-        const namesCorrect = response.data.map(cardData => cardData.name);
-
-        // UI UPDATE LOGIC MOVED TO AFTER ALL REQUESTS
-
-        // Console.log errors and matches for current batch
+        
         console.log('Batch Errors:', currentBatchNotFoundNames);
-        console.log('Matches:', namesCorrect);
+        console.log('Matches:', response.data.map(cardData => cardData.name));
 
-        // Check if there are more requests to be made
         requestsMade++;
         if (requestsMade < Math.ceil(payload.identifiers.length / 70)) {
-          // Increment the offset for the next request
           currentOffset += 70;
-
-          // Delay the next request by 100ms
-          setTimeout(makeRequest, 100);
+          setTimeout(makeRequest, 100); // Scryfall API rate limit recommendation
         } else {
           // All requests completed
           console.log('All requests completed!');
-          nameErrors = [...new Set(accumulatedNotFound)]; // Finalize nameErrors with unique values
+          nameErrors = [...new Set(accumulatedNotFound)]; // Finalize nameErrors
 
-          // MOVED UI UPDATE LOGIC STARTS HERE
-          // Order the card names based on the textarea order
+          // Order the card names based on the textarea order, using original input from cardNames
           const orderedCardNames = [];
-
-          // Add error cards first
-          Object.entries(cardNames).forEach(([name, card]) => {
-            // Ensure comparison is with normalized names if cardNames keys are not already normalized
-            if (nameErrors.includes(name.toLowerCase())) { 
-              orderedCardNames.push({ ...card, card: null });
+          Object.entries(cardNames).forEach(([normalizedKey, originalCardDetails]) => {
+            const scryfallComparableKey = getScryfallComparableName(normalizedKey);
+            if (nameErrors.includes(scryfallComparableKey)) {
+              orderedCardNames.push({ ...originalCardDetails, card: null });
+            } else {
+              // When finding matching card data, ensure we use the same comparable key if Scryfall returns it that way,
+              // or compare against all known variations if necessary. For now, responseData names are generally canonical.
+              const matchingCardData = responseData.find(rd => getScryfallComparableName(rd.name.toLowerCase()) === scryfallComparableKey);
+              orderedCardNames.push({ 
+                name: matchingCardData ? matchingCardData.name : originalCardDetails.name, 
+                quantity: originalCardDetails.quantity, 
+                card: matchingCardData 
+              });
             }
           });
-
-          // Add remaining card names from responseData
-          Object.entries(cardNames).forEach(([name, card]) => {
-            const normalizedCardName = name.toLowerCase();
-            if (!nameErrors.includes(normalizedCardName)) {
-              const matchingCardData = responseData.find(cardData => cardData.name.toLowerCase() === normalizedCardName);
-              orderedCardNames.push({ ...card, card: matchingCardData });
-            }
-          });
-
-          // Order the highlights based on the ordered card names
+          
           const orderedHighlights = applyHighlights(
             orderedCardNames.map(card => ({ name: card.name, quantity: card.quantity })),
-            nameErrors // Use the finalized nameErrors
+            nameErrors
           );
-
-          // Update the textarea with the ordered card names and quantities
-          const updatedLines = orderedCardNames.map(
-            card => (card.quantity > 1 ? `${card.quantity} ${card.name}` : '1' + ' ' + card.name)
-          );
-          $textarea.val(updatedLines.join('\n'));
-
-          // Update the highlights with the ordered highlights
+          
+          // This update will trigger 'handleInput'
+          $textarea.val(orderedCardNames.map(
+            card => (card.quantity > 1 ? `${card.quantity}x ${card.name}` : `1x ${card.name}`) 
+          ).join('\n'));
+          
           $highlights.html(orderedHighlights);
-          // MOVED UI UPDATE LOGIC ENDS HERE
 
           const hasErrors = nameErrors.length > 0;
-          $analyze.prop('disabled', hasErrors);
+          // $analyze.prop('disabled', hasErrors); // Re-enabled by complete or handleInput
 
           if (!hasErrors) {
             console.log('All card names found!');
-
-            // Update the orderedCardNames with cardName from responseData
-            // Note: orderedCardNames is already defined and populated above
             const updatedUserList = orderedCardNames.map(card => ({
               quantity: card.quantity,
-              name: card.card ? card.card.name : card.name
+              name: card.card ? card.card.name : card.name // Use Scryfall's name if available
             }));
-            // Save updated user list and JSON response in localStorage
             localStorage.setItem('userList', JSON.stringify(updatedUserList));
             localStorage.setItem('responseData', JSON.stringify(responseData));
-
             localStorage.removeItem('selectedCards');
-            // Determine the colorIdentity
             const colorIdentity = determineColorIdentity(responseData);
-            // Redirect to /buffet.html with colorIdentity as query parameter
             window.location.href = `buffet.html?colors=${colorIdentity.toLowerCase()}`;
           } else {
-            console.log('Card names not found!');
-            // applyHighlights(); // Removed as main highlighting is done above
+            console.log('Card names not found or other errors occurred.');
+             $analyze.prop('disabled', false); // Re-enable if errors and not redirecting
           }
+          // requestInProgress = false; // Moved to 'complete'
         }
       },
       error: function(xhr, status, error) {
         console.error('Error retrieving card data:', error);
-      },
-      fail: function() {
-        console.error('Request failed!');
+        // Handle cases where a batch might fail, potentially add all its names to accumulatedNotFound
+        const failedBatchIdentifiers = requestPayload.identifiers.map(id => id.name.toLowerCase());
+        accumulatedNotFound = accumulatedNotFound.concat(failedBatchIdentifiers);
+        
+        requestsMade++; // Count this as a completed (though failed) request for batching logic
+        if (requestsMade < Math.ceil(payload.identifiers.length / 70)) {
+          currentOffset += 70;
+          setTimeout(makeRequest, 100);
+        } else {
+           // All requests completed (some might have failed)
+          console.log('All requests completed, with some batch errors!');
+          nameErrors = [...new Set(accumulatedNotFound)];
+          // Perform final UI update similar to success case, but knowing some data is missing
+          const orderedCardNames = [];
+           Object.entries(cardNames).forEach(([normalizedKey, originalCardDetails]) => {
+            const scryfallComparableKey = getScryfallComparableName(normalizedKey);
+            if (nameErrors.includes(scryfallComparableKey)) {
+              orderedCardNames.push({ ...originalCardDetails, card: null });
+            } else {
+              // Should only be cards from successful batches, if any
+              const matchingCardData = responseData.find(rd => getScryfallComparableName(rd.name.toLowerCase()) === scryfallComparableKey);
+              orderedCardNames.push({ 
+                name: matchingCardData ? matchingCardData.name : originalCardDetails.name, 
+                quantity: originalCardDetails.quantity, 
+                card: matchingCardData 
+              });
+            }
+          });
+          const orderedHighlights = applyHighlights(
+            orderedCardNames.map(card => ({ name: card.name, quantity: card.quantity })),
+            nameErrors
+          );
+          $textarea.val(orderedCardNames.map(
+             card => (card.quantity > 1 ? `${card.quantity}x ${card.name}` : `1x ${card.name}`) 
+          ).join('\n'));
+          $highlights.html(orderedHighlights);
+          $analyze.prop('disabled', false); // Re-enable button
+          // requestInProgress = false; // Moved to 'complete'
+        }
       },
       complete: function() {
-        // Enable analyze button after a delay of 100 milliseconds
-        setTimeout(function() {
-          requestInProgress = false;
-        }, 100);
+        // Only set requestInProgress to false when the very last batch (successful or not) is done
+        if (requestsMade >= Math.ceil(payload.identifiers.length / 70)) {
+            requestInProgress = false;
+            // If not redirecting and button is still disabled, re-enable it.
+            // Redirection happens only if no errors. If errors, button should be enabled.
+            if (nameErrors.length > 0) {
+                 $analyze.prop('disabled', false);
+            }
+        }
       }
     });
   }
 
-  // Make the first request
-  makeRequest();
+  makeRequest(); // Initial call
 });
 
 // Function to determine the colorIdentity from the response data
 function determineColorIdentity(responseData) {
   const colors = new Set();
-
   responseData.forEach(cardData => {
     if (cardData.color_identity) {
       cardData.color_identity.forEach(color => {
@@ -216,43 +226,34 @@ function determineColorIdentity(responseData) {
       });
     }
   });
-
   colors.add('c'); // Add "c" to the set of colors
-
   const colorIdentity = Array.from(colors).join(',');
   return colorIdentity;
 }
 
-
 // Function to apply highlights
 function applyHighlights(cardInfoArray, nameErrors) {
   let highlightedText = '';
-
-  // Ensure cardInfoArray is an array and nameErrors is also an array
   if (!Array.isArray(cardInfoArray) || !Array.isArray(nameErrors)) {
     console.error("Invalid input: cardInfoArray or nameErrors is not an array");
     return highlightedText;
   }
-
-  // Generate the highlighted text with correct ordering
   cardInfoArray.forEach(cardInfo => {
     if (cardInfo && cardInfo.name && typeof cardInfo.quantity !== 'undefined') {
-      const { name, quantity } = cardInfo;
+      const originalName = cardInfo.name; // Original casing for display
+      const quantity = cardInfo.quantity;
+      const scryfallComparableKey = getScryfallComparableName(originalName.toLowerCase());
 
-      // Handle names with "//"
-      const sanitizedName = name.replace(/ \/\/ /g, ' // ');
-
-      if (nameErrors.includes(sanitizedName.toLowerCase())) {
-        highlightedText += `<mark class="error" data-card-name="${sanitizedName}">${quantity} ${sanitizedName}</mark>\n`;
+      if (nameErrors.includes(scryfallComparableKey)) {
+        // Use originalName for display and data-card-name to maintain original input casing
+        highlightedText += `<mark class="error" data-card-name="${originalName}">${quantity} ${originalName}</mark>\n`;
       } else {
-        highlightedText += `${quantity} ${sanitizedName}\n`;
+        highlightedText += `${quantity} ${originalName}\n`;
       }
     } else {
       console.error("Invalid cardInfo object:", cardInfo);
     }
   });
-
-  // Add a line break to the end of the text
   return highlightedText.replace(/\n$/g, '\n\n');
 }
 
@@ -265,41 +266,33 @@ function handleInput() {
   lines.forEach(line => {
     const match = line.match(/^(\d+)?x?\s?(.*)$/i);
     if (match) {
-      // Ensure there's a name part; match[2] could be undefined if line is just "1x"
       const cardNamePart = match[2] || ''; 
       const cardName = cardNamePart.trim().toLowerCase();
-      if (cardName) { // Add only if cardName is not empty
+      if (cardName) {
         currentCardNamesFromText.add(cardName);
       }
     }
   });
 
-  // Filter nameErrors: keep only errors for cards still present in the textarea
   nameErrors = nameErrors.filter(errorKey => currentCardNamesFromText.has(errorKey));
 
-  // Reconstruct cardInfoArray for applyHighlights based on current textarea content
   const cardInfoArrayForHighlights = lines.map(line => {
     const match = line.match(/^(\d+)?x?\s?(.*)$/i);
     if (match) {
       const quantity = match[1] ? parseInt(match[1].trim().replace(/x/gi, '')) : 1;
-      // Ensure there's a name part for the object
       const namePart = match[2] || ''; 
       const name = namePart.trim();
-      // Return object only if name is not empty, otherwise it's not a valid card line
       if (name) {
         return { name, quantity };
       }
     }
     return null;
-  }).filter(Boolean); // filter(Boolean) removes null entries
+  }).filter(Boolean);
 
   const highlightedText = applyHighlights(cardInfoArrayForHighlights, nameErrors);
   $highlights.html(highlightedText);
 
-  // Check if the highlighted text contains the <mark> tag
   const highlightsExist = $highlights.find('mark').length > 0 || highlightedText.includes('<mark>');
-
-  // Apply or remove error class based on highlightsExist
   if (highlightsExist) {
     $highlights.addClass('error');
     $analyze.prop('disabled', true);
@@ -313,7 +306,6 @@ function handleInput() {
 function handleScroll() {
   const scrollTop = $textarea.scrollTop();
   $backdrop.scrollTop(scrollTop);
-
   const scrollLeft = $textarea.scrollLeft();
   $backdrop.scrollLeft(scrollLeft);
 }
@@ -334,10 +326,10 @@ function bindEvents() {
   });
 }
 
-// Fix iOS padding issues if applicable
 if (isIOS) {
   fixIOS();
 }
-
-// Bind event handlers to the textarea
 bindEvents();
+
+// Initial call to handleInput to set initial button state if textarea is empty/filled
+handleInput();

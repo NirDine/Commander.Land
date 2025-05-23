@@ -18,7 +18,7 @@ function createChart() {
 
   // Prepare filtered data for the first Polar Area chart (foreground chart)
   const data1 = {
-    label: 'Mana Color Counts',
+    label: 'Mana sources in deck',
     data: dataValues,
     backgroundColor: labels.map(color => {
       switch(color) {
@@ -37,7 +37,7 @@ function createChart() {
 
   // Prepare filtered data for the second Polar Area chart (background chart)
   const data2 = {
-    label: 'Background Data',
+    label: 'Mana sources required',
     data: labels.map(color => {
       const recommendation = colorRecommendations.find(rec => rec.color === color);
       return recommendation ? recommendation.result : 0;

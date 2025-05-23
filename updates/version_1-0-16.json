@@ -1,0 +1,8 @@
+{
+    "title": "Version 1.0.16",
+    "paragraph": "Some small fixes",
+    "changes": [
+        "Fixed an issue with land counts on the card holder counting all cards as colorless.",
+		"Fixed error highlighter not working with more than 70 cards."
+    ]
+}

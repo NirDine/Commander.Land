@@ -41,14 +41,16 @@ function updateCardList() {
       combinationElement.find('ul').append(cardLiElement);
     }
 
-  // Update the card count for the color combination
+// Update the card count for the color combination
   const cardCount = selectedCards.filter(cardName => {
     const selectedCard = data?.data.find(item => item.name === cardName);
-    return (
-  (selectedCard?.color_identity?.join('') === colorIdentity) ||
-  (colorIdentity === 'C')
-);
-
+    if (colorIdentity === 'C') {
+      // For colorless, only count cards with no color identity
+      return !selectedCard.color_identity || selectedCard.color_identity.length === 0;
+    } else {
+      // For other colors, use the existing logic
+      return selectedCard?.color_identity?.join('') === colorIdentity;
+    }
   }).length;
   
   combinations[colorIdentity] = cardCount;

@@ -461,3 +461,142 @@ checkboxes.forEach(checkbox => checkbox.addEventListener('change', () => {
 
 updateFiltersFromUrl();
 updateCardsVisibility();
+
+// Test case for colorless card counting in updateCardList
+function testColorlessCardCounting() {
+  console.log("Running testColorlessCardCounting...");
+
+  // Mock HTML structure
+  document.body.innerHTML += `
+    <div id="chContainer">
+      <div class="combination" data-combination="W"><ul></ul><span class="total">0</span></div>
+      <div class="combination" data-combination="C"><ul></ul><span class="total">0</span></div>
+    </div>
+    <div class="tracker-W"><span><span class="current">0</span></span></div>
+    <div class="tracker-U"><span><span class="current">0</span></span></div>
+    <div class="tracker-B"><span><span class="current">0</span></span></div>
+    <div class="tracker-R"><span><span class="current">0</span></span></div>
+    <div class="tracker-G"><span><span class="current">0</span></span></div>
+    <div class="tracker-C"><span><span class="current">0</span></span></div>
+    <div class="progress-bar-W"></div>
+    <div class="progress-bar-U"></div>
+    <div class="progress-bar-B"></div>
+    <div class="progress-bar-R"></div>
+    <div class="progress-bar-G"></div>
+    <div class="progress-bar-C"></div>
+  `;
+
+  // Mock global data and selectedCards
+  const originalData = window.data;
+  const originalSelectedCards = window.selectedCards;
+  const originalJQuery = window.jQuery;
+
+  window.data = {
+    data: [
+      { id: 1, name: "White Card", color_identity: ["W"], produced_mana: ["W"] },
+      { id: 2, name: "Colorless Card", color_identity: [], produced_mana: ["C"] }, // Truly colorless
+      { id: 3, name: "Artifact Creature", color_identity: ["U"], produced_mana: ["C"] }, // Has color identity 'U'
+      { id: 4, name: "Another Colorless Card", color_identity: null, produced_mana: ["C"] } // Truly colorless (null identity)
+    ]
+  };
+  window.selectedCards = ["White Card", "Colorless Card", "Artifact Creature", "Another Colorless Card"];
+
+  // Mock jQuery `$` to avoid errors if it's not fully available in the test environment
+  // and to spy on its behavior for specific elements.
+  window.jQuery = window.$ = function(selector) {
+    if (typeof selector === 'string') {
+      // Basic selector implementation for the test
+      if (selector.startsWith('.') || selector.startsWith('#')) {
+        const elements = Array.from(document.querySelectorAll(selector));
+        elements.find = (s) => { // Mock find for chained calls like .find('.total')
+          const allFound = [];
+           elements.forEach(el => {
+             el.querySelectorAll(s).forEach(foundEl => allFound.push(foundEl));
+           });
+           // Return a collection that has a text() method
+           return { 
+             length: allFound.length,
+             text: function(val) { if (val !== undefined) allFound.forEach(e => e.textContent = val); return allFound[0]?.textContent; },
+             append: function(content) { allFound.forEach(e => e.innerHTML += content);}, // Mock append
+             find: function(s) {return this;}, // Mock find further
+             length: allFound.length > 0 ? allFound.length : 0, // Ensure length is 0 if no elements
+             0: allFound.length > 0 ? allFound[0] : undefined // Expose the first element for direct access if needed
+           };
+        };
+        elements.empty = () => elements.forEach(el => el.innerHTML = '');
+        elements.append = (contentString) => {
+            elements.forEach(el => {
+                if (typeof contentString === 'string') {
+                    // A very simplified version for adding <li> elements
+                    const temp = document.createElement('div');
+                    temp.innerHTML = contentString;
+                    el.appendChild(temp.firstChild);
+                } else { // Assuming it's a DOM element
+                    el.appendChild(contentString);
+                }
+            });
+        };
+        elements.remove = () => elements.forEach(el => el.remove());
+         elements.find = function(s) {
+            let currentElements = this;
+            let found = [];
+            currentElements.forEach(el => {
+                el.querySelectorAll(s).forEach(item => found.push(item));
+            });
+            // Return a jQuery-like object for chaining
+            let result = $(found); // Use existing $ to wrap, ensuring methods like text(), append() are available
+            // If the original $ returned a plain array, enhance it here if necessary
+            if(!result.text) result.text = function(val) { if(val !== undefined) this.forEach(e => e.textContent = val); return this[0]?.textContent; };
+            if(!result.append) result.append = function(c) { this.forEach(e => e.innerHTML += c);}; // Simplified append
+            return result;
+        };
+        return elements;
+      }
+    } else if (selector && selector.nodeType) { // if it's a DOM element
+        selector.addClass = function() {}; // Mock addClass
+        selector.removeClass = function() {}; // Mock removeClass
+        selector.data = function() {return "mock data"}; // Mock data
+        selector.hasClass = function () { return false; }; // Mock hasClass
+        return selector; // Return as is
+    }
+     // Fallback for other jQuery uses (like $(document).on)
+    return {
+      on: function() {}, // Mock .on
+      find: function() { return this; }, // Mock .find
+      text: function() { return "";}, // Mock .text
+      empty: function() {}, // Mock .empty
+      append: function() {}, // Mock .append
+      remove: function() {}, // Mock .remove
+      css: function() {} // Mock .css
+    };
+  };
+
+
+  // Call the function to test
+  updateCardList();
+
+  // Assertions
+  const colorlessTotalElement = document.querySelector('.combination[data-combination="C"] .total');
+  const colorlessCount = parseInt(colorlessTotalElement.textContent);
+  const expectedColorlessCount = 2; // "Colorless Card" and "Another Colorless Card"
+
+  if (colorlessCount === expectedColorlessCount) {
+    console.log("testColorlessCardCounting: PASSED");
+  } else {
+    console.error(`testColorlessCardCounting: FAILED. Expected colorless count: ${expectedColorlessCount}, Actual: ${colorlessCount}`);
+    throw new Error(`testColorlessCardCounting: FAILED. Expected colorless count: ${expectedColorlessCount}, Actual: ${colorlessCount}`);
+  }
+
+  // Restore original globals
+  window.data = originalData;
+  window.selectedCards = originalSelectedCards;
+  window.jQuery = window.$ = originalJQuery;
+
+  // Clean up mocked HTML
+  const chContainer = document.getElementById('chContainer');
+  if (chContainer) chContainer.remove();
+  document.querySelectorAll('[class^="tracker-"], [class^="progress-bar-"]').forEach(el => el.remove());
+}
+
+// Run the test
+testColorlessCardCounting();

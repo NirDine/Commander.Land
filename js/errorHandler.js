@@ -81,6 +81,7 @@ if (storedData) {
   let currentOffset = 0;
   let requestsMade = 0;
   let responseData = [];
+  let accumulatedNotFound = [];
 
   function makeRequest() {
     const requestPayload = {
@@ -96,49 +97,16 @@ if (storedData) {
       success: function(response) {
         console.log('Request successful!', response);
         responseData = responseData.concat(response.data);
-        nameErrors = response.not_found.map(card => card.name.toLowerCase());
+        // nameErrors = response.not_found.map(card => card.name.toLowerCase()); // Old logic
+        const currentBatchNotFoundNames = response.not_found.map(card => card.name.toLowerCase());
+        accumulatedNotFound = accumulatedNotFound.concat(currentBatchNotFoundNames);
+        // nameErrors = accumulatedNotFound; // UI update and final nameErrors assignment moved to after all requests
         const namesCorrect = response.data.map(cardData => cardData.name);
 
-        // Order the card names based on the textarea order
-        const orderedCardNames = [];
+        // UI UPDATE LOGIC MOVED TO AFTER ALL REQUESTS
 
-        // Add error cards first
-        Object.entries(cardNames).forEach(([name, card]) => {
-          if (nameErrors.includes(name)) {
-            orderedCardNames.push({ ...card, card: null });
-          }
-        });
-
-        // Add remaining card names from responseData
-        Object.entries(cardNames).forEach(([name, card]) => {
-          const normalizedCardName = name.toLowerCase();
-          if (!nameErrors.includes(normalizedCardName)) {
-            const matchingCardData = responseData.find(cardData => cardData.name.toLowerCase() === normalizedCardName);
-            orderedCardNames.push({ ...card, card: matchingCardData });
-          }
-        });
-
-        // Order the highlights based on the ordered card names
-        const orderedHighlights = applyHighlights(
-          orderedCardNames.map(card => ({ name: card.name, quantity: card.quantity })),
-          nameErrors
-        );
-
-        // Update the textarea with the ordered card names and quantities
-        const updatedLines = orderedCardNames.map(
-          card => (card.quantity > 1 ? `${card.quantity} ${card.name}` : '1' + ' ' + card.name)
-        );
-        $textarea.val(updatedLines.join('\n'));
-
-        // Update the highlights with the ordered highlights
-        $highlights.html(orderedHighlights);
-
-        // Enable or disable analyze button based on whether there are errors
-        const hasErrors = nameErrors.length > 0;
-        $analyze.prop('disabled', hasErrors);
-
-        // Console.log errors and matches
-        console.log('Errors:', nameErrors);
+        // Console.log errors and matches for current batch
+        console.log('Batch Errors:', currentBatchNotFoundNames);
         console.log('Matches:', namesCorrect);
 
         // Check if there are more requests to be made
@@ -152,12 +120,53 @@ if (storedData) {
         } else {
           // All requests completed
           console.log('All requests completed!');
+          nameErrors = [...new Set(accumulatedNotFound)]; // Finalize nameErrors with unique values
 
-          // Check if there are no errors
+          // MOVED UI UPDATE LOGIC STARTS HERE
+          // Order the card names based on the textarea order
+          const orderedCardNames = [];
+
+          // Add error cards first
+          Object.entries(cardNames).forEach(([name, card]) => {
+            // Ensure comparison is with normalized names if cardNames keys are not already normalized
+            if (nameErrors.includes(name.toLowerCase())) { 
+              orderedCardNames.push({ ...card, card: null });
+            }
+          });
+
+          // Add remaining card names from responseData
+          Object.entries(cardNames).forEach(([name, card]) => {
+            const normalizedCardName = name.toLowerCase();
+            if (!nameErrors.includes(normalizedCardName)) {
+              const matchingCardData = responseData.find(cardData => cardData.name.toLowerCase() === normalizedCardName);
+              orderedCardNames.push({ ...card, card: matchingCardData });
+            }
+          });
+
+          // Order the highlights based on the ordered card names
+          const orderedHighlights = applyHighlights(
+            orderedCardNames.map(card => ({ name: card.name, quantity: card.quantity })),
+            nameErrors // Use the finalized nameErrors
+          );
+
+          // Update the textarea with the ordered card names and quantities
+          const updatedLines = orderedCardNames.map(
+            card => (card.quantity > 1 ? `${card.quantity} ${card.name}` : '1' + ' ' + card.name)
+          );
+          $textarea.val(updatedLines.join('\n'));
+
+          // Update the highlights with the ordered highlights
+          $highlights.html(orderedHighlights);
+          // MOVED UI UPDATE LOGIC ENDS HERE
+
+          const hasErrors = nameErrors.length > 0;
+          $analyze.prop('disabled', hasErrors);
+
           if (!hasErrors) {
             console.log('All card names found!');
 
             // Update the orderedCardNames with cardName from responseData
+            // Note: orderedCardNames is already defined and populated above
             const updatedUserList = orderedCardNames.map(card => ({
               quantity: card.quantity,
               name: card.card ? card.card.name : card.name
@@ -173,7 +182,7 @@ if (storedData) {
             window.location.href = `buffet.html?colors=${colorIdentity.toLowerCase()}`;
           } else {
             console.log('Card names not found!');
-            applyHighlights();
+            // applyHighlights(); // Removed as main highlighting is done above
           }
         }
       },
@@ -233,7 +242,7 @@ function applyHighlights(cardInfoArray, nameErrors) {
       // Handle names with "//"
       const sanitizedName = name.replace(/ \/\/ /g, ' // ');
 
-      if (nameErrors.includes(sanitizedName)) {
+      if (nameErrors.includes(sanitizedName.toLowerCase())) {
         highlightedText += `<mark class="error" data-card-name="${sanitizedName}">${quantity} ${sanitizedName}</mark>\n`;
       } else {
         highlightedText += `${quantity} ${sanitizedName}\n`;

@@ -57,6 +57,7 @@ header {
   background-image: url(../img/logos/logo-mobile.svg);
   background-repeat: no-repeat;
   background-position: center;
+  margin-left: 10px;
 }
 
 body.active .logo {
@@ -109,6 +110,7 @@ body.active .logo {
   align-items: right;
   z-index: 99999;
   transition: 0.25s;
+  border-radius: var(--bradius);
 }
 
 body.active .menu {
@@ -131,11 +133,16 @@ body.active .menu {
   padding-bottom: 0px;
 }
 
+.menu ul li:last-of-type:hover,
+.menu ul li:last-of-type:focus-within {
+    border-bottom-right-radius: var(--bradius);
+}
+
 .menu ul li a {
   display: flex;
   justify-content: flex-end;
   font-size: 1.3em;
-  padding: 25px 25px 14px;
+  padding: 35px 35px 24px;
   border-top: 1px solid #00000010;
   font-weight: 300;
   width: 100%;
@@ -204,6 +211,7 @@ body.active .menu {
   padding: 25px 25px 14px;
 }
 
+
 .section-dropdown-sub {
   position: relative;
   display: none;
@@ -251,6 +259,11 @@ body.active .menu {
   font-weight: 300;
   width: 100%;
   justify-content: flex-end;
+}
+
+header .dropdown:checked + label,
+header .dropdown:not(:checked) + label {
+  padding: 35px 35px 24px;
 }
 
 [type="checkbox"]:checked,
@@ -481,6 +494,12 @@ li:has(#navColors) {
   margin-bottom: 30px;
 }
 
+.color-picker-container {
+  display: flex;
+  flex-direction: column;
+  
+  
+}
 .color-picker {
   display: grid;
   grid-template:
@@ -672,6 +691,7 @@ mark {
 .recommended {
        display: none;
        flex-direction: column;
+
 }
 
 .recommended {
@@ -679,8 +699,7 @@ mark {
  
     width: 100%;
     padding-inline: 0.6em;
-    margin-bottom: 0.5em;
-    
+    margin-bottom: 1em;
 
     div {
 
@@ -738,7 +757,12 @@ mark {
 
 .buffet-filters {
   display: flex;
+  flex-direction: column;
   width: auto;
+}
+
+.filter-title{
+  display: none;
 }
 
 .buffet-filters.center {

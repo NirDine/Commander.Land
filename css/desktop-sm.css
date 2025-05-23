@@ -73,6 +73,10 @@
     .buffet-filters.right {
       justify-content: flex-end;
     }
+  
+    .filter-title{
+      display: flex;
+    }
     
     .cardSuggestions {
       grid-template-columns: repeat(auto-fill, minmax(244px, 1fr));

@@ -29,8 +29,8 @@ const scryfallEndpoint = 'https://api.scryfall.com/cards/collection';
 // Flag to track whether a request is in progress
 let requestInProgress = false;
 
-// Disable analyze button to prevent further requests initially
-$analyze.prop('disabled', true);
+// The initial state of the analyze button will be set by handleInput()
+// $analyze.prop('disabled', true); // This line is removed
 
 // Update textarea and highlights when analyze button is clicked
 $analyze.on('click', function() {
@@ -122,107 +122,119 @@ $analyze.on('click', function() {
         } else {
           // All requests completed for Phase 1 (Collection lookup)
           console.log('All requests for Phase 1 (Collection) completed!');
-          console.log("Starting Phase 2 (exact lookups for special names)...");
+          
+          try {
+            console.log("Starting Phase 2 (exact lookups for special names)...");
+            await performExactLookups(); // Perform Phase 2
 
-          await performExactLookups(); // Perform Phase 2
+            console.log("Phase 2 complete.");
+            console.log("Exact lookup found data:", exactLookupFoundData);
+            console.log("Exact lookup not found names:", exactLookupNotFoundNames);
 
-          console.log("Phase 2 complete.");
-          console.log("Exact lookup found data:", exactLookupFoundData);
-          console.log("Exact lookup not found names:", exactLookupNotFoundNames);
+            // --- Phase 3: Merge Results ---
+            console.log("Starting Phase 3 (Merge Results)...");
+            let finalResponseData = [];
+            let finalAccumulatedNotFound = [];
+            const allUserInputLcNames = Object.keys(cardNames); // Already lowercased
 
-          // --- Phase 3: Merge Results ---
-          console.log("Starting Phase 3 (Merge Results)...");
-          let finalResponseData = [];
-          let finalAccumulatedNotFound = [];
-          const allUserInputLcNames = Object.keys(cardNames); // Already lowercased
-
-          for (const lcUserInputName of allUserInputLcNames) {
-            const scryfallComparableUserInputName = getScryfallComparableName(lcUserInputName);
-            if (specialLookupLowercasedNames.includes(lcUserInputName)) {
-              // Processed by Phase 2 (Exact Lookup)
-              if (exactLookupNotFoundNames.includes(lcUserInputName)) {
-                finalAccumulatedNotFound.push(scryfallComparableUserInputName);
-              } else {
-                const foundCard = exactLookupFoundData.find(
-                  card => getScryfallComparableName(card.name.toLowerCase()) === scryfallComparableUserInputName
-                );
-                if (foundCard) {
-                  finalResponseData.push(foundCard);
-                } else {
-                  console.warn(`Phase 3 Warning: Card "${lcUserInputName}" was in specialLookup but not found in exactLookupFoundData or exactLookupNotFoundNames.`);
+            for (const lcUserInputName of allUserInputLcNames) {
+              const scryfallComparableUserInputName = getScryfallComparableName(lcUserInputName);
+              if (specialLookupLowercasedNames.includes(lcUserInputName)) {
+                // Processed by Phase 2 (Exact Lookup)
+                if (exactLookupNotFoundNames.includes(lcUserInputName)) {
                   finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+                } else {
+                  const foundCard = exactLookupFoundData.find(
+                    card => getScryfallComparableName(card.name.toLowerCase()) === scryfallComparableUserInputName
+                  );
+                  if (foundCard) {
+                    finalResponseData.push(foundCard);
+                  } else {
+                    console.warn(`Phase 3 Warning: Card "${lcUserInputName}" was in specialLookup but not found in exactLookupFoundData or exactLookupNotFoundNames.`);
+                    finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+                  }
                 }
-              }
-            } else {
-              // Processed by Phase 1 (Collection Lookup)
-              // Note: accumulatedNotFoundFromCollection stores names as transformed by getScryfallComparableName
-              if (accumulatedNotFoundFromCollection.includes(scryfallComparableUserInputName)) {
-                finalAccumulatedNotFound.push(scryfallComparableUserInputName);
               } else {
-                const foundCard = responseDataFromCollection.find(
-                  card => getScryfallComparableName(card.name.toLowerCase()) === scryfallComparableUserInputName
-                );
-                if (foundCard) {
-                  finalResponseData.push(foundCard);
-                } else {
-                  console.warn(`Phase 3 Warning: Card "${lcUserInputName}" (Comparable: "${scryfallComparableUserInputName}") not found in responseDataFromCollection or accumulatedNotFoundFromCollection.`);
+                // Processed by Phase 1 (Collection Lookup)
+                if (accumulatedNotFoundFromCollection.includes(scryfallComparableUserInputName)) {
                   finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+                } else {
+                  const foundCard = responseDataFromCollection.find(
+                    card => getScryfallComparableName(card.name.toLowerCase()) === scryfallComparableUserInputName
+                  );
+                  if (foundCard) {
+                    finalResponseData.push(foundCard);
+                  } else {
+                    console.warn(`Phase 3 Warning: Card "${lcUserInputName}" (Comparable: "${scryfallComparableUserInputName}") not found in responseDataFromCollection or accumulatedNotFoundFromCollection.`);
+                    finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+                  }
                 }
               }
             }
-          }
 
-          responseData = finalResponseData;
-          nameErrors = [...new Set(finalAccumulatedNotFound)];
-          console.log("Phase 3 (Merge Results) complete.");
-          console.log("Final responseData length:", responseData.length);
-          console.log("Final nameErrors:", nameErrors);
+            responseData = finalResponseData;
+            nameErrors = [...new Set(finalAccumulatedNotFound)];
+            console.log("Phase 3 (Merge Results) complete.");
+            console.log("Final responseData length:", responseData.length);
+            console.log("Final nameErrors:", nameErrors);
 
-          // --- Final UI Update ---
-          const orderedCardNames = [];
-          Object.entries(cardNames).forEach(([normalizedKey, originalCardDetails]) => {
-            const scryfallComparableKey = getScryfallComparableName(normalizedKey);
-            if (nameErrors.includes(scryfallComparableKey)) {
-              orderedCardNames.push({ ...originalCardDetails, card: null });
+            // --- Final UI Update ---
+            const orderedCardNames = [];
+            Object.entries(cardNames).forEach(([normalizedKey, originalCardDetails]) => {
+              const scryfallComparableKey = getScryfallComparableName(normalizedKey);
+              if (nameErrors.includes(scryfallComparableKey)) {
+                orderedCardNames.push({ ...originalCardDetails, card: null });
+              } else {
+                const matchingCardData = responseData.find(rd => getScryfallComparableName(rd.name.toLowerCase()) === scryfallComparableKey);
+                orderedCardNames.push({ 
+                  name: matchingCardData ? matchingCardData.name : originalCardDetails.name, 
+                  quantity: originalCardDetails.quantity, 
+                  card: matchingCardData 
+                });
+              }
+            });
+            
+            const orderedHighlights = applyHighlights(
+              orderedCardNames.map(card => ({ name: card.name, quantity: card.quantity })),
+              nameErrors
+            );
+            
+            $textarea.val(orderedCardNames.map(
+              card => (card.quantity > 1 ? `${card.quantity}x ${card.name}` : `1x ${card.name}`) 
+            ).join('\n'));
+            
+            $highlights.html(orderedHighlights);
+
+            const hasErrors = nameErrors.length > 0;
+            const allCardsFound = responseData.length === allUserInputLcNames.length;
+
+            if (!hasErrors && allCardsFound) { 
+              console.log('All card names found!');
+              const updatedUserList = orderedCardNames.map(card => ({
+                quantity: card.quantity,
+                name: card.card ? card.card.name : card.name
+              }));
+              localStorage.setItem('userList', JSON.stringify(updatedUserList));
+              localStorage.setItem('responseData', JSON.stringify(responseData));
+              localStorage.removeItem('selectedCards');
+              const colorIdentity = determineColorIdentity(responseData);
+              window.location.href = `buffet.html?colors=${colorIdentity.toLowerCase()}`;
+              // Note: if redirection happens, button state on this page is less critical
             } else {
-              const matchingCardData = responseData.find(rd => getScryfallComparableName(rd.name.toLowerCase()) === scryfallComparableKey);
-              orderedCardNames.push({ 
-                name: matchingCardData ? matchingCardData.name : originalCardDetails.name, 
-                quantity: originalCardDetails.quantity, 
-                card: matchingCardData 
-              });
+              console.log('Card names not found, other errors occurred, or not all cards resolved.');
+              $analyze.prop('disabled', false); // Enable button if not redirecting
             }
-          });
-          
-          const orderedHighlights = applyHighlights(
-            orderedCardNames.map(card => ({ name: card.name, quantity: card.quantity })),
-            nameErrors
-          );
-          
-          $textarea.val(orderedCardNames.map(
-            card => (card.quantity > 1 ? `${card.quantity}x ${card.name}` : `1x ${card.name}`) 
-          ).join('\n'));
-          
-          $highlights.html(orderedHighlights);
-
-          const hasErrors = nameErrors.length > 0;
-          if (!hasErrors) {
-            console.log('All card names found!');
-            const updatedUserList = orderedCardNames.map(card => ({
-              quantity: card.quantity,
-              name: card.card ? card.card.name : card.name
-            }));
-            localStorage.setItem('userList', JSON.stringify(updatedUserList));
-            localStorage.setItem('responseData', JSON.stringify(responseData));
-            localStorage.removeItem('selectedCards');
-            const colorIdentity = determineColorIdentity(responseData);
-            window.location.href = `buffet.html?colors=${colorIdentity.toLowerCase()}`;
-          } else {
-            console.log('Card names not found or other errors occurred.');
+          } catch (error) {
+            console.error("Unhandled error during analysis finalization (Phases 2, 3, or UI Update):", error);
+            $analyze.prop('disabled', false); // Re-enable button to allow user to retry
+          } finally {
+            requestInProgress = false;
+            // Fallback to enable button if it's somehow still disabled, then let handleInput manage.
+            if ($analyze.prop('disabled')) { 
+                $analyze.prop('disabled', false); 
+            }
+            handleInput(); 
           }
-          
-          requestInProgress = false;
-          $analyze.prop('disabled', hasErrors); // Re-enable button if errors, or if no errors and not redirecting (covered by redirection)
         }
       },
       error: async function(xhr, status, error) { // Make error handler async for await
@@ -237,85 +249,92 @@ $analyze.on('click', function() {
         } else {
           // All requests for Phase 1 completed (some batches failed)
           console.log('All requests for Phase 1 (Collection) completed, with some batch errors!');
-          console.log("Starting Phase 2 (exact lookups for special names)...");
           
-          await performExactLookups(); // Perform Phase 2 even if Phase 1 had errors
+          try {
+            console.log("Starting Phase 2 (exact lookups for special names)...");
+            await performExactLookups(); // Perform Phase 2 even if Phase 1 had errors
 
-          console.log("Phase 2 complete.");
-          console.log("Exact lookup found data:", exactLookupFoundData);
-          console.log("Exact lookup not found names:", exactLookupNotFoundNames);
-          
-          // --- Phase 3: Merge Results (Error Path) ---
-          console.log("Starting Phase 3 (Merge Results) after Phase 1 errors...");
-          let finalResponseData = []; // Should mostly be from exactLookupFoundData if Phase 1 failed badly
-          let finalAccumulatedNotFound = [];
-          const allUserInputLcNames = Object.keys(cardNames);
+            console.log("Phase 2 complete.");
+            console.log("Exact lookup found data:", exactLookupFoundData);
+            console.log("Exact lookup not found names:", exactLookupNotFoundNames);
+            
+            // --- Phase 3: Merge Results (Error Path from Phase 1) ---
+            console.log("Starting Phase 3 (Merge Results) after Phase 1 errors...");
+            let finalResponseData = []; 
+            let finalAccumulatedNotFound = [];
+            const allUserInputLcNames = Object.keys(cardNames); // Ensure this is defined in this scope if not already
 
-          for (const lcUserInputName of allUserInputLcNames) {
-            const scryfallComparableUserInputName = getScryfallComparableName(lcUserInputName);
-            if (specialLookupLowercasedNames.includes(lcUserInputName)) {
-              if (exactLookupNotFoundNames.includes(lcUserInputName)) {
-                finalAccumulatedNotFound.push(scryfallComparableUserInputName);
-              } else {
-                const foundCard = exactLookupFoundData.find(
-                  card => getScryfallComparableName(card.name.toLowerCase()) === scryfallComparableUserInputName
-                );
-                if (foundCard) {
-                  finalResponseData.push(foundCard);
-                } else {
+            for (const lcUserInputName of allUserInputLcNames) {
+              const scryfallComparableUserInputName = getScryfallComparableName(lcUserInputName);
+              if (specialLookupLowercasedNames.includes(lcUserInputName)) {
+                if (exactLookupNotFoundNames.includes(lcUserInputName)) {
                   finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+                } else {
+                  const foundCard = exactLookupFoundData.find(
+                    card => getScryfallComparableName(card.name.toLowerCase()) === scryfallComparableUserInputName
+                  );
+                  if (foundCard) {
+                    finalResponseData.push(foundCard);
+                  } else {
+                    finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+                  }
                 }
-              }
-            } else {
-              // Must have been in a failed Phase 1 batch or a successful one prior to failure
-              if (accumulatedNotFoundFromCollection.includes(scryfallComparableUserInputName)) {
-                 finalAccumulatedNotFound.push(scryfallComparableUserInputName);
               } else {
-                // Attempt to find in any data from successful Phase 1 batches
-                const foundCard = responseDataFromCollection.find( 
-                  card => getScryfallComparableName(card.name.toLowerCase()) === scryfallComparableUserInputName
-                );
-                if (foundCard) {
-                  finalResponseData.push(foundCard);
+                if (accumulatedNotFoundFromCollection.includes(scryfallComparableUserInputName)) {
+                   finalAccumulatedNotFound.push(scryfallComparableUserInputName);
                 } else {
-                  // If not explicitly in accumulatedNotFoundFromCollection but also not in responseDataFromCollection,
-                  // it implies it was in a batch that might not have completed or was processed before a later batch failed.
-                  // Assume not found if not in successfully collected data.
-                  finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+                  const foundCard = responseDataFromCollection.find( 
+                    card => getScryfallComparableName(card.name.toLowerCase()) === scryfallComparableUserInputName
+                  );
+                  if (foundCard) {
+                    finalResponseData.push(foundCard);
+                  } else {
+                    finalAccumulatedNotFound.push(scryfallComparableUserInputName);
+                  }
                 }
               }
             }
+            responseData = finalResponseData;
+            nameErrors = [...new Set(finalAccumulatedNotFound)];
+            console.log("Phase 3 (Merge Results) complete after Phase 1 errors.");
+            
+            // --- Final UI Update (Error Path from Phase 1) ---
+            const orderedCardNames = []; // Ensure this is defined
+            Object.entries(cardNames).forEach(([normalizedKey, originalCardDetails]) => {
+               const scryfallComparableKey = getScryfallComparableName(normalizedKey);
+              if (nameErrors.includes(scryfallComparableKey)) {
+                orderedCardNames.push({ ...originalCardDetails, card: null });
+              } else {
+                const matchingCardData = responseData.find(rd => getScryfallComparableName(rd.name.toLowerCase()) === scryfallComparableKey);
+                orderedCardNames.push({ 
+                  name: matchingCardData ? matchingCardData.name : originalCardDetails.name, 
+                  quantity: originalCardDetails.quantity, 
+                  card: matchingCardData 
+                });
+              }
+            });
+            const orderedHighlights = applyHighlights(
+              orderedCardNames.map(card => ({ name: card.name, quantity: card.quantity })),
+              nameErrors
+            );
+            $textarea.val(orderedCardNames.map(
+               card => (card.quantity > 1 ? `${card.quantity}x ${card.name}` : `1x ${card.name}`) 
+            ).join('\n'));
+            $highlights.html(orderedHighlights);
+            // Explicitly enable button because this is an error path for Phase 1
+            $analyze.prop('disabled', false); 
+
+          } catch (e) {
+            console.error("Unhandled error during analysis finalization (Phases 2, 3, or UI Update after Phase 1 error):", e);
+            $analyze.prop('disabled', false); // Ensure button is enabled on any error
+          } finally {
+            requestInProgress = false;
+            // Fallback to enable button if it's somehow still disabled, then let handleInput manage.
+            if ($analyze.prop('disabled')) { 
+                $analyze.prop('disabled', false); 
+            }
+            handleInput();
           }
-          responseData = finalResponseData;
-          nameErrors = [...new Set(finalAccumulatedNotFound)];
-          console.log("Phase 3 (Merge Results) complete after Phase 1 errors.");
-          
-          // --- Final UI Update (Error Path) ---
-          const orderedCardNames = [];
-          Object.entries(cardNames).forEach(([normalizedKey, originalCardDetails]) => {
-             const scryfallComparableKey = getScryfallComparableName(normalizedKey);
-            if (nameErrors.includes(scryfallComparableKey)) {
-              orderedCardNames.push({ ...originalCardDetails, card: null });
-            } else {
-              const matchingCardData = responseData.find(rd => getScryfallComparableName(rd.name.toLowerCase()) === scryfallComparableKey);
-              orderedCardNames.push({ 
-                name: matchingCardData ? matchingCardData.name : originalCardDetails.name, 
-                quantity: originalCardDetails.quantity, 
-                card: matchingCardData 
-              });
-            }
-          });
-          const orderedHighlights = applyHighlights(
-            orderedCardNames.map(card => ({ name: card.name, quantity: card.quantity })),
-            nameErrors
-          );
-          $textarea.val(orderedCardNames.map(
-             card => (card.quantity > 1 ? `${card.quantity}x ${card.name}` : `1x ${card.name}`) 
-          ).join('\n'));
-          $highlights.html(orderedHighlights);
-
-          requestInProgress = false;
-          $analyze.prop('disabled', false); // Enable button as there were errors.
         }
       },
       complete: function() {

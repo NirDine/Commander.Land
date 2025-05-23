@@ -131,7 +131,7 @@ $analyze.on('click', function() {
           
           // This update will trigger 'handleInput'
           $textarea.val(orderedCardNames.map(
-            card => (card.quantity > 1 ? `${card.quantity}x ${card.name}` : `1x ${card.name}`) 
+            card => (card.quantity > 1 ? `${card.quantity} ${card.name}` : `1 ${card.name}`) 
           ).join('\n'));
           
           $highlights.html(orderedHighlights);
@@ -192,7 +192,7 @@ $analyze.on('click', function() {
             nameErrors
           );
           $textarea.val(orderedCardNames.map(
-             card => (card.quantity > 1 ? `${card.quantity}x ${card.name}` : `1x ${card.name}`) 
+             card => (card.quantity > 1 ? `${card.quantity} ${card.name}` : `1 ${card.name}`) 
           ).join('\n'));
           $highlights.html(orderedHighlights);
           $analyze.prop('disabled', false); // Re-enable button

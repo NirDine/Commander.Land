@@ -17,39 +17,57 @@ function createCardElement(card) {
     <!-- End Card -->
   `);
 
-  if (card.card_faces) {
-    cardElement.html(`
-      <div class="cardContent dfc">
-        <div class="artContainer">
-          <img class="back" loading="eager" src="${card.card_faces[1].image_uris.normal}" alt="${card.card_faces[1].name}" aria-oracle="${card.name}. It reads: ${card.oracle_text}">
-          <img class="front" loading="eager" src="${card.card_faces[0].image_uris.normal}" alt="${card.card_faces[0].name}" aria-oracle="${card.name}. It reads: ${card.oracle_text}">
+  if (card.is_basic) {
+      cardElement.html(`
+        <div class="cardContent basic">
+          <div class="artContainer">
+            <img loading="eager" src="${card.image_uris.normal}" alt="${card.name}" aria-oracle="${card.name}. It reads: ${card.oracle_text || ''}">
+          </div>
         </div>
-      </div>
-      <span class="cardName">${card.name}</span>
-      <button type="button hidden" title="Transform" tabindex="-1" class="flip-button" style="--hiddenCount: 12;"></button>
-    `);
+        <span class="cardName">${card.name}</span>
+        <button type="button hidden" title="Remove  ${card.name}" tabindex="-1" class="remove-basic-button" style="--hiddenCount: 12;">—</button>
+        <span class="totalBasics"></span>
+      `);
   } 
-  else if (card.is_basic) {
-    cardElement.html(`
-      <div class="cardContent basic">
-        <div class="artContainer">
-          <img loading="eager" src="${card.image_uris.normal}" alt="${card.name}" aria-oracle="${card.name}. It reads: ${card.oracle_text}">
+  else if (card.card_faces && card.card_faces[0].image_uris && card.card_faces[1] && card.card_faces[1].image_uris) {
+      const frontFace = card.card_faces[0];
+      const backFace = card.card_faces[1];
+      const frontImageSrc = frontFace.image_uris.normal;
+      const frontImageAlt = frontFace.name || card.name;
+      const frontAriaOracle = `${frontImageAlt}. It reads: ${frontFace.oracle_text || card.oracle_text || ''}`;
+      const backImageSrc = backFace.image_uris.normal;
+      const backImageAlt = backFace.name || card.name; // backFace.name should exist for true DFC
+      const backAriaOracle = `${backImageAlt}. It reads: ${backFace.oracle_text || card.oracle_text || ''}`;
+
+      cardElement.html(`
+        <div class="cardContent dfc">
+          <div class="artContainer">
+            <img class="back" loading="eager" src="${backImageSrc}" alt="${backImageAlt}" aria-oracle="${backAriaOracle}">
+            <img class="front" loading="eager" src="${frontImageSrc}" alt="${frontImageAlt}" aria-oracle="${frontAriaOracle}">
+          </div>
         </div>
-      </div>
-      <span class="cardName">${card.name}</span>
-      <button type="button hidden" title="Remove  ${card.name}" tabindex="-1" class="remove-basic-button" style="--hiddenCount: 12;">—</button>
-      <span class="totalBasics"></span>
-    `);
-  }
-    else {
-    cardElement.html(`
-      <div class="cardContent">
-        <div class="artContainer">
-          <img loading="eager" src="${card.image_uris.normal}" alt="${card.name}" aria-oracle="${card.name}. It reads: ${card.oracle_text}">
+        <span class="cardName">${card.name}</span>
+        <button type="button hidden" title="Transform" tabindex="-1" class="flip-button" style="--hiddenCount: 12;"></button>
+      `);
+  } 
+  else {
+      // Single-faced card or DFC without distinct face images (e.g., Adventures)
+      const mainImageSrc = card.image_uris ? card.image_uris.normal : '';
+      const mainImageAlt = card.name;
+      let ariaOracleText = card.oracle_text || '';
+      if (card.card_faces && card.card_faces[0] && card.card_faces[0].oracle_text) {
+          ariaOracleText = card.card_faces[0].oracle_text;
+      }
+      const mainAriaOracle = `${mainImageAlt}. It reads: ${ariaOracleText || ''}`; // Ensure final fallback for ariaOracleText
+
+      cardElement.html(`
+        <div class="cardContent">
+          <div class="artContainer">
+            <img loading="eager" src="${mainImageSrc}" alt="${mainImageAlt}" aria-oracle="${mainAriaOracle}">
+          </div>
         </div>
-      </div>
-      <span class="cardName">${card.name}</span>
-    `);
+        <span class="cardName">${card.name}</span>
+      `);
   }
 
   return cardElement;
@@ -66,13 +84,20 @@ $('#search').on('input', debounce(function() {
   }
 }, 300));
 
-// Automatically focus search input when typing starts with letters
+// Automatically focus search input when typing starts with letters, ignoring Ctrl/Cmd combinations
 $(document).on('keydown', function(event) {
   const searchInput = $('#search');
   const key = event.key;
 
-  // Check if the key is an alphabetic character
-  if (/^[a-zA-Z]$/.test(key)) {
+  // Check if Ctrl or Cmd key is pressed
+  if (event.ctrlKey || event.metaKey) {
+    // Do not focus if Ctrl or Cmd is part of the keypress (e.g., Ctrl+C, Cmd+C)
+    return;
+  }
+
+  // Check if the key is an alphabetic character and the event target is not an input/textarea
+  if (/^[a-zA-Z]$/.test(key) && !$(event.target).is('input, textarea, [contenteditable="true"]')) {
+    // Only focus if the user isn't already typing in an input/textarea or contenteditable element
     searchInput.focus();
   }
 });
@@ -87,36 +112,104 @@ function loadCards() {
   let cardsToAdd = [];
 
   if ($("#isAdded").is(":checked")) {
-    // Filter cardsToAdd based on selectedCards
-    cardsToAdd = selectedCards
+    // Filter relevantSelectedCards based on selectedCards and filteredData
+    let relevantSelectedCards = selectedCards
       .map(cardName => filteredData.find(card => card.name === cardName))
       .filter(card => card !== undefined); // Exclude undefined values
-  } else {
-      // Get the sorting key from the sorting input
-      const sortingKey = $('.sorting:checked').val();
-      
-            // Predefined order for rarity
-      const rarityOrder = ['common', 'uncommon', 'rare', 'mythic'];
 
-      // Sort cards based on the sorting key
-      const sortedData = filteredData.sort((a, b) => {
-        if (sortingKey === 'released_at') {
-          // Inverse sorting for 'released_at'
-          return new Date(b[sortingKey]).getTime() - new Date(a[sortingKey]).getTime();
-        } else if (sortingKey === 'rarity') {
-          // Custom sorting for rarity
-          const aRarityIndex = rarityOrder.indexOf(a[sortingKey]) !== -1 ? rarityOrder.indexOf(a[sortingKey]) : rarityOrder.length;
-          const bRarityIndex = rarityOrder.indexOf(b[sortingKey]) !== -1 ? rarityOrder.indexOf(b[sortingKey]) : rarityOrder.length;
-          return aRarityIndex - bRarityIndex;
-        } else if (typeof a[sortingKey] === 'string') {
-          return a[sortingKey].localeCompare(b[sortingKey]);
-        } else {
-          return a[sortingKey] - b[sortingKey];
-        }
-      });
-      
-  // Filter cardsToAdd to exclude already loaded cards
-   
+    const sortingKey = $('.sorting:checked').val();
+    const rarityOrder = ['common', 'uncommon', 'rare', 'mythic'];
+
+    relevantSelectedCards.sort((a, b) => {
+      let comparison = 0;
+      let compA, compB;
+      const valA_name = String(a.name || '').toLowerCase();
+      const valB_name = String(b.name || '').toLowerCase();
+
+      if (sortingKey === 'released_at') {
+        const dateA_val = a[sortingKey];
+        const dateB_val = b[sortingKey];
+        compA = dateA_val ? new Date(dateA_val).getTime() : null;
+        compB = dateB_val ? new Date(dateB_val).getTime() : null;
+        if (isNaN(compA)) compA = null;
+        if (isNaN(compB)) compB = null;
+        if (compA === null && compB === null) comparison = 0;
+        else if (compA === null) comparison = 1;
+        else if (compB === null) comparison = -1;
+        else comparison = compB - compA; // Descending
+      } else if (sortingKey === 'rarity') {
+        const rarityA = a[sortingKey] ? String(a[sortingKey]).toLowerCase() : 'zzzz';
+        const rarityB = b[sortingKey] ? String(b[sortingKey]).toLowerCase() : 'zzzz';
+        const aRarityIndex = rarityOrder.indexOf(rarityA) !== -1 ? rarityOrder.indexOf(rarityA) : rarityOrder.length;
+        const bRarityIndex = rarityOrder.indexOf(rarityB) !== -1 ? rarityOrder.indexOf(rarityB) : rarityOrder.length;
+        comparison = aRarityIndex - bRarityIndex;
+      } else if (sortingKey === 'name') {
+        compA = valA_name;
+        compB = valB_name;
+        comparison = compA.localeCompare(compB);
+      } else if (sortingKey === 'edhrec_rank') {
+        compA = (typeof a.edhrec_rank === 'number' && !isNaN(a.edhrec_rank)) ? a.edhrec_rank : Number.MAX_SAFE_INTEGER;
+        compB = (typeof b.edhrec_rank === 'number' && !isNaN(b.edhrec_rank)) ? b.edhrec_rank : Number.MAX_SAFE_INTEGER;
+        comparison = compA - compB;
+      } else { 
+        compA = String(a[sortingKey] || '').toLowerCase();
+        compB = String(b[sortingKey] || '').toLowerCase();
+        comparison = compA.localeCompare(compB);
+      }
+
+      if (comparison === 0) {
+        return valA_name.localeCompare(valB_name);
+      }
+      return comparison;
+    });
+    cardsToAdd = relevantSelectedCards.slice(startIndex, endIndex);
+
+  } else {
+    const sortingKey = $('.sorting:checked').val();
+    const rarityOrder = ['common', 'uncommon', 'rare', 'mythic'];
+
+    const sortedData = [...filteredData].sort((a, b) => {
+      let comparison = 0;
+      let compA, compB;
+      const valA_name = String(a.name || '').toLowerCase();
+      const valB_name = String(b.name || '').toLowerCase();
+
+      if (sortingKey === 'released_at') {
+        const dateA_val = a[sortingKey];
+        const dateB_val = b[sortingKey];
+        compA = dateA_val ? new Date(dateA_val).getTime() : null;
+        compB = dateB_val ? new Date(dateB_val).getTime() : null;
+        if (isNaN(compA)) compA = null;
+        if (isNaN(compB)) compB = null;
+        if (compA === null && compB === null) comparison = 0;
+        else if (compA === null) comparison = 1;
+        else if (compB === null) comparison = -1;
+        else comparison = compB - compA; // Descending
+      } else if (sortingKey === 'rarity') {
+        const rarityA = a[sortingKey] ? String(a[sortingKey]).toLowerCase() : 'zzzz';
+        const rarityB = b[sortingKey] ? String(b[sortingKey]).toLowerCase() : 'zzzz';
+        const aRarityIndex = rarityOrder.indexOf(rarityA) !== -1 ? rarityOrder.indexOf(rarityA) : rarityOrder.length;
+        const bRarityIndex = rarityOrder.indexOf(rarityB) !== -1 ? rarityOrder.indexOf(rarityB) : rarityOrder.length;
+        comparison = aRarityIndex - bRarityIndex;
+      } else if (sortingKey === 'name') {
+        compA = valA_name; 
+        compB = valB_name; 
+        comparison = compA.localeCompare(compB);
+      } else if (sortingKey === 'edhrec_rank') {
+        compA = (typeof a.edhrec_rank === 'number' && !isNaN(a.edhrec_rank)) ? a.edhrec_rank : Number.MAX_SAFE_INTEGER;
+        compB = (typeof b.edhrec_rank === 'number' && !isNaN(b.edhrec_rank)) ? b.edhrec_rank : Number.MAX_SAFE_INTEGER;
+        comparison = compA - compB;
+      } else { 
+        compA = String(a[sortingKey] || '').toLowerCase();
+        compB = String(b[sortingKey] || '').toLowerCase();
+        comparison = compA.localeCompare(compB);
+      }
+
+      if (comparison === 0) {
+        return valA_name.localeCompare(valB_name);
+      }
+      return comparison;
+    });
     cardsToAdd = sortedData
         .slice(startIndex, endIndex)
         .filter(card => !cardSuggestions.find(`[data-card-name="${card.name}"]`).length);
@@ -150,26 +243,39 @@ function filterCards() {
 
 
   filteredData = data?.data.filter(function(card) {
-    const formattedCardName = formatCardName(card.name);
-    const formattedCardType = formatCardName(card.type_line);
-    const formattedCardSetName = formatCardName(card.set_name);
-    const formattedCardSet = formatCardName(card.set);
-    const formattedCardText = formatCardName(card.oracle_text);
+    let matchesSearch = false;
+
+    if (card.card_faces && card.card_faces.length > 0) {
+        for (const face of card.card_faces) {
+            if ((formatCardName(face.name)).includes(formattedSearchValue) ||
+                (formatCardName(face.type_line)).includes(formattedSearchValue) ||
+                (formatCardName(face.oracle_text)).includes(formattedSearchValue)) {
+                matchesSearch = true;
+                break; 
+            }
+        }
+    } else {
+        // Single-faced card
+        const formattedCardName = formatCardName(card.name);
+        const formattedCardType = formatCardName(card.type_line);
+        const formattedCardSetName = formatCardName(card.set_name);
+        const formattedCardSet = formatCardName(card.set);
+        const formattedCardText = formatCardName(card.oracle_text);
+        const cardProperties = Array.isArray(card.properties) ? card.properties : [];
+
+        matchesSearch = formattedCardName.includes(formattedSearchValue) ||
+                        formattedCardType.includes(formattedSearchValue) ||
+                        formattedCardSet.includes(formattedSearchValue) ||
+                        formattedCardSetName.includes(formattedSearchValue) ||
+                        formattedCardText.includes(formattedSearchValue) ||
+                        cardProperties.some(function(property) {
+                          return formatCardName(property).includes(formattedSearchValue);
+                        });
+    }
+
     const cardColors = card.color_identity?.map(function(color) {
       return color.toLowerCase(); // Convert to lowercase
     }) || [];
-    const cardProperties = card.properties?.map(function(property) {
-      return property.toLowerCase(); // Convert to lowercase
-    }) || [];
-
-    const matchesSearch = formattedCardName.includes(formattedSearchValue) ||
-      formattedCardType.includes(formattedSearchValue) ||
-      formattedCardSet.includes(formattedSearchValue) ||
-      formattedCardSetName.includes(formattedSearchValue) ||
-      formattedCardText.includes(formattedSearchValue) ||
-      cardProperties.some(function(property) {
-        return formatCardName(property).includes(formattedSearchValue);
-      });
 
     // Check if card has color identity
     const hasColorIdentity = cardColors.length > 0;
@@ -206,10 +312,14 @@ function debounce(func, delay) {
 }
 
 function formatCardName(cardName) {
-  if (typeof cardName === 'string' && cardName.trim().length > 0) {
-    return cardName.replace(/[^\w\s]|_/g, "").toLowerCase();
+  if (typeof cardName === 'string') {
+    let str = cardName.toLowerCase(); // Initial toLowerCase
+    str = str.replace(/[^\w\s]|_/g, ""); // Remove punctuation (keeps alphanumeric and whitespace)
+    str = str.replace(/\s+/g, ' ').trim(); // Normalize whitespace (multiple spaces to one, then trim ends)
+    // Ensure return '' if the string becomes empty after processing
+    return str.length > 0 ? str : ''; 
   }
-  return '';
+  return ''; // Return empty string for non-string inputs or if original string was null/undefined
 }
 
 // Function to update filters based on URL parameters
@@ -311,7 +421,7 @@ const updateMobileColorFilters = () => {
 // Check if the data is already stored in localStorage
 const storedData = localStorage.getItem('landsData');
 const storedVersion = localStorage.getItem('landsDataVersion');
-const currentVersion = '2.8'; // Replace with the current version of the JSON data
+const currentVersion = '3.0'; // Replace with the current version of the JSON data
 
 if (!storedVersion) {
     console.log('No data found.');

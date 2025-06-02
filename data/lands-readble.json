@@ -1,7 +1,7 @@
 {
   "object": "list",
-  "total_cards": 1028,
-  "version": 2.6,
+  "total_cards": 1056,
+  "version": 2.8,
   "data": [
     {
       "object": "card",
@@ -48141,7 +48141,7 @@
       },
       "properties": []
     },
-	{
+    {
       "object": "card",
       "id": "bd9e6ba8-1c5e-4416-8bff-90db3b3b1f41",
       "oracle_id": "48edc348-93f6-4dce-9cc4-7244d76b6f4a",
@@ -48930,6 +48930,1745 @@
         "usd": "9.95",
         "eur": "7.41"
       },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "name": "Cori Mountain Monastery",
+      "uri": "https://api.scryfall.com/cards/9312821a-2059-4f44-9b20-c9522b827e38",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/3/9312821a-2059-4f44-9b20-c9522b827e38.jpg?1742505338",
+        "normal": "https://cards.scryfall.io/normal/front/9/3/9312821a-2059-4f44-9b20-c9522b827e38.jpg?1742505338",
+        "png": "https://cards.scryfall.io/png/front/9/3/9312821a-2059-4f44-9b20-c9522b827e38.png?1742505338"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control a Plains or an Island.\n{T}: Add {R}.\n{3}{R}, {T}: Exile the top card of your library. Until the end of your next turn, you may play that card.",
+      "colors": [],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "reserved": false,
+      "game_changer": false,
+      "finishes": [],
+      "promo": false,
+      "reprint": false,
+      "variation": false,
+      "set": "tdm",
+      "set_name": "Tarkir: Dragonstorm",
+      "rulings_uri": "https://api.scryfall.com/cards/9312821a-2059-4f44-9b20-c9522b827e38/rulings",
+      "collector_number": "252",
+      "rarity": "rare",
+      "flavor_text": "Every spire is a physical dedication to the Way.",
+      "artist": "Arthur Yuan",
+      "artist_ids": [
+        "0c066852-6fdb-42d0-aab9-db4038850da0"
+      ],
+      "illustration_id": "924746ad-cbb9-471a-b314-07a1dc27c1db",
+      "edhrec_rank": 26849,
+      "prices": {
+        "usd": "11.69",
+        "usd_foil": null,
+        "usd_etched": null,
+        "eur": null,
+        "eur_foil": null
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "name": "Dalkovan Encampment",
+      "uri": "https://api.scryfall.com/cards/98ad5f0c-8775-4e89-8e92-84a6ade93e35",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/8/98ad5f0c-8775-4e89-8e92-84a6ade93e35.jpg?1742799399",
+        "normal": "https://cards.scryfall.io/normal/front/9/8/98ad5f0c-8775-4e89-8e92-84a6ade93e35.jpg?1742799399",
+        "png": "https://cards.scryfall.io/png/front/9/8/98ad5f0c-8775-4e89-8e92-84a6ade93e35.png?1742799399"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control a Swamp or a Mountain.\n{T}: Add {W}.\n{2}{W}, {T}: Whenever you attack this turn, create two 1/1 red Warrior creature tokens that are tapped and attacking. Sacrifice them at the beginning of the next end step.",
+      "colors": [],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "component": "combo_piece",
+          "name": "Dalkovan Encampment",
+          "type_line": "Land",
+          "uri": "https://api.scryfall.com/cards/5af006f6-135e-4ea0-8ce4-7824934e87da"
+        },
+        {
+          "object": "related_card",
+          "component": "token",
+          "name": "Warrior",
+          "type_line": "Token Creature — Warrior",
+          "uri": "https://api.scryfall.com/cards/7edc0515-a130-45a7-aa09-0e23bba41587"
+        }
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "reserved": false,
+      "game_changer": false,
+      "finishes": [],
+      "promo": false,
+      "reprint": false,
+      "variation": false,
+      "set": "tdm",
+      "set_name": "Tarkir: Dragonstorm",
+      "rulings_uri": "https://api.scryfall.com/cards/98ad5f0c-8775-4e89-8e92-84a6ade93e35/rulings",
+      "collector_number": "253",
+      "rarity": "rare",
+      "artist": "Marina Ortega Lorente",
+      "artist_ids": [
+        "63def22f-9b97-423f-8791-2c1be9f46619"
+      ],
+      "illustration_id": "0a52aea1-2a01-4f23-a7bc-2cbdb283ed35",
+      "edhrec_rank": 26103,
+      "prices": {
+        "usd": null,
+        "usd_foil": "9.86",
+        "usd_etched": null,
+        "eur": null,
+        "eur_foil": null
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "name": "Great Arashin City",
+      "uri": "https://api.scryfall.com/cards/ecba23b6-9f3a-431e-bc22-f1fb04d27b68",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/e/c/ecba23b6-9f3a-431e-bc22-f1fb04d27b68.jpg?1742540128",
+        "normal": "https://cards.scryfall.io/normal/front/e/c/ecba23b6-9f3a-431e-bc22-f1fb04d27b68.jpg?1742540128",
+        "png": "https://cards.scryfall.io/png/front/e/c/ecba23b6-9f3a-431e-bc22-f1fb04d27b68.png?1742540128"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control a Forest or a Plains.\n{T}: Add {B}.\n{1}{B}, {T}, Exile a creature card from your graveyard: Create a 1/1 white Spirit creature token.",
+      "colors": [],
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "reserved": false,
+      "game_changer": false,
+      "finishes": [],
+      "promo": false,
+      "reprint": false,
+      "variation": false,
+      "set": "tdm",
+      "set_name": "Tarkir: Dragonstorm",
+      "rulings_uri": "https://api.scryfall.com/cards/ecba23b6-9f3a-431e-bc22-f1fb04d27b68/rulings",
+      "collector_number": "257",
+      "rarity": "rare",
+      "artist": "Josu Solano",
+      "artist_ids": [
+        "fb7b61a8-13c5-4813-a749-9d3396801906"
+      ],
+      "illustration_id": "4f2473a7-9251-4322-86d9-92e40ec9d451",
+      "edhrec_rank": 27816,
+      "prices": {
+        "usd": "10.89",
+        "usd_foil": null,
+        "usd_etched": null,
+        "eur": null,
+        "eur_foil": null
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "name": "Kishla Village",
+      "uri": "https://api.scryfall.com/cards/9f0ff90d-7312-44df-afc5-29c768fa7758",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/f/9f0ff90d-7312-44df-afc5-29c768fa7758.jpg?1742540119",
+        "normal": "https://cards.scryfall.io/normal/front/9/f/9f0ff90d-7312-44df-afc5-29c768fa7758.jpg?1742540119",
+        "png": "https://cards.scryfall.io/png/front/9/f/9f0ff90d-7312-44df-afc5-29c768fa7758.png?1742540119"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control an Island or a Swamp.\n{T}: Add {G}.\n{3}{G}, {T}: Surveil 2. (Look at the top two cards of your library, then put any number of them into your graveyard and the rest on top of your library in any order.)",
+      "colors": [],
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Surveil"
+      ],
+      "produced_mana": [
+        "G"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "reserved": false,
+      "game_changer": false,
+      "finishes": [],
+      "promo": false,
+      "reprint": false,
+      "variation": false,
+      "set": "tdm",
+      "set_name": "Tarkir: Dragonstorm",
+      "rulings_uri": "https://api.scryfall.com/cards/9f0ff90d-7312-44df-afc5-29c768fa7758/rulings",
+      "collector_number": "259",
+      "rarity": "rare",
+      "artist": "Bruce Brenneise",
+      "artist_ids": [
+        "91d65465-e8a6-4a4e-8b0e-0e07466cfa0f"
+      ],
+      "illustration_id": "f23fe445-77b7-4b8b-af81-48217ca93100",
+      "edhrec_rank": 27109,
+      "prices": {
+        "usd": "10.93",
+        "usd_foil": "12.68",
+        "usd_etched": null,
+        "eur": null,
+        "eur_foil": null
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "name": "Maelstrom of the Spirit Dragon",
+      "uri": "https://api.scryfall.com/cards/c4e90bfb-d9a5-48a9-9ff9-b0f50a813eee",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/4/c4e90bfb-d9a5-48a9-9ff9-b0f50a813eee.jpg?1742332231",
+        "normal": "https://cards.scryfall.io/normal/front/c/4/c4e90bfb-d9a5-48a9-9ff9-b0f50a813eee.jpg?1742332231",
+        "png": "https://cards.scryfall.io/png/front/c/4/c4e90bfb-d9a5-48a9-9ff9-b0f50a813eee.png?1742332231"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{T}: Add one mana of any color. Spend this mana only to cast a Dragon spell or an Omen spell.\n{4}, {T}, Sacrifice this land: Search your library for a Dragon card, reveal it, put it into your hand, then shuffle.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "reserved": false,
+      "game_changer": false,
+      "finishes": [],
+      "promo": false,
+      "reprint": false,
+      "variation": false,
+      "set": "tdm",
+      "set_name": "Tarkir: Dragonstorm",
+      "rulings_uri": "https://api.scryfall.com/cards/c4e90bfb-d9a5-48a9-9ff9-b0f50a813eee/rulings",
+      "collector_number": "260",
+      "rarity": "rare",
+      "artist": "Carlos Palma Cruchaga",
+      "artist_ids": [
+        "f0c43e1b-1853-4abc-8a1b-d7dda6c1d592"
+      ],
+      "illustration_id": "5c5d12d9-0df9-42e3-b746-eeac13583c87",
+      "edhrec_rank": 21957,
+      "prices": {
+        "usd": "9.73",
+        "usd_foil": "10.58",
+        "usd_etched": null,
+        "eur": "6.43",
+        "eur_foil": null
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "name": "Mistrise Village",
+      "uri": "https://api.scryfall.com/cards/d44bccbf-6fab-46e4-8ddb-6577e27ec6e8",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/4/d44bccbf-6fab-46e4-8ddb-6577e27ec6e8.jpg?1742505637",
+        "normal": "https://cards.scryfall.io/normal/front/d/4/d44bccbf-6fab-46e4-8ddb-6577e27ec6e8.jpg?1742505637",
+        "png": "https://cards.scryfall.io/png/front/d/4/d44bccbf-6fab-46e4-8ddb-6577e27ec6e8.png?1742505637"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped unless you control a Mountain or a Forest.\n{T}: Add {U}.\n{U}, {T}: The next spell you cast this turn can't be countered.",
+      "colors": [],
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal",
+        "oathbreaker": "legal",
+        "brawl": "legal",
+        "paupercommander": "legal",
+        "duel": "legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "reserved": false,
+      "game_changer": false,
+      "finishes": [],
+      "promo": false,
+      "reprint": false,
+      "variation": false,
+      "set": "tdm",
+      "set_name": "Tarkir: Dragonstorm",
+      "rulings_uri": "https://api.scryfall.com/cards/d44bccbf-6fab-46e4-8ddb-6577e27ec6e8/rulings",
+      "collector_number": "261",
+      "rarity": "rare",
+      "flavor_text": "Built on a fumarole field, the village is a refuge of warmth amid the ice of the Qal Sisma mountains.",
+      "artist": "Constantin Marin",
+      "artist_ids": [
+        "6cb0dc0c-4362-4c21-b23a-b2d7e096aa4f"
+      ],
+      "illustration_id": "49cd5a19-e334-4fd2-b88e-7a9f5f03cf9a",
+      "edhrec_rank": 20357,
+      "prices": {
+        "usd": "21.56",
+        "usd_foil": "21.89",
+        "usd_etched": null,
+        "eur": null,
+        "eur_foil": null
+      },
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "f0da2ee1-986e-4cbf-92eb-d96fdb572ca5",
+      "multiverse_ids": [],
+      "name": "Adventurer's Inn",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/0/f0da2ee1-986e-4cbf-92eb-d96fdb572ca5.jpg?1748706796",
+        "normal": "https://cards.scryfall.io/normal/front/f/0/f0da2ee1-986e-4cbf-92eb-d96fdb572ca5.jpg?1748706796",
+        "png": "https://cards.scryfall.io/png/front/f/0/f0da2ee1-986e-4cbf-92eb-d96fdb572ca5.png?1748706796"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "When this land enters, you gain 2 life.\n{T}: Add {C}.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "common",
+      "flavor_text": "\"Welcome! We have rooms for 200 gil a night. Would you like to stay and rest your body and mind?\"\n—Innkeep",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Allen Morris",
+      "artist_ids": [
+        "5d65ec8f-0c70-41f0-8585-5c91bd7f6f2e"
+      ],
+      "edhrec_rank": 17600,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "001e9f20-5b15-41cb-bf82-46172decc235",
+      "multiverse_ids": [],
+      "name": "Balamb Garden, SeeD Academy // Balamb Garden, Airborne",
+      "released_at": "2025-06-13",
+      "cmc": 0,
+      "type_line": "Land — Town // Legendary Artifact — Vehicle",
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [
+        "Flying",
+        "Transform",
+        "Crew"
+      ],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Balamb Garden, SeeD Academy",
+          "mana_cost": "",
+          "type_line": "Land — Town",
+          "oracle_text": "This land enters tapped.\n{T}: Add {G} or {U}.\n{5}{G}{U}, {T}: Transform this land. This ability costs {1} less to activate for each other Town you control.",
+          "colors": [],
+          "artist": "Jonas De Ro",
+          "artist_id": "561ebf9e-8d93-4b57-8156-8826d0c19601",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/0/0/001e9f20-5b15-41cb-bf82-46172decc235.jpg?1748707838",
+            "normal": "https://cards.scryfall.io/normal/front/0/0/001e9f20-5b15-41cb-bf82-46172decc235.jpg?1748707838",
+            "png": "https://cards.scryfall.io/png/front/0/0/001e9f20-5b15-41cb-bf82-46172decc235.png?1748707838"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Balamb Garden, Airborne",
+          "mana_cost": "",
+          "type_line": "Legendary Artifact — Vehicle",
+          "oracle_text": "Flying\nWhenever Balamb Garden attacks, draw a card.\nCrew 1 (Tap any number of creatures you control with total power 1 or more: This Vehicle becomes an artifact creature until end of turn.)",
+          "colors": [],
+          "power": "5",
+          "toughness": "4",
+          "artist": "Jonas De Ro",
+          "artist_id": "561ebf9e-8d93-4b57-8156-8826d0c19601",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/0/0/001e9f20-5b15-41cb-bf82-46172decc235.jpg?1748707838",
+            "normal": "https://cards.scryfall.io/normal/back/0/0/001e9f20-5b15-41cb-bf82-46172decc235.jpg?1748707838",
+            "png": "https://cards.scryfall.io/png/back/0/0/001e9f20-5b15-41cb-bf82-46172decc235.png?1748707838"
+          }
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "rare",
+      "artist": "Jonas De Ro",
+      "artist_ids": [
+        "561ebf9e-8d93-4b57-8156-8826d0c19601"
+      ],
+      "edhrec_rank": 24781,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "6e4bf840-802d-47d5-bffd-8ba495e19cf6",
+      "multiverse_ids": [],
+      "name": "Baron, Airship Kingdom",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/e/6e4bf840-802d-47d5-bffd-8ba495e19cf6.jpg?1748706809",
+        "normal": "https://cards.scryfall.io/normal/front/6/e/6e4bf840-802d-47d5-bffd-8ba495e19cf6.jpg?1748706809",
+        "png": "https://cards.scryfall.io/png/front/6/e/6e4bf840-802d-47d5-bffd-8ba495e19cf6.png?1748706809"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "This land enters tapped.\n{T}: Add {U} or {R}.",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "U"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "common",
+      "flavor_text": "The advent of the airship marked the realization of Baron's dreams, but also the birth of its militarism.",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Rockey Chen",
+      "artist_ids": [
+        "5f92512a-2da0-4d91-8aaf-ac8d2404d776"
+      ],
+      "edhrec_rank": 24928,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "f73ce8ec-c916-48eb-ae20-c0d6d03d7145",
+      "multiverse_ids": [],
+      "name": "Capital City",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/7/f73ce8ec-c916-48eb-ae20-c0d6d03d7145.jpg?1748706809",
+        "normal": "https://cards.scryfall.io/normal/front/f/7/f73ce8ec-c916-48eb-ae20-c0d6d03d7145.jpg?1748706809",
+        "png": "https://cards.scryfall.io/png/front/f/7/f73ce8ec-c916-48eb-ae20-c0d6d03d7145.png?1748706809"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "{T}: Add {C}.\n{1}, {T}: Add one mana of any color.\nCycling {2} ({2}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "uncommon",
+      "flavor_text": "A city built upon the Isles of Ark that straddle the continents of Storm and Ash.",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Wei Guan",
+      "artist_ids": [
+        "6bd18163-aa22-4a41-82f6-8cdb8269d3c8"
+      ],
+      "edhrec_rank": 21599,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "5e43c36f-b8a2-4b2b-b2ea-57e6fa97521c",
+      "multiverse_ids": [],
+      "name": "Clive's Hideaway",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/e/5e43c36f-b8a2-4b2b-b2ea-57e6fa97521c.jpg?1748706815",
+        "normal": "https://cards.scryfall.io/normal/front/5/e/5e43c36f-b8a2-4b2b-b2ea-57e6fa97521c.jpg?1748706815",
+        "png": "https://cards.scryfall.io/png/front/5/e/5e43c36f-b8a2-4b2b-b2ea-57e6fa97521c.png?1748706815"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "Hideaway 4 (When this land enters, look at the top four cards of your library, exile one face down, then put the rest on the bottom in a random order.)\n{T}: Add {C}.\n{2}, {T}: You may play the exiled card without paying its mana cost if you control four or more legendary creatures.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Hideaway"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "rare",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Jonas De Ro",
+      "artist_ids": [
+        "561ebf9e-8d93-4b57-8156-8826d0c19601"
+      ],
+      "edhrec_rank": 23313,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "64db46d4-f91f-49cc-971c-b8e19f0c4ea9",
+      "multiverse_ids": [],
+      "name": "Crossroads Village",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/4/64db46d4-f91f-49cc-971c-b8e19f0c4ea9.jpg?1748706815",
+        "normal": "https://cards.scryfall.io/normal/front/6/4/64db46d4-f91f-49cc-971c-b8e19f0c4ea9.jpg?1748706815",
+        "png": "https://cards.scryfall.io/png/front/6/4/64db46d4-f91f-49cc-971c-b8e19f0c4ea9.png?1748706815"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "This land enters tapped. As it enters, choose a color.\n{T}: Add one mana of the chosen color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "common",
+      "flavor_text": "\"You've got to destroy the Dreadnought!\"\n—Bafsk resident",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Hristo D. Chukov",
+      "artist_ids": [
+        "e4631396-f0ce-41df-9d35-a7bd1da9d5a6"
+      ],
+      "edhrec_rank": 24834,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "e28eac1e-adc7-4f8d-b206-bef09ba07d38",
+      "multiverse_ids": [],
+      "name": "Eden, Seat of the Sanctum",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/e/2/e28eac1e-adc7-4f8d-b206-bef09ba07d38.jpg?1748706821",
+        "normal": "https://cards.scryfall.io/normal/front/e/2/e28eac1e-adc7-4f8d-b206-bef09ba07d38.jpg?1748706821",
+        "png": "https://cards.scryfall.io/png/front/e/2/e28eac1e-adc7-4f8d-b206-bef09ba07d38.png?1748706821"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "{T}: Add {C}.\n{5}, {T}: Mill two cards. Then you may sacrifice this land. When you do, return another target permanent card from your graveyard to your hand.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Mill"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "uncommon",
+      "flavor_text": "This city, Cocoon's capital, shares its name with its fal'Cie patron.",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Leon Tukker",
+      "artist_ids": [
+        "669b8b90-758d-4f9e-b4f7-98cd6742eb97"
+      ],
+      "edhrec_rank": 24835,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "99582781-613e-4a33-aec7-7569b4a961aa",
+      "multiverse_ids": [],
+      "name": "Gohn, Town of Ruin",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/9/99582781-613e-4a33-aec7-7569b4a961aa.jpg?1748706822",
+        "normal": "https://cards.scryfall.io/normal/front/9/9/99582781-613e-4a33-aec7-7569b4a961aa.jpg?1748706822",
+        "png": "https://cards.scryfall.io/png/front/9/9/99582781-613e-4a33-aec7-7569b4a961aa.png?1748706822"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "This land enters tapped.\n{T}: Add {B} or {G}.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "common",
+      "flavor_text": "\"They say that beyond the dunes is the Town of Ruin, but no one can even enter the desert to find out, let alone cross it.\"\n—Cid Previa",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Salvatorre Zee Yazzie",
+      "artist_ids": [
+        "1629eaec-cc37-4870-bc89-1e8ca5569507"
+      ],
+      "edhrec_rank": 25220,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "7beccfa6-3e4b-4460-954e-870cb39e462d",
+      "multiverse_ids": [],
+      "name": "Gongaga, Reactor Town",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/7/b/7beccfa6-3e4b-4460-954e-870cb39e462d.jpg?1748706828",
+        "normal": "https://cards.scryfall.io/normal/front/7/b/7beccfa6-3e4b-4460-954e-870cb39e462d.jpg?1748706828",
+        "png": "https://cards.scryfall.io/png/front/7/b/7beccfa6-3e4b-4460-954e-870cb39e462d.png?1748706828"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "This land enters tapped.\n{T}: Add {R} or {G}.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "R"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "common",
+      "flavor_text": "\"The Shinra people told us that everyone would be happy once the reactor was built. But all it brought us was sadness...\"\n—Gongaga villager",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Le Vuong",
+      "artist_ids": [
+        "c8b3ccf1-5c15-44f2-a7c5-1628c1a3f325"
+      ],
+      "edhrec_rank": 24820,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "dfcbc131-fd50-4908-b539-c8e52bb70c58",
+      "multiverse_ids": [],
+      "name": "Guadosalam, Farplane Gateway",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/f/dfcbc131-fd50-4908-b539-c8e52bb70c58.jpg?1748706833",
+        "normal": "https://cards.scryfall.io/normal/front/d/f/dfcbc131-fd50-4908-b539-c8e52bb70c58.jpg?1748706833",
+        "png": "https://cards.scryfall.io/png/front/d/f/dfcbc131-fd50-4908-b539-c8e52bb70c58.png?1748706833"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "This land enters tapped.\n{T}: Add {G} or {U}.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "U"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "common",
+      "flavor_text": "\"We Guado protect the Farplane so the dead can rest in peace.\"\n—Guadosalam citizen",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Vaigintas Pakenis",
+      "artist_ids": [
+        "8f588167-5376-425b-ba13-ed207d9c1b39"
+      ],
+      "edhrec_rank": 24452,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "07fca511-a65c-4779-82c0-9215b0dcd068",
+      "multiverse_ids": [],
+      "name": "Insomnia, Crown City",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/7/07fca511-a65c-4779-82c0-9215b0dcd068.jpg?1748706835",
+        "normal": "https://cards.scryfall.io/normal/front/0/7/07fca511-a65c-4779-82c0-9215b0dcd068.jpg?1748706835",
+        "png": "https://cards.scryfall.io/png/front/0/7/07fca511-a65c-4779-82c0-9215b0dcd068.png?1748706835"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "This land enters tapped.\n{T}: Add {W} or {B}.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "common",
+      "flavor_text": "\"I need only know that you are ready to leave home behind,\" said King Regis.\n\"Don't know about you, but I'm ready as I'll ever be,\" replied Noctis.",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Jonas De Ro",
+      "artist_ids": [
+        "561ebf9e-8d93-4b57-8156-8826d0c19601"
+      ],
+      "edhrec_rank": 24752,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "068bc755-9d3d-430b-abc5-c775a5415bf9",
+      "multiverse_ids": [],
+      "name": "Ishgard, the Holy See // Faith & Grief",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/0/6/068bc755-9d3d-430b-abc5-c775a5415bf9.jpg?1748706839",
+        "normal": "https://cards.scryfall.io/normal/front/0/6/068bc755-9d3d-430b-abc5-c775a5415bf9.jpg?1748706839",
+        "png": "https://cards.scryfall.io/png/front/0/6/068bc755-9d3d-430b-abc5-c775a5415bf9.png?1748706839"
+      },
+      "mana_cost": "{3}{W}{W}",
+      "cmc": 0,
+      "type_line": "Land — Town // Sorcery — Adventure",
+      "colors": [],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "W"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Ishgard, the Holy See",
+          "mana_cost": "{3}{W}{W}",
+          "type_line": "Land — Town",
+          "oracle_text": "This land enters tapped.\n{T}: Add {W}.",
+          "flavor_text": "A great and proud nation devoted to Halone, the Fury.",
+          "artist": "KOHEI YAMADA",
+          "artist_id": "e20f06f2-4bcc-4dee-9b21-0f80a57e4c49"
+        },
+        {
+          "object": "card_face",
+          "name": "Faith & Grief",
+          "mana_cost": "",
+          "type_line": "Sorcery — Adventure",
+          "oracle_text": "Return up to two target artifact and/or enchantment cards from your graveyard to your hand. (Then exile this card. You may play the land later from exile.)",
+          "artist": "KOHEI YAMADA",
+          "artist_id": "e20f06f2-4bcc-4dee-9b21-0f80a57e4c49"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "rare",
+      "flavor_text": "A great and proud nation devoted to Halone, the Fury.",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "KOHEI YAMADA",
+      "artist_ids": [
+        "e20f06f2-4bcc-4dee-9b21-0f80a57e4c49"
+      ],
+      "edhrec_rank": 15327,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "98b2d5b5-f85b-4c42-a0f5-a76f6af304ba",
+      "multiverse_ids": [],
+      "name": "Jidoor, Aristocratic Capital // Overture",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/8/98b2d5b5-f85b-4c42-a0f5-a76f6af304ba.jpg?1748706841",
+        "normal": "https://cards.scryfall.io/normal/front/9/8/98b2d5b5-f85b-4c42-a0f5-a76f6af304ba.jpg?1748706841",
+        "png": "https://cards.scryfall.io/png/front/9/8/98b2d5b5-f85b-4c42-a0f5-a76f6af304ba.png?1748706841"
+      },
+      "mana_cost": "{4}{U}{U}",
+      "cmc": 0,
+      "type_line": "Land — Town // Sorcery — Adventure",
+      "colors": [],
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Mill"
+      ],
+      "produced_mana": [
+        "U"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Jidoor, Aristocratic Capital",
+          "mana_cost": "{4}{U}{U}",
+          "type_line": "Land — Town",
+          "oracle_text": "This land enters tapped.\n{T}: Add {U}.",
+          "flavor_text": "\"You're the spitting image of Maria!\"\n—Jidoor resident",
+          "artist": "Erikas Perl",
+          "artist_id": "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
+        },
+        {
+          "object": "card_face",
+          "name": "Overture",
+          "mana_cost": "",
+          "type_line": "Sorcery — Adventure",
+          "oracle_text": "Target opponent mills half their library, rounded down. (Then exile this card. You may play the land later from exile.)",
+          "artist": "Erikas Perl",
+          "artist_id": "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "rare",
+      "flavor_text": "\"You're the spitting image of Maria!\"\n—Jidoor resident",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Erikas Perl",
+      "artist_ids": [
+        "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
+      ],
+      "edhrec_rank": 17644,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "548dd152-f0b6-4e8f-9afc-a4ec1671b648",
+      "multiverse_ids": [],
+      "name": "Lindblum, Industrial Regency // Mage Siege",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/4/548dd152-f0b6-4e8f-9afc-a4ec1671b648.jpg?1748706846",
+        "normal": "https://cards.scryfall.io/normal/front/5/4/548dd152-f0b6-4e8f-9afc-a4ec1671b648.jpg?1748706846",
+        "png": "https://cards.scryfall.io/png/front/5/4/548dd152-f0b6-4e8f-9afc-a4ec1671b648.png?1748706846"
+      },
+      "mana_cost": "{2}{R}",
+      "cmc": 0,
+      "type_line": "Land — Town // Instant — Adventure",
+      "colors": [],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Lindblum, Industrial Regency",
+          "mana_cost": "{2}{R}",
+          "type_line": "Land — Town",
+          "oracle_text": "This land enters tapped.\n{T}: Add {R}.",
+          "flavor_text": "A city encircled by the ramparts of a massive castle.",
+          "artist": "Piotr Dura",
+          "artist_id": "aff176e8-1d15-432e-ad1d-207a474decba"
+        },
+        {
+          "object": "card_face",
+          "name": "Mage Siege",
+          "mana_cost": "",
+          "type_line": "Instant — Adventure",
+          "oracle_text": "Create a 0/1 black Wizard creature token with \"Whenever you cast a noncreature spell, this token deals 1 damage to each opponent.\"",
+          "artist": "Piotr Dura",
+          "artist_id": "aff176e8-1d15-432e-ad1d-207a474decba"
+        }
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "04ae24bf-0b24-4996-afae-7bf9f9d7471c",
+          "component": "token",
+          "name": "Wizard",
+          "type_line": "Token Creature — Wizard"
+        },
+        {
+          "object": "related_card",
+          "id": "b2ae92d9-7047-424e-a482-2311888a8c56",
+          "component": "combo_piece",
+          "name": "Lindblum, Industrial Regency // Mage Siege",
+          "type_line": "Land — Town // Instant — Adventure"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "rare",
+      "flavor_text": "A city encircled by the ramparts of a massive castle.",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Piotr Dura",
+      "artist_ids": [
+        "aff176e8-1d15-432e-ad1d-207a474decba"
+      ],
+      "edhrec_rank": 16258,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "8a837256-6bb4-4a60-962d-d2793548d26c",
+      "multiverse_ids": [],
+      "name": "Midgar, City of Mako // Reactor Raid",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/8/a/8a837256-6bb4-4a60-962d-d2793548d26c.jpg?1748706848",
+        "normal": "https://cards.scryfall.io/normal/front/8/a/8a837256-6bb4-4a60-962d-d2793548d26c.jpg?1748706848",
+        "png": "https://cards.scryfall.io/png/front/8/a/8a837256-6bb4-4a60-962d-d2793548d26c.png?1748706848"
+      },
+      "mana_cost": "{2}{B}",
+      "cmc": 0,
+      "type_line": "Land — Town // Sorcery — Adventure",
+      "colors": [],
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Midgar, City of Mako",
+          "mana_cost": "{2}{B}",
+          "type_line": "Land — Town",
+          "oracle_text": "This land enters tapped.\n{T}: Add {B}.",
+          "flavor_text": "A triumph of technology and testament to man's potential.",
+          "artist": "Anthony Devine",
+          "artist_id": "13a4bbe4-4e02-4403-8ecd-58f7744b994f"
+        },
+        {
+          "object": "card_face",
+          "name": "Reactor Raid",
+          "mana_cost": "",
+          "type_line": "Sorcery — Adventure",
+          "oracle_text": "You may sacrifice an artifact or creature. If you do, draw two cards. (Then exile this card. You may play the land later from exile.)",
+          "artist": "Anthony Devine",
+          "artist_id": "13a4bbe4-4e02-4403-8ecd-58f7744b994f"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "rare",
+      "flavor_text": "A triumph of technology and testament to man's potential.",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Anthony Devine",
+      "artist_ids": [
+        "13a4bbe4-4e02-4403-8ecd-58f7744b994f"
+      ],
+      "edhrec_rank": 19485,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "c44c9bbe-f4c6-41cf-b3c3-b943f4011bc1",
+      "multiverse_ids": [],
+      "name": "Rabanastre, Royal City",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/4/c44c9bbe-f4c6-41cf-b3c3-b943f4011bc1.jpg?1748706854",
+        "normal": "https://cards.scryfall.io/normal/front/c/4/c44c9bbe-f4c6-41cf-b3c3-b943f4011bc1.jpg?1748706854",
+        "png": "https://cards.scryfall.io/png/front/c/4/c44c9bbe-f4c6-41cf-b3c3-b943f4011bc1.png?1748706854"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "This land enters tapped.\n{T}: Add {R} or {W}.",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "common",
+      "flavor_text": "The town proper of Rabanastre is divided into four sections by the cardinal directions of the compass. The east and west are merchant districts, the streets lined with shops and stalls of every description.",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Shahab Alizadeh",
+      "artist_ids": [
+        "0bab3964-6224-4a02-acb3-f46d92dfc45d"
+      ],
+      "edhrec_rank": 24166,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "7a745b5e-cdb8-4d05-ac5c-87be69536da6",
+      "multiverse_ids": [],
+      "name": "Sharlayan, Nation of Scholars",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/7/a/7a745b5e-cdb8-4d05-ac5c-87be69536da6.jpg?1748706854",
+        "normal": "https://cards.scryfall.io/normal/front/7/a/7a745b5e-cdb8-4d05-ac5c-87be69536da6.jpg?1748706854",
+        "png": "https://cards.scryfall.io/png/front/7/a/7a745b5e-cdb8-4d05-ac5c-87be69536da6.png?1748706854"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "This land enters tapped.\n{T}: Add {W} or {U}.",
+      "colors": [],
+      "color_identity": [
+        "U",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "common",
+      "flavor_text": "\"The Sharlayans were the keepers of wisdom both old and new. Their mastery over magic and aether was unsurpassed, and even the Garleans knew to fear them.\"\n—Minfilia Warde",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "David Frasheski",
+      "artist_ids": [
+        "7e60efde-8efc-4267-89b7-8060e911d7e5"
+      ],
+      "edhrec_rank": 24230,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "bdb5452e-d97f-409b-91d0-2664f39b09b8",
+      "multiverse_ids": [],
+      "name": "Sidequest: Catch a Fish // Cooking Campsite",
+      "released_at": "2025-06-13",
+      "cmc": 3,
+      "type_line": "Enchantment // Land",
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Transform",
+        "Food"
+      ],
+      "produced_mana": [
+        "W"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Sidequest: Catch a Fish",
+          "mana_cost": "{2}{W}",
+          "type_line": "Enchantment",
+          "oracle_text": "At the beginning of your upkeep, look at the top card of your library. If it's an artifact or creature card, you may reveal it and put it into your hand. If you put a card into your hand this way, create a Food token and transform this enchantment.",
+          "colors": [
+            "W"
+          ],
+          "flavor_text": "\"I am Noctis, Prince of Lucis and King of Fishing!\"",
+          "artist": "Gal Or",
+          "artist_id": "4bbf92ce-72b4-4afa-9e3d-b54326e842b0",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/front/b/d/bdb5452e-d97f-409b-91d0-2664f39b09b8.jpg?1748707802",
+            "normal": "https://cards.scryfall.io/normal/front/b/d/bdb5452e-d97f-409b-91d0-2664f39b09b8.jpg?1748707802",
+            "png": "https://cards.scryfall.io/png/front/b/d/bdb5452e-d97f-409b-91d0-2664f39b09b8.png?1748707802"
+          }
+        },
+        {
+          "object": "card_face",
+          "name": "Cooking Campsite",
+          "mana_cost": "",
+          "type_line": "Land",
+          "oracle_text": "{T}: Add {W}.\n{3}, {T}, Sacrifice an artifact: Put a +1/+1 counter on each creature you control. Activate only as a sorcery.",
+          "colors": [],
+          "flavor_text": "\"Seeing how you enjoy fishing, you should learn how to prepare your catch.\"\n—Ignis Scientia",
+          "artist": "Gal Or",
+          "artist_id": "4bbf92ce-72b4-4afa-9e3d-b54326e842b0",
+          "image_uris": {
+            "small": "https://cards.scryfall.io/small/back/b/d/bdb5452e-d97f-409b-91d0-2664f39b09b8.jpg?1748707802",
+            "normal": "https://cards.scryfall.io/normal/back/b/d/bdb5452e-d97f-409b-91d0-2664f39b09b8.jpg?1748707802",
+            "png": "https://cards.scryfall.io/png/back/b/d/bdb5452e-d97f-409b-91d0-2664f39b09b8.png?1748707802"
+          }
+        }
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "4853f6f5-476d-4109-a1c6-f98f4d332db3",
+          "component": "token",
+          "name": "Food",
+          "type_line": "Token Artifact — Food"
+        },
+        {
+          "object": "related_card",
+          "id": "bdb5452e-d97f-409b-91d0-2664f39b09b8",
+          "component": "combo_piece",
+          "name": "Sidequest: Catch a Fish // Cooking Campsite",
+          "type_line": "Enchantment // Land"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "uncommon",
+      "artist": "Gal Or",
+      "artist_ids": [
+        "4bbf92ce-72b4-4afa-9e3d-b54326e842b0"
+      ],
+      "edhrec_rank": 19756,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "fc7d1912-7e27-49ef-bd98-375d975a42b0",
+      "multiverse_ids": [],
+      "name": "Starting Town",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/c/fc7d1912-7e27-49ef-bd98-375d975a42b0.jpg?1748706861",
+        "normal": "https://cards.scryfall.io/normal/front/f/c/fc7d1912-7e27-49ef-bd98-375d975a42b0.jpg?1748706861",
+        "png": "https://cards.scryfall.io/png/front/f/c/fc7d1912-7e27-49ef-bd98-375d975a42b0.png?1748706861"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "This land enters tapped unless it's your first, second, or third turn of the game.\n{T}: Add {C}.\n{T}, Pay 1 life: Add one mana of any color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "C",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "rare",
+      "flavor_text": "When darkness veils the world, four Warriors of Light shall come.",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Hristo D. Chukov",
+      "artist_ids": [
+        "e4631396-f0ce-41df-9d35-a7bd1da9d5a6"
+      ],
+      "edhrec_rank": 14199,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "5363c881-443d-43df-afd8-f81e1a1741a2",
+      "multiverse_ids": [],
+      "name": "The Gold Saucer",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/5/3/5363c881-443d-43df-afd8-f81e1a1741a2.jpg?1748706827",
+        "normal": "https://cards.scryfall.io/normal/front/5/3/5363c881-443d-43df-afd8-f81e1a1741a2.jpg?1748706827",
+        "png": "https://cards.scryfall.io/png/front/5/3/5363c881-443d-43df-afd8-f81e1a1741a2.png?1748706827"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "{T}: Add {C}.\n{2}, {T}: Flip a coin. If you win the flip, create a Treasure token.\n{3}, {T}, Sacrifice two artifacts: Draw a card.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [
+        "Treasure"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "e5f4f810-f95a-41ac-9c3b-47254c03e766",
+          "component": "token",
+          "name": "Treasure",
+          "type_line": "Token Artifact — Treasure"
+        },
+        {
+          "object": "related_card",
+          "id": "5363c881-443d-43df-afd8-f81e1a1741a2",
+          "component": "combo_piece",
+          "name": "The Gold Saucer",
+          "type_line": "Land — Town"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "uncommon",
+      "flavor_text": "After relaxing at Costa del Sol, stop by the Gold Saucer. It's a rich and exciting place to play!",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Anthony Devine",
+      "artist_ids": [
+        "13a4bbe4-4e02-4403-8ecd-58f7744b994f"
+      ],
+      "edhrec_rank": 22521,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "f6285535-bc44-4274-a886-b14d7c7aaba8",
+      "multiverse_ids": [],
+      "name": "Treno, Dark City",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/f/6/f6285535-bc44-4274-a886-b14d7c7aaba8.jpg?1748706861",
+        "normal": "https://cards.scryfall.io/normal/front/f/6/f6285535-bc44-4274-a886-b14d7c7aaba8.jpg?1748706861",
+        "png": "https://cards.scryfall.io/png/front/f/6/f6285535-bc44-4274-a886-b14d7c7aaba8.png?1748706861"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "This land enters tapped.\n{T}: Add {U} or {B}.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "U"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "U"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "common",
+      "flavor_text": "\"There aren't many nobles living here. The nights are long. It's a great place for thieves.\"\n—Marcus, Tantalus thief",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Jonas De Ro",
+      "artist_ids": [
+        "561ebf9e-8d93-4b57-8156-8826d0c19601"
+      ],
+      "edhrec_rank": 25137,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "10e5648e-4884-41e3-95f8-c76f6bca01e2",
+      "multiverse_ids": [],
+      "name": "Vector, Imperial Capital",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/0/10e5648e-4884-41e3-95f8-c76f6bca01e2.jpg?1748706868",
+        "normal": "https://cards.scryfall.io/normal/front/1/0/10e5648e-4884-41e3-95f8-c76f6bca01e2.jpg?1748706868",
+        "png": "https://cards.scryfall.io/png/front/1/0/10e5648e-4884-41e3-95f8-c76f6bca01e2.png?1748706868"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "This land enters tapped.\n{T}: Add {B} or {R}.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "R"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "R"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "common",
+      "flavor_text": "\"If we allow the Empire to continue expanding its Magitek arsenal... history's greatest mistake will be repeated.\"\n—Banon, Leader of the Returners",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Lordigan",
+      "artist_ids": [
+        "eae339a0-a8be-40b9-9878-55f7de9256f9"
+      ],
+      "edhrec_rank": 25094,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "c74024bd-b383-468d-9cf5-d112a29f6457",
+      "multiverse_ids": [],
+      "name": "Windurst, Federation Center",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/7/c74024bd-b383-468d-9cf5-d112a29f6457.jpg?1748706869",
+        "normal": "https://cards.scryfall.io/normal/front/c/7/c74024bd-b383-468d-9cf5-d112a29f6457.jpg?1748706869",
+        "png": "https://cards.scryfall.io/png/front/c/7/c74024bd-b383-468d-9cf5-d112a29f6457.png?1748706869"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Town",
+      "oracle_text": "This land enters tapped.\n{T}: Add {G} or {W}.",
+      "colors": [],
+      "color_identity": [
+        "G",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G",
+        "W"
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "common",
+      "flavor_text": "The first Star Sibyl gained the powers of the stars and moon at Full Moon Fountain. She found the stars of hope from within the darkness, and led Windurst to glory.",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Constantin Marin",
+      "artist_ids": [
+        "6cb0dc0c-4362-4c21-b23a-b2d7e096aa4f"
+      ],
+      "edhrec_rank": 24634,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "881e4c00-3b9a-47a1-bf66-1badda994c88",
+      "multiverse_ids": [],
+      "name": "Zanarkand, Ancient Metropolis // Lasting Fayth",
+      "released_at": "2025-06-13",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/8/8/881e4c00-3b9a-47a1-bf66-1badda994c88.jpg?1748706876",
+        "normal": "https://cards.scryfall.io/normal/front/8/8/881e4c00-3b9a-47a1-bf66-1badda994c88.jpg?1748706876",
+        "png": "https://cards.scryfall.io/png/front/8/8/881e4c00-3b9a-47a1-bf66-1badda994c88.png?1748706876"
+      },
+      "mana_cost": "{4}{G}{G}",
+      "cmc": 0,
+      "type_line": "Land — Town // Sorcery — Adventure",
+      "colors": [],
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "G"
+      ],
+      "card_faces": [
+        {
+          "object": "card_face",
+          "name": "Zanarkand, Ancient Metropolis",
+          "mana_cost": "{4}{G}{G}",
+          "type_line": "Land — Town",
+          "oracle_text": "This land enters tapped.\n{T}: Add {G}.",
+          "flavor_text": "A city dead for a thousand years. The end of Yuna's journey.",
+          "artist": "Erikas Perl",
+          "artist_id": "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
+        },
+        {
+          "object": "card_face",
+          "name": "Lasting Fayth",
+          "mana_cost": "",
+          "type_line": "Sorcery — Adventure",
+          "oracle_text": "Create a 1/1 colorless Hero creature token. Put a +1/+1 counter on it for each land you control. (Then exile this card. You may play the land later from exile.)",
+          "artist": "Erikas Perl",
+          "artist_id": "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
+        }
+      ],
+      "all_parts": [
+        {
+          "object": "related_card",
+          "id": "c64bb94b-c1a7-4dd3-b2dc-b87d306d62ad",
+          "component": "combo_piece",
+          "name": "Zanarkand, Ancient Metropolis // Lasting Fayth",
+          "type_line": "Land — Town // Sorcery — Adventure"
+        },
+        {
+          "object": "related_card",
+          "id": "17fa0c1f-6737-487c-9101-0bec2e586795",
+          "component": "token",
+          "name": "Hero",
+          "type_line": "Token Creature — Hero"
+        }
+      ],
+      "legalities": {
+        "gladiator": "not_legal",
+        "commander": "not_legal",
+        "oathbreaker": "not_legal",
+        "brawl": "not_legal",
+        "paupercommander": "not_legal",
+        "duel": "not_legal",
+        "predh": "not_legal"
+      },
+      "games": [],
+      "game_changer": false,
+      "finishes": [],
+      "set": "fin",
+      "set_name": "Final Fantasy",
+      "rarity": "rare",
+      "flavor_text": "A city dead for a thousand years. The end of Yuna's journey.",
+      "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+      "artist": "Erikas Perl",
+      "artist_ids": [
+        "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
+      ],
+      "edhrec_rank": 19536,
       "properties": []
     }
   ]

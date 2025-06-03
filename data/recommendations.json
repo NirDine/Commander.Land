@@ -1,36 +1,35 @@
 {
   "cmc_1": {
-    "symbols_1": 19
+    "symbols_1": 15
   },
   "cmc_2": {
-    "symbols_1": 19,
-    "symbols_2": 30
+    "symbols_1": 15,
+    "symbols_2": 22
   },
   "cmc_3": {
-    "symbols_1": 18,
-    "symbols_2": 28,
-    "symbols_3": 36
+    "symbols_1": 13,
+    "symbols_2": 21,
+    "symbols_3": 27
   },
   "cmc_4": {
-    "symbols_1": 16,
-    "symbols_2": 26,
-    "symbols_3": 33,
-    "symbols_4": 39
+    "symbols_1": 12,
+    "symbols_2": 19,
+    "symbols_3": 24,
+    "symbols_4": 29
   },
   "cmc_5": {
-    "symbols_1": 15,
-    "symbols_2": 23,
-    "symbols_3": 30,
-    "symbols_4": 36
+    "symbols_1": 11,
+    "symbols_2": 17,
+    "symbols_3": 22,
+    "symbols_4": 27
   },
   "cmc_6": {
-    "symbols_1": 14,
-    "symbols_2": 22,
-    "symbols_3": 28
+    "symbols_1": 10,
+    "symbols_2": 16,
+    "symbols_3": 21
   },
   "cmc_7": {
-	"symbols_1": 12,
-    "symbols_2": 20,
-    "symbols_3": 26
+    "symbols_2": 15,
+    "symbols_3": 19
   }
 }

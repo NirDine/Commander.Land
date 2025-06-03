@@ -235,11 +235,25 @@ const analyzedData = responseData.map(card => {
     totalAdjustedPips += finalPipValue;
   });
 
-  // Store the original (unadjusted) colorRecommendations in localStorage if needed by other parts.
-  const originalColorRecommendations = Object.entries(highestResults).map(([color, result]) => ({ color, result }));
-  localStorage.setItem('colorRecommendations', JSON.stringify(originalColorRecommendations));
+  const overallReduction = totalOriginalPips - totalAdjustedPips;
 
-  // Call updateColorTracker with the NEW adjusted recommendations
+  // Update the .recommendedManaPips element with the summary string
+  $('.recommendedManaPips').text(`${totalAdjustedPips} (-${overallReduction})`);
+  // --- END OF NEW ADJUSTMENT LOGIC ---
+
+  // Prepare data for localStorage, including the reduction amount and backward compatibility
+  const localStorageColorRecommendations = adjustedColorRecommendations.map(item => {
+    return {
+      color: item.color,
+      result: item.originalResult, // Added for backward compatibility with charts.js
+      originalResult: item.originalResult,
+      finalResult: item.finalResult,
+      reduction: item.originalResult - item.finalResult
+    };
+  });
+  localStorage.setItem('colorRecommendations', JSON.stringify(localStorageColorRecommendations));
+
+  // Call updateColorTracker with the adjusted recommendations (which already has original and final)
   updateColorTracker(adjustedColorRecommendations);
 }
 
@@ -334,23 +348,20 @@ function updateColorTracker(colorRecommendations) {
     const { originalResult, finalResult } = colorRecommendation;
     const reductionThisColor = originalResult - finalResult;
 
-    const pipWrapper = $('<li>'); // Wrapper for this color's pip display
+    const pipWrapper = $('<span>'); // Wrapper for this color's pip display
 
-     const lowerCaseColor = color.toLowerCase();
-    const icon = $('<i>', { class: `msRec ms ms-${lowerCaseColor}` });
-    pipWrapper.append(icon); // Append icon to the same wrapper
-    
     const countSpan = $('<span>', { text: finalResult });
     pipWrapper.append(countSpan);
 
     // Only add reduction span if there was a reduction
     if (reductionThisColor > 0) {
-        const reductionSpan = $('<span>', { class: 'reducedBy', text: `(${originalResult} - ${reductionThisColor} non-lands)` });
+        const reductionSpan = $('<span>', { class: 'reducedBy', text: `(-${reductionThisColor})` });
         pipWrapper.append(reductionSpan);
     }
-    
-   
 
+    const lowerCaseColor = color.toLowerCase();
+    const icon = $('<i>', { class: `msRec ms ms-${lowerCaseColor}` });
+    pipWrapper.append(icon); // Append icon to the same wrapper
 
     pipIconsContainer.append(pipWrapper); // Append the whole group
   });

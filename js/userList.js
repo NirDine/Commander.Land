@@ -141,7 +141,7 @@ const analyzedData = responseData.map(card => {
   localStorage.setItem('analyzedData', JSON.stringify(analyzedData));
 
   // --- New detailed nonLandManaProducers calculation ---
-  const nonLandManaProducerCards = responseData.filter(card =>
+  const nonLandManaProducerCards = responseData.filter(card => 
     card.produced_mana && card.cmc <= 3 && !card.type_line.includes("Land")
   );
   const producersByColorCounts = { W: 0, U: 0, B: 0, R: 0, G: 0, C: 0 };
@@ -158,10 +158,10 @@ const analyzedData = responseData.map(card => {
   // --- End of new detailed calculation ---
 
   // landSearchers calculation
-  const landSearchers = responseData.filter(card =>
+  const landSearchers = responseData.filter(card => 
     card.cmc <= 3 &&
-    card.oracle_text && typeof card.oracle_text === 'string' &&
-    card.oracle_text.includes("land") &&
+    card.oracle_text && typeof card.oracle_text === 'string' && 
+    card.oracle_text.includes("land") && 
     card.oracle_text.includes("onto") && card.oracle_text.includes("battlefield") &&
     !card.type_line.includes("Land")
   ).length;
@@ -222,9 +222,9 @@ const analyzedData = responseData.map(card => {
   colorOrder.forEach(color => {
     const basePipValue = highestResults[color] || 0;
     // producersByColorCounts is now passed as a parameter
-    const reductionFromProducers = producersByColorCounts[color.toUpperCase()] || 0;
+    const reductionFromProducers = producersByColorCounts[color.toUpperCase()] || 0; 
     // landSearchers is now passed as a parameter
-    const reductionFromLandSearchers = landSearchers;
+    const reductionFromLandSearchers = landSearchers; 
 
     let adjustedPipValue = basePipValue - reductionFromProducers - reductionFromLandSearchers;
     let finalPipValue = Math.max(0, adjustedPipValue);
@@ -235,11 +235,25 @@ const analyzedData = responseData.map(card => {
     totalAdjustedPips += finalPipValue;
   });
 
-  // Store the original (unadjusted) colorRecommendations in localStorage if needed by other parts.
-  const originalColorRecommendations = Object.entries(highestResults).map(([color, result]) => ({ color, result }));
-  localStorage.setItem('colorRecommendations', JSON.stringify(originalColorRecommendations));
+  const overallReduction = totalOriginalPips - totalAdjustedPips;
 
-  // Call updateColorTracker with the NEW adjusted recommendations
+  // Update the .recommendedManaPips element with the summary string
+  $('.recommendedManaPips').text(`${totalAdjustedPips} (-${overallReduction})`);
+  // --- END OF NEW ADJUSTMENT LOGIC ---
+
+  // Prepare data for localStorage, including the reduction amount and backward compatibility
+  const localStorageColorRecommendations = adjustedColorRecommendations.map(item => {
+    return {
+      color: item.color,
+      result: item.originalResult, // Added for backward compatibility with charts.js
+      originalResult: item.originalResult,
+      finalResult: item.finalResult,
+      reduction: item.originalResult - item.finalResult
+    };
+  });
+  localStorage.setItem('colorRecommendations', JSON.stringify(localStorageColorRecommendations));
+
+  // Call updateColorTracker with the adjusted recommendations (which already has original and final)
   updateColorTracker(adjustedColorRecommendations);
 }
 
@@ -251,7 +265,7 @@ const analyzedData = responseData.map(card => {
 
 // Check if responseData is present in localStorage
 // THIS SECOND if (storedResponseData) BLOCK NEEDS TO BE RECONCILED.
-// The calculations for averageCmc, nonLandManaProducers (old simple count), cantrips,
+// The calculations for averageCmc, nonLandManaProducers (old simple count), cantrips, 
 // landSearchers (old calculation location), and recommendedLandCount are here.
 // Some of these (like nonLandManaProducers and landSearchers) have been moved/enhanced above.
 // The ramp calculation for .manaProducers span also needs to use the new total count.
@@ -278,18 +292,18 @@ if (storedResponseData) {
   // or that this block will be merged/refactored.
   // To make this diff work, I will assume nonLandManaProducersTotalCount and landSearchers from above are in scope.
   // If not, this part will need further adjustment in a subsequent step.
-
+  
   // Count the number of cards that draw cards with cmc between 1 and 3 (inclusive)
-  const cantrips = responseData.filter(card =>
-    card.oracle_text && typeof card.oracle_text === 'string' &&
+  const cantrips = responseData.filter(card => 
+    card.oracle_text && typeof card.oracle_text === 'string' && 
     (card.oracle_text.includes("Draw") || card.oracle_text.includes("draw")) &&
-    card.cmc <= 3 &&
+    card.cmc <= 3 && 
     !card.type_line.includes("Land")
   ).length;
     
   // 'ramp' is already calculated in the first block using new nonLandManaProducersTotalCount and landSearchers
   // const ramp = landSearchers + nonLandManaProducers; // This would be:
-  // const ramp = (typeof landSearchers !== 'undefined' ? landSearchers : 0) +
+  // const ramp = (typeof landSearchers !== 'undefined' ? landSearchers : 0) + 
   //              (typeof nonLandManaProducersTotalCount !== 'undefined' ? nonLandManaProducersTotalCount : 0);
   // This ramp variable is defined in the first block.
 
@@ -298,7 +312,7 @@ if (storedResponseData) {
   let recommendedLandCount = 31.42 + (3.13 * averageCmc) - (0.28 * ((typeof nonLandManaProducersTotalCount !== 'undefined' ? nonLandManaProducersTotalCount : 0) + cantrips + (typeof landSearchers !== 'undefined' ? landSearchers : 0)));
   recommendedLandCount = Math.round(recommendedLandCount);
   $(`.totalCards .total`).text(recommendedLandCount).addClass('hasUserData');
-
+  
   // Update the .manaProducers span using the 'ramp' variable calculated in the first `if (storedResponseData)` block.
   // This assumes 'ramp' from the first block is accessible here.
   // If they are in different scopes, this needs proper handling (e.g. by ensuring calculations happen in order and variables are passed or stored).

@@ -958,5 +958,15 @@
         $(document).tooltip();
       });
     </script>
+    <script type="text/javascript" src="js/analyzerPage.js" defer></script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        if (typeof populateCardLists === 'function') {
+          populateCardLists();
+        } else {
+          console.error('populateCardLists function not found. Ensure js/analyzerPage.js is loaded correctly.');
+        }
+      });
+    </script>
   </body>
 </html>

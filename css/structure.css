@@ -1693,12 +1693,6 @@ gap: 10px;
     }
 }
 
-i.ms-1, i.ms-2, i.ms-3, i.ms-4, i.ms-5, i.ms-6, i.ms-7, i.ms-8, i.ms-9, i.ms-10, i.ms-x {
-  border-radius: 100%;
-  padding: 3px;
-  font-size: 10px;
-}
-
 /* Hide .cardList elements by default for the analyzer page */
 .analyzer .cardList {
   display: none;

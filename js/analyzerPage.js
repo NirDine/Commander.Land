@@ -47,30 +47,30 @@ function parseManaCost(manaCostString) {
     symbol = symbol.replace('/', '');
     // Convert to lowercase for the CSS class
     const className = symbol.toLowerCase();
-    html += `<i class="ms ms-${className}"></i>`;
+    html += `<i class="ms ms-cost ms-${className}"></i>`;
   }
   return html;
 }
 
-function getWeightForCardColor(cardCmC, specificColor, analyzedCardEntry, recommendations) {
+function getWeightForCardColor(cardCmC, specificColor, analyzedCardEntry, recommendations, recommendedLandCount) {
   if (!analyzedCardEntry || !analyzedCardEntry.colorWeight) {
-    return 3;
+    return 3; // Default weight if essential data is missing
   }
 
   let effectiveCmC = cardCmC;
   if (cardCmC < 1) effectiveCmC = 1;
-
+  
   const maxCmcKey = recommendations && Object.keys(recommendations).length > 0 ?
                     Math.max(...Object.keys(recommendations)
                                     .filter(k => k.startsWith('cmc_'))
-                                    .map(k => parseInt(k.split('_')[1], 10)))
+                                    .map(k => parseInt(k.split('_')[1], 10))) 
                     : 7;
   if (cardCmC > maxCmcKey) effectiveCmC = maxCmcKey;
 
   const symbolCount = analyzedCardEntry.colorWeight[specificColor];
 
   if (typeof symbolCount !== 'number' || symbolCount <= 0) {
-    return 3;
+    return 3; // Default weight if symbol count is invalid
   }
 
   let lookupCmc = effectiveCmC;
@@ -78,9 +78,7 @@ function getWeightForCardColor(cardCmC, specificColor, analyzedCardEntry, recomm
 
   while (lookupCmc >= 1) {
     const recoCmcKey = `cmc_${lookupCmc}`;
-    // Cap symbol count at 5 for lookup as per common recommendation structures.
-    // Adjust if your recommendations.json uses higher symbol counts.
-    const recoSymbolKey = `symbols_${Math.min(symbolCount, 5)}`;
+    const recoSymbolKey = `symbols_${Math.min(symbolCount, 5)}`; 
 
     if (recommendations && recommendations[recoCmcKey] && recommendations[recoCmcKey][recoSymbolKey] !== undefined) {
       baseWeight = recommendations[recoCmcKey][recoSymbolKey];
@@ -88,20 +86,27 @@ function getWeightForCardColor(cardCmC, specificColor, analyzedCardEntry, recomm
     } else if (lookupCmc > 1) {
       lookupCmc--;
     } else {
-      baseWeight = 0;
+      baseWeight = 0; 
       break;
     }
   }
-  return baseWeight * 3;
+  
+  if (recommendedLandCount > 0) {
+    const percentage = (baseWeight / recommendedLandCount) * 100;
+    return Math.round(percentage); // Round to nearest whole number
+  } else {
+    console.warn(`recommendedLandCount is not positive (${recommendedLandCount}), defaulting weight to 0 for ${specificColor} symbol requirement ${baseWeight}`);
+    return 0; 
+  }
 }
 
-function createCardListItem(cardData, specificColor, analyzedCardEntry, recommendations) {
-  const weight = getWeightForCardColor(cardData.cmc, specificColor, analyzedCardEntry, recommendations);
+function createCardListItem(cardData, specificColor, analyzedCardEntry, recommendations, recommendedLandCount) {
+  const weight = getWeightForCardColor(cardData.cmc, specificColor, analyzedCardEntry, recommendations, recommendedLandCount);
   const id = cardData.id;
   const name = cardData.name;
   const manaCostHtml = parseManaCost(cardData.mana_cost || '');
 
-  let dataColorsString = "C";
+  let dataColorsString = "C"; 
   if (cardData.colors && cardData.colors.length > 0) {
     dataColorsString = cardData.colors.join("");
   }
@@ -125,22 +130,54 @@ async function fetchRecommendations() {
     return recommendations;
   } catch (error) {
     console.error('Error fetching recommendations.json:', error);
-    return null;
+    return null; 
   }
 }
 
 async function populateCardLists() {
   'use strict';
 
+  // Helper function defined inside populateCardLists
+  function deriveColorsFromManaCost(manaCostString) {
+    if (!manaCostString || manaCostString.trim() === '') {
+      return [];
+    }
+    const costColors = new Set();
+    const manaSymbolRegex = /{([^}]+)}/g;
+    let match;
+    while ((match = manaSymbolRegex.exec(manaCostString)) !== null) {
+      let symbolPart = match[1].toUpperCase();
+      symbolPart = symbolPart.replace('/P', '').replace('P/', '');
+      
+      if (symbolPart.includes('/')) { 
+        const parts = symbolPart.split('/');
+        parts.forEach(p => {
+          if (['W', 'U', 'B', 'R', 'G'].includes(p)) {
+            costColors.add(p);
+          }
+        });
+      } else { 
+        if (['W', 'U', 'B', 'R', 'G'].includes(symbolPart)) {
+          costColors.add(symbolPart);
+        }
+      }
+    }
+    return Array.from(costColors);
+  }
+
   const { responseData, analyzedData } = getAnalyzerDataFromLocalStorage();
   const recommendations = await fetchRecommendations();
+
+  let recommendedLandCount = parseInt(localStorage.getItem('recommendedLandCount'), 10);
+  if (isNaN(recommendedLandCount) || recommendedLandCount <= 0) {
+    console.warn('Invalid or missing recommendedLandCount from localStorage, defaulting to 38 for weight calculation.');
+    recommendedLandCount = 38; // Default fallback
+  }
 
   if (!responseData || !recommendations) {
     console.error('Missing responseData or recommendations. Cannot populate card lists.');
     if (!responseData) console.log('responseData:', responseData);
     if (!recommendations) console.log('recommendations:', recommendations);
-    // Optionally display a user-friendly message on the page
-    // For example: document.getElementById('some-status-area').textContent = 'Error loading card data.';
     return;
   }
 
@@ -150,36 +187,60 @@ async function populateCardLists() {
   }
   console.log('AnalyzedDataMap created:', analyzedDataMap);
 
-  // Clear existing dynamically added cards from all target .cardList uls
   document.querySelectorAll('.cardList ul').forEach(ul => {
     ul.querySelectorAll('li.addedCard').forEach(li => li.remove());
   });
   console.log('Cleared existing card items (li.addedCard) from lists.');
 
   responseData.forEach(card => {
-    // --- START OF CMC/MANA_VALUE FILTER LOGIC ---
-    // We only want to display cards that have a CMC > 0.
-    // The 'cmc' field in Scryfall data corresponds to mana_value.
-    if (!(card.cmc > 0)) { // Checks if cmc is not null, undefined, 0, or negative
+    console.log(`Processing card for analyzer list: Name: "${card.name}", Mana Cost: "${card.mana_cost}", Colors: ${JSON.stringify(card.colors)}, CMC: ${card.cmc}`);
+    if (!(card.cmc > 0)) { 
       console.log(`Skipping card with cmc not greater than 0: ${card.name} (cmc: ${card.cmc})`);
-      return; // Skips current iteration of responseData.forEach
+      return; 
     }
-    // --- END OF CMC/MANA_VALUE FILTER LOGIC ---
     const analyzedCardEntry = analyzedDataMap.get(card.name) || null;
+    
+    // --- START OF NEW REFINED COLOR DETERMINATION (for DFCs) ---
+    let determinedCardColors = [];
 
-    let cardColors = card.colors;
-    // If a card is colorless (e.g. an artifact with no colored mana symbols in its cost)
-    // or if its colors array is empty for any other reason, treat it as 'C'.
-    if (!cardColors || cardColors.length === 0) {
-      // Scryfall data for "colorless" cards (like artifacts, lands) might have an empty `colors` array.
-      // For our purpose, we want to categorize them under 'C'.
-      cardColors = ['C'];
+    // 1. Try top-level card.colors
+    if (card.colors && card.colors.length > 0) {
+      determinedCardColors = card.colors;
     }
 
-    cardColors.forEach(color => {
-      const specificColor = color.toUpperCase(); // Ensure consistency e.g. 'W', 'U', 'C'
-      const listItemHtml = createCardListItem(card, specificColor, analyzedCardEntry, recommendations);
+    // 2. If no colors yet, and it's a DFC, try face 0 colors
+    if (determinedCardColors.length === 0 && card.card_faces && card.card_faces.length > 0) {
+      const firstFace = card.card_faces[0];
+      if (firstFace.colors && firstFace.colors.length > 0) {
+        determinedCardColors = firstFace.colors;
+        console.log(`Using colors from face 0 for "${card.name}": ${JSON.stringify(determinedCardColors)}`);
+      } else if (firstFace.mana_cost && firstFace.mana_cost.trim() !== '') {
+        // 3. If face 0 has no colors, try deriving from face 0 mana_cost
+        determinedCardColors = deriveColorsFromManaCost(firstFace.mana_cost);
+        if (determinedCardColors.length > 0) {
+          console.log(`Derived colors from face 0 mana_cost for "${card.name}": ${JSON.stringify(determinedCardColors)}`);
+        }
+      }
+    }
 
+    // 4. If still no colors, try top-level card.mana_cost (general fallback)
+    if (determinedCardColors.length === 0 && card.mana_cost && card.mana_cost.trim() !== '') {
+      determinedCardColors = deriveColorsFromManaCost(card.mana_cost);
+      if (determinedCardColors.length > 0) {
+        console.log(`Derived colors from top-level mana_cost for "${card.name}": ${JSON.stringify(determinedCardColors)}`);
+      }
+    }
+
+    // 5. Final fallback to Colorless
+    if (determinedCardColors.length === 0) {
+      determinedCardColors = ['C'];
+    }
+    // --- END OF NEW REFINED COLOR DETERMINATION ---
+
+    determinedCardColors.forEach(colorString => {
+      const specificColor = colorString.toUpperCase(); 
+      const listItemHtml = createCardListItem(card, specificColor, analyzedCardEntry, recommendations, recommendedLandCount);
+      
       const targetListSelector = `.cardList.color-${specificColor.toLowerCase()} ul`;
       const targetUl = document.querySelector(targetListSelector);
 
@@ -192,18 +253,15 @@ async function populateCardLists() {
   });
   console.log('Finished adding new card items to lists (unsorted).');
 
-  // Sort cards within each list and update counts
   document.querySelectorAll('.cardList').forEach(cardListDiv => {
     const ul = cardListDiv.querySelector('ul');
     if (!ul) return;
 
-    const listItems = Array.from(ul.querySelectorAll('li.addedCard'));
-
+    const listItems = Array.from(ul.querySelectorAll('li.addedCard')); 
+    
     listItems.sort((a, b) => {
       const weightA = parseFloat(a.dataset.weight) || 0;
       const weightB = parseFloat(b.dataset.weight) || 0;
-      // Primary sort: weight descending
-      // Secondary sort: card name ascending if weights are equal
       if (weightB !== weightA) {
         return weightB - weightA;
       }
@@ -221,31 +279,23 @@ async function populateCardLists() {
   });
   console.log('Finished sorting lists and updating counts.');
 
-  // --- START OF NEW LOGIC: Remove empty lists and show non-empty ones ---
   console.log('Starting cleanup and reveal of card lists...');
   document.querySelectorAll('.analyzer .cardList').forEach(cardListDiv => {
     const ul = cardListDiv.querySelector('ul');
     let hasCards = false;
     if (ul) {
-      // Check for actual card items, not just any li (like a header li)
       if (ul.querySelector('li.addedCard')) {
         hasCards = true;
       }
     }
 
     if (hasCards) {
-      // Make the .cardList div visible
-      // Assuming 'block' is the desired display style.
-      // If it was flex or something else, this might need adjustment
-      // or a class-based approach.
-      cardListDiv.style.display = 'block';
+      cardListDiv.style.display = 'block'; 
       console.log(`Revealed card list: ${cardListDiv.className}`);
     } else {
-      // Remove the entire .cardList div if it's empty
       cardListDiv.remove();
       console.log(`Removed empty card list: ${cardListDiv.className}`);
     }
   });
   console.log('Finished cleanup and reveal of card lists.');
-  // --- END OF NEW LOGIC ---
 }

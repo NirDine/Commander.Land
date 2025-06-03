@@ -307,11 +307,13 @@ if (storedResponseData) {
   //              (typeof nonLandManaProducersTotalCount !== 'undefined' ? nonLandManaProducersTotalCount : 0);
   // This ramp variable is defined in the first block.
 
-  // Calculate the recommendedLandCount using the formula
+ // Calculate the recommendedLandCount using the formula
   // Ensure nonLandManaProducersTotalCount is used here instead of the old nonLandManaProducers
   let recommendedLandCount = 31.42 + (3.13 * averageCmc) - (0.28 * ((typeof nonLandManaProducersTotalCount !== 'undefined' ? nonLandManaProducersTotalCount : 0) + cantrips + (typeof landSearchers !== 'undefined' ? landSearchers : 0)));
   recommendedLandCount = Math.round(recommendedLandCount);
+  localStorage.setItem('recommendedLandCount', recommendedLandCount.toString());
   $(`.totalCards .total`).text(recommendedLandCount).addClass('hasUserData');
+  
   
   // Update the .manaProducers span using the 'ramp' variable calculated in the first `if (storedResponseData)` block.
   // This assumes 'ramp' from the first block is accessible here.
@@ -380,3 +382,98 @@ function updateColorTracker(colorRecommendations) {
   updateChart(); // This call remains
 }
 
+
+// --- START OF TAPPED LAND METRICS CALCULATION ---
+(function() {
+  'use strict';
+
+  const storedSelectedCards = localStorage.getItem('selectedCards');
+  const storedLandsData = localStorage.getItem('landsData');
+  const storedColorRecommendations = localStorage.getItem('colorRecommendations');
+
+  if (!storedSelectedCards || !storedLandsData || !storedColorRecommendations) {
+    console.log('Tapped Land Metrics: Missing required data from localStorage (selectedCards, landsData, or colorRecommendations).');
+    return;
+  }
+
+  try {
+    const selectedCards = JSON.parse(storedSelectedCards);
+    const landsData = JSON.parse(storedLandsData); // This is an object with a 'data' array
+    const colorRecommendations = JSON.parse(storedColorRecommendations);
+
+    if (!Array.isArray(selectedCards) || !landsData || !Array.isArray(landsData.data) || !Array.isArray(colorRecommendations)) {
+      console.error('Tapped Land Metrics: Invalid data format in localStorage.');
+      return;
+    }
+
+    const recommendedColorsSet = new Set(
+      colorRecommendations
+        .filter(rec => rec && rec.result > 0) // rec.result is originalResult
+        .map(rec => rec.color.toUpperCase())
+    );
+
+    let totalTappedLands = 0;
+    const tappedLandsByColor = { W: 0, U: 0, B: 0, R: 0, G: 0, C: 0 };
+    const tapPhrase = "This land enters tapped.";
+
+    selectedCards.forEach(cardNameInSelection => {
+      const cardObject = landsData.data.find(dbCard => {
+        // Handle potential DFC names stored in selectedCards
+        // selectedCards might store "Front Face // Back Face" or just "Front Face"
+        let nameToMatch = cardNameInSelection;
+        if (dbCard.card_faces && dbCard.card_faces.length > 1) {
+          const frontFaceName = dbCard.card_faces[0].name;
+          // If cardNameInSelection is just the front face, it will match card.name if it's the front face
+          // Or, if cardNameInSelection is "Front // Back", it won't match card.name directly
+          // This simplified find assumes selectedCards stores names that can be found in landsData by card.name
+          // or by matching the first face of a DFC.
+          // A more robust matching might be needed if selectedCards stores "Front // Back" and landsData.data has split DFCs.
+          // For now, assume cardNameInSelection directly matches card.name or card_faces[0].name.
+        }
+        // Normalize matching by comparing cardNameInSelection against dbCard.name
+        // and also against front face name if dbCard is a DFC.
+        if (dbCard.name.toLowerCase() === nameToMatch.toLowerCase()) return true;
+        if (dbCard.card_faces && dbCard.card_faces.length > 0 && dbCard.card_faces[0].name.toLowerCase() === nameToMatch.toLowerCase()) return true;
+        // A common pattern for selectedCards from deck builders is "Card Name // Other Card Name" for DFCs.
+        // We need to check if dbCard.name matches the first part of such a string.
+        if (nameToMatch.includes(' // ')) {
+            const firstFaceSelected = nameToMatch.split(' // ')[0];
+            if (dbCard.name.toLowerCase() === firstFaceSelected.toLowerCase()) return true;
+        }
+        return false;
+      });
+
+      if (cardObject) {
+        const typeLine = cardObject.type_line || '';
+        if (typeLine.includes('Land')) {
+          const oracleText = cardObject.oracle_text || '';
+          if (oracleText.includes(tapPhrase)) {
+            totalTappedLands++;
+
+            let cardColors = cardObject.color_identity;
+            if (!cardColors || cardColors.length === 0) {
+              cardColors = ['C']; // Treat colorless lands as having 'C' identity
+            }
+
+            cardColors.forEach(color => {
+              const upperColor = color.toUpperCase();
+              if (tappedLandsByColor.hasOwnProperty(upperColor) && recommendedColorsSet.has(upperColor)) {
+                tappedLandsByColor[upperColor]++;
+              }
+            });
+          }
+        }
+      } else {
+        // console.warn(`Tapped Land Metrics: Card "${cardNameInSelection}" not found in landsData.`);
+      }
+    });
+
+    localStorage.setItem('totalTappedLands', totalTappedLands.toString());
+    localStorage.setItem('tappedLandsByColor', JSON.stringify(tappedLandsByColor));
+    console.log('Tapped Land Metrics Calculated:', { totalTappedLands, tappedLandsByColor });
+
+  } catch (error) {
+    console.error('Error processing tapped land metrics:', error);
+  }
+})();
+// --- END OF TAPPED LAND METRICS CALCULATION ---

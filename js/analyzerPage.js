@@ -220,4 +220,32 @@ async function populateCardLists() {
     }
   });
   console.log('Finished sorting lists and updating counts.');
+
+  // --- START OF NEW LOGIC: Remove empty lists and show non-empty ones ---
+  console.log('Starting cleanup and reveal of card lists...');
+  document.querySelectorAll('.analyzer .cardList').forEach(cardListDiv => {
+    const ul = cardListDiv.querySelector('ul');
+    let hasCards = false;
+    if (ul) {
+      // Check for actual card items, not just any li (like a header li)
+      if (ul.querySelector('li.addedCard')) {
+        hasCards = true;
+      }
+    }
+
+    if (hasCards) {
+      // Make the .cardList div visible
+      // Assuming 'block' is the desired display style.
+      // If it was flex or something else, this might need adjustment
+      // or a class-based approach.
+      cardListDiv.style.display = 'block';
+      console.log(`Revealed card list: ${cardListDiv.className}`);
+    } else {
+      // Remove the entire .cardList div if it's empty
+      cardListDiv.remove();
+      console.log(`Removed empty card list: ${cardListDiv.className}`);
+    }
+  });
+  console.log('Finished cleanup and reveal of card lists.');
+  // --- END OF NEW LOGIC ---
 }

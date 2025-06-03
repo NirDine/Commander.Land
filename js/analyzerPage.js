@@ -157,6 +157,19 @@ async function populateCardLists() {
   console.log('Cleared existing card items (li.addedCard) from lists.');
 
   responseData.forEach(card => {
+    // --- START OF NEW FILTER LOGIC ---
+    const typeLine = card.type_line || '';
+    const isLand = typeLine.includes('Land'); // Basic Land is also covered by "Land"
+
+    // Check if it's a double-faced card (MDFCs often have a land on one side)
+    // Scryfall objects have 'card_faces' array for DFCs/MDFCs
+    const isDoubleFaced = card.card_faces && card.card_faces.length >= 2;
+
+    if (isLand && !isDoubleFaced) {
+      console.log(`Skipping single-faced land: ${card.name}`);
+      return; // Skips current iteration of responseData.forEach
+    }
+    // --- END OF NEW FILTER LOGIC ---
     const analyzedCardEntry = analyzedDataMap.get(card.name) || null;
 
     let cardColors = card.colors;

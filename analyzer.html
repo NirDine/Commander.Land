@@ -204,177 +204,17 @@
         </div>
           
       <div class="recommended hidden" style="--hiddenCount: 12;">
-           <div>
+           <div class="info">
                <h4>Recommendations</h4>
                <p>After analyzing your deck's mana values, non-land mana producers under 3 mana <span class="manaProducers"></span>, and total nonland cards <span class="recommendedTotalCards"></span>, we've determined that your optimal land count is: <span class="recommendedLandCount"></span>.</p>
-               <p>To be able to play all your cards consistently, you need <span class="recommendedManaPips"></span> mana sources.</p>
-               <div class="recommendedManaPipIcons"></div>
+               <p>Your deack already features some mana sources, you'd need your lands to produce this amount of the following colors:<span class="recommendedManaPipIcons"></span> </p>
            </div>
+           <div class="chartHolder">
+              <canvas height="402" width="402" id="myChart"></canvas>
+           </div>
+
        </div>
         <div class="content">
-          <div class="top">
-            <div class="buffet-filters">
-              <div class="filter-title">
-                  <h4></h4>
-              </div>
-              <div class="color-picker">
-                <div class="mana hidden desktop" style="--hiddenCount: 5;">
-                  <input class="color" type="checkbox" id="mana-w" name="mana-w" value="w" />
-                  <label class="mana-w" for="mana-w">
-                    <i class="ms ms-w"></i>
-                  </label>
-                </div>
-                <div class="mana hidden desktop" style="--hiddenCount: 5.5;">
-                  <input class="color" type="checkbox" id="mana-u" name="mana-u" value="u" />
-                  <label class="mana-u" for="mana-u">
-                    <i class="ms ms-u"></i>
-                  </label>
-                </div>
-                <div class="mana hidden desktop" style="--hiddenCount: 6;">
-                  <input class="color" type="checkbox" id="mana-b" name="mana-b" value="b" />
-                  <label class="mana-b" for="mana-b">
-                    <i class="ms ms-b"></i>
-                  </label>
-                </div>
-                <div class="mana hidden desktop" style="--hiddenCount: 6.5;">
-                  <input class="color" type="checkbox" id="mana-r" name="mana-r" value="r" />
-                  <label class="mana-r" for="mana-r">
-                    <i class="ms ms-r"></i>
-                  </label>
-                </div>
-                <div class="mana hidden desktop" style="--hiddenCount: 7;">
-                  <input class="color" type="checkbox" id="mana-g" name="mana-g" value="g" />
-                  <label class="mana-g" for="mana-g">
-                    <i class="ms ms-g"></i>
-                  </label>
-                </div>
-                <div class="mana hidden desktop" style="--hiddenCount: 7.5;">
-                  <input class=" color colorless" type="checkbox" id="mana-c" name="mana-c" value="c" />
-                  <label class="mana-c" for="mana-c">
-                    <i class="ms ms-c"></i>
-                  </label>
-                </div>
-                <div class="mobile">
-                  <div class="filters" id="mobileColorFilters">
-                    <input class="dropdown parent" type="checkbox" id="mobileColorFiltersInput" name="extraFilters" style="--hiddenCount: 9.5;" />
-                    <label class="for-dropdown for-filters mobileColorTarget" for="mobileColorFiltersInput">
-                      <i class="ms ms-multicolor"></i>
-                    </label>
-                    <div class="section-dropdown">
-                      <div class="filter-picker">
-                        <div class="mana hidden" style="--hiddenCount: 5;">
-                          <label class="mana-w" for="mana-w">
-                            <i class="ms ms-w"></i>
-                          </label>
-                        </div>
-                        <div class="mana hidden" style="--hiddenCount: 5.5;">
-                          <label class="mana-u" for="mana-u">
-                            <i class="ms ms-u"></i>
-                          </label>
-                        </div>
-                        <div class="mana hidden" style="--hiddenCount: 6;">
-                          <label class="mana-b" for="mana-b">
-                            <i class="ms ms-b"></i>
-                          </label>
-                        </div>
-                        <div class="mana hidden" style="--hiddenCount: 6.5;">
-                          <label class="mana-r" for="mana-r">
-                            <i class="ms ms-r"></i>
-                          </label>
-                        </div>
-                        <div class="mana hidden" style="--hiddenCount: 7;">
-                          <label class="mana-g" for="mana-g">
-                            <i class="ms ms-g"></i>
-                          </label>
-                        </div>
-                        <div class="mana hidden" style="--hiddenCount: 7.5;">
-                          <label class="mana-c" for="mana-c">
-                            <i class="ms ms-c"></i>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="filters hidden" id="extraFilters">
-                  <input class="dropdown parent" type="checkbox" id="extraFiltersInput" name="extraFiltersInput" style="--hiddenCount: 9.5;" />
-                  <label class="for-dropdown for-filters propertyTarget" for="extraFiltersInput" >
-                    Sort by...
-                  </label>
-                  <div class="section-dropdown">
-                    <div class="filter-picker">
-
-                    <!-- Start of sorting option -->
-                      <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="sorting" type="radio" id="sort-by-name" name="sorting" value="name" />
-                        <label class="sort-name" for="sort-by-name" title="Sort by name, from a to Z">
-                          <span class="sort-label">
-                              Name (A to Z)
-                          </span>
-                        </label>
-                      </div>
-                    <!-- End of sorting option -->
-                    
-                    <!-- Start of sorting option -->
-                      <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="sorting" type="radio" id="sort-by-rank" name="sorting" value="edhrec_rank" checked />
-                        <label class="sort-rank" for="sort-by-rank" title="Sort by EDHREC's ranking">
-                          <span class="sort-label">
-                              EDHREC ranking
-                          </span> 
-                        </label>
-                      </div>
-                    <!-- End of sorting option -->
-                                        
-                    <!-- Start of sorting option -->
-                      <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="sorting" type="radio" id="sort-by-release-date" name="sorting" value="released_at" />
-                        <label class="sort-release-date" for="sort-by-release-date" title="Newest first">
-                          <span class="sort-label">
-                              Newest first
-                          </span>
-                        </label>
-                      </div>
-                    <!-- End of sorting option -->
-                    
-                    <!-- Start of sorting option -->
-                      <div class="mana hidden" style="--hiddenCount: 8;">
-                        <input class="sorting" type="radio" id="sort-by-rarity" name="sorting" value="rarity" />
-                        <label class="sort-rarity" for="sort-by-rarity" title="Sort by rarity (rarest first)">
-                          <span class="sort-label">
-                               Rarity (common to mythic)
-                          </span>
-                        </label>
-                      </div>
-                    <!-- End of sorting option -->
-                    </div>
-                  </div>
-                </div>
-                <div>
-                    <div class="mana hidden" style="--hiddenCount: 7.5;">
-                      <input class="isAdded" type="checkbox" id="isAdded" name="isAdded" value="isAdded" />
-                      <label class="added-cards" for="isAdded">
-                        <i class=""></i>
-                      </label>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="buffet-filters right">
-              <div class="filter-title">
-                  <h4></h4>
-              </div>
-              <div class="color-picker">
-                <div class="searchBox hidden" style="--hiddenCount:10.5;">
-                  <input id="search" type="search" placeholder="Name, type, or text...">
-                </div>
-                <div class="mana hidden" style="--hiddenCount: 10;">
-                  <input class="reset-filters" type="button" id="reset-filters" name="reset-filters" />
-                  <label class="reset" for="reset-filters">Clear</label>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="bottom">
             <div id="" class="cardListWrapper">
             
@@ -384,29 +224,10 @@
                      <li class="cardListHeader">
                        <h3>
                           <span><i class="ms ms-w"></i> White</span>
-                          <span class="total">7</span>
+                          <span class="total"></span>
                       </h3>
                      </li>
-                      <!-- START OF ITEM -->
-                     <li class="addedCard" data-card-id="c375a022-5b57-496d-a802-e4ea8376e9e4" data-card-name="Eiganjo, Seat of the Empire" data-colors="W" data-properties="" style="--weight: 66%"><span class="chCardTextContainer cardName">Grand Abolisher</span>
-                      <span class="cost"><i class="ms ms-w"></i><i class="ms ms-w"></i></span></li>
-                      <!-- END OF ITEM -->
-                      <!-- START OF ITEM -->
-                     <li class="addedCard" data-card-id="c375a022-5b57-496d-a802-e4ea8376e9e4" data-card-name="Eiganjo, Seat of the Empire" data-colors="W" data-properties="" style="--weight: 57%"><span class="chCardTextContainer cardName">Wrath of God</span>
-                      <span class="cost"><i class="ms ms-2"></i><i class="ms ms-w"></i><i class="ms ms-w"></i></span></li>
-                      <!-- END OF ITEM -->
-                      <!-- START OF ITEM -->
-                     <li class="addedCard" data-card-id="c375a022-5b57-496d-a802-e4ea8376e9e4" data-card-name="Eiganjo, Seat of the Empire" data-colors="W" data-properties="" style="--weight: 45%"><span class="chCardTextContainer cardName">Mother of Runes</span>
-                      <span class="cost"><i class="ms ms-w"></i></span></li>
-                      <!-- END OF ITEM -->
-                      <!-- START OF ITEM -->
-                     <li class="addedCard" data-card-id="c375a022-5b57-496d-a802-e4ea8376e9e4" data-card-name="Eiganjo, Seat of the Empire" data-colors="W" data-properties="" style="--weight: 39%"><span class="chCardTextContainer cardName">Generous Gift</span>
-                      <span class="cost"><i class="ms ms-2"></i><i class="ms ms-w"></i></span></li>
-                      <!-- END OF ITEM -->
-                      <!-- START OF ITEM -->
-                     <li class="addedCard" data-card-id="c375a022-5b57-496d-a802-e4ea8376e9e4" data-card-name="Eiganjo, Seat of the Empire" data-colors="W" data-properties="" style="--weight: 33%"><span class="chCardTextContainer cardName">Fractured Identity</span>
-                      <span class="cost"><i class="ms ms-3"></i><i class="ms ms-u"></i><i class="ms ms-w"></i></span></li>
-                      <!-- END OF ITEM -->
+                     
                       
                    </ul>
                </div>
@@ -416,13 +237,10 @@
                      <li class="cardListHeader">
                        <h3>
                           <span><i class="ms ms-u"></i> Blue</span>
-                          <span class="total">1</span>
+                          <span class="total"></span>
                       </h3>
                      </li>
-                      <!-- START OF ITEM -->
-                     <li class="addedCard" data-card-id="c375a022-5b57-496d-a802-e4ea8376e9e4" data-card-name="Eiganjo, Seat of the Empire" data-colors="W" data-properties="" style="--weight: 33%"><span class="chCardTextContainer cardName">Fractured Identity</span>
-                      <span class="cost"><i class="ms ms-3"></i><i class="ms ms-u"></i><i class="ms ms-w"></i></span></li>
-                      <!-- END OF ITEM -->
+                      
                    </ul>
                </div>
               <!-- START OF CARD LIST FOR BLACK -->
@@ -431,10 +249,10 @@
                      <li class="cardListHeader">
                        <h3>
                           <span><i class="ms ms-b"></i> Black</span>
-                          <span class="total">14</span>
+                          <span class="total"></span>
                       </h3>
                      </li>
-                      <!-- START OF ITEM -->
+                     
                    </ul>
                </div>
               <!-- START OF CARD LIST FOR RED -->
@@ -443,10 +261,10 @@
                      <li class="cardListHeader">
                        <h3>
                           <span><i class="ms ms-r"></i> Red</span>
-                          <span class="total">14</span>
+                          <span class="total"></span>
                       </h3>
                      </li>
-                      <!-- START OF ITEM -->
+                      
                    </ul>
                </div>
               <!-- START OF CARD LIST FOR GREEN -->
@@ -455,10 +273,10 @@
                      <li class="cardListHeader">
                        <h3>
                           <span><i class="ms ms-g"></i> Green</span>
-                          <span class="total">14</span>
+                          <span class="total"></span>
                       </h3>
                      </li>
-                      <!-- START OF ITEM -->
+                      
                    </ul>
                </div>
               <!-- START OF CARD LIST FOR COLORLESS -->
@@ -467,10 +285,10 @@
                      <li class="cardListHeader">
                        <h3>
                           <span><i class="ms ms-c"></i> Colorless</span>
-                          <span class="total">14</span>
+                          <span class="total"></span>
                       </h3>
                      </li>
-                      <!-- START OF ITEM -->
+                      
                    </ul>
                </div>
             </div>

@@ -714,6 +714,16 @@ mark {
 
     
     } 
+
+  li {
+    display: flex;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    gap: 0.5ch;
+    .reducedBy {
+    font-size: 9.6pt;
+  }
+  }
 }
 
 .recommended .recommendedManaPips,

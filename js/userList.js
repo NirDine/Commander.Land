@@ -241,11 +241,18 @@ const analyzedData = responseData.map(card => {
   $('.recommendedManaPips').text(`${totalAdjustedPips} (-${overallReduction})`);
   // --- END OF NEW ADJUSTMENT LOGIC ---
 
-  // Store the original (unadjusted) colorRecommendations in localStorage if needed by other parts.
-  const originalColorRecommendations = Object.entries(highestResults).map(([color, result]) => ({ color, result }));
-  localStorage.setItem('colorRecommendations', JSON.stringify(originalColorRecommendations));
+  // Prepare data for localStorage, including the reduction amount
+  const localStorageColorRecommendations = adjustedColorRecommendations.map(item => {
+    return {
+      color: item.color,
+      originalResult: item.originalResult,
+      finalResult: item.finalResult,
+      reduction: item.originalResult - item.finalResult // Calculate reduction here
+    };
+  });
+  localStorage.setItem('colorRecommendations', JSON.stringify(localStorageColorRecommendations));
 
-  // Call updateColorTracker with the NEW adjusted recommendations
+  // Call updateColorTracker with the adjusted recommendations (which already has original and final)
   updateColorTracker(adjustedColorRecommendations);
 }
 

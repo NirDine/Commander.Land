@@ -250,7 +250,9 @@ span#combination-name {
     color: var(--contrast);
     border-radius: var(--bradius);
     background: #ffffff14;
-
+    .reducedBy {
+        color: rgb(152, 152, 152);
+    }
     .chartHolder {
         
     }

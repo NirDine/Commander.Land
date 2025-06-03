@@ -14,15 +14,7 @@ function createChart() {
 
   // Prepare data for the charts
   const labels = Object.keys(manaColorCounts).filter(color => recommendedColorsSet.has(color));
-  const dataValues = labels.map(color => {
-    const actualProduced = manaColorCounts[color] || 0;
-    // Ensure colorRecommendations is defined and is an array before calling find
-    const recommendationEntry = Array.isArray(colorRecommendations)
-                               ? colorRecommendations.find(rec => rec.color === color)
-                               : null;
-    const reductionAmount = recommendationEntry ? (recommendationEntry.reduction || 0) : 0;
-    return actualProduced + reductionAmount;
-  });
+  const dataValues = labels.map(color => manaColorCounts[color]);
 
   // Prepare filtered data for the first Polar Area chart (foreground chart)
   const data1 = {

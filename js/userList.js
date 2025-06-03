@@ -139,23 +139,53 @@ const analyzedData = responseData.map(card => {
 
   // Store analyzedData in local storage as a JSON string
   localStorage.setItem('analyzedData', JSON.stringify(analyzedData));
+
+  // --- New detailed nonLandManaProducers calculation ---
+  const nonLandManaProducerCards = responseData.filter(card =>
+    card.produced_mana && card.cmc <= 3 && !card.type_line.includes("Land")
+  );
+  const producersByColorCounts = { W: 0, U: 0, B: 0, R: 0, G: 0, C: 0 };
+  nonLandManaProducerCards.forEach(card => {
+    if (card.produced_mana && Array.isArray(card.produced_mana)) {
+      card.produced_mana.forEach(color => {
+        if (producersByColorCounts.hasOwnProperty(color.toUpperCase())) {
+          producersByColorCounts[color.toUpperCase()]++;
+        }
+      });
+    }
+  });
+  const nonLandManaProducersTotalCount = nonLandManaProducerCards.length;
+  // --- End of new detailed calculation ---
+
+  // landSearchers calculation
+  const landSearchers = responseData.filter(card =>
+    card.cmc <= 3 &&
+    card.oracle_text && typeof card.oracle_text === 'string' &&
+    card.oracle_text.includes("land") &&
+    card.oracle_text.includes("onto") && card.oracle_text.includes("battlefield") &&
+    !card.type_line.includes("Land")
+  ).length;
+
+  // The 'ramp' variable for UI update (if still needed for .manaProducers span)
+  const ramp = landSearchers + nonLandManaProducersTotalCount;
+  // Update UI for ramp count if the element exists and is used
+  // $(`.recommended .manaProducers`).text('(' + ramp + ')'); // This line might be updated/moved later
+
+  // Load recommendationsData from the recommendations.json file
+  $.getJSON('data/recommendations.json', function(data) {
+    const recommendationsData = data;
+
+    // Call the function that uses the recommendationsData
+    // Pass producersByColorCounts and landSearchers to processCards
+    processCards(recommendationsData, producersByColorCounts, landSearchers);
+    // Call the updateColorTracker function with the colorRecommendations data
+  });
     
-// Load recommendationsData from the recommendations.json file
-$.getJSON('data/recommendations.json', function(data) {
-  const recommendationsData = data;
+  function processCards(recommendationsData, producersByColorCounts, landSearchers) { // Added params
+    // Create an object to store the highest result per color
+    const highestResults = {};
 
-  // Call the function that uses the recommendationsData
-  processCards(recommendationsData);
-  // Call the updateColorTracker function with the colorRecommendations data
-
-
-});
-    
-function processCards(recommendationsData) {
-  // Create an object to store the highest result per color
-  const highestResults = {};
-
-  analyzedData.forEach(card => {
+    analyzedData.forEach(card => {
     const cmc = card.cmc;
     const colorWeight = card.colorWeight;
     const cmcData = recommendationsData['cmc_' + cmc]; // MODIFIED
@@ -183,8 +213,40 @@ function processCards(recommendationsData) {
   // Store colorRecommendations in localStorage
   localStorage.setItem('colorRecommendations', JSON.stringify(colorRecommendations));
 
-  // Call the function to update the UI or other components
-  updateColorTracker(colorRecommendations);
+  // --- START OF NEW ADJUSTMENT LOGIC ---
+  let totalOriginalPips = 0;
+  let totalAdjustedPips = 0;
+  const adjustedColorRecommendations = [];
+  const colorOrder = ['W', 'U', 'B', 'R', 'G', 'C']; // Ensure this order is consistent
+
+  colorOrder.forEach(color => {
+    const basePipValue = highestResults[color] || 0;
+    // producersByColorCounts is now passed as a parameter
+    const reductionFromProducers = producersByColorCounts[color.toUpperCase()] || 0;
+    // landSearchers is now passed as a parameter
+    const reductionFromLandSearchers = landSearchers;
+
+    let adjustedPipValue = basePipValue - reductionFromProducers - reductionFromLandSearchers;
+    let finalPipValue = Math.max(0, adjustedPipValue);
+
+    adjustedColorRecommendations.push({ color: color, result: finalPipValue });
+
+    totalOriginalPips += basePipValue;
+    totalAdjustedPips += finalPipValue;
+  });
+
+  const overallReduction = totalOriginalPips - totalAdjustedPips;
+
+  // Update the .recommendedManaPips element with the summary string
+  $('.recommendedManaPips').text(`${totalAdjustedPips} (-${overallReduction})`);
+  // --- END OF NEW ADJUSTMENT LOGIC ---
+
+  // Store the original (unadjusted) colorRecommendations in localStorage if needed by other parts.
+  const originalColorRecommendations = Object.entries(highestResults).map(([color, result]) => ({ color, result }));
+  localStorage.setItem('colorRecommendations', JSON.stringify(originalColorRecommendations));
+
+  // Call updateColorTracker with the NEW adjusted recommendations
+  updateColorTracker(adjustedColorRecommendations);
 }
 
 
@@ -194,11 +256,16 @@ function processCards(recommendationsData) {
 
 
 // Check if responseData is present in localStorage
+// THIS SECOND if (storedResponseData) BLOCK NEEDS TO BE RECONCILED.
+// The calculations for averageCmc, nonLandManaProducers (old simple count), cantrips,
+// landSearchers (old calculation location), and recommendedLandCount are here.
+// Some of these (like nonLandManaProducers and landSearchers) have been moved/enhanced above.
+// The ramp calculation for .manaProducers span also needs to use the new total count.
 if (storedResponseData) {
-  const responseData = JSON.parse(storedResponseData);
+  const responseData = JSON.parse(storedResponseData); // Already parsed above, can reuse
 
   // Calculate the average cmc of all cards in responseData
-  const cardCount = responseData.length;
+  // const cardCount = responseData.length; // cardCount not used
 
   const totalCmc = responseData.filter(card => 
       !card.type_line.includes("Land")
@@ -209,46 +276,51 @@ if (storedResponseData) {
       !card.type_line.includes("Land")
     ).length;
     
-  const averageCmc = totalCmc / NonLandCardsTotal;
+  const averageCmc = NonLandCardsTotal > 0 ? totalCmc / NonLandCardsTotal : 0; // Avoid division by zero
 
+  // nonLandManaProducersTotalCount and landSearchers are calculated in the first if block now.
+  // We need to ensure they are accessible here or recalculate/pass them if necessary.
+  // For now, let's assume they are accessible from the higher scope if this script is refactored
+  // or that this block will be merged/refactored.
+  // To make this diff work, I will assume nonLandManaProducersTotalCount and landSearchers from above are in scope.
+  // If not, this part will need further adjustment in a subsequent step.
 
-  // Count the number of cards with non-zero produced_mana value and cmc between 1 and 3 (inclusive)
-    const nonLandManaProducers = responseData.filter(card => 
-      card.produced_mana && card.cmc <= 3 && !card.type_line.includes("Land")
-    ).length;
+  // Count the number of cards that draw cards with cmc between 1 and 3 (inclusive)
+  const cantrips = responseData.filter(card =>
+    card.oracle_text && typeof card.oracle_text === 'string' &&
+    (card.oracle_text.includes("Draw") || card.oracle_text.includes("draw")) &&
+    card.cmc <= 3 &&
+    !card.type_line.includes("Land")
+  ).length;
     
-    // Count the number of cards that draw cards with cmc between 1 and 3 (inclusive)
-    const cantrips = responseData.filter(card => 
-      card.oracle_text && typeof card.oracle_text === 'string' && 
-      (card.oracle_text.includes("Draw") || card.oracle_text.includes("draw")) &&
-      card.cmc <= 3 && 
-      !card.type_line.includes("Land")
-    ).length;
+  // 'ramp' is already calculated in the first block using new nonLandManaProducersTotalCount and landSearchers
+  // const ramp = landSearchers + nonLandManaProducers; // This would be:
+  // const ramp = (typeof landSearchers !== 'undefined' ? landSearchers : 0) +
+  //              (typeof nonLandManaProducersTotalCount !== 'undefined' ? nonLandManaProducersTotalCount : 0);
+  // This ramp variable is defined in the first block.
 
-    // Count the number of cards that put lands into play with cmc between 1 and 3 (inclusive)
-    const landSearchers = responseData.filter(card => 
-      card.cmc <= 3 &&
-      card.oracle_text && typeof card.oracle_text === 'string' && 
-      card.oracle_text.includes("land") && 
-      card.oracle_text.includes("onto") && card.oracle_text.includes("battlefield") &&
-      !card.type_line.includes("Land")
-    ).length;
-    
-    const ramp = landSearchers + nonLandManaProducers;
-    
   // Calculate the recommendedLandCount using the formula
-  let recommendedLandCount = 31.42 + (3.13 * averageCmc) - (0.28 * (nonLandManaProducers + cantrips + landSearchers));
+  // Ensure nonLandManaProducersTotalCount is used here instead of the old nonLandManaProducers
+  let recommendedLandCount = 31.42 + (3.13 * averageCmc) - (0.28 * ((typeof nonLandManaProducersTotalCount !== 'undefined' ? nonLandManaProducersTotalCount : 0) + cantrips + (typeof landSearchers !== 'undefined' ? landSearchers : 0)));
   recommendedLandCount = Math.round(recommendedLandCount);
   $(`.totalCards .total`).text(recommendedLandCount).addClass('hasUserData');
-  $(`.recommended .manaProducers`).text('(' + ramp + ')');
+
+  // Update the .manaProducers span using the 'ramp' variable calculated in the first `if (storedResponseData)` block.
+  // This assumes 'ramp' from the first block is accessible here.
+  // If they are in different scopes, this needs proper handling (e.g. by ensuring calculations happen in order and variables are passed or stored).
+  // For now, let's assume `ramp` is accessible.
+  if (typeof ramp !== 'undefined') {
+    $(`.recommended .manaProducers`).text('(' + ramp + ')');
+  }
+
   $(`.recommended .recommendedLandCount`).text(recommendedLandCount);
   $(`.recommended .recommendedTotalCards`).text('(' + NonLandCardsTotal + ')');
- console.log('Average CMC:', averageCmc);
- console.log('Non-Land mana producers (1-3 CMC):', nonLandManaProducers);
- console.log('Card draw (1-3 CMC):',  cantrips);
- console.log('Recommended land count:', recommendedLandCount);
+  console.log('Average CMC:', averageCmc);
+  // console.log('Non-Land mana producers (1-3 CMC):', nonLandManaProducersTotalCount); // Use new variable
+  console.log('Card draw (1-3 CMC):',  cantrips);
+  console.log('Recommended land count:', recommendedLandCount);
 } else {
-  console.log('responseData not found in localStorage');
+  console.log('responseData not found in localStorage for second block'); // Differentiate log
 }
 
 function updateColorTracker(colorRecommendations) {

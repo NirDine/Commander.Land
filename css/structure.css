@@ -720,6 +720,11 @@ mark {
     margin-top: 0.25em;
     margin-bottom: 0.25em;
     gap: 0.5ch;
+    align-items: center;
+    span {
+      display: flex;
+      align-items: center;
+    }
     .reducedBy {
     font-size: 9.6pt;
   }
@@ -1580,7 +1585,31 @@ gap: 10px;
 .analyzer {
   
   color: var(--contrast);
-    
+  
+    .manaBaseHealthContainer {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      width: 100%;
+      gap: 1em;
+      
+      .recommended {
+
+        .taplandMeter {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 1ch;
+          
+          .progress { 
+          width: 100%;
+          }
+          progress { 
+            flex: 1;
+          }
+        }
+      }
+    }
+
     .content {
         width: 100%;
         padding: 0px;

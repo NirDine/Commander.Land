@@ -353,7 +353,7 @@ function updateColorTracker(colorRecommendations) {
     const pipWrapper = $('<li>'); // Wrapper for this color's pip display
 
      const lowerCaseColor = color.toLowerCase();
-    const icon = $('<i>', { class: `msRec ms ms-${lowerCaseColor}` });
+    const icon = $('<i>', { class: `msRec ms  ms-cost ms-${lowerCaseColor}` });
     pipWrapper.append(icon); // Append icon to the same wrapper
     
     const countSpan = $('<span>', { text: finalResult });

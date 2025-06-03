@@ -1568,6 +1568,8 @@ gap: 10px;
 
 
 .analyzer {
+  
+  color: var(--contrast);
     
     .content {
         width: 100%;
@@ -1597,6 +1599,92 @@ gap: 10px;
         } 
 
         }
+      
+      .cardListWrapper {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(244px, auto));
+        gap: 0.5em;
+        
+        .cardList {
+          
+          &:first-of-type li:first-child {
+              border-top-left-radius: var(--bradius);
+
+          }
+          
+          &:last-of-type li:first-child {
+              border-top-right-radius: var(--bradius);
+
+          }
+
+         
+          &.color-w {
+              --card-weight-background-color: rgba(231, 222, 181, 0.5);
+          }         
+          &.color-u {
+              --card-weight-background-color: rgba(183, 202, 232, 0.5)
+          }         
+          &.color-b {
+              --card-weight-background-color: rgba(180, 171, 176, 0.5);
+          }         
+          &.color-r {
+              --card-weight-background-color: rgba(216, 145, 125, 0.5);
+          }         
+          &.color-g {
+              --card-weight-background-color: rgba(186, 203, 193, 0.5);
+          }         
+          &.color-c {
+              --card-weight-background-color: rgba(202, 197, 192, 0.5);
+          }
+          
+          ul {
+            
+              
+            
+            .cardListHeader {
+              background-color: var(--mainBG);
+
+              
+              h3 {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                
+                span:first-child {
+                  display: flex;
+                  align-items:center;
+                  gap: 0.5ch;
+                }
+              }
+            }
+            
+            li {
+                padding: 1em 1em;
+                background: linear-gradient(90deg, var(--card-weight-background-color) var(--weight), #26272e var(--weight));
+                display: flex;
+              justify-content: space-between;
+              align-items: center;
+              border: 1px solid var(--dark);
+
+              .cardName {
+                font-size: 13px;
+              }
+
+            }
+          }
+          
+        }
+        
+        
+      }
         
     }
+}
+
+i.ms-1, i.ms-2, i.ms-3, i.ms-4, i.ms-5, i.ms-6, i.ms-7, i.ms-8, i.ms-9, i.ms-10, i.ms-x {
+  border-radius: 100%;
+  padding: 3px;
+  font-size: 10px;
 }

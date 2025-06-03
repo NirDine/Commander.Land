@@ -326,9 +326,15 @@ i.ms-r {
 i.ms-g {
   color: var(--mtg-g);
 }
-i.ms-c {
+i.ms-c  {
   color: var(--mtg-c);
 }
+
+i.ms-1, i.ms-2, i.ms-3, i.ms-4, i.ms-5, i.ms-6, i.ms-7, i.ms-8, i.ms-9, i.ms-10, i.ms-x {
+  color: var(--dark);
+  background-color: var(--mtg-c);
+}
+
 
 .progress-bar-W {
   background-color: var(--mtg-w);

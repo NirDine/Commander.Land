@@ -158,12 +158,12 @@ function processCards(recommendationsData) {
   analyzedData.forEach(card => {
     const cmc = card.cmc;
     const colorWeight = card.colorWeight;
-    const cmcData = recommendationsData[cmc];
+    const cmcData = recommendationsData['cmc_' + cmc]; // MODIFIED
 
     if (cmcData) {
       Object.entries(colorWeight).forEach(([color, weight]) => {
-        if (color !== 'N' && color !== 'X' && cmcData.hasOwnProperty(weight)) {
-          const result = cmcData[weight];
+        if (color !== 'N' && color !== 'X' && cmcData.hasOwnProperty('symbols_' + weight)) { // MODIFIED
+          const result = cmcData['symbols_' + weight]; // MODIFIED
           if (!highestResults[color] || result > highestResults[color]) {
             highestResults[color] = result;
           }

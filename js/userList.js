@@ -229,7 +229,7 @@ const analyzedData = responseData.map(card => {
     let adjustedPipValue = basePipValue - reductionFromProducers - reductionFromLandSearchers;
     let finalPipValue = Math.max(0, adjustedPipValue);
 
-    adjustedColorRecommendations.push({ color: color, result: finalPipValue });
+       adjustedColorRecommendations.push({ color: color, originalResult: basePipValue, finalResult: finalPipValue });
 
     totalOriginalPips += basePipValue;
     totalAdjustedPips += finalPipValue;
@@ -324,40 +324,48 @@ if (storedResponseData) {
 }
 
 function updateColorTracker(colorRecommendations) {
-    const recommended = $('.recommended');
-  const recommendedManaPips = $('.recommendedManaPips');
-  
-  // Empty the recommendedManaPips element
-  recommendedManaPips.empty();
-      // Define the color order
-    const colorOrder = ['W', 'U', 'B', 'R', 'G', 'C'];
-  // Iterate over the colorOrder
+  const pipIconsContainer = $('.recommendedManaPipIcons'); // Changed selector
+  // const recommended = $('.recommended'); // This line can be removed if 'recommended' variable is not used later in this function
+
+  pipIconsContainer.empty(); // Changed selector
+  const colorOrder = ['W', 'U', 'B', 'R', 'G', 'C'];
+
   colorOrder.forEach(color => {
-    // Find the color recommendation in colorRecommendations
     const colorRecommendation = colorRecommendations.find(recommendation => recommendation.color === color);
-    if (colorRecommendation) {
-      const { result } = colorRecommendation;
-      
 
-
-
-
-
-
-      // Create a new span element with the color recommendation
-      const span = $('<span>', { text: result });
-      
-      const lowerCaseColor = color.toLowerCase();
-      // Create a new i element with the corresponding icon classes
-      const icon = $('<i>', { class: `msRec ms ms-${lowerCaseColor}` });
-      
-      // Append the span and icon to the recommendedManaPips element
-      recommendedManaPips.append(span, icon);
+    if (!colorRecommendation || colorRecommendation.finalResult === 0) {
+      return; // Skip if no recommendation or final result is 0
     }
+
+    const { originalResult, finalResult } = colorRecommendation;
+    const reductionThisColor = originalResult - finalResult;
+
+    const pipWrapper = $('<span>'); // Wrapper for this color's pip display
+
+    const countSpan = $('<span>', { text: finalResult });
+    pipWrapper.append(countSpan);
+
+    // Only add reduction span if there was a reduction
+    if (reductionThisColor > 0) {
+        const reductionSpan = $('<span>', { class: 'reducedBy', text: `(-${reductionThisColor})` });
+        pipWrapper.append(reductionSpan);
+    }
+
+    const lowerCaseColor = color.toLowerCase();
+    const icon = $('<i>', { class: `msRec ms ms-${lowerCaseColor}` });
+    pipWrapper.append(icon); // Append icon to the same wrapper
+
+    pipIconsContainer.append(pipWrapper); // Append the whole group
   });
   
-recommended.css('display', 'flex');
+  // The line: recommended.css('display', 'flex'); might need to target $('.recommended') if it was hidden
+  // This depends on whether the parent '.recommended' div itself needs to be shown.
+  // For now, let's assume it's already visible or handled elsewhere.
+  // If it's critical, ensure $('.recommended').css('display', 'flex'); is still called.
+  // Based on original code, it was used, so let's keep it:
+  $('.recommended').css('display', 'flex');
 
-updateChart();
+
+  updateChart(); // This call remains
 }
 

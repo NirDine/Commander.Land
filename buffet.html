@@ -204,11 +204,14 @@
         </div>
           
       <div class="recommended hidden" style="--hiddenCount: 12;">
-           <div class="info">
+          <div class="recommendedContainer">
+            <div class="info">
                <h4>Recommendations</h4>
                <p>After analyzing your deck's mana values, non-land mana producers under 3 mana <span class="manaProducers"></span>, and total nonland cards <span class="recommendedTotalCards"></span>, we've determined that your optimal land count is: <span class="recommendedLandCount"></span>.</p>
                <p>To be able to play all your cards consistently, you need additional mana sources of the following colors:<span class="recommendedManaPipIcons"></span> </p>
            </div>
+              <div class="analysisButtonHolder"><a href="/analyzer.html" class="analysisButton"><i class="ms ms-land"></i> <span>See in-depth analysis</span></a></div>
+          </div>
            <div class="chartHolder">
               <canvas height="402" width="402" id="myChart"></canvas>
            </div>
@@ -740,8 +743,8 @@
                           <i class="ms ms-untap undo"></i></button></li>
                       </ul>
                       <ul>
-                          <li><button class="userAction disabled" title="This is still being developed" disabled><span>See in-depth statistics</span></button></li>
-                          <li class="exportButtonHolder exportToMoxfield">                            <button class="userAction">
+                               <li><a href="analyzer.html" class="userAction"><span>See in-depth statistics</span></a></li>
+                               <li class="exportButtonHolder exportToMoxfield"><button class="userAction">
                                 <span>Export to Moxfield</span>
                                 <i class="moxfield"></i>
                             </button>

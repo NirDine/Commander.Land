@@ -41,7 +41,7 @@
     <div class="lightsOff"></div>
     <div class="container">
        <header>
-        <a href="" class="logo" aria-label="Link to reload page">
+        <a href="/index.html" class="logo" aria-label="Link to reload page">
         </a>
         <div class="toggle"></div>
         <nav class="menu">
@@ -203,7 +203,7 @@
             </p>
             <h2 class="hidden" style="--hiddenCount: 3;">Who are you?</h2>
             <p class="hidden" style="--hiddenCount: 3;"> 
-            My name is Martín Davico; I go by NirDine on the internets. I'm a student from, and currently living in, Argentina. Right now, I'm working as a QA Tester for various games, and previously I made some <a href="https://nirdine.com/" target="_blank">TTRPG content</a>.
+            I go by NirDine on the internets. I'm a student from, and currently living in, Argentina. Right now, I'm working as a QA Tester for various games, and previously I made some <a href="https://nirdine.com/" target="_blank">TTRPG content</a>. I also do video editing for MTG content creators.
             </p>
             <h2 class="hidden" style="--hiddenCount: 4;">How does the site work?</h2>
             <p class="hidden" style="--hiddenCount: 4;"> 
@@ -213,11 +213,139 @@
             When you provide us with a decklist, we make a request to Scryfall, and they give us all the data from cards on your deck. First, we check if you have any lands in the mix, and if you do, we make sure to add them to the selected cards list. 
             </p>
             <p class="hidden" style="--hiddenCount: 4;"> 
-            After that, we use the mana value of each card to determine its color weight. For each mana symbol in its casting cos, we assign the card a corresponding weight that we'll use to recommend how many colored sources of that color you need. So, for example, a 1 <i class="ms ms-w"></i> card will always have a lower color weight for white than a <i class="ms ms-w"></i> <i class="ms ms-w"></i> card, which will affect how many white mana sources you need in your deck to consistantly cast these cards.
+            After that, we use the mana value of each card to determine its color weight. For each mana symbol in its casting cos, we assign the card a corresponding weight that we'll use to recommend how many colored sources of that color you need. So, for example, a <i class="ms ms-cost ms-1"></i> <i class="ms ms-cost ms-w"></i> card will always have a lower color weight for white than a <i class="ms ms-cost ms-w"></i> <i class="ms ms-costms-w"></i> card, since half of its mana can be paid using non-white sources. This, in turn, will affect how many white mana sources you need in your deck to consistantly cast these cards.
             </p>
             <p class="hidden" style="--hiddenCount: 4;"> 
             After that, we just give you the numbers.
             </p>
+            
+            <h2 class="hidden" style="--hiddenCount: 4;">How do you calculate how many lands I should play?</h2>
+              <p class="hidden" style="--hiddenCount: 4;"><strong>Recommended Land Count Formula:</strong></p>
+            <p class="hidden" style="--hiddenCount: 4;">     
+            For the amount of lands we recommend, we're using <a href="https://www.tcgplayer.com/content/article/how-many-sources-do-you-need-to-consistently-cast-your-spells-a-2022-update/dc23a7d2-0a16-4c0b-ad36-586fcca03ad8/">Frank Karsten's formula.</a>. 
+            </p>
+            <p class="hidden" style="--hiddenCount: 4;">     
+            Here be the math:
+            </p>
+ <div class="recommended-land-count-formula formula hidden" style="--hiddenCount: 4;">
+  <math display="block">
+    <mrow>
+      <msub><mi>Lands</mi><mi>rec</mi></msub>
+      <mo>=</mo>
+      <mi>round</mi>
+      <mrow>
+        <mo>(</mo>
+        <mrow>
+          <mn>31.42</mn>
+          <mo>+</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>3.13</mn>
+              <mo>&times;</mo>
+              <msub><mi>CMC</mi><mi>avg</mi></msub>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mo>&minus;</mo>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>0.28</mn>
+              <mo>&times;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mi>Producers</mi>
+                  <mo>+</mo>
+                  <mi>Cantrips</mi>
+                  <mo>+</mo>
+                  <mi>Searchers</mi>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+        </mrow>
+        <mo>)</mo>
+      </mrow>
+    </mrow>
+  </math>
+</div>
+
+            
+              <div class="max-taplands-formula-single formula hidden" style="--hiddenCount: 4;">
+                <p><strong>Max Taplands Formula:</strong></p>
+                <p>The analyzer is held with hopes and dreams, and most of the data I'm basing my math around came from the depths of the internet. That'll probably change at some point, but for now I'm using this data as a benchmark:
+
+                <p> An average CMC of 2.75 without lands, 10 non-land 0- and 1-drops, a maximum of 33% of the deck's mana base as taplands.</p>
+
+                <p> Here be the math: </p>
+
+              <math display="block">
+                  <mrow>
+                    <mi>maxTapLands</mi>
+                    <mo>=</mo>
+                    <mi>round</mi>
+                    <mrow>
+                      <mo>(</mo>
+                      <mrow>
+                        <mfrac>
+                          <mrow>
+                            <mi>max</mi>
+                            <mrow>
+                              <mo>(</mo>
+                              <mn>0</mn>
+                              <mo>,</mo>
+                              <mi>min</mi>
+                              <mrow>
+                                <mo>(</mo>
+                                <mrow>
+                                  <msub title="Base Tap Percentage"><mi>5%</mi></msub>
+                                  <mo>+</mo>
+                                  <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                      <msub title="Your deck's average CMC"><mi>CMC</mi><mi>avg</mi></msub>
+                                      <mo>&minus;</mo>
+                                      <msub title="Benchmark average CMC (2.75)"><mi>2.75</mi></msub>
+                                    </mrow>
+                                    <mo>)</mo>
+                                  </mrow>
+                                  <mo>&times;</mo>
+                                  <msub title="Multiplier for CMC difference"><mi>10</mi></msub>
+                                  <mo>+</mo>
+                                  <mrow>
+                                    <mo>(</mo>
+                                    <mrow>
+                                      <msub title="Benchmark count of low CMC cards (10)"><mi>10</mi></msub>
+                                      <mo>&minus;</mo>
+                                      <msub title="Your deck's count of 0-1 CMC non-land cards"><mi>lowCMCcards</mi></msub>
+                                    </mrow>
+                                    <mo>)</mo>
+                                  </mrow>
+                                  <mo>&times;</mo>
+                                  <msub title="Multiplier for low CMC count difference"><mi>1.5</mi></msub>
+                                </mrow>
+                                <mo>,</mo>
+                                <msub title="Maximum Allowable Tap Percentage (33)"><mi>33%</mi></msub>
+                                <mo>)</mo>
+                              </mrow>
+                              <mo>)</mo>
+                            </mrow>
+                          </mrow>
+                          <mn>100</mn>
+                        </mfrac>
+                        <mo>&times;</mo>
+                        <msub title="Commander.Land's Recommended Land Count"><mi>Lands</mi></msub>
+                      </mrow>
+                      <mo>)</mo>
+                    </mrow>
+                  </mrow>
+                </math>
+</div>
+            
             <h2 class="hidden" style="--hiddenCount: 5;">Why did you make it?</h2>
             <p class="hidden" style="--hiddenCount: 5;">
             This site is actually my university final year project. I had to make an online tool and decided to go with Magic. 
@@ -329,7 +457,8 @@
 
 
     <!-- JQUERY  -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- MOBILE MENU HANDLER -->
     <script type="text/javascript" src="js/menuHandler.js"></script>
     <!-- ANIMATIONS HANDLER -->

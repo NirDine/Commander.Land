@@ -325,7 +325,65 @@ if (storedResponseData) {
   $(`.recommended .recommendedLandCount`).text(recommendedLandCount);
   $(`.recommended .recommendedTotalCards`).text('(' + NonLandCardsTotal + ')');
   $(`.recommended .averageCmc`).text(averageCmc.toFixed(2));
+  // --- START OF maxTapLands CALCULATION ---
+  console.log('[MAX_TAPLANDS] Calculating maxTapLands...');
+  console.log('[MAX_TAPLANDS] Using averageCmc:', averageCmc, 'and recommendedLandCount:', recommendedLandCount);
+
+  // 1. Calculate lowCmcCardCount (non-land 0 and 1-drops)
+  const lowCmcCardCount = responseData.filter(card => {
+    const typeLine = card.type_line || '';
+    return !typeLine.includes("Land") && (card.cmc === 0 || card.cmc === 1);
+  }).length;
+  console.log('[MAX_TAPLANDS] Calculated lowCmcCardCount:', lowCmcCardCount);
+
+  // 2. Define formula constants
+  const benchmarkAvgCmc = 2.75;
+  const benchmarkLowCmcCount = 10;
+  const baseTapPercentage = 5;    // Base 5% of lands can be taplands
+  const avgCmcMultiplier = 10;    // Each 0.1 CMC deviation from benchmark = 1% change
+  const lowCmcMultiplier = 1.5;   // Each 1 card deviation in low CMC count = 1.5% change
+  const maxAllowableTapPercentage = 33; // Max % of lands that can be taplands
+
+  // 3. Apply formula
+  const avgCmcBonusPoints = (averageCmc - benchmarkAvgCmc) * avgCmcMultiplier;
+  const lowCmcBonusPoints = (benchmarkLowCmcCount - lowCmcCardCount) * lowCmcMultiplier;
   
+  const targetTapPercentage = baseTapPercentage + avgCmcBonusPoints + lowCmcBonusPoints;
+  console.log('[MAX_TAPLANDS] targetTapPercentage (before constraints):', targetTapPercentage);
+
+  const constrainedTapPercentage = Math.max(0, Math.min(targetTapPercentage, maxAllowableTapPercentage));
+  console.log('[MAX_TAPLANDS] constrainedTapPercentage (0-33%):', constrainedTapPercentage);
+
+  const calculatedMaxTapLands = (constrainedTapPercentage / 100) * recommendedLandCount;
+  const maxTapLands = Math.round(calculatedMaxTapLands);
+  console.log('[MAX_TAPLANDS] Calculated maxTapLands (rounded):', maxTapLands);
+
+  // 4. Store in localStorage
+  localStorage.setItem('maxTapLands', maxTapLands.toString());
+
+  // 5. Update UI
+  const maxTapLandsSpan = $('.maxTapLands');
+  if (maxTapLandsSpan.length) {
+    maxTapLandsSpan.text(maxTapLands);
+    console.log('[MAX_TAPLANDS] Updated .maxTapLands span.');
+  } else {
+    console.warn('[MAX_TAPLANDS] Span with class .maxTapLands not found.');
+  }
+  
+  const lowCmcCardCountSpan = $('.lowCmcCardCount');
+  
+  if (lowCmcCardCountSpan.length) {
+    lowCmcCardCountSpan.text(lowCmcCardCount);
+    console.log('[MAX_TAPLANDS] Updated .lowCmcCardCount span.');
+  } else {
+    console.warn('[MAX_TAPLANDS] Span with class .lowCmcCardCount not found.');
+  }
+  
+  // Ensure the .recommended section is visible if it wasn't already
+  // (updateColorTracker usually handles this, but good to be sure if new elements are added)
+  $('.recommended').css('display', 'flex');
+  // --- END OF maxTapLands CALCULATION ---
+
   console.log('Average CMC:', averageCmc);
   // console.log('Non-Land mana producers (1-3 CMC):', nonLandManaProducersTotalCount); // Use new variable
   console.log('Card draw (1-3 CMC):',  cantrips);
@@ -333,6 +391,7 @@ if (storedResponseData) {
 } else {
   console.log('responseData not found in localStorage for second block'); // Differentiate log
 }
+
 
 function updateColorTracker(colorRecommendations) {
   const pipIconsContainer = $('.recommendedManaPipIcons'); // Changed selector
@@ -466,12 +525,7 @@ function updateColorTracker(colorRecommendations) {
     console.log('Tapped Land Metrics Calculated:', { totalTappedLands, tappedLandsByColor });
     
     
-    
-    const maxTapLands = 'CONTINUA ACÁ'; 
-    
-    
     $(`.manaBaseHealthContainer .totalTapLands`).text(totalTappedLands);
-    $(`.manaBaseHealthContainer .maxTapLands`).text(maxTapLands);
 
 
   } catch (error) {
@@ -547,6 +601,7 @@ function updateTappedLandsDisplay() {
               <div class="progress-bar progress-bar-${color} hasMana" style="width: ${percentage}%;">${percentage}%</div>
             </div>
             <span class="tapLandTotal">${count}</span>
+            
           </div>
         `;
         console.log(`[TAPLAND_METERS] Generated HTML for ${color}:`, meterHtml);

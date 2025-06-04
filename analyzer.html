@@ -5,9 +5,9 @@
     <meta
       name="viewport"
       content="initial-scale=1, maximum-scale=5, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
-    <meta name="description" content="Magic: the Gathering mana base builder, explore page" />
+    <meta name="description" content="Magic: the Gathering mana base builder, analyzer page" />
     <meta name="keywords" content="Commander, EDH, Mana, Builder, Lands, Fixing" />
-    <title>Explore - Commander.Land</title>
+    <title>Analyzer - Commander.Land</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/structure.css" />
@@ -240,50 +240,50 @@
           </p>
         </div>
 
-        <div class="recommended hidden" style="--hiddenCount: 12">
-          <div class="info">
-            <h4>Recommendations</h4>
-            <p>
-              After analyzing your deck's mana values, non-land mana producers under 3 mana
-              <span class="manaProducers"></span>, and total nonland cards <span class="recommendedTotalCards"></span>,
-              we've determined that your optimal land count is: <span class="recommendedLandCount"></span>.
-            </p>
-            <p>
-              Your deack already features some mana sources, you'd need your lands to produce this amount of the
-              following colors:<span class="recommendedManaPipIcons"></span>
-            </p>
+              <div class="recommended hidden" style="--hiddenCount: 12;">
+          <div class="recommendedContainer">
+            <div class="info">
+               <h4>Recommendations</h4>
+               <p>After analyzing your deck's mana values, non-land mana producers under 3 mana <span class="manaProducers"></span>, and total nonland cards <span class="recommendedTotalCards"></span>, we've determined that your optimal land count is: <span class="recommendedLandCount"></span>.</p>
+               <p>To be able to play all your cards consistently, you need additional mana sources of the following colors:<span class="recommendedManaPipIcons"></span> </p>
+           </div>
+              <div class="analysisButtonHolder"><a href="/buffet.html" class="analysisButton"><i class="ms ms-land"></i> <span>Go back to explorer</span></a></div>
           </div>
-          <div class="chartHolder">
-            <canvas height="402" width="402" id="myChart"></canvas>
-          </div>
-        </div>
+           <div class="chartHolder">
+              <canvas height="402" width="402" id="myChart"></canvas>
+           </div>
+
+       </div>
         <div class="manaBaseHealthContainer">
           <div class="recommended hidden" style="--hiddenCount: 12">
             <div class="info">
               <h4>Taplands</h4>
+              
               <p>
-                We've found a total of <span class="totalTapLands">0</span> lands that enter the battlefield tapped in your deck.
+                We've found a total of <span class="totalTapLands">Error</span> lands that enter the battlefield tapped in your deck.
               </p>
-              <p>For a deck with <span class="recommendedLandCount">10</span> lands and an average cmc of <span class="averageCmc">4</span>, it's recommended that you play no more than <span class="maxTapLands">0</span>.
+              <p>For a deck with <span class="recommendedLandCount">Error</span> lands, an average cmc of <span class="averageCmc">Error</span>, and <span class="lowCmcCardCount">Error</span> low mana cards, you can safely run up to <span class="maxTapLands">Error</span> unconditional tap lands.
               </p>
 
-              <p>Here's a breakdown of the tapped lands in your deck:</p>
+              <p>Here's a breakdown of the tapped land sources in your deck:</p>
+              
+
               <div class="tappedLandContainer"></div>
             </div>
           </div>
           <div class="recommended hidden" style="--hiddenCount: 12">
             <div class="info">
               <h4>Suggestions</h4>
-              <p>2</p>
-            </div>
-          </div>
-          <div class="recommended hidden" style="--hiddenCount: 12">
-            <div class="info">
-              <h4>Colroless lands</h4>
-              <p>3</p>
+              <p>Coming soon...</p>
             </div>
           </div>
         </div>
+        <div class="recommended hidden" style="--hiddenCount: 12">
+            <div class="info">
+              <h4>Color weight</h4>
+              <p>Bellow you'll find a list of all the non-land cards in your deck ordered by what percentage of your deck's mana base would need to be of that color to play that card on curve consistently. </p>
+            </div>
+          </div>
         <div class="content">
           <div class="bottom">
             <div id="" class="cardListWrapper">
@@ -728,11 +728,7 @@
                     </li>
                   </ul>
                   <ul>
-                    <li>
-                      <button class="userAction disabled" title="This is still being developed" disabled>
-                        <span>See in-depth statistics</span>
-                      </button>
-                    </li>
+                    <li><a href="buffet.html" class="userAction"><span>Go back to explorer</span></a></li>
                     <li class="exportButtonHolder exportToMoxfield">
                       <button class="userAction">
                         <span>Export to Moxfield</span>

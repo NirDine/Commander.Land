@@ -68,7 +68,7 @@ function getWeightForCardColor(cardCmC, specificColor, analyzedCardEntry, recomm
   const symbolCount = analyzedCardEntry.colorWeight[specificColor];
 
   if (typeof symbolCount !== 'number' || symbolCount <= 0) {
-    return 3; // Default weight if symbol count is invalid
+    return 0; // Default weight if symbol count is invalid
   }
 
   let lookupCmc = effectiveCmC;
@@ -110,9 +110,9 @@ function createCardListItem(cardData, specificColor, analyzedCardEntry, recommen
   }
 
   return `
-    <li class="addedCard" data-card-id="${id}" data-card-name="${name}" data-colors="${dataColorsString}" data-weight="${weight}" style="--weight: ${weight}%;">
-      <span class="chCardTextContainer cardName">${name}</span>
-      <span class="cost">${manaCostHtml}</span>
+    <li class="userCard" data-card-id="${id}" data-card-name="${name}" data-colors="${dataColorsString}" data-weight="${weight}" style="--weight: ${weight}%;" title="You need ${weight}% of your lands to be of this color to play this card">
+      <span class="chCardTextContainer"><span class="cost">${manaCostHtml}</span> <span class="chCardTextContainer cardName">${name}</span></span>
+      <span class="">${weight}%</span></span>
     </li>
   `;
 }
@@ -186,7 +186,7 @@ async function populateCardLists() {
   console.log('AnalyzedDataMap created:', analyzedDataMap);
 
   document.querySelectorAll('.cardList ul').forEach(ul => {
-    ul.querySelectorAll('li.addedCard').forEach(li => li.remove());
+    ul.querySelectorAll('li.userCard').forEach(li => li.remove());
   });
 
   responseData.forEach(card => {
@@ -250,7 +250,7 @@ async function populateCardLists() {
     const ul = cardListDiv.querySelector('ul');
     if (!ul) return;
 
-    const listItems = Array.from(ul.querySelectorAll('li.addedCard')); 
+    const listItems = Array.from(ul.querySelectorAll('li.userCard')); 
     
     listItems.sort((a, b) => {
       const weightA = parseFloat(a.dataset.weight) || 0;
@@ -275,7 +275,7 @@ async function populateCardLists() {
     const ul = cardListDiv.querySelector('ul');
     let hasCards = false;
     if (ul) {
-      if (ul.querySelector('li.addedCard')) {
+      if (ul.querySelector('li.userCard')) {
         hasCards = true;
       }
     }
@@ -290,3 +290,5 @@ async function populateCardLists() {
   });
 
 }
+
+updateManaColorProgress();

@@ -188,7 +188,8 @@ main::after,
 p,
 footer ul li a,
 .chFooter span,
-.totalCards {
+.totalCards,
+.formula {
   color: var(--contrast);
 }
 

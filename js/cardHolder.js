@@ -220,7 +220,7 @@ function updateManaColorProgress() {
   Object.entries(colorCounts).forEach(([color, count]) => {
     const totalColorCount = Object.values(colorCounts).reduce((total, count) => total + count, 0);
     const percentage = totalColorCount === 0 ? 0 : Math.round((count / totalColorCount) * 100);
-    const progressBar = $(`.progress-bar-${color}`);
+    const progressBar = $(`.chFooter .progress-bar-${color}`);
 
     if (progressBar.length) {
       if (count !== 0) {

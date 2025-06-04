@@ -198,10 +198,9 @@ const analyzedData = responseData.map(card => {
             highestResults[color] = result;
           }
         }
-        console.log(`----- ${card.name} -----, CMC: ${cmc}, Color Weight: ${JSON.stringify(colorWeight)}`);
       });
     } else {
-      console.log(`----- ${card.name} -----`);
+
     }
   });
 
@@ -325,6 +324,8 @@ if (storedResponseData) {
 
   $(`.recommended .recommendedLandCount`).text(recommendedLandCount);
   $(`.recommended .recommendedTotalCards`).text('(' + NonLandCardsTotal + ')');
+  $(`.recommended .averageCmc`).text(averageCmc.toFixed(2));
+  
   console.log('Average CMC:', averageCmc);
   // console.log('Non-Land mana producers (1-3 CMC):', nonLandManaProducersTotalCount); // Use new variable
   console.log('Card draw (1-3 CMC):',  cantrips);
@@ -414,22 +415,13 @@ function updateColorTracker(colorRecommendations) {
 
     let totalTappedLands = 0;
     const tappedLandsByColor = { W: 0, U: 0, B: 0, R: 0, G: 0, C: 0 };
-    const tapPhrase = "This land enters tapped.";
+    const tapPhraseClassic = "This land enters tapped."; // Renamed
+    const tapPhraseFetchEffect = "put it onto the battlefield tapped"; // Added
 
     selectedCards.forEach(cardNameInSelection => {
       const cardObject = landsData.data.find(dbCard => {
         // Handle potential DFC names stored in selectedCards
-        // selectedCards might store "Front Face // Back Face" or just "Front Face"
         let nameToMatch = cardNameInSelection;
-        if (dbCard.card_faces && dbCard.card_faces.length > 1) {
-          const frontFaceName = dbCard.card_faces[0].name;
-          // If cardNameInSelection is just the front face, it will match card.name if it's the front face
-          // Or, if cardNameInSelection is "Front // Back", it won't match card.name directly
-          // This simplified find assumes selectedCards stores names that can be found in landsData by card.name
-          // or by matching the first face of a DFC.
-          // A more robust matching might be needed if selectedCards stores "Front // Back" and landsData.data has split DFCs.
-          // For now, assume cardNameInSelection directly matches card.name or card_faces[0].name.
-        }
         // Normalize matching by comparing cardNameInSelection against dbCard.name
         // and also against front face name if dbCard is a DFC.
         if (dbCard.name.toLowerCase() === nameToMatch.toLowerCase()) return true;
@@ -447,7 +439,8 @@ function updateColorTracker(colorRecommendations) {
         const typeLine = cardObject.type_line || '';
         if (typeLine.includes('Land')) {
           const oracleText = cardObject.oracle_text || '';
-          if (oracleText.includes(tapPhrase)) {
+          // New condition:
+          if (oracleText.includes(tapPhraseClassic) || oracleText.includes(tapPhraseFetchEffect)) {
             totalTappedLands++;
 
             let cardColors = cardObject.color_identity;
@@ -471,9 +464,109 @@ function updateColorTracker(colorRecommendations) {
     localStorage.setItem('totalTappedLands', totalTappedLands.toString());
     localStorage.setItem('tappedLandsByColor', JSON.stringify(tappedLandsByColor));
     console.log('Tapped Land Metrics Calculated:', { totalTappedLands, tappedLandsByColor });
+    
+    
+    
+    const maxTapLands = 'CONTINUA ACÁ'; 
+    
+    
+    $(`.manaBaseHealthContainer .totalTapLands`).text(totalTappedLands);
+    $(`.manaBaseHealthContainer .maxTapLands`).text(maxTapLands);
+
 
   } catch (error) {
     console.error('Error processing tapped land metrics:', error);
   }
 })();
 // --- END OF TAPPED LAND METRICS CALCULATION ---
+
+
+function updateTappedLandsDisplay() {
+  'use strict';
+  console.log('[TAPLAND_METERS] Attempting to update tapped lands display...');
+
+  const storedTappedLandsByColor = localStorage.getItem('tappedLandsByColor');
+  console.log('[TAPLAND_METERS] storedTappedLandsByColor from localStorage:', storedTappedLandsByColor);
+  const storedRecLandCount = localStorage.getItem('recommendedLandCount');
+  console.log('[TAPLAND_METERS] storedRecLandCount from localStorage:', storedRecLandCount);
+  const storedColorRecs = localStorage.getItem('colorRecommendations');
+  console.log('[TAPLAND_METERS] storedColorRecs from localStorage:', storedColorRecs);
+
+  if (!storedTappedLandsByColor || !storedRecLandCount || !storedColorRecs) {
+    console.warn('[TAPLAND_METERS] Missing one or more required items from localStorage.');
+    return;
+  }
+
+  try {
+    const tappedLandsByColor = JSON.parse(storedTappedLandsByColor);
+    console.log('[TAPLAND_METERS] Parsed tappedLandsByColor:', tappedLandsByColor);
+    const recommendedLandCount = parseInt(storedRecLandCount, 10);
+    console.log('[TAPLAND_METERS] Parsed recommendedLandCount:', recommendedLandCount);
+    const colorRecommendations = JSON.parse(storedColorRecs);
+    console.log('[TAPLAND_METERS] Parsed colorRecommendations:', colorRecommendations);
+
+    if (typeof tappedLandsByColor !== 'object' || tappedLandsByColor === null || isNaN(recommendedLandCount) || !Array.isArray(colorRecommendations)) {
+      console.error('[TAPLAND_METERS] Invalid data format in localStorage after parsing.');
+      return;
+    }
+    
+    if (isNaN(recommendedLandCount)) { // This check is somewhat redundant due to above but good for clarity
+        console.error('[TAPLAND_METERS] recommendedLandCount is NaN after parse.');
+        return;
+    }
+
+    const recommendedColorsSet = new Set(
+      colorRecommendations
+        .filter(rec => rec && rec.result > 0) // rec.result is originalResult
+        .map(rec => rec.color.toUpperCase())
+    );
+    console.log('[TAPLAND_METERS] recommendedColorsSet:', recommendedColorsSet);
+
+    const container = $('.manaBaseHealthContainer .tappedLandContainer');
+    console.log('[TAPLAND_METERS] Target container .manaBaseHealthContainer .tappedLandContainer, length:', container.length);
+    if (!container.length) {
+      console.warn('[TAPLAND_METERS] Container .manaBaseHealthContainer .tappedLandContainer not found.');
+      return;
+    }
+    container.empty();
+    console.log('[TAPLAND_METERS] Container emptied.');
+
+    const colorOrder = ['W', 'U', 'B', 'R', 'G', 'C'];
+    let metersAdded = 0;
+    colorOrder.forEach(color => {
+      if (recommendedColorsSet.has(color)) {
+        console.log(`[TAPLAND_METERS] Processing recommended color: ${color}`);
+        const count = tappedLandsByColor[color] || 0;
+        const percentage = (recommendedLandCount > 0) ? Math.round((count / recommendedLandCount) * 100) : 0;
+        const lowerCaseColor = color.toLowerCase();
+
+        const meterHtml = `
+          <div class="taplandMeter taplands-${lowerCaseColor}">
+            <i class="ms ms-cost ms-${lowerCaseColor}"></i>
+            <div class="progress">
+              <div class="progress-bar progress-bar-${color} hasMana" style="width: ${percentage}%;">${percentage}%</div>
+            </div>
+            <span class="tapLandTotal">${count}</span>
+          </div>
+        `;
+        console.log(`[TAPLAND_METERS] Generated HTML for ${color}:`, meterHtml);
+        container.append(meterHtml);
+        metersAdded++;
+      } else {
+        // console.log(`[TAPLAND_METERS] Skipping color (not in recommendedSet): ${color}`);
+      }
+    });
+    
+    if (metersAdded > 0) {
+      console.log(`[TAPLAND_METERS] ${metersAdded} meter(s) added to the container.`);
+    } else {
+      console.warn('[TAPLAND_METERS] No meters were added. This could be due to no recommended colors or all recommended colors having zero tapped lands (if logic were to hide 0-count meters, which it currently doesn\'t explicitly).');
+    }
+    console.log('[TAPLAND_METERS] Tapped lands display update attempt finished.');
+
+  } catch (error) {
+    console.error('[TAPLAND_METERS] Error in updateTappedLandsDisplay:', error);
+  }
+}
+
+updateTappedLandsDisplay();

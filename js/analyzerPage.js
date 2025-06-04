@@ -10,7 +10,6 @@ function getAnalyzerDataFromLocalStorage() {
   if (responseDataString) {
     try {
       responseData = JSON.parse(responseDataString);
-      console.log('Successfully retrieved responseData from localStorage:', responseData);
     } catch (error) {
       console.error('Error parsing responseData from localStorage:', error);
     }
@@ -21,7 +20,6 @@ function getAnalyzerDataFromLocalStorage() {
   if (analyzedDataString) {
     try {
       analyzedData = JSON.parse(analyzedDataString);
-      console.log('Successfully retrieved analyzedData from localStorage:', analyzedData);
     } catch (error) {
       console.error('Error parsing analyzedData from localStorage:', error);
     }
@@ -190,12 +188,9 @@ async function populateCardLists() {
   document.querySelectorAll('.cardList ul').forEach(ul => {
     ul.querySelectorAll('li.addedCard').forEach(li => li.remove());
   });
-  console.log('Cleared existing card items (li.addedCard) from lists.');
 
   responseData.forEach(card => {
-    console.log(`Processing card for analyzer list: Name: "${card.name}", Mana Cost: "${card.mana_cost}", Colors: ${JSON.stringify(card.colors)}, CMC: ${card.cmc}`);
     if (!(card.cmc > 0)) { 
-      console.log(`Skipping card with cmc not greater than 0: ${card.name} (cmc: ${card.cmc})`);
       return; 
     }
     const analyzedCardEntry = analyzedDataMap.get(card.name) || null;
@@ -213,12 +208,10 @@ async function populateCardLists() {
       const firstFace = card.card_faces[0];
       if (firstFace.colors && firstFace.colors.length > 0) {
         determinedCardColors = firstFace.colors;
-        console.log(`Using colors from face 0 for "${card.name}": ${JSON.stringify(determinedCardColors)}`);
       } else if (firstFace.mana_cost && firstFace.mana_cost.trim() !== '') {
         // 3. If face 0 has no colors, try deriving from face 0 mana_cost
         determinedCardColors = deriveColorsFromManaCost(firstFace.mana_cost);
         if (determinedCardColors.length > 0) {
-          console.log(`Derived colors from face 0 mana_cost for "${card.name}": ${JSON.stringify(determinedCardColors)}`);
         }
       }
     }
@@ -227,7 +220,7 @@ async function populateCardLists() {
     if (determinedCardColors.length === 0 && card.mana_cost && card.mana_cost.trim() !== '') {
       determinedCardColors = deriveColorsFromManaCost(card.mana_cost);
       if (determinedCardColors.length > 0) {
-        console.log(`Derived colors from top-level mana_cost for "${card.name}": ${JSON.stringify(determinedCardColors)}`);
+        
       }
     }
 
@@ -251,7 +244,7 @@ async function populateCardLists() {
       }
     });
   });
-  console.log('Finished adding new card items to lists (unsorted).');
+  
 
   document.querySelectorAll('.cardList').forEach(cardListDiv => {
     const ul = cardListDiv.querySelector('ul');
@@ -277,9 +270,7 @@ async function populateCardLists() {
       headerTotalSpan.textContent = listItems.length;
     }
   });
-  console.log('Finished sorting lists and updating counts.');
 
-  console.log('Starting cleanup and reveal of card lists...');
   document.querySelectorAll('.analyzer .cardList').forEach(cardListDiv => {
     const ul = cardListDiv.querySelector('ul');
     let hasCards = false;
@@ -291,11 +282,11 @@ async function populateCardLists() {
 
     if (hasCards) {
       cardListDiv.style.display = 'block'; 
-      console.log(`Revealed card list: ${cardListDiv.className}`);
+
     } else {
       cardListDiv.remove();
-      console.log(`Removed empty card list: ${cardListDiv.className}`);
+
     }
   });
-  console.log('Finished cleanup and reveal of card lists.');
+
 }

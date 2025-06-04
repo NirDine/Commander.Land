@@ -1,114 +1,125 @@
-<!DOCTYPE html>
- <html lang="en">
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=5, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
-    <meta name="description" content="Magic: the Gathering mana base builder, explore page">
-    <meta name="keywords" content="Commander, EDH, Mana, Builder, Lands, Fixing">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, maximum-scale=5, minimum-scale=1, width=320, height=device-height, target-densitydpi=medium-dpi" />
+    <meta name="description" content="Magic: the Gathering mana base builder, explore page" />
+    <meta name="keywords" content="Commander, EDH, Mana, Builder, Lands, Fixing" />
     <title>Explore - Commander.Land</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/structure.css">
-    <link rel="stylesheet" href="css/desktop-sm.css" media="screen and (min-device-width: 768px)">
-    <link rel="stylesheet" href="css/desktop-md.css" media="screen and (min-device-width: 1200px)">
-    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/structure.css" />
+    <link rel="stylesheet" href="css/desktop-sm.css" media="screen and (min-device-width: 768px)" />
+    <link rel="stylesheet" href="css/desktop-md.css" media="screen and (min-device-width: 1200px)" />
+    <link rel="stylesheet" href="css/theme.css" />
     <link href="css/mana.min.css" rel="stylesheet" type="text/css" />
     <link href="css/keyrune.min.css" rel="stylesheet" type="text/css" />
 
     <!-- JQUERY  -->
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="preload" as="style">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#d14081">
-    <meta name="msapplication-TileColor" content="#9f00a7">
-    <meta name="theme-color" content="#2e2e3a">
- 
- 
-  </head>
-  
-  <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TDWP727MSY"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+      rel="preload"
+      as="style" />
 
-      gtag('config', 'G-TDWP727MSY');
-    </script>
-    
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#d14081" />
+    <meta name="msapplication-TileColor" content="#9f00a7" />
+    <meta name="theme-color" content="#2e2e3a" />
+  </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TDWP727MSY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-TDWP727MSY");
+  </script>
+
   <body class="fallback analyzer" style="">
     <a href="#cardHolderInput" class="skipNavLink" id="skip">Skip Navigation</a>
     <div class="lightsOff"></div>
     <div class="container">
-    <header>
-        <a href="index.html" class="logo" aria-label="Link to reload page">
-        </a>
+      <header>
+        <a href="index.html" class="logo" aria-label="Link to reload page"> </a>
         <div class="toggle"></div>
         <nav class="menu">
           <ul>
             <li>
-              <a href="index.html" style="--indexCount: 0;" id="navHome" aria-label="Link to top of the page">Home</a>
+              <a href="index.html" style="--indexCount: 0" id="navHome" aria-label="Link to top of the page">Home</a>
             </li>
             <li>
-              <a href="buffet.html" style="--indexCount: 1;" id="" aria-label="Link to By Color section">Explore</a>
+              <a href="buffet.html" style="--indexCount: 1" id="" aria-label="Link to By Color section">Explore</a>
             </li>
             <li>
               <div class="sec-center" id="navColors">
                 <input class="dropdown parent" type="checkbox" id="dropdown" name="dropdown" />
-                <label class="for-dropdown" for="dropdown" style="--indexCount: 2;" aria-label="Link to By Color section">By color</label>
+                <label class="for-dropdown" for="dropdown" style="--indexCount: 2" aria-label="Link to By Color section"
+                  >By color</label
+                >
                 <div class="section-dropdown">
                   <input class="dropdown-sub" type="checkbox" id="dropdown-sub1" name="dropdown-sub1" />
                   <label class="for-dropdown-sub" for="dropdown-sub1">1 Color</label>
                   <div class="section-dropdown-sub">
-                    <a href="buffet.html?colors=w,c">
-                      <i class="ms ms-w"></i> White </a>
-                    <a href="buffet.html?colors=u,c">
-                      <i class="ms ms-u"></i> Blue </a>
-                    <a href="buffet.html?colors=b,c">
-                      <i class="ms ms-b"></i> Black </a>
-                    <a href="buffet.html?colors=r,c">
-                      <i class="ms ms-r"></i> Red </a>
-                    <a href="buffet.html?colors=g,c">
-                      <i class="ms ms-g"></i> Green </a>
-                    <a href="buffet.html?colors=c">
-                      <i class="ms ms-c"></i> Colorless </a>
+                    <a href="buffet.html?colors=w,c"> <i class="ms ms-w"></i> White </a>
+                    <a href="buffet.html?colors=u,c"> <i class="ms ms-u"></i> Blue </a>
+                    <a href="buffet.html?colors=b,c"> <i class="ms ms-b"></i> Black </a>
+                    <a href="buffet.html?colors=r,c"> <i class="ms ms-r"></i> Red </a>
+                    <a href="buffet.html?colors=g,c"> <i class="ms ms-g"></i> Green </a>
+                    <a href="buffet.html?colors=c"> <i class="ms ms-c"></i> Colorless </a>
                   </div>
                   <input class="dropdown-sub" type="checkbox" id="dropdown-sub2" name="dropdown-sub2" />
                   <label class="for-dropdown-sub" for="dropdown-sub2">2 Colors</label>
                   <div class="section-dropdown-sub">
                     <a href="buffet.html?colors=w,u,c">
                       <i class="ms ms-w"></i>
-                      <i class="ms ms-u"></i>Azorius </a>
+                      <i class="ms ms-u"></i>Azorius
+                    </a>
                     <a href="buffet.html?colors=u,b,c">
                       <i class="ms ms-u"></i>
-                      <i class="ms ms-b"></i>Dimir </a>
+                      <i class="ms ms-b"></i>Dimir
+                    </a>
                     <a href="buffet.html?colors=b,r,c">
                       <i class="ms ms-b"></i>
-                      <i class="ms ms-r"></i>Rakdos </a>
+                      <i class="ms ms-r"></i>Rakdos
+                    </a>
                     <a href="buffet.html?colors=r,g,c">
                       <i class="ms ms-r"></i>
-                      <i class="ms ms-g"></i>Gruul </a>
+                      <i class="ms ms-g"></i>Gruul
+                    </a>
                     <a href="buffet.html?colors=w,g,c">
                       <i class="ms ms-w"></i>
-                      <i class="ms ms-g"></i>Selesnya </a>
+                      <i class="ms ms-g"></i>Selesnya
+                    </a>
                     <a href="buffet.html?colors=w,b,c">
                       <i class="ms ms-w"></i>
-                      <i class="ms ms-b"></i>Orzhov </a>
+                      <i class="ms ms-b"></i>Orzhov
+                    </a>
                     <a href="buffet.html?colors=u,r,c">
                       <i class="ms ms-u"></i>
-                      <i class="ms ms-r"></i>Izzet </a>
+                      <i class="ms ms-r"></i>Izzet
+                    </a>
                     <a href="buffet.html?colors=b,g,c">
                       <i class="ms ms-b"></i>
-                      <i class="ms ms-g"></i>Golgari </a>
+                      <i class="ms ms-g"></i>Golgari
+                    </a>
                     <a href="buffet.html?colors=w,r,c">
                       <i class="ms ms-w"></i>
-                      <i class="ms ms-r"></i>Boros </a>
+                      <i class="ms ms-r"></i>Boros
+                    </a>
                     <a href="buffet.html?colors=u,g,c">
                       <i class="ms ms-u"></i>
-                      <i class="ms ms-g"></i>Simic </a>
+                      <i class="ms ms-g"></i>Simic
+                    </a>
                   </div>
                   <input class="dropdown-sub" type="checkbox" id="dropdown-sub3" name="dropdown-sub3" />
                   <label class="for-dropdown-sub" for="dropdown-sub3">3 Colors</label>
@@ -116,43 +127,53 @@
                     <a href="buffet.html?colors=w,u,b,c">
                       <i class="ms ms-w"></i>
                       <i class="ms ms-u"></i>
-                      <i class="ms ms-b"></i> Esper </a>
+                      <i class="ms ms-b"></i> Esper
+                    </a>
                     <a href="buffet.html?colors=u,b,r,c">
                       <i class="ms ms-u"></i>
                       <i class="ms ms-b"></i>
-                      <i class="ms ms-r"></i> Grixis </a>
+                      <i class="ms ms-r"></i> Grixis
+                    </a>
                     <a href="buffet.html?colors=b,r,g,c">
                       <i class="ms ms-b"></i>
                       <i class="ms ms-r"></i>
-                      <i class="ms ms-g"></i> Jund </a>
+                      <i class="ms ms-g"></i> Jund
+                    </a>
                     <a href="buffet.html?colors=w,r,g,c">
                       <i class="ms ms-r"></i>
                       <i class="ms ms-g"></i>
-                      <i class="ms ms-w"></i> Naya </a>
+                      <i class="ms ms-w"></i> Naya
+                    </a>
                     <a href="buffet.html?colors=w,u,g,c">
                       <i class="ms ms-g"></i>
                       <i class="ms ms-w"></i>
-                      <i class="ms ms-u"></i> Bant </a>
+                      <i class="ms ms-u"></i> Bant
+                    </a>
                     <a href="buffet.html?colors=w,b,g,c">
                       <i class="ms ms-w"></i>
                       <i class="ms ms-b"></i>
-                      <i class="ms ms-g"></i> Abzan </a>
+                      <i class="ms ms-g"></i> Abzan
+                    </a>
                     <a href="buffet.html?colors=w,u,r,c">
                       <i class="ms ms-u"></i>
                       <i class="ms ms-r"></i>
-                      <i class="ms ms-w"></i> Jeskai </a>
+                      <i class="ms ms-w"></i> Jeskai
+                    </a>
                     <a href="buffet.html?colors=u,g,b,c">
                       <i class="ms ms-b"></i>
                       <i class="ms ms-g"></i>
-                      <i class="ms ms-u"></i> Sultai </a>
+                      <i class="ms ms-u"></i> Sultai
+                    </a>
                     <a href="buffet.html?colors=w,b,r,c">
                       <i class="ms ms-r"></i>
                       <i class="ms ms-w"></i>
-                      <i class="ms ms-b"></i> Mardu </a>
+                      <i class="ms ms-b"></i> Mardu
+                    </a>
                     <a href="buffet.html?colors=u,r,g,c">
                       <i class="ms ms-g"></i>
                       <i class="ms ms-u"></i>
-                      <i class="ms ms-r"></i> Temur </a>
+                      <i class="ms ms-r"></i> Temur
+                    </a>
                   </div>
                   <input class="dropdown-sub" type="checkbox" id="dropdown-sub4" name="dropdown-sub4" />
                   <label class="for-dropdown-sub" for="dropdown-sub4">4 Colors</label>
@@ -161,246 +182,220 @@
                       <i class="ms ms-w"></i>
                       <i class="ms ms-u"></i>
                       <i class="ms ms-b"></i>
-                      <i class="ms ms-r"></i> Yore-Tiller </a>
+                      <i class="ms ms-r"></i> Yore-Tiller
+                    </a>
                     <a href="buffet.html?colors=u,b,r,g,c">
                       <i class="ms ms-u"></i>
                       <i class="ms ms-b"></i>
                       <i class="ms ms-r"></i>
-                      <i class="ms ms-g"></i> Glint-Eye </a>
+                      <i class="ms ms-g"></i> Glint-Eye
+                    </a>
                     <a href="buffet.html?colors=w,b,r,g,c">
                       <i class="ms ms-b"></i>
                       <i class="ms ms-r"></i>
                       <i class="ms ms-g"></i>
-                      <i class="ms ms-w"></i> Dune-Brood </a>
+                      <i class="ms ms-w"></i> Dune-Brood
+                    </a>
                     <a href="buffet.html?colors=w,u,r,g,c">
                       <i class="ms ms-r"></i>
                       <i class="ms ms-g"></i>
                       <i class="ms ms-w"></i>
-                      <i class="ms ms-u"></i> Ink-Treader </a>
+                      <i class="ms ms-u"></i> Ink-Treader
+                    </a>
                     <a href="buffet.html?colors=w,u,b,g,c">
                       <i class="ms ms-g"></i>
                       <i class="ms ms-w"></i>
                       <i class="ms ms-u"></i>
-                      <i class="ms ms-b"></i> Witch-Maw </a>
+                      <i class="ms ms-b"></i> Witch-Maw
+                    </a>
                   </div>
                   <a href="buffet.html?colors=w,u,b,r,g,c">All colors</a>
                 </div>
               </div>
             </li>
             <li class="">
-              <a class="" href="about.html" style="--indexCount: 3;" id="navAbout" aria-label="Link to About section">About</a>
+              <a class="" href="about.html" style="--indexCount: 3" id="navAbout" aria-label="Link to About section"
+                >About</a
+              >
             </li>
             <li class="">
-              <a  class="lastMenuOption" href="https://ko-fi.com/nirdine" style="--indexCount: 4;" id="navDonate" aria-label="Link to Donate section">Donate</a>
+              <a
+                class="lastMenuOption"
+                href="https://ko-fi.com/nirdine"
+                style="--indexCount: 4"
+                id="navDonate"
+                aria-label="Link to Donate section"
+                >Donate</a
+              >
             </li>
           </ul>
         </nav>
       </header>
       <main>
-      <div class="moneyPls hidden" style="--hiddenCount: 5;">
-               <p>
-                Commander.Land has an annual upkeep cost of $35. That's all it takes to keep the site running. If you're interested in supporting the project, please consider donating through <a href="https://ko-fi.com/nirdine">Ko-Fi</a>. Thanks!
-           </p>
+        <div class="moneyPls hidden" style="--hiddenCount: 5">
+          <p>
+            Commander.Land has an annual upkeep cost of $35. That's all it takes to keep the site running. If you're
+            interested in supporting the project, please consider donating through
+            <a href="https://ko-fi.com/nirdine">Ko-Fi</a>. Thanks!
+          </p>
         </div>
-          
-      <div class="recommended hidden" style="--hiddenCount: 12;">
-           <div class="info">
-               <h4>Recommendations</h4>
-               <p>After analyzing your deck's mana values, non-land mana producers under 3 mana <span class="manaProducers"></span>, and total nonland cards <span class="recommendedTotalCards"></span>, we've determined that your optimal land count is: <span class="recommendedLandCount"></span>.</p>
-               <p>Your deack already features some mana sources, you'd need your lands to produce this amount of the following colors:<span class="recommendedManaPipIcons"></span> </p>
-           </div>
-           <div class="chartHolder">
-              <canvas height="402" width="402" id="myChart"></canvas>
-           </div>
 
-       </div>
+        <div class="recommended hidden" style="--hiddenCount: 12">
+          <div class="info">
+            <h4>Recommendations</h4>
+            <p>
+              After analyzing your deck's mana values, non-land mana producers under 3 mana
+              <span class="manaProducers"></span>, and total nonland cards <span class="recommendedTotalCards"></span>,
+              we've determined that your optimal land count is: <span class="recommendedLandCount"></span>.
+            </p>
+            <p>
+              Your deack already features some mana sources, you'd need your lands to produce this amount of the
+              following colors:<span class="recommendedManaPipIcons"></span>
+            </p>
+          </div>
+          <div class="chartHolder">
+            <canvas height="402" width="402" id="myChart"></canvas>
+          </div>
+        </div>
         <div class="manaBaseHealthContainer">
-         <div class="recommended hidden" style="--hiddenCount: 12;">
-             <div class="info">
-                 <h4>Tap lands</h4>
-                 
-                   <div class="taplandMeter taplands-w">
-                     <i class="ms ms-cost ms-w"></i>
-                     <div class="progress">
-                        <div class="progress-bar progress-bar-W hasMana" style="width: 20%;">20%</div>
-                      </div>
-                    </div>
-                   <div class="taplandMeter taplands-u">
-                     <i class="ms ms-cost ms-u"></i>
-                     <div class="progress">
-                        <div class="progress-bar progress-bar-U hasMana" style="width: 20%;">20%</div>
-                      </div>
-                    </div>
-                   <div class="taplandMeter taplands-b">
-                     <i class="ms ms-cost ms-b"></i>
-                     <div class="progress">
-                        <div class="progress-bar progress-bar-B hasMana" style="width: 20%;">20%</div>
-                      </div>
-                    </div>
-                   <div class="taplandMeter taplands-r">
-                     <i class="ms ms-cost ms-r"></i>
-                     <div class="progress">
-                        <div class="progress-bar progress-bar-R hasMana" style="width: 20%;">20%</div>
-                      </div>
-                    </div>
-                   <div class="taplandMeter taplands-g">
-                     <i class="ms ms-cost ms-g"></i>
-                     <div class="progress">
-                        <div class="progress-bar progress-bar-G hasMana" style="width: 20%;">20%</div>
-                      </div>
-                    </div>
-                   <div class="taplandMeter taplands-c">
-                     <i class="ms ms-cost ms-c"></i>
-                     <div class="progress">
-                        <div class="progress-bar progress-bar-C hasMana" style="width: 20%;">20%</div>
-                      </div>
-                    </div>
+          <div class="recommended hidden" style="--hiddenCount: 12">
+            <div class="info">
+              <h4>Taplands</h4>
+              <p>
+                We've found a total of <span class="totalTapLands">0</span> lands that enter the battlefield tapped in your deck.
+              </p>
+              <p>For a deck with <span class="recommendedLandCount">10</span> lands and an average cmc of <span class="averageCmc">4</span>, it's recommended that you play no more than <span class="maxTapLands">0</span>.
+              </p>
 
-             </div>
-
-         </div>
-         <div class="recommended hidden" style="--hiddenCount: 12;">
-             <div class="info">
-                 <h4>Land base health</h4>
-                 <p>
-                 2
-                 </p>
-             </div>
-
-         </div>
+              <p>Here's a breakdown of the tapped lands in your deck:</p>
+              <div class="tappedLandContainer"></div>
+            </div>
+          </div>
+          <div class="recommended hidden" style="--hiddenCount: 12">
+            <div class="info">
+              <h4>Suggestions</h4>
+              <p>2</p>
+            </div>
+          </div>
+          <div class="recommended hidden" style="--hiddenCount: 12">
+            <div class="info">
+              <h4>Colroless lands</h4>
+              <p>3</p>
+            </div>
+          </div>
         </div>
         <div class="content">
           <div class="bottom">
             <div id="" class="cardListWrapper">
-            
               <!-- START OF CARD LIST FOR WHITE -->
-               <div class="cardList color-w">
-                   <ul>
-                     <li class="cardListHeader">
-                       <h3>
-                          <span><i class="ms ms-w"></i> White</span>
-                          <span class="total"></span>
-                      </h3>
-                     </li>
-                     
-                      
-                   </ul>
-               </div>
+              <div class="cardList color-w">
+                <ul>
+                  <li class="cardListHeader">
+                    <h3>
+                      <span><i class="ms ms-w"></i> White</span>
+                      <span class="total"></span>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
               <!-- START OF CARD LIST FOR BLUE -->
-               <div class="cardList color-u">
-                   <ul>
-                     <li class="cardListHeader">
-                       <h3>
-                          <span><i class="ms ms-u"></i> Blue</span>
-                          <span class="total"></span>
-                      </h3>
-                     </li>
-                      
-                   </ul>
-               </div>
+              <div class="cardList color-u">
+                <ul>
+                  <li class="cardListHeader">
+                    <h3>
+                      <span><i class="ms ms-u"></i> Blue</span>
+                      <span class="total"></span>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
               <!-- START OF CARD LIST FOR BLACK -->
-               <div class="cardList color-b">
-                   <ul>
-                     <li class="cardListHeader">
-                       <h3>
-                          <span><i class="ms ms-b"></i> Black</span>
-                          <span class="total"></span>
-                      </h3>
-                     </li>
-                     
-                   </ul>
-               </div>
+              <div class="cardList color-b">
+                <ul>
+                  <li class="cardListHeader">
+                    <h3>
+                      <span><i class="ms ms-b"></i> Black</span>
+                      <span class="total"></span>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
               <!-- START OF CARD LIST FOR RED -->
-               <div class="cardList color-r">
-                   <ul>
-                     <li class="cardListHeader">
-                       <h3>
-                          <span><i class="ms ms-r"></i> Red</span>
-                          <span class="total"></span>
-                      </h3>
-                     </li>
-                      
-                   </ul>
-               </div>
+              <div class="cardList color-r">
+                <ul>
+                  <li class="cardListHeader">
+                    <h3>
+                      <span><i class="ms ms-r"></i> Red</span>
+                      <span class="total"></span>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
               <!-- START OF CARD LIST FOR GREEN -->
-               <div class="cardList color-g">
-                   <ul>
-                     <li class="cardListHeader">
-                       <h3>
-                          <span><i class="ms ms-g"></i> Green</span>
-                          <span class="total"></span>
-                      </h3>
-                     </li>
-                      
-                   </ul>
-               </div>
+              <div class="cardList color-g">
+                <ul>
+                  <li class="cardListHeader">
+                    <h3>
+                      <span><i class="ms ms-g"></i> Green</span>
+                      <span class="total"></span>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
               <!-- START OF CARD LIST FOR COLORLESS -->
-               <div class="cardList color-c">
-                   <ul>
-                     <li class="cardListHeader">
-                       <h3>
-                          <span><i class="ms ms-c"></i> Colorless</span>
-                          <span class="total"></span>
-                      </h3>
-                     </li>
-                      
-                   </ul>
-               </div>
+              <div class="cardList color-c">
+                <ul>
+                  <li class="cardListHeader">
+                    <h3>
+                      <span><i class="ms ms-c"></i> Colorless</span>
+                      <span class="total"></span>
+                    </h3>
+                  </li>
+                </ul>
+              </div>
             </div>
-       <div id="cardHolder">
-            <input class="dropdown-sub" type="checkbox" id="cardHolderInput" name="cardHolderInput" />
+            <div id="cardHolder">
+              <input class="dropdown-sub" type="checkbox" id="cardHolderInput" name="cardHolderInput" />
               <label class="for-dropdown-sub cardHolderLabel" for="cardHolderInput">
                 <div class="chFooter">
                   <ul>
                     <li class="tracker tracker-W">
-                      <span>
-                        <span class="current">0</span> <span class="total noRec"></span>
-                      </span>
+                      <span> <span class="current">0</span> <span class="total noRec"></span> </span>
                       <i class="ms ms-w"></i>
                       <div class="border progress" id="coloranalysis_prod_w">
                         <div class="progress-bar progress-bar-W" style=""></div>
                       </div>
                     </li>
                     <li class="tracker tracker-U">
-                      <span>
-                        <span class="current">0</span> <span class="total noRec"></span>
-                      </span>
+                      <span> <span class="current">0</span> <span class="total noRec"></span> </span>
                       <i class="ms ms-u"></i>
                       <div class="border progress" id="coloranalysis_prod_u">
                         <div class="progress-bar progress-bar-U" style=""></div>
                       </div>
                     </li>
                     <li class="tracker tracker-B">
-                      <span>
-                        <span class="current">0</span> <span class="total noRec"></span>
-                      </span>
+                      <span> <span class="current">0</span> <span class="total noRec"></span> </span>
                       <i class="ms ms-b"></i>
                       <div class="border progress" id="coloranalysis_prod_b">
                         <div class="progress-bar progress-bar-B" style=""></div>
                       </div>
                     </li>
                     <li class="tracker tracker-R">
-                      <span>
-                        <span class="current">0</span> <span class="total noRec"></span>
-                      </span>
+                      <span> <span class="current">0</span> <span class="total noRec"></span> </span>
                       <i class="ms ms-r"></i>
                       <div class="border progress" id="coloranalysis_prod_r">
                         <div class="progress-bar progress-bar-R" style=""></div>
                       </div>
                     </li>
                     <li class="tracker tracker-G">
-                      <span>
-                        <span class="current">0</span> <span class="total noRec"></span>
-                      </span>
+                      <span> <span class="current">0</span> <span class="total noRec"></span> </span>
                       <i class="ms ms-g"></i>
                       <div class="border progress" id="coloranalysis_prod_g">
                         <div class="progress-bar progress-bar-G" style=""></div>
                       </div>
                     </li>
                     <li class="tracker tracker-C">
-                      <span>
-                        <span class="current">0</span> <span class="total noRec"></span>
-                      </span>
+                      <span> <span class="current">0</span> <span class="total noRec"></span> </span>
                       <i class="ms ms-c"></i>
                       <div class="border progress" id="coloranalysis_prod_c">
                         <div class="progress-bar progress-bar-C" style=""></div>
@@ -408,333 +403,387 @@
                     </li>
                   </ul>
                   <div class="totalCardCountContainer">
-                        <div class="totalCards">
-                        <span class="current"></span> <span class="total"></span>
-                      </div>
+                    <div class="totalCards"><span class="current"></span> <span class="total"></span></div>
                     <div class="totalLands">
-                    
-                     <span class="">Lands</span>
-                  </div>
- 
+                      <span class="">Lands</span>
+                    </div>
                   </div>
                 </div>
               </label>
               <div class="chContainer">
-                  <div class="chCardWrapper">
-                        <div class="combination" data-combination="W">
-                          <h3><span>
-                            <i class="ms ms-w"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul>
-                          </ul>
-                        </div>
-                        <div class="combination" data-combination="U">
-                          <h3><span>
-                            <i class="ms ms-u"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="B">
-                          <h3><span>
-                            <i class="ms ms-b"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="R">
-                          <h3><span>
-                            <i class="ms ms-r"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="G">
-                          <h3><span>
-                            <i class="ms ms-g"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="UW">
-                          <h3><span>
-                            <i class="ms ms-w"></i>
-                            <i class="ms ms-u"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BU">
-                          <h3><span>
-                            <i class="ms ms-u"></i>
-                            <i class="ms ms-b"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BR">
-                          <h3><span>
-                            <i class="ms ms-b"></i>
-                            <i class="ms ms-r"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="GR">
-                          <h3><span>
-                            <i class="ms ms-r"></i>
-                            <i class="ms ms-g"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="GW">
-                          <h3><span>
-                            <i class="ms ms-w"></i>
-                            <i class="ms ms-g"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BW">
-                          <h3><span>
-                            <i class="ms ms-w"></i>
-                            <i class="ms ms-b"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="RU">
-                          <h3><span>
-                            <i class="ms ms-u"></i>
-                            <i class="ms ms-r"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BG">
-                          <h3><span>
-                            <i class="ms ms-b"></i>
-                            <i class="ms ms-g"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="RW">
-                          <h3><span>
-                            <i class="ms ms-w"></i>
-                            <i class="ms ms-r"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="GU">
-                          <h3><span>
-                            <i class="ms ms-u"></i>
-                            <i class="ms ms-g"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BUW">
-                          <h3><span>
-                            <i class="ms ms-w"></i>
-                            <i class="ms ms-u"></i>
-                            <i class="ms ms-b"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BRU">
-                          <h3><span>
-                            <i class="ms ms-u"></i>
-                            <i class="ms ms-b"></i>
-                            <i class="ms ms-r"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BGR">
-                          <h3><span>
-                            <i class="ms ms-b"></i>
-                            <i class="ms ms-r"></i>
-                            <i class="ms ms-g"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="GRW">
-                          <h3><span>
-                            <i class="ms ms-r"></i>
-                            <i class="ms ms-g"></i>
-                            <i class="ms ms-w"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="GUW">
-                          <h3><span>
-                            <i class="ms ms-g"></i>
-                            <i class="ms ms-w"></i>
-                            <i class="ms ms-u"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BGW">
-                          <h3><span>
-                            <i class="ms ms-w"></i>
-                            <i class="ms ms-b"></i>
-                            <i class="ms ms-g"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="RUW">
-                          <h3><span>
-                            <i class="ms ms-u"></i>
-                            <i class="ms ms-r"></i>
-                            <i class="ms ms-w"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BUG">
-                          <h3><span>
-                            <i class="ms ms-b"></i>
-                            <i class="ms ms-g"></i>
-                            <i class="ms ms-u"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BRW">
-                          <h3><span>
-                            <i class="ms ms-r"></i>
-                            <i class="ms ms-w"></i>
-                            <i class="ms ms-b"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="GRU">
-                          <h3><span>
-                            <i class="ms ms-g"></i>
-                            <i class="ms ms-u"></i>
-                            <i class="ms ms-r"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BRUW">
-                          <h3><span>
-                            <i class="ms ms-w"></i>
-                            <i class="ms ms-u"></i>
-                            <i class="ms ms-b"></i>
-                            <i class="ms ms-r"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BGRU">
-                          <h3><span>
-                            <i class="ms ms-u"></i>
-                            <i class="ms ms-b"></i>
-                            <i class="ms ms-r"></i>
-                            <i class="ms ms-g"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BGRW">
-                          <h3><span>
-                            <i class="ms ms-b"></i>
-                            <i class="ms ms-r"></i>
-                            <i class="ms ms-g"></i>
-                            <i class="ms ms-w"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="GRUW">
-                          <h3><span>
-                            <i class="ms ms-r"></i>
-                            <i class="ms ms-g"></i>
-                            <i class="ms ms-w"></i>
-                            <i class="ms ms-u"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BGUW">
-                          <h3><span>
-                            <i class="ms ms-g"></i>
-                            <i class="ms ms-w"></i>
-                            <i class="ms ms-u"></i>
-                            <i class="ms ms-b"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="BGRUW">
-                          <h3><span>
-                            <i class="ms ms-w"></i>
-                            <i class="ms ms-u"></i>
-                            <i class="ms ms-b"></i>
-                            <i class="ms ms-r"></i>
-                            <i class="ms ms-g"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
-                        <div class="combination" data-combination="C">
-                          <h3><span>
-                            <i class="ms ms-c"></i>
-                            </span><span class="total">0</span>
-                          </h3>
-                          <ul></ul>
-                        </div>
+                <div class="chCardWrapper">
+                  <div class="combination" data-combination="W">
+                    <h3>
+                      <span>
+                        <i class="ms ms-w"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
                   </div>
-                  <div class="chUserActionContainer">
-                      <ul>
-                          <li><button class="userAction clearList">Clear list</button></li>
-                          <li><button class="userAction undoButton" title="Undo">
-                          <i class="ms ms-untap undo"></i></button></li>
-                      </ul>
-                      <ul>
-                          <li><button class="userAction disabled" title="This is still being developed" disabled><span>See in-depth statistics</span></button></li>
-                          <li class="exportButtonHolder exportToMoxfield">                            <button class="userAction">
-                                <span>Export to Moxfield</span>
-                                <i class="moxfield"></i>
-                            </button>
-                          </li>
-                          <li class="exportButtonHolder exportToArchidekt">                            <button class="userAction">
-                                <span>Export to Archidekt</span>
-                                <i class="archidekt"></i>
-                            </button>
-                          </li>
-                          <li class=""><button class="userAction copyAsTxt"><span>Copy to clipboard</span></button></li>
-                          <li class="">
-                            <button class="userAction downloadAsTxt export"><span>Download as .txt</span></button>
-                          </li>
-                      </ul>
+                  <div class="combination" data-combination="U">
+                    <h3>
+                      <span>
+                        <i class="ms ms-u"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
                   </div>
+                  <div class="combination" data-combination="B">
+                    <h3>
+                      <span>
+                        <i class="ms ms-b"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="R">
+                    <h3>
+                      <span>
+                        <i class="ms ms-r"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="G">
+                    <h3>
+                      <span>
+                        <i class="ms ms-g"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="UW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-w"></i>
+                        <i class="ms ms-u"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BU">
+                    <h3>
+                      <span>
+                        <i class="ms ms-u"></i>
+                        <i class="ms ms-b"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BR">
+                    <h3>
+                      <span>
+                        <i class="ms ms-b"></i>
+                        <i class="ms ms-r"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="GR">
+                    <h3>
+                      <span>
+                        <i class="ms ms-r"></i>
+                        <i class="ms ms-g"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="GW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-w"></i>
+                        <i class="ms ms-g"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-w"></i>
+                        <i class="ms ms-b"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="RU">
+                    <h3>
+                      <span>
+                        <i class="ms ms-u"></i>
+                        <i class="ms ms-r"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BG">
+                    <h3>
+                      <span>
+                        <i class="ms ms-b"></i>
+                        <i class="ms ms-g"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="RW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-w"></i>
+                        <i class="ms ms-r"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="GU">
+                    <h3>
+                      <span>
+                        <i class="ms ms-u"></i>
+                        <i class="ms ms-g"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BUW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-w"></i>
+                        <i class="ms ms-u"></i>
+                        <i class="ms ms-b"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BRU">
+                    <h3>
+                      <span>
+                        <i class="ms ms-u"></i>
+                        <i class="ms ms-b"></i>
+                        <i class="ms ms-r"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BGR">
+                    <h3>
+                      <span>
+                        <i class="ms ms-b"></i>
+                        <i class="ms ms-r"></i>
+                        <i class="ms ms-g"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="GRW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-r"></i>
+                        <i class="ms ms-g"></i>
+                        <i class="ms ms-w"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="GUW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-g"></i>
+                        <i class="ms ms-w"></i>
+                        <i class="ms ms-u"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BGW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-w"></i>
+                        <i class="ms ms-b"></i>
+                        <i class="ms ms-g"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="RUW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-u"></i>
+                        <i class="ms ms-r"></i>
+                        <i class="ms ms-w"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BUG">
+                    <h3>
+                      <span>
+                        <i class="ms ms-b"></i>
+                        <i class="ms ms-g"></i>
+                        <i class="ms ms-u"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BRW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-r"></i>
+                        <i class="ms ms-w"></i>
+                        <i class="ms ms-b"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="GRU">
+                    <h3>
+                      <span>
+                        <i class="ms ms-g"></i>
+                        <i class="ms ms-u"></i>
+                        <i class="ms ms-r"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BRUW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-w"></i>
+                        <i class="ms ms-u"></i>
+                        <i class="ms ms-b"></i>
+                        <i class="ms ms-r"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BGRU">
+                    <h3>
+                      <span>
+                        <i class="ms ms-u"></i>
+                        <i class="ms ms-b"></i>
+                        <i class="ms ms-r"></i>
+                        <i class="ms ms-g"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BGRW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-b"></i>
+                        <i class="ms ms-r"></i>
+                        <i class="ms ms-g"></i>
+                        <i class="ms ms-w"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="GRUW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-r"></i>
+                        <i class="ms ms-g"></i>
+                        <i class="ms ms-w"></i>
+                        <i class="ms ms-u"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BGUW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-g"></i>
+                        <i class="ms ms-w"></i>
+                        <i class="ms ms-u"></i>
+                        <i class="ms ms-b"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="BGRUW">
+                    <h3>
+                      <span>
+                        <i class="ms ms-w"></i>
+                        <i class="ms ms-u"></i>
+                        <i class="ms ms-b"></i>
+                        <i class="ms ms-r"></i>
+                        <i class="ms ms-g"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                  <div class="combination" data-combination="C">
+                    <h3>
+                      <span>
+                        <i class="ms ms-c"></i> </span
+                      ><span class="total">0</span>
+                    </h3>
+                    <ul></ul>
+                  </div>
+                </div>
+                <div class="chUserActionContainer">
+                  <ul>
+                    <li><button class="userAction clearList">Clear list</button></li>
+                    <li>
+                      <button class="userAction undoButton" title="Undo">
+                        <i class="ms ms-untap undo"></i>
+                      </button>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <button class="userAction disabled" title="This is still being developed" disabled>
+                        <span>See in-depth statistics</span>
+                      </button>
+                    </li>
+                    <li class="exportButtonHolder exportToMoxfield">
+                      <button class="userAction">
+                        <span>Export to Moxfield</span>
+                        <i class="moxfield"></i>
+                      </button>
+                    </li>
+                    <li class="exportButtonHolder exportToArchidekt">
+                      <button class="userAction">
+                        <span>Export to Archidekt</span>
+                        <i class="archidekt"></i>
+                      </button>
+                    </li>
+                    <li class="">
+                      <button class="userAction copyAsTxt"><span>Copy to clipboard</span></button>
+                    </li>
+                    <li class="">
+                      <button class="userAction downloadAsTxt export"><span>Download as .txt</span></button>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </main>
     </div>
-    
-        <footer>
+
+    <footer>
       <div class="wizards">
         <p>Commander.Land is not produced by or endorsed by Wizards of the Coast.</p>
-        <p>All card images, mana symbols, and Oracle text are copyright Wizards of the Coast and are used under the Wizards of the Coast Fan Content Policy. ( <a href="https://magicthegathering.com/">https://magicthegathering.com/</a>) </p>
-        <p>Background art: Karplusan Forest from Dominaria United by Sam Burley for Wizards of the Coast. ( <a href="https://twitter.com/samburleyart">@samburleyart</a>) </p>
-        <p>The Keyrune and Mana fonts by Andrew Gioia ( <a href="https://mana.andrewgioia.com/">https://mana.andrewgioia.com/</a>) </p>
-        <p>The Keyrune and Mana fonts are licensed under the the SIL OFL 1.1 ( <a href="http://scripts.sil.org/OFL">http://scripts.sil.org/OFL</a>) </p>
-        <p>Keyrune and Mana CSS, LESS, and Sass files are licensed under the MIT License ( <a href="http://opensource.org/licenses/mit-license.htm">http://opensource.org/licenses/mit-license.htm</a>) </p>
+        <p>
+          All card images, mana symbols, and Oracle text are copyright Wizards of the Coast and are used under the
+          Wizards of the Coast Fan Content Policy. (
+          <a href="https://magicthegathering.com/">https://magicthegathering.com/</a>)
+        </p>
+        <p>
+          Background art: Karplusan Forest from Dominaria United by Sam Burley for Wizards of the Coast. (
+          <a href="https://twitter.com/samburleyart">@samburleyart</a>)
+        </p>
+        <p>
+          The Keyrune and Mana fonts by Andrew Gioia (
+          <a href="https://mana.andrewgioia.com/">https://mana.andrewgioia.com/</a>)
+        </p>
+        <p>
+          The Keyrune and Mana fonts are licensed under the the SIL OFL 1.1 (
+          <a href="http://scripts.sil.org/OFL">http://scripts.sil.org/OFL</a>)
+        </p>
+        <p>
+          Keyrune and Mana CSS, LESS, and Sass files are licensed under the MIT License (
+          <a href="http://opensource.org/licenses/mit-license.htm">http://opensource.org/licenses/mit-license.htm</a>)
+        </p>
       </div>
       <div class="buffer"></div>
       <div class="siteMap">
@@ -755,60 +804,70 @@
         <div>
           <ul class="socials">
             <li>
-              <a href="https://discord.com/invite/2RgU9wRTdu" class="social discord" aria-label="Link to join the Discord server">
-                <img src="img/logos/discord.svg" alt="Logo">
+              <a
+                href="https://discord.com/invite/2RgU9wRTdu"
+                class="social discord"
+                aria-label="Link to join the Discord server">
+                <img src="img/logos/discord.svg" alt="Logo" />
               </a>
             </li>
             <li>
-              <a href="https://patreon.com/user?u=96638019" class="social patreon" aria-label="Link to join our Patreon">
-                <img src="img/logos/patreon.svg" alt="Logo">
+              <a
+                href="https://patreon.com/user?u=96638019"
+                class="social patreon"
+                aria-label="Link to join our Patreon">
+                <img src="img/logos/patreon.svg" alt="Logo" />
               </a>
             </li>
           </ul>
-          <a href="" class="logo" aria-label="Link to reload page" tabindex="-1">
-          </a>
+          <a href="" class="logo" aria-label="Link to reload page" tabindex="-1"> </a>
         </div>
       </div>
       <div class="copyright">
-        <span>All other content © 2023 Commander.Land. <br>Designed and developed by NirDine ( <a href="https://nirdine.com">https://NirDine.com</a>) </span>
+        <span
+          >All other content © 2023 Commander.Land. <br />Designed and developed by NirDine (
+          <a href="https://nirdine.com">https://NirDine.com</a>)
+        </span>
       </div>
     </footer>
-    
+
     <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', function() {
-        const disclaimerBtn = document.querySelector('.wip-disclaimer .wip-accept');
-        const wipDisclaimerAccepted = localStorage.getItem('wipDisclaimerAccepted');
+      document.addEventListener("DOMContentLoaded", function () {
+        const disclaimerBtn = document.querySelector(".wip-disclaimer .wip-accept");
+        const wipDisclaimerAccepted = localStorage.getItem("wipDisclaimerAccepted");
 
         if (disclaimerBtn) {
-          disclaimerBtn.addEventListener('click', function() {
-            const disclaimer = document.querySelector('.wip-disclaimer');
+          disclaimerBtn.addEventListener("click", function () {
+            const disclaimer = document.querySelector(".wip-disclaimer");
             if (disclaimer) {
-              disclaimer.classList.add('hidden');
-              localStorage.setItem('wipDisclaimerAccepted', 'true');
+              disclaimer.classList.add("hidden");
+              localStorage.setItem("wipDisclaimerAccepted", "true");
             }
           });
         }
 
         if (!wipDisclaimerAccepted) {
-          const disclaimer = document.querySelector('.wip-disclaimer');
+          const disclaimer = document.querySelector(".wip-disclaimer");
           if (disclaimer) {
-            disclaimer.style.display = 'flex';
+            disclaimer.style.display = "flex";
           }
         }
       });
     </script>
 
-
     <div class="wip-disclaimer">
-      <p>This site is currently under construction. While some of the features work, there will be bugs. Recommendation data is rudimentary while we develop it further.
-     <br>
-      If you have any feedback, you can contact us at <a href="mailto:hi@nirdine.com">hi@nirdine.com</a>.</p>
+      <p>
+        This site is currently under construction. While some of the features work, there will be bugs. Recommendation
+        data is rudimentary while we develop it further.
+        <br />
+        If you have any feedback, you can contact us at <a href="mailto:hi@nirdine.com">hi@nirdine.com</a>.
+      </p>
 
       <button class="wip-accept">Okay</button>
     </div>
-    
+
     <!-- JQUERY  -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- MOBILE MENU -->
     <script type="text/javascript" src="js/menuHandler.js"></script>
@@ -826,19 +885,19 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
     <!-- CHART BUILDER -->
     <script type="text/javascript" src="js/charts.js" defer></script>
-    
+
     <script>
-      $(function() {
+      $(function () {
         $(document).tooltip();
       });
     </script>
     <script type="text/javascript" src="js/analyzerPage.js" defer></script>
     <script type="text/javascript">
-      document.addEventListener('DOMContentLoaded', function() {
-        if (typeof populateCardLists === 'function') {
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof populateCardLists === "function") {
           populateCardLists();
         } else {
-          console.error('populateCardLists function not found. Ensure js/analyzerPage.js is loaded correctly.');
+          console.error("populateCardLists function not found. Ensure js/analyzerPage.js is loaded correctly.");
         }
       });
     </script>

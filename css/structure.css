@@ -1588,20 +1588,55 @@ gap: 10px;
   
     .manaBaseHealthContainer {
       display: grid;
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 1fr 1fr;
       width: 100%;
       gap: 1em;
       
       .recommended {
+        
+        &:has(.tappedLandContainer){
+          flex-direction: column;
+          
+          h4 {
+            padding: 1em 0 0 1em;
+          }
+        }
 
         .taplandMeter {
-          display: flex;
           flex-direction: row;
           align-items: center;
           gap: 1ch;
           
           .progress { 
           width: 100%;
+            max-width: 100%;
+            padding: 0;
+            
+            &:has(.progress-bar-W){
+                background-color: rgba(180, 171, 176, 0.2);
+            }
+            &:has(.progress-bar-U){
+                background-color: rgba(180, 171, 176, 0.2);
+            }
+            &:has(.progress-bar-B){
+                background-color: rgba(180, 171, 176, 0.2);
+            }
+            &:has(.progress-bar-R){
+                background-color: rgba(180, 171, 176, 0.2);
+            }
+            &:has(.progress-bar-G){
+                background-color: rgba(180, 171, 176, 0.2);
+            }
+            &:has(.progress-bar-C){
+                background-color: rgba(180, 171, 176, 0.2);
+            }
+
+            
+            
+            
+            .progress-bar{
+              padding: 0;
+            }
           }
           progress { 
             flex: 1;

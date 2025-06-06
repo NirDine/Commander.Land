@@ -10,11 +10,23 @@ function createChart() {
   const colorRecommendations = storedColorRecommendations ? JSON.parse(storedColorRecommendations) : [];
 
   // Create a set of recommended colors for quick lookup
-  const recommendedColorsSet = new Set(colorRecommendations.map(rec => rec.color));
+  const recommendedColorsSet = new Set(
+    (Array.isArray(colorRecommendations) ? colorRecommendations : [])
+      .filter(rec => rec && rec.result > 0) // Ensure rec and rec.result are valid and result > 0
+      .map(rec => rec.color)
+  );
 
   // Prepare data for the charts
   const labels = Object.keys(manaColorCounts).filter(color => recommendedColorsSet.has(color));
-  const dataValues = labels.map(color => manaColorCounts[color]);
+  const dataValues = labels.map(color => {
+    const actualProduced = manaColorCounts[color] || 0;
+    // Ensure colorRecommendations is defined and is an array before calling find
+    const recommendationEntry = Array.isArray(colorRecommendations) 
+                               ? colorRecommendations.find(rec => rec.color === color) 
+                               : null;
+    const reductionAmount = recommendationEntry ? (recommendationEntry.reduction || 0) : 0;
+    return actualProduced + reductionAmount;
+  });
 
   // Prepare filtered data for the first Polar Area chart (foreground chart)
   const data1 = {

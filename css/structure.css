@@ -688,11 +688,21 @@ mark {
     }
 }
 
+
+
 .recommended {
        display: none;
        flex-direction: column;
 
 }
+
+.recommendedContainer {
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
 
 .recommended {
      
@@ -714,6 +724,40 @@ mark {
 
     
     } 
+
+  li {
+    display: flex;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    gap: 0.5ch;
+    align-items: center;
+    span {
+      display: flex;
+      align-items: center;
+    }
+    .reducedBy {
+    font-size: 9.6pt;
+  }
+  }
+  
+  .analysisButtonHolder {
+    .analysisButton { 
+      display: flex;
+      align-items: center;
+      gap: 1ch;
+      color: var(--white);
+      background-color: var(--accent);
+      width: fit-content;
+      padding: 1em 2em;
+        
+    
+    }
+    
+    
+  }
+  
+  
+  
 }
 
 .recommended .recommendedManaPips,
@@ -1339,10 +1383,6 @@ gap: 10px;
 
 .chUserActionContainer ul:first-child li:not(.undo) {
     width: 100%;
-    width: -moz-available;          /* WebKit-based browsers will ignore this. */
-    width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
-    width: fill-available;
-
 }
 
 .chUserActionContainer ul:first-child li:not(.undo) button:not(:has(.undo)) {
@@ -1352,6 +1392,7 @@ gap: 10px;
 .chUserActionContainer ul:first-child li:has(.undo)  {
 
     width:70px;
+    
 
 
 }
@@ -1377,7 +1418,7 @@ gap: 10px;
 .chUserActionContainer ul li.exportButtonHolder {
 }
 
-.chUserActionContainer ul li.exportButtonHolder button {
+.chUserActionContainer ul li.exportButtonHolder button  {
    display: grid;
    grid-template-columns: 1fr 20px;
     align-items: center;
@@ -1428,8 +1469,15 @@ gap: 10px;
     border: 0px;
     cursor: pointer;
     text-align: left;
-}
+  
 
+}
+  a.userAction {
+      display: flex;
+    align-items: center;
+    font-size: 0.9em;
+    height: 60px;
+  }
 
 
 #cardHolder:has(.dropdown-sub:checked) {
@@ -1570,7 +1618,66 @@ gap: 10px;
 .analyzer {
   
   color: var(--contrast);
-    
+  
+    .manaBaseHealthContainer {
+      display: grid;
+      grid-template-columns: 1fr 2fr ;
+      width: 100%;
+      gap: 1em;
+      
+      .recommended {
+        
+        &:has(.tappedLandContainer){
+          flex-direction: column;
+          
+          h4 {
+            padding: 1em 0 0 1em;
+          }
+        }
+
+        .taplandMeter {
+          flex-direction: row;
+          align-items: center;
+          gap: 1ch;
+          
+          .progress { 
+          width: 100%;
+            max-width: 100%;
+            padding: 0;
+            
+            &:has(.progress-bar-W){
+                background-color: rgba(180, 171, 176, 0.2);
+            }
+            &:has(.progress-bar-U){
+                background-color: rgba(180, 171, 176, 0.2);
+            }
+            &:has(.progress-bar-B){
+                background-color: rgba(180, 171, 176, 0.2);
+            }
+            &:has(.progress-bar-R){
+                background-color: rgba(180, 171, 176, 0.2);
+            }
+            &:has(.progress-bar-G){
+                background-color: rgba(180, 171, 176, 0.2);
+            }
+            &:has(.progress-bar-C){
+                background-color: rgba(180, 171, 176, 0.2);
+            }
+
+            
+            
+            
+            .progress-bar{
+              padding: 0;
+            }
+          }
+          progress { 
+            flex: 1;
+          }
+        }
+      }
+    }
+
     .content {
         width: 100%;
         padding: 0px;
@@ -1603,7 +1710,7 @@ gap: 10px;
       .cardListWrapper {
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(auto-fit, minmax(244px, auto));
+        grid-template-columns: repeat(auto-fit, minmax(244px, 1fr));
         gap: 0.5em;
         
         .cardList {
@@ -1651,6 +1758,7 @@ gap: 10px;
                 width: 100%;
                 justify-content: space-between;
                 align-items: center;
+                color:  var(--contrast);
                 
                 span:first-child {
                   display: flex;
@@ -1671,7 +1779,9 @@ gap: 10px;
               .cardName {
                 font-size: 13px;
               }
+              .cost {
 
+              }
             }
           }
           
@@ -1683,8 +1793,7 @@ gap: 10px;
     }
 }
 
-i.ms-1, i.ms-2, i.ms-3, i.ms-4, i.ms-5, i.ms-6, i.ms-7, i.ms-8, i.ms-9, i.ms-10, i.ms-x {
-  border-radius: 100%;
-  padding: 3px;
-  font-size: 10px;
+/* Hide .cardList elements by default for the analyzer page */
+.analyzer .cardList {
+  display: none;
 }

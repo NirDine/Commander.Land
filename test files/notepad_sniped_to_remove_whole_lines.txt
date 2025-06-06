@@ -1,1 +1,1 @@
-^\h*(?-i)textless(?-s).*\R
+^\h*(?-i)"oracle_id(?-s).*\R

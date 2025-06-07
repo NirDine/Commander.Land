@@ -762,11 +762,15 @@ mark {
 
 .recommended .recommendedManaPips,
 .recommended .recommendedLandCount{
-    font-size: 1.1em;
-    font-weight: 500;
+
     position: relative;
     top: 1px;
+}
 
+.rec {
+      font-size: 1.1em;
+    font-weight: 500;
+    color: var(--accent);
 }
 
 

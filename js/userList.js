@@ -417,14 +417,24 @@ function updateColorTracker(colorRecommendations) {
     const icon = $('<i>', { class: `msRec ms  ms-cost ms-${lowerCaseColor}` });
     pipWrapper.append(icon); // Append icon to the same wrapper
     
-    const countSpan = $('<span>', { text: finalResult });
+    const nonLandUserCheckbox = $('#include-nonlands'); 
+    
+    const countSpan = $('<span>', { text: originalResult });
+    
+    if (nonLandUserCheckbox.checked) {
+        const countSpan = $('<span>', { text: finalResult }); 
+      
+            // Only add reduction span if there was a reduction
+      if (reductionThisColor > 0) {
+          const reductionSpan = $('<span>', { class: 'reducedBy', text: `(- ${reductionThisColor} from non-lands)` });
+          pipWrapper.append(reductionSpan);
+      }
+    }
+    
+
     pipWrapper.append(countSpan);
 
-    // Only add reduction span if there was a reduction
-    if (reductionThisColor > 0) {
-        const reductionSpan = $('<span>', { class: 'reducedBy', text: `(${originalResult} - ${reductionThisColor} non-lands)` });
-        pipWrapper.append(reductionSpan);
-    }
+
     
    
 
@@ -442,6 +452,8 @@ function updateColorTracker(colorRecommendations) {
 
   updateChart(); // This call remains
 }
+
+
 
 
 // --- START OF TAPPED LAND METRICS CALCULATION ---
@@ -624,5 +636,13 @@ function updateTappedLandsDisplay() {
     console.error('[TAPLAND_METERS] Error in updateTappedLandsDisplay:', error);
   }
 }
+
+
+function includeNonLandsCheckEvent() {
+  const localStorageColorRecommendations= localStorage.getItem(colorRecommendations);
+  updateColorTracker(localStorageColorRecommendations);
+
+}
+
 
 updateTappedLandsDisplay();

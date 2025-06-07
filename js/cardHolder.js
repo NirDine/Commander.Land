@@ -219,7 +219,7 @@ function updateManaColorProgress() {
   const storedRecLandCount = localStorage.getItem('recommendedLandCount');
   Object.entries(colorCounts).forEach(([color, count]) => {
     const totalColorCount = Object.values(colorCounts).reduce((total, count) => total + count, 0);
-    const percentage = totalColorCount === 0 ? 0 : Math.round((count / storedRecLandCount) * 100);
+    const percentage = totalColorCount === 0 ? 0 : Math.round((count / totalSelectedCards) * 100);
     const progressBar = $(`.chFooter .progress-bar-${color}`);
 
     if (progressBar.length) {

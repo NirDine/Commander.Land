@@ -2,7 +2,7 @@ let myPolarAreaChart; // Store the chart instance globally
 
 function createChart() {
   // Read checkbox state from localStorage
-  const includeNonLands = localStorage.getItem('includeNonLandsPreference') === 'true';
+  const includeAllRamp = localStorage.getItem('includeNonLandsPreference') === 'true'; // Renamed variable
 
   // Retrieve and parse mana color counts from localStorage
   const storedManaColorCounts = localStorage.getItem('manaColorCounts');
@@ -22,27 +22,13 @@ function createChart() {
   // Prepare data for the charts
   const labels = Object.keys(manaColorCounts).filter(color => recommendedColorsSet.has(color));
   const dataValues = labels.map(color => {
-    const actualProduced = manaColorCounts[color] || 0;
-    // Ensure colorRecommendations is defined and is an array before calling find
-    const recommendationEntry = Array.isArray(colorRecommendations) 
-                               ? colorRecommendations.find(rec => rec.color === color) 
-                               : null;
-    // const reductionAmount = recommendationEntry ? (recommendationEntry.reduction || 0) : 0; // Original line
-    let reductionToApply = 0;
-    if (recommendationEntry) {
-      if (includeNonLands) {
-        reductionToApply = recommendationEntry.totalReduction || 0;
-      } else {
-        reductionToApply = recommendationEntry.reductionLandSearchers || 0;
-      }
-    }
-    return actualProduced + reductionToApply; // actualProduced is from manaColorCounts, which should be the "deck" value before any "required" reductions
+    return manaColorCounts[color] || 0; // Directly use the count from deck
   });
 
   // Prepare filtered data for the first Polar Area chart (foreground chart)
   const data1 = {
     label: 'Mana sources in deck',
-    data: dataValues,
+    data: dataValues, // dataValues is now simplified
     backgroundColor: labels.map(color => {
       switch(color) {
         case 'W': return '#e7deb5'; // White
@@ -66,16 +52,16 @@ function createChart() {
       // return recommendation ? recommendation.result : 0; // Original line (result was originalResult)
       let requiredPips = 0;
       if (recommendation) {
-        if (includeNonLands) {
+        if (includeAllRamp) { // Checkbox checked
           requiredPips = recommendation.finalResult || 0;
-        } else {
-          // Calculate original pips minus only land searcher reductions
-          requiredPips = (recommendation.originalResult || 0) - (recommendation.reductionLandSearchers || 0);
-          requiredPips = Math.max(0, requiredPips); // Ensure not negative
+        } else { // Checkbox unchecked
+          requiredPips = recommendation.originalResult || 0;
         }
+        requiredPips = Math.max(0, requiredPips); // Ensure not negative
       }
       return requiredPips;
     }),
+    // The backgroundColor logic remains the same
     backgroundColor: labels.map(color => {
       switch(color) {
         case 'W': return 'rgba(231, 222, 181, 0.5)'; // Semi-transparent White

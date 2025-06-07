@@ -410,15 +410,17 @@ function updateColorTracker(colorRecommendations) {
     }
 
     const includeAllRamp = $('#include-nonlands').prop('checked');
-    const { originalResult, finalResult, totalReduction } = colorRecommendation; // Destructure relevant fields
+    // Destructure all potentially needed fields, especially reductionProducers and reductionLandSearchers
+    const { originalResult, finalResult, reductionProducers, reductionLandSearchers } = colorRecommendation; 
 
     let displayedPipValue;
     let reductionText = "";
 
     if (includeAllRamp) {
         displayedPipValue = finalResult;
-        if (totalReduction > 0) {
-            reductionText = `(- ${totalReduction} ramp)`;
+        const actualTotalReduction = (reductionProducers || 0) + (reductionLandSearchers || 0);
+        if (actualTotalReduction > 0) {
+            reductionText = `(- ${actualTotalReduction} from ramp)`;
         }
     } else {
         displayedPipValue = originalResult;
@@ -437,13 +439,15 @@ function updateColorTracker(colorRecommendations) {
     pipWrapper.append(icon);
     
     const countSpan = $('<span>', { text: displayedPipValue });
+
     
+    pipWrapper.append(countSpan);
+    
+        
     if (reductionText) {
         const reductionSpan = $('<span>', { class: 'reducedBy', text: reductionText });
         pipWrapper.append(reductionSpan);
     }
-    
-    pipWrapper.append(countSpan);
     
     pipIconsContainer.append(pipWrapper);
   });

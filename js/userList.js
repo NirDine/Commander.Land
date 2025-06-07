@@ -171,6 +171,10 @@ const analyzedData = responseData.map(card => {
   // Update UI for ramp count if the element exists and is used
   // $(`.recommended .manaProducers`).text('(' + ramp + ')'); // This line might be updated/moved later
 
+  if (typeof ramp !== 'undefined') {
+    $(`.recommended .manaProducers`).text('(' + ramp + ')');
+  }
+
   // Load recommendationsData from the recommendations.json file
   $.getJSON('data/recommendations.json', function(data) {
     const recommendationsData = data;
@@ -318,9 +322,6 @@ if (storedResponseData) {
   // This assumes 'ramp' from the first block is accessible here.
   // If they are in different scopes, this needs proper handling (e.g. by ensuring calculations happen in order and variables are passed or stored).
   // For now, let's assume `ramp` is accessible.
-  if (typeof ramp !== 'undefined') {
-    $(`.recommended .manaProducers`).text('(' + ramp + ')');
-  }
 
   $(`.recommended .recommendedLandCount`).text(recommendedLandCount);
   $(`.recommended .recommendedTotalCards`).text('(' + NonLandCardsTotal + ')');

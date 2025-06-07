@@ -1,6 +1,9 @@
 let myPolarAreaChart; // Store the chart instance globally
 
 function createChart() {
+  // Read checkbox state from localStorage
+  const includeNonLands = localStorage.getItem('includeNonLandsPreference') === 'true';
+
   // Retrieve and parse mana color counts from localStorage
   const storedManaColorCounts = localStorage.getItem('manaColorCounts');
   const manaColorCounts = storedManaColorCounts ? JSON.parse(storedManaColorCounts) : {};
@@ -24,8 +27,16 @@ function createChart() {
     const recommendationEntry = Array.isArray(colorRecommendations) 
                                ? colorRecommendations.find(rec => rec.color === color) 
                                : null;
-    const reductionAmount = recommendationEntry ? (recommendationEntry.reduction || 0) : 0;
-    return actualProduced + reductionAmount;
+    // const reductionAmount = recommendationEntry ? (recommendationEntry.reduction || 0) : 0; // Original line
+    let reductionToApply = 0;
+    if (recommendationEntry) {
+      if (includeNonLands) {
+        reductionToApply = recommendationEntry.totalReduction || 0;
+      } else {
+        reductionToApply = recommendationEntry.reductionLandSearchers || 0;
+      }
+    }
+    return actualProduced + reductionToApply; // actualProduced is from manaColorCounts, which should be the "deck" value before any "required" reductions
   });
 
   // Prepare filtered data for the first Polar Area chart (foreground chart)
@@ -52,7 +63,18 @@ function createChart() {
     label: 'Mana sources required',
     data: labels.map(color => {
       const recommendation = colorRecommendations.find(rec => rec.color === color);
-      return recommendation ? recommendation.result : 0;
+      // return recommendation ? recommendation.result : 0; // Original line (result was originalResult)
+      let requiredPips = 0;
+      if (recommendation) {
+        if (includeNonLands) {
+          requiredPips = recommendation.finalResult || 0;
+        } else {
+          // Calculate original pips minus only land searcher reductions
+          requiredPips = (recommendation.originalResult || 0) - (recommendation.reductionLandSearchers || 0);
+          requiredPips = Math.max(0, requiredPips); // Ensure not negative
+        }
+      }
+      return requiredPips;
     }),
     backgroundColor: labels.map(color => {
       switch(color) {

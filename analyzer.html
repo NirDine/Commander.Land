@@ -240,14 +240,22 @@
           </p>
         </div>
 
-              <div class="recommended hidden" style="--hiddenCount: 12;">
+        <div class="recommended hidden" style="--hiddenCount: 12;">
           <div class="recommendedContainer">
             <div class="info">
                <h4>Recommendations</h4>
-               <p>After analyzing your deck's mana values, non-land mana producers under 3 mana <span class="manaProducers"></span>, and total nonland cards <span class="recommendedTotalCards"></span>, we've determined that your optimal land count is: <span class="recommendedLandCount"></span>.</p>
-               <p>To be able to play all your cards consistently, you need additional mana sources of the following colors:<span class="recommendedManaPipIcons"></span> </p>
+               <p>After analyzing your deck's mana values, non-land mana producers under 3 mana <span class=" manaProducers"></span>, and total nonland cards <span class=" recommendedTotalCards"></span>, we've determined that your optimal land count is: <span class="rec recommendedLandCount"></span>.</p>
+               <p>To be able to play all your cards consistently, you need to produce: <span class="recommendedManaPipIcons"></span> </p>
+               <div style="display: flex; flex-direction: row; align-items: center; gap: 1ch; margin-left: 1.25em;">
+                  <input type="checkbox" id="include-nonlands" name="include-nonlands" style="position: relative; left: 0; opacity: 1; pointer-events: auto;">
+                  <label class="include-nonlands" for="include-nonlands">
+                    <span>Include non-land mana producers</span>
+                </label>
+               </div>
+
+               
            </div>
-              <div class="analysisButtonHolder"><a href="/buffet.html" class="analysisButton"><i class="ms ms-land"></i> <span>Go back to explorer</span></a></div>
+              <div class="analysisButtonHolder"><a href="/analyzer.html" class="analysisButton"><i class="ms ms-land"></i> <span>See in-depth analysis</span></a></div>
           </div>
            <div class="chartHolder">
               <canvas height="402" width="402" id="myChart"></canvas>
@@ -260,9 +268,9 @@
               <h4>Taplands</h4>
               
               <p>
-                We've found a total of <span class="totalTapLands">Error</span> lands that enter the battlefield tapped in your deck.
+                We've found a total of <span class="rec  totalTapLands">Error</span> lands that enter the battlefield tapped in your deck.
               </p>
-              <p>For a deck with <span class="recommendedLandCount">Error</span> lands, an average cmc of <span class="averageCmc">Error</span>, and <span class="lowCmcCardCount">Error</span> low mana cards, you can safely run up to <span class="maxTapLands">Error</span> unconditional tap lands.
+              <p>For a deck with <span class=" recommendedLandCount">Error</span> lands, an average mana value of <span class=" averageCmc">Error</span>, and <span class=" lowCmcCardCount">Error</span> low mana cards, you can safely run up to <span class="rec  maxTapLands">Error</span> unconditional tap lands.
               </p>
 
               <p>Here's a breakdown of the tapped land sources in your deck:</p>
@@ -281,7 +289,7 @@
         <div class="recommended hidden" style="--hiddenCount: 12">
             <div class="info">
               <h4>Color weight</h4>
-              <p>Bellow you'll find a list of all the non-land cards in your deck ordered by what percentage of your deck's mana base would need to be of that color to play that card on curve consistently. </p>
+              <p>Bellow you'll find a list of all the non-land cards in your deck ordered by what percentage of your deck's mana base would need to be of that color to play that card on curve consistently. These percentage assume you're playing the full <span class="rec recommendedLandCount">Error</span> lands we recommend.</p>
             </div>
           </div>
         <div class="content">

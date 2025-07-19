@@ -1,13 +1,13 @@
 {
   "object": "list",
-  "total_cards": 1058,
-  "version": 3.1,
+  "total_cards": 1070,
+  "version": 3.2,
   "data": [
-  {
+    {
       "object": "card",
       "id": "15b3f35e-451e-4de6-a4f7-249287566964",
       "name": "Forest",
-	  "released_at": "1993-06-01",
+      "released_at": "1993-06-01",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/e/c/ecd6d8fb-780c-446c-a8bf-93386b22fe95.jpg?1690543325",
         "normal": "https://cards.scryfall.io/normal/front/e/c/ecd6d8fb-780c-446c-a8bf-93386b22fe95.jpg?1690543325",
@@ -29,7 +29,7 @@
       "object": "card",
       "id": "12b2aae2-a0b4-4c52-8a43-a4155527bae9",
       "name": "Island",
-	  "released_at": "1993-06-01",
+      "released_at": "1993-06-01",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/b/d/bd4b4da4-83f6-4280-880b-b6033308f2a2.jpg?1690543315",
         "normal": "https://cards.scryfall.io/normal/front/b/d/bd4b4da4-83f6-4280-880b-b6033308f2a2.jpg?1690543315",
@@ -50,7 +50,7 @@
       "object": "card",
       "id": "49f1fe4e-8da1-4879-8129-bd8a440a45be",
       "name": "Mountain",
-	  "released_at": "1993-06-01",
+      "released_at": "1993-06-01",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/8/8/8822db23-34dc-452a-92bc-a3ceee4db375.jpg?1690543322",
         "normal": "https://cards.scryfall.io/normal/front/8/8/8822db23-34dc-452a-92bc-a3ceee4db375.jpg?1690543322",
@@ -72,7 +72,7 @@
       "object": "card",
       "id": "1aaea970-a19c-400a-a8cb-5d30f9cc2672",
       "name": "Plains",
-	  "released_at": "1993-06-01",
+      "released_at": "1993-06-01",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/c/9/c9cd4d57-8c51-4fcf-8a9f-5d6a61c33e3d.jpg?1690543317",
         "normal": "https://cards.scryfall.io/normal/front/c/9/c9cd4d57-8c51-4fcf-8a9f-5d6a61c33e3d.jpg?1690543317",
@@ -94,7 +94,7 @@
       "object": "card",
       "id": "1c5d8a2c-b98a-4dae-8b89-4a2435fa7103",
       "name": "Swamp",
-	  "released_at": "1993-06-01",
+      "released_at": "1993-06-01",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/e/e/ee68f2cb-851b-4196-ac58-844d72628e6a.jpg?1690543320",
         "normal": "https://cards.scryfall.io/normal/front/e/e/ee68f2cb-851b-4196-ac58-844d72628e6a.jpg?1690543320",
@@ -116,7 +116,7 @@
       "object": "card",
       "id": "9cc070d3-4b83-4684-9caf-063e5c473a77",
       "name": "Wastes",
-	  "released_at": "1993-06-01",
+      "released_at": "1993-06-01",
       "image_uris": {
         "small": "https://cards.scryfall.io/small/front/6/9/69b215fe-0d97-4ca1-9490-174220fd454b.jpg?1562916234",
         "normal": "https://cards.scryfall.io/normal/front/6/9/69b215fe-0d97-4ca1-9490-174220fd454b.jpg?1562916234",
@@ -35052,7 +35052,6 @@
       ],
       "properties": [],
       "is_basic": true
-	  
     },
     {
       "object": "card",
@@ -46469,6 +46468,489 @@
         "2c3d2473-ff5d-4309-8194-e0b2def2ab65"
       ],
       "edhrec_rank": 9464,
+      "properties": []
+    },
+	{
+      "object": "card",
+      "id": "c634273a-94b0-4104-9d10-ae522ece1fc7",
+      "name": "Adagia, Windswept Bastion",
+      "lang": "en",
+      "released_at": "2025-08-01",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/6/c634273a-94b0-4104-9d10-ae522ece1fc7.jpg?1752060826",
+        "normal": "https://cards.scryfall.io/normal/front/c/6/c634273a-94b0-4104-9d10-ae522ece1fc7.jpg?1752060826",
+        "png": "https://cards.scryfall.io/png/front/c/6/c634273a-94b0-4104-9d10-ae522ece1fc7.png?1752060826"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Planet",
+      "oracle_text": "This land enters tapped.\n{T}: Add {W}.\nStation (Tap another creature you control: Put charge counters equal to its power on this Planet. Station only as a sorcery.)\nSTATION 12+\n{3}{W}, {T}: Create a token that's a copy of target artifact or enchantment you control, except it's legendary. Activate only as a sorcery.",
+      "colors": [],
+      "color_identity": [
+        "W"
+      ],
+      "keywords": [
+        "Station"
+      ],
+      "produced_mana": [
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal"
+      },
+      "reserved": false,
+      "game_changer": false,
+      "set": "eoe",
+      "set_name": "Edge of Eternities",
+      "rarity": "mythic",
+      "artist": "Adam Paquette",
+      "artist_ids": [
+        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+      ],
+      "edhrec_rank": 21975,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "247670d2-a7cd-4ed7-9c77-704c7962b815",
+      "name": "Command Bridge",
+      "lang": "en",
+      "released_at": "2025-08-01",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/4/247670d2-a7cd-4ed7-9c77-704c7962b815.jpg?1751540797",
+        "normal": "https://cards.scryfall.io/normal/front/2/4/247670d2-a7cd-4ed7-9c77-704c7962b815.jpg?1751540797",
+        "png": "https://cards.scryfall.io/png/front/2/4/247670d2-a7cd-4ed7-9c77-704c7962b815.png?1751540797"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "This land enters tapped.\nWhen this land enters, sacrifice it unless you tap an untapped permanent you control.\n{T}: Add one mana of any color.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G",
+        "R",
+        "U",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal"
+      },
+      "reserved": false,
+      "game_changer": false,
+      "set": "eoe",
+      "set_name": "Edge of Eternities",
+      "rarity": "common",
+      "artist": "Constantin Marin",
+      "artist_ids": [
+        "6cb0dc0c-4362-4c21-b23a-b2d7e096aa4f"
+      ],
+      "edhrec_rank": 25623,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "25b57aaf-04fa-463d-8516-40fccd24d6ed",
+      "name": "Eumidian Hatchery",
+      "lang": "en",
+      "released_at": "2025-08-01",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/5/25b57aaf-04fa-463d-8516-40fccd24d6ed.jpg?1752141229",
+        "normal": "https://cards.scryfall.io/normal/front/2/5/25b57aaf-04fa-463d-8516-40fccd24d6ed.jpg?1752141229",
+        "png": "https://cards.scryfall.io/png/front/2/5/25b57aaf-04fa-463d-8516-40fccd24d6ed.png?1752141229"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}, Pay 1 life: Add {B}. Put a hatchling counter on this land.\nWhen this land is put into a graveyard from the battlefield, for each hatchling counter on it, create a 1/1 black Insect creature token with flying.",
+      "colors": [],
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B"
+      ],
+      "legalities": {
+        "commander": "legal"
+      },
+      "reserved": false,
+      "game_changer": false,
+      "set": "eoc",
+      "set_name": "Edge of Eternities Commander",
+      "rarity": "rare",
+      "flavor_text": "Eumidians do their work knowing that only future generations will see it finished.",
+      "artist": "Valera Lutfullina",
+      "artist_ids": [
+        "76bc57c7-47c6-40c5-8797-8ffcce430ac7"
+      ],
+      "edhrec_rank": 19900,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "2fa09104-acbe-4410-b101-2fe6ac28efde",
+      "name": "Evendo, Waking Haven",
+      "lang": "en",
+      "released_at": "2025-08-01",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/2/f/2fa09104-acbe-4410-b101-2fe6ac28efde.jpg?1752522049",
+        "normal": "https://cards.scryfall.io/normal/front/2/f/2fa09104-acbe-4410-b101-2fe6ac28efde.jpg?1752522049",
+        "png": "https://cards.scryfall.io/png/front/2/f/2fa09104-acbe-4410-b101-2fe6ac28efde.png?1752522049"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Planet",
+      "oracle_text": "This land enters tapped.\n{T}: Add {G}.\nStation (Tap another creature you control: Put charge counters equal to its power on this Planet. Station only as a sorcery.)\nSTATION 12+\n{G}, {T}: Add {G} for each creature you control.",
+      "colors": [],
+      "color_identity": [
+        "G"
+      ],
+      "keywords": [
+        "Station"
+      ],
+      "produced_mana": [
+        "G"
+      ],
+      "legalities": {
+        "commander": "legal"
+      },
+      "reserved": false,
+      "game_changer": false,
+      "set": "eoe",
+      "set_name": "Edge of Eternities",
+      "rarity": "mythic",
+      "artist": "Adam Paquette",
+      "artist_ids": [
+        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+      ],
+      "edhrec_rank": 23794,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "d312f4ca-909a-47df-91dc-dfb63838b5f5",
+      "name": "Festering Thicket",
+      "lang": "en",
+      "released_at": "2025-08-01",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/d/3/d312f4ca-909a-47df-91dc-dfb63838b5f5.jpg?1752795912",
+        "normal": "https://cards.scryfall.io/normal/front/d/3/d312f4ca-909a-47df-91dc-dfb63838b5f5.jpg?1752795912",
+        "png": "https://cards.scryfall.io/png/front/d/3/d312f4ca-909a-47df-91dc-dfb63838b5f5.png?1752795912"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Forest",
+      "oracle_text": "({T}: Add {B} or {G}.)\nThis land enters tapped.\nCycling {2} ({2}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "legalities": {
+        "commander": "legal"
+      },
+      "reserved": false,
+      "game_changer": false,
+      "set": "eoc",
+      "set_name": "Edge of Eternities Commander",
+      "rarity": "rare",
+      "flavor_text": "Evendo's microbial life swiftly adapted to metabolize the leaking star fuel, devouring it like any other nourishment.",
+      "artist": "Jakob Eirich",
+      "artist_ids": [
+        "982d9460-f9b9-42f6-8a25-47afa7df22e9"
+      ],
+      "edhrec_rank": 20226,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "c6ab42e4-4c87-4fc1-b7a9-1c0ff7d791fb",
+      "name": "Glittering Massif",
+      "lang": "en",
+      "released_at": "2025-08-01",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/c/6/c6ab42e4-4c87-4fc1-b7a9-1c0ff7d791fb.jpg?1752795930",
+        "normal": "https://cards.scryfall.io/normal/front/c/6/c6ab42e4-4c87-4fc1-b7a9-1c0ff7d791fb.jpg?1752795930",
+        "png": "https://cards.scryfall.io/png/front/c/6/c6ab42e4-4c87-4fc1-b7a9-1c0ff7d791fb.png?1752795930"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain Plains",
+      "oracle_text": "({T}: Add {R} or {W}.)\nThis land enters tapped.\nCycling {2} ({2}, Discard this card: Draw a card.)",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [
+        "Cycling"
+      ],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal"
+      },
+      "reserved": false,
+      "game_changer": false,
+      "set": "eoc",
+      "set_name": "Edge of Eternities Commander",
+      "rarity": "rare",
+      "flavor_text": "Iridescent debris and chromatic chemical fires litter Kavaron with the beauty of destruction.",
+      "artist": "Cristi Balanescu",
+      "artist_ids": [
+        "c09ede88-a1b5-4a18-9895-dc8a965d28a5"
+      ],
+      "edhrec_rank": 20796,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "60f3ca25-9dcc-4781-bf7b-ab6736d8db29",
+      "name": "Kavaron, Memorial World",
+      "lang": "en",
+      "released_at": "2025-08-01",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/6/0/60f3ca25-9dcc-4781-bf7b-ab6736d8db29.jpg?1752856482",
+        "normal": "https://cards.scryfall.io/normal/front/6/0/60f3ca25-9dcc-4781-bf7b-ab6736d8db29.jpg?1752856482",
+        "png": "https://cards.scryfall.io/png/front/6/0/60f3ca25-9dcc-4781-bf7b-ab6736d8db29.png?1752856482"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Planet",
+      "oracle_text": "This land enters tapped.\n{T}: Add {R}.\nStation (Tap another creature you control: Put charge counters equal to its power on this Planet. Station only as a sorcery.)\nSTATION 12+\n{1}{R}, {T}, Sacrifice a land: Create a 2/2 colorless Robot artifact creature token, then creatures you control get +1/+0 and gain haste until end of turn.",
+      "colors": [],
+      "color_identity": [
+        "R"
+      ],
+      "keywords": [
+        "Station"
+      ],
+      "produced_mana": [
+        "R"
+      ],
+      "legalities": {
+        "commander": "legal"
+      },
+      "reserved": false,
+      "game_changer": false,
+      "set": "eoe",
+      "set_name": "Edge of Eternities",
+      "rarity": "mythic",
+      "artist": "Adam Paquette",
+      "artist_ids": [
+        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+      ],
+      "edhrec_rank": 25383,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "1595f80a-b566-49ce-a64f-4289443b1b8d",
+      "name": "Radiant Summit",
+      "lang": "en",
+      "released_at": "2025-08-01",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/5/1595f80a-b566-49ce-a64f-4289443b1b8d.jpg?1752158629",
+        "normal": "https://cards.scryfall.io/normal/front/1/5/1595f80a-b566-49ce-a64f-4289443b1b8d.jpg?1752158629",
+        "png": "https://cards.scryfall.io/png/front/1/5/1595f80a-b566-49ce-a64f-4289443b1b8d.png?1752158629"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Mountain Plains",
+      "oracle_text": "({T}: Add {R} or {W}.)\nThis land enters tapped unless you control two or more basic lands.",
+      "colors": [],
+      "color_identity": [
+        "R",
+        "W"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "R",
+        "W"
+      ],
+      "legalities": {
+        "commander": "legal"
+      },
+      "reserved": false,
+      "game_changer": false,
+      "set": "eoc",
+      "set_name": "Edge of Eternities Commander",
+      "rarity": "rare",
+      "flavor_text": "\"The Tapestry weaves worlds on its own. All we do is tend to the process.\"\n—Antioxa, Drix elder",
+      "artist": "Marco Gorlei",
+      "artist_ids": [
+        "b6476cc7-1576-47e8-9f6a-68d05b45cf62"
+      ],
+      "edhrec_rank": 19548,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "a997ff9f-045a-44a2-983d-f36414cef1ab",
+      "name": "Secluded Starforge",
+      "lang": "en",
+      "released_at": "2025-08-01",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/a/9/a997ff9f-045a-44a2-983d-f36414cef1ab.jpg?1752685392",
+        "normal": "https://cards.scryfall.io/normal/front/a/9/a997ff9f-045a-44a2-983d-f36414cef1ab.jpg?1752685392",
+        "png": "https://cards.scryfall.io/png/front/a/9/a997ff9f-045a-44a2-983d-f36414cef1ab.png?1752685392"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{2}, {T}, Tap X untapped artifacts you control: Target creature gets +X/+0 until end of turn. Activate only as a sorcery.\n{5}, {T}: Create a 2/2 colorless Robot artifact creature token.",
+      "colors": [],
+      "color_identity": [],
+      "keywords": [],
+      "produced_mana": [
+        "C"
+      ],
+      "legalities": {
+        "commander": "legal"
+      },
+      "reserved": false,
+      "game_changer": false,
+      "set": "eoe",
+      "set_name": "Edge of Eternities",
+      "rarity": "rare",
+      "flavor_text": "The heat of a sun condensed into a forge.",
+      "artist": "Chris Rahn",
+      "artist_ids": [
+        "7742047e-0f80-4c0f-a530-d07460165e86"
+      ],
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "aefb8c0d-2bc6-4bec-851e-0137b4abfb22",
+      "name": "Susur Secundi, Void Altar",
+      "lang": "en",
+      "released_at": "2025-08-01",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/a/e/aefb8c0d-2bc6-4bec-851e-0137b4abfb22.jpg?1752063016",
+        "normal": "https://cards.scryfall.io/normal/front/a/e/aefb8c0d-2bc6-4bec-851e-0137b4abfb22.jpg?1752063016",
+        "png": "https://cards.scryfall.io/png/front/a/e/aefb8c0d-2bc6-4bec-851e-0137b4abfb22.png?1752063016"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Planet",
+      "oracle_text": "This land enters tapped.\n{T}: Add {B}.\nStation (Tap another creature you control: Put charge counters equal to its power on this Planet. Station only as a sorcery.)\nSTATION 12+\n{1}{B}, {T}, Pay 2 life, Sacrifice a creature: Draw cards equal to the sacrificed creature's power. Activate only as a sorcery.",
+      "colors": [],
+      "color_identity": [
+        "B"
+      ],
+      "keywords": [
+        "Station"
+      ],
+      "produced_mana": [
+        "B"
+      ],
+      "legalities": {
+        "commander": "legal"
+      },
+      "reserved": false,
+      "game_changer": false,
+      "set": "eoe",
+      "set_name": "Edge of Eternities",
+      "rarity": "mythic",
+      "artist": "Adam Paquette",
+      "artist_ids": [
+        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+      ],
+      "edhrec_rank": 23510,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "11da39d6-cfa6-498d-91b1-11454cc7e5a3",
+      "name": "Uthros, Titanic Godcore",
+      "lang": "en",
+      "released_at": "2025-08-01",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/1/1/11da39d6-cfa6-498d-91b1-11454cc7e5a3.jpg?1752058975",
+        "normal": "https://cards.scryfall.io/normal/front/1/1/11da39d6-cfa6-498d-91b1-11454cc7e5a3.jpg?1752058975",
+        "png": "https://cards.scryfall.io/png/front/1/1/11da39d6-cfa6-498d-91b1-11454cc7e5a3.png?1752058975"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Planet",
+      "oracle_text": "This land enters tapped.\n{T}: Add {U}.\nStation (Tap another creature you control: Put charge counters equal to its power on this Planet. Station only as a sorcery.)\nSTATION 12+\n{U}, {T}: Add {U} for each artifact you control.",
+      "colors": [],
+      "color_identity": [
+        "U"
+      ],
+      "keywords": [
+        "Station"
+      ],
+      "produced_mana": [
+        "U"
+      ],
+      "legalities": {
+        "commander": "legal"
+      },
+      "reserved": false,
+      "game_changer": false,
+      "set": "eoe",
+      "set_name": "Edge of Eternities",
+      "rarity": "mythic",
+      "artist": "Adam Paquette",
+      "artist_ids": [
+        "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+      ],
+      "edhrec_rank": 19656,
+      "properties": []
+    },
+    {
+      "object": "card",
+      "id": "bac98f27-ef3e-45e0-87cb-0fb4325ae734",
+      "name": "Vernal Fen",
+      "lang": "en",
+      "released_at": "2025-08-01",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/b/a/bac98f27-ef3e-45e0-87cb-0fb4325ae734.jpg?1752122891",
+        "normal": "https://cards.scryfall.io/normal/front/b/a/bac98f27-ef3e-45e0-87cb-0fb4325ae734.jpg?1752122891",
+        "png": "https://cards.scryfall.io/png/front/b/a/bac98f27-ef3e-45e0-87cb-0fb4325ae734.png?1752122891"
+      },
+      "mana_cost": "",
+      "cmc": 0,
+      "type_line": "Land — Swamp Forest",
+      "oracle_text": "({T}: Add {B} or {G}.)\nThis land enters tapped unless you control two or more basic lands.",
+      "colors": [],
+      "color_identity": [
+        "B",
+        "G"
+      ],
+      "keywords": [],
+      "produced_mana": [
+        "B",
+        "G"
+      ],
+      "legalities": {
+        "commander": "legal"
+      },
+      "reserved": false,
+      "game_changer": false,
+      "set": "eoc",
+      "set_name": "Edge of Eternities Commander",
+      "rarity": "rare",
+      "flavor_text": "\"New things need room to grow. We prune time so the future can flourish.\"\n—Antioxa, Drix elder",
+      "artist": "Titus Lunter",
+      "artist_ids": [
+        "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
+      ],
+      "edhrec_rank": 19272,
       "properties": []
     }
   ]

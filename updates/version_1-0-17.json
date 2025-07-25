@@ -1,0 +1,10 @@
+{
+  "version": "1.0.17",
+  "date": "2025-07-25",
+  "changes": [
+    {
+      "type": "fix",
+      "message": "Fixed an issue where the color filters were capping the number of cards shown to 40 per color."
+    }
+  ]
+}

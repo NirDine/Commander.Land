@@ -56,9 +56,22 @@ async function fetchOriginalLands() {
 
 function compareAndDisplayNewCards() {
   const originalLandNames = new Set(originalLandsData.map((card) => card.name));
-  const newCards = scryfallData.filter(
+  let newCards = scryfallData.filter(
     (card) => !originalLandNames.has(card.name)
   );
+
+  newCards = newCards.filter((card) => {
+    if (card.card_faces && card.card_faces.length > 0) {
+      const frontFace = card.card_faces[0];
+      if (frontFace.mana_cost && frontFace.oracle_text && frontFace.oracle_text.toLowerCase().includes("transform")) {
+        return false;
+      }
+    }
+    return true;
+  });
+
+  const newCardsContainer = document.getElementById("new-cards-container");
+  newCardsContainer.querySelector("h2").textContent = `New Cards (${newCards.length})`;
 
   if (newCards.length === 0) {
     newCardsList.innerHTML = "<p>No new lands found.</p>";

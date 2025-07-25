@@ -233,6 +233,14 @@ function loadCards() {
 }
 
 // Function to filter cards based on search value, selected colors, and card properties
+function updateCardsDisplay() {
+  const selectedColorsCount = $('.color:checked').length;
+  const cardsToLoad = selectedColorsCount > 0 ? cardsPerPage * selectedColorsCount : cardsPerPage;
+
+  endIndex = startIndex + cardsToLoad;
+  loadCards();
+}
+
 function filterCards() {
   const searchValue = $('#search').val();
   const formattedSearchValue = formatCardName(searchValue);
@@ -293,9 +301,8 @@ function filterCards() {
   });
 
   startIndex = 0;
-  endIndex = cardsPerPage;
   cardSuggestions.empty(); // Clear the card pool
-  loadCards();
+  updateCardsDisplay();
 }
 
 // Initialize debouncer
@@ -479,14 +486,10 @@ $(window).on('scroll', function() {
   const windowOffset = $(window).scrollTop() + $(window).height();
 
   if (!$("#isAdded").is(":checked") && windowOffset >= cardSuggestionsOffset - offset) {
-    const selectedColorsCount = $('.color:checked').length;
-    const cardsToLoad = selectedColorsCount > 0 ? cardsPerPage * selectedColorsCount : cardsPerPage;
-
     startIndex += cardsPerPage;
-    endIndex = startIndex + cardsToLoad;
 
     if (filteredData && endIndex <= filteredData.length) {
-      loadCards();
+      updateCardsDisplay();
     }
   }
 });

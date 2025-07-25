@@ -1,0 +1,122 @@
+const SCRYFALL_API_URL =
+  "https://api.scryfall.com/cards/search?q=type%3Aland+game%3Apaper+legal%3Acommander+-is%3Areprint";
+const LANDS_JSON_PATH = "data/lands.json";
+
+const progressBar = document.getElementById("progress-bar");
+const progressText = document.getElementById("progress-text");
+const newCardsList = document.getElementById("new-cards-list");
+const downloadButton = document.getElementById("download-button");
+
+let scryfallData = [];
+let originalLandsData = [];
+
+async function fetchScryfallData(url) {
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+
+    scryfallData = scryfallData.concat(data.data);
+
+    if (data.has_more) {
+      const progress = (scryfallData.length / (scryfallData.length + data.total_cards)) * 100;
+      progressBar.value = progress;
+      progressText.textContent = `Fetching data... (${scryfallData.length} cards so far)`;
+      await new Promise((resolve) => setTimeout(resolve, 100));
+      await fetchScryfallData(data.next_page);
+    }
+  } catch (error) {
+    console.error("Error fetching Scryfall data:", error);
+    progressText.textContent = "Error fetching data from Scryfall.";
+  }
+}
+
+async function main() {
+  await fetchScryfallData(SCRYFALL_API_URL);
+  progressBar.value = 100;
+  progressText.textContent = "All data fetched!";
+
+  await fetchOriginalLands();
+  compareAndDisplayNewCards();
+}
+
+async function fetchOriginalLands() {
+  try {
+    const response = await fetch(LANDS_JSON_PATH);
+    const data = await response.json();
+    originalLandsData = data.data;
+  } catch (error) {
+    console.error("Error fetching original lands data:", error);
+  }
+}
+
+function compareAndDisplayNewCards() {
+  const originalLandNames = new Set(originalLandsData.map((card) => card.name));
+  const newCards = scryfallData.filter(
+    (card) => !originalLandNames.has(card.name)
+  );
+
+  if (newCards.length === 0) {
+    newCardsList.innerHTML = "<p>No new lands found.</p>";
+    downloadButton.disabled = false;
+    return;
+  }
+
+  newCards.forEach((card) => {
+    const cardElement = document.createElement("div");
+    cardElement.classList.add("card");
+    cardElement.innerHTML = `
+      <img src="${card.image_uris.small}" alt="${card.name}">
+      <p>${card.name}</p>
+      <input type="checkbox" id="${card.id}" name="new-card" value="${card.id}" checked>
+      <label for="${card.id}">Add to list</label>
+    `;
+    newCardsList.appendChild(cardElement);
+  });
+
+  downloadButton.disabled = false;
+}
+
+downloadButton.addEventListener("click", () => {
+  const newLands = Array.from(document.querySelectorAll('input[name="new-card"]:checked')).map(
+    (checkbox) => {
+      const cardId = checkbox.value;
+      const cardData = scryfallData.find((card) => card.id === cardId);
+      return {
+        object: cardData.object,
+        id: cardData.id,
+        name: cardData.name,
+        released_at: cardData.released_at,
+        image_uris: cardData.image_uris,
+        type_line: cardData.type_line,
+        oracle_text: cardData.oracle_text,
+        color_identity: cardData.color_identity,
+        keywords: cardData.keywords,
+        produced_mana: cardData.produced_mana,
+        edhrec_rank: cardData.edhrec_rank,
+        is_basic: false,
+        properties: [],
+      };
+    }
+  );
+
+  const updatedLandsData = [...originalLandsData, ...newLands];
+
+  const updatedJson = {
+    object: "list",
+    total_cards: updatedLandsData.length,
+    version: originalLandsData.version, // You might want to update this
+    data: updatedLandsData,
+  };
+
+  const dataStr =
+    "data:text/json;charset=utf-8," +
+    encodeURIComponent(JSON.stringify(updatedJson, null, 2));
+  const downloadAnchorNode = document.createElement("a");
+  downloadAnchorNode.setAttribute("href", dataStr);
+  downloadAnchorNode.setAttribute("download", "lands.json");
+  document.body.appendChild(downloadAnchorNode); // required for firefox
+  downloadAnchorNode.click();
+  downloadAnchorNode.remove();
+});
+
+main();

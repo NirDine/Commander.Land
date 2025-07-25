@@ -7,10 +7,18 @@ body {
   margin-bottom: 20px;
 }
 
-#new-cards-list {
+#new-cards-list, #updated-cards-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
+}
+
+.increase {
+  color: red;
+}
+
+.decrease {
+  color: green;
 }
 
 .card {

@@ -3,7 +3,6 @@ const cardsPerPage = 40;
 let currentPage = 1;
 let startIndex = 0;
 let endIndex = cardsPerPage;
-let cardsToLoad = cardsPerPage;
 const offset = 100; // Offset in pixels from the bottom of the container
 let data; // Declare the data variable
 let totalCards; // Declare the totalCards variable
@@ -293,11 +292,8 @@ function filterCards() {
     return matchesSearch && (isSubset || showCard);
   });
 
-  const selectedColorsCount = selectedColors.length;
-  cardsToLoad = selectedColorsCount > 0 ? cardsPerPage * selectedColorsCount : cardsPerPage;
-
   startIndex = 0;
-  endIndex = cardsToLoad;
+  endIndex = cardsPerPage;
   cardSuggestions.empty(); // Clear the card pool
   loadCards();
 }
@@ -483,8 +479,11 @@ $(window).on('scroll', function() {
   const windowOffset = $(window).scrollTop() + $(window).height();
 
   if (!$("#isAdded").is(":checked") && windowOffset >= cardSuggestionsOffset - offset) {
-    startIndex += cardsToLoad;
-    endIndex += cardsToLoad;
+    const selectedColorsCount = $('.color:checked').length;
+    const cardsToLoad = selectedColorsCount > 0 ? cardsPerPage * selectedColorsCount : cardsPerPage;
+
+    startIndex += cardsPerPage;
+    endIndex = startIndex + cardsToLoad;
 
     if (filteredData && endIndex <= filteredData.length) {
       loadCards();

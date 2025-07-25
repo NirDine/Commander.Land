@@ -292,8 +292,11 @@ function filterCards() {
     return matchesSearch && (isSubset || showCard);
   });
 
+  const selectedColorsCount = selectedColors.length;
+  const cardsToLoad = selectedColorsCount > 0 ? cardsPerPage * selectedColorsCount : cardsPerPage;
+
   startIndex = 0;
-  endIndex = cardsPerPage;
+  endIndex = cardsToLoad;
   cardSuggestions.empty(); // Clear the card pool
   loadCards();
 }

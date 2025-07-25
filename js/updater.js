@@ -99,71 +99,73 @@ function compareAndDisplayNewCards() {
 
 
   const updatedCards = [];
+  const cardsToUpdate = [];
+
   originalLandsData.forEach(originalCard => {
     const scryfallCard = scryfallData.find(card => card.name === originalCard.name);
-    if (scryfallCard) {
+    if (scryfallCard && !originalCard.is_basic) {
       let updated = false;
-      if (originalCard.edhrec_rank !== scryfallCard.edhrec_rank) {
-        originalCard.edhrec_rank = scryfallCard.edhrec_rank;
+      const originalRank = originalCard.edhrec_rank;
+      const originalPrice = originalCard.prices ? originalCard.prices.usd : null;
+
+      if (originalRank !== scryfallCard.edhrec_rank) {
         updated = true;
       }
       if (!originalCard.prices) {
         originalCard.prices = {};
       }
-      if (originalCard.is_basic) {
-        originalCard.prices.usd = 0;
-      }
-      else if (originalCard.prices.usd !== scryfallCard.prices.usd) {
-        originalCard.prices.usd = scryfallCard.prices.usd;
+      if (originalPrice !== scryfallCard.prices.usd) {
         updated = true;
       }
 
       if(updated) {
-        updatedCards.push(originalCard);
+        cardsToUpdate.push({
+          original: {...originalCard, prices: {...originalCard.prices}},
+          scryfall: scryfallCard,
+        });
+        originalCard.edhrec_rank = scryfallCard.edhrec_rank;
+        originalCard.prices.usd = scryfallCard.prices.usd;
       }
     }
   });
 
   const updatedCardsContainer = document.createElement('div');
-  updatedCardsContainer.innerHTML = `<h2>Updated Cards (${updatedCards.length})</h2><div id="updated-cards-list"></div>`;
+  updatedCardsContainer.innerHTML = `<h2>Updated Cards (${cardsToUpdate.length})</h2><div id="updated-cards-list"></div>`;
   document.body.insertBefore(updatedCardsContainer, downloadButton);
 
   const updatedCardsList = document.getElementById('updated-cards-list');
-  if (updatedCards.length === 0) {
+  if (cardsToUpdate.length === 0) {
     updatedCardsList.innerHTML = "<p>No cards to update.</p>";
   } else {
-    updatedCards.forEach((card) => {
-      const scryfallCard = scryfallData.find(sc => sc.name === card.name);
-      const originalCard = originalLandsData.find(oc => oc.name === card.name);
-
+    cardsToUpdate.forEach(({ original, scryfall }) => {
       const cardElement = document.createElement("div");
       cardElement.classList.add("card");
       let imageUri;
-      if (card.image_uris) {
-        imageUri = card.image_uris.small;
-      } else if (card.card_faces && card.card_faces[0].image_uris) {
-        imageUri = card.card_faces[0].image_uris.small;
+      if (original.image_uris) {
+        imageUri = original.image_uris.small;
+      } else if (original.card_faces && original.card_faces[0].image_uris) {
+        imageUri = original.card_faces[0].image_uris.small;
       } else {
         imageUri = "img/art/bg2.webp";
       }
 
-      const rankChange = scryfallCard.edhrec_rank - originalCard.edhrec_rank;
-      const priceChange = scryfallCard.prices.usd - originalCard.prices.usd;
+      const rankChange = scryfall.edhrec_rank - original.edhrec_rank;
+      const priceChange = scryfall.prices.usd - (original.prices ? original.prices.usd : 0);
 
-      let rankHtml = `EDHREC Rank: ${scryfallCard.edhrec_rank}`;
+      let rankHtml = `EDHREC Rank: ${scryfall.edhrec_rank}`;
       if(rankChange !== 0) {
-        rankHtml = `EDHREC Rank: <span class="${rankChange < 0 ? 'decrease' : 'increase'}"><del>${originalCard.edhrec_rank}</del> → ${scryfallCard.edhrec_rank}</span>`;
+        rankHtml = `EDHREC Rank: <span class="${rankChange > 0 ? 'increase' : 'decrease'}"><del>${original.edhrec_rank}</del> → ${scryfall.edhrec_rank}</span>`;
       }
 
-      let priceHtml = `Price: $${scryfallCard.prices.usd}`;
+      let priceHtml = `Price: $${scryfall.prices.usd}`;
       if(priceChange !== 0) {
-        priceHtml = `Price: <span class="${priceChange < 0 ? 'decrease' : 'increase'}"><del>$${originalCard.prices.usd}</del> → $${scryfallCard.prices.usd}</span>`;
+        priceHtml = `Price: <span class="${priceChange > 0 ? 'increase' : 'decrease'}"><del>$${original.prices.usd || 0}</del> → $${scryfall.prices.usd}</span>`;
       }
 
 
       cardElement.innerHTML = `
-        <img src="${imageUri}" alt="${card.name}">
-        <p>${card.name}</p>
+        <img src="${imageUri}" alt="${original.name}">
+        <p>${original.name}</p>
         <p>${rankHtml}</p>
         <p>${priceHtml}</p>
       `;

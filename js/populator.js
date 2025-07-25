@@ -110,22 +110,65 @@ function loadCards() {
   }
 
   let cardsToAdd = [];
-  const basicLandOrder = ["Plains", "Island", "Swamp", "Mountain", "Forest", "Wastes"];
 
-  const sortCards = (cards) => {
+  if ($("#isAdded").is(":checked")) {
+    // Filter relevantSelectedCards based on selectedCards and filteredData
+    let relevantSelectedCards = selectedCards
+      .map(cardName => filteredData.find(card => card.name === cardName))
+      .filter(card => card !== undefined); // Exclude undefined values
+
     const sortingKey = $('.sorting:checked').val();
     const rarityOrder = ['common', 'uncommon', 'rare', 'mythic'];
 
-    return cards.sort((a, b) => {
-      const aIsBasic = basicLandOrder.includes(a.name);
-      const bIsBasic = basicLandOrder.includes(b.name);
+    relevantSelectedCards.sort((a, b) => {
+      let comparison = 0;
+      let compA, compB;
+      const valA_name = String(a.name || '').toLowerCase();
+      const valB_name = String(b.name || '').toLowerCase();
 
-      if (aIsBasic && !bIsBasic) return -1;
-      if (!aIsBasic && bIsBasic) return 1;
-      if (aIsBasic && bIsBasic) {
-        return basicLandOrder.indexOf(a.name) - basicLandOrder.indexOf(b.name);
+      if (sortingKey === 'released_at') {
+        const dateA_val = a[sortingKey];
+        const dateB_val = b[sortingKey];
+        compA = dateA_val ? new Date(dateA_val).getTime() : null;
+        compB = dateB_val ? new Date(dateB_val).getTime() : null;
+        if (isNaN(compA)) compA = null;
+        if (isNaN(compB)) compB = null;
+        if (compA === null && compB === null) comparison = 0;
+        else if (compA === null) comparison = 1;
+        else if (compB === null) comparison = -1;
+        else comparison = compB - compA; // Descending
+      } else if (sortingKey === 'rarity') {
+        const rarityA = a[sortingKey] ? String(a[sortingKey]).toLowerCase() : 'zzzz';
+        const rarityB = b[sortingKey] ? String(b[sortingKey]).toLowerCase() : 'zzzz';
+        const aRarityIndex = rarityOrder.indexOf(rarityA) !== -1 ? rarityOrder.indexOf(rarityA) : rarityOrder.length;
+        const bRarityIndex = rarityOrder.indexOf(rarityB) !== -1 ? rarityOrder.indexOf(rarityB) : rarityOrder.length;
+        comparison = aRarityIndex - bRarityIndex;
+      } else if (sortingKey === 'name') {
+        compA = valA_name;
+        compB = valB_name;
+        comparison = compA.localeCompare(compB);
+      } else if (sortingKey === 'edhrec_rank') {
+        compA = (typeof a.edhrec_rank === 'number' && !isNaN(a.edhrec_rank)) ? a.edhrec_rank : Number.MAX_SAFE_INTEGER;
+        compB = (typeof b.edhrec_rank === 'number' && !isNaN(b.edhrec_rank)) ? b.edhrec_rank : Number.MAX_SAFE_INTEGER;
+        comparison = compA - compB;
+      } else {
+        compA = String(a[sortingKey] || '').toLowerCase();
+        compB = String(b[sortingKey] || '').toLowerCase();
+        comparison = compA.localeCompare(compB);
       }
 
+      if (comparison === 0) {
+        return valA_name.localeCompare(valB_name);
+      }
+      return comparison;
+    });
+    cardsToAdd = relevantSelectedCards.slice(startIndex, endIndex);
+
+  } else {
+    const sortingKey = $('.sorting:checked').val();
+    const rarityOrder = ['common', 'uncommon', 'rare', 'mythic'];
+
+    const sortedData = [...filteredData].sort((a, b) => {
       let comparison = 0;
       let compA, compB;
       const valA_name = String(a.name || '').toLowerCase();
@@ -167,18 +210,6 @@ function loadCards() {
       }
       return comparison;
     });
-  };
-
-  if ($("#isAdded").is(":checked")) {
-    // Filter relevantSelectedCards based on selectedCards and filteredData
-    let relevantSelectedCards = selectedCards
-      .map(cardName => filteredData.find(card => card.name === cardName))
-      .filter(card => card !== undefined); // Exclude undefined values
-
-    cardsToAdd = sortCards(relevantSelectedCards).slice(startIndex, endIndex);
-
-  } else {
-    const sortedData = sortCards([...filteredData]);
     cardsToAdd = sortedData
         .slice(startIndex, endIndex)
         .filter(card => !cardSuggestions.find(`[data-card-name="${card.name}"]`).length);
@@ -186,9 +217,6 @@ function loadCards() {
 
   for (let i = 0; i < cardsToAdd.length; i++) {
     const card = cardsToAdd[i];
-    if (basicLandOrder.includes(card.name)) {
-      card.prices = { usd: 0 };
-    }
     const cardElement = createCardElement(card);
 
     // Check if the card is already selected

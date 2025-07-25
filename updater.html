@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scryfall Land Updater</title>
+    <link rel="stylesheet" href="css/updater.css" />
+  </head>
+  <body>
+    <h1>Scryfall Land Updater</h1>
+
+    <button id="start-button">Start</button>
+
+    <div id="progress-container" style="display: none;">
+      <p id="progress-text">Fetching data from Scryfall...</p>
+      <progress id="progress-bar" value="0" max="100"></progress>
+    </div>
+
+    <div id="new-cards-container">
+      <h2>New Cards</h2>
+      <div id="new-cards-list"></div>
+    </div>
+
+    <button id="download-button" disabled>Download Updated lands.json</button>
+
+    <p id="version-info"></p>
+
+    <script src="js/updater.js"></script>
+  </body>
+</html>

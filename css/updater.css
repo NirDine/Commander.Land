@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+#progress-container {
+  margin-bottom: 20px;
+}
+
+#new-cards-list, #updated-cards-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.increase {
+  color: red;
+}
+
+.decrease {
+  color: green;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+#download-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -151,7 +151,7 @@ function loadCards() {
         compA = (typeof a.edhrec_rank === 'number' && !isNaN(a.edhrec_rank)) ? a.edhrec_rank : Number.MAX_SAFE_INTEGER;
         compB = (typeof b.edhrec_rank === 'number' && !isNaN(b.edhrec_rank)) ? b.edhrec_rank : Number.MAX_SAFE_INTEGER;
         comparison = compA - compB;
-      } else { 
+      } else {
         compA = String(a[sortingKey] || '').toLowerCase();
         compB = String(b[sortingKey] || '').toLowerCase();
         comparison = compA.localeCompare(compB);

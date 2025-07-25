@@ -69,7 +69,14 @@ function compareAndDisplayNewCards() {
   newCards.forEach((card) => {
     const cardElement = document.createElement("div");
     cardElement.classList.add("card");
-    const imageUri = card.image_uris ? card.image_uris.small : "img/art/bg2.webp";
+    let imageUri;
+    if (card.image_uris) {
+      imageUri = card.image_uris.small;
+    } else if (card.card_faces && card.card_faces[0].image_uris) {
+      imageUri = card.card_faces[0].image_uris.small;
+    } else {
+      imageUri = "img/art/bg2.webp";
+    }
     cardElement.innerHTML = `
       <img src="${imageUri}" alt="${card.name}">
       <p>${card.name}</p>

@@ -1,20 +1,12 @@
 // Fetch and load JSON files from the updates directory
 function loadUpdates() {
-const updatesDirectory = 'updates';
+  const updatesIndex = 'updates/index.json';
 
-
-  return fetch(updatesDirectory)
-    .then(response => response.text())
-    .then(html => {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
-      const links = Array.from(doc.querySelectorAll('a'));
-      const jsonFiles = links
-        .map(link => link.getAttribute('href'))
-        .filter(file => file.endsWith('.json'));
-
+  return fetch(updatesIndex)
+    .then(response => response.json())
+    .then(jsonFiles => {
       const promises = jsonFiles.map(file => {
-        const url = `${file}`;
+        const url = `updates/${file}`;
         return fetch(url).then(response => response.json());
       });
 

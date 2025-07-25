@@ -1,0 +1,7 @@
+{
+    "title": "Version 1.0.17",
+    "paragraph": "Some small fixes",
+    "changes": [
+        "Fixed an issue where the color filters were capping the number of cards shown to 40 per color."
+    ]
+}

@@ -177,7 +177,25 @@ downloadButton.addEventListener("click", () => {
     }
   );
 
-  const updatedLandsData = [...originalLandsData, ...newLands];
+  let updatedLandsData = [...originalLandsData, ...newLands];
+
+  const basicLandOrder = ["Plains", "Island", "Swamp", "Mountain", "Forest", "Wastes"];
+  updatedLandsData.sort((a, b) => {
+    const aName = a.name;
+    const bName = b.name;
+    const aIsBasic = basicLandOrder.includes(aName);
+    const bIsBasic = basicLandOrder.includes(bName);
+
+    if (aIsBasic && bIsBasic) {
+      return basicLandOrder.indexOf(aName) - basicLandOrder.indexOf(bName);
+    } else if (aIsBasic) {
+      return -1;
+    } else if (bIsBasic) {
+      return 1;
+    } else {
+      return aName.localeCompare(bName);
+    }
+  });
 
   const updatedJson = {
     object: "list",

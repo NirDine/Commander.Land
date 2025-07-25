@@ -220,12 +220,14 @@ downloadButton.addEventListener("click", () => {
     }
   });
 
+  const newVersion = (parseFloat(originalLandsData.version) + 0.01).toFixed(2);
   const updatedJson = {
     object: "list",
     total_cards: updatedLandsData.length,
-    version: originalLandsData.version, // You might want to update this
+    version: newVersion,
     data: updatedLandsData,
   };
+  document.getElementById("version-info").textContent = `New version: ${newVersion}`;
 
   const dataStr =
     "data:text/json;charset=utf-8," +

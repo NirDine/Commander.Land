@@ -196,10 +196,32 @@ function loadCards() {
         compB = valB_name; 
         comparison = compA.localeCompare(compB);
       } else if (sortingKey === 'edhrec_rank') {
-        compA = (typeof a.edhrec_rank === 'number' && !isNaN(a.edhrec_rank)) ? a.edhrec_rank : Number.MAX_SAFE_INTEGER;
-        compB = (typeof b.edhrec_rank === 'number' && !isNaN(b.edhrec_rank)) ? b.edhrec_rank : Number.MAX_SAFE_INTEGER;
-        comparison = compA - compB;
-      } else { 
+        const basicLandOrder = ["plains", "island", "swamp", "mountain", "forest", "wastes"];
+        const aName = a.name.toLowerCase();
+        const bName = b.name.toLowerCase();
+        const isABasic = a.is_basic && !aName.includes('snow-covered');
+        const isBBasic = b.is_basic && !bName.includes('snow-covered');
+        const isASnow = a.is_basic && aName.includes('snow-covered');
+        const isBSnow = b.is_basic && bName.includes('snow-covered');
+
+        if (isABasic && isBBasic) {
+          comparison = basicLandOrder.indexOf(aName) - basicLandOrder.indexOf(bName);
+        } else if (isABasic) {
+          comparison = -1;
+        } else if (isBBasic) {
+          comparison = 1;
+        } else if (isASnow && isBSnow) {
+          comparison = basicLandOrder.indexOf(aName.replace('snow-covered ', '')) - basicLandOrder.indexOf(bName.replace('snow-covered ', ''));
+        } else if (isASnow) {
+          comparison = 1;
+        } else if (isBSnow) {
+          comparison = -1;
+        } else {
+          compA = (typeof a.edhrec_rank === 'number' && !isNaN(a.edhrec_rank)) ? a.edhrec_rank : Number.MAX_SAFE_INTEGER;
+          compB = (typeof b.edhrec_rank === 'number' && !isNaN(b.edhrec_rank)) ? b.edhrec_rank : Number.MAX_SAFE_INTEGER;
+          comparison = compA - compB;
+        }
+      } else {
         compA = String(a[sortingKey] || '').toLowerCase();
         compB = String(b[sortingKey] || '').toLowerCase();
         comparison = compA.localeCompare(compB);

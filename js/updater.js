@@ -75,29 +75,81 @@ function compareAndDisplayNewCards() {
 
   if (newCards.length === 0) {
     newCardsList.innerHTML = "<p>No new lands found.</p>";
-    downloadButton.disabled = false;
-    return;
+  } else {
+      newCards.forEach((card) => {
+      const cardElement = document.createElement("div");
+      cardElement.classList.add("card");
+      let imageUri;
+      if (card.image_uris) {
+        imageUri = card.image_uris.small;
+      } else if (card.card_faces && card.card_faces[0].image_uris) {
+        imageUri = card.card_faces[0].image_uris.small;
+      } else {
+        imageUri = "img/art/bg2.webp";
+      }
+      cardElement.innerHTML = `
+        <img src="${imageUri}" alt="${card.name}">
+        <p>${card.name}</p>
+        <input type="checkbox" id="${card.id}" name="new-card" value="${card.id}" checked>
+        <label for="${card.id}">Add to list</label>
+      `;
+      newCardsList.appendChild(cardElement);
+    });
   }
 
-  newCards.forEach((card) => {
-    const cardElement = document.createElement("div");
-    cardElement.classList.add("card");
-    let imageUri;
-    if (card.image_uris) {
-      imageUri = card.image_uris.small;
-    } else if (card.card_faces && card.card_faces[0].image_uris) {
-      imageUri = card.card_faces[0].image_uris.small;
-    } else {
-      imageUri = "img/art/bg2.webp";
+
+  const updatedCards = [];
+  originalLandsData.forEach(originalCard => {
+    const scryfallCard = scryfallData.find(card => card.name === originalCard.name);
+    if (scryfallCard) {
+      let updated = false;
+      if (originalCard.edhrec_rank !== scryfallCard.edhrec_rank) {
+        originalCard.edhrec_rank = scryfallCard.edhrec_rank;
+        updated = true;
+      }
+      if (!originalCard.prices) {
+        originalCard.prices = {};
+      }
+      if (originalCard.prices.usd !== scryfallCard.prices.usd) {
+        originalCard.prices.usd = scryfallCard.prices.usd;
+        updated = true;
+      }
+
+      if(updated) {
+        updatedCards.push(originalCard);
+      }
     }
-    cardElement.innerHTML = `
-      <img src="${imageUri}" alt="${card.name}">
-      <p>${card.name}</p>
-      <input type="checkbox" id="${card.id}" name="new-card" value="${card.id}" checked>
-      <label for="${card.id}">Add to list</label>
-    `;
-    newCardsList.appendChild(cardElement);
   });
+
+  const updatedCardsContainer = document.createElement('div');
+  updatedCardsContainer.innerHTML = `<h2>Updated Cards (${updatedCards.length})</h2><div id="updated-cards-list"></div>`;
+  document.body.insertBefore(updatedCardsContainer, downloadButton);
+
+  const updatedCardsList = document.getElementById('updated-cards-list');
+  if (updatedCards.length === 0) {
+    updatedCardsList.innerHTML = "<p>No cards to update.</p>";
+  } else {
+    updatedCards.forEach((card) => {
+      const cardElement = document.createElement("div");
+      cardElement.classList.add("card");
+      let imageUri;
+      if (card.image_uris) {
+        imageUri = card.image_uris.small;
+      } else if (card.card_faces && card.card_faces[0].image_uris) {
+        imageUri = card.card_faces[0].image_uris.small;
+      } else {
+        imageUri = "img/art/bg2.webp";
+      }
+      cardElement.innerHTML = `
+        <img src="${imageUri}" alt="${card.name}">
+        <p>${card.name}</p>
+        <p>EDHREC Rank: ${card.edhrec_rank}</p>
+        <p>Price: $${card.prices.usd}</p>
+      `;
+      updatedCardsList.appendChild(cardElement);
+    });
+  }
+
 
   downloadButton.disabled = false;
 }

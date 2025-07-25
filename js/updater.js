@@ -1,6 +1,6 @@
 const SCRYFALL_API_URL =
   "https://api.scryfall.com/cards/search?q=type%3Aland+game%3Apaper+legal%3Acommander+-is%3Areprint";
-const LANDS_JSON_PATH = "data/lands.json";
+const LANDS_JSON_PATH = "../data/lands.json";
 
 const progressBar = document.getElementById("progress-bar");
 const progressText = document.getElementById("progress-text");
@@ -117,7 +117,7 @@ function compareAndDisplayNewCards() {
       if (originalPrice !== scryfallCard.prices.usd) {
         updated = true;
       }
-
+      
       if(updated) {
         cardsToUpdate.push({
           original: {...originalCard, prices: {...originalCard.prices}},
@@ -203,6 +203,13 @@ downloadButton.addEventListener("click", () => {
   let updatedLandsData = [...originalLandsData, ...newLands];
 
   const basicLandOrder = ["Plains", "Island", "Swamp", "Mountain", "Forest", "Wastes"];
+  updatedLandsData.forEach(card => {
+    if(basicLandOrder.includes(card.name)) {
+      if(!card.prices) card.prices = {};
+      card.prices.usd = 0;
+    }
+  });
+
   updatedLandsData.sort((a, b) => {
     const aName = a.name;
     const bName = b.name;
@@ -220,12 +227,14 @@ downloadButton.addEventListener("click", () => {
     }
   });
 
+  const newVersion = (parseFloat(originalLandsData.version) + 0.01).toFixed(2);
   const updatedJson = {
     object: "list",
     total_cards: updatedLandsData.length,
-    version: originalLandsData.version, // You might want to update this
+    version: newVersion,
     data: updatedLandsData,
   };
+  document.getElementById("version-info").textContent = `New version: ${newVersion}`;
 
   const dataStr =
     "data:text/json;charset=utf-8," +

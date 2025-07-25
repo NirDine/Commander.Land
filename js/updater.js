@@ -6,6 +6,8 @@ const progressBar = document.getElementById("progress-bar");
 const progressText = document.getElementById("progress-text");
 const newCardsList = document.getElementById("new-cards-list");
 const downloadButton = document.getElementById("download-button");
+const startButton = document.getElementById("start-button");
+const progressContainer = document.getElementById("progress-container");
 
 let scryfallData = [];
 let originalLandsData = [];
@@ -31,6 +33,9 @@ async function fetchScryfallData(url) {
 }
 
 async function main() {
+  progressContainer.style.display = "block";
+  startButton.style.display = "none";
+
   await fetchScryfallData(SCRYFALL_API_URL);
   progressBar.value = 100;
   progressText.textContent = "All data fetched!";
@@ -64,8 +69,9 @@ function compareAndDisplayNewCards() {
   newCards.forEach((card) => {
     const cardElement = document.createElement("div");
     cardElement.classList.add("card");
+    const imageUri = card.image_uris ? card.image_uris.small : "img/art/bg2.webp";
     cardElement.innerHTML = `
-      <img src="${card.image_uris.small}" alt="${card.name}">
+      <img src="${imageUri}" alt="${card.name}">
       <p>${card.name}</p>
       <input type="checkbox" id="${card.id}" name="new-card" value="${card.id}" checked>
       <label for="${card.id}">Add to list</label>
@@ -119,4 +125,4 @@ downloadButton.addEventListener("click", () => {
   downloadAnchorNode.remove();
 });
 
-main();
+startButton.addEventListener("click", main);

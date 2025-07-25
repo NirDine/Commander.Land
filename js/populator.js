@@ -483,8 +483,8 @@ $(window).on('scroll', function() {
   const windowOffset = $(window).scrollTop() + $(window).height();
 
   if (!$("#isAdded").is(":checked") && windowOffset >= cardSuggestionsOffset - offset) {
-    startIndex += cardsPerPage;
-    endIndex = startIndex + cardsToLoad;
+    startIndex += cardsToLoad;
+    endIndex += cardsToLoad;
 
     if (filteredData && endIndex <= filteredData.length) {
       loadCards();

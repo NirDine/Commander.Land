@@ -134,6 +134,8 @@ function compareAndDisplayNewCards() {
   } else {
     updatedCards.forEach((card) => {
       const scryfallCard = scryfallData.find(sc => sc.name === card.name);
+      const originalCard = originalLandsData.find(oc => oc.name === card.name);
+
       const cardElement = document.createElement("div");
       cardElement.classList.add("card");
       let imageUri;
@@ -144,14 +146,26 @@ function compareAndDisplayNewCards() {
       } else {
         imageUri = "img/art/bg2.webp";
       }
-      const rankChange = scryfallCard.edhrec_rank - card.edhrec_rank;
-      const priceChange = scryfallCard.prices.usd - card.prices.usd;
+
+      const rankChange = scryfallCard.edhrec_rank - originalCard.edhrec_rank;
+      const priceChange = scryfallCard.prices.usd - originalCard.prices.usd;
+
+      let rankHtml = `EDHREC Rank: ${scryfallCard.edhrec_rank}`;
+      if(rankChange !== 0) {
+        rankHtml = `EDHREC Rank: <span class="${rankChange < 0 ? 'decrease' : 'increase'}"><del>${originalCard.edhrec_rank}</del> → ${scryfallCard.edhrec_rank}</span>`;
+      }
+
+      let priceHtml = `Price: $${scryfallCard.prices.usd}`;
+      if(priceChange !== 0) {
+        priceHtml = `Price: <span class="${priceChange < 0 ? 'decrease' : 'increase'}"><del>$${originalCard.prices.usd}</del> → $${scryfallCard.prices.usd}</span>`;
+      }
+
 
       cardElement.innerHTML = `
         <img src="${imageUri}" alt="${card.name}">
         <p>${card.name}</p>
-        <p>EDHREC Rank: <span class="${rankChange < 0 ? 'decrease' : 'increase'}"><del>${card.edhrec_rank}</del> → ${scryfallCard.edhrec_rank}</span></p>
-        <p>Price: <span class="${priceChange < 0 ? 'decrease' : 'increase'}"><del>$${card.prices.usd}</del> → $${scryfallCard.prices.usd}</span></p>
+        <p>${rankHtml}</p>
+        <p>${priceHtml}</p>
       `;
       updatedCardsList.appendChild(cardElement);
     });

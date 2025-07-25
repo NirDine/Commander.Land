@@ -137,7 +137,7 @@ function compareAndDisplayNewCards() {
   if (cardsToUpdate.length === 0) {
     updatedCardsList.innerHTML = "<p>No cards to update.</p>";
   } else {
-    cardsToUpdate.forEach(({ original, scryfall }) => {
+    cardsToUpdate.sort((a, b) => a.scryfall.edhrec_rank - b.scryfall.edhrec_rank).forEach(({ original, scryfall }) => {
       const cardElement = document.createElement("div");
       cardElement.classList.add("card");
       let imageUri;

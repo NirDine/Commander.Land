@@ -86,6 +86,10 @@ $analyze.on('click', function() {
       type: 'POST',
       dataType: 'json',
       contentType: 'application/json',
+      headers: {
+        "User-Agent": "Commander-Land/1.0",
+        "Accept": "application/json",
+      },
       data: JSON.stringify(requestPayload),
       success: function(response) {
         console.log('Request successful!', response);

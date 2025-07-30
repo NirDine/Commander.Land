@@ -107,22 +107,24 @@ $analyze.on('click', function() {
           nameErrors = [...new Set(accumulatedNotFound)]; // Finalize nameErrors
 
           // Order the card names based on the textarea order, using original input from cardNames
-          const orderedCardNames = [];
+          const errorCards = [];
+          const validCards = [];
           Object.entries(cardNames).forEach(([normalizedKey, originalCardDetails]) => {
             const scryfallComparableKey = getScryfallComparableName(normalizedKey);
             if (nameErrors.includes(scryfallComparableKey)) {
-              orderedCardNames.push({ ...originalCardDetails, card: null });
+              errorCards.push({ ...originalCardDetails, card: null });
             } else {
               // When finding matching card data, ensure we use the same comparable key if Scryfall returns it that way,
               // or compare against all known variations if necessary. For now, responseData names are generally canonical.
               const matchingCardData = responseData.find(rd => getScryfallComparableName(rd.name.toLowerCase()) === scryfallComparableKey);
-              orderedCardNames.push({ 
+              validCards.push({
                 name: matchingCardData ? matchingCardData.name : originalCardDetails.name, 
                 quantity: originalCardDetails.quantity, 
                 card: matchingCardData 
               });
             }
           });
+          const orderedCardNames = [...errorCards, ...validCards];
           
           const orderedHighlights = applyHighlights(
             orderedCardNames.map(card => ({ name: card.name, quantity: card.quantity })),
@@ -172,21 +174,23 @@ $analyze.on('click', function() {
           console.log('All requests completed, with some batch errors!');
           nameErrors = [...new Set(accumulatedNotFound)];
           // Perform final UI update similar to success case, but knowing some data is missing
-          const orderedCardNames = [];
+          const errorCards = [];
+          const validCards = [];
            Object.entries(cardNames).forEach(([normalizedKey, originalCardDetails]) => {
             const scryfallComparableKey = getScryfallComparableName(normalizedKey);
             if (nameErrors.includes(scryfallComparableKey)) {
-              orderedCardNames.push({ ...originalCardDetails, card: null });
+              errorCards.push({ ...originalCardDetails, card: null });
             } else {
               // Should only be cards from successful batches, if any
               const matchingCardData = responseData.find(rd => getScryfallComparableName(rd.name.toLowerCase()) === scryfallComparableKey);
-              orderedCardNames.push({ 
+              validCards.push({
                 name: matchingCardData ? matchingCardData.name : originalCardDetails.name, 
                 quantity: originalCardDetails.quantity, 
                 card: matchingCardData 
               });
             }
           });
+          const orderedCardNames = [...errorCards, ...validCards];
           const orderedHighlights = applyHighlights(
             orderedCardNames.map(card => ({ name: card.name, quantity: card.quantity })),
             nameErrors

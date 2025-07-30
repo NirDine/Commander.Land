@@ -14,12 +14,7 @@ let originalLandsData = [];
 
 async function fetchScryfallData(url) {
   try {
-    const response = await fetch(url, {
-      headers: {
-        "User-Agent": "Commander-Land/1.0",
-        "Accept": "application/json",
-      },
-    });
+    const response = await fetch(url);
     const data = await response.json();
 
     scryfallData = scryfallData.concat(data.data);

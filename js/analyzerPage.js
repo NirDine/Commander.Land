@@ -110,7 +110,7 @@ function createCardListItem(cardData, specificColor, analyzedCardEntry, recommen
   }
 
   return `
-    <li class="userCard" data-card-id="${id}" data-card-name="${name}" data-colors="${dataColorsString}" data-weight="${weight}" style="--weight: ${weight}%;" title="You need ${weight}% of your lands to produce this color to play this card">
+    <li class="userCard" data-card-id="${id}" data-card-name="${name}" data-colors="${dataColorsString}" data-weight="${weight}" style="--weight: ${weight}%;" title="You need ${weight}% of your lands to be of this color to play this card">
       <span class="chCardTextContainer"><span class="cost">${manaCostHtml}</span> <span class="chCardTextContainer cardName">${name}</span></span>
       <span class="">${weight}%</span></span>
     </li>

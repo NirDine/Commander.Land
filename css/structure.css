@@ -477,6 +477,7 @@ li:has(#navColors) {
     align-items: center;
     padding-block: 0.5em;
     margin-block: 0.5em;
+    padding-inline:1em;
     border-radius: var(--bradius);
 }
 

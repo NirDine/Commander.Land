@@ -8,6 +8,8 @@ const newCardsList = document.getElementById("new-cards-list");
 const downloadButton = document.getElementById("download-button");
 const startButton = document.getElementById("start-button");
 const progressContainer = document.getElementById("progress-container");
+const optionsContainer = document.getElementById("options-container");
+const includeUnreleasedCheckbox = document.getElementById("include-unreleased");
 
 let scryfallData = [];
 let originalLandsData = [];
@@ -33,10 +35,17 @@ async function fetchScryfallData(url) {
 }
 
 async function main() {
+  scryfallData = [];
   progressContainer.style.display = "block";
   startButton.style.display = "none";
+  optionsContainer.style.display = "none";
 
-  await fetchScryfallData(SCRYFALL_API_URL);
+  let apiUrl = SCRYFALL_API_URL;
+  if (includeUnreleasedCheckbox.checked) {
+    apiUrl = "https://api.scryfall.com/cards/search?q=type%3Aland+game%3Apaper+(legal%3Acommander+or+date%3Enow)+-is%3Areprint";
+  }
+
+  await fetchScryfallData(apiUrl);
   progressBar.value = 100;
   progressText.textContent = "All data fetched!";
 

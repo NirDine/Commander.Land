@@ -3,7 +3,7 @@ body {
   padding: 20px;
 }
 
-#progress-container {
+#progress-container, #options-container {
   margin-bottom: 20px;
 }
 

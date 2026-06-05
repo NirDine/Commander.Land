@@ -7,7 +7,12 @@ const POPULATOR_JS_PATH = path.join(__dirname, '../js/populator.js');
 
 async function fetchScryfallData(url, allData = []) {
     console.log(`Fetching ${url}...`);
-    const response = await fetch(url);
+    const response = await fetch(url, {
+        headers: {
+            'User-Agent': 'ScryfallLandUpdater/1.0 (Contact: github-actions[bot])',
+            'Accept': 'application/json'
+        }
+    });
     const data = await response.json();
 
     allData.push(...data.data);

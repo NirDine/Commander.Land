@@ -2,7 +2,7 @@ name: Update Lands Data
 
 on:
   schedule:
-    - cron: '0 0 * * 1' # Runs at 00:00 every Monday
+    - cron: '0 0 * * *' # Runs at 00:00 every day
   workflow_dispatch: # Allows manual triggering
 
 jobs:

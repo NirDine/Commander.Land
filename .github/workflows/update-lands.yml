@@ -1,0 +1,31 @@
+name: Update Lands Data
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Runs at 00:00 every Monday
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Run update script
+        run: node scripts/update-lands.js
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/lands.json js/populator.js
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update lands data and version" && git push)

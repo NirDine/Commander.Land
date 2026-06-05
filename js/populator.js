@@ -450,19 +450,19 @@ const updateMobileColorFilters = () => {
 // Check if the data is already stored in localStorage
 const storedData = localStorage.getItem('landsData');
 const storedVersion = localStorage.getItem('landsDataVersion');
-const currentVersion = '10'; // Replace with the current version of the JSON data
+const currentVersion = '10.01'; // [VERSION]
 
 if (!storedVersion) {
     console.log('No data found.');
 }
-else if (storedData && storedVersion !== currentVersion) {
-    console.log('Current data version: ' + storedVersion);
+else if (storedVersion !== currentVersion) {
+    console.log('Stored data version: ' + storedVersion + '. Newest version is: ' + currentVersion);
 }
 
 if (storedData && storedVersion === currentVersion) {
   // If the data is already present in localStorage and has the same version, parse and assign it to the data variable
   data = JSON.parse(storedData);
-  console.log("Current data version: " + currentVersion + ".");
+  console.log("Using cached data version: " + currentVersion + ".");
   // Retrieve selectedCards from localStorage
   const storedSelectedCards = localStorage.getItem('selectedCards');
   selectedCards = storedSelectedCards ? JSON.parse(storedSelectedCards) : [];
@@ -477,11 +477,11 @@ if (storedData && storedVersion === currentVersion) {
     .done(function(responseData) {
       // Assign the data to the data variable
       data = responseData;
-      console.log("Newest data version: " + currentVersion + ".");
+      console.log("Fetched newest data version: " + data.version + ".");
       console.log("Loading new data...");
       // Store the fetched data and the version in localStorage
       localStorage.setItem('landsData', JSON.stringify(data));
-      localStorage.setItem('landsDataVersion', currentVersion);
+      localStorage.setItem('landsDataVersion', data.version);
 
       // Retrieve selectedCards from localStorage
       const storedSelectedCards = localStorage.getItem('selectedCards');

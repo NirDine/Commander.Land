@@ -1,6 +1,6 @@
 const SCRYFALL_API_URL =
   "https://api.scryfall.com/cards/search?q=type%3Aland+game%3Apaper+legal%3Acommander+-is%3Areprint";
-const LANDS_JSON_PATH = "../data/lands.json";
+const LANDS_JSON_PATH = "data/lands.json";
 
 const progressBar = document.getElementById("progress-bar");
 const progressText = document.getElementById("progress-text");
@@ -13,6 +13,7 @@ const includeUnreleasedCheckbox = document.getElementById("include-unreleased");
 
 let scryfallData = [];
 let originalLandsData = [];
+let originalJson = null;
 
 async function fetchScryfallData(url) {
   try {
@@ -56,8 +57,8 @@ async function main() {
 async function fetchOriginalLands() {
   try {
     const response = await fetch(LANDS_JSON_PATH);
-    const data = await response.json();
-    originalLandsData = data.data;
+    originalJson = await response.json();
+    originalLandsData = originalJson.data;
   } catch (error) {
     console.error("Error fetching original lands data:", error);
   }
@@ -65,11 +66,18 @@ async function fetchOriginalLands() {
 
 function compareAndDisplayNewCards() {
   const originalLandNames = new Set(originalLandsData.map((card) => card.name));
+  const today = new Date().toISOString().split('T')[0];
+
   let newCards = scryfallData.filter(
     (card) => !originalLandNames.has(card.name)
   );
 
   newCards = newCards.filter((card) => {
+    // Only released cards
+    if (card.released_at > today) {
+      return false;
+    }
+
     if (card.card_faces && card.card_faces.length > 0) {
       const frontFace = card.card_faces[0];
       if (frontFace.mana_cost && frontFace.oracle_text && frontFace.oracle_text.toLowerCase().includes("transform")) {
@@ -236,7 +244,8 @@ downloadButton.addEventListener("click", () => {
     }
   });
 
-  const newVersion = (parseFloat(originalLandsData.version) + 0.01).toFixed(2);
+  const currentVersion = originalJson ? originalJson.version : "0";
+  const newVersion = (parseFloat(currentVersion) + 0.01).toFixed(2);
   const updatedJson = {
     object: "list",
     total_cards: updatedLandsData.length,

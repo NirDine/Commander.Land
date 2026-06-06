@@ -1,7 +1,7 @@
 {
   "object": "list",
   "total_cards": 1130,
-  "version": "10.01",
+  "version": "10.02",
   "data": [
     {
       "object": "card",
@@ -31026,7 +31026,7 @@
       "edhrec_rank": 195,
       "properties": [],
       "prices": {
-        "usd": "38.04"
+        "usd": "37.98"
       }
     },
     {

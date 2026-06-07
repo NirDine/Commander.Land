@@ -285,6 +285,32 @@ input[type="radio"]:checked + label,
 /*  PARENT COLORS */
 .buffet-filters:has(input[type="checkbox"]:checked:not(.parent):not(.property):not(.isAdded)) .filters  label.mobileColorTarget,
 
+.price-filters .mana:has(input:checked) label {
+  background: #4f1e37;
+  border-color: var(--accent);
+}
+
+.ui-slider-horizontal {
+    height: 10px;
+    background: #0000006e;
+    border: 1px solid #ffffff14;
+    border-radius: 5px;
+}
+
+.ui-slider-range {
+    background: var(--accent);
+}
+
+.ui-slider-handle {
+    width: 20px;
+    height: 20px;
+    background: var(--contrast);
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    cursor: pointer;
+    top: -6px;
+}
+
 /*  WHITE */
 .buffet-filters:has(#mana-w:checked) .section-dropdown label.mana-w,
 

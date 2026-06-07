@@ -83,10 +83,12 @@ async function main() {
                     updated = true;
                 }
                 if (!originalCard.prices) originalCard.prices = {};
-                if (originalCard.prices.usd !== scryfallCard.prices.usd) {
-                    originalCard.prices.usd = scryfallCard.prices.usd;
-                    updated = true;
-                }
+                ['usd', 'eur', 'tix'].forEach(curr => {
+                    if (originalCard.prices[curr] !== scryfallCard.prices[curr]) {
+                        originalCard.prices[curr] = scryfallCard.prices[curr];
+                        updated = true;
+                    }
+                });
                 if (updated) updatedCount++;
             }
         });
@@ -104,7 +106,9 @@ async function main() {
         updatedLandsData.forEach(card => {
             if (basicLandOrder.includes(card.name)) {
                 if (!card.prices) card.prices = {};
-                card.prices.usd = "0.00"; // Changed to string to match common Scryfall format if needed, or 0
+                card.prices.usd = "0.00";
+                card.prices.eur = "0.00";
+                card.prices.tix = "0.00";
             }
         });
 

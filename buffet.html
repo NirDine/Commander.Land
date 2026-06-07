@@ -329,6 +329,28 @@
                         </label>
                       </div>
                     <!-- End of sorting option -->
+
+                    <!-- Start of sorting option -->
+                      <div class="mana hidden" style="--hiddenCount: 8;">
+                        <input class="sorting" type="radio" id="sort-by-cheapest" name="sorting" value="cheapest" />
+                        <label class="sort-cheapest" for="sort-by-cheapest" title="Sort by price (cheapest first)">
+                          <span class="sort-label">
+                               Price (Cheapest)
+                          </span>
+                        </label>
+                      </div>
+                    <!-- End of sorting option -->
+
+                    <!-- Start of sorting option -->
+                      <div class="mana hidden" style="--hiddenCount: 8;">
+                        <input class="sorting" type="radio" id="sort-by-expensive" name="sorting" value="expensive" />
+                        <label class="sort-expensive" for="sort-by-expensive" title="Sort by price (most expensive first)">
+                          <span class="sort-label">
+                               Price (Most Expensive)
+                          </span>
+                        </label>
+                      </div>
+                    <!-- End of sorting option -->
                     
                     <!-- Start of sorting option -->
                       <div class="mana hidden" style="--hiddenCount: 8;">
@@ -374,6 +396,37 @@
                     </div>
                 </div>
               </div>
+              </div>
+              <div class="price-filter-toggle-container">
+                  <div class="mana hidden" style="--hiddenCount: 9.5;">
+                    <input class="price-filter-toggle" type="button" id="price-filter-toggle" name="price-filter-toggle" />
+                    <label class="price-filter-label" for="price-filter-toggle">Price: Any</label>
+                  </div>
+              </div>
+            </div>
+            <div id="priceFilters" class="price-filters hidden">
+              <div class="currency-picker">
+                  <div class="mana">
+                      <input type="radio" id="currency-usd" name="currency" value="usd" checked />
+                      <label for="currency-usd">USD</label>
+                  </div>
+                  <div class="mana">
+                      <input type="radio" id="currency-eur" name="currency" value="eur" />
+                      <label for="currency-eur">EUR</label>
+                  </div>
+                  <div class="mana">
+                      <input type="radio" id="currency-tix" name="currency" value="tix" />
+                      <label for="currency-tix">TIX</label>
+                  </div>
+              </div>
+              <div class="price-slider-container">
+                  <div id="price-slider"></div>
+              </div>
+              <div class="show-prices-container">
+                  <div class="mana">
+                    <input type="checkbox" id="show-prices" name="show-prices" />
+                    <label for="show-prices">Show Prices</label>
+                  </div>
               </div>
             </div>
             <div class="buffet-filters right">

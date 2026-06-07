@@ -10,12 +10,23 @@ let filteredData = []; // Declare the filteredData variable
 let selectedCards = localStorage.getItem('selectedCards') || [];
 let maxCardSelected = 100;
 
+let minPrice = parseInt(localStorage.getItem('minPrice')) || 0;
+let maxPrice = localStorage.getItem('maxPrice') !== null ? parseInt(localStorage.getItem('maxPrice')) : 1000;
+let currentCurrency = localStorage.getItem('currency') || 'usd';
+let showPrices = localStorage.getItem('showPrices') === 'true';
+
 function createCardElement(card) {
   const cardElement = $(`
     <!-- Card -->
     <div class="card" data-card-id="${card.id}" data-card-name="${card.name}" data-colors="${card.color_identity}" data-properties="${card.properties}" data-rank="${card.edhrec_rank}" data-basic="${card.is_basic}" tabindex="0"></div>
     <!-- End Card -->
   `);
+
+  let symbol = '$';
+  if (currentCurrency === 'eur') symbol = '€';
+  if (currentCurrency === 'tix') symbol = 'TIX ';
+  const price = card.prices?.[currentCurrency] || '—';
+  const priceDisplay = `<span class="card-price ${showPrices ? '' : 'hidden'}">${symbol}${price}</span>`;
 
   if (card.is_basic) {
       cardElement.html(`
@@ -24,6 +35,7 @@ function createCardElement(card) {
             <img loading="eager" src="${card.image_uris.normal}" alt="${card.name}" aria-oracle="${card.name}. It reads: ${card.oracle_text || ''}">
           </div>
         </div>
+        ${priceDisplay}
         <span class="cardName">${card.name}</span>
         <button type="button hidden" title="Remove  ${card.name}" tabindex="-1" class="remove-basic-button" style="--hiddenCount: 12;">—</button>
         <span class="totalBasics"></span>
@@ -46,6 +58,7 @@ function createCardElement(card) {
             <img class="front" loading="eager" src="${frontImageSrc}" alt="${frontImageAlt}" aria-oracle="${frontAriaOracle}">
           </div>
         </div>
+        ${priceDisplay}
         <span class="cardName">${card.name}</span>
         <button type="button hidden" title="Transform" tabindex="-1" class="flip-button" style="--hiddenCount: 12;"></button>
       `);
@@ -66,6 +79,7 @@ function createCardElement(card) {
             <img loading="eager" src="${mainImageSrc}" alt="${mainImageAlt}" aria-oracle="${mainAriaOracle}">
           </div>
         </div>
+        ${priceDisplay}
         <span class="cardName">${card.name}</span>
       `);
   }
@@ -151,6 +165,14 @@ function loadCards() {
         compA = (typeof a.edhrec_rank === 'number' && !isNaN(a.edhrec_rank)) ? a.edhrec_rank : Number.MAX_SAFE_INTEGER;
         compB = (typeof b.edhrec_rank === 'number' && !isNaN(b.edhrec_rank)) ? b.edhrec_rank : Number.MAX_SAFE_INTEGER;
         comparison = compA - compB;
+      } else if (sortingKey === 'cheapest') {
+        compA = parseFloat(a.prices?.[currentCurrency]) || 0;
+        compB = parseFloat(b.prices?.[currentCurrency]) || 0;
+        comparison = compA - compB;
+      } else if (sortingKey === 'expensive') {
+        compA = parseFloat(a.prices?.[currentCurrency]) || 0;
+        compB = parseFloat(b.prices?.[currentCurrency]) || 0;
+        comparison = compB - compA;
       } else {
         compA = String(a[sortingKey] || '').toLowerCase();
         compB = String(b[sortingKey] || '').toLowerCase();
@@ -221,6 +243,14 @@ function loadCards() {
           compB = (typeof b.edhrec_rank === 'number' && !isNaN(b.edhrec_rank)) ? b.edhrec_rank : Number.MAX_SAFE_INTEGER;
           comparison = compA - compB;
         }
+      } else if (sortingKey === 'cheapest') {
+        compA = parseFloat(a.prices?.[currentCurrency]) || 0;
+        compB = parseFloat(b.prices?.[currentCurrency]) || 0;
+        comparison = compA - compB;
+      } else if (sortingKey === 'expensive') {
+        compA = parseFloat(a.prices?.[currentCurrency]) || 0;
+        compB = parseFloat(b.prices?.[currentCurrency]) || 0;
+        comparison = compB - compA;
       } else {
         compA = String(a[sortingKey] || '').toLowerCase();
         compB = String(b[sortingKey] || '').toLowerCase();
@@ -318,8 +348,17 @@ function filterCards() {
       return selectedColors.includes(color);
     });
 
+    // Price filtering
+    let matchesPrice = true;
+    const cardPrice = parseFloat(card.prices?.[currentCurrency]) || 0;
+    if (maxPrice >= 1000) {
+      matchesPrice = cardPrice >= minPrice;
+    } else {
+      matchesPrice = cardPrice >= minPrice && cardPrice <= maxPrice;
+    }
 
-    return matchesSearch && (isSubset || showCard);
+
+    return matchesSearch && (isSubset || showCard) && matchesPrice;
   });
 
   startIndex = 0;
@@ -376,6 +415,21 @@ const updateFiltersFromUrl = () => {
     const value = checkbox.val();
     checkbox.prop('checked', selectedProperties.includes(value));
   });
+
+  const urlCurrency = queryParams.get('cur');
+  if (urlCurrency) {
+    currentCurrency = urlCurrency;
+    $(`input[name="currency"][value="${currentCurrency}"]`).prop('checked', true);
+  }
+
+  const urlMinPrice = queryParams.get('min');
+  const urlMaxPrice = queryParams.get('max');
+  if (urlMinPrice !== null && urlMaxPrice !== null) {
+    minPrice = parseInt(urlMinPrice);
+    maxPrice = parseInt(urlMaxPrice);
+    $("#price-slider").slider("values", [minPrice, maxPrice]);
+    updatePriceLabel();
+  }
 };
 
   
@@ -401,6 +455,16 @@ const updateUrlFromFilters = () => {
 
   if (selectedProperties.length > 0) {
     queryParams.set('properties', selectedProperties.join(','));
+  }
+
+  if (currentCurrency !== 'usd') {
+    queryParams.set('cur', currentCurrency);
+  }
+  if (minPrice > 0) {
+    queryParams.set('min', minPrice);
+  }
+  if (maxPrice < 1000) {
+    queryParams.set('max', maxPrice);
   }
 
   const newUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}?${queryParams.toString()}${window.location.hash}`;
@@ -450,7 +514,7 @@ const updateMobileColorFilters = () => {
 // Check if the data is already stored in localStorage
 const storedData = localStorage.getItem('landsData');
 const storedVersion = localStorage.getItem('landsDataVersion');
-const currentVersion = '10.03'; // [VERSION]
+const currentVersion = '10.04'; // [VERSION]
 
 if (!storedVersion) {
     console.log('No data found.');
@@ -535,6 +599,71 @@ $('.color, .property, .sorting').on('change', function() {
   updateUrlFromFilters();
   updateBasicCardsCount();
 });
+
+// Price Filter Toggle
+$('#price-filter-toggle').on('click', function() {
+  $('#priceFilters').toggleClass('hidden');
+});
+
+// Currency Selection
+$('input[name="currency"]').on('change', function() {
+  currentCurrency = $(this).val();
+  localStorage.setItem('currency', currentCurrency);
+  filterCards();
+  updateUrlFromFilters();
+  updateBasicCardsCount();
+});
+
+// Show Prices Toggle
+$('#show-prices').on('change', function() {
+  showPrices = $(this).is(':checked');
+  localStorage.setItem('showPrices', showPrices);
+  $('.card-price').toggleClass('hidden', !showPrices);
+  filterCards();
+});
+
+// Initialize Price Slider
+$(function() {
+  $("#price-slider").slider({
+    range: true,
+    min: 0,
+    max: 1000,
+    values: [minPrice, maxPrice],
+    slide: function(event, ui) {
+      minPrice = ui.values[0];
+      maxPrice = ui.values[1];
+      updatePriceLabel();
+    },
+    change: function(event, ui) {
+      minPrice = ui.values[0];
+      maxPrice = ui.values[1];
+      localStorage.setItem('minPrice', minPrice);
+      localStorage.setItem('maxPrice', maxPrice);
+      filterCards();
+      updateUrlFromFilters();
+    }
+  });
+
+  // Set initial UI state from variables (which were loaded from localStorage)
+  $(`input[name="currency"][value="${currentCurrency}"]`).prop('checked', true);
+  $('#show-prices').prop('checked', showPrices);
+
+  updatePriceLabel();
+});
+
+function updatePriceLabel() {
+  let symbol = '$';
+  if (currentCurrency === 'eur') symbol = '€';
+  if (currentCurrency === 'tix') symbol = 'TIX ';
+
+  if (minPrice === 0 && maxPrice >= 1000) {
+    $('.price-filter-label').text('Price: Any');
+  } else {
+    let label = `${symbol}${minPrice} - ${symbol}${maxPrice}`;
+    if (maxPrice >= 1000) label = `${symbol}${minPrice}+`;
+    $('.price-filter-label').text(label);
+  }
+}
 
 $('#isAdded').on('change', function() {
   const isChecked = $(this).is(':checked');

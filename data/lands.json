@@ -1,7 +1,7 @@
 {
   "object": "list",
   "total_cards": 1152,
-  "version": "10.39",
+  "version": "10.40",
   "data": [
     {
       "object": "card",
@@ -174,9 +174,9 @@
         "B",
         "U"
       ],
-      "edhrec_rank": 21532,
+      "edhrec_rank": 21333,
       "prices": {
-        "usd": "0.12",
+        "usd": "0.13",
         "usd_foil": "0.28",
         "usd_etched": null,
         "eur": "0.07",
@@ -208,11 +208,11 @@
       "produced_mana": [
         "W"
       ],
-      "edhrec_rank": 1474,
+      "edhrec_rank": 1469,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "5.57"
+        "usd": "5.62"
       }
     },
     {
@@ -254,10 +254,10 @@
       "artist_ids": [
         "c09ede88-a1b5-4a18-9895-dc8a965d28a5"
       ],
-      "edhrec_rank": 9214,
+      "edhrec_rank": 9216,
       "properties": [],
       "prices": {
-        "usd": "0.19"
+        "usd": "0.21"
       }
     },
     {
@@ -300,7 +300,7 @@
       "artist_ids": [
         "b845b8ee-aeea-4822-bcf9-7230625ac95c"
       ],
-      "edhrec_rank": 22118,
+      "edhrec_rank": 22126,
       "properties": [],
       "prices": {
         "usd": "0.23"
@@ -345,10 +345,10 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "edhrec_rank": 2812,
+      "edhrec_rank": 2813,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.30"
       }
     },
     {
@@ -394,7 +394,7 @@
       "edhrec_rank": 2063,
       "properties": [],
       "prices": {
-        "usd": "2.51"
+        "usd": "2.54"
       }
     },
     {
@@ -422,11 +422,11 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 3519,
+      "edhrec_rank": 3512,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "3.04"
+        "usd": "2.95"
       }
     },
     {
@@ -591,10 +591,10 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "edhrec_rank": 1866,
+      "edhrec_rank": 1864,
       "properties": [],
       "prices": {
-        "usd": "5.15"
+        "usd": "5.18"
       }
     },
     {
@@ -680,7 +680,7 @@
       "edhrec_rank": 1689,
       "properties": [],
       "prices": {
-        "usd": "0.28"
+        "usd": "0.26"
       }
     },
     {
@@ -714,7 +714,7 @@
       "artist_ids": [
         "c4e0aa7c-a008-4d71-80ce-d5a1ca0b251b"
       ],
-      "edhrec_rank": 21915,
+      "edhrec_rank": 21921,
       "properties": [],
       "prices": {
         "usd": "12.18"
@@ -779,7 +779,7 @@
       "edhrec_rank": 3323,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.26"
       }
     },
     {
@@ -846,10 +846,10 @@
       "artist_ids": [
         "9872f5c0-274a-48ce-a9ad-6f0d5654e29c"
       ],
-      "edhrec_rank": 965,
+      "edhrec_rank": 964,
       "properties": [],
       "prices": {
-        "usd": "28.21"
+        "usd": "28.17"
       }
     },
     {
@@ -874,11 +874,11 @@
       "produced_mana": [
         "U"
       ],
-      "edhrec_rank": 2922,
+      "edhrec_rank": 2916,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "1.32"
+        "usd": "1.07"
       }
     },
     {
@@ -905,11 +905,11 @@
         "R",
         "U"
       ],
-      "edhrec_rank": 7096,
+      "edhrec_rank": 7088,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.35"
+        "usd": "0.36"
       }
     },
     {
@@ -950,10 +950,10 @@
       "artist_ids": [
         "9c77c81a-3b3f-4e94-a834-327d01cd6b35"
       ],
-      "edhrec_rank": 3653,
+      "edhrec_rank": 3654,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.33"
       }
     },
     {
@@ -1024,7 +1024,7 @@
       "artist_ids": [
         "0fad2c48-a56e-4a0b-b512-224f6f238f20"
       ],
-      "edhrec_rank": 12594,
+      "edhrec_rank": 12598,
       "properties": [],
       "prices": {
         "usd": "0.23"
@@ -1071,7 +1071,7 @@
       "edhrec_rank": 1100,
       "properties": [],
       "prices": {
-        "usd": "2.68"
+        "usd": "2.36"
       }
     },
     {
@@ -1113,7 +1113,7 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 7748,
+      "edhrec_rank": 7745,
       "properties": [],
       "prices": {
         "usd": "0.71"
@@ -1158,7 +1158,7 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "edhrec_rank": 4233,
+      "edhrec_rank": 4236,
       "properties": [],
       "prices": {
         "usd": "0.36"
@@ -1221,7 +1221,7 @@
       "edhrec_rank": 2515,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.33"
       }
     },
     {
@@ -1266,7 +1266,7 @@
       "artist_ids": [
         "5a5ee217-9d28-419a-b92a-a2376c7d18b3"
       ],
-      "edhrec_rank": 26638,
+      "edhrec_rank": 26659,
       "properties": [],
       "prices": {
         "usd": "0.28"
@@ -1311,7 +1311,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 11414,
+      "edhrec_rank": 11418,
       "properties": [],
       "prices": {
         "usd": "0.61"
@@ -1357,7 +1357,7 @@
       "edhrec_rank": 515,
       "properties": [],
       "prices": {
-        "usd": "2.25"
+        "usd": "2.26"
       }
     },
     {
@@ -1400,7 +1400,7 @@
       "artist_ids": [
         "b4117364-73af-47e5-8cf0-901eeea09e01"
       ],
-      "edhrec_rank": 20564,
+      "edhrec_rank": 20569,
       "properties": [],
       "prices": {
         "usd": "0.19"
@@ -1486,7 +1486,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 2669,
+      "edhrec_rank": 2667,
       "properties": [],
       "prices": {
         "usd": "2.30"
@@ -1527,7 +1527,7 @@
       "artist_ids": [
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
-      "edhrec_rank": 3691,
+      "edhrec_rank": 3693,
       "properties": [],
       "prices": {
         "usd": "3.12"
@@ -1567,7 +1567,7 @@
       "artist_ids": [
         "9c3e9d17-509f-485c-9360-46d897ce716b"
       ],
-      "edhrec_rank": 1078,
+      "edhrec_rank": 1076,
       "properties": [],
       "prices": {
         "usd": "8.75"
@@ -1717,7 +1717,7 @@
       "artist_ids": [
         "b4117364-73af-47e5-8cf0-901eeea09e01"
       ],
-      "edhrec_rank": 17364,
+      "edhrec_rank": 17365,
       "properties": [],
       "prices": {
         "usd": "0.39"
@@ -1761,7 +1761,7 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "edhrec_rank": 9051,
+      "edhrec_rank": 9057,
       "properties": [],
       "prices": {
         "usd": "0.11"
@@ -1806,7 +1806,7 @@
       "edhrec_rank": 918,
       "properties": [],
       "prices": {
-        "usd": "0.81"
+        "usd": "0.79"
       }
     },
     {
@@ -1848,7 +1848,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 13397,
+      "edhrec_rank": 13408,
       "properties": [],
       "prices": {
         "usd": "1.86"
@@ -1893,7 +1893,7 @@
       "artist_ids": [
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
-      "edhrec_rank": 3719,
+      "edhrec_rank": 3721,
       "properties": [],
       "prices": {
         "usd": "0.36"
@@ -1932,7 +1932,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 8657,
+      "edhrec_rank": 8654,
       "properties": [],
       "prices": {
         "usd": "8.45"
@@ -1977,7 +1977,7 @@
       "edhrec_rank": 380,
       "properties": [],
       "prices": {
-        "usd": "7.16"
+        "usd": "7.50"
       }
     },
     {
@@ -2048,7 +2048,7 @@
       "artist_ids": [
         "c09ede88-a1b5-4a18-9895-dc8a965d28a5"
       ],
-      "edhrec_rank": 3679,
+      "edhrec_rank": 3680,
       "properties": [],
       "prices": {
         "usd": "1.60"
@@ -2090,7 +2090,7 @@
       "artist_ids": [
         "39fcaaac-bf5d-4c43-ae20-4cf4921a44fa"
       ],
-      "edhrec_rank": 1470,
+      "edhrec_rank": 1471,
       "properties": [],
       "prices": {
         "usd": "0.58"
@@ -2157,9 +2157,9 @@
         "R",
         "W"
       ],
-      "edhrec_rank": 20688,
+      "edhrec_rank": 20498,
       "prices": {
-        "usd": "0.15",
+        "usd": "0.14",
         "usd_foil": "0.38",
         "usd_etched": null,
         "eur": "0.13",
@@ -2253,7 +2253,7 @@
       "artist_ids": [
         "afc47cec-3ccc-404e-a8c6-4d83dd504271"
       ],
-      "edhrec_rank": 11117,
+      "edhrec_rank": 11113,
       "properties": [],
       "prices": {
         "usd": "7.90"
@@ -2283,9 +2283,9 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 21123,
+      "edhrec_rank": 20918,
       "prices": {
-        "usd": "0.13",
+        "usd": "0.12",
         "usd_foil": "0.25",
         "usd_etched": null,
         "eur": "0.09",
@@ -2320,9 +2320,9 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 11836,
+      "edhrec_rank": 11645,
       "prices": {
-        "usd": "0.19",
+        "usd": "0.21",
         "usd_foil": "0.24",
         "usd_etched": null,
         "eur": "0.04",
@@ -2386,7 +2386,7 @@
       "artist_ids": [
         "7f1868e3-325f-4df9-8f27-a381fed4f0fc"
       ],
-      "edhrec_rank": 4011,
+      "edhrec_rank": 4010,
       "properties": [],
       "prices": {
         "usd": "0.19"
@@ -2429,10 +2429,10 @@
       "artist_ids": [
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
-      "edhrec_rank": 3431,
+      "edhrec_rank": 3430,
       "properties": [],
       "prices": {
-        "usd": "0.39"
+        "usd": "0.40"
       }
     },
     {
@@ -2477,7 +2477,7 @@
       "artist_ids": [
         "5a5ee217-9d28-419a-b92a-a2376c7d18b3"
       ],
-      "edhrec_rank": 26955,
+      "edhrec_rank": 26958,
       "properties": [],
       "prices": {
         "usd": "0.32"
@@ -2596,7 +2596,7 @@
       "produced_mana": [
         "G"
       ],
-      "edhrec_rank": 1883,
+      "edhrec_rank": 1880,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -2634,10 +2634,10 @@
       "artist_ids": [
         "eb55171c-2342-45f4-a503-2d5a75baf752"
       ],
-      "edhrec_rank": 6642,
+      "edhrec_rank": 6644,
       "properties": [],
       "prices": {
-        "usd": "1.38"
+        "usd": "1.40"
       }
     },
     {
@@ -2822,7 +2822,7 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 6566,
+      "edhrec_rank": 6564,
       "properties": [],
       "prices": {
         "usd": "0.31"
@@ -2871,7 +2871,7 @@
       "edhrec_rank": 2467,
       "properties": [],
       "prices": {
-        "usd": "3.43"
+        "usd": "3.41"
       }
     },
     {
@@ -2911,7 +2911,7 @@
       "artist_ids": [
         "c4e0aa7c-a008-4d71-80ce-d5a1ca0b251b"
       ],
-      "edhrec_rank": 17577,
+      "edhrec_rank": 17574,
       "properties": [],
       "prices": {
         "usd": "4.70"
@@ -2973,10 +2973,10 @@
       "artist_ids": [
         "0c066852-6fdb-42d0-aab9-db4038850da0"
       ],
-      "edhrec_rank": 12609,
+      "edhrec_rank": 12621,
       "properties": [],
       "prices": {
-        "usd": "0.69"
+        "usd": "0.68"
       }
     },
     {
@@ -3014,10 +3014,10 @@
       "artist_ids": [
         "90332db2-aecb-4d79-917b-95cbeb8d0cb6"
       ],
-      "edhrec_rank": 4821,
+      "edhrec_rank": 4825,
       "properties": [],
       "prices": {
-        "usd": "0.65"
+        "usd": "0.64"
       }
     },
     {
@@ -3078,7 +3078,7 @@
       "edhrec_rank": 1825,
       "properties": [],
       "prices": {
-        "usd": "1.89"
+        "usd": "1.86"
       }
     },
     {
@@ -3119,7 +3119,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 4779,
+      "edhrec_rank": 4780,
       "properties": [],
       "prices": {
         "usd": "2.71"
@@ -3234,7 +3234,7 @@
       "artist_ids": [
         "5f92512a-2da0-4d91-8aaf-ac8d2404d776"
       ],
-      "edhrec_rank": 4723,
+      "edhrec_rank": 4721,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -3340,7 +3340,7 @@
       "artist_ids": [
         "2c14303e-97a3-45fa-9bd8-59e5332a65f9"
       ],
-      "edhrec_rank": 10993,
+      "edhrec_rank": 10997,
       "properties": [],
       "prices": {
         "usd": "0.16"
@@ -3384,7 +3384,7 @@
       "edhrec_rank": 2742,
       "properties": [],
       "prices": {
-        "usd": "0.35"
+        "usd": "0.34"
       }
     },
     {
@@ -3457,9 +3457,9 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 14493,
+      "edhrec_rank": 14328,
       "prices": {
-        "usd": "0.27",
+        "usd": "0.28",
         "usd_foil": "0.44",
         "usd_etched": null,
         "eur": "0.06",
@@ -3544,7 +3544,7 @@
       "artist_ids": [
         "14a1de4b-1237-4e7b-8868-b71e87c9a46e"
       ],
-      "edhrec_rank": 10475,
+      "edhrec_rank": 10473,
       "properties": [],
       "prices": {
         "usd": "1949.99"
@@ -3614,7 +3614,7 @@
       "artist_ids": [
         "63b2909b-7102-49c5-8f9d-6116a1913308"
       ],
-      "edhrec_rank": 9153,
+      "edhrec_rank": 9150,
       "properties": [],
       "prices": {
         "usd": "0.20"
@@ -3644,11 +3644,11 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 8082,
+      "edhrec_rank": 8065,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.39"
+        "usd": "0.37"
       }
     },
     {
@@ -3707,7 +3707,7 @@
       "artist_ids": [
         "0c066852-6fdb-42d0-aab9-db4038850da0"
       ],
-      "edhrec_rank": 13892,
+      "edhrec_rank": 13899,
       "properties": [],
       "prices": {
         "usd": "0.29"
@@ -3737,7 +3737,7 @@
         "G",
         "W"
       ],
-      "edhrec_rank": 21728,
+      "edhrec_rank": 21558,
       "prices": {
         "usd": "0.12",
         "usd_foil": "0.38",
@@ -3992,7 +3992,7 @@
       "artist_ids": [
         "1761c216-72b5-4a9b-afee-ad47a00fe1ad"
       ],
-      "edhrec_rank": 5259,
+      "edhrec_rank": 5261,
       "properties": [],
       "prices": {
         "usd": "1.59"
@@ -4040,7 +4040,7 @@
       "edhrec_rank": 551,
       "properties": [],
       "prices": {
-        "usd": "9.04"
+        "usd": "8.98"
       }
     },
     {
@@ -4082,10 +4082,10 @@
       "artist_ids": [
         "9ee9a9cc-c09e-486f-918b-69f80cbc4188"
       ],
-      "edhrec_rank": 874,
+      "edhrec_rank": 872,
       "properties": [],
       "prices": {
-        "usd": "10.14"
+        "usd": "9.66"
       }
     },
     {
@@ -4127,7 +4127,7 @@
       "artist_ids": [
         "2ffd9e06-94af-44f5-bec6-06f781941a6c"
       ],
-      "edhrec_rank": 9420,
+      "edhrec_rank": 9422,
       "properties": [],
       "prices": {
         "usd": "0.18"
@@ -4170,7 +4170,7 @@
       "artist_ids": [
         "d82b1138-76d3-49f7-9d8c-bc2e2d3e0b0a"
       ],
-      "edhrec_rank": 13387,
+      "edhrec_rank": 13392,
       "properties": [],
       "prices": {
         "usd": "0.12"
@@ -4213,7 +4213,7 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 12174,
+      "edhrec_rank": 12177,
       "properties": [],
       "prices": {
         "usd": "0.13"
@@ -4256,7 +4256,7 @@
       "artist_ids": [
         "269392ac-4c06-4650-98e2-d49a5a7f2371"
       ],
-      "edhrec_rank": 16243,
+      "edhrec_rank": 16247,
       "properties": [],
       "prices": {
         "usd": "0.18"
@@ -4299,7 +4299,7 @@
       "artist_ids": [
         "f8e7f8d6-6dde-4059-973c-30f1fd1bbe4e"
       ],
-      "edhrec_rank": 7957,
+      "edhrec_rank": 7962,
       "properties": [],
       "prices": {
         "usd": "0.14"
@@ -4344,7 +4344,7 @@
       "edhrec_rank": 865,
       "properties": [],
       "prices": {
-        "usd": "0.37"
+        "usd": "0.36"
       }
     },
     {
@@ -4411,10 +4411,10 @@
       "artist_ids": [
         "e24bc1d0-446b-45e0-b215-89f581837aa4"
       ],
-      "edhrec_rank": 821,
+      "edhrec_rank": 823,
       "properties": [],
       "prices": {
-        "usd": "5.76"
+        "usd": "5.63"
       }
     },
     {
@@ -4451,7 +4451,7 @@
       "artist_ids": [
         "770b4e16-de76-49ed-949f-84e6d2e06d25"
       ],
-      "edhrec_rank": 3015,
+      "edhrec_rank": 3014,
       "properties": [],
       "prices": {
         "usd": "2.88"
@@ -4492,7 +4492,7 @@
       "artist_ids": [
         "996ad764-4ae0-4952-8bb5-5a75c9d68275"
       ],
-      "edhrec_rank": 16112,
+      "edhrec_rank": 16120,
       "properties": [],
       "prices": {
         "usd": "0.28"
@@ -4653,7 +4653,7 @@
       "artist_ids": [
         "c3004e2c-d372-4faa-90db-f1274e75ef41"
       ],
-      "edhrec_rank": 2634,
+      "edhrec_rank": 2635,
       "properties": [],
       "prices": {
         "usd": "0.30"
@@ -4735,10 +4735,10 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "edhrec_rank": 1512,
+      "edhrec_rank": 1514,
       "properties": [],
       "prices": {
-        "usd": "2.01"
+        "usd": "2.00"
       }
     },
     {
@@ -4825,7 +4825,7 @@
       "artist_ids": [
         "770b4e16-de76-49ed-949f-84e6d2e06d25"
       ],
-      "edhrec_rank": 21912,
+      "edhrec_rank": 21915,
       "properties": [],
       "prices": {
         "usd": "0.13"
@@ -4927,7 +4927,7 @@
         "B",
         "R"
       ],
-      "edhrec_rank": 8062,
+      "edhrec_rank": 8053,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -5056,10 +5056,10 @@
       "artist_ids": [
         "4441fe52-9e41-40c1-9b74-8510426279ab"
       ],
-      "edhrec_rank": 11724,
+      "edhrec_rank": 11729,
       "properties": [],
       "prices": {
-        "usd": "1.33"
+        "usd": "1.35"
       }
     },
     {
@@ -5104,7 +5104,7 @@
       "edhrec_rank": 475,
       "properties": [],
       "prices": {
-        "usd": "0.33"
+        "usd": "0.31"
       }
     },
     {
@@ -5194,7 +5194,7 @@
       "edhrec_rank": 79,
       "properties": [],
       "prices": {
-        "usd": "47.67"
+        "usd": "48.50"
       }
     },
     {
@@ -5276,10 +5276,10 @@
       "artist_ids": [
         "8456c8ad-78c4-4ce0-9d5d-8a0cf994a361"
       ],
-      "edhrec_rank": 7001,
+      "edhrec_rank": 7005,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.33"
       }
     },
     {
@@ -5321,10 +5321,10 @@
       "artist_ids": [
         "b8266529-1ffe-41e7-9969-fcf39f61426b"
       ],
-      "edhrec_rank": 1661,
+      "edhrec_rank": 1660,
       "properties": [],
       "prices": {
-        "usd": "1.47"
+        "usd": "1.46"
       }
     },
     {
@@ -5363,7 +5363,7 @@
       "artist_ids": [
         "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
       ],
-      "edhrec_rank": 16013,
+      "edhrec_rank": 16026,
       "properties": [],
       "prices": {
         "usd": "1.40"
@@ -5409,10 +5409,10 @@
       "artist_ids": [
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
-      "edhrec_rank": 1634,
+      "edhrec_rank": 1637,
       "properties": [],
       "prices": {
-        "usd": "0.20"
+        "usd": "0.18"
       }
     },
     {
@@ -5517,10 +5517,10 @@
       "artist_ids": [
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
-      "edhrec_rank": 7328,
+      "edhrec_rank": 7326,
       "properties": [],
       "prices": {
-        "usd": "0.24"
+        "usd": "0.29"
       }
     },
     {
@@ -5590,7 +5590,7 @@
       "edhrec_rank": 1145,
       "properties": [],
       "prices": {
-        "usd": "3.32"
+        "usd": "3.34"
       }
     },
     {
@@ -5691,7 +5691,7 @@
       "artist_ids": [
         "269392ac-4c06-4650-98e2-d49a5a7f2371"
       ],
-      "edhrec_rank": 10366,
+      "edhrec_rank": 10367,
       "properties": [],
       "prices": {
         "usd": "0.27"
@@ -5766,7 +5766,7 @@
       "edhrec_rank": 695,
       "properties": [],
       "prices": {
-        "usd": "0.80"
+        "usd": "0.67"
       }
     },
     {
@@ -5836,7 +5836,7 @@
       "edhrec_rank": 773,
       "properties": [],
       "prices": {
-        "usd": "4.40"
+        "usd": "4.36"
       }
     },
     {
@@ -5878,7 +5878,7 @@
       "artist_ids": [
         "92dfef2a-d0fa-42fd-bdd6-bc4c9286cb56"
       ],
-      "edhrec_rank": 3405,
+      "edhrec_rank": 3406,
       "properties": [],
       "prices": {
         "usd": "0.30"
@@ -5917,7 +5917,7 @@
       "artist_ids": [
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
-      "edhrec_rank": 1287,
+      "edhrec_rank": 1288,
       "properties": [],
       "prices": {
         "usd": "1.10"
@@ -5963,7 +5963,7 @@
       "artist_ids": [
         "1be2b84d-99c5-4a51-b741-105cbeb53078"
       ],
-      "edhrec_rank": 5092,
+      "edhrec_rank": 5098,
       "properties": [],
       "prices": {
         "usd": "0.28"
@@ -6053,7 +6053,7 @@
       "artist_ids": [
         "608e3b85-cdd3-4d1a-8a3a-7f1ed8856f6b"
       ],
-      "edhrec_rank": 13909,
+      "edhrec_rank": 13916,
       "properties": [],
       "prices": {
         "usd": "0.27"
@@ -6140,7 +6140,7 @@
       "edhrec_rank": 190,
       "properties": [],
       "prices": {
-        "usd": "33.12"
+        "usd": "33.24"
       }
     },
     {
@@ -6181,7 +6181,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 6494,
+      "edhrec_rank": 6498,
       "properties": [],
       "prices": {
         "usd": "1.94"
@@ -6264,10 +6264,10 @@
       "artist_ids": [
         "a662cb71-4770-4b49-8b03-2cf8497049a7"
       ],
-      "edhrec_rank": 960,
+      "edhrec_rank": 961,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.35"
       }
     },
     {
@@ -6308,7 +6308,7 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 3700,
+      "edhrec_rank": 3702,
       "properties": [],
       "prices": {
         "usd": "5.15"
@@ -6353,7 +6353,7 @@
       "artist_ids": [
         "262c8e55-4efc-467b-a042-6f734b9d2e01"
       ],
-      "edhrec_rank": 11281,
+      "edhrec_rank": 11279,
       "properties": [],
       "prices": {
         "usd": "0.25"
@@ -6398,10 +6398,10 @@
       "artist_ids": [
         "8a56d854-b424-45ec-9262-e993a382a961"
       ],
-      "edhrec_rank": 19998,
+      "edhrec_rank": 20009,
       "properties": [],
       "prices": {
-        "usd": "1.57"
+        "usd": "1.55"
       }
     },
     {
@@ -6537,10 +6537,10 @@
       "artist_ids": [
         "6bd18163-aa22-4a41-82f6-8cdb8269d3c8"
       ],
-      "edhrec_rank": 3935,
+      "edhrec_rank": 3931,
       "properties": [],
       "prices": {
-        "usd": "0.28"
+        "usd": "0.27"
       }
     },
     {
@@ -6582,7 +6582,7 @@
       "artist_ids": [
         "334dd388-1e26-4181-8eca-f9c097e29c5e"
       ],
-      "edhrec_rank": 5957,
+      "edhrec_rank": 5958,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -6676,10 +6676,10 @@
       "artist_ids": [
         "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
       ],
-      "edhrec_rank": 1199,
+      "edhrec_rank": 1200,
       "properties": [],
       "prices": {
-        "usd": "1.35"
+        "usd": "1.36"
       }
     },
     {
@@ -6735,10 +6735,10 @@
       "artist_ids": [
         "93bec3c0-0260-4d31-8064-5d01efb4153f"
       ],
-      "edhrec_rank": 692,
+      "edhrec_rank": 693,
       "properties": [],
       "prices": {
-        "usd": "0.33"
+        "usd": "0.34"
       }
     },
     {
@@ -6766,9 +6766,9 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 14012,
+      "edhrec_rank": 13828,
       "prices": {
-        "usd": "0.50",
+        "usd": "0.51",
         "usd_foil": "1.43",
         "usd_etched": null,
         "eur": "1.37",
@@ -6818,7 +6818,7 @@
       "edhrec_rank": 1053,
       "properties": [],
       "prices": {
-        "usd": "0.33"
+        "usd": "0.34"
       }
     },
     {
@@ -6861,7 +6861,7 @@
       "edhrec_rank": 729,
       "properties": [],
       "prices": {
-        "usd": "6.73"
+        "usd": "6.75"
       }
     },
     {
@@ -6949,7 +6949,7 @@
       "artist_ids": [
         "d54c4a1a-c0c5-4834-84db-125d341f3ad8"
       ],
-      "edhrec_rank": 25951,
+      "edhrec_rank": 25975,
       "properties": [],
       "prices": {
         "usd": "0.27"
@@ -6997,7 +6997,7 @@
       "edhrec_rank": 971,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.33"
       }
     },
     {
@@ -7031,7 +7031,7 @@
       "artist_ids": [
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
-      "edhrec_rank": 20859,
+      "edhrec_rank": 20858,
       "properties": [],
       "prices": {
         "usd": "33.57"
@@ -7073,10 +7073,10 @@
       "artist_ids": [
         "4b771085-c049-4308-930d-ec9665f803a4"
       ],
-      "edhrec_rank": 4826,
+      "edhrec_rank": 4827,
       "properties": [],
       "prices": {
-        "usd": "1.74"
+        "usd": "1.75"
       }
     },
     {
@@ -7118,7 +7118,7 @@
       "artist_ids": [
         "e45fe8d3-75d6-42c9-a2df-e945ad81ea27"
       ],
-      "edhrec_rank": 9147,
+      "edhrec_rank": 9148,
       "properties": [],
       "prices": {
         "usd": "0.18"
@@ -7160,7 +7160,7 @@
       "artist_ids": [
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
-      "edhrec_rank": 7728,
+      "edhrec_rank": 7732,
       "properties": [],
       "prices": {
         "usd": "0.38"
@@ -7246,7 +7246,7 @@
       "artist_ids": [
         "d4284188-36d3-4b24-b10f-80580ffdf52c"
       ],
-      "edhrec_rank": 14366,
+      "edhrec_rank": 14373,
       "properties": [],
       "prices": {
         "usd": "0.18"
@@ -7335,7 +7335,7 @@
       "artist_ids": [
         "37970e22-9cee-44c1-af44-5ee27cf26b76"
       ],
-      "edhrec_rank": 5575,
+      "edhrec_rank": 5579,
       "properties": [],
       "prices": {
         "usd": "0.86"
@@ -7379,10 +7379,10 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 11869,
+      "edhrec_rank": 11872,
       "properties": [],
       "prices": {
-        "usd": "1.03"
+        "usd": "1.06"
       }
     },
     {
@@ -7451,11 +7451,11 @@
       "produced_mana": [
         "G"
       ],
-      "edhrec_rank": 12936,
+      "edhrec_rank": 12923,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "9.38"
+        "usd": "9.35"
       }
     },
     {
@@ -7541,7 +7541,7 @@
       "artist_ids": [
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
-      "edhrec_rank": 6135,
+      "edhrec_rank": 6137,
       "properties": [],
       "prices": {
         "usd": "0.10"
@@ -7631,7 +7631,7 @@
       "artist_ids": [
         "a1685587-4b55-446b-b420-c37b202ed3f1"
       ],
-      "edhrec_rank": 23507,
+      "edhrec_rank": 23501,
       "properties": [],
       "prices": {
         "usd": "0.31"
@@ -7678,10 +7678,10 @@
       "artist_ids": [
         "d084e74b-f63a-4107-b72c-ed6250ecc93b"
       ],
-      "edhrec_rank": 2898,
+      "edhrec_rank": 2901,
       "properties": [],
       "prices": {
-        "usd": "2.19"
+        "usd": "2.08"
       }
     },
     {
@@ -7762,7 +7762,7 @@
       "artist_ids": [
         "c4e0aa7c-a008-4d71-80ce-d5a1ca0b251b"
       ],
-      "edhrec_rank": 16257,
+      "edhrec_rank": 16264,
       "properties": [],
       "prices": {
         "usd": "66.30"
@@ -7803,10 +7803,10 @@
       "artist_ids": [
         "f366a0ee-a0cd-466d-ba6a-90058c7a31a6"
       ],
-      "edhrec_rank": 1217,
+      "edhrec_rank": 1216,
       "properties": [],
       "prices": {
-        "usd": "546.53"
+        "usd": "546.22"
       }
     },
     {
@@ -7873,10 +7873,10 @@
       "artist_ids": [
         "e607a0d4-fc12-4c01-9e3f-501f5269b9cb"
       ],
-      "edhrec_rank": 768,
+      "edhrec_rank": 771,
       "properties": [],
       "prices": {
-        "usd": "4.62"
+        "usd": "4.49"
       }
     },
     {
@@ -7920,10 +7920,10 @@
       "artist_ids": [
         "760cf309-b4b6-43a2-b3a9-6f985f09e7db"
       ],
-      "edhrec_rank": 2893,
+      "edhrec_rank": 2896,
       "properties": [],
       "prices": {
-        "usd": "0.37"
+        "usd": "0.43"
       }
     },
     {
@@ -8007,10 +8007,10 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 5316,
+      "edhrec_rank": 5313,
       "properties": [],
       "prices": {
-        "usd": "0.30"
+        "usd": "0.31"
       }
     },
     {
@@ -8052,7 +8052,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 22777,
+      "edhrec_rank": 22783,
       "properties": [],
       "prices": {
         "usd": "0.26"
@@ -8093,7 +8093,7 @@
       "artist_ids": [
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
-      "edhrec_rank": 5620,
+      "edhrec_rank": 5618,
       "properties": [],
       "prices": {
         "usd": "0.29"
@@ -8125,7 +8125,7 @@
         "R",
         "U"
       ],
-      "edhrec_rank": 7718,
+      "edhrec_rank": 7655,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -8171,7 +8171,7 @@
       "artist_ids": [
         "b4117364-73af-47e5-8cf0-901eeea09e01"
       ],
-      "edhrec_rank": 12127,
+      "edhrec_rank": 12125,
       "properties": [],
       "prices": {
         "usd": "2.85"
@@ -8255,10 +8255,10 @@
       "artist_ids": [
         "6cb0dc0c-4362-4c21-b23a-b2d7e096aa4f"
       ],
-      "edhrec_rank": 3777,
+      "edhrec_rank": 3772,
       "properties": [],
       "prices": {
-        "usd": "0.26"
+        "usd": "0.25"
       }
     },
     {
@@ -8349,7 +8349,7 @@
       "edhrec_rank": 647,
       "properties": [],
       "prices": {
-        "usd": "6.74"
+        "usd": "6.67"
       }
     },
     {
@@ -8394,7 +8394,7 @@
       "edhrec_rank": 1157,
       "properties": [],
       "prices": {
-        "usd": "0.98"
+        "usd": "0.94"
       }
     },
     {
@@ -8442,7 +8442,7 @@
       "edhrec_rank": 1982,
       "properties": [],
       "prices": {
-        "usd": "0.33"
+        "usd": "0.34"
       }
     },
     {
@@ -8501,7 +8501,7 @@
       "artist_ids": [
         "0c066852-6fdb-42d0-aab9-db4038850da0"
       ],
-      "edhrec_rank": 14875,
+      "edhrec_rank": 14879,
       "properties": [],
       "prices": {
         "usd": "0.36"
@@ -8546,7 +8546,7 @@
       "artist_ids": [
         "adb9ad6d-6173-454b-8b50-a102b182548b"
       ],
-      "edhrec_rank": 2143,
+      "edhrec_rank": 2144,
       "properties": [],
       "prices": {
         "usd": "0.33"
@@ -8592,7 +8592,7 @@
       "artist_ids": [
         "90332db2-aecb-4d79-917b-95cbeb8d0cb6"
       ],
-      "edhrec_rank": 2212,
+      "edhrec_rank": 2215,
       "properties": [],
       "prices": {
         "usd": "0.11"
@@ -8637,7 +8637,7 @@
       "artist_ids": [
         "f009de11-3c8d-4663-b996-ca0c3e997fad"
       ],
-      "edhrec_rank": 10076,
+      "edhrec_rank": 10078,
       "properties": [],
       "prices": {
         "usd": "0.77"
@@ -8678,7 +8678,7 @@
       "artist_ids": [
         "9e048547-f9c3-4958-9c2c-91e45df7c6ae"
       ],
-      "edhrec_rank": 14526,
+      "edhrec_rank": 14525,
       "properties": [],
       "prices": {
         "usd": "0.28"
@@ -8768,7 +8768,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 5772,
+      "edhrec_rank": 5773,
       "properties": [],
       "prices": {
         "usd": "0.69"
@@ -8812,7 +8812,7 @@
       "artist_ids": [
         "0c066852-6fdb-42d0-aab9-db4038850da0"
       ],
-      "edhrec_rank": 3726,
+      "edhrec_rank": 3723,
       "properties": [],
       "prices": {
         "usd": "0.86"
@@ -8858,7 +8858,7 @@
       "artist_ids": [
         "89cc9475-dda2-4d13-bf88-54b92867a25c"
       ],
-      "edhrec_rank": 5877,
+      "edhrec_rank": 5883,
       "properties": [],
       "prices": {
         "usd": "0.14"
@@ -8916,7 +8916,7 @@
       "artist_ids": [
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
-      "edhrec_rank": 8663,
+      "edhrec_rank": 8662,
       "properties": [],
       "prices": {
         "usd": "0.28"
@@ -8973,7 +8973,7 @@
       "artist_ids": [
         "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
       ],
-      "edhrec_rank": 8790,
+      "edhrec_rank": 8793,
       "properties": [],
       "prices": {
         "usd": "0.20"
@@ -9043,7 +9043,7 @@
       "artist_ids": [
         "d084e74b-f63a-4107-b72c-ed6250ecc93b"
       ],
-      "edhrec_rank": 1069,
+      "edhrec_rank": 1070,
       "properties": [],
       "prices": {
         "usd": "3.56"
@@ -9084,7 +9084,7 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 6355,
+      "edhrec_rank": 6356,
       "properties": [],
       "prices": {
         "usd": "0.34"
@@ -9173,10 +9173,10 @@
       "artist_ids": [
         "669b8b90-758d-4f9e-b4f7-98cd6742eb97"
       ],
-      "edhrec_rank": 3808,
+      "edhrec_rank": 3811,
       "properties": [],
       "prices": {
-        "usd": "0.28"
+        "usd": "0.29"
       }
     },
     {
@@ -9219,7 +9219,7 @@
       "artist_ids": [
         "b845b8ee-aeea-4822-bcf9-7230625ac95c"
       ],
-      "edhrec_rank": 8911,
+      "edhrec_rank": 8916,
       "properties": [],
       "prices": {
         "usd": "1.32"
@@ -9264,10 +9264,10 @@
       "artist_ids": [
         "e4631396-f0ce-41df-9d35-a7bd1da9d5a6"
       ],
-      "edhrec_rank": 3119,
+      "edhrec_rank": 3115,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.28"
       }
     },
     {
@@ -9309,10 +9309,10 @@
       "artist_ids": [
         "269392ac-4c06-4650-98e2-d49a5a7f2371"
       ],
-      "edhrec_rank": 3987,
+      "edhrec_rank": 3992,
       "properties": [],
       "prices": {
-        "usd": "0.75"
+        "usd": "0.78"
       }
     },
     {
@@ -9359,7 +9359,7 @@
       "edhrec_rank": 358,
       "properties": [],
       "prices": {
-        "usd": "0.42"
+        "usd": "0.43"
       }
     },
     {
@@ -9401,7 +9401,7 @@
       "artist_ids": [
         "17bc7f55-958b-43f4-bb40-09746d05b3f9"
       ],
-      "edhrec_rank": 8622,
+      "edhrec_rank": 8617,
       "properties": [],
       "prices": {
         "usd": "0.18"
@@ -9532,7 +9532,7 @@
       "artist_ids": [
         "4b149402-618d-4f54-9db8-788e4a5bce70"
       ],
-      "edhrec_rank": 4521,
+      "edhrec_rank": 4519,
       "properties": [],
       "prices": {
         "usd": "0.31"
@@ -9576,7 +9576,7 @@
       "artist_ids": [
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
-      "edhrec_rank": 10419,
+      "edhrec_rank": 10421,
       "properties": [],
       "prices": {
         "usd": "0.21"
@@ -9675,7 +9675,7 @@
       "artist_ids": [
         "70c20ea3-5ad6-4082-a337-6e994ae5828e"
       ],
-      "edhrec_rank": 6044,
+      "edhrec_rank": 6043,
       "properties": [],
       "prices": {
         "usd": "4.14"
@@ -9715,7 +9715,7 @@
       "artist_ids": [
         "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
       ],
-      "edhrec_rank": 1562,
+      "edhrec_rank": 1561,
       "properties": [],
       "prices": {
         "usd": "9.46"
@@ -9746,11 +9746,11 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 3725,
+      "edhrec_rank": 3719,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.23"
+        "usd": "0.22"
       }
     },
     {
@@ -9854,7 +9854,7 @@
       "edhrec_rank": 3608,
       "properties": [],
       "prices": {
-        "usd": "0.48"
+        "usd": "0.47"
       }
     },
     {
@@ -9897,7 +9897,7 @@
       "artist_ids": [
         "3a243c17-3baa-4b53-9599-645311cd7d3d"
       ],
-      "edhrec_rank": 10672,
+      "edhrec_rank": 10680,
       "properties": [],
       "prices": {
         "usd": "0.80"
@@ -9950,7 +9950,7 @@
       "artist_ids": [
         "018799f5-76d7-4849-9375-f1b9030977e6"
       ],
-      "edhrec_rank": 1416,
+      "edhrec_rank": 1417,
       "properties": [],
       "prices": {
         "usd": "8.14"
@@ -9981,9 +9981,9 @@
         "C",
         "R"
       ],
-      "edhrec_rank": 13653,
+      "edhrec_rank": 13422,
       "prices": {
-        "usd": "3.52",
+        "usd": "3.47",
         "usd_foil": "3.29",
         "usd_etched": null,
         "eur": "5.08",
@@ -10060,7 +10060,7 @@
       "edhrec_rank": 1129,
       "properties": [],
       "prices": {
-        "usd": "6.19"
+        "usd": "6.14"
       }
     },
     {
@@ -10104,7 +10104,7 @@
       "artist_ids": [
         "c7c15d49-f84b-4d98-9a34-e80e8347b756"
       ],
-      "edhrec_rank": 2531,
+      "edhrec_rank": 2532,
       "properties": [],
       "prices": {
         "usd": "0.32"
@@ -10150,7 +10150,7 @@
       "artist_ids": [
         "507c67d2-1514-40ab-b7cb-a9f3b96a08e8"
       ],
-      "edhrec_rank": 1380,
+      "edhrec_rank": 1381,
       "properties": [],
       "prices": {
         "usd": "2.57"
@@ -10280,7 +10280,7 @@
       "artist_ids": [
         "1952c90b-a5a7-4328-9f7c-e11064f59daf"
       ],
-      "edhrec_rank": 18440,
+      "edhrec_rank": 18445,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -10328,7 +10328,7 @@
       "edhrec_rank": 381,
       "properties": [],
       "prices": {
-        "usd": "3.95"
+        "usd": "3.87"
       }
     },
     {
@@ -10374,7 +10374,7 @@
       "edhrec_rank": 2147,
       "properties": [],
       "prices": {
-        "usd": "0.17"
+        "usd": "0.16"
       }
     },
     {
@@ -10414,7 +10414,7 @@
       "edhrec_rank": 397,
       "properties": [],
       "prices": {
-        "usd": "0.39"
+        "usd": "0.38"
       }
     },
     {
@@ -10469,7 +10469,7 @@
       "artist_ids": [
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
-      "edhrec_rank": 3066,
+      "edhrec_rank": 3067,
       "properties": [],
       "prices": {
         "usd": "2.14"
@@ -10509,10 +10509,10 @@
       "artist_ids": [
         "c011318e-8503-48c1-a990-46e50aff48a0"
       ],
-      "edhrec_rank": 4539,
+      "edhrec_rank": 4540,
       "properties": [],
       "prices": {
-        "usd": "16.72"
+        "usd": "16.82"
       }
     },
     {
@@ -10553,7 +10553,7 @@
       "artist_ids": [
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
-      "edhrec_rank": 2921,
+      "edhrec_rank": 2923,
       "properties": [],
       "prices": {
         "usd": "0.26"
@@ -10597,7 +10597,7 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 4332,
+      "edhrec_rank": 4334,
       "properties": [],
       "prices": {
         "usd": "0.18"
@@ -10641,10 +10641,10 @@
       "artist_ids": [
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
-      "edhrec_rank": 3424,
+      "edhrec_rank": 3428,
       "properties": [],
       "prices": {
-        "usd": "0.16"
+        "usd": "0.19"
       }
     },
     {
@@ -10685,7 +10685,7 @@
       "artist_ids": [
         "b8266529-1ffe-41e7-9969-fcf39f61426b"
       ],
-      "edhrec_rank": 3623,
+      "edhrec_rank": 3624,
       "properties": [],
       "prices": {
         "usd": "0.09"
@@ -10729,7 +10729,7 @@
       "artist_ids": [
         "269392ac-4c06-4650-98e2-d49a5a7f2371"
       ],
-      "edhrec_rank": 3137,
+      "edhrec_rank": 3138,
       "properties": [],
       "prices": {
         "usd": "0.27"
@@ -10818,7 +10818,7 @@
       "edhrec_rank": 1657,
       "properties": [],
       "prices": {
-        "usd": "6.88"
+        "usd": "7.00"
       }
     },
     {
@@ -10948,7 +10948,7 @@
       "edhrec_rank": 3574,
       "properties": [],
       "prices": {
-        "usd": "3.34"
+        "usd": "3.21"
       }
     },
     {
@@ -10985,10 +10985,10 @@
       "artist_ids": [
         "aabbf32e-5330-403a-8a99-a653c050e263"
       ],
-      "edhrec_rank": 3013,
+      "edhrec_rank": 3012,
       "properties": [],
       "prices": {
-        "usd": "3.63"
+        "usd": "3.52"
       }
     },
     {
@@ -11022,7 +11022,7 @@
       "artist_ids": [
         "770b4e16-de76-49ed-949f-84e6d2e06d25"
       ],
-      "edhrec_rank": 17163,
+      "edhrec_rank": 17162,
       "properties": [],
       "prices": {
         "usd": "693.33"
@@ -11052,11 +11052,11 @@
         "R",
         "W"
       ],
-      "edhrec_rank": 14123,
+      "edhrec_rank": 14095,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.14"
+        "usd": "0.15"
       }
     },
     {
@@ -11206,7 +11206,7 @@
       "artist_ids": [
         "0c066852-6fdb-42d0-aab9-db4038850da0"
       ],
-      "edhrec_rank": 15138,
+      "edhrec_rank": 15143,
       "properties": [],
       "prices": {
         "usd": "0.31"
@@ -11281,7 +11281,7 @@
       "edhrec_rank": 483,
       "properties": [],
       "prices": {
-        "usd": "1.44"
+        "usd": "1.57"
       }
     },
     {
@@ -11365,7 +11365,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 9195,
+      "edhrec_rank": 9197,
       "properties": [],
       "prices": {
         "usd": "0.65"
@@ -11450,7 +11450,7 @@
       "artist_ids": [
         "bc760b5e-6f98-4a17-9b12-5f4eccd12bb2"
       ],
-      "edhrec_rank": 5146,
+      "edhrec_rank": 5147,
       "properties": [],
       "prices": {
         "usd": "0.40"
@@ -11491,7 +11491,7 @@
       "artist_ids": [
         "02e2b5de-4341-464c-8fdb-a1adbf873bc0"
       ],
-      "edhrec_rank": 11562,
+      "edhrec_rank": 11559,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -11536,7 +11536,7 @@
       "artist_ids": [
         "21ed6499-c4d3-4965-ab02-6c7228275bec"
       ],
-      "edhrec_rank": 9610,
+      "edhrec_rank": 9616,
       "properties": [],
       "prices": {
         "usd": "0.20"
@@ -11584,7 +11584,7 @@
       "edhrec_rank": 180,
       "properties": [],
       "prices": {
-        "usd": "1.50"
+        "usd": "1.43"
       }
     },
     {
@@ -11625,10 +11625,10 @@
       "artist_ids": [
         "fc0fb0e9-aa30-4143-a43e-d20b4aa9d8ed"
       ],
-      "edhrec_rank": 4771,
+      "edhrec_rank": 4772,
       "properties": [],
       "prices": {
-        "usd": "0.20"
+        "usd": "0.21"
       }
     },
     {
@@ -11671,7 +11671,7 @@
       "artist_ids": [
         "3a243c17-3baa-4b53-9599-645311cd7d3d"
       ],
-      "edhrec_rank": 9089,
+      "edhrec_rank": 9094,
       "properties": [],
       "prices": {
         "usd": "0.56"
@@ -11718,7 +11718,7 @@
       "artist_ids": [
         "c7c15d49-f84b-4d98-9a34-e80e8347b756"
       ],
-      "edhrec_rank": 2226,
+      "edhrec_rank": 2228,
       "properties": [],
       "prices": {
         "usd": "1.04"
@@ -11853,10 +11853,10 @@
       "artist_ids": [
         "a1bba8ff-63b4-4786-b1c4-f1bfe5d3ab1c"
       ],
-      "edhrec_rank": 6035,
+      "edhrec_rank": 6037,
       "properties": [],
       "prices": {
-        "usd": "0.11"
+        "usd": "0.10"
       }
     },
     {
@@ -11947,7 +11947,7 @@
       "edhrec_rank": 762,
       "properties": [],
       "prices": {
-        "usd": "5.14"
+        "usd": "5.16"
       }
     },
     {
@@ -12001,10 +12001,10 @@
       "artist_ids": [
         "7a9aaa63-73ae-492c-948e-7531415fdf31"
       ],
-      "edhrec_rank": 5522,
+      "edhrec_rank": 5526,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.28"
       }
     },
     {
@@ -12080,7 +12080,7 @@
       "artist_ids": [
         "a662cb71-4770-4b49-8b03-2cf8497049a7"
       ],
-      "edhrec_rank": 8681,
+      "edhrec_rank": 8683,
       "properties": [],
       "prices": {
         "usd": "0.30"
@@ -12127,7 +12127,7 @@
       "artist_ids": [
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
-      "edhrec_rank": 12077,
+      "edhrec_rank": 12083,
       "properties": [],
       "prices": {
         "usd": "0.19"
@@ -12167,7 +12167,7 @@
       "artist_ids": [
         "f3116c88-57f4-4fd1-95f3-cfd163977661"
       ],
-      "edhrec_rank": 5161,
+      "edhrec_rank": 5165,
       "properties": [],
       "prices": {
         "usd": "36.10"
@@ -12209,7 +12209,7 @@
       "artist_ids": [
         "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
       ],
-      "edhrec_rank": 16754,
+      "edhrec_rank": 16756,
       "properties": [],
       "prices": {
         "usd": "1.44"
@@ -12267,10 +12267,10 @@
       "artist_ids": [
         "85908891-3cc7-42b0-9b54-27ed0fe89c53"
       ],
-      "edhrec_rank": 3059,
+      "edhrec_rank": 3056,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.33"
       }
     },
     {
@@ -12309,7 +12309,7 @@
       "artist_ids": [
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
-      "edhrec_rank": 8349,
+      "edhrec_rank": 8347,
       "properties": [],
       "prices": {
         "usd": "3.41"
@@ -12351,7 +12351,7 @@
       "artist_ids": [
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
-      "edhrec_rank": 10474,
+      "edhrec_rank": 10470,
       "properties": [],
       "prices": {
         "usd": "1.28"
@@ -12392,10 +12392,10 @@
       "artist_ids": [
         "75b27b57-a475-449b-843d-15e33a39ec22"
       ],
-      "edhrec_rank": 2461,
+      "edhrec_rank": 2462,
       "properties": [],
       "prices": {
-        "usd": "0.72"
+        "usd": "0.70"
       }
     },
     {
@@ -12423,7 +12423,7 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 3834,
+      "edhrec_rank": 3826,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -12454,11 +12454,11 @@
         "B",
         "W"
       ],
-      "edhrec_rank": 5051,
+      "edhrec_rank": 5024,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "2.82"
+        "usd": "2.79"
       }
     },
     {
@@ -12498,10 +12498,10 @@
       "artist_ids": [
         "669b8b90-758d-4f9e-b4f7-98cd6742eb97"
       ],
-      "edhrec_rank": 3887,
+      "edhrec_rank": 3884,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.26"
       }
     },
     {
@@ -12542,7 +12542,7 @@
       "artist_ids": [
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
-      "edhrec_rank": 9482,
+      "edhrec_rank": 9484,
       "properties": [],
       "prices": {
         "usd": "0.21"
@@ -12585,7 +12585,7 @@
       "artist_ids": [
         "62dc90c0-4bc2-4d42-ad76-59cad9243566"
       ],
-      "edhrec_rank": 3381,
+      "edhrec_rank": 3382,
       "properties": [],
       "prices": {
         "usd": "15.05"
@@ -12632,7 +12632,7 @@
       "edhrec_rank": 382,
       "properties": [],
       "prices": {
-        "usd": "5.34"
+        "usd": "5.28"
       }
     },
     {
@@ -12719,7 +12719,7 @@
       "edhrec_rank": 779,
       "properties": [],
       "prices": {
-        "usd": "8.16"
+        "usd": "8.13"
       }
     },
     {
@@ -12756,7 +12756,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 22418,
+      "edhrec_rank": 22435,
       "properties": [],
       "prices": {
         "usd": "284.33"
@@ -12801,7 +12801,7 @@
       "artist_ids": [
         "54366fc1-c5b1-4faa-a7a5-de2abc119de1"
       ],
-      "edhrec_rank": 11244,
+      "edhrec_rank": 11246,
       "properties": [],
       "prices": {
         "usd": "0.30"
@@ -12845,7 +12845,7 @@
       "edhrec_rank": 538,
       "properties": [],
       "prices": {
-        "usd": "4.17"
+        "usd": "4.22"
       }
     },
     {
@@ -12970,7 +12970,7 @@
       "artist_ids": [
         "20871267-2d8a-41d5-b03a-be3d557c5734"
       ],
-      "edhrec_rank": 2826,
+      "edhrec_rank": 2827,
       "properties": [],
       "prices": {
         "usd": "4.46"
@@ -13051,7 +13051,7 @@
       "artist_ids": [
         "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
       ],
-      "edhrec_rank": 6031,
+      "edhrec_rank": 6033,
       "properties": [],
       "prices": {
         "usd": "0.37"
@@ -13096,7 +13096,7 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "edhrec_rank": 3638,
+      "edhrec_rank": 3640,
       "properties": [],
       "prices": {
         "usd": "0.29"
@@ -13134,7 +13134,7 @@
       "artist_ids": [
         "f0c43e1b-1853-4abc-8a1b-d7dda6c1d592"
       ],
-      "edhrec_rank": 830,
+      "edhrec_rank": 829,
       "properties": [],
       "prices": {
         "usd": "0.33"
@@ -13175,7 +13175,7 @@
       "artist_ids": [
         "3a243c17-3baa-4b53-9599-645311cd7d3d"
       ],
-      "edhrec_rank": 6010,
+      "edhrec_rank": 6013,
       "properties": [],
       "prices": {
         "usd": "0.34"
@@ -13262,7 +13262,7 @@
       "artist_ids": [
         "76bc57c7-47c6-40c5-8797-8ffcce430ac7"
       ],
-      "edhrec_rank": 4354,
+      "edhrec_rank": 4353,
       "properties": [],
       "prices": {
         "usd": "0.34"
@@ -13305,10 +13305,10 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "edhrec_rank": 1123,
+      "edhrec_rank": 1121,
       "properties": [],
       "prices": {
-        "usd": "13.14"
+        "usd": "13.61"
       }
     },
     {
@@ -13510,7 +13510,7 @@
       "edhrec_rank": 50,
       "properties": [],
       "prices": {
-        "usd": "1.62"
+        "usd": "1.63"
       }
     },
     {
@@ -13548,7 +13548,7 @@
       "artist_ids": [
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
-      "edhrec_rank": 7660,
+      "edhrec_rank": 7661,
       "properties": [],
       "prices": {
         "usd": "0.33"
@@ -13663,7 +13663,7 @@
       "edhrec_rank": 203,
       "properties": [],
       "prices": {
-        "usd": "2.55"
+        "usd": "2.71"
       }
     },
     {
@@ -13708,7 +13708,7 @@
       "edhrec_rank": 766,
       "properties": [],
       "prices": {
-        "usd": "0.39"
+        "usd": "0.38"
       }
     },
     {
@@ -13747,7 +13747,7 @@
       "artist_ids": [
         "d084e74b-f63a-4107-b72c-ed6250ecc93b"
       ],
-      "edhrec_rank": 10343,
+      "edhrec_rank": 10344,
       "properties": [],
       "prices": {
         "usd": "0.14"
@@ -13792,10 +13792,10 @@
       "artist_ids": [
         "878a38c8-617b-4c02-9b93-719c19413490"
       ],
-      "edhrec_rank": 5019,
+      "edhrec_rank": 5025,
       "properties": [],
       "prices": {
-        "usd": "0.30"
+        "usd": "0.28"
       }
     },
     {
@@ -13838,10 +13838,10 @@
       "artist_ids": [
         "982d9460-f9b9-42f6-8a25-47afa7df22e9"
       ],
-      "edhrec_rank": 2122,
+      "edhrec_rank": 2120,
       "properties": [],
       "prices": {
-        "usd": "0.31"
+        "usd": "0.32"
       }
     },
     {
@@ -13973,7 +13973,7 @@
       "edhrec_rank": 879,
       "properties": [],
       "prices": {
-        "usd": "0.19"
+        "usd": "0.18"
       }
     },
     {
@@ -14026,10 +14026,10 @@
       "artist_ids": [
         "f366a0ee-a0cd-466d-ba6a-90058c7a31a6"
       ],
-      "edhrec_rank": 468,
+      "edhrec_rank": 469,
       "properties": [],
       "prices": {
-        "usd": "29.79"
+        "usd": "30.08"
       }
     },
     {
@@ -14058,7 +14058,7 @@
         "R",
         "W"
       ],
-      "edhrec_rank": 11261,
+      "edhrec_rank": 11235,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -14104,7 +14104,7 @@
       "artist_ids": [
         "7b1b0ce9-2c58-4321-a2a7-cdc94feae082"
       ],
-      "edhrec_rank": 823,
+      "edhrec_rank": 822,
       "properties": [],
       "prices": {
         "usd": "5.78"
@@ -14132,11 +14132,11 @@
       "produced_mana": [
         "R"
       ],
-      "edhrec_rank": 1899,
+      "edhrec_rank": 1898,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "1.97"
+        "usd": "1.89"
       }
     },
     {
@@ -14179,7 +14179,7 @@
       "artist_ids": [
         "a51444a8-eb4b-4615-a663-d1d418591ccb"
       ],
-      "edhrec_rank": 1230,
+      "edhrec_rank": 1231,
       "properties": [],
       "prices": {
         "usd": "9.04"
@@ -14209,7 +14209,7 @@
         "B",
         "W"
       ],
-      "edhrec_rank": 22060,
+      "edhrec_rank": 21807,
       "prices": {
         "usd": "0.14",
         "usd_foil": "0.20",
@@ -14258,7 +14258,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 3265,
+      "edhrec_rank": 3266,
       "properties": [],
       "prices": {
         "usd": "4.33"
@@ -14300,7 +14300,7 @@
       "artist_ids": [
         "fce9030b-86bd-4439-b06a-920a1eeb184c"
       ],
-      "edhrec_rank": 3624,
+      "edhrec_rank": 3625,
       "properties": [],
       "prices": {
         "usd": "1.50"
@@ -14337,10 +14337,10 @@
       "artist_ids": [
         "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
       ],
-      "edhrec_rank": 5287,
+      "edhrec_rank": 5294,
       "properties": [],
       "prices": {
-        "usd": "1.26"
+        "usd": "1.28"
       }
     },
     {
@@ -14465,10 +14465,10 @@
       "artist_ids": [
         "a5048cc7-438a-4378-98e4-da99b78e1db0"
       ],
-      "edhrec_rank": 688,
+      "edhrec_rank": 687,
       "properties": [],
       "prices": {
-        "usd": "8.78"
+        "usd": "8.69"
       }
     },
     {
@@ -14495,7 +14495,7 @@
         "B",
         "G"
       ],
-      "edhrec_rank": 9614,
+      "edhrec_rank": 9607,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -14524,9 +14524,9 @@
       "produced_mana": [
         "R"
       ],
-      "edhrec_rank": 20614,
+      "edhrec_rank": 20475,
       "prices": {
-        "usd": "0.69",
+        "usd": "0.66",
         "usd_foil": "2.83",
         "usd_etched": null,
         "eur": null,
@@ -14573,7 +14573,7 @@
       "edhrec_rank": 1611,
       "properties": [],
       "prices": {
-        "usd": "12.44"
+        "usd": "12.51"
       }
     },
     {
@@ -14600,7 +14600,7 @@
         "B",
         "W"
       ],
-      "edhrec_rank": 12799,
+      "edhrec_rank": 12784,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -14703,7 +14703,7 @@
       "artist_ids": [
         "46dc4b5e-e42c-4d65-a4f3-ad75b0f6f6dd"
       ],
-      "edhrec_rank": 10837,
+      "edhrec_rank": 10840,
       "properties": [],
       "prices": {
         "usd": "0.45"
@@ -14835,7 +14835,7 @@
       "artist_ids": [
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
-      "edhrec_rank": 2185,
+      "edhrec_rank": 2182,
       "properties": [],
       "prices": {
         "usd": "0.33"
@@ -14882,7 +14882,7 @@
       "edhrec_rank": 818,
       "properties": [],
       "prices": {
-        "usd": "0.28"
+        "usd": "0.27"
       }
     },
     {
@@ -14925,7 +14925,7 @@
       "artist_ids": [
         "fa8fd324-099a-43f2-9c57-97f64e38a5e9"
       ],
-      "edhrec_rank": 13573,
+      "edhrec_rank": 13575,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -14970,7 +14970,7 @@
       "artist_ids": [
         "adb9ad6d-6173-454b-8b50-a102b182548b"
       ],
-      "edhrec_rank": 4974,
+      "edhrec_rank": 4975,
       "properties": [],
       "prices": {
         "usd": "0.25"
@@ -15014,7 +15014,7 @@
       "artist_ids": [
         "4eac683c-8c96-4f57-b8a4-ad7f7b7c44c7"
       ],
-      "edhrec_rank": 22472,
+      "edhrec_rank": 22482,
       "properties": [],
       "prices": {
         "usd": "11.02"
@@ -15059,7 +15059,7 @@
       "artist_ids": [
         "d82b1138-76d3-49f7-9d8c-bc2e2d3e0b0a"
       ],
-      "edhrec_rank": 6224,
+      "edhrec_rank": 6228,
       "properties": [],
       "prices": {
         "usd": "0.21"
@@ -15103,7 +15103,7 @@
       "artist_ids": [
         "c4c9b5ea-4b31-40a0-8e40-d7dfeae43234"
       ],
-      "edhrec_rank": 12369,
+      "edhrec_rank": 12370,
       "properties": [],
       "prices": {
         "usd": "0.27"
@@ -15179,11 +15179,11 @@
         "B",
         "W"
       ],
-      "edhrec_rank": 10554,
+      "edhrec_rank": 10522,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.17"
+        "usd": "0.19"
       }
     },
     {
@@ -15225,7 +15225,7 @@
       "artist_ids": [
         "269392ac-4c06-4650-98e2-d49a5a7f2371"
       ],
-      "edhrec_rank": 5164,
+      "edhrec_rank": 5167,
       "properties": [],
       "prices": {
         "usd": "0.19"
@@ -15283,10 +15283,10 @@
       "artist_ids": [
         "1624a1a8-3492-4c0b-9abc-83dcf2653111"
       ],
-      "edhrec_rank": 14922,
+      "edhrec_rank": 14929,
       "properties": [],
       "prices": {
-        "usd": "0.21"
+        "usd": "0.20"
       }
     },
     {
@@ -15340,7 +15340,7 @@
       "artist_ids": [
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
-      "edhrec_rank": 9834,
+      "edhrec_rank": 9832,
       "properties": [],
       "prices": {
         "usd": "0.10"
@@ -15382,7 +15382,7 @@
       "artist_ids": [
         "1675947d-e663-4200-a6ce-5ad7bb3c83b1"
       ],
-      "edhrec_rank": 20365,
+      "edhrec_rank": 20363,
       "properties": [],
       "prices": {
         "usd": "0.38"
@@ -15450,7 +15450,7 @@
       "edhrec_rank": 951,
       "properties": [],
       "prices": {
-        "usd": "2.89"
+        "usd": "2.91"
       }
     },
     {
@@ -15540,10 +15540,10 @@
       "artist_ids": [
         "1431bdd4-c187-40ea-847a-e1dcd835598a"
       ],
-      "edhrec_rank": 11642,
+      "edhrec_rank": 11651,
       "properties": [],
       "prices": {
-        "usd": "0.75"
+        "usd": "0.76"
       }
     },
     {
@@ -15626,7 +15626,7 @@
       "artist_ids": [
         "ebde5690-d401-46ba-8fd3-b9c07d5ef5a7"
       ],
-      "edhrec_rank": 10062,
+      "edhrec_rank": 10065,
       "properties": [],
       "prices": {
         "usd": "0.25"
@@ -15671,7 +15671,7 @@
       "artist_ids": [
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
-      "edhrec_rank": 15198,
+      "edhrec_rank": 15211,
       "properties": [],
       "prices": {
         "usd": "0.26"
@@ -15807,7 +15807,7 @@
       "artist_ids": [
         "25645c87-71be-400b-8522-618a52c37454"
       ],
-      "edhrec_rank": 5498,
+      "edhrec_rank": 5501,
       "properties": [],
       "prices": {
         "usd": "0.27"
@@ -15908,7 +15908,7 @@
       "artist_ids": [
         "db74e463-9c78-4f45-80a9-efa5cc4f9841"
       ],
-      "edhrec_rank": 14127,
+      "edhrec_rank": 14140,
       "properties": [],
       "prices": {
         "usd": "0.19"
@@ -15951,7 +15951,7 @@
       "artist_ids": [
         "3605d81f-5c97-4958-9dcc-d44a85e10305"
       ],
-      "edhrec_rank": 13178,
+      "edhrec_rank": 13196,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -15996,10 +15996,10 @@
       "artist_ids": [
         "ebde5690-d401-46ba-8fd3-b9c07d5ef5a7"
       ],
-      "edhrec_rank": 2539,
+      "edhrec_rank": 2541,
       "properties": [],
       "prices": {
-        "usd": "0.21"
+        "usd": "0.20"
       }
     },
     {
@@ -16027,9 +16027,9 @@
         "G",
         "W"
       ],
-      "edhrec_rank": 14568,
+      "edhrec_rank": 14374,
       "prices": {
-        "usd": "2.37",
+        "usd": "2.45",
         "usd_foil": "3.39",
         "usd_etched": null,
         "eur": "4.11",
@@ -16255,7 +16255,7 @@
       "edhrec_rank": 2303,
       "properties": [],
       "prices": {
-        "usd": "0.29"
+        "usd": "0.31"
       }
     },
     {
@@ -16298,7 +16298,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 20902,
+      "edhrec_rank": 20908,
       "properties": [],
       "prices": {
         "usd": "0.29"
@@ -16340,7 +16340,7 @@
       "artist_ids": [
         "b4117364-73af-47e5-8cf0-901eeea09e01"
       ],
-      "edhrec_rank": 11705,
+      "edhrec_rank": 11707,
       "properties": [],
       "prices": {
         "usd": "0.44"
@@ -16381,7 +16381,7 @@
       "artist_ids": [
         "4441fe52-9e41-40c1-9b74-8510426279ab"
       ],
-      "edhrec_rank": 801,
+      "edhrec_rank": 802,
       "properties": [],
       "prices": {
         "usd": "4.96"
@@ -16422,7 +16422,7 @@
       "artist_ids": [
         "c4e0aa7c-a008-4d71-80ce-d5a1ca0b251b"
       ],
-      "edhrec_rank": 6956,
+      "edhrec_rank": 6955,
       "properties": [],
       "prices": {
         "usd": "4.27"
@@ -16467,7 +16467,7 @@
       "artist_ids": [
         "21e10012-06ae-44f2-b38d-3824dd2e73d4"
       ],
-      "edhrec_rank": 5026,
+      "edhrec_rank": 5023,
       "properties": [],
       "prices": {
         "usd": "10.39"
@@ -16527,7 +16527,7 @@
       "artist_ids": [
         "b5f1bd34-abee-40c9-99f7-a6ee089fb30b"
       ],
-      "edhrec_rank": 2759,
+      "edhrec_rank": 2762,
       "properties": [],
       "prices": {
         "usd": "0.36"
@@ -16566,10 +16566,10 @@
       "artist_ids": [
         "5a5ee217-9d28-419a-b92a-a2376c7d18b3"
       ],
-      "edhrec_rank": 2209,
+      "edhrec_rank": 2212,
       "properties": [],
       "prices": {
-        "usd": "22.66"
+        "usd": "22.60"
       }
     },
     {
@@ -16611,10 +16611,10 @@
       "artist_ids": [
         "e31f5891-08f7-4e5a-bac9-8b4570b8c1ab"
       ],
-      "edhrec_rank": 3953,
+      "edhrec_rank": 3955,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.39"
       }
     },
     {
@@ -16730,7 +16730,7 @@
       "edhrec_rank": 1181,
       "properties": [],
       "prices": {
-        "usd": "6.76"
+        "usd": "6.59"
       }
     },
     {
@@ -16803,7 +16803,7 @@
         "b376cbb6-e0d5-41e9-bbb2-9fbd40c71147",
         "a9065769-afcd-4e54-a3c0-5809e7b4108b"
       ],
-      "edhrec_rank": 2863,
+      "edhrec_rank": 2862,
       "properties": [],
       "prices": {
         "usd": "0.35"
@@ -16834,9 +16834,9 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 13978,
+      "edhrec_rank": 13786,
       "prices": {
-        "usd": "2.78",
+        "usd": "2.63",
         "usd_foil": "3.21",
         "usd_etched": null,
         "eur": "4.40",
@@ -16882,7 +16882,7 @@
       "artist_ids": [
         "2e6a0611-9411-4ba4-98e3-c0e18cbf9f83"
       ],
-      "edhrec_rank": 6387,
+      "edhrec_rank": 6385,
       "properties": [],
       "prices": {
         "usd": "0.31"
@@ -16973,7 +16973,7 @@
       "artist_ids": [
         "c09ede88-a1b5-4a18-9895-dc8a965d28a5"
       ],
-      "edhrec_rank": 3530,
+      "edhrec_rank": 3524,
       "properties": [],
       "prices": {
         "usd": "0.27"
@@ -17021,7 +17021,7 @@
       "edhrec_rank": 612,
       "properties": [],
       "prices": {
-        "usd": "10.55"
+        "usd": "10.61"
       }
     },
     {
@@ -17077,7 +17077,7 @@
       "artist_ids": [
         "b0e80135-db5a-4b88-a0bc-815a0e94faa1"
       ],
-      "edhrec_rank": 17376,
+      "edhrec_rank": 17371,
       "properties": [],
       "prices": {
         "usd": "0.23"
@@ -17119,7 +17119,7 @@
       "artist_ids": [
         "996ad764-4ae0-4952-8bb5-5a75c9d68275"
       ],
-      "edhrec_rank": 9875,
+      "edhrec_rank": 9872,
       "properties": [],
       "prices": {
         "usd": "0.53"
@@ -17221,7 +17221,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 13238,
+      "edhrec_rank": 13245,
       "properties": [],
       "prices": {
         "usd": "0.91"
@@ -17266,7 +17266,7 @@
       "artist_ids": [
         "1629eaec-cc37-4870-bc89-1e8ca5569507"
       ],
-      "edhrec_rank": 5783,
+      "edhrec_rank": 5781,
       "properties": [],
       "prices": {
         "usd": "0.19"
@@ -17313,7 +17313,7 @@
       "artist_ids": [
         "fc021f3d-773a-4706-bbe7-f602324f511f"
       ],
-      "edhrec_rank": 2160,
+      "edhrec_rank": 2159,
       "properties": [],
       "prices": {
         "usd": "0.27"
@@ -17494,7 +17494,7 @@
       "artist_ids": [
         "c8b3ccf1-5c15-44f2-a7c5-1628c1a3f325"
       ],
-      "edhrec_rank": 5787,
+      "edhrec_rank": 5784,
       "properties": [],
       "prices": {
         "usd": "0.19"
@@ -17539,7 +17539,7 @@
       "artist_ids": [
         "17948f16-611a-44b8-8d10-9895a0bdfff1"
       ],
-      "edhrec_rank": 4513,
+      "edhrec_rank": 4505,
       "properties": [],
       "prices": {
         "usd": "7.02"
@@ -17579,7 +17579,7 @@
       "artist_ids": [
         "e607a0d4-fc12-4c01-9e3f-501f5269b9cb"
       ],
-      "edhrec_rank": 7539,
+      "edhrec_rank": 7543,
       "properties": [],
       "prices": {
         "usd": "0.33"
@@ -17616,10 +17616,10 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 4748,
+      "edhrec_rank": 4752,
       "properties": [],
       "prices": {
-        "usd": "0.70"
+        "usd": "0.68"
       }
     },
     {
@@ -17706,7 +17706,7 @@
       "artist_ids": [
         "43cdce85-e4bc-424e-ac95-fd0886b66ff3"
       ],
-      "edhrec_rank": 2866,
+      "edhrec_rank": 2868,
       "properties": [],
       "prices": {
         "usd": "0.16"
@@ -17765,7 +17765,7 @@
       "artist_ids": [
         "fb7b61a8-13c5-4813-a749-9d3396801906"
       ],
-      "edhrec_rank": 7172,
+      "edhrec_rank": 7168,
       "properties": [],
       "prices": {
         "usd": "0.27"
@@ -17811,7 +17811,7 @@
       "edhrec_rank": 400,
       "properties": [],
       "prices": {
-        "usd": "2.50"
+        "usd": "2.49"
       }
     },
     {
@@ -17867,7 +17867,7 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 15243,
+      "edhrec_rank": 15247,
       "properties": [],
       "prices": {
         "usd": "0.20"
@@ -17898,11 +17898,11 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 10901,
+      "edhrec_rank": 10868,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.50"
+        "usd": "0.52"
       }
     },
     {
@@ -17986,7 +17986,7 @@
       "artist_ids": [
         "8df59511-f31c-461f-8a7d-0271aa1f973d"
       ],
-      "edhrec_rank": 17548,
+      "edhrec_rank": 17554,
       "properties": [],
       "prices": {
         "usd": "5.45"
@@ -18071,7 +18071,7 @@
       "artist_ids": [
         "c540d1fc-1500-457f-93cf-d6069ee66546"
       ],
-      "edhrec_rank": 5729,
+      "edhrec_rank": 5733,
       "properties": [],
       "prices": {
         "usd": "0.35"
@@ -18177,7 +18177,7 @@
       "artist_ids": [
         "b8266529-1ffe-41e7-9969-fcf39f61426b"
       ],
-      "edhrec_rank": 11090,
+      "edhrec_rank": 11100,
       "properties": [],
       "prices": {
         "usd": "0.34"
@@ -18313,10 +18313,10 @@
       "artist_ids": [
         "8f588167-5376-425b-ba13-ed207d9c1b39"
       ],
-      "edhrec_rank": 5334,
+      "edhrec_rank": 5330,
       "properties": [],
       "prices": {
-        "usd": "0.20"
+        "usd": "0.19"
       }
     },
     {
@@ -18356,7 +18356,7 @@
       "edhrec_rank": 1266,
       "properties": [],
       "prices": {
-        "usd": "1.67"
+        "usd": "1.69"
       }
     },
     {
@@ -18398,7 +18398,7 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "edhrec_rank": 9379,
+      "edhrec_rank": 9383,
       "properties": [],
       "prices": {
         "usd": "0.33"
@@ -18471,7 +18471,7 @@
       "edhrec_rank": 2027,
       "properties": [],
       "prices": {
-        "usd": "1.02"
+        "usd": "1.03"
       }
     },
     {
@@ -18572,7 +18572,7 @@
       "artist_ids": [
         "0c066852-6fdb-42d0-aab9-db4038850da0"
       ],
-      "edhrec_rank": 14635,
+      "edhrec_rank": 14647,
       "properties": [],
       "prices": {
         "usd": "0.31"
@@ -18615,10 +18615,10 @@
       "artist_ids": [
         "0fbd4798-76eb-46d5-a5d4-1e3a25870e34"
       ],
-      "edhrec_rank": 418,
+      "edhrec_rank": 417,
       "properties": [],
       "prices": {
-        "usd": "12.49"
+        "usd": "12.34"
       }
     },
     {
@@ -18660,7 +18660,7 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "edhrec_rank": 5700,
+      "edhrec_rank": 5696,
       "properties": [],
       "prices": {
         "usd": "0.39"
@@ -18702,7 +18702,7 @@
       "artist_ids": [
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
-      "edhrec_rank": 5418,
+      "edhrec_rank": 5424,
       "properties": [],
       "prices": {
         "usd": "0.44"
@@ -18811,7 +18811,7 @@
       "artist_ids": [
         "d48dd097-720d-476a-8722-6a02854ae28b"
       ],
-      "edhrec_rank": 2963,
+      "edhrec_rank": 2964,
       "properties": [],
       "prices": {
         "usd": "21.55"
@@ -18895,7 +18895,7 @@
       "artist_ids": [
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
-      "edhrec_rank": 19838,
+      "edhrec_rank": 19850,
       "properties": [],
       "prices": {
         "usd": "3.36"
@@ -19012,10 +19012,10 @@
       "artist_ids": [
         "d82b1138-76d3-49f7-9d8c-bc2e2d3e0b0a"
       ],
-      "edhrec_rank": 3145,
+      "edhrec_rank": 3148,
       "properties": [],
       "prices": {
-        "usd": "1.89"
+        "usd": "1.94"
       }
     },
     {
@@ -19055,7 +19055,7 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 4199,
+      "edhrec_rank": 4203,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -19096,10 +19096,10 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "edhrec_rank": 7288,
+      "edhrec_rank": 7291,
       "properties": [],
       "prices": {
-        "usd": "0.31"
+        "usd": "0.32"
       }
     },
     {
@@ -19186,10 +19186,10 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 276,
+      "edhrec_rank": 275,
       "properties": [],
       "prices": {
-        "usd": "8.24"
+        "usd": "8.33"
       }
     },
     {
@@ -19234,7 +19234,7 @@
       "edhrec_rank": 1141,
       "properties": [],
       "prices": {
-        "usd": "1.65"
+        "usd": "1.62"
       }
     },
     {
@@ -19320,7 +19320,7 @@
       "artist_ids": [
         "e24bc1d0-446b-45e0-b215-89f581837aa4"
       ],
-      "edhrec_rank": 8813,
+      "edhrec_rank": 8819,
       "properties": [],
       "prices": {
         "usd": "4.99"
@@ -19362,7 +19362,7 @@
       "artist_ids": [
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
-      "edhrec_rank": 8507,
+      "edhrec_rank": 8503,
       "properties": [],
       "prices": {
         "usd": "1.22"
@@ -19425,7 +19425,7 @@
       "artist_ids": [
         "d084e74b-f63a-4107-b72c-ed6250ecc93b"
       ],
-      "edhrec_rank": 3027,
+      "edhrec_rank": 3026,
       "properties": [],
       "prices": {
         "usd": "0.38"
@@ -19467,7 +19467,7 @@
       "artist_ids": [
         "d54c4a1a-c0c5-4834-84db-125d341f3ad8"
       ],
-      "edhrec_rank": 24010,
+      "edhrec_rank": 24028,
       "properties": [],
       "prices": {
         "usd": "2.81"
@@ -19513,10 +19513,10 @@
       "artist_ids": [
         "adad79bf-cd52-456a-b170-740ed8bff0fc"
       ],
-      "edhrec_rank": 547,
+      "edhrec_rank": 546,
       "properties": [],
       "prices": {
-        "usd": "10.73"
+        "usd": "10.54"
       }
     },
     {
@@ -19570,7 +19570,7 @@
       "artist_ids": [
         "bb2a9339-bbe4-445f-9736-3c43379ee076"
       ],
-      "edhrec_rank": 5042,
+      "edhrec_rank": 5051,
       "properties": [],
       "prices": {
         "usd": "0.33"
@@ -19600,9 +19600,9 @@
         "B",
         "R"
       ],
-      "edhrec_rank": 21569,
+      "edhrec_rank": 21382,
       "prices": {
-        "usd": "0.11",
+        "usd": "0.15",
         "usd_foil": "0.32",
         "usd_etched": null,
         "eur": "0.09",
@@ -19664,7 +19664,7 @@
       "artist_ids": [
         "35d39e75-5d6c-4318-9136-38cdfff34a05"
       ],
-      "edhrec_rank": 20997,
+      "edhrec_rank": 21011,
       "properties": [],
       "prices": {
         "usd": "0.20"
@@ -19710,7 +19710,7 @@
       "artist_ids": [
         "b845b8ee-aeea-4822-bcf9-7230625ac95c"
       ],
-      "edhrec_rank": 26685,
+      "edhrec_rank": 26679,
       "properties": [],
       "prices": {
         "usd": "0.32"
@@ -19783,7 +19783,7 @@
       "edhrec_rank": 1161,
       "properties": [],
       "prices": {
-        "usd": "4.44"
+        "usd": "4.52"
       }
     },
     {
@@ -19822,7 +19822,7 @@
       "artist_ids": [
         "89c0f62c-0647-4f8d-b650-8242f8fea36a"
       ],
-      "edhrec_rank": 6486,
+      "edhrec_rank": 6482,
       "properties": [],
       "prices": {
         "usd": "4.06"
@@ -19866,7 +19866,7 @@
       "artist_ids": [
         "fb7b61a8-13c5-4813-a749-9d3396801906"
       ],
-      "edhrec_rank": 4937,
+      "edhrec_rank": 4942,
       "properties": [],
       "prices": {
         "usd": "0.25"
@@ -19910,7 +19910,7 @@
       "artist_ids": [
         "fb7b61a8-13c5-4813-a749-9d3396801906"
       ],
-      "edhrec_rank": 5273,
+      "edhrec_rank": 5277,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -19987,11 +19987,11 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 4432,
+      "edhrec_rank": 4419,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "2.88"
+        "usd": "2.96"
       }
     },
     {
@@ -20019,9 +20019,9 @@
         "C",
         "U"
       ],
-      "edhrec_rank": 13828,
+      "edhrec_rank": 13605,
       "prices": {
-        "usd": "3.43",
+        "usd": "3.73",
         "usd_foil": "3.77",
         "usd_etched": null,
         "eur": "5.33",
@@ -20067,10 +20067,10 @@
       "rarity": "common",
       "artist": "Svetlin Velinov",
       "artist_ids": [],
-      "edhrec_rank": 5486,
+      "edhrec_rank": 5491,
       "properties": [],
       "prices": {
-        "usd": "0.21"
+        "usd": "0.23"
       }
     },
     {
@@ -20111,7 +20111,7 @@
       "artist_ids": [
         "d072adde-7194-4bf0-b9ca-b42d8973b0ff"
       ],
-      "edhrec_rank": 3410,
+      "edhrec_rank": 3412,
       "properties": [],
       "prices": {
         "usd": "0.21"
@@ -20241,7 +20241,7 @@
       "artist_ids": [
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
-      "edhrec_rank": 3238,
+      "edhrec_rank": 3240,
       "properties": [],
       "prices": {
         "usd": "0.39"
@@ -20286,7 +20286,7 @@
       "artist_ids": [
         "f28c54ff-bbe3-485d-81a4-b2cb49430a52"
       ],
-      "edhrec_rank": 6206,
+      "edhrec_rank": 6207,
       "properties": [],
       "prices": {
         "usd": "0.12"
@@ -20331,7 +20331,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 16610,
+      "edhrec_rank": 16619,
       "properties": [],
       "prices": {
         "usd": "0.33"
@@ -20420,7 +20420,7 @@
       "artist_ids": [
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
-      "edhrec_rank": 6730,
+      "edhrec_rank": 6731,
       "properties": [],
       "prices": {
         "usd": "0.97"
@@ -20462,7 +20462,7 @@
       "artist_ids": [
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
-      "edhrec_rank": 7653,
+      "edhrec_rank": 7654,
       "properties": [],
       "prices": {
         "usd": "0.49"
@@ -20508,7 +20508,7 @@
       "artist_ids": [
         "aa7e89ed-d294-4633-9057-ce04dacfcfa4"
       ],
-      "edhrec_rank": 3003,
+      "edhrec_rank": 2999,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -20550,7 +20550,7 @@
       "artist_ids": [
         "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
       ],
-      "edhrec_rank": 18589,
+      "edhrec_rank": 18588,
       "properties": [],
       "prices": {
         "usd": "1.14"
@@ -20591,7 +20591,7 @@
       "artist_ids": [
         "bba69285-2445-4a4b-a847-59397be972ea"
       ],
-      "edhrec_rank": 1193,
+      "edhrec_rank": 1194,
       "properties": [],
       "prices": {
         "usd": "16.29"
@@ -20636,7 +20636,7 @@
       "artist_ids": [
         "96a53b95-fe5f-4fbb-9411-ccf4ee150aca"
       ],
-      "edhrec_rank": 1687,
+      "edhrec_rank": 1688,
       "properties": [],
       "prices": {
         "usd": "6.65"
@@ -20683,7 +20683,7 @@
       "edhrec_rank": 1480,
       "properties": [],
       "prices": {
-        "usd": "6.47"
+        "usd": "6.49"
       }
     },
     {
@@ -20721,7 +20721,7 @@
       "artist_ids": [
         "8fa1fdf0-96d6-46f4-a7ff-b1c0257c3735"
       ],
-      "edhrec_rank": 9507,
+      "edhrec_rank": 9510,
       "properties": [],
       "prices": {
         "usd": "0.25"
@@ -20796,7 +20796,7 @@
       "artist_ids": [
         "0fbd4798-76eb-46d5-a5d4-1e3a25870e34"
       ],
-      "edhrec_rank": 10243,
+      "edhrec_rank": 10236,
       "properties": [],
       "prices": {
         "usd": "0.65"
@@ -20840,7 +20840,7 @@
       "artist_ids": [
         "9fa4339d-f3d4-4def-8115-166845f07048"
       ],
-      "edhrec_rank": 20941,
+      "edhrec_rank": 20940,
       "properties": [],
       "prices": {
         "usd": "0.58"
@@ -20888,7 +20888,7 @@
       "edhrec_rank": 731,
       "properties": [],
       "prices": {
-        "usd": "6.79"
+        "usd": "6.75"
       }
     },
     {
@@ -20962,7 +20962,7 @@
       "edhrec_rank": 607,
       "properties": [],
       "prices": {
-        "usd": "0.76"
+        "usd": "0.79"
       }
     },
     {
@@ -21001,10 +21001,10 @@
       "artist_ids": [
         "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
       ],
-      "edhrec_rank": 19737,
+      "edhrec_rank": 19749,
       "properties": [],
       "prices": {
-        "usd": "0.69"
+        "usd": "0.70"
       }
     },
     {
@@ -21038,7 +21038,7 @@
       "artist_ids": [
         "14a1de4b-1237-4e7b-8868-b71e87c9a46e"
       ],
-      "edhrec_rank": 16217,
+      "edhrec_rank": 16223,
       "properties": [],
       "prices": {
         "usd": "0.62"
@@ -21083,10 +21083,10 @@
       "artist_ids": [
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
-      "edhrec_rank": 4084,
+      "edhrec_rank": 4086,
       "properties": [],
       "prices": {
-        "usd": "0.53"
+        "usd": "0.52"
       }
     },
     {
@@ -21128,7 +21128,7 @@
       "artist_ids": [
         "adb9ad6d-6173-454b-8b50-a102b182548b"
       ],
-      "edhrec_rank": 2251,
+      "edhrec_rank": 2252,
       "properties": [],
       "prices": {
         "usd": "0.27"
@@ -21171,10 +21171,10 @@
       "artist_ids": [
         "6dd06426-59fe-4b9c-aad5-6da8446a5c3d"
       ],
-      "edhrec_rank": 4246,
+      "edhrec_rank": 4248,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.35"
       }
     },
     {
@@ -21214,7 +21214,7 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 4600,
+      "edhrec_rank": 4603,
       "properties": [],
       "prices": {
         "usd": "0.29"
@@ -21244,7 +21244,7 @@
         "B",
         "G"
       ],
-      "edhrec_rank": 12457,
+      "edhrec_rank": 12426,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -21288,7 +21288,7 @@
       "artist_ids": [
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
-      "edhrec_rank": 16759,
+      "edhrec_rank": 16767,
       "properties": [],
       "prices": {
         "usd": "0.19"
@@ -21340,7 +21340,7 @@
       "edhrec_rank": 472,
       "properties": [],
       "prices": {
-        "usd": "19.23"
+        "usd": "19.07"
       }
     },
     {
@@ -21394,10 +21394,10 @@
       "artist_ids": [
         "269392ac-4c06-4650-98e2-d49a5a7f2371"
       ],
-      "edhrec_rank": 2004,
+      "edhrec_rank": 2003,
       "properties": [],
       "prices": {
-        "usd": "13.82"
+        "usd": "13.78"
       }
     },
     {
@@ -21442,7 +21442,7 @@
       "edhrec_rank": 5462,
       "properties": [],
       "prices": {
-        "usd": "0.24"
+        "usd": "0.26"
       }
     },
     {
@@ -21573,7 +21573,7 @@
       "edhrec_rank": 277,
       "properties": [],
       "prices": {
-        "usd": "16.55"
+        "usd": "16.30"
       }
     },
     {
@@ -21615,7 +21615,7 @@
       "artist_ids": [
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
-      "edhrec_rank": 9311,
+      "edhrec_rank": 9318,
       "properties": [],
       "prices": {
         "usd": "0.29"
@@ -21707,7 +21707,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 23246,
+      "edhrec_rank": 23255,
       "properties": [],
       "prices": {
         "usd": "0.20"
@@ -21770,7 +21770,7 @@
       "artist_ids": [
         "e20f06f2-4bcc-4dee-9b21-0f80a57e4c49"
       ],
-      "edhrec_rank": 1570,
+      "edhrec_rank": 1569,
       "properties": [],
       "prices": {
         "usd": "2.31"
@@ -21808,7 +21808,7 @@
       "artist_ids": [
         "a9ddb513-51c7-455c-ab8f-5b90aae9f75b"
       ],
-      "edhrec_rank": 22392,
+      "edhrec_rank": 22406,
       "properties": [],
       "prices": {
         "usd": "360.00"
@@ -21895,7 +21895,7 @@
       "artist_ids": [
         "85908891-3cc7-42b0-9b54-27ed0fe89c53"
       ],
-      "edhrec_rank": 10357,
+      "edhrec_rank": 10361,
       "properties": [],
       "prices": {
         "usd": "1.29"
@@ -21940,7 +21940,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 401,
+      "edhrec_rank": 402,
       "properties": [],
       "prices": {
         "usd": "0.33"
@@ -21986,7 +21986,7 @@
       "artist_ids": [
         "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
       ],
-      "edhrec_rank": 1713,
+      "edhrec_rank": 1714,
       "properties": [],
       "prices": {
         "usd": "0.11"
@@ -22031,7 +22031,7 @@
       "artist_ids": [
         "608e3b85-cdd3-4d1a-8a3a-7f1ed8856f6b"
       ],
-      "edhrec_rank": 3488,
+      "edhrec_rank": 3491,
       "properties": [],
       "prices": {
         "usd": "0.42"
@@ -22062,11 +22062,11 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 4685,
+      "edhrec_rank": 4679,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.73"
+        "usd": "0.76"
       }
     },
     {
@@ -22116,7 +22116,7 @@
       "edhrec_rank": 355,
       "properties": [],
       "prices": {
-        "usd": "16.93"
+        "usd": "17.25"
       }
     },
     {
@@ -22178,10 +22178,10 @@
       "artist_ids": [
         "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
       ],
-      "edhrec_rank": 2374,
+      "edhrec_rank": 2373,
       "properties": [],
       "prices": {
-        "usd": "1.57"
+        "usd": "1.50"
       }
     },
     {
@@ -22219,7 +22219,7 @@
       "artist_ids": [
         "92f6c2c1-fa57-4b52-99c4-0fd866c13dc9"
       ],
-      "edhrec_rank": 4977,
+      "edhrec_rank": 4978,
       "properties": [],
       "prices": {
         "usd": "0.53"
@@ -22262,7 +22262,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 5880,
+      "edhrec_rank": 5877,
       "properties": [],
       "prices": {
         "usd": "0.60"
@@ -22412,7 +22412,7 @@
       "artist_ids": [
         "af6862b1-2e08-445f-b709-37ef4c00c4db"
       ],
-      "edhrec_rank": 9671,
+      "edhrec_rank": 9673,
       "properties": [],
       "prices": {
         "usd": "0.30"
@@ -22456,7 +22456,7 @@
       "artist_ids": [
         "90edbd2e-9462-4394-b0b4-02885b4e56b3"
       ],
-      "edhrec_rank": 4421,
+      "edhrec_rank": 4420,
       "properties": [],
       "prices": {
         "usd": "0.21"
@@ -22529,7 +22529,7 @@
       "edhrec_rank": 2705,
       "properties": [],
       "prices": {
-        "usd": "0.38"
+        "usd": "0.41"
       }
     },
     {
@@ -22568,7 +22568,7 @@
       "artist_ids": [
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
-      "edhrec_rank": 5062,
+      "edhrec_rank": 5061,
       "properties": [],
       "prices": {
         "usd": "0.36"
@@ -22684,7 +22684,7 @@
       "edhrec_rank": 204,
       "properties": [],
       "prices": {
-        "usd": "2.22"
+        "usd": "2.21"
       }
     },
     {
@@ -22724,7 +22724,7 @@
       "artist_ids": [
         "eff6a2bb-7ca1-432e-8af9-aa85ee2359a2"
       ],
-      "edhrec_rank": 5471,
+      "edhrec_rank": 5472,
       "properties": [],
       "prices": {
         "usd": "1.46"
@@ -22812,10 +22812,10 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "edhrec_rank": 6825,
+      "edhrec_rank": 6821,
       "properties": [],
       "prices": {
-        "usd": "1.00"
+        "usd": "1.01"
       }
     },
     {
@@ -22886,10 +22886,10 @@
       "artist_ids": [
         "b5f49d0d-8056-48e3-b614-090e656b4f9c"
       ],
-      "edhrec_rank": 8995,
+      "edhrec_rank": 8999,
       "properties": [],
       "prices": {
-        "usd": "0.39"
+        "usd": "0.37"
       }
     },
     {
@@ -22930,7 +22930,7 @@
       "artist_ids": [
         "3a243c17-3baa-4b53-9599-645311cd7d3d"
       ],
-      "edhrec_rank": 5835,
+      "edhrec_rank": 5839,
       "properties": [],
       "prices": {
         "usd": "0.21"
@@ -23000,10 +23000,10 @@
       "artist_ids": [
         "0fad2c48-a56e-4a0b-b512-224f6f238f20"
       ],
-      "edhrec_rank": 1621,
+      "edhrec_rank": 1623,
       "properties": [],
       "prices": {
-        "usd": "0.66"
+        "usd": "0.59"
       }
     },
     {
@@ -23044,7 +23044,7 @@
       "artist_ids": [
         "43cdce85-e4bc-424e-ac95-fd0886b66ff3"
       ],
-      "edhrec_rank": 17286,
+      "edhrec_rank": 17295,
       "properties": [],
       "prices": {
         "usd": "0.36"
@@ -23086,7 +23086,7 @@
       "artist_ids": [
         "3a243c17-3baa-4b53-9599-645311cd7d3d"
       ],
-      "edhrec_rank": 19612,
+      "edhrec_rank": 19614,
       "properties": [],
       "prices": {
         "usd": "0.99"
@@ -23309,10 +23309,10 @@
       "artist_ids": [
         "89cc9475-dda2-4d13-bf88-54b92867a25c"
       ],
-      "edhrec_rank": 3084,
+      "edhrec_rank": 3085,
       "properties": [],
       "prices": {
-        "usd": "2.21"
+        "usd": "2.22"
       }
     },
     {
@@ -23368,7 +23368,7 @@
       "artist_ids": [
         "d48dd097-720d-476a-8722-6a02854ae28b"
       ],
-      "edhrec_rank": 1638,
+      "edhrec_rank": 1639,
       "properties": [],
       "prices": {
         "usd": "0.59"
@@ -23413,7 +23413,7 @@
       "artist_ids": [
         "91d65465-e8a6-4a4e-8b0e-0e07466cfa0f"
       ],
-      "edhrec_rank": 5056,
+      "edhrec_rank": 5054,
       "properties": [],
       "prices": {
         "usd": "0.28"
@@ -23475,10 +23475,10 @@
       "artist_ids": [
         "0c066852-6fdb-42d0-aab9-db4038850da0"
       ],
-      "edhrec_rank": 12621,
+      "edhrec_rank": 12624,
       "properties": [],
       "prices": {
-        "usd": "0.42"
+        "usd": "0.43"
       }
     },
     {
@@ -23533,7 +23533,7 @@
       "artist_ids": [
         "14a1de4b-1237-4e7b-8868-b71e87c9a46e"
       ],
-      "edhrec_rank": 14663,
+      "edhrec_rank": 14668,
       "properties": [],
       "prices": {
         "usd": "12.29"
@@ -23575,10 +23575,10 @@
       "artist_ids": [
         "262c8e55-4efc-467b-a042-6f734b9d2e01"
       ],
-      "edhrec_rank": 3746,
+      "edhrec_rank": 3749,
       "properties": [],
       "prices": {
-        "usd": "17.73"
+        "usd": "17.91"
       }
     },
     {
@@ -23623,7 +23623,7 @@
       "artist_ids": [
         "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
       ],
-      "edhrec_rank": 28022,
+      "edhrec_rank": 28017,
       "properties": [],
       "prices": {
         "usd": "0.21"
@@ -23663,7 +23663,7 @@
       "artist_ids": [
         "1952c90b-a5a7-4328-9f7c-e11064f59daf"
       ],
-      "edhrec_rank": 922,
+      "edhrec_rank": 923,
       "properties": [],
       "prices": {
         "usd": "0.50"
@@ -23693,7 +23693,7 @@
         "G",
         "W"
       ],
-      "edhrec_rank": 7549,
+      "edhrec_rank": 7539,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -23751,7 +23751,7 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 4419,
+      "edhrec_rank": 4422,
       "properties": [],
       "prices": {
         "usd": "0.30"
@@ -23793,7 +23793,7 @@
       "artist_ids": [
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
-      "edhrec_rank": 2418,
+      "edhrec_rank": 2419,
       "properties": [],
       "prices": {
         "usd": "0.37"
@@ -23835,7 +23835,7 @@
       "artist_ids": [
         "d54c4a1a-c0c5-4834-84db-125d341f3ad8"
       ],
-      "edhrec_rank": 5398,
+      "edhrec_rank": 5395,
       "properties": [],
       "prices": {
         "usd": "120.87"
@@ -23880,7 +23880,7 @@
       "artist_ids": [
         "70b1ba71-4ee1-4087-8a9e-ea919f20ebff"
       ],
-      "edhrec_rank": 9950,
+      "edhrec_rank": 9951,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -23924,10 +23924,10 @@
       "artist_ids": [
         "8a56d854-b424-45ec-9262-e993a382a961"
       ],
-      "edhrec_rank": 28224,
+      "edhrec_rank": 28253,
       "properties": [],
       "prices": {
-        "usd": "1.03"
+        "usd": "1.01"
       }
     },
     {
@@ -23969,7 +23969,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 22714,
+      "edhrec_rank": 22716,
       "properties": [],
       "prices": {
         "usd": "0.18"
@@ -24013,7 +24013,7 @@
       "artist_ids": [
         "c99a114b-c679-47df-a6e9-4f9d3ad5b114"
       ],
-      "edhrec_rank": 27978,
+      "edhrec_rank": 27986,
       "properties": [],
       "prices": {
         "usd": "1.12"
@@ -24057,7 +24057,7 @@
       "artist_ids": [
         "41084244-a313-4d14-8123-db05855f9cfe"
       ],
-      "edhrec_rank": 7520,
+      "edhrec_rank": 7524,
       "properties": [],
       "prices": {
         "usd": "0.38"
@@ -24163,7 +24163,7 @@
       "edhrec_rank": 2509,
       "properties": [],
       "prices": {
-        "usd": "1.26"
+        "usd": "1.25"
       }
     },
     {
@@ -24233,7 +24233,7 @@
       "artist_ids": [
         "6190569f-5e77-4bc1-bf22-9f85dba3a139"
       ],
-      "edhrec_rank": 1200,
+      "edhrec_rank": 1199,
       "properties": [],
       "prices": {
         "usd": "0.40"
@@ -24295,7 +24295,7 @@
       "artist_ids": [
         "0c066852-6fdb-42d0-aab9-db4038850da0"
       ],
-      "edhrec_rank": 13425,
+      "edhrec_rank": 13431,
       "properties": [],
       "prices": {
         "usd": "0.39"
@@ -24419,10 +24419,10 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "edhrec_rank": 1526,
+      "edhrec_rank": 1525,
       "properties": [],
       "prices": {
-        "usd": "2.55"
+        "usd": "2.69"
       }
     },
     {
@@ -24478,7 +24478,7 @@
       "artist_ids": [
         "2c14303e-97a3-45fa-9bd8-59e5332a65f9"
       ],
-      "edhrec_rank": 6953,
+      "edhrec_rank": 6951,
       "properties": [],
       "prices": {
         "usd": "0.25"
@@ -24612,10 +24612,10 @@
       "artist_ids": [
         "74246024-92b4-43d0-a5af-a3f9f2a35d5f"
       ],
-      "edhrec_rank": 6580,
+      "edhrec_rank": 6581,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.26"
       }
     },
     {
@@ -24698,7 +24698,7 @@
       "artist_ids": [
         "f28c54ff-bbe3-485d-81a4-b2cb49430a52"
       ],
-      "edhrec_rank": 11916,
+      "edhrec_rank": 11915,
       "properties": [],
       "prices": {
         "usd": "0.16"
@@ -24746,7 +24746,7 @@
       "artist_ids": [
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
-      "edhrec_rank": 7295,
+      "edhrec_rank": 7296,
       "properties": [],
       "prices": {
         "usd": "0.18"
@@ -24776,9 +24776,9 @@
         "G",
         "R"
       ],
-      "edhrec_rank": 22268,
+      "edhrec_rank": 22063,
       "prices": {
-        "usd": "0.13",
+        "usd": "0.14",
         "usd_foil": "0.26",
         "usd_etched": null,
         "eur": "0.13",
@@ -24831,7 +24831,7 @@
       "edhrec_rank": 916,
       "properties": [],
       "prices": {
-        "usd": "2.71"
+        "usd": "2.60"
       }
     },
     {
@@ -24873,7 +24873,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 6893,
+      "edhrec_rank": 6891,
       "properties": [],
       "prices": {
         "usd": "39.56"
@@ -24935,7 +24935,7 @@
       "artist_ids": [
         "0c066852-6fdb-42d0-aab9-db4038850da0"
       ],
-      "edhrec_rank": 16103,
+      "edhrec_rank": 16114,
       "properties": [],
       "prices": {
         "usd": "0.25"
@@ -24979,7 +24979,7 @@
       "artist_ids": [
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
-      "edhrec_rank": 4567,
+      "edhrec_rank": 4568,
       "properties": [],
       "prices": {
         "usd": "0.25"
@@ -25022,10 +25022,10 @@
       "artist_ids": [
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
-      "edhrec_rank": 4581,
+      "edhrec_rank": 4580,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.26"
       }
     },
     {
@@ -25067,7 +25067,7 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "edhrec_rank": 4650,
+      "edhrec_rank": 4656,
       "properties": [],
       "prices": {
         "usd": "0.20"
@@ -25113,10 +25113,10 @@
       "artist_ids": [
         "bec9ba7f-594e-4ff0-8172-9ec1fc909607"
       ],
-      "edhrec_rank": 722,
+      "edhrec_rank": 721,
       "properties": [],
       "prices": {
-        "usd": "4.46"
+        "usd": "4.58"
       }
     },
     {
@@ -25200,7 +25200,7 @@
       "artist_ids": [
         "9c77c81a-3b3f-4e94-a834-327d01cd6b35"
       ],
-      "edhrec_rank": 14048,
+      "edhrec_rank": 14056,
       "properties": [],
       "prices": {
         "usd": "0.52"
@@ -25245,10 +25245,10 @@
       "artist_ids": [
         "f0c43e1b-1853-4abc-8a1b-d7dda6c1d592"
       ],
-      "edhrec_rank": 2158,
+      "edhrec_rank": 2156,
       "properties": [],
       "prices": {
-        "usd": "1.84"
+        "usd": "1.79"
       }
     },
     {
@@ -25284,10 +25284,10 @@
       "artist_ids": [
         "2c14303e-97a3-45fa-9bd8-59e5332a65f9"
       ],
-      "edhrec_rank": 1252,
+      "edhrec_rank": 1253,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.37"
       }
     },
     {
@@ -25324,7 +25324,7 @@
       "artist_ids": [
         "269392ac-4c06-4650-98e2-d49a5a7f2371"
       ],
-      "edhrec_rank": 4258,
+      "edhrec_rank": 4259,
       "properties": [],
       "prices": {
         "usd": "0.25"
@@ -25366,7 +25366,7 @@
       "artist_ids": [
         "37970e22-9cee-44c1-af44-5ee27cf26b76"
       ],
-      "edhrec_rank": 13550,
+      "edhrec_rank": 13546,
       "properties": [],
       "prices": {
         "usd": "1.02"
@@ -25436,7 +25436,7 @@
       "artist_ids": [
         "bba69285-2445-4a4b-a847-59397be972ea"
       ],
-      "edhrec_rank": 8466,
+      "edhrec_rank": 8473,
       "properties": [],
       "prices": {
         "usd": "0.26"
@@ -25506,10 +25506,10 @@
       "artist_ids": [
         "266ab861-ed64-4ba5-865c-f18758421cc3"
       ],
-      "edhrec_rank": 248,
+      "edhrec_rank": 247,
       "properties": [],
       "prices": {
-        "usd": "13.19"
+        "usd": "13.14"
       }
     },
     {
@@ -25598,10 +25598,10 @@
       "artist_ids": [
         "d084e74b-f63a-4107-b72c-ed6250ecc93b"
       ],
-      "edhrec_rank": 2327,
+      "edhrec_rank": 2329,
       "properties": [],
       "prices": {
-        "usd": "0.80"
+        "usd": "0.83"
       }
     },
     {
@@ -25654,10 +25654,10 @@
       "artist_ids": [
         "85908891-3cc7-42b0-9b54-27ed0fe89c53"
       ],
-      "edhrec_rank": 5299,
+      "edhrec_rank": 5305,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.33"
       }
     },
     {
@@ -25808,7 +25808,7 @@
       "artist_ids": [
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
-      "edhrec_rank": 2837,
+      "edhrec_rank": 2839,
       "properties": [],
       "prices": {
         "usd": "1.61"
@@ -25853,7 +25853,7 @@
       "artist_ids": [
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
-      "edhrec_rank": 7484,
+      "edhrec_rank": 7485,
       "properties": [],
       "prices": {
         "usd": "0.13"
@@ -25928,11 +25928,11 @@
         "G",
         "U"
       ],
-      "edhrec_rank": 8026,
+      "edhrec_rank": 8018,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.35"
       }
     },
     {
@@ -25971,7 +25971,7 @@
       "artist_ids": [
         "4b149402-618d-4f54-9db8-788e4a5bce70"
       ],
-      "edhrec_rank": 2894,
+      "edhrec_rank": 2895,
       "properties": [],
       "prices": {
         "usd": "0.26"
@@ -26013,7 +26013,7 @@
       "artist_ids": [
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
-      "edhrec_rank": 9281,
+      "edhrec_rank": 9282,
       "properties": [],
       "prices": {
         "usd": "0.18"
@@ -26071,7 +26071,7 @@
       "artist_ids": [
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
-      "edhrec_rank": 6756,
+      "edhrec_rank": 6753,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -26155,7 +26155,7 @@
       "artist_ids": [
         "7b1b0ce9-2c58-4321-a2a7-cdc94feae082"
       ],
-      "edhrec_rank": 13704,
+      "edhrec_rank": 13713,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -26197,7 +26197,7 @@
       "artist_ids": [
         "eb55171c-2342-45f4-a503-2d5a75baf752"
       ],
-      "edhrec_rank": 20297,
+      "edhrec_rank": 20313,
       "properties": [],
       "prices": {
         "usd": "0.56"
@@ -26242,7 +26242,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 7326,
+      "edhrec_rank": 7322,
       "properties": [],
       "prices": {
         "usd": "3.58"
@@ -26288,10 +26288,10 @@
       "artist_ids": [
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
-      "edhrec_rank": 703,
+      "edhrec_rank": 704,
       "properties": [],
       "prices": {
-        "usd": "10.29"
+        "usd": "10.21"
       }
     },
     {
@@ -26351,10 +26351,10 @@
       "artist_ids": [
         "13a4bbe4-4e02-4403-8ecd-58f7744b994f"
       ],
-      "edhrec_rank": 1277,
+      "edhrec_rank": 1276,
       "properties": [],
       "prices": {
-        "usd": "1.73"
+        "usd": "1.78"
       }
     },
     {
@@ -26477,10 +26477,10 @@
       "artist_ids": [
         "d281eab4-463a-4ba8-9039-8943737960a0"
       ],
-      "edhrec_rank": 2202,
+      "edhrec_rank": 2203,
       "properties": [],
       "prices": {
-        "usd": "19.02"
+        "usd": "18.88"
       }
     },
     {
@@ -26523,7 +26523,7 @@
       "edhrec_rank": 425,
       "properties": [],
       "prices": {
-        "usd": "6.37"
+        "usd": "6.30"
       }
     },
     {
@@ -26584,7 +26584,7 @@
       "edhrec_rank": 1062,
       "properties": [],
       "prices": {
-        "usd": "1.78"
+        "usd": "1.79"
       }
     },
     {
@@ -26626,10 +26626,10 @@
       "artist_ids": [
         "adad79bf-cd52-456a-b170-740ed8bff0fc"
       ],
-      "edhrec_rank": 4072,
+      "edhrec_rank": 4073,
       "properties": [],
       "prices": {
-        "usd": "0.23"
+        "usd": "0.24"
       }
     },
     {
@@ -26666,10 +26666,10 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 8243,
+      "edhrec_rank": 8240,
       "properties": [],
       "prices": {
-        "usd": "21.40"
+        "usd": "21.46"
       }
     },
     {
@@ -26737,7 +26737,7 @@
       "edhrec_rank": 2741,
       "properties": [],
       "prices": {
-        "usd": "0.70"
+        "usd": "0.71"
       }
     },
     {
@@ -26779,10 +26779,10 @@
       "artist_ids": [
         "93d65564-bf00-447b-8406-e2031f03b6b1"
       ],
-      "edhrec_rank": 11006,
+      "edhrec_rank": 11008,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.37"
       }
     },
     {
@@ -26835,10 +26835,10 @@
       "artist_ids": [
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
-      "edhrec_rank": 2763,
+      "edhrec_rank": 2764,
       "properties": [],
       "prices": {
-        "usd": "2.14"
+        "usd": "2.15"
       }
     },
     {
@@ -26876,7 +26876,7 @@
         "e8b85539-756a-4eac-ac66-a2258d7cf547",
         "3bfc0fd7-f6ce-4c3f-a755-aaafc84ac704"
       ],
-      "edhrec_rank": 3081,
+      "edhrec_rank": 3082,
       "properties": [],
       "prices": {
         "usd": "113.81"
@@ -26932,10 +26932,10 @@
       "artist_ids": [
         "669b8b90-758d-4f9e-b4f7-98cd6742eb97"
       ],
-      "edhrec_rank": 7460,
+      "edhrec_rank": 7463,
       "properties": [],
       "prices": {
-        "usd": "0.35"
+        "usd": "0.34"
       }
     },
     {
@@ -26973,7 +26973,7 @@
       "artist_ids": [
         "e8b85539-756a-4eac-ac66-a2258d7cf547"
       ],
-      "edhrec_rank": 3967,
+      "edhrec_rank": 3963,
       "properties": [],
       "prices": {
         "usd": "3000.97"
@@ -27020,7 +27020,7 @@
       "edhrec_rank": 412,
       "properties": [],
       "prices": {
-        "usd": "8.29"
+        "usd": "8.30"
       }
     },
     {
@@ -27064,7 +27064,7 @@
       "artist_ids": [
         "2ae0dd12-047c-4efb-80d7-bccc3bac5fba"
       ],
-      "edhrec_rank": 1759,
+      "edhrec_rank": 1761,
       "properties": [],
       "prices": {
         "usd": "0.68"
@@ -27136,11 +27136,11 @@
         "B",
         "W"
       ],
-      "edhrec_rank": 10530,
+      "edhrec_rank": 10523,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.18"
+        "usd": "0.16"
       }
     },
     {
@@ -27177,7 +27177,7 @@
       "edhrec_rank": 41,
       "properties": [],
       "prices": {
-        "usd": "37.53"
+        "usd": "37.58"
       }
     },
     {
@@ -27215,7 +27215,7 @@
       "artist_ids": [
         "ebde5690-d401-46ba-8fd3-b9c07d5ef5a7"
       ],
-      "edhrec_rank": 9095,
+      "edhrec_rank": 9097,
       "properties": [],
       "prices": {
         "usd": "0.18"
@@ -27260,10 +27260,10 @@
       "artist_ids": [
         "7c5b6391-2a5a-4b78-b19d-2b181149cb0f"
       ],
-      "edhrec_rank": 25329,
+      "edhrec_rank": 25346,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.24"
       }
     },
     {
@@ -27305,10 +27305,10 @@
       "artist_ids": [
         "7da1a585-c875-45e4-b322-5da9e8e1f651"
       ],
-      "edhrec_rank": 8364,
+      "edhrec_rank": 8368,
       "properties": [],
       "prices": {
-        "usd": "0.13"
+        "usd": "0.12"
       }
     },
     {
@@ -27392,10 +27392,10 @@
       "artist_ids": [
         "f07d73b9-52a0-4fe5-858b-61f7b42174a5"
       ],
-      "edhrec_rank": 1476,
+      "edhrec_rank": 1477,
       "properties": [],
       "prices": {
-        "usd": "0.39"
+        "usd": "0.38"
       }
     },
     {
@@ -27434,7 +27434,7 @@
       "artist_ids": [
         "0330b5e8-2cf0-4ecb-8fd7-e20a18bdeb20"
       ],
-      "edhrec_rank": 11589,
+      "edhrec_rank": 11591,
       "properties": [],
       "prices": {
         "usd": "0.45"
@@ -27493,7 +27493,7 @@
       "artist_ids": [
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
-      "edhrec_rank": 8533,
+      "edhrec_rank": 8531,
       "properties": [],
       "prices": {
         "usd": "0.31"
@@ -27580,7 +27580,7 @@
       "artist_ids": [
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
-      "edhrec_rank": 665,
+      "edhrec_rank": 666,
       "properties": [],
       "prices": {
         "usd": "0.36"
@@ -27713,10 +27713,10 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 1211,
+      "edhrec_rank": 1212,
       "properties": [],
       "prices": {
-        "usd": "8.17"
+        "usd": "8.10"
       }
     },
     {
@@ -27750,10 +27750,10 @@
       "artist_ids": [
         "c4e0aa7c-a008-4d71-80ce-d5a1ca0b251b"
       ],
-      "edhrec_rank": 24183,
+      "edhrec_rank": 24177,
       "properties": [],
       "prices": {
-        "usd": "7.33"
+        "usd": "7.09"
       }
     },
     {
@@ -27790,7 +27790,7 @@
       "edhrec_rank": 3110,
       "properties": [],
       "prices": {
-        "usd": "1.29"
+        "usd": "1.30"
       }
     },
     {
@@ -27873,7 +27873,7 @@
       "edhrec_rank": 2680,
       "properties": [],
       "prices": {
-        "usd": "0.38"
+        "usd": "0.39"
       }
     },
     {
@@ -27893,11 +27893,11 @@
       "oracle_text": "As this land enters, choose a basic land type. Then you may pay 2 life. If you don't, it enters tapped.\nThis land is the chosen type.",
       "color_identity": [],
       "keywords": [],
-      "edhrec_rank": 2501,
+      "edhrec_rank": 2496,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "7.51"
+        "usd": "7.70"
       }
     },
     {
@@ -27957,7 +27957,7 @@
       "edhrec_rank": 1531,
       "properties": [],
       "prices": {
-        "usd": "1.22"
+        "usd": "1.23"
       }
     },
     {
@@ -28048,7 +28048,7 @@
       "edhrec_rank": 2637,
       "properties": [],
       "prices": {
-        "usd": "1.62"
+        "usd": "1.64"
       }
     },
     {
@@ -28075,11 +28075,11 @@
         "G",
         "U"
       ],
-      "edhrec_rank": 14967,
+      "edhrec_rank": 14936,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.23"
+        "usd": "0.22"
       }
     },
     {
@@ -28254,7 +28254,7 @@
       "edhrec_rank": 377,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.26"
       }
     },
     {
@@ -28296,7 +28296,7 @@
       "edhrec_rank": 172,
       "properties": [],
       "prices": {
-        "usd": "1.55"
+        "usd": "1.52"
       }
     },
     {
@@ -28333,10 +28333,10 @@
       "artist_ids": [
         "80d03406-9efe-422d-be8f-9ab978b3aff1"
       ],
-      "edhrec_rank": 6961,
+      "edhrec_rank": 6964,
       "properties": [],
       "prices": {
-        "usd": "0.61"
+        "usd": "0.60"
       }
     },
     {
@@ -28378,7 +28378,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 18838,
+      "edhrec_rank": 18847,
       "properties": [],
       "prices": {
         "usd": "0.29"
@@ -28419,7 +28419,7 @@
       "artist_ids": [
         "49b6270b-1b28-4e03-b503-522f97dc3a78"
       ],
-      "edhrec_rank": 4310,
+      "edhrec_rank": 4316,
       "properties": [],
       "prices": {
         "usd": "0.35"
@@ -28468,7 +28468,7 @@
       "edhrec_rank": 524,
       "properties": [],
       "prices": {
-        "usd": "0.59"
+        "usd": "0.57"
       }
     },
     {
@@ -28509,10 +28509,10 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 5271,
+      "edhrec_rank": 5273,
       "properties": [],
       "prices": {
-        "usd": "0.31"
+        "usd": "0.32"
       }
     },
     {
@@ -28582,7 +28582,7 @@
       "edhrec_rank": 856,
       "properties": [],
       "prices": {
-        "usd": "4.66"
+        "usd": "4.59"
       }
     },
     {
@@ -28665,7 +28665,7 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "edhrec_rank": 9709,
+      "edhrec_rank": 9703,
       "properties": [],
       "prices": {
         "usd": "0.16"
@@ -28843,10 +28843,10 @@
       "artist_ids": [
         "c3004e2c-d372-4faa-90db-f1274e75ef41"
       ],
-      "edhrec_rank": 6805,
+      "edhrec_rank": 6804,
       "properties": [],
       "prices": {
-        "usd": "0.22"
+        "usd": "0.21"
       }
     },
     {
@@ -28889,7 +28889,7 @@
       "artist_ids": [
         "8062d5a9-51b6-4822-933f-fa9e9dba8416"
       ],
-      "edhrec_rank": 1847,
+      "edhrec_rank": 1848,
       "properties": [],
       "prices": {
         "usd": "9.21"
@@ -28934,7 +28934,7 @@
       "artist_ids": [
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
-      "edhrec_rank": 18962,
+      "edhrec_rank": 18970,
       "properties": [],
       "prices": {
         "usd": "0.13"
@@ -29026,7 +29026,7 @@
       "artist_ids": [
         "996ad764-4ae0-4952-8bb5-5a75c9d68275"
       ],
-      "edhrec_rank": 14053,
+      "edhrec_rank": 14057,
       "properties": [],
       "prices": {
         "usd": "0.48"
@@ -29056,7 +29056,7 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 8216,
+      "edhrec_rank": 8207,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -29083,7 +29083,7 @@
       "produced_mana": [
         "C"
       ],
-      "edhrec_rank": 13868,
+      "edhrec_rank": 13847,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -29174,7 +29174,7 @@
       "artist_ids": [
         "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
       ],
-      "edhrec_rank": 1567,
+      "edhrec_rank": 1568,
       "properties": [],
       "prices": {
         "usd": "6.65"
@@ -29222,7 +29222,7 @@
       "edhrec_rank": 168,
       "properties": [],
       "prices": {
-        "usd": "54.54"
+        "usd": "52.98"
       }
     },
     {
@@ -29262,7 +29262,7 @@
       "artist_ids": [
         "7f1868e3-325f-4df9-8f27-a381fed4f0fc"
       ],
-      "edhrec_rank": 2813,
+      "edhrec_rank": 2810,
       "properties": [],
       "prices": {
         "usd": "0.41"
@@ -29299,7 +29299,7 @@
       "artist_ids": [
         "770b4e16-de76-49ed-949f-84e6d2e06d25"
       ],
-      "edhrec_rank": 21510,
+      "edhrec_rank": 21520,
       "properties": [],
       "prices": {
         "usd": "40.01"
@@ -29342,7 +29342,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 5100,
+      "edhrec_rank": 5099,
       "properties": [],
       "prices": {
         "usd": "22.06"
@@ -29424,7 +29424,7 @@
       "artist_ids": [
         "6ab2144d-a579-4aff-bce9-e6d76427ff04"
       ],
-      "edhrec_rank": 6244,
+      "edhrec_rank": 6242,
       "properties": [],
       "prices": {
         "usd": "4.49"
@@ -29454,7 +29454,7 @@
         "G",
         "R"
       ],
-      "edhrec_rank": 7436,
+      "edhrec_rank": 7432,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -29487,7 +29487,7 @@
         "B",
         "R"
       ],
-      "edhrec_rank": 8400,
+      "edhrec_rank": 8399,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -29529,7 +29529,7 @@
       "artist_ids": [
         "05d233e7-4958-4f79-83e6-f9bf8b6ff78e"
       ],
-      "edhrec_rank": 5893,
+      "edhrec_rank": 5894,
       "properties": [],
       "prices": {
         "usd": "0.30"
@@ -29599,10 +29599,10 @@
       "artist_ids": [
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
-      "edhrec_rank": 2176,
+      "edhrec_rank": 2177,
       "properties": [],
       "prices": {
-        "usd": "1.32"
+        "usd": "1.35"
       }
     },
     {
@@ -29647,7 +29647,7 @@
       "edhrec_rank": 645,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.28"
       }
     },
     {
@@ -29825,10 +29825,10 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 1885,
+      "edhrec_rank": 1886,
       "properties": [],
       "prices": {
-        "usd": "0.24"
+        "usd": "0.25"
       }
     },
     {
@@ -29870,7 +29870,7 @@
       "artist_ids": [
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
-      "edhrec_rank": 17559,
+      "edhrec_rank": 17561,
       "properties": [],
       "prices": {
         "usd": "0.32"
@@ -29904,11 +29904,11 @@
         "R",
         "U"
       ],
-      "edhrec_rank": 4066,
+      "edhrec_rank": 4055,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "1.77"
+        "usd": "1.76"
       }
     },
     {
@@ -29952,7 +29952,7 @@
       "edhrec_rank": 88,
       "properties": [],
       "prices": {
-        "usd": "26.89"
+        "usd": "27.08"
       }
     },
     {
@@ -29994,7 +29994,7 @@
       "artist_ids": [
         "63def22f-9b97-423f-8791-2c1be9f46619"
       ],
-      "edhrec_rank": 714,
+      "edhrec_rank": 713,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -30042,7 +30042,7 @@
       "edhrec_rank": 289,
       "properties": [],
       "prices": {
-        "usd": "2.97"
+        "usd": "3.00"
       }
     },
     {
@@ -30130,7 +30130,7 @@
       "artist_ids": [
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
-      "edhrec_rank": 6878,
+      "edhrec_rank": 6883,
       "properties": [],
       "prices": {
         "usd": "0.11"
@@ -30175,7 +30175,7 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "edhrec_rank": 24696,
+      "edhrec_rank": 24694,
       "properties": [],
       "prices": {
         "usd": "0.37"
@@ -30207,7 +30207,7 @@
         "G",
         "U"
       ],
-      "edhrec_rank": 11053,
+      "edhrec_rank": 11024,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -30296,7 +30296,7 @@
       "artist_ids": [
         "289e552e-3b58-484f-a939-64a01426e84d"
       ],
-      "edhrec_rank": 6492,
+      "edhrec_rank": 6488,
       "properties": [],
       "prices": {
         "usd": "2.64"
@@ -30341,10 +30341,10 @@
       "artist_ids": [
         "39fcaaac-bf5d-4c43-ae20-4cf4921a44fa"
       ],
-      "edhrec_rank": 8516,
+      "edhrec_rank": 8512,
       "properties": [],
       "prices": {
-        "usd": "0.21"
+        "usd": "0.22"
       }
     },
     {
@@ -30411,7 +30411,7 @@
       "artist_ids": [
         "2c14303e-97a3-45fa-9bd8-59e5332a65f9"
       ],
-      "edhrec_rank": 9388,
+      "edhrec_rank": 9390,
       "properties": [],
       "prices": {
         "usd": "0.18"
@@ -30454,7 +30454,7 @@
       "artist_ids": [
         "c99a114b-c679-47df-a6e9-4f9d3ad5b114"
       ],
-      "edhrec_rank": 8136,
+      "edhrec_rank": 8132,
       "properties": [],
       "prices": {
         "usd": "20.58"
@@ -30500,10 +30500,10 @@
       "artist_ids": [
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
-      "edhrec_rank": 2040,
+      "edhrec_rank": 2041,
       "properties": [],
       "prices": {
-        "usd": "0.12"
+        "usd": "0.14"
       }
     },
     {
@@ -30540,7 +30540,7 @@
       "artist_ids": [
         "7be3b9e4-de9b-4a3d-884e-e67b9681d409"
       ],
-      "edhrec_rank": 7574,
+      "edhrec_rank": 7571,
       "properties": [],
       "prices": {
         "usd": "4.64"
@@ -30566,11 +30566,11 @@
       "produced_mana": [
         "C"
       ],
-      "edhrec_rank": 11131,
+      "edhrec_rank": 11099,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.73"
+        "usd": "0.66"
       }
     },
     {
@@ -30609,7 +30609,7 @@
       "artist_ids": [
         "3a243c17-3baa-4b53-9599-645311cd7d3d"
       ],
-      "edhrec_rank": 6508,
+      "edhrec_rank": 6510,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -30698,7 +30698,7 @@
       "artist_ids": [
         "fcd5ea36-64e0-4af0-992a-3c68a34a400f"
       ],
-      "edhrec_rank": 6336,
+      "edhrec_rank": 6337,
       "properties": [],
       "prices": {
         "usd": "1.26"
@@ -30743,7 +30743,7 @@
       "artist_ids": [
         "f8f662fa-d597-46a3-afb2-91d6e13243e2"
       ],
-      "edhrec_rank": 21095,
+      "edhrec_rank": 21111,
       "properties": [],
       "prices": {
         "usd": "1.77"
@@ -30788,7 +30788,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 24399,
+      "edhrec_rank": 24408,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -30862,10 +30862,10 @@
       "artist_ids": [
         "02e2b5de-4341-464c-8fdb-a1adbf873bc0"
       ],
-      "edhrec_rank": 528,
+      "edhrec_rank": 527,
       "properties": [],
       "prices": {
-        "usd": "1.44"
+        "usd": "1.43"
       }
     },
     {
@@ -30904,7 +30904,7 @@
       "artist_ids": [
         "b948d330-3fbd-44cc-b140-02bcc5d46f79"
       ],
-      "edhrec_rank": 11681,
+      "edhrec_rank": 11690,
       "properties": [],
       "prices": {
         "usd": "0.27"
@@ -30949,7 +30949,7 @@
       "artist_ids": [
         "bc760b5e-6f98-4a17-9b12-5f4eccd12bb2"
       ],
-      "edhrec_rank": 3390,
+      "edhrec_rank": 3395,
       "properties": [],
       "prices": {
         "usd": "0.39"
@@ -31084,7 +31084,7 @@
       "artist_ids": [
         "ebde5690-d401-46ba-8fd3-b9c07d5ef5a7"
       ],
-      "edhrec_rank": 7382,
+      "edhrec_rank": 7387,
       "properties": [],
       "prices": {
         "usd": "0.48"
@@ -31210,7 +31210,7 @@
       "artist_ids": [
         "a267f9bb-072b-410a-a704-50f4d19020d8"
       ],
-      "edhrec_rank": 4089,
+      "edhrec_rank": 4088,
       "properties": [],
       "prices": {
         "usd": "0.26"
@@ -31255,7 +31255,7 @@
       "artist_ids": [
         "75b27b57-a475-449b-843d-15e33a39ec22"
       ],
-      "edhrec_rank": 3878,
+      "edhrec_rank": 3879,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -31347,10 +31347,10 @@
       "artist_ids": [
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
-      "edhrec_rank": 1988,
+      "edhrec_rank": 1987,
       "properties": [],
       "prices": {
-        "usd": "0.45"
+        "usd": "0.44"
       }
     },
     {
@@ -31392,7 +31392,7 @@
       "artist_ids": [
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
-      "edhrec_rank": 17576,
+      "edhrec_rank": 17588,
       "properties": [],
       "prices": {
         "usd": "0.29"
@@ -31482,10 +31482,10 @@
       "artist_ids": [
         "9ee9a9cc-c09e-486f-918b-69f80cbc4188"
       ],
-      "edhrec_rank": 6421,
+      "edhrec_rank": 6420,
       "properties": [],
       "prices": {
-        "usd": "2.97"
+        "usd": "2.48"
       }
     },
     {
@@ -31571,7 +31571,7 @@
       "edhrec_rank": 199,
       "properties": [],
       "prices": {
-        "usd": "33.84"
+        "usd": "34.21"
       }
     },
     {
@@ -31609,7 +31609,7 @@
       "artist_ids": [
         "7f1868e3-325f-4df9-8f27-a381fed4f0fc"
       ],
-      "edhrec_rank": 3052,
+      "edhrec_rank": 3054,
       "properties": [],
       "prices": {
         "usd": "0.29"
@@ -31653,7 +31653,7 @@
       "artist_ids": [
         "13a4bbe4-4e02-4403-8ecd-58f7744b994f"
       ],
-      "edhrec_rank": 8674,
+      "edhrec_rank": 8679,
       "properties": [],
       "prices": {
         "usd": "0.27"
@@ -31683,9 +31683,9 @@
         "G",
         "U"
       ],
-      "edhrec_rank": 21773,
+      "edhrec_rank": 21578,
       "prices": {
-        "usd": "0.07",
+        "usd": "0.08",
         "usd_foil": "0.42",
         "usd_etched": null,
         "eur": "0.08",
@@ -31737,7 +31737,7 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "edhrec_rank": 4664,
+      "edhrec_rank": 4668,
       "properties": [],
       "prices": {
         "usd": "0.13"
@@ -31777,7 +31777,7 @@
       "artist_ids": [
         "79d6f296-1948-4a24-a2ce-a76e89057f23"
       ],
-      "edhrec_rank": 15634,
+      "edhrec_rank": 15642,
       "properties": [],
       "prices": {
         "usd": "0.49"
@@ -31825,7 +31825,7 @@
       "edhrec_rank": 4956,
       "properties": [],
       "prices": {
-        "usd": "0.21"
+        "usd": "0.22"
       }
     },
     {
@@ -31867,10 +31867,10 @@
       "artist_ids": [
         "66756146-32f8-4513-9aae-75a8e5117585"
       ],
-      "edhrec_rank": 7846,
+      "edhrec_rank": 7850,
       "properties": [],
       "prices": {
-        "usd": "0.20"
+        "usd": "0.21"
       }
     },
     {
@@ -31997,10 +31997,10 @@
       "artist_ids": [
         "b6476cc7-1576-47e8-9f6a-68d05b45cf62"
       ],
-      "edhrec_rank": 1389,
+      "edhrec_rank": 1382,
       "properties": [],
       "prices": {
-        "usd": "0.65"
+        "usd": "0.62"
       }
     },
     {
@@ -32050,7 +32050,7 @@
       "edhrec_rank": 419,
       "properties": [],
       "prices": {
-        "usd": "14.42"
+        "usd": "14.27"
       }
     },
     {
@@ -32091,7 +32091,7 @@
       "artist_ids": [
         "d0b9f3cc-13fb-42b6-bc43-b034728e5c7b"
       ],
-      "edhrec_rank": 2658,
+      "edhrec_rank": 2657,
       "properties": [],
       "prices": {
         "usd": "0.55"
@@ -32123,7 +32123,7 @@
         "G",
         "U"
       ],
-      "edhrec_rank": 3890,
+      "edhrec_rank": 3882,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -32169,10 +32169,10 @@
       "artist_ids": [
         "e8b85539-756a-4eac-ac66-a2258d7cf547"
       ],
-      "edhrec_rank": 13153,
+      "edhrec_rank": 13159,
       "properties": [],
       "prices": {
-        "usd": "9.06"
+        "usd": "8.80"
       }
     },
     {
@@ -32214,7 +32214,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 485,
+      "edhrec_rank": 486,
       "properties": [],
       "prices": {
         "usd": "1.06"
@@ -32260,7 +32260,7 @@
       "artist_ids": [
         "0d8d6726-4051-445a-8374-a919aad98f38"
       ],
-      "edhrec_rank": 1954,
+      "edhrec_rank": 1955,
       "properties": [],
       "prices": {
         "usd": "0.18"
@@ -32343,7 +32343,7 @@
       "artist_ids": [
         "dab52c11-0564-4207-a4a1-c1735c946a65"
       ],
-      "edhrec_rank": 17342,
+      "edhrec_rank": 17350,
       "properties": [],
       "prices": {
         "usd": "0.81"
@@ -32388,7 +32388,7 @@
       "artist_ids": [
         "fb7b61a8-13c5-4813-a749-9d3396801906"
       ],
-      "edhrec_rank": 8354,
+      "edhrec_rank": 8355,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -32437,7 +32437,7 @@
       "edhrec_rank": 567,
       "properties": [],
       "prices": {
-        "usd": "10.11"
+        "usd": "10.14"
       }
     },
     {
@@ -32483,10 +32483,10 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 493,
+      "edhrec_rank": 492,
       "properties": [],
       "prices": {
-        "usd": "17.03"
+        "usd": "17.05"
       }
     },
     {
@@ -32529,7 +32529,7 @@
       "artist_ids": [
         "996ad764-4ae0-4952-8bb5-5a75c9d68275"
       ],
-      "edhrec_rank": 24594,
+      "edhrec_rank": 24617,
       "properties": [],
       "prices": {
         "usd": "0.17"
@@ -32599,10 +32599,10 @@
       "artist_ids": [
         "c09ede88-a1b5-4a18-9895-dc8a965d28a5"
       ],
-      "edhrec_rank": 1858,
+      "edhrec_rank": 1859,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.36"
       }
     },
     {
@@ -32649,7 +32649,7 @@
       "edhrec_rank": 1049,
       "properties": [],
       "prices": {
-        "usd": "0.26"
+        "usd": "0.27"
       }
     },
     {
@@ -32691,7 +32691,7 @@
       "artist_ids": [
         "66082c3b-a623-4d34-be51-2475214b85d3"
       ],
-      "edhrec_rank": 8066,
+      "edhrec_rank": 8067,
       "properties": [],
       "prices": {
         "usd": "0.25"
@@ -32765,11 +32765,11 @@
       "produced_mana": [
         "B"
       ],
-      "edhrec_rank": 6422,
+      "edhrec_rank": 6414,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.43"
+        "usd": "0.41"
       }
     },
     {
@@ -32824,7 +32824,7 @@
       "artist_ids": [
         "c3004e2c-d372-4faa-90db-f1274e75ef41"
       ],
-      "edhrec_rank": 11804,
+      "edhrec_rank": 11798,
       "properties": [],
       "prices": {
         "usd": "0.16"
@@ -32997,10 +32997,10 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 9696,
+      "edhrec_rank": 9689,
       "properties": [],
       "prices": {
-        "usd": "0.83"
+        "usd": "0.81"
       }
     },
     {
@@ -33041,7 +33041,7 @@
       "artist_ids": [
         "1761c216-72b5-4a9b-afee-ad47a00fe1ad"
       ],
-      "edhrec_rank": 4192,
+      "edhrec_rank": 4190,
       "properties": [],
       "prices": {
         "usd": "0.40"
@@ -33104,7 +33104,7 @@
       "edhrec_rank": 3871,
       "properties": [],
       "prices": {
-        "usd": "0.96"
+        "usd": "0.95"
       }
     },
     {
@@ -33145,7 +33145,7 @@
       "artist_ids": [
         "8df4596a-1d88-4b6a-9ce8-5c8089c3946c"
       ],
-      "edhrec_rank": 4387,
+      "edhrec_rank": 4390,
       "properties": [],
       "prices": {
         "usd": "0.47"
@@ -33207,10 +33207,10 @@
       "artist_ids": [
         "a5f8354a-8b51-4e59-96b2-0e3aeae4fa1d"
       ],
-      "edhrec_rank": 3157,
+      "edhrec_rank": 3159,
       "properties": [],
       "prices": {
-        "usd": "2.06"
+        "usd": "1.98"
       }
     },
     {
@@ -33251,10 +33251,10 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "edhrec_rank": 4383,
+      "edhrec_rank": 4388,
       "properties": [],
       "prices": {
-        "usd": "0.51"
+        "usd": "0.53"
       }
     },
     {
@@ -33341,10 +33341,10 @@
       "artist_ids": [
         "e4631396-f0ce-41df-9d35-a7bd1da9d5a6"
       ],
-      "edhrec_rank": 3841,
+      "edhrec_rank": 3845,
       "properties": [],
       "prices": {
-        "usd": "2.11"
+        "usd": "2.14"
       }
     },
     {
@@ -33385,7 +33385,7 @@
       "artist_ids": [
         "d072adde-7194-4bf0-b9ca-b42d8973b0ff"
       ],
-      "edhrec_rank": 4430,
+      "edhrec_rank": 4432,
       "properties": [],
       "prices": {
         "usd": "0.39"
@@ -33473,7 +33473,7 @@
       "rarity": "rare",
       "artist": "Svetlin Velinov",
       "artist_ids": [],
-      "edhrec_rank": 4861,
+      "edhrec_rank": 4864,
       "properties": [],
       "prices": {
         "usd": "0.33"
@@ -33517,7 +33517,7 @@
       "artist_ids": [
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
-      "edhrec_rank": 5385,
+      "edhrec_rank": 5391,
       "properties": [],
       "prices": {
         "usd": "0.39"
@@ -33593,7 +33593,7 @@
       "edhrec_rank": 736,
       "properties": [],
       "prices": {
-        "usd": "0.91"
+        "usd": "0.78"
       }
     },
     {
@@ -33635,7 +33635,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 19927,
+      "edhrec_rank": 19941,
       "properties": [],
       "prices": {
         "usd": "0.34"
@@ -33680,7 +33680,7 @@
       "artist_ids": [
         "b4117364-73af-47e5-8cf0-901eeea09e01"
       ],
-      "edhrec_rank": 11188,
+      "edhrec_rank": 11189,
       "properties": [],
       "prices": {
         "usd": "2.69"
@@ -33725,7 +33725,7 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "edhrec_rank": 2574,
+      "edhrec_rank": 2575,
       "properties": [],
       "prices": {
         "usd": "0.56"
@@ -33767,7 +33767,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 1764,
+      "edhrec_rank": 1766,
       "properties": [],
       "prices": {
         "usd": "2.53"
@@ -33808,10 +33808,10 @@
       "artist_ids": [
         "54366fc1-c5b1-4faa-a7a5-de2abc119de1"
       ],
-      "edhrec_rank": 14453,
+      "edhrec_rank": 14457,
       "properties": [],
       "prices": {
-        "usd": "105.43"
+        "usd": "105.73"
       }
     },
     {
@@ -33854,7 +33854,7 @@
       "artist_ids": [
         "0ebb52bf-cf87-4c03-b975-2d9df7095334"
       ],
-      "edhrec_rank": 9125,
+      "edhrec_rank": 9124,
       "properties": [],
       "prices": {
         "usd": "0.59"
@@ -33943,7 +33943,7 @@
       "artist_ids": [
         "8a8ac2c8-84c9-4274-9960-a19a97f0bde5"
       ],
-      "edhrec_rank": 27073,
+      "edhrec_rank": 27097,
       "properties": [],
       "prices": {
         "usd": "0.90"
@@ -34056,10 +34056,10 @@
       "artist_ids": [
         "aa7e89ed-d294-4633-9057-ce04dacfcfa4"
       ],
-      "edhrec_rank": 846,
+      "edhrec_rank": 847,
       "properties": [],
       "prices": {
-        "usd": "7.79"
+        "usd": "7.95"
       }
     },
     {
@@ -34101,10 +34101,10 @@
       "artist_ids": [
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
-      "edhrec_rank": 949,
+      "edhrec_rank": 946,
       "properties": [],
       "prices": {
-        "usd": "19.44"
+        "usd": "19.61"
       }
     },
     {
@@ -34140,10 +34140,10 @@
       "artist_ids": [
         "b4344292-387b-4aa0-8225-13f1fbe77808"
       ],
-      "edhrec_rank": 711,
+      "edhrec_rank": 712,
       "properties": [],
       "prices": {
-        "usd": "0.33"
+        "usd": "0.34"
       }
     },
     {
@@ -34185,7 +34185,7 @@
       "artist_ids": [
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
-      "edhrec_rank": 9591,
+      "edhrec_rank": 9594,
       "properties": [],
       "prices": {
         "usd": "0.25"
@@ -34226,10 +34226,10 @@
       "artist_ids": [
         "adb9ad6d-6173-454b-8b50-a102b182548b"
       ],
-      "edhrec_rank": 3706,
+      "edhrec_rank": 3708,
       "properties": [],
       "prices": {
-        "usd": "0.22"
+        "usd": "0.21"
       }
     },
     {
@@ -34269,10 +34269,10 @@
       "artist_ids": [
         "5c24d419-7a23-4285-932c-50727c9ede70"
       ],
-      "edhrec_rank": 5562,
+      "edhrec_rank": 5560,
       "properties": [],
       "prices": {
-        "usd": "0.28"
+        "usd": "0.29"
       }
     },
     {
@@ -34317,7 +34317,7 @@
       "edhrec_rank": 218,
       "properties": [],
       "prices": {
-        "usd": "3.53"
+        "usd": "3.29"
       }
     },
     {
@@ -34372,7 +34372,7 @@
       "artist_ids": [
         "0c066852-6fdb-42d0-aab9-db4038850da0"
       ],
-      "edhrec_rank": 10702,
+      "edhrec_rank": 10700,
       "properties": [],
       "prices": {
         "usd": "0.20"
@@ -34409,10 +34409,10 @@
       "artist_ids": [
         "9b465bde-3656-4495-ace4-af4ce29999ed"
       ],
-      "edhrec_rank": 3375,
+      "edhrec_rank": 3377,
       "properties": [],
       "prices": {
-        "usd": "0.63"
+        "usd": "0.61"
       }
     },
     {
@@ -34453,7 +34453,7 @@
       "edhrec_rank": 19,
       "properties": [],
       "prices": {
-        "usd": "0.40"
+        "usd": "0.42"
       }
     },
     {
@@ -34539,7 +34539,7 @@
       "artist_ids": [
         "79d6f296-1948-4a24-a2ce-a76e89057f23"
       ],
-      "edhrec_rank": 23791,
+      "edhrec_rank": 23793,
       "properties": [],
       "prices": {
         "usd": "0.25"
@@ -34669,10 +34669,10 @@
       "artist_ids": [
         "af42a44c-8ec3-47a7-9047-5d29ddad186d"
       ],
-      "edhrec_rank": 6082,
+      "edhrec_rank": 6084,
       "properties": [],
       "prices": {
-        "usd": "0.31"
+        "usd": "0.32"
       }
     },
     {
@@ -34711,7 +34711,7 @@
       "artist_ids": [
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
-      "edhrec_rank": 16584,
+      "edhrec_rank": 16592,
       "properties": [],
       "prices": {
         "usd": "0.47"
@@ -34745,11 +34745,11 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 3444,
+      "edhrec_rank": 3435,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.24"
+        "usd": "0.23"
       }
     },
     {
@@ -34790,7 +34790,7 @@
       "artist_ids": [
         "92f6c2c1-fa57-4b52-99c4-0fd866c13dc9"
       ],
-      "edhrec_rank": 6040,
+      "edhrec_rank": 6041,
       "properties": [],
       "prices": {
         "usd": "0.12"
@@ -34879,7 +34879,7 @@
       "artist_ids": [
         "05a3ac12-b25d-48e2-af5e-8a299fd3da14"
       ],
-      "edhrec_rank": 5085,
+      "edhrec_rank": 5086,
       "properties": [],
       "prices": {
         "usd": "0.23"
@@ -34921,7 +34921,7 @@
       "artist_ids": [
         "c245c0ec-545f-48b9-908d-33903c52ec59"
       ],
-      "edhrec_rank": 18662,
+      "edhrec_rank": 18667,
       "properties": [],
       "prices": {
         "usd": "0.56"
@@ -34965,7 +34965,7 @@
       "artist_ids": [
         "9c77c81a-3b3f-4e94-a834-327d01cd6b35"
       ],
-      "edhrec_rank": 20837,
+      "edhrec_rank": 20839,
       "properties": [],
       "prices": {
         "usd": "0.38"
@@ -35015,7 +35015,7 @@
       "edhrec_rank": 1221,
       "properties": [],
       "prices": {
-        "usd": "0.30"
+        "usd": "0.29"
       }
     },
     {
@@ -35102,10 +35102,10 @@
       "artist_ids": [
         "bec9ba7f-594e-4ff0-8172-9ec1fc909607"
       ],
-      "edhrec_rank": 1725,
+      "edhrec_rank": 1724,
       "properties": [],
       "prices": {
-        "usd": "0.22"
+        "usd": "0.21"
       }
     },
     {
@@ -35139,7 +35139,7 @@
       "artist_ids": [
         "c96773f0-346c-4f7d-9271-2d98cc5d86e1"
       ],
-      "edhrec_rank": 18122,
+      "edhrec_rank": 18128,
       "properties": [],
       "prices": {
         "usd": "5.83"
@@ -35184,10 +35184,10 @@
       "artist_ids": [
         "a9199ae8-9891-4366-bf5b-42cfb662d840"
       ],
-      "edhrec_rank": 20383,
+      "edhrec_rank": 20390,
       "properties": [],
       "prices": {
-        "usd": "1.59"
+        "usd": "1.60"
       }
     },
     {
@@ -35229,7 +35229,7 @@
       "artist_ids": [
         "54366fc1-c5b1-4faa-a7a5-de2abc119de1"
       ],
-      "edhrec_rank": 11242,
+      "edhrec_rank": 11244,
       "properties": [],
       "prices": {
         "usd": "0.79"
@@ -35274,7 +35274,7 @@
       "artist_ids": [
         "93d65564-bf00-447b-8406-e2031f03b6b1"
       ],
-      "edhrec_rank": 12216,
+      "edhrec_rank": 12221,
       "properties": [],
       "prices": {
         "usd": "0.17"
@@ -35315,10 +35315,10 @@
       "artist_ids": [
         "0fbd4798-76eb-46d5-a5d4-1e3a25870e34"
       ],
-      "edhrec_rank": 3677,
+      "edhrec_rank": 3676,
       "properties": [],
       "prices": {
-        "usd": "8.32"
+        "usd": "8.12"
       }
     },
     {
@@ -35397,7 +35397,7 @@
       "artist_ids": [
         "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
       ],
-      "edhrec_rank": 17108,
+      "edhrec_rank": 17110,
       "properties": [],
       "prices": {
         "usd": "1.08"
@@ -35487,7 +35487,7 @@
       "artist_ids": [
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
-      "edhrec_rank": 12026,
+      "edhrec_rank": 12030,
       "properties": [],
       "prices": {
         "usd": "0.11"
@@ -35529,10 +35529,10 @@
       "artist_ids": [
         "8562e6e1-f7f3-499e-8309-cc5775b37847"
       ],
-      "edhrec_rank": 5923,
+      "edhrec_rank": 5920,
       "properties": [],
       "prices": {
-        "usd": "5.60"
+        "usd": "5.58"
       }
     },
     {
@@ -35570,7 +35570,7 @@
       "artist_ids": [
         "05a3ac12-b25d-48e2-af5e-8a299fd3da14"
       ],
-      "edhrec_rank": 6216,
+      "edhrec_rank": 6219,
       "properties": [],
       "prices": {
         "usd": "0.28"
@@ -35612,7 +35612,7 @@
       "artist_ids": [
         "f8f662fa-d597-46a3-afb2-91d6e13243e2"
       ],
-      "edhrec_rank": 17509,
+      "edhrec_rank": 17518,
       "properties": [],
       "prices": {
         "usd": "0.83"
@@ -35654,10 +35654,10 @@
       "artist_ids": [
         "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
       ],
-      "edhrec_rank": 6456,
+      "edhrec_rank": 6454,
       "properties": [],
       "prices": {
-        "usd": "2.69"
+        "usd": "2.62"
       }
     },
     {
@@ -35696,7 +35696,7 @@
       "artist_ids": [
         "5e470014-31cb-41b0-b054-e23374484449"
       ],
-      "edhrec_rank": 7856,
+      "edhrec_rank": 7855,
       "properties": [],
       "prices": {
         "usd": "0.53"
@@ -35775,7 +35775,7 @@
         "G",
         "R"
       ],
-      "edhrec_rank": 10080,
+      "edhrec_rank": 10074,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -35914,10 +35914,10 @@
       "artist_ids": [
         "cb577db7-7f47-4f78-8682-6eaef8a77bd1"
       ],
-      "edhrec_rank": 21442,
+      "edhrec_rank": 21449,
       "properties": [],
       "prices": {
-        "usd": "1.48"
+        "usd": "1.42"
       }
     },
     {
@@ -36083,7 +36083,7 @@
       "artist_ids": [
         "2c14303e-97a3-45fa-9bd8-59e5332a65f9"
       ],
-      "edhrec_rank": 2577,
+      "edhrec_rank": 2576,
       "properties": [],
       "prices": {
         "usd": "0.31"
@@ -36129,7 +36129,7 @@
       "artist_ids": [
         "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
       ],
-      "edhrec_rank": 27034,
+      "edhrec_rank": 27029,
       "properties": [],
       "prices": {
         "usd": "0.21"
@@ -36159,11 +36159,11 @@
         "R",
         "U"
       ],
-      "edhrec_rank": 4313,
+      "edhrec_rank": 4262,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "1.88"
+        "usd": "1.87"
       }
     },
     {
@@ -36200,7 +36200,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 6468,
+      "edhrec_rank": 6465,
       "properties": [],
       "prices": {
         "usd": "65.53"
@@ -36244,7 +36244,7 @@
       "artist_ids": [
         "0d8d6726-4051-445a-8374-a919aad98f38"
       ],
-      "edhrec_rank": 719,
+      "edhrec_rank": 720,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -36288,7 +36288,7 @@
       "artist_ids": [
         "c011318e-8503-48c1-a990-46e50aff48a0"
       ],
-      "edhrec_rank": 388,
+      "edhrec_rank": 389,
       "properties": [],
       "prices": {
         "usd": null
@@ -36326,7 +36326,7 @@
       "rarity": "rare",
       "artist": "Thomas M. Baxa",
       "artist_ids": [],
-      "edhrec_rank": 8296,
+      "edhrec_rank": 8297,
       "properties": [],
       "prices": {
         "usd": "3.81"
@@ -36443,7 +36443,7 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "edhrec_rank": 671,
+      "edhrec_rank": 670,
       "properties": [],
       "prices": {
         "usd": "37.68"
@@ -36484,7 +36484,7 @@
       "artist_ids": [
         "17bc7f55-958b-43f4-bb40-09746d05b3f9"
       ],
-      "edhrec_rank": 5424,
+      "edhrec_rank": 5428,
       "properties": [],
       "prices": {
         "usd": "0.28"
@@ -36612,10 +36612,10 @@
       "artist_ids": [
         "c4e0aa7c-a008-4d71-80ce-d5a1ca0b251b"
       ],
-      "edhrec_rank": 25916,
+      "edhrec_rank": 25915,
       "properties": [],
       "prices": {
-        "usd": "9.51"
+        "usd": "9.12"
       }
     },
     {
@@ -36748,10 +36748,10 @@
       "artist_ids": [
         "46dc4b5e-e42c-4d65-a4f3-ad75b0f6f6dd"
       ],
-      "edhrec_rank": 9672,
+      "edhrec_rank": 9674,
       "properties": [],
       "prices": {
-        "usd": "0.63"
+        "usd": "0.64"
       }
     },
     {
@@ -36881,7 +36881,7 @@
       "artist_ids": [
         "eb55171c-2342-45f4-a503-2d5a75baf752"
       ],
-      "edhrec_rank": 4984,
+      "edhrec_rank": 4985,
       "properties": [],
       "prices": {
         "usd": "3.67"
@@ -36923,9 +36923,9 @@
       ],
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.35"
       },
-      "edhrec_rank": 4225
+      "edhrec_rank": 4217
     },
     {
       "object": "card",
@@ -36965,7 +36965,7 @@
       "artist_ids": [
         "4441fe52-9e41-40c1-9b74-8510426279ab"
       ],
-      "edhrec_rank": 1424,
+      "edhrec_rank": 1423,
       "properties": [],
       "prices": {
         "usd": "0.25"
@@ -37027,7 +37027,7 @@
       "artist_ids": [
         "0c066852-6fdb-42d0-aab9-db4038850da0"
       ],
-      "edhrec_rank": 14379,
+      "edhrec_rank": 14388,
       "properties": [],
       "prices": {
         "usd": "0.37"
@@ -37053,11 +37053,11 @@
       "produced_mana": [
         "C"
       ],
-      "edhrec_rank": 1553,
+      "edhrec_rank": 1549,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "2.83"
+        "usd": "2.18"
       }
     },
     {
@@ -37100,10 +37100,10 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "edhrec_rank": 1845,
+      "edhrec_rank": 1847,
       "properties": [],
       "prices": {
-        "usd": "0.22"
+        "usd": "0.24"
       }
     },
     {
@@ -37144,10 +37144,10 @@
       "artist_ids": [
         "89cc9475-dda2-4d13-bf88-54b92867a25c"
       ],
-      "edhrec_rank": 4774,
+      "edhrec_rank": 4775,
       "properties": [],
       "prices": {
-        "usd": "0.33"
+        "usd": "0.34"
       }
     },
     {
@@ -37217,7 +37217,7 @@
       "edhrec_rank": 973,
       "properties": [],
       "prices": {
-        "usd": "1.97"
+        "usd": "1.94"
       }
     },
     {
@@ -37256,7 +37256,7 @@
       "artist_ids": [
         "6ac24c4b-70e9-4286-8f4b-b40c92ab5847"
       ],
-      "edhrec_rank": 11295,
+      "edhrec_rank": 11299,
       "properties": [],
       "prices": {
         "usd": "0.31"
@@ -37350,7 +37350,7 @@
       "edhrec_rank": 553,
       "properties": [],
       "prices": {
-        "usd": "0.57"
+        "usd": "0.63"
       }
     },
     {
@@ -37389,7 +37389,7 @@
       "artist_ids": [
         "f8e7f8d6-6dde-4059-973c-30f1fd1bbe4e"
       ],
-      "edhrec_rank": 9903,
+      "edhrec_rank": 9907,
       "properties": [],
       "prices": {
         "usd": "0.15"
@@ -37429,10 +37429,10 @@
       "artist_ids": [
         "04ce1c75-e30c-4b7a-8cb0-b53e4ecc2f39"
       ],
-      "edhrec_rank": 2313,
+      "edhrec_rank": 2314,
       "properties": [],
       "prices": {
-        "usd": "1.03"
+        "usd": "1.00"
       }
     },
     {
@@ -37459,11 +37459,11 @@
         "B",
         "U"
       ],
-      "edhrec_rank": 9243,
+      "edhrec_rank": 9235,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.22"
       }
     },
     {
@@ -37548,7 +37548,7 @@
       "artist_ids": [
         "7be3b9e4-de9b-4a3d-884e-e67b9681d409"
       ],
-      "edhrec_rank": 426,
+      "edhrec_rank": 427,
       "properties": [],
       "prices": {
         "usd": "3.02"
@@ -37594,10 +37594,10 @@
       "artist_ids": [
         "e2f13a9a-57c5-40de-81d4-3b0723899cdf"
       ],
-      "edhrec_rank": 571,
+      "edhrec_rank": 572,
       "properties": [],
       "prices": {
-        "usd": "9.55"
+        "usd": "9.57"
       }
     },
     {
@@ -37638,7 +37638,7 @@
       "artist_ids": [
         "269392ac-4c06-4650-98e2-d49a5a7f2371"
       ],
-      "edhrec_rank": 5611,
+      "edhrec_rank": 5614,
       "properties": [],
       "prices": {
         "usd": "0.31"
@@ -37686,7 +37686,7 @@
       "edhrec_rank": 5181,
       "properties": [],
       "prices": {
-        "usd": "0.19"
+        "usd": "0.18"
       }
     },
     {
@@ -37732,7 +37732,7 @@
       "edhrec_rank": 1865,
       "properties": [],
       "prices": {
-        "usd": "0.23"
+        "usd": "0.22"
       }
     },
     {
@@ -37777,7 +37777,7 @@
       "edhrec_rank": 281,
       "properties": [],
       "prices": {
-        "usd": "3.06"
+        "usd": "3.00"
       }
     },
     {
@@ -37930,7 +37930,7 @@
       "artist_ids": [
         "9ee9a9cc-c09e-486f-918b-69f80cbc4188"
       ],
-      "edhrec_rank": 15921,
+      "edhrec_rank": 15930,
       "properties": [],
       "prices": {
         "usd": "2.36"
@@ -38016,7 +38016,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 26760,
+      "edhrec_rank": 26766,
       "properties": [],
       "prices": {
         "usd": "0.72"
@@ -38065,7 +38065,7 @@
       "edhrec_rank": 2154,
       "properties": [],
       "prices": {
-        "usd": "0.24"
+        "usd": "0.25"
       }
     },
     {
@@ -38109,7 +38109,7 @@
       "edhrec_rank": 363,
       "properties": [],
       "prices": {
-        "usd": "4.66"
+        "usd": "4.68"
       }
     },
     {
@@ -38151,10 +38151,10 @@
       "artist_ids": [
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
-      "edhrec_rank": 6911,
+      "edhrec_rank": 6910,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.32"
       }
     },
     {
@@ -38197,7 +38197,7 @@
       "artist_ids": [
         "70c20ea3-5ad6-4082-a337-6e994ae5828e"
       ],
-      "edhrec_rank": 11443,
+      "edhrec_rank": 11442,
       "properties": [],
       "prices": {
         "usd": "0.11"
@@ -38332,7 +38332,7 @@
       "edhrec_rank": 231,
       "properties": [],
       "prices": {
-        "usd": "6.21"
+        "usd": "6.28"
       }
     },
     {
@@ -38370,10 +38370,10 @@
       "artist_ids": [
         "a796c230-bbbe-425f-8ff4-6878e1cf093d"
       ],
-      "edhrec_rank": 2259,
+      "edhrec_rank": 2261,
       "properties": [],
       "prices": {
-        "usd": "0.30"
+        "usd": "0.28"
       }
     },
     {
@@ -38413,7 +38413,7 @@
       "artist_ids": [
         "a1685587-4b55-446b-b420-c37b202ed3f1"
       ],
-      "edhrec_rank": 2260,
+      "edhrec_rank": 2262,
       "properties": [],
       "prices": {
         "usd": "3.37"
@@ -38458,7 +38458,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 13155,
+      "edhrec_rank": 13146,
       "properties": [],
       "prices": {
         "usd": "0.35"
@@ -38590,7 +38590,7 @@
       "edhrec_rank": 1201,
       "properties": [],
       "prices": {
-        "usd": "0.31"
+        "usd": "0.32"
       }
     },
     {
@@ -38632,7 +38632,7 @@
       "artist_ids": [
         "ad4caca0-8d89-44ce-a1a6-d5ca905bd6fb"
       ],
-      "edhrec_rank": 1625,
+      "edhrec_rank": 1626,
       "properties": [],
       "prices": {
         "usd": "6.54"
@@ -38702,10 +38702,10 @@
       "artist_ids": [
         "d20672ca-0555-4238-a984-fd171d36b247"
       ],
-      "edhrec_rank": 2013,
+      "edhrec_rank": 2014,
       "properties": [],
       "prices": {
-        "usd": "0.39"
+        "usd": "0.38"
       }
     },
     {
@@ -38749,10 +38749,10 @@
       "artist_ids": [
         "6befd6d5-7f8d-4b7c-87e3-5511391a3359"
       ],
-      "edhrec_rank": 1159,
+      "edhrec_rank": 1158,
       "properties": [],
       "prices": {
-        "usd": "0.57"
+        "usd": "0.56"
       }
     },
     {
@@ -38886,7 +38886,7 @@
       "flavor_text": "Enter and comprehend the perfection of orchestrated life.",
       "artist": "Svetlin Velinov",
       "artist_ids": [],
-      "edhrec_rank": 1459,
+      "edhrec_rank": 1461,
       "properties": [],
       "prices": {
         "usd": "0.26"
@@ -38918,7 +38918,7 @@
         "B",
         "U"
       ],
-      "edhrec_rank": 8069,
+      "edhrec_rank": 8056,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -38992,7 +38992,7 @@
       "edhrec_rank": 173,
       "properties": [],
       "prices": {
-        "usd": "5.67"
+        "usd": "5.58"
       }
     },
     {
@@ -39034,7 +39034,7 @@
       "artist_ids": [
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
-      "edhrec_rank": 3191,
+      "edhrec_rank": 3194,
       "properties": [],
       "prices": {
         "usd": "2.15"
@@ -39100,7 +39100,7 @@
       "artist_ids": [
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
-      "edhrec_rank": 10088,
+      "edhrec_rank": 10089,
       "properties": [],
       "prices": {
         "usd": "0.21"
@@ -39145,7 +39145,7 @@
       "artist_ids": [
         "185ea3f2-0b95-4f96-ab62-f7754ba591d8"
       ],
-      "edhrec_rank": 7675,
+      "edhrec_rank": 7678,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -39217,7 +39217,7 @@
       "artist_ids": [
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
-      "edhrec_rank": 10114,
+      "edhrec_rank": 10116,
       "properties": [],
       "prices": {
         "usd": "0.15"
@@ -39290,7 +39290,7 @@
       "produced_mana": [
         "C"
       ],
-      "edhrec_rank": 11850,
+      "edhrec_rank": 11835,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -39333,7 +39333,7 @@
       "artist_ids": [
         "43cdce85-e4bc-424e-ac95-fd0886b66ff3"
       ],
-      "edhrec_rank": 10056,
+      "edhrec_rank": 10058,
       "properties": [],
       "prices": {
         "usd": "0.05"
@@ -39378,10 +39378,10 @@
       "artist_ids": [
         "79d6f296-1948-4a24-a2ce-a76e89057f23"
       ],
-      "edhrec_rank": 21646,
+      "edhrec_rank": 21665,
       "properties": [],
       "prices": {
-        "usd": "2.05"
+        "usd": "2.06"
       }
     },
     {
@@ -39428,7 +39428,7 @@
       "edhrec_rank": 3232,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.35"
       }
     },
     {
@@ -39469,7 +39469,7 @@
       "artist_ids": [
         "0fad2c48-a56e-4a0b-b512-224f6f238f20"
       ],
-      "edhrec_rank": 1241,
+      "edhrec_rank": 1240,
       "properties": [],
       "prices": {
         "usd": "0.30"
@@ -39513,7 +39513,7 @@
       "artist_ids": [
         "a267f9bb-072b-410a-a704-50f4d19020d8"
       ],
-      "edhrec_rank": 5301,
+      "edhrec_rank": 5306,
       "properties": [],
       "prices": {
         "usd": "0.29"
@@ -39574,7 +39574,7 @@
       "artist_ids": [
         "9c3e9d17-509f-485c-9360-46d897ce716b"
       ],
-      "edhrec_rank": 5047,
+      "edhrec_rank": 5049,
       "properties": [],
       "prices": {
         "usd": "11.01"
@@ -39618,7 +39618,7 @@
       "artist_ids": [
         "9ee9a9cc-c09e-486f-918b-69f80cbc4188"
       ],
-      "edhrec_rank": 3723,
+      "edhrec_rank": 3724,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -39705,7 +39705,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 13984,
+      "edhrec_rank": 13993,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -39982,7 +39982,7 @@
       "artist_ids": [
         "266ab861-ed64-4ba5-865c-f18758421cc3"
       ],
-      "edhrec_rank": 3882,
+      "edhrec_rank": 3883,
       "properties": [],
       "prices": {
         "usd": "0.35"
@@ -40024,7 +40024,7 @@
       "artist_ids": [
         "2c3d2473-ff5d-4309-8194-e0b2def2ab65"
       ],
-      "edhrec_rank": 12377,
+      "edhrec_rank": 12387,
       "properties": [],
       "prices": {
         "usd": "0.13"
@@ -40054,7 +40054,7 @@
         "G",
         "U"
       ],
-      "edhrec_rank": 1809,
+      "edhrec_rank": 1803,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -40115,10 +40115,10 @@
       "artist_ids": [
         "b4344292-387b-4aa0-8225-13f1fbe77808"
       ],
-      "edhrec_rank": 964,
+      "edhrec_rank": 965,
       "properties": [],
       "prices": {
-        "usd": "2.98"
+        "usd": "3.03"
       }
     },
     {
@@ -40160,7 +40160,7 @@
       "artist_ids": [
         "5a5ee217-9d28-419a-b92a-a2376c7d18b3"
       ],
-      "edhrec_rank": 15627,
+      "edhrec_rank": 15639,
       "properties": [],
       "prices": {
         "usd": "8.36"
@@ -40230,10 +40230,10 @@
       "artist_ids": [
         "1885e6cb-c827-4896-994e-3d0a027d602f"
       ],
-      "edhrec_rank": 5850,
+      "edhrec_rank": 5854,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.28"
       }
     },
     {
@@ -40267,7 +40267,7 @@
       "artist_ids": [
         "d2da8270-bbdb-4c49-b84d-bf5a380e8a78"
       ],
-      "edhrec_rank": 23484,
+      "edhrec_rank": 23497,
       "properties": [],
       "prices": {
         "usd": "10.76"
@@ -40308,10 +40308,10 @@
       "artist_ids": [
         "0fbd4798-76eb-46d5-a5d4-1e3a25870e34"
       ],
-      "edhrec_rank": 6017,
+      "edhrec_rank": 6015,
       "properties": [],
       "prices": {
-        "usd": "0.49"
+        "usd": "0.48"
       }
     },
     {
@@ -40356,7 +40356,7 @@
       "edhrec_rank": 5544,
       "properties": [],
       "prices": {
-        "usd": "0.46"
+        "usd": "0.44"
       }
     },
     {
@@ -40460,7 +40460,7 @@
       "artist_ids": [
         "af42a44c-8ec3-47a7-9047-5d29ddad186d"
       ],
-      "edhrec_rank": 4440,
+      "edhrec_rank": 4441,
       "properties": [],
       "prices": {
         "usd": "0.31"
@@ -40502,7 +40502,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 14058,
+      "edhrec_rank": 14062,
       "properties": [],
       "prices": {
         "usd": "0.40"
@@ -40534,7 +40534,7 @@
         "R",
         "U"
       ],
-      "edhrec_rank": 10190,
+      "edhrec_rank": 10142,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -40583,7 +40583,7 @@
       "edhrec_rank": 171,
       "properties": [],
       "prices": {
-        "usd": "14.31"
+        "usd": "14.41"
       }
     },
     {
@@ -40650,7 +40650,7 @@
       "artist_ids": [
         "bba69285-2445-4a4b-a847-59397be972ea"
       ],
-      "edhrec_rank": 2865,
+      "edhrec_rank": 2866,
       "properties": [],
       "prices": {
         "usd": "0.39"
@@ -40742,7 +40742,7 @@
       "edhrec_rank": 187,
       "properties": [],
       "prices": {
-        "usd": "8.04"
+        "usd": "8.10"
       }
     },
     {
@@ -40830,10 +40830,10 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "edhrec_rank": 1577,
+      "edhrec_rank": 1578,
       "properties": [],
       "prices": {
-        "usd": "5.06"
+        "usd": "4.98"
       }
     },
     {
@@ -40891,7 +40891,7 @@
       "artist_ids": [
         "eb55171c-2342-45f4-a503-2d5a75baf752"
       ],
-      "edhrec_rank": 12019,
+      "edhrec_rank": 12028,
       "properties": [],
       "prices": {
         "usd": "1.05"
@@ -40938,7 +40938,7 @@
       "edhrec_rank": 1136,
       "properties": [],
       "prices": {
-        "usd": "0.94"
+        "usd": "0.89"
       }
     },
     {
@@ -40975,7 +40975,7 @@
       "artist_ids": [
         "a267f9bb-072b-410a-a704-50f4d19020d8"
       ],
-      "edhrec_rank": 17207,
+      "edhrec_rank": 17208,
       "properties": [],
       "prices": {
         "usd": "0.33"
@@ -41005,9 +41005,9 @@
         "R",
         "U"
       ],
-      "edhrec_rank": 17992,
+      "edhrec_rank": 17827,
       "prices": {
-        "usd": "0.12",
+        "usd": "0.16",
         "usd_foil": "0.33",
         "usd_etched": null,
         "eur": "0.11",
@@ -41054,7 +41054,7 @@
       "artist_ids": [
         "f3116c88-57f4-4fd1-95f3-cfd163977661"
       ],
-      "edhrec_rank": 11190,
+      "edhrec_rank": 11195,
       "properties": [],
       "prices": {
         "usd": "0.64"
@@ -41100,10 +41100,10 @@
       "artist_ids": [
         "e4631396-f0ce-41df-9d35-a7bd1da9d5a6"
       ],
-      "edhrec_rank": 831,
+      "edhrec_rank": 830,
       "properties": [],
       "prices": {
-        "usd": "8.29"
+        "usd": "8.63"
       }
     },
     {
@@ -41189,7 +41189,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 13306,
+      "edhrec_rank": 13312,
       "properties": [],
       "prices": {
         "usd": "0.19"
@@ -41323,7 +41323,7 @@
       "artist_ids": [
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
-      "edhrec_rank": 5573,
+      "edhrec_rank": 5574,
       "properties": [],
       "prices": {
         "usd": "0.18"
@@ -41413,7 +41413,7 @@
       "artist_ids": [
         "b6476cc7-1576-47e8-9f6a-68d05b45cf62"
       ],
-      "edhrec_rank": 8485,
+      "edhrec_rank": 8486,
       "properties": [],
       "prices": {
         "usd": "0.19"
@@ -41591,7 +41591,7 @@
       "artist_ids": [
         "0c066852-6fdb-42d0-aab9-db4038850da0"
       ],
-      "edhrec_rank": 13300,
+      "edhrec_rank": 13305,
       "properties": [],
       "prices": {
         "usd": "0.38"
@@ -41638,7 +41638,7 @@
       "artist_ids": [
         "d084e74b-f63a-4107-b72c-ed6250ecc93b"
       ],
-      "edhrec_rank": 3986,
+      "edhrec_rank": 3977,
       "properties": [],
       "prices": {
         "usd": "0.23"
@@ -41786,7 +41786,7 @@
         "B",
         "G"
       ],
-      "edhrec_rank": 22047,
+      "edhrec_rank": 21844,
       "prices": {
         "usd": "0.15",
         "usd_foil": "0.23",
@@ -41834,7 +41834,7 @@
       "artist_ids": [
         "2e6a0611-9411-4ba4-98e3-c0e18cbf9f83"
       ],
-      "edhrec_rank": 19298,
+      "edhrec_rank": 19309,
       "properties": [],
       "prices": {
         "usd": "0.44"
@@ -41866,7 +41866,7 @@
         "G",
         "W"
       ],
-      "edhrec_rank": 9794,
+      "edhrec_rank": 9790,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -41958,7 +41958,7 @@
       "artist_ids": [
         "b845b8ee-aeea-4822-bcf9-7230625ac95c"
       ],
-      "edhrec_rank": 21380,
+      "edhrec_rank": 21384,
       "properties": [],
       "prices": {
         "usd": "0.30"
@@ -42003,7 +42003,7 @@
       "artist_ids": [
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
-      "edhrec_rank": 5525,
+      "edhrec_rank": 5528,
       "properties": [],
       "prices": {
         "usd": "0.35"
@@ -42078,7 +42078,7 @@
         "R",
         "W"
       ],
-      "edhrec_rank": 8153,
+      "edhrec_rank": 8148,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -42127,7 +42127,7 @@
       "edhrec_rank": 1478,
       "properties": [],
       "prices": {
-        "usd": "4.19"
+        "usd": "4.14"
       }
     },
     {
@@ -42172,7 +42172,7 @@
       "edhrec_rank": 914,
       "properties": [],
       "prices": {
-        "usd": "9.60"
+        "usd": "9.36"
       }
     },
     {
@@ -42239,10 +42239,10 @@
       "artist_ids": [
         "c40c8ec8-d8b3-48a5-8de2-a7c96cbded5b"
       ],
-      "edhrec_rank": 720,
+      "edhrec_rank": 718,
       "properties": [],
       "prices": {
-        "usd": "0.83"
+        "usd": "0.84"
       }
     },
     {
@@ -42287,7 +42287,7 @@
       "edhrec_rank": 279,
       "properties": [],
       "prices": {
-        "usd": "3.66"
+        "usd": "3.56"
       }
     },
     {
@@ -42374,7 +42374,7 @@
       "artist_ids": [
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
-      "edhrec_rank": 1785,
+      "edhrec_rank": 1786,
       "properties": [],
       "prices": {
         "usd": "0.41"
@@ -42418,10 +42418,10 @@
       "artist_ids": [
         "f7183a8d-4833-4a89-8da9-f6024851982b"
       ],
-      "edhrec_rank": 6073,
+      "edhrec_rank": 6071,
       "properties": [],
       "prices": {
-        "usd": "0.56"
+        "usd": "0.53"
       }
     },
     {
@@ -42505,7 +42505,7 @@
       "artist_ids": [
         "7f1868e3-325f-4df9-8f27-a381fed4f0fc"
       ],
-      "edhrec_rank": 4375,
+      "edhrec_rank": 4378,
       "properties": [],
       "prices": {
         "usd": "0.85"
@@ -42596,7 +42596,7 @@
       "artist_ids": [
         "8089db55-5105-47b0-8c64-f320e08c97f0"
       ],
-      "edhrec_rank": 1732,
+      "edhrec_rank": 1733,
       "properties": [],
       "prices": {
         "usd": "0.19"
@@ -42697,7 +42697,7 @@
       "artist_ids": [
         "9cb65d6f-8851-4d56-9add-9eefa274bd1b"
       ],
-      "edhrec_rank": 3209,
+      "edhrec_rank": 3213,
       "properties": [],
       "prices": {
         "usd": "0.34"
@@ -42745,7 +42745,7 @@
       "edhrec_rank": 834,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.35"
       }
     },
     {
@@ -42831,7 +42831,7 @@
       "artist_ids": [
         "44c3877f-8771-43dc-9e40-f4c765f59d2e"
       ],
-      "edhrec_rank": 7314,
+      "edhrec_rank": 7316,
       "properties": [],
       "prices": {
         "usd": "0.26"
@@ -42909,9 +42909,9 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 16063,
+      "edhrec_rank": 15837,
       "prices": {
-        "usd": "0.23",
+        "usd": "0.22",
         "usd_foil": "0.25",
         "usd_etched": null,
         "eur": "0.02",
@@ -42961,10 +42961,10 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 2589,
+      "edhrec_rank": 2588,
       "properties": [],
       "prices": {
-        "usd": "0.38"
+        "usd": "0.39"
       }
     },
     {
@@ -43004,10 +43004,10 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "edhrec_rank": 2061,
+      "edhrec_rank": 2058,
       "properties": [],
       "prices": {
-        "usd": "3.06"
+        "usd": "2.89"
       }
     },
     {
@@ -43048,7 +43048,7 @@
       "artist_ids": [
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
-      "edhrec_rank": 12076,
+      "edhrec_rank": 12075,
       "properties": [],
       "prices": {
         "usd": "0.20"
@@ -43090,7 +43090,7 @@
       "artist_ids": [
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
-      "edhrec_rank": 14161,
+      "edhrec_rank": 14163,
       "properties": [],
       "prices": {
         "usd": "2.29"
@@ -43129,10 +43129,10 @@
       "flavor_text": "Where scavengers nest in hollowed-out rib cages and chittering crawlers peer from empty eye sockets, few dare to trespass.",
       "artist": "Thomas M. Baxa",
       "artist_ids": [],
-      "edhrec_rank": 995,
+      "edhrec_rank": 994,
       "properties": [],
       "prices": {
-        "usd": "5.75"
+        "usd": "5.82"
       }
     },
     {
@@ -43355,7 +43355,7 @@
       "edhrec_rank": 501,
       "properties": [],
       "prices": {
-        "usd": "2.11"
+        "usd": "2.09"
       }
     },
     {
@@ -43442,7 +43442,7 @@
       "artist_ids": [
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
-      "edhrec_rank": 247,
+      "edhrec_rank": 248,
       "properties": [],
       "prices": {
         "usd": "11.43"
@@ -43487,10 +43487,10 @@
       "artist_ids": [
         "f07d73b9-52a0-4fe5-858b-61f7b42174a5"
       ],
-      "edhrec_rank": 579,
+      "edhrec_rank": 578,
       "properties": [],
       "prices": {
-        "usd": "38.85"
+        "usd": "38.92"
       }
     },
     {
@@ -43559,7 +43559,7 @@
       "artist_ids": [
         "d20672ca-0555-4238-a984-fd171d36b247"
       ],
-      "edhrec_rank": 3206,
+      "edhrec_rank": 3209,
       "properties": [],
       "prices": {
         "usd": "0.39"
@@ -43651,10 +43651,10 @@
       "artist_ids": [
         "a5048cc7-438a-4378-98e4-da99b78e1db0"
       ],
-      "edhrec_rank": 3162,
+      "edhrec_rank": 3163,
       "properties": [],
       "prices": {
-        "usd": "0.19"
+        "usd": "0.18"
       }
     },
     {
@@ -43695,7 +43695,7 @@
       "artist_ids": [
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
-      "edhrec_rank": 8893,
+      "edhrec_rank": 8899,
       "properties": [],
       "prices": {
         "usd": "0.70"
@@ -43770,11 +43770,11 @@
         "R",
         "U"
       ],
-      "edhrec_rank": 15130,
+      "edhrec_rank": 15094,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.17"
+        "usd": "0.19"
       }
     },
     {
@@ -43812,7 +43812,7 @@
       "artist_ids": [
         "d82b1138-76d3-49f7-9d8c-bc2e2d3e0b0a"
       ],
-      "edhrec_rank": 3918,
+      "edhrec_rank": 3924,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -43854,7 +43854,7 @@
       "artist_ids": [
         "9c77c81a-3b3f-4e94-a834-327d01cd6b35"
       ],
-      "edhrec_rank": 14837,
+      "edhrec_rank": 14833,
       "properties": [],
       "prices": {
         "usd": "0.11"
@@ -43899,7 +43899,7 @@
       "artist_ids": [
         "09922e8b-c57f-4374-97e4-c0b86b66ef4b"
       ],
-      "edhrec_rank": 17621,
+      "edhrec_rank": 17631,
       "properties": [],
       "prices": {
         "usd": "11.75"
@@ -44039,7 +44039,7 @@
       "edhrec_rank": 336,
       "properties": [],
       "prices": {
-        "usd": "0.39"
+        "usd": "0.38"
       }
     },
     {
@@ -44126,7 +44126,7 @@
       "artist_ids": [
         "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
       ],
-      "edhrec_rank": 275,
+      "edhrec_rank": 276,
       "properties": [],
       "prices": {
         "usd": "0.35"
@@ -44175,7 +44175,7 @@
       "edhrec_rank": 349,
       "properties": [],
       "prices": {
-        "usd": "0.38"
+        "usd": "0.37"
       }
     },
     {
@@ -44403,7 +44403,7 @@
       "edhrec_rank": 2511,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.23"
       }
     },
     {
@@ -44444,7 +44444,7 @@
       "edhrec_rank": 74,
       "properties": [],
       "prices": {
-        "usd": "0.80"
+        "usd": "0.81"
       }
     },
     {
@@ -44532,10 +44532,10 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 7373,
+      "edhrec_rank": 7378,
       "properties": [],
       "prices": {
-        "usd": "1.76"
+        "usd": "1.74"
       }
     },
     {
@@ -44572,7 +44572,7 @@
       "artist_ids": [
         "0ebb52bf-cf87-4c03-b975-2d9df7095334"
       ],
-      "edhrec_rank": 11408,
+      "edhrec_rank": 11405,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -44612,7 +44612,7 @@
       "artist_ids": [
         "70c20ea3-5ad6-4082-a337-6e994ae5828e"
       ],
-      "edhrec_rank": 1901,
+      "edhrec_rank": 1900,
       "properties": [],
       "prices": {
         "usd": "3.63"
@@ -44695,7 +44695,7 @@
       "artist_ids": [
         "14a1de4b-1237-4e7b-8868-b71e87c9a46e"
       ],
-      "edhrec_rank": 24940,
+      "edhrec_rank": 24950,
       "properties": [],
       "prices": {
         "usd": "0.29"
@@ -44732,7 +44732,7 @@
       "artist_ids": [
         "14a1de4b-1237-4e7b-8868-b71e87c9a46e"
       ],
-      "edhrec_rank": 11838,
+      "edhrec_rank": 11842,
       "properties": [],
       "prices": {
         "usd": "27.46"
@@ -44775,7 +44775,7 @@
       "artist_ids": [
         "185ea3f2-0b95-4f96-ab62-f7754ba591d8"
       ],
-      "edhrec_rank": 7944,
+      "edhrec_rank": 7945,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -44815,7 +44815,7 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "edhrec_rank": 15794,
+      "edhrec_rank": 15798,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -44860,7 +44860,7 @@
       "edhrec_rank": 1203,
       "properties": [],
       "prices": {
-        "usd": "9.37"
+        "usd": "9.34"
       }
     },
     {
@@ -44900,7 +44900,7 @@
       "artist_ids": [
         "bc760b5e-6f98-4a17-9b12-5f4eccd12bb2"
       ],
-      "edhrec_rank": 7286,
+      "edhrec_rank": 7284,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -44943,10 +44943,10 @@
       "artist_ids": [
         "8089db55-5105-47b0-8c64-f320e08c97f0"
       ],
-      "edhrec_rank": 6823,
+      "edhrec_rank": 6824,
       "properties": [],
       "prices": {
-        "usd": "0.26"
+        "usd": "0.27"
       }
     },
     {
@@ -45002,10 +45002,10 @@
       "artist_ids": [
         "13a4bbe4-4e02-4403-8ecd-58f7744b994f"
       ],
-      "edhrec_rank": 3701,
+      "edhrec_rank": 3698,
       "properties": [],
       "prices": {
-        "usd": "0.31"
+        "usd": "0.29"
       }
     },
     {
@@ -45028,9 +45028,9 @@
       "produced_mana": [
         "C"
       ],
-      "edhrec_rank": 17722,
+      "edhrec_rank": 17563,
       "prices": {
-        "usd": "1.17",
+        "usd": "1.14",
         "usd_foil": null,
         "usd_etched": null,
         "eur": "1.96",
@@ -45125,7 +45125,7 @@
       "artist_ids": [
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
-      "edhrec_rank": 6943,
+      "edhrec_rank": 6944,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -45165,10 +45165,10 @@
       "artist_ids": [
         "91d65465-e8a6-4a4e-8b0e-0e07466cfa0f"
       ],
-      "edhrec_rank": 13254,
+      "edhrec_rank": 13248,
       "properties": [],
       "prices": {
-        "usd": "0.22"
+        "usd": "0.21"
       }
     },
     {
@@ -45211,10 +45211,10 @@
       "artist_ids": [
         "adad79bf-cd52-456a-b170-740ed8bff0fc"
       ],
-      "edhrec_rank": 866,
+      "edhrec_rank": 867,
       "properties": [],
       "prices": {
-        "usd": "1.41"
+        "usd": "1.45"
       }
     },
     {
@@ -45258,10 +45258,10 @@
       "artist_ids": [
         "a662cb71-4770-4b49-8b03-2cf8497049a7"
       ],
-      "edhrec_rank": 5715,
+      "edhrec_rank": 5707,
       "properties": [],
       "prices": {
-        "usd": "0.33"
+        "usd": "0.34"
       }
     },
     {
@@ -45319,10 +45319,10 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 1143,
+      "edhrec_rank": 1142,
       "properties": [],
       "prices": {
-        "usd": "3.79"
+        "usd": "3.89"
       }
     },
     {
@@ -45362,7 +45362,7 @@
       "artist_ids": [
         "e31f5891-08f7-4e5a-bac9-8b4570b8c1ab"
       ],
-      "edhrec_rank": 8936,
+      "edhrec_rank": 8941,
       "properties": [],
       "prices": {
         "usd": "0.23"
@@ -45399,7 +45399,7 @@
       "artist_ids": [
         "3de0bcf5-44b7-4c1e-9040-04c5396e79b0"
       ],
-      "edhrec_rank": 8918,
+      "edhrec_rank": 8917,
       "properties": [],
       "prices": {
         "usd": "2899.99"
@@ -45452,7 +45452,7 @@
       "edhrec_rank": 800,
       "properties": [],
       "prices": {
-        "usd": "5.99"
+        "usd": "5.78"
       }
     },
     {
@@ -45537,7 +45537,7 @@
       "artist_ids": [
         "a5048cc7-438a-4378-98e4-da99b78e1db0"
       ],
-      "edhrec_rank": 4462,
+      "edhrec_rank": 4464,
       "properties": [],
       "prices": {
         "usd": "0.32"
@@ -45585,7 +45585,7 @@
       "edhrec_rank": 781,
       "properties": [],
       "prices": {
-        "usd": "5.43"
+        "usd": "5.47"
       }
     },
     {
@@ -45723,7 +45723,7 @@
       "artist_ids": [
         "5ce7b3bd-53d2-49e6-b504-37191e8e9b17"
       ],
-      "edhrec_rank": 14270,
+      "edhrec_rank": 14274,
       "properties": [],
       "prices": {
         "usd": "4.78"
@@ -45771,7 +45771,7 @@
       "edhrec_rank": 178,
       "properties": [],
       "prices": {
-        "usd": "25.48"
+        "usd": "25.75"
       }
     },
     {
@@ -45909,7 +45909,7 @@
       "artist_ids": [
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
-      "edhrec_rank": 1083,
+      "edhrec_rank": 1082,
       "properties": [],
       "prices": {
         "usd": "0.20"
@@ -46003,7 +46003,7 @@
       "artist_ids": [
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
-      "edhrec_rank": 1225,
+      "edhrec_rank": 1223,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -46048,7 +46048,7 @@
       "artist_ids": [
         "9c3e9d17-509f-485c-9360-46d897ce716b"
       ],
-      "edhrec_rank": 18356,
+      "edhrec_rank": 18366,
       "properties": [],
       "prices": {
         "usd": "0.15"
@@ -46105,7 +46105,7 @@
       "artist_ids": [
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
-      "edhrec_rank": 4483,
+      "edhrec_rank": 4481,
       "properties": [],
       "prices": {
         "usd": "0.52"
@@ -46154,7 +46154,7 @@
       "edhrec_rank": 622,
       "properties": [],
       "prices": {
-        "usd": "14.62"
+        "usd": "14.67"
       }
     },
     {
@@ -46196,7 +46196,7 @@
       "artist_ids": [
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
-      "edhrec_rank": 8670,
+      "edhrec_rank": 8671,
       "properties": [],
       "prices": {
         "usd": "0.07"
@@ -46286,10 +46286,10 @@
       "artist_ids": [
         "14a1de4b-1237-4e7b-8868-b71e87c9a46e"
       ],
-      "edhrec_rank": 29668,
+      "edhrec_rank": 29674,
       "properties": [],
       "prices": {
-        "usd": "1.00"
+        "usd": "0.98"
       }
     },
     {
@@ -46332,7 +46332,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 21519,
+      "edhrec_rank": 21515,
       "properties": [],
       "prices": {
         "usd": "0.17"
@@ -46364,11 +46364,11 @@
         "B",
         "G"
       ],
-      "edhrec_rank": 8962,
+      "edhrec_rank": 8944,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.19"
+        "usd": "0.18"
       }
     },
     {
@@ -46408,7 +46408,7 @@
       "artist_ids": [
         "1ba1c5be-7a22-46e0-912c-79c87c197bdc"
       ],
-      "edhrec_rank": 6061,
+      "edhrec_rank": 6062,
       "properties": [],
       "prices": {
         "usd": "0.21"
@@ -46451,7 +46451,7 @@
       "artist_ids": [
         "3de0bcf5-44b7-4c1e-9040-04c5396e79b0"
       ],
-      "edhrec_rank": 18127,
+      "edhrec_rank": 18135,
       "properties": [],
       "prices": {
         "usd": "7.01"
@@ -46495,7 +46495,7 @@
       "artist_ids": [
         "9033cb21-6f15-4abe-9a61-4bacf1e8800e"
       ],
-      "edhrec_rank": 3262,
+      "edhrec_rank": 3261,
       "properties": [],
       "prices": {
         "usd": "1.97"
@@ -46539,10 +46539,10 @@
       "artist_ids": [
         "fb7b61a8-13c5-4813-a749-9d3396801906"
       ],
-      "edhrec_rank": 4917,
+      "edhrec_rank": 4920,
       "properties": [],
       "prices": {
-        "usd": "4.77"
+        "usd": "4.62"
       }
     },
     {
@@ -46580,7 +46580,7 @@
       "artist_ids": [
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
-      "edhrec_rank": 1720,
+      "edhrec_rank": 1721,
       "properties": [],
       "prices": {
         "usd": "0.37"
@@ -46622,7 +46622,7 @@
       "artist_ids": [
         "1631a2ad-bf03-4ab9-b86c-60da982d58a1"
       ],
-      "edhrec_rank": 17375,
+      "edhrec_rank": 17361,
       "properties": [],
       "prices": {
         "usd": "3.99"
@@ -46670,7 +46670,7 @@
       "artist_ids": [
         "c09ede88-a1b5-4a18-9895-dc8a965d28a5"
       ],
-      "edhrec_rank": 11464,
+      "edhrec_rank": 11466,
       "properties": [],
       "prices": {
         "usd": "0.26"
@@ -46711,7 +46711,7 @@
       "artist_ids": [
         "d7f03c52-e573-4082-9937-6c039b11ca70"
       ],
-      "edhrec_rank": 9978,
+      "edhrec_rank": 9974,
       "properties": [],
       "prices": {
         "usd": "8.73"
@@ -46759,7 +46759,7 @@
       "edhrec_rank": 148,
       "properties": [],
       "prices": {
-        "usd": "16.51"
+        "usd": "16.56"
       }
     },
     {
@@ -46787,9 +46787,9 @@
         "G",
         "R"
       ],
-      "edhrec_rank": 14540,
+      "edhrec_rank": 14319,
       "prices": {
-        "usd": "2.21",
+        "usd": "2.32",
         "usd_foil": "3.12",
         "usd_etched": null,
         "eur": "5.16",
@@ -46838,7 +46838,7 @@
       "artist_ids": [
         "85908891-3cc7-42b0-9b54-27ed0fe89c53"
       ],
-      "edhrec_rank": 7016,
+      "edhrec_rank": 7022,
       "properties": [],
       "prices": {
         "usd": "0.24"
@@ -46927,7 +46927,7 @@
       "artist_ids": [
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
-      "edhrec_rank": 7898,
+      "edhrec_rank": 7906,
       "properties": [],
       "prices": {
         "usd": "0.08"
@@ -46972,7 +46972,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 23443,
+      "edhrec_rank": 23438,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -47018,10 +47018,10 @@
       "artist_ids": [
         "a5048cc7-438a-4378-98e4-da99b78e1db0"
       ],
-      "edhrec_rank": 1946,
+      "edhrec_rank": 1949,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.24"
       }
     },
     {
@@ -47106,7 +47106,7 @@
       "artist_ids": [
         "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
       ],
-      "edhrec_rank": 7958,
+      "edhrec_rank": 7967,
       "properties": [],
       "prices": {
         "usd": "0.16"
@@ -47165,7 +47165,7 @@
       "artist_ids": [
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
-      "edhrec_rank": 497,
+      "edhrec_rank": 495,
       "properties": [],
       "prices": {
         "usd": "1.78"
@@ -47211,7 +47211,7 @@
       "edhrec_rank": 1541,
       "properties": [],
       "prices": {
-        "usd": "1.37"
+        "usd": "1.38"
       }
     },
     {
@@ -47338,7 +47338,7 @@
       "artist_ids": [
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
-      "edhrec_rank": 4764,
+      "edhrec_rank": 4762,
       "properties": [],
       "prices": {
         "usd": "0.23"
@@ -47380,7 +47380,7 @@
       "artist_ids": [
         "17e629f2-3465-44cc-82f6-4e2386341bd7"
       ],
-      "edhrec_rank": 4584,
+      "edhrec_rank": 4586,
       "properties": [],
       "prices": {
         "usd": "0.32"
@@ -47425,7 +47425,7 @@
       "artist_ids": [
         "262c8e55-4efc-467b-a042-6f734b9d2e01"
       ],
-      "edhrec_rank": 19461,
+      "edhrec_rank": 19464,
       "properties": [],
       "prices": {
         "usd": "0.52"
@@ -47471,7 +47471,7 @@
       "artist_ids": [
         "54366fc1-c5b1-4faa-a7a5-de2abc119de1"
       ],
-      "edhrec_rank": 10099,
+      "edhrec_rank": 10098,
       "properties": [],
       "prices": {
         "usd": "2.14"
@@ -47605,11 +47605,11 @@
         "B",
         "G"
       ],
-      "edhrec_rank": 4675,
+      "edhrec_rank": 4654,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "6.38"
+        "usd": "6.16"
       }
     },
     {
@@ -47636,11 +47636,11 @@
         "B",
         "W"
       ],
-      "edhrec_rank": 4911,
+      "edhrec_rank": 4881,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "5.87"
+        "usd": "5.82"
       }
     },
     {
@@ -47667,11 +47667,11 @@
         "R",
         "U"
       ],
-      "edhrec_rank": 4966,
+      "edhrec_rank": 4940,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "5.07"
+        "usd": "5.00"
       }
     },
     {
@@ -47698,11 +47698,11 @@
         "R",
         "W"
       ],
-      "edhrec_rank": 5754,
+      "edhrec_rank": 5722,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "3.50"
+        "usd": "3.42"
       }
     },
     {
@@ -47729,11 +47729,11 @@
         "G",
         "U"
       ],
-      "edhrec_rank": 5523,
+      "edhrec_rank": 5495,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "4.94"
+        "usd": "4.47"
       }
     },
     {
@@ -47772,7 +47772,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 17921,
+      "edhrec_rank": 17910,
       "properties": [],
       "prices": {
         "usd": "0.11"
@@ -47841,10 +47841,10 @@
       "artist_ids": [
         "d20672ca-0555-4238-a984-fd171d36b247"
       ],
-      "edhrec_rank": 2288,
+      "edhrec_rank": 2287,
       "properties": [],
       "prices": {
-        "usd": "4.32"
+        "usd": "4.08"
       }
     },
     {
@@ -47872,11 +47872,11 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 6425,
+      "edhrec_rank": 6412,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.33"
       }
     },
     {
@@ -47965,10 +47965,10 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "edhrec_rank": 1758,
+      "edhrec_rank": 1759,
       "properties": [],
       "prices": {
-        "usd": "0.21"
+        "usd": "0.23"
       }
     },
     {
@@ -48047,10 +48047,10 @@
       "artist_ids": [
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
-      "edhrec_rank": 2855,
+      "edhrec_rank": 2854,
       "properties": [],
       "prices": {
-        "usd": "13.33"
+        "usd": "12.94"
       }
     },
     {
@@ -48119,7 +48119,7 @@
       "artist_ids": [
         "a5f8354a-8b51-4e59-96b2-0e3aeae4fa1d"
       ],
-      "edhrec_rank": 14294,
+      "edhrec_rank": 14297,
       "properties": [],
       "prices": {
         "usd": "0.17"
@@ -48151,7 +48151,7 @@
         "B",
         "W"
       ],
-      "edhrec_rank": 9212,
+      "edhrec_rank": 9182,
       "is_basic": false,
       "properties": [],
       "prices": {
@@ -48291,7 +48291,7 @@
       "edhrec_rank": 431,
       "properties": [],
       "prices": {
-        "usd": "14.56"
+        "usd": "14.66"
       }
     },
     {
@@ -48328,7 +48328,7 @@
       "artist_ids": [
         "b5f1bd34-abee-40c9-99f7-a6ee089fb30b"
       ],
-      "edhrec_rank": 6699,
+      "edhrec_rank": 6702,
       "properties": [],
       "prices": {
         "usd": "0.66"
@@ -48377,7 +48377,7 @@
       "edhrec_rank": 476,
       "properties": [],
       "prices": {
-        "usd": "12.92"
+        "usd": "12.88"
       }
     },
     {
@@ -48553,7 +48553,7 @@
       "artist_ids": [
         "bd8dcf6f-4ab3-4854-bfb0-f2e21610fc16"
       ],
-      "edhrec_rank": 16775,
+      "edhrec_rank": 16802,
       "properties": [],
       "prices": {
         "usd": "37.68"
@@ -48590,7 +48590,7 @@
       "artist_ids": [
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
-      "edhrec_rank": 25731,
+      "edhrec_rank": 25728,
       "properties": [],
       "prices": {
         "usd": "5.81"
@@ -48752,10 +48752,10 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 20650,
+      "edhrec_rank": 20663,
       "properties": [],
       "prices": {
-        "usd": "0.23"
+        "usd": "0.25"
       }
     },
     {
@@ -48793,10 +48793,10 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 9991,
+      "edhrec_rank": 9994,
       "properties": [],
       "prices": {
-        "usd": "5.66"
+        "usd": "5.60"
       }
     },
     {
@@ -48825,11 +48825,11 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 5304,
+      "edhrec_rank": 5300,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.54"
+        "usd": "0.55"
       }
     },
     {
@@ -48869,7 +48869,7 @@
       "artist_ids": [
         "c99a114b-c679-47df-a6e9-4f9d3ad5b114"
       ],
-      "edhrec_rank": 9039,
+      "edhrec_rank": 9040,
       "properties": [],
       "prices": {
         "usd": "18.59"
@@ -48914,7 +48914,7 @@
       "artist_ids": [
         "1952c90b-a5a7-4328-9f7c-e11064f59daf"
       ],
-      "edhrec_rank": 11001,
+      "edhrec_rank": 11004,
       "properties": [],
       "prices": {
         "usd": "0.38"
@@ -48999,7 +48999,7 @@
       "edhrec_rank": 442,
       "properties": [],
       "prices": {
-        "usd": "0.95"
+        "usd": "0.98"
       }
     },
     {
@@ -49053,7 +49053,7 @@
       "artist_ids": [
         "9ee9a9cc-c09e-486f-918b-69f80cbc4188"
       ],
-      "edhrec_rank": 4480,
+      "edhrec_rank": 4478,
       "properties": [],
       "prices": {
         "usd": "0.58"
@@ -49127,7 +49127,7 @@
       "edhrec_rank": 840,
       "properties": [],
       "prices": {
-        "usd": "17.19"
+        "usd": "17.17"
       }
     },
     {
@@ -49254,7 +49254,7 @@
       "edhrec_rank": 120,
       "properties": [],
       "prices": {
-        "usd": "42.06"
+        "usd": "42.01"
       }
     },
     {
@@ -49368,7 +49368,7 @@
       "edhrec_rank": 2362,
       "properties": [],
       "prices": {
-        "usd": "20.16"
+        "usd": "20.01"
       }
     },
     {
@@ -49408,10 +49408,10 @@
       "artist_ids": [
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
-      "edhrec_rank": 1520,
+      "edhrec_rank": 1518,
       "properties": [],
       "prices": {
-        "usd": "11.52"
+        "usd": "11.44"
       }
     },
     {
@@ -49478,10 +49478,10 @@
       "artist_ids": [
         "d281eab4-463a-4ba8-9039-8943737960a0"
       ],
-      "edhrec_rank": 518,
+      "edhrec_rank": 519,
       "properties": [],
       "prices": {
-        "usd": "17.02"
+        "usd": "16.78"
       }
     },
     {
@@ -49523,7 +49523,7 @@
       "edhrec_rank": 1344,
       "properties": [],
       "prices": {
-        "usd": "18.22"
+        "usd": "18.45"
       }
     },
     {
@@ -49640,7 +49640,7 @@
       "edhrec_rank": 6204,
       "properties": [],
       "prices": {
-        "usd": "0.20"
+        "usd": "0.19"
       }
     },
     {
@@ -49685,7 +49685,7 @@
       "edhrec_rank": 170,
       "properties": [],
       "prices": {
-        "usd": "14.73"
+        "usd": "14.78"
       }
     },
     {
@@ -49726,7 +49726,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 458,
+      "edhrec_rank": 457,
       "properties": [],
       "prices": {
         "usd": "1.06"
@@ -49769,7 +49769,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 603,
+      "edhrec_rank": 605,
       "properties": [],
       "prices": {
         "usd": "4.51"
@@ -49814,7 +49814,7 @@
       "artist_ids": [
         "5c783e76-8520-483c-96d1-10052f35202c"
       ],
-      "edhrec_rank": 25640,
+      "edhrec_rank": 25632,
       "properties": [],
       "prices": {
         "usd": "0.20"
@@ -49859,7 +49859,7 @@
       "artist_ids": [
         "eae339a0-a8be-40b9-9878-55f7de9256f9"
       ],
-      "edhrec_rank": 5345,
+      "edhrec_rank": 5342,
       "properties": [],
       "prices": {
         "usd": "0.21"
@@ -49903,10 +49903,10 @@
       "artist_ids": [
         "c99a114b-c679-47df-a6e9-4f9d3ad5b114"
       ],
-      "edhrec_rank": 29125,
+      "edhrec_rank": 29137,
       "properties": [],
       "prices": {
-        "usd": "1.19"
+        "usd": "1.17"
       }
     },
     {
@@ -49943,7 +49943,7 @@
       "edhrec_rank": 48,
       "properties": [],
       "prices": {
-        "usd": "32.07"
+        "usd": "32.23"
       }
     },
     {
@@ -49984,7 +49984,7 @@
       "artist_ids": [
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
-      "edhrec_rank": 868,
+      "edhrec_rank": 866,
       "properties": [],
       "prices": {
         "usd": "0.42"
@@ -50046,11 +50046,11 @@
       "oracle_text": "{T}, Sacrifice this land: Search your library for a basic land card, put it onto the battlefield tapped, then shuffle.",
       "color_identity": [],
       "keywords": [],
-      "edhrec_rank": 1639,
+      "edhrec_rank": 1638,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.31"
+        "usd": "0.29"
       }
     },
     {
@@ -50080,9 +50080,9 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 12471,
+      "edhrec_rank": 12310,
       "prices": {
-        "usd": "0.20",
+        "usd": "0.21",
         "usd_foil": "0.38",
         "usd_etched": null,
         "eur": "0.18",
@@ -50177,10 +50177,10 @@
       "artist_ids": [
         "5157b931-ac23-49b6-a2c4-c4cf4bbc2118"
       ],
-      "edhrec_rank": 715,
+      "edhrec_rank": 717,
       "properties": [],
       "prices": {
-        "usd": "0.35"
+        "usd": "0.33"
       }
     },
     {
@@ -50238,7 +50238,7 @@
       "artist_ids": [
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
-      "edhrec_rank": 8058,
+      "edhrec_rank": 8064,
       "properties": [],
       "prices": {
         "usd": "0.16"
@@ -50284,7 +50284,7 @@
       "artist_ids": [
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
-      "edhrec_rank": 7123,
+      "edhrec_rank": 7125,
       "properties": [],
       "prices": {
         "usd": "1.55"
@@ -50376,7 +50376,7 @@
       "artist_ids": [
         "6dd06426-59fe-4b9c-aad5-6da8446a5c3d"
       ],
-      "edhrec_rank": 4412,
+      "edhrec_rank": 4415,
       "properties": [],
       "prices": {
         "usd": "0.40"
@@ -50422,7 +50422,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 6199,
+      "edhrec_rank": 6203,
       "properties": [],
       "prices": {
         "usd": "0.90"
@@ -50468,7 +50468,7 @@
       "artist_ids": [
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
-      "edhrec_rank": 5812,
+      "edhrec_rank": 5814,
       "properties": [],
       "prices": {
         "usd": "0.38"
@@ -50571,10 +50571,10 @@
       "artist_ids": [
         "d20672ca-0555-4238-a984-fd171d36b247"
       ],
-      "edhrec_rank": 4964,
+      "edhrec_rank": 4971,
       "properties": [],
       "prices": {
-        "usd": "0.84"
+        "usd": "0.83"
       }
     },
     {
@@ -50676,7 +50676,7 @@
       "artist_ids": [
         "7b1b0ce9-2c58-4321-a2a7-cdc94feae082"
       ],
-      "edhrec_rank": 2427,
+      "edhrec_rank": 2429,
       "properties": [],
       "prices": {
         "usd": "0.34"
@@ -50763,7 +50763,7 @@
       "artist_ids": [
         "f28c54ff-bbe3-485d-81a4-b2cb49430a52"
       ],
-      "edhrec_rank": 7591,
+      "edhrec_rank": 7590,
       "properties": [],
       "prices": {
         "usd": "0.36"
@@ -50808,7 +50808,7 @@
       "artist_ids": [
         "002c739e-aa1f-4c1d-921b-37cb2d1b1c5b"
       ],
-      "edhrec_rank": 13914,
+      "edhrec_rank": 13915,
       "properties": [],
       "prices": {
         "usd": "2.44"
@@ -50852,7 +50852,7 @@
       "edhrec_rank": 140,
       "properties": [],
       "prices": {
-        "usd": "3.93"
+        "usd": "4.03"
       }
     },
     {
@@ -50890,7 +50890,7 @@
       "artist_ids": [
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
-      "edhrec_rank": 7832,
+      "edhrec_rank": 7836,
       "properties": [],
       "prices": {
         "usd": "0.34"
@@ -50976,10 +50976,10 @@
       "artist_ids": [
         "70b1ba71-4ee1-4087-8a9e-ea919f20ebff"
       ],
-      "edhrec_rank": 1065,
+      "edhrec_rank": 1064,
       "properties": [],
       "prices": {
-        "usd": "10.60"
+        "usd": "10.55"
       }
     },
     {
@@ -51021,7 +51021,7 @@
       "artist_ids": [
         "85908891-3cc7-42b0-9b54-27ed0fe89c53"
       ],
-      "edhrec_rank": 6714,
+      "edhrec_rank": 6716,
       "properties": [],
       "prices": {
         "usd": "0.26"
@@ -51069,7 +51069,7 @@
       "edhrec_rank": 1118,
       "properties": [],
       "prices": {
-        "usd": "1.59"
+        "usd": "1.65"
       }
     },
     {
@@ -51139,10 +51139,10 @@
       "artist_ids": [
         "a9ddb513-51c7-455c-ab8f-5b90aae9f75b"
       ],
-      "edhrec_rank": 1377,
+      "edhrec_rank": 1378,
       "properties": [],
       "prices": {
-        "usd": "0.44"
+        "usd": "0.42"
       }
     },
     {
@@ -51184,7 +51184,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 23379,
+      "edhrec_rank": 23390,
       "properties": [],
       "prices": {
         "usd": "0.18"
@@ -51332,10 +51332,10 @@
       "artist_ids": [
         "9cb65d6f-8851-4d56-9add-9eefa274bd1b"
       ],
-      "edhrec_rank": 1448,
+      "edhrec_rank": 1449,
       "properties": [],
       "prices": {
-        "usd": "3.83"
+        "usd": "3.75"
       }
     },
     {
@@ -51363,11 +51363,11 @@
         "U",
         "W"
       ],
-      "edhrec_rank": 5750,
+      "edhrec_rank": 5742,
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.23"
+        "usd": "0.20"
       }
     },
     {
@@ -51422,7 +51422,7 @@
       "artist_ids": [
         "976cfe82-042e-4c2a-b762-2bc3e86cb6d0"
       ],
-      "edhrec_rank": 12993,
+      "edhrec_rank": 12996,
       "properties": [],
       "prices": {
         "usd": "0.17"
@@ -51470,7 +51470,7 @@
       "edhrec_rank": 1133,
       "properties": [],
       "prices": {
-        "usd": "6.68"
+        "usd": "6.92"
       }
     },
     {
@@ -51558,7 +51558,7 @@
       "edhrec_rank": 654,
       "properties": [],
       "prices": {
-        "usd": "1.13"
+        "usd": "1.15"
       }
     },
     {
@@ -51595,7 +51595,7 @@
       "artist_ids": [
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
-      "edhrec_rank": 7772,
+      "edhrec_rank": 7768,
       "properties": [],
       "prices": {
         "usd": "33.14"
@@ -51677,10 +51677,10 @@
       "artist_ids": [
         "6cb0dc0c-4362-4c21-b23a-b2d7e096aa4f"
       ],
-      "edhrec_rank": 5439,
+      "edhrec_rank": 5436,
       "properties": [],
       "prices": {
-        "usd": "0.20"
+        "usd": "0.22"
       }
     },
     {
@@ -51718,7 +51718,7 @@
       "artist_ids": [
         "c4e0aa7c-a008-4d71-80ce-d5a1ca0b251b"
       ],
-      "edhrec_rank": 27117,
+      "edhrec_rank": 27119,
       "properties": [],
       "prices": {
         "usd": "0.40"
@@ -51760,7 +51760,7 @@
       "artist_ids": [
         "f009de11-3c8d-4663-b996-ca0c3e997fad"
       ],
-      "edhrec_rank": 2476,
+      "edhrec_rank": 2477,
       "properties": [],
       "prices": {
         "usd": "10.29"
@@ -51832,10 +51832,10 @@
       "artist_ids": [
         "70c4c8c7-61a8-44e7-8fb1-161b7f943e7e"
       ],
-      "edhrec_rank": 313,
+      "edhrec_rank": 312,
       "properties": [],
       "prices": {
-        "usd": "3.25"
+        "usd": "3.13"
       }
     },
     {
@@ -51873,10 +51873,10 @@
       "artist_ids": [
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
-      "edhrec_rank": 1079,
+      "edhrec_rank": 1078,
       "properties": [],
       "prices": {
-        "usd": "13.77"
+        "usd": "13.73"
       }
     },
     {
@@ -51918,7 +51918,7 @@
       "edhrec_rank": 877,
       "properties": [],
       "prices": {
-        "usd": "0.91"
+        "usd": "0.93"
       }
     },
     {
@@ -51963,7 +51963,7 @@
       "artist_ids": [
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
-      "edhrec_rank": 6554,
+      "edhrec_rank": 6552,
       "properties": [],
       "prices": {
         "usd": "0.22"
@@ -52011,7 +52011,7 @@
       "artist_ids": [
         "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
       ],
-      "edhrec_rank": 26769,
+      "edhrec_rank": 26772,
       "properties": [],
       "prices": {
         "usd": "0.32"
@@ -52229,7 +52229,7 @@
       "artist_ids": [
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
-      "edhrec_rank": 2957,
+      "edhrec_rank": 2960,
       "properties": [],
       "prices": {
         "usd": "0.90"
@@ -52274,7 +52274,7 @@
       "artist_ids": [
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
-      "edhrec_rank": 5141,
+      "edhrec_rank": 5142,
       "properties": [],
       "prices": {
         "usd": "0.13"
@@ -52327,7 +52327,7 @@
       "edhrec_rank": 466,
       "properties": [],
       "prices": {
-        "usd": "14.11"
+        "usd": "14.15"
       }
     },
     {
@@ -52412,7 +52412,7 @@
       "artist_ids": [
         "a9ddb513-51c7-455c-ab8f-5b90aae9f75b"
       ],
-      "edhrec_rank": 3735,
+      "edhrec_rank": 3737,
       "properties": [],
       "prices": {
         "usd": "78.32"
@@ -52456,7 +52456,7 @@
       "edhrec_rank": 77,
       "properties": [],
       "prices": {
-        "usd": "14.38"
+        "usd": "14.17"
       }
     },
     {
@@ -52581,10 +52581,10 @@
       "artist_ids": [
         "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
       ],
-      "edhrec_rank": 4020,
+      "edhrec_rank": 4021,
       "properties": [],
       "prices": {
-        "usd": "0.73"
+        "usd": "0.70"
       }
     },
     {
@@ -52624,10 +52624,10 @@
       "artist_ids": [
         "2d753f61-5f5b-468e-97ea-8e0fdd347340"
       ],
-      "edhrec_rank": 2558,
+      "edhrec_rank": 2555,
       "properties": [],
       "prices": {
-        "usd": "0.40"
+        "usd": "0.43"
       }
     },
     {
@@ -52677,7 +52677,7 @@
       "edhrec_rank": 520,
       "properties": [],
       "prices": {
-        "usd": "9.78"
+        "usd": "9.89"
       }
     },
     {
@@ -52733,7 +52733,7 @@
       "artist_ids": [
         "21ed6499-c4d3-4965-ab02-6c7228275bec"
       ],
-      "edhrec_rank": 7458,
+      "edhrec_rank": 7459,
       "properties": [],
       "prices": {
         "usd": "0.38"
@@ -52803,7 +52803,7 @@
       "artist_ids": [
         "2c3d2473-ff5d-4309-8194-e0b2def2ab65"
       ],
-      "edhrec_rank": 9550,
+      "edhrec_rank": 9551,
       "properties": [],
       "prices": {
         "usd": "0.16"

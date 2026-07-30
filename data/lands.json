@@ -1,7 +1,7 @@
 {
   "object": "list",
-  "total_cards": 1152,
-  "version": "10.54",
+  "total_cards": 1153,
+  "version": "10.55",
   "data": [
     {
       "object": "card",
@@ -212,7 +212,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "6.03"
+        "usd": "5.64"
       }
     },
     {
@@ -348,7 +348,7 @@
       "edhrec_rank": 2847,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.33"
       }
     },
     {
@@ -394,7 +394,7 @@
       "edhrec_rank": 2065,
       "properties": [],
       "prices": {
-        "usd": "2.58"
+        "usd": "2.62"
       }
     },
     {
@@ -426,7 +426,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "3.09"
+        "usd": "3.20"
       }
     },
     {
@@ -511,7 +511,7 @@
       "edhrec_rank": 588,
       "properties": [],
       "prices": {
-        "usd": "0.51"
+        "usd": "0.50"
       }
     },
     {
@@ -594,7 +594,7 @@
       "edhrec_rank": 1824,
       "properties": [],
       "prices": {
-        "usd": "5.53"
+        "usd": "5.75"
       }
     },
     {
@@ -680,7 +680,7 @@
       "edhrec_rank": 1642,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.31"
       }
     },
     {
@@ -849,7 +849,7 @@
       "edhrec_rank": 965,
       "properties": [],
       "prices": {
-        "usd": "27.91"
+        "usd": "28.03"
       }
     },
     {
@@ -909,7 +909,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.30"
       }
     },
     {
@@ -1027,7 +1027,7 @@
       "edhrec_rank": 12632,
       "properties": [],
       "prices": {
-        "usd": "0.22"
+        "usd": "0.21"
       }
     },
     {
@@ -1116,7 +1116,7 @@
       "edhrec_rank": 7692,
       "properties": [],
       "prices": {
-        "usd": "0.74"
+        "usd": "0.75"
       }
     },
     {
@@ -1357,7 +1357,7 @@
       "edhrec_rank": 511,
       "properties": [],
       "prices": {
-        "usd": "2.23"
+        "usd": "2.24"
       }
     },
     {
@@ -1444,7 +1444,7 @@
       "edhrec_rank": 66,
       "properties": [],
       "prices": {
-        "usd": "122.88"
+        "usd": "122.74"
       }
     },
     {
@@ -1530,7 +1530,7 @@
       "edhrec_rank": 3703,
       "properties": [],
       "prices": {
-        "usd": "2.93"
+        "usd": "2.86"
       }
     },
     {
@@ -1570,7 +1570,7 @@
       "edhrec_rank": 1070,
       "properties": [],
       "prices": {
-        "usd": "8.84"
+        "usd": "7.61"
       }
     },
     {
@@ -1764,7 +1764,7 @@
       "edhrec_rank": 9092,
       "properties": [],
       "prices": {
-        "usd": "0.15"
+        "usd": "0.14"
       }
     },
     {
@@ -1806,7 +1806,7 @@
       "edhrec_rank": 919,
       "properties": [],
       "prices": {
-        "usd": "1.05"
+        "usd": "1.17"
       }
     },
     {
@@ -1977,7 +1977,7 @@
       "edhrec_rank": 380,
       "properties": [],
       "prices": {
-        "usd": "7.58"
+        "usd": "7.98"
       }
     },
     {
@@ -2093,7 +2093,7 @@
       "edhrec_rank": 1477,
       "properties": [],
       "prices": {
-        "usd": "0.80"
+        "usd": "0.79"
       }
     },
     {
@@ -2159,7 +2159,7 @@
       ],
       "edhrec_rank": 18151,
       "prices": {
-        "usd": "0.17",
+        "usd": "0.20",
         "usd_foil": "0.38",
         "usd_etched": null,
         "eur": "0.13",
@@ -2322,7 +2322,7 @@
       ],
       "edhrec_rank": 9979,
       "prices": {
-        "usd": "0.20",
+        "usd": "0.21",
         "usd_foil": "0.24",
         "usd_etched": null,
         "eur": "0.04",
@@ -2389,7 +2389,7 @@
       "edhrec_rank": 3981,
       "properties": [],
       "prices": {
-        "usd": "0.21"
+        "usd": "0.20"
       }
     },
     {
@@ -2600,7 +2600,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "4.18"
+        "usd": "3.97"
       }
     },
     {
@@ -2751,7 +2751,7 @@
       "edhrec_rank": 320,
       "properties": [],
       "prices": {
-        "usd": "6.15"
+        "usd": "6.33"
       }
     },
     {
@@ -2825,7 +2825,7 @@
       "edhrec_rank": 6516,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.29"
       }
     },
     {
@@ -2871,7 +2871,7 @@
       "edhrec_rank": 2482,
       "properties": [],
       "prices": {
-        "usd": "3.78"
+        "usd": "3.81"
       }
     },
     {
@@ -2914,7 +2914,7 @@
       "edhrec_rank": 17554,
       "properties": [],
       "prices": {
-        "usd": "4.72"
+        "usd": "4.86"
       }
     },
     {
@@ -3078,7 +3078,7 @@
       "edhrec_rank": 1820,
       "properties": [],
       "prices": {
-        "usd": "1.72"
+        "usd": "1.82"
       }
     },
     {
@@ -3122,7 +3122,7 @@
       "edhrec_rank": 4797,
       "properties": [],
       "prices": {
-        "usd": "2.77"
+        "usd": "2.72"
       }
     },
     {
@@ -3192,7 +3192,7 @@
       "edhrec_rank": 1097,
       "properties": [],
       "prices": {
-        "usd": "4.98"
+        "usd": "4.99"
       }
     },
     {
@@ -3384,7 +3384,7 @@
       "edhrec_rank": 2768,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.38"
       }
     },
     {
@@ -3648,7 +3648,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.37"
+        "usd": "0.36"
       }
     },
     {
@@ -3739,7 +3739,7 @@
       ],
       "edhrec_rank": 19256,
       "prices": {
-        "usd": "0.20",
+        "usd": "0.21",
         "usd_foil": "0.38",
         "usd_etched": null,
         "eur": "0.13",
@@ -3913,7 +3913,7 @@
       "edhrec_rank": 1075,
       "properties": [],
       "prices": {
-        "usd": "3.10"
+        "usd": "3.11"
       }
     },
     {
@@ -3953,7 +3953,7 @@
       "edhrec_rank": 1620,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.33"
       }
     },
     {
@@ -4040,7 +4040,7 @@
       "edhrec_rank": 541,
       "properties": [],
       "prices": {
-        "usd": "8.85"
+        "usd": "8.40"
       }
     },
     {
@@ -4085,7 +4085,7 @@
       "edhrec_rank": 862,
       "properties": [],
       "prices": {
-        "usd": "11.09"
+        "usd": "10.65"
       }
     },
     {
@@ -4130,7 +4130,7 @@
       "edhrec_rank": 9386,
       "properties": [],
       "prices": {
-        "usd": "0.16"
+        "usd": "0.15"
       }
     },
     {
@@ -4259,7 +4259,7 @@
       "edhrec_rank": 16456,
       "properties": [],
       "prices": {
-        "usd": "0.17"
+        "usd": "0.18"
       }
     },
     {
@@ -4344,7 +4344,7 @@
       "edhrec_rank": 872,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.37"
       }
     },
     {
@@ -4414,7 +4414,7 @@
       "edhrec_rank": 832,
       "properties": [],
       "prices": {
-        "usd": "5.67"
+        "usd": "5.79"
       }
     },
     {
@@ -4656,7 +4656,7 @@
       "edhrec_rank": 2643,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.36"
       }
     },
     {
@@ -4738,7 +4738,7 @@
       "edhrec_rank": 1522,
       "properties": [],
       "prices": {
-        "usd": "2.18"
+        "usd": "2.21"
       }
     },
     {
@@ -4900,7 +4900,7 @@
       "edhrec_rank": 647,
       "properties": [],
       "prices": {
-        "usd": "0.87"
+        "usd": "0.92"
       }
     },
     {
@@ -4931,7 +4931,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.26"
       }
     },
     {
@@ -4973,7 +4973,7 @@
       "edhrec_rank": 24,
       "properties": [],
       "prices": {
-        "usd": "1.50"
+        "usd": "1.47"
       }
     },
     {
@@ -5194,7 +5194,7 @@
       "edhrec_rank": 79,
       "properties": [],
       "prices": {
-        "usd": "49.47"
+        "usd": "49.85"
       }
     },
     {
@@ -5324,7 +5324,7 @@
       "edhrec_rank": 1662,
       "properties": [],
       "prices": {
-        "usd": "1.54"
+        "usd": "1.59"
       }
     },
     {
@@ -5520,7 +5520,7 @@
       "edhrec_rank": 7375,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.26"
       }
     },
     {
@@ -5590,7 +5590,7 @@
       "edhrec_rank": 1145,
       "properties": [],
       "prices": {
-        "usd": "3.32"
+        "usd": "3.23"
       }
     },
     {
@@ -5766,7 +5766,7 @@
       "edhrec_rank": 688,
       "properties": [],
       "prices": {
-        "usd": "0.95"
+        "usd": "0.91"
       }
     },
     {
@@ -5836,7 +5836,7 @@
       "edhrec_rank": 783,
       "properties": [],
       "prices": {
-        "usd": "4.50"
+        "usd": "4.47"
       }
     },
     {
@@ -5920,7 +5920,7 @@
       "edhrec_rank": 1296,
       "properties": [],
       "prices": {
-        "usd": "1.21"
+        "usd": "1.27"
       }
     },
     {
@@ -5966,7 +5966,7 @@
       "edhrec_rank": 5277,
       "properties": [],
       "prices": {
-        "usd": "0.20"
+        "usd": "0.21"
       }
     },
     {
@@ -6184,7 +6184,7 @@
       "edhrec_rank": 6556,
       "properties": [],
       "prices": {
-        "usd": "2.04"
+        "usd": "2.00"
       }
     },
     {
@@ -6267,7 +6267,7 @@
       "edhrec_rank": 959,
       "properties": [],
       "prices": {
-        "usd": "0.35"
+        "usd": "0.33"
       }
     },
     {
@@ -6401,7 +6401,7 @@
       "edhrec_rank": 20080,
       "properties": [],
       "prices": {
-        "usd": "1.55"
+        "usd": "1.56"
       }
     },
     {
@@ -6540,7 +6540,7 @@
       "edhrec_rank": 3885,
       "properties": [],
       "prices": {
-        "usd": "0.33"
+        "usd": "0.32"
       }
     },
     {
@@ -6679,7 +6679,7 @@
       "edhrec_rank": 1206,
       "properties": [],
       "prices": {
-        "usd": "1.50"
+        "usd": "1.52"
       }
     },
     {
@@ -6768,7 +6768,7 @@
       ],
       "edhrec_rank": 11962,
       "prices": {
-        "usd": "0.55",
+        "usd": "0.58",
         "usd_foil": "1.43",
         "usd_etched": null,
         "eur": "1.37",
@@ -6818,7 +6818,7 @@
       "edhrec_rank": 1062,
       "properties": [],
       "prices": {
-        "usd": "0.40"
+        "usd": "0.41"
       }
     },
     {
@@ -6861,7 +6861,7 @@
       "edhrec_rank": 730,
       "properties": [],
       "prices": {
-        "usd": "8.50"
+        "usd": "8.28"
       }
     },
     {
@@ -6904,7 +6904,7 @@
       "edhrec_rank": 768,
       "properties": [],
       "prices": {
-        "usd": "4.15"
+        "usd": "4.26"
       }
     },
     {
@@ -7076,7 +7076,7 @@
       "edhrec_rank": 4819,
       "properties": [],
       "prices": {
-        "usd": "1.77"
+        "usd": "1.75"
       }
     },
     {
@@ -7208,7 +7208,7 @@
       "edhrec_rank": 114,
       "properties": [],
       "prices": {
-        "usd": "50.85"
+        "usd": "50.33"
       }
     },
     {
@@ -7338,7 +7338,7 @@
       "edhrec_rank": 5602,
       "properties": [],
       "prices": {
-        "usd": "0.91"
+        "usd": "0.88"
       }
     },
     {
@@ -7589,7 +7589,7 @@
       "edhrec_rank": 86,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.35"
       }
     },
     {
@@ -7806,7 +7806,7 @@
       "edhrec_rank": 1209,
       "properties": [],
       "prices": {
-        "usd": "539.19"
+        "usd": "541.19"
       }
     },
     {
@@ -7876,7 +7876,7 @@
       "edhrec_rank": 778,
       "properties": [],
       "prices": {
-        "usd": "4.03"
+        "usd": "4.02"
       }
     },
     {
@@ -7923,7 +7923,7 @@
       "edhrec_rank": 2928,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.35"
       }
     },
     {
@@ -8096,7 +8096,7 @@
       "edhrec_rank": 5686,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.31"
       }
     },
     {
@@ -8129,7 +8129,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.35"
       }
     },
     {
@@ -8349,7 +8349,7 @@
       "edhrec_rank": 649,
       "properties": [],
       "prices": {
-        "usd": "7.80"
+        "usd": "7.98"
       }
     },
     {
@@ -8394,7 +8394,7 @@
       "edhrec_rank": 1159,
       "properties": [],
       "prices": {
-        "usd": "0.86"
+        "usd": "0.85"
       }
     },
     {
@@ -8442,7 +8442,7 @@
       "edhrec_rank": 1984,
       "properties": [],
       "prices": {
-        "usd": "0.35"
+        "usd": "0.32"
       }
     },
     {
@@ -8815,7 +8815,7 @@
       "edhrec_rank": 3684,
       "properties": [],
       "prices": {
-        "usd": "1.07"
+        "usd": "0.94"
       }
     },
     {
@@ -9046,7 +9046,7 @@
       "edhrec_rank": 1081,
       "properties": [],
       "prices": {
-        "usd": "3.22"
+        "usd": "3.15"
       }
     },
     {
@@ -9267,7 +9267,7 @@
       "edhrec_rank": 3077,
       "properties": [],
       "prices": {
-        "usd": "1.02"
+        "usd": "0.21"
       }
     },
     {
@@ -9404,7 +9404,7 @@
       "edhrec_rank": 8617,
       "properties": [],
       "prices": {
-        "usd": "0.15"
+        "usd": "0.14"
       }
     },
     {
@@ -9579,7 +9579,7 @@
       "edhrec_rank": 10469,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.26"
       }
     },
     {
@@ -9626,7 +9626,7 @@
       "edhrec_rank": 2611,
       "properties": [],
       "prices": {
-        "usd": "0.35"
+        "usd": "0.33"
       }
     },
     {
@@ -9678,7 +9678,7 @@
       "edhrec_rank": 6029,
       "properties": [],
       "prices": {
-        "usd": "4.17"
+        "usd": "4.21"
       }
     },
     {
@@ -9718,7 +9718,7 @@
       "edhrec_rank": 1544,
       "properties": [],
       "prices": {
-        "usd": "9.38"
+        "usd": "9.47"
       }
     },
     {
@@ -9795,7 +9795,7 @@
       "edhrec_rank": 1286,
       "properties": [],
       "prices": {
-        "usd": "1.26"
+        "usd": "1.21"
       }
     },
     {
@@ -9983,7 +9983,7 @@
       ],
       "edhrec_rank": 10952,
       "prices": {
-        "usd": "2.56",
+        "usd": "3.12",
         "usd_foil": "3.29",
         "usd_etched": null,
         "eur": "5.08",
@@ -10060,7 +10060,7 @@
       "edhrec_rank": 1138,
       "properties": [],
       "prices": {
-        "usd": "6.36"
+        "usd": "6.55"
       }
     },
     {
@@ -10107,7 +10107,7 @@
       "edhrec_rank": 2542,
       "properties": [],
       "prices": {
-        "usd": "0.28"
+        "usd": "0.29"
       }
     },
     {
@@ -10153,7 +10153,7 @@
       "edhrec_rank": 1385,
       "properties": [],
       "prices": {
-        "usd": "2.71"
+        "usd": "2.75"
       }
     },
     {
@@ -10196,7 +10196,7 @@
       "edhrec_rank": 284,
       "properties": [],
       "prices": {
-        "usd": "1.36"
+        "usd": "1.38"
       }
     },
     {
@@ -10283,7 +10283,7 @@
       "edhrec_rank": 18565,
       "properties": [],
       "prices": {
-        "usd": "0.21"
+        "usd": "0.22"
       }
     },
     {
@@ -10328,7 +10328,7 @@
       "edhrec_rank": 373,
       "properties": [],
       "prices": {
-        "usd": "3.67"
+        "usd": "3.74"
       }
     },
     {
@@ -10374,7 +10374,7 @@
       "edhrec_rank": 2162,
       "properties": [],
       "prices": {
-        "usd": "0.21"
+        "usd": "0.20"
       }
     },
     {
@@ -10472,7 +10472,7 @@
       "edhrec_rank": 3064,
       "properties": [],
       "prices": {
-        "usd": "2.09"
+        "usd": "2.08"
       }
     },
     {
@@ -10777,7 +10777,7 @@
       "edhrec_rank": 273,
       "properties": [],
       "prices": {
-        "usd": "5.33"
+        "usd": "5.34"
       }
     },
     {
@@ -10862,7 +10862,7 @@
       "edhrec_rank": 2150,
       "properties": [],
       "prices": {
-        "usd": "0.29"
+        "usd": "0.30"
       }
     },
     {
@@ -10988,7 +10988,7 @@
       "edhrec_rank": 3026,
       "properties": [],
       "prices": {
-        "usd": "3.68"
+        "usd": "3.56"
       }
     },
     {
@@ -11281,7 +11281,7 @@
       "edhrec_rank": 483,
       "properties": [],
       "prices": {
-        "usd": "2.60"
+        "usd": "2.75"
       }
     },
     {
@@ -11584,7 +11584,7 @@
       "edhrec_rank": 179,
       "properties": [],
       "prices": {
-        "usd": "1.53"
+        "usd": "1.50"
       }
     },
     {
@@ -11721,7 +11721,7 @@
       "edhrec_rank": 2240,
       "properties": [],
       "prices": {
-        "usd": "0.91"
+        "usd": "1.03"
       }
     },
     {
@@ -11856,7 +11856,7 @@
       "edhrec_rank": 6089,
       "properties": [],
       "prices": {
-        "usd": "0.22"
+        "usd": "0.24"
       }
     },
     {
@@ -11897,7 +11897,7 @@
       "edhrec_rank": 1976,
       "properties": [],
       "prices": {
-        "usd": "0.17"
+        "usd": "0.16"
       }
     },
     {
@@ -12270,7 +12270,7 @@
       "edhrec_rank": 3045,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.35"
       }
     },
     {
@@ -12312,7 +12312,7 @@
       "edhrec_rank": 8373,
       "properties": [],
       "prices": {
-        "usd": "2.73"
+        "usd": "2.77"
       }
     },
     {
@@ -12354,7 +12354,7 @@
       "edhrec_rank": 10485,
       "properties": [],
       "prices": {
-        "usd": "1.43"
+        "usd": "1.25"
       }
     },
     {
@@ -12395,7 +12395,7 @@
       "edhrec_rank": 2471,
       "properties": [],
       "prices": {
-        "usd": "0.62"
+        "usd": "0.65"
       }
     },
     {
@@ -12427,7 +12427,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.69"
+        "usd": "0.66"
       }
     },
     {
@@ -12458,7 +12458,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "2.81"
+        "usd": "2.72"
       }
     },
     {
@@ -12501,7 +12501,7 @@
       "edhrec_rank": 3837,
       "properties": [],
       "prices": {
-        "usd": "0.29"
+        "usd": "0.30"
       }
     },
     {
@@ -12588,7 +12588,7 @@
       "edhrec_rank": 3369,
       "properties": [],
       "prices": {
-        "usd": "15.05"
+        "usd": "14.96"
       }
     },
     {
@@ -12632,7 +12632,7 @@
       "edhrec_rank": 383,
       "properties": [],
       "prices": {
-        "usd": "5.31"
+        "usd": "5.17"
       }
     },
     {
@@ -12719,7 +12719,7 @@
       "edhrec_rank": 773,
       "properties": [],
       "prices": {
-        "usd": "8.41"
+        "usd": "8.05"
       }
     },
     {
@@ -12845,7 +12845,7 @@
       "edhrec_rank": 537,
       "properties": [],
       "prices": {
-        "usd": "4.11"
+        "usd": "4.02"
       }
     },
     {
@@ -12973,7 +12973,7 @@
       "edhrec_rank": 2841,
       "properties": [],
       "prices": {
-        "usd": "4.57"
+        "usd": "4.54"
       }
     },
     {
@@ -13014,7 +13014,7 @@
       "edhrec_rank": 10302,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.28"
       }
     },
     {
@@ -13054,7 +13054,7 @@
       "edhrec_rank": 6038,
       "properties": [],
       "prices": {
-        "usd": "0.40"
+        "usd": "0.39"
       }
     },
     {
@@ -13099,7 +13099,7 @@
       "edhrec_rank": 3670,
       "properties": [],
       "prices": {
-        "usd": "0.35"
+        "usd": "0.32"
       }
     },
     {
@@ -13223,7 +13223,7 @@
       "edhrec_rank": 10515,
       "properties": [],
       "prices": {
-        "usd": "0.16"
+        "usd": "0.15"
       }
     },
     {
@@ -13265,7 +13265,7 @@
       "edhrec_rank": 4296,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.35"
       }
     },
     {
@@ -13308,7 +13308,7 @@
       "edhrec_rank": 1088,
       "properties": [],
       "prices": {
-        "usd": "16.19"
+        "usd": "16.34"
       }
     },
     {
@@ -13351,7 +13351,7 @@
       "edhrec_rank": 10319,
       "properties": [],
       "prices": {
-        "usd": "1.90"
+        "usd": "1.78"
       }
     },
     {
@@ -13551,7 +13551,7 @@
       "edhrec_rank": 7698,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.31"
       }
     },
     {
@@ -13663,7 +13663,7 @@
       "edhrec_rank": 203,
       "properties": [],
       "prices": {
-        "usd": "3.75"
+        "usd": "3.48"
       }
     },
     {
@@ -13708,7 +13708,7 @@
       "edhrec_rank": 762,
       "properties": [],
       "prices": {
-        "usd": "0.39"
+        "usd": "0.36"
       }
     },
     {
@@ -13795,7 +13795,7 @@
       "edhrec_rank": 5073,
       "properties": [],
       "prices": {
-        "usd": "0.30"
+        "usd": "0.29"
       }
     },
     {
@@ -14029,7 +14029,7 @@
       "edhrec_rank": 473,
       "properties": [],
       "prices": {
-        "usd": "28.93"
+        "usd": "28.97"
       }
     },
     {
@@ -14107,7 +14107,7 @@
       "edhrec_rank": 833,
       "properties": [],
       "prices": {
-        "usd": "6.84"
+        "usd": "6.86"
       }
     },
     {
@@ -14136,7 +14136,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "2.37"
+        "usd": "1.94"
       }
     },
     {
@@ -14211,7 +14211,7 @@
       ],
       "edhrec_rank": 19413,
       "prices": {
-        "usd": "0.27",
+        "usd": "0.24",
         "usd_foil": "0.20",
         "usd_etched": null,
         "eur": "0.17",
@@ -14340,7 +14340,7 @@
       "edhrec_rank": 5348,
       "properties": [],
       "prices": {
-        "usd": "1.18"
+        "usd": "1.19"
       }
     },
     {
@@ -14423,7 +14423,7 @@
       "edhrec_rank": 39,
       "properties": [],
       "prices": {
-        "usd": "117.04"
+        "usd": "118.94"
       }
     },
     {
@@ -14468,7 +14468,7 @@
       "edhrec_rank": 677,
       "properties": [],
       "prices": {
-        "usd": "8.13"
+        "usd": "8.53"
       }
     },
     {
@@ -14499,7 +14499,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.26"
+        "usd": "0.27"
       }
     },
     {
@@ -14573,7 +14573,7 @@
       "edhrec_rank": 1611,
       "properties": [],
       "prices": {
-        "usd": "13.75"
+        "usd": "13.96"
       }
     },
     {
@@ -14752,7 +14752,7 @@
       "edhrec_rank": 1679,
       "properties": [],
       "prices": {
-        "usd": "0.24"
+        "usd": "0.27"
       }
     },
     {
@@ -15106,7 +15106,7 @@
       "edhrec_rank": 12424,
       "properties": [],
       "prices": {
-        "usd": "0.29"
+        "usd": "0.28"
       }
     },
     {
@@ -15183,7 +15183,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.20"
+        "usd": "0.18"
       }
     },
     {
@@ -15498,7 +15498,7 @@
       "edhrec_rank": 392,
       "properties": [],
       "prices": {
-        "usd": "0.30"
+        "usd": "0.31"
       }
     },
     {
@@ -15720,7 +15720,7 @@
       "edhrec_rank": 344,
       "properties": [],
       "prices": {
-        "usd": "0.28"
+        "usd": "0.27"
       }
     },
     {
@@ -16029,7 +16029,7 @@
       ],
       "edhrec_rank": 12138,
       "prices": {
-        "usd": "1.77",
+        "usd": "1.65",
         "usd_foil": "3.39",
         "usd_etched": null,
         "eur": "4.11",
@@ -16166,7 +16166,7 @@
       "edhrec_rank": 180,
       "properties": [],
       "prices": {
-        "usd": "51.27"
+        "usd": "51.15"
       }
     },
     {
@@ -16210,7 +16210,7 @@
       "edhrec_rank": 3334,
       "properties": [],
       "prices": {
-        "usd": "12.52"
+        "usd": "12.42"
       }
     },
     {
@@ -16530,7 +16530,7 @@
       "edhrec_rank": 2781,
       "properties": [],
       "prices": {
-        "usd": "0.37"
+        "usd": "0.36"
       }
     },
     {
@@ -16569,7 +16569,7 @@
       "edhrec_rank": 2223,
       "properties": [],
       "prices": {
-        "usd": "20.10"
+        "usd": "20.01"
       }
     },
     {
@@ -16730,7 +16730,7 @@
       "edhrec_rank": 1180,
       "properties": [],
       "prices": {
-        "usd": "6.69"
+        "usd": "6.76"
       }
     },
     {
@@ -16806,7 +16806,7 @@
       "edhrec_rank": 2869,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.34"
       }
     },
     {
@@ -16836,7 +16836,7 @@
       ],
       "edhrec_rank": 11476,
       "prices": {
-        "usd": "2.08",
+        "usd": "2.13",
         "usd_foil": "3.21",
         "usd_etched": null,
         "eur": "4.40",
@@ -16885,7 +16885,7 @@
       "edhrec_rank": 6457,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.26"
       }
     },
     {
@@ -17021,7 +17021,7 @@
       "edhrec_rank": 606,
       "properties": [],
       "prices": {
-        "usd": "9.98"
+        "usd": "9.99"
       }
     },
     {
@@ -17080,7 +17080,7 @@
       "edhrec_rank": 17467,
       "properties": [],
       "prices": {
-        "usd": "0.22"
+        "usd": "0.21"
       }
     },
     {
@@ -17665,7 +17665,7 @@
       "edhrec_rank": 575,
       "properties": [],
       "prices": {
-        "usd": "7.34"
+        "usd": "7.42"
       }
     },
     {
@@ -17902,7 +17902,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.76"
+        "usd": "0.70"
       }
     },
     {
@@ -17948,7 +17948,7 @@
       "edhrec_rank": 1840,
       "properties": [],
       "prices": {
-        "usd": "0.42"
+        "usd": "0.40"
       }
     },
     {
@@ -18316,7 +18316,7 @@
       "edhrec_rank": 5287,
       "properties": [],
       "prices": {
-        "usd": "0.22"
+        "usd": "0.21"
       }
     },
     {
@@ -18356,7 +18356,7 @@
       "edhrec_rank": 1271,
       "properties": [],
       "prices": {
-        "usd": "1.83"
+        "usd": "1.80"
       }
     },
     {
@@ -18471,7 +18471,7 @@
       "edhrec_rank": 2034,
       "properties": [],
       "prices": {
-        "usd": "1.12"
+        "usd": "1.13"
       }
     },
     {
@@ -18513,7 +18513,7 @@
       "edhrec_rank": 1283,
       "properties": [],
       "prices": {
-        "usd": "0.70"
+        "usd": "0.71"
       }
     },
     {
@@ -18618,7 +18618,7 @@
       "edhrec_rank": 417,
       "properties": [],
       "prices": {
-        "usd": "12.57"
+        "usd": "12.63"
       }
     },
     {
@@ -18705,7 +18705,7 @@
       "edhrec_rank": 5466,
       "properties": [],
       "prices": {
-        "usd": "0.48"
+        "usd": "0.47"
       }
     },
     {
@@ -18859,7 +18859,7 @@
       "edhrec_rank": 64,
       "properties": [],
       "prices": {
-        "usd": "21.28"
+        "usd": "21.30"
       }
     },
     {
@@ -19015,7 +19015,7 @@
       "edhrec_rank": 3168,
       "properties": [],
       "prices": {
-        "usd": "2.00"
+        "usd": "2.03"
       }
     },
     {
@@ -19144,7 +19144,7 @@
       "edhrec_rank": 1230,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.26"
       }
     },
     {
@@ -19189,7 +19189,7 @@
       "edhrec_rank": 275,
       "properties": [],
       "prices": {
-        "usd": "8.32"
+        "usd": "8.33"
       }
     },
     {
@@ -19365,7 +19365,7 @@
       "edhrec_rank": 8471,
       "properties": [],
       "prices": {
-        "usd": "1.22"
+        "usd": "1.21"
       }
     },
     {
@@ -19428,7 +19428,7 @@
       "edhrec_rank": 3049,
       "properties": [],
       "prices": {
-        "usd": "0.41"
+        "usd": "0.42"
       }
     },
     {
@@ -19516,7 +19516,7 @@
       "edhrec_rank": 548,
       "properties": [],
       "prices": {
-        "usd": "10.27"
+        "usd": "10.24"
       }
     },
     {
@@ -19573,7 +19573,7 @@
       "edhrec_rank": 5096,
       "properties": [],
       "prices": {
-        "usd": "0.48"
+        "usd": "0.38"
       }
     },
     {
@@ -19602,7 +19602,7 @@
       ],
       "edhrec_rank": 19296,
       "prices": {
-        "usd": "0.20",
+        "usd": "0.22",
         "usd_foil": "0.32",
         "usd_etched": null,
         "eur": "0.09",
@@ -19783,7 +19783,7 @@
       "edhrec_rank": 1161,
       "properties": [],
       "prices": {
-        "usd": "4.85"
+        "usd": "4.87"
       }
     },
     {
@@ -19825,7 +19825,7 @@
       "edhrec_rank": 6463,
       "properties": [],
       "prices": {
-        "usd": "4.29"
+        "usd": "4.33"
       }
     },
     {
@@ -19991,7 +19991,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "3.00"
+        "usd": "2.90"
       }
     },
     {
@@ -20021,7 +20021,7 @@
       ],
       "edhrec_rank": 11205,
       "prices": {
-        "usd": "2.65",
+        "usd": "2.85",
         "usd_foil": "3.77",
         "usd_etched": null,
         "eur": "5.33",
@@ -20070,7 +20070,7 @@
       "edhrec_rank": 5567,
       "properties": [],
       "prices": {
-        "usd": "0.17"
+        "usd": "0.16"
       }
     },
     {
@@ -20114,7 +20114,7 @@
       "edhrec_rank": 3460,
       "properties": [],
       "prices": {
-        "usd": "0.17"
+        "usd": "0.16"
       }
     },
     {
@@ -20158,7 +20158,7 @@
       "edhrec_rank": 3780,
       "properties": [],
       "prices": {
-        "usd": "0.28"
+        "usd": "0.27"
       }
     },
     {
@@ -20594,7 +20594,7 @@
       "edhrec_rank": 1204,
       "properties": [],
       "prices": {
-        "usd": "17.23"
+        "usd": "17.15"
       }
     },
     {
@@ -20724,7 +20724,7 @@
       "edhrec_rank": 9580,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.24"
       }
     },
     {
@@ -20799,7 +20799,7 @@
       "edhrec_rank": 10252,
       "properties": [],
       "prices": {
-        "usd": "0.63"
+        "usd": "0.62"
       }
     },
     {
@@ -20843,7 +20843,7 @@
       "edhrec_rank": 21048,
       "properties": [],
       "prices": {
-        "usd": "0.57"
+        "usd": "0.58"
       }
     },
     {
@@ -20962,7 +20962,7 @@
       "edhrec_rank": 607,
       "properties": [],
       "prices": {
-        "usd": "0.93"
+        "usd": "0.89"
       }
     },
     {
@@ -21004,7 +21004,7 @@
       "edhrec_rank": 19814,
       "properties": [],
       "prices": {
-        "usd": "0.70"
+        "usd": "0.71"
       }
     },
     {
@@ -21131,7 +21131,7 @@
       "edhrec_rank": 2257,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.26"
       }
     },
     {
@@ -21174,7 +21174,7 @@
       "edhrec_rank": 4253,
       "properties": [],
       "prices": {
-        "usd": "0.35"
+        "usd": "0.32"
       }
     },
     {
@@ -21217,7 +21217,7 @@
       "edhrec_rank": 4572,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.26"
       }
     },
     {
@@ -21248,7 +21248,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.22"
+        "usd": "0.23"
       }
     },
     {
@@ -21340,7 +21340,7 @@
       "edhrec_rank": 471,
       "properties": [],
       "prices": {
-        "usd": "18.19"
+        "usd": "18.77"
       }
     },
     {
@@ -21397,7 +21397,7 @@
       "edhrec_rank": 2000,
       "properties": [],
       "prices": {
-        "usd": "12.77"
+        "usd": "12.56"
       }
     },
     {
@@ -21442,7 +21442,7 @@
       "edhrec_rank": 5415,
       "properties": [],
       "prices": {
-        "usd": "0.21"
+        "usd": "0.20"
       }
     },
     {
@@ -21487,7 +21487,7 @@
       "edhrec_rank": 1459,
       "properties": [],
       "prices": {
-        "usd": "1.58"
+        "usd": "1.51"
       }
     },
     {
@@ -21532,7 +21532,7 @@
       "edhrec_rank": 4410,
       "properties": [],
       "prices": {
-        "usd": "0.11"
+        "usd": "0.12"
       }
     },
     {
@@ -21573,7 +21573,7 @@
       "edhrec_rank": 274,
       "properties": [],
       "prices": {
-        "usd": "16.85"
+        "usd": "16.86"
       }
     },
     {
@@ -21664,7 +21664,7 @@
       "edhrec_rank": 812,
       "properties": [],
       "prices": {
-        "usd": "0.33"
+        "usd": "0.32"
       }
     },
     {
@@ -21773,7 +21773,7 @@
       "edhrec_rank": 1543,
       "properties": [],
       "prices": {
-        "usd": "1.78"
+        "usd": "1.74"
       }
     },
     {
@@ -21856,7 +21856,7 @@
       "edhrec_rank": 93,
       "properties": [],
       "prices": {
-        "usd": "1.31"
+        "usd": "1.33"
       }
     },
     {
@@ -21898,7 +21898,7 @@
       "edhrec_rank": 10404,
       "properties": [],
       "prices": {
-        "usd": "1.35"
+        "usd": "1.34"
       }
     },
     {
@@ -21943,7 +21943,7 @@
       "edhrec_rank": 405,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.35"
       }
     },
     {
@@ -22034,7 +22034,7 @@
       "edhrec_rank": 3554,
       "properties": [],
       "prices": {
-        "usd": "0.42"
+        "usd": "0.41"
       }
     },
     {
@@ -22066,7 +22066,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.73"
+        "usd": "0.76"
       }
     },
     {
@@ -22181,7 +22181,7 @@
       "edhrec_rank": 2335,
       "properties": [],
       "prices": {
-        "usd": "2.06"
+        "usd": "1.96"
       }
     },
     {
@@ -22415,7 +22415,7 @@
       "edhrec_rank": 9721,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.31"
       }
     },
     {
@@ -22529,7 +22529,7 @@
       "edhrec_rank": 2700,
       "properties": [],
       "prices": {
-        "usd": "0.41"
+        "usd": "0.45"
       }
     },
     {
@@ -22641,7 +22641,7 @@
       "edhrec_rank": 2603,
       "properties": [],
       "prices": {
-        "usd": "0.30"
+        "usd": "0.31"
       }
     },
     {
@@ -22684,7 +22684,7 @@
       "edhrec_rank": 204,
       "properties": [],
       "prices": {
-        "usd": "3.01"
+        "usd": "3.05"
       }
     },
     {
@@ -22815,7 +22815,7 @@
       "edhrec_rank": 6734,
       "properties": [],
       "prices": {
-        "usd": "1.06"
+        "usd": "1.09"
       }
     },
     {
@@ -23003,7 +23003,7 @@
       "edhrec_rank": 1627,
       "properties": [],
       "prices": {
-        "usd": "0.57"
+        "usd": "0.55"
       }
     },
     {
@@ -23089,7 +23089,7 @@
       "edhrec_rank": 19890,
       "properties": [],
       "prices": {
-        "usd": "1.00"
+        "usd": "1.01"
       }
     },
     {
@@ -23182,7 +23182,7 @@
       "edhrec_rank": 356,
       "properties": [],
       "prices": {
-        "usd": "17.24"
+        "usd": "17.51"
       }
     },
     {
@@ -23254,7 +23254,7 @@
       "edhrec_rank": 1751,
       "properties": [],
       "prices": {
-        "usd": "0.39"
+        "usd": "0.40"
       }
     },
     {
@@ -23312,7 +23312,7 @@
       "edhrec_rank": 3108,
       "properties": [],
       "prices": {
-        "usd": "2.07"
+        "usd": "2.00"
       }
     },
     {
@@ -23416,7 +23416,7 @@
       "edhrec_rank": 5009,
       "properties": [],
       "prices": {
-        "usd": "0.30"
+        "usd": "0.31"
       }
     },
     {
@@ -23478,7 +23478,7 @@
       "edhrec_rank": 12678,
       "properties": [],
       "prices": {
-        "usd": "0.43"
+        "usd": "0.42"
       }
     },
     {
@@ -23536,7 +23536,7 @@
       "edhrec_rank": 14706,
       "properties": [],
       "prices": {
-        "usd": "11.89"
+        "usd": "12.00"
       }
     },
     {
@@ -23578,7 +23578,7 @@
       "edhrec_rank": 3760,
       "properties": [],
       "prices": {
-        "usd": "18.30"
+        "usd": "18.18"
       }
     },
     {
@@ -23796,7 +23796,7 @@
       "edhrec_rank": 2439,
       "properties": [],
       "prices": {
-        "usd": "0.40"
+        "usd": "0.39"
       }
     },
     {
@@ -23838,7 +23838,7 @@
       "edhrec_rank": 5386,
       "properties": [],
       "prices": {
-        "usd": "116.89"
+        "usd": "116.83"
       }
     },
     {
@@ -24121,7 +24121,7 @@
       "edhrec_rank": 1934,
       "properties": [],
       "prices": {
-        "usd": "8.70"
+        "usd": "8.75"
       }
     },
     {
@@ -24343,7 +24343,7 @@
       "edhrec_rank": 3672,
       "properties": [],
       "prices": {
-        "usd": "0.35"
+        "usd": "0.36"
       }
     },
     {
@@ -24422,7 +24422,7 @@
       "edhrec_rank": 1512,
       "properties": [],
       "prices": {
-        "usd": "2.77"
+        "usd": "2.57"
       }
     },
     {
@@ -24615,7 +24615,7 @@
       "edhrec_rank": 6598,
       "properties": [],
       "prices": {
-        "usd": "0.24"
+        "usd": "0.23"
       }
     },
     {
@@ -24701,7 +24701,7 @@
       "edhrec_rank": 11936,
       "properties": [],
       "prices": {
-        "usd": "0.18"
+        "usd": "0.20"
       }
     },
     {
@@ -24831,7 +24831,7 @@
       "edhrec_rank": 907,
       "properties": [],
       "prices": {
-        "usd": "2.46"
+        "usd": "2.47"
       }
     },
     {
@@ -24876,7 +24876,7 @@
       "edhrec_rank": 6867,
       "properties": [],
       "prices": {
-        "usd": "38.09"
+        "usd": "36.41"
       }
     },
     {
@@ -24982,7 +24982,7 @@
       "edhrec_rank": 4630,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.26"
       }
     },
     {
@@ -25025,7 +25025,7 @@
       "edhrec_rank": 4588,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.31"
       }
     },
     {
@@ -25116,7 +25116,7 @@
       "edhrec_rank": 725,
       "properties": [],
       "prices": {
-        "usd": "5.10"
+        "usd": "5.12"
       }
     },
     {
@@ -25248,7 +25248,7 @@
       "edhrec_rank": 2128,
       "properties": [],
       "prices": {
-        "usd": "2.18"
+        "usd": "2.16"
       }
     },
     {
@@ -25287,7 +25287,7 @@
       "edhrec_rank": 1256,
       "properties": [],
       "prices": {
-        "usd": "0.47"
+        "usd": "0.46"
       }
     },
     {
@@ -25509,7 +25509,7 @@
       "edhrec_rank": 244,
       "properties": [],
       "prices": {
-        "usd": "12.81"
+        "usd": "12.76"
       }
     },
     {
@@ -25554,7 +25554,7 @@
       "edhrec_rank": 119,
       "properties": [],
       "prices": {
-        "usd": "31.88"
+        "usd": "31.68"
       }
     },
     {
@@ -25601,7 +25601,7 @@
       "edhrec_rank": 2357,
       "properties": [],
       "prices": {
-        "usd": "1.26"
+        "usd": "1.29"
       }
     },
     {
@@ -25731,7 +25731,7 @@
       "edhrec_rank": 536,
       "properties": [],
       "prices": {
-        "usd": "30.30"
+        "usd": "30.36"
       }
     },
     {
@@ -25932,7 +25932,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.34"
       }
     },
     {
@@ -26291,7 +26291,7 @@
       "edhrec_rank": 700,
       "properties": [],
       "prices": {
-        "usd": "10.46"
+        "usd": "10.22"
       }
     },
     {
@@ -26354,7 +26354,7 @@
       "edhrec_rank": 1266,
       "properties": [],
       "prices": {
-        "usd": "1.94"
+        "usd": "1.92"
       }
     },
     {
@@ -26395,7 +26395,7 @@
       "edhrec_rank": 1166,
       "properties": [],
       "prices": {
-        "usd": "6.23"
+        "usd": "6.26"
       }
     },
     {
@@ -26480,7 +26480,7 @@
       "edhrec_rank": 2211,
       "properties": [],
       "prices": {
-        "usd": "18.76"
+        "usd": "18.75"
       }
     },
     {
@@ -26523,7 +26523,7 @@
       "edhrec_rank": 427,
       "properties": [],
       "prices": {
-        "usd": "6.06"
+        "usd": "6.40"
       }
     },
     {
@@ -26584,7 +26584,7 @@
       "edhrec_rank": 1063,
       "properties": [],
       "prices": {
-        "usd": "2.28"
+        "usd": "2.34"
       }
     },
     {
@@ -26629,7 +26629,7 @@
       "edhrec_rank": 4103,
       "properties": [],
       "prices": {
-        "usd": "0.23"
+        "usd": "0.24"
       }
     },
     {
@@ -26737,7 +26737,7 @@
       "edhrec_rank": 2763,
       "properties": [],
       "prices": {
-        "usd": "0.85"
+        "usd": "0.86"
       }
     },
     {
@@ -26838,7 +26838,7 @@
       "edhrec_rank": 2778,
       "properties": [],
       "prices": {
-        "usd": "2.08"
+        "usd": "2.06"
       }
     },
     {
@@ -27020,7 +27020,7 @@
       "edhrec_rank": 408,
       "properties": [],
       "prices": {
-        "usd": "9.29"
+        "usd": "9.52"
       }
     },
     {
@@ -27067,7 +27067,7 @@
       "edhrec_rank": 1766,
       "properties": [],
       "prices": {
-        "usd": "0.66"
+        "usd": "0.70"
       }
     },
     {
@@ -27395,7 +27395,7 @@
       "edhrec_rank": 1483,
       "properties": [],
       "prices": {
-        "usd": "0.33"
+        "usd": "0.34"
       }
     },
     {
@@ -27541,7 +27541,7 @@
       "edhrec_rank": 139,
       "properties": [],
       "prices": {
-        "usd": "29.15"
+        "usd": "29.18"
       }
     },
     {
@@ -27583,7 +27583,7 @@
       "edhrec_rank": 670,
       "properties": [],
       "prices": {
-        "usd": "0.37"
+        "usd": "0.38"
       }
     },
     {
@@ -27716,7 +27716,7 @@
       "edhrec_rank": 1219,
       "properties": [],
       "prices": {
-        "usd": "7.24"
+        "usd": "7.22"
       }
     },
     {
@@ -27753,7 +27753,7 @@
       "edhrec_rank": 24236,
       "properties": [],
       "prices": {
-        "usd": "8.22"
+        "usd": "8.04"
       }
     },
     {
@@ -27873,7 +27873,7 @@
       "edhrec_rank": 2694,
       "properties": [],
       "prices": {
-        "usd": "0.31"
+        "usd": "0.32"
       }
     },
     {
@@ -27897,7 +27897,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "7.22"
+        "usd": "7.50"
       }
     },
     {
@@ -28296,7 +28296,7 @@
       "edhrec_rank": 173,
       "properties": [],
       "prices": {
-        "usd": "1.70"
+        "usd": "1.50"
       }
     },
     {
@@ -28468,7 +28468,7 @@
       "edhrec_rank": 523,
       "properties": [],
       "prices": {
-        "usd": "0.59"
+        "usd": "0.60"
       }
     },
     {
@@ -28582,7 +28582,7 @@
       "edhrec_rank": 860,
       "properties": [],
       "prices": {
-        "usd": "4.16"
+        "usd": "4.25"
       }
     },
     {
@@ -28846,7 +28846,7 @@
       "edhrec_rank": 6757,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.26"
       }
     },
     {
@@ -29132,7 +29132,7 @@
       "edhrec_rank": 7093,
       "properties": [],
       "prices": {
-        "usd": "0.39"
+        "usd": "0.38"
       }
     },
     {
@@ -29177,7 +29177,7 @@
       "edhrec_rank": 1572,
       "properties": [],
       "prices": {
-        "usd": "6.27"
+        "usd": "6.14"
       }
     },
     {
@@ -29265,7 +29265,7 @@
       "edhrec_rank": 2797,
       "properties": [],
       "prices": {
-        "usd": "0.50"
+        "usd": "0.48"
       }
     },
     {
@@ -29491,7 +29491,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.14"
+        "usd": "0.15"
       }
     },
     {
@@ -29602,7 +29602,7 @@
       "edhrec_rank": 2187,
       "properties": [],
       "prices": {
-        "usd": "1.29"
+        "usd": "1.26"
       }
     },
     {
@@ -29908,7 +29908,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "1.75"
+        "usd": "1.81"
       }
     },
     {
@@ -29952,7 +29952,7 @@
       "edhrec_rank": 88,
       "properties": [],
       "prices": {
-        "usd": "27.69"
+        "usd": "28.04"
       }
     },
     {
@@ -30042,7 +30042,7 @@
       "edhrec_rank": 289,
       "properties": [],
       "prices": {
-        "usd": "3.03"
+        "usd": "3.05"
       }
     },
     {
@@ -30257,7 +30257,7 @@
       "edhrec_rank": 14,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.28"
       }
     },
     {
@@ -30503,7 +30503,7 @@
       "edhrec_rank": 2051,
       "properties": [],
       "prices": {
-        "usd": "0.24"
+        "usd": "0.25"
       }
     },
     {
@@ -30570,7 +30570,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.61"
+        "usd": "0.57"
       }
     },
     {
@@ -30656,7 +30656,7 @@
       "edhrec_rank": 199,
       "properties": [],
       "prices": {
-        "usd": "49.40"
+        "usd": "49.46"
       }
     },
     {
@@ -30865,7 +30865,7 @@
       "edhrec_rank": 527,
       "properties": [],
       "prices": {
-        "usd": "1.70"
+        "usd": "1.51"
       }
     },
     {
@@ -30952,7 +30952,7 @@
       "edhrec_rank": 3411,
       "properties": [],
       "prices": {
-        "usd": "0.40"
+        "usd": "0.41"
       }
     },
     {
@@ -31132,7 +31132,7 @@
       "edhrec_rank": 505,
       "properties": [],
       "prices": {
-        "usd": "7.67"
+        "usd": "7.84"
       }
     },
     {
@@ -31169,7 +31169,7 @@
       "edhrec_rank": 36,
       "properties": [],
       "prices": {
-        "usd": "127.65"
+        "usd": "127.89"
       }
     },
     {
@@ -31213,7 +31213,7 @@
       "edhrec_rank": 4114,
       "properties": [],
       "prices": {
-        "usd": "0.26"
+        "usd": "0.24"
       }
     },
     {
@@ -31350,7 +31350,7 @@
       "edhrec_rank": 1982,
       "properties": [],
       "prices": {
-        "usd": "0.59"
+        "usd": "0.60"
       }
     },
     {
@@ -31571,7 +31571,7 @@
       "edhrec_rank": 198,
       "properties": [],
       "prices": {
-        "usd": "35.63"
+        "usd": "35.62"
       }
     },
     {
@@ -31656,7 +31656,7 @@
       "edhrec_rank": 8713,
       "properties": [],
       "prices": {
-        "usd": "0.24"
+        "usd": "0.25"
       }
     },
     {
@@ -31740,7 +31740,7 @@
       "edhrec_rank": 4669,
       "properties": [],
       "prices": {
-        "usd": "0.12"
+        "usd": "0.14"
       }
     },
     {
@@ -31911,7 +31911,7 @@
       "edhrec_rank": 1597,
       "properties": [],
       "prices": {
-        "usd": "0.47"
+        "usd": "0.52"
       }
     },
     {
@@ -31956,7 +31956,7 @@
       "edhrec_rank": 1499,
       "properties": [],
       "prices": {
-        "usd": "0.28"
+        "usd": "0.29"
       }
     },
     {
@@ -32000,7 +32000,7 @@
       "edhrec_rank": 1302,
       "properties": [],
       "prices": {
-        "usd": "0.44"
+        "usd": "0.45"
       }
     },
     {
@@ -32050,7 +32050,7 @@
       "edhrec_rank": 421,
       "properties": [],
       "prices": {
-        "usd": "12.86"
+        "usd": "12.56"
       }
     },
     {
@@ -32127,7 +32127,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.29"
+        "usd": "0.34"
       }
     },
     {
@@ -32346,7 +32346,7 @@
       "edhrec_rank": 17618,
       "properties": [],
       "prices": {
-        "usd": "0.82"
+        "usd": "0.83"
       }
     },
     {
@@ -32437,7 +32437,7 @@
       "edhrec_rank": 570,
       "properties": [],
       "prices": {
-        "usd": "9.62"
+        "usd": "9.27"
       }
     },
     {
@@ -32486,7 +32486,7 @@
       "edhrec_rank": 490,
       "properties": [],
       "prices": {
-        "usd": "15.45"
+        "usd": "15.54"
       }
     },
     {
@@ -32602,7 +32602,7 @@
       "edhrec_rank": 1859,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.35"
       }
     },
     {
@@ -32649,7 +32649,7 @@
       "edhrec_rank": 1054,
       "properties": [],
       "prices": {
-        "usd": "0.28"
+        "usd": "0.30"
       }
     },
     {
@@ -32769,7 +32769,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.40"
+        "usd": "0.39"
       }
     },
     {
@@ -32827,7 +32827,7 @@
       "edhrec_rank": 11760,
       "properties": [],
       "prices": {
-        "usd": "0.19"
+        "usd": "0.23"
       }
     },
     {
@@ -32917,7 +32917,7 @@
       "edhrec_rank": 143,
       "properties": [],
       "prices": {
-        "usd": "8.02"
+        "usd": "8.03"
       }
     },
     {
@@ -33000,7 +33000,7 @@
       "edhrec_rank": 9673,
       "properties": [],
       "prices": {
-        "usd": "0.78"
+        "usd": "0.79"
       }
     },
     {
@@ -33210,7 +33210,7 @@
       "edhrec_rank": 3211,
       "properties": [],
       "prices": {
-        "usd": "1.53"
+        "usd": "1.44"
       }
     },
     {
@@ -33344,7 +33344,7 @@
       "edhrec_rank": 3892,
       "properties": [],
       "prices": {
-        "usd": "1.68"
+        "usd": "1.66"
       }
     },
     {
@@ -33388,7 +33388,7 @@
       "edhrec_rank": 4469,
       "properties": [],
       "prices": {
-        "usd": "0.41"
+        "usd": "0.40"
       }
     },
     {
@@ -33476,7 +33476,7 @@
       "edhrec_rank": 4957,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.35"
       }
     },
     {
@@ -33520,7 +33520,7 @@
       "edhrec_rank": 5478,
       "properties": [],
       "prices": {
-        "usd": "0.38"
+        "usd": "0.37"
       }
     },
     {
@@ -33593,7 +33593,7 @@
       "edhrec_rank": 739,
       "properties": [],
       "prices": {
-        "usd": "1.06"
+        "usd": "1.08"
       }
     },
     {
@@ -33902,7 +33902,7 @@
       "edhrec_rank": 1034,
       "properties": [],
       "prices": {
-        "usd": "1.85"
+        "usd": "1.81"
       }
     },
     {
@@ -34059,7 +34059,7 @@
       "edhrec_rank": 853,
       "properties": [],
       "prices": {
-        "usd": "5.93"
+        "usd": "6.14"
       }
     },
     {
@@ -34104,7 +34104,7 @@
       "edhrec_rank": 927,
       "properties": [],
       "prices": {
-        "usd": "20.46"
+        "usd": "20.47"
       }
     },
     {
@@ -34272,7 +34272,7 @@
       "edhrec_rank": 5599,
       "properties": [],
       "prices": {
-        "usd": "0.36"
+        "usd": "0.33"
       }
     },
     {
@@ -34317,7 +34317,7 @@
       "edhrec_rank": 221,
       "properties": [],
       "prices": {
-        "usd": "3.01"
+        "usd": "2.97"
       }
     },
     {
@@ -34714,7 +34714,7 @@
       "edhrec_rank": 16607,
       "properties": [],
       "prices": {
-        "usd": "0.45"
+        "usd": "0.46"
       }
     },
     {
@@ -34882,7 +34882,7 @@
       "edhrec_rank": 5121,
       "properties": [],
       "prices": {
-        "usd": "0.26"
+        "usd": "0.27"
       }
     },
     {
@@ -35358,7 +35358,7 @@
       "edhrec_rank": 2917,
       "properties": [],
       "prices": {
-        "usd": "2.32"
+        "usd": "2.44"
       }
     },
     {
@@ -35699,7 +35699,7 @@
       "edhrec_rank": 7837,
       "properties": [],
       "prices": {
-        "usd": "0.51"
+        "usd": "0.52"
       }
     },
     {
@@ -35954,7 +35954,7 @@
       "edhrec_rank": 49,
       "properties": [],
       "prices": {
-        "usd": "40.35"
+        "usd": "40.59"
       }
     },
     {
@@ -36041,7 +36041,7 @@
       "edhrec_rank": 309,
       "properties": [],
       "prices": {
-        "usd": "0.56"
+        "usd": "0.60"
       }
     },
     {
@@ -36163,7 +36163,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "1.61"
+        "usd": "1.58"
       }
     },
     {
@@ -36446,7 +36446,7 @@
       "edhrec_rank": 669,
       "properties": [],
       "prices": {
-        "usd": "40.06"
+        "usd": "40.07"
       }
     },
     {
@@ -36532,7 +36532,7 @@
       "edhrec_rank": 163,
       "properties": [],
       "prices": {
-        "usd": "20.00"
+        "usd": "20.07"
       }
     },
     {
@@ -36751,7 +36751,7 @@
       "edhrec_rank": 9748,
       "properties": [],
       "prices": {
-        "usd": "0.71"
+        "usd": "0.72"
       }
     },
     {
@@ -36884,7 +36884,7 @@
       "edhrec_rank": 4983,
       "properties": [],
       "prices": {
-        "usd": "3.73"
+        "usd": "3.77"
       }
     },
     {
@@ -37057,7 +37057,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "2.97"
+        "usd": "3.08"
       }
     },
     {
@@ -37103,7 +37103,7 @@
       "edhrec_rank": 1865,
       "properties": [],
       "prices": {
-        "usd": "0.28"
+        "usd": "0.27"
       }
     },
     {
@@ -37217,7 +37217,7 @@
       "edhrec_rank": 972,
       "properties": [],
       "prices": {
-        "usd": "1.99"
+        "usd": "1.83"
       }
     },
     {
@@ -37432,7 +37432,7 @@
       "edhrec_rank": 2317,
       "properties": [],
       "prices": {
-        "usd": "1.16"
+        "usd": "1.18"
       }
     },
     {
@@ -37463,7 +37463,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.24"
+        "usd": "0.25"
       }
     },
     {
@@ -37597,7 +37597,7 @@
       "edhrec_rank": 573,
       "properties": [],
       "prices": {
-        "usd": "10.25"
+        "usd": "10.14"
       }
     },
     {
@@ -37686,7 +37686,7 @@
       "edhrec_rank": 5124,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.23"
       }
     },
     {
@@ -37732,7 +37732,7 @@
       "edhrec_rank": 1878,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.28"
       }
     },
     {
@@ -37777,7 +37777,7 @@
       "edhrec_rank": 279,
       "properties": [],
       "prices": {
-        "usd": "2.51"
+        "usd": "2.48"
       }
     },
     {
@@ -37846,7 +37846,7 @@
       "edhrec_rank": 1370,
       "properties": [],
       "prices": {
-        "usd": "9.60"
+        "usd": "9.58"
       }
     },
     {
@@ -37889,7 +37889,7 @@
       "edhrec_rank": 5169,
       "properties": [],
       "prices": {
-        "usd": "0.28"
+        "usd": "0.27"
       }
     },
     {
@@ -37979,7 +37979,7 @@
       "edhrec_rank": 634,
       "properties": [],
       "prices": {
-        "usd": "0.37"
+        "usd": "0.36"
       }
     },
     {
@@ -38109,7 +38109,7 @@
       "edhrec_rank": 362,
       "properties": [],
       "prices": {
-        "usd": "6.21"
+        "usd": "5.63"
       }
     },
     {
@@ -38332,7 +38332,7 @@
       "edhrec_rank": 231,
       "properties": [],
       "prices": {
-        "usd": "6.57"
+        "usd": "6.43"
       }
     },
     {
@@ -38373,7 +38373,7 @@
       "edhrec_rank": 2271,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.28"
       }
     },
     {
@@ -38506,7 +38506,7 @@
       "edhrec_rank": 116,
       "properties": [],
       "prices": {
-        "usd": "32.45"
+        "usd": "32.12"
       }
     },
     {
@@ -38635,7 +38635,7 @@
       "edhrec_rank": 1632,
       "properties": [],
       "prices": {
-        "usd": "5.87"
+        "usd": "5.78"
       }
     },
     {
@@ -38752,7 +38752,7 @@
       "edhrec_rank": 1156,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.36"
       }
     },
     {
@@ -38922,7 +38922,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.21"
+        "usd": "0.20"
       }
     },
     {
@@ -38992,7 +38992,7 @@
       "edhrec_rank": 172,
       "properties": [],
       "prices": {
-        "usd": "5.66"
+        "usd": "5.67"
       }
     },
     {
@@ -39294,7 +39294,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.24"
+        "usd": "0.23"
       }
     },
     {
@@ -39428,7 +39428,7 @@
       "edhrec_rank": 3236,
       "properties": [],
       "prices": {
-        "usd": "0.30"
+        "usd": "0.31"
       }
     },
     {
@@ -39577,7 +39577,7 @@
       "edhrec_rank": 5045,
       "properties": [],
       "prices": {
-        "usd": "12.15"
+        "usd": "12.14"
       }
     },
     {
@@ -39985,7 +39985,7 @@
       "edhrec_rank": 3943,
       "properties": [],
       "prices": {
-        "usd": "0.46"
+        "usd": "0.45"
       }
     },
     {
@@ -40058,7 +40058,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.42"
+        "usd": "0.43"
       }
     },
     {
@@ -40118,7 +40118,7 @@
       "edhrec_rank": 974,
       "properties": [],
       "prices": {
-        "usd": "2.63"
+        "usd": "2.76"
       }
     },
     {
@@ -40406,7 +40406,7 @@
       "edhrec_rank": 395,
       "properties": [],
       "prices": {
-        "usd": "13.33"
+        "usd": "13.43"
       }
     },
     {
@@ -40463,7 +40463,7 @@
       "edhrec_rank": 4505,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.28"
       }
     },
     {
@@ -40538,7 +40538,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.18"
+        "usd": "0.17"
       }
     },
     {
@@ -40583,7 +40583,7 @@
       "edhrec_rank": 171,
       "properties": [],
       "prices": {
-        "usd": "13.52"
+        "usd": "13.49"
       }
     },
     {
@@ -40742,7 +40742,7 @@
       "edhrec_rank": 187,
       "properties": [],
       "prices": {
-        "usd": "7.83"
+        "usd": "7.85"
       }
     },
     {
@@ -40833,7 +40833,7 @@
       "edhrec_rank": 1574,
       "properties": [],
       "prices": {
-        "usd": "5.16"
+        "usd": "5.18"
       }
     },
     {
@@ -40938,7 +40938,7 @@
       "edhrec_rank": 1134,
       "properties": [],
       "prices": {
-        "usd": "1.18"
+        "usd": "1.31"
       }
     },
     {
@@ -40980,6 +40980,45 @@
       "prices": {
         "usd": "0.34"
       }
+    },
+    {
+      "object": "card",
+      "id": "9979db80-83f6-41ed-aea2-0c222e923add",
+      "name": "Stardew Valley",
+      "released_at": "2026-07-27",
+      "image_uris": {
+        "small": "https://cards.scryfall.io/small/front/9/9/9979db80-83f6-41ed-aea2-0c222e923add.jpg?1785322037",
+        "normal": "https://cards.scryfall.io/normal/front/9/9/9979db80-83f6-41ed-aea2-0c222e923add.jpg?1785322037",
+        "large": "https://cards.scryfall.io/large/front/9/9/9979db80-83f6-41ed-aea2-0c222e923add.jpg?1785322037",
+        "png": "https://cards.scryfall.io/png/front/9/9/9979db80-83f6-41ed-aea2-0c222e923add.png?1785322037",
+        "art_crop": "https://cards.scryfall.io/art_crop/front/9/9/9979db80-83f6-41ed-aea2-0c222e923add.jpg?1785322037",
+        "border_crop": "https://cards.scryfall.io/border_crop/front/9/9/9979db80-83f6-41ed-aea2-0c222e923add.jpg?1785322037",
+        "thumb": "https://cards.scryfall.io/thumb/front/9/9/9979db80-83f6-41ed-aea2-0c222e923add.webp?1785322037",
+        "grid": "https://cards.scryfall.io/grid/front/9/9/9979db80-83f6-41ed-aea2-0c222e923add.webp?1785322037",
+        "display": "https://cards.scryfall.io/display/front/9/9/9979db80-83f6-41ed-aea2-0c222e923add.webp?1785322037",
+        "art": "https://cards.scryfall.io/art/front/9/9/9979db80-83f6-41ed-aea2-0c222e923add.webp?1785322037",
+        "crop": "https://cards.scryfall.io/crop/front/9/9/9979db80-83f6-41ed-aea2-0c222e923add.webp?1785322037"
+      },
+      "type_line": "Land",
+      "oracle_text": "{T}: Add {C}.\n{2}, {T}, Tap an untapped creature you control: Create a Food token.\n{3}, {T}: Choose target permanent you control. Draw a card, then another player of your choice may gain control of that permanent. Activate only as a sorcery.",
+      "color_identity": [],
+      "keywords": [
+        "Food"
+      ],
+      "produced_mana": [
+        "C"
+      ],
+      "edhrec_rank": 26891,
+      "prices": {
+        "usd": "39.95",
+        "usd_foil": null,
+        "usd_etched": null,
+        "eur": null,
+        "eur_foil": null,
+        "tix": null
+      },
+      "is_basic": false,
+      "properties": []
     },
     {
       "object": "card",
@@ -41103,7 +41142,7 @@
       "edhrec_rank": 811,
       "properties": [],
       "prices": {
-        "usd": "7.91"
+        "usd": "7.86"
       }
     },
     {
@@ -41416,7 +41455,7 @@
       "edhrec_rank": 8453,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.26"
       }
     },
     {
@@ -41788,7 +41827,7 @@
       ],
       "edhrec_rank": 19552,
       "prices": {
-        "usd": "0.21",
+        "usd": "0.23",
         "usd_foil": "0.23",
         "usd_etched": null,
         "eur": "0.08",
@@ -41915,7 +41954,7 @@
       "edhrec_rank": 80,
       "properties": [],
       "prices": {
-        "usd": "0.68"
+        "usd": "0.67"
       }
     },
     {
@@ -42051,7 +42090,7 @@
       "edhrec_rank": 159,
       "properties": [],
       "prices": {
-        "usd": "19.02"
+        "usd": "19.15"
       }
     },
     {
@@ -42082,7 +42121,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.26"
+        "usd": "0.25"
       }
     },
     {
@@ -42127,7 +42166,7 @@
       "edhrec_rank": 1481,
       "properties": [],
       "prices": {
-        "usd": "4.22"
+        "usd": "4.37"
       }
     },
     {
@@ -42172,7 +42211,7 @@
       "edhrec_rank": 897,
       "properties": [],
       "prices": {
-        "usd": "8.78"
+        "usd": "8.93"
       }
     },
     {
@@ -42242,7 +42281,7 @@
       "edhrec_rank": 718,
       "properties": [],
       "prices": {
-        "usd": "1.04"
+        "usd": "1.03"
       }
     },
     {
@@ -42377,7 +42416,7 @@
       "edhrec_rank": 1793,
       "properties": [],
       "prices": {
-        "usd": "0.41"
+        "usd": "0.42"
       }
     },
     {
@@ -42421,7 +42460,7 @@
       "edhrec_rank": 6095,
       "properties": [],
       "prices": {
-        "usd": "0.63"
+        "usd": "0.65"
       }
     },
     {
@@ -42466,7 +42505,7 @@
       "edhrec_rank": 87,
       "properties": [],
       "prices": {
-        "usd": "0.29"
+        "usd": "0.27"
       }
     },
     {
@@ -42508,7 +42547,7 @@
       "edhrec_rank": 4414,
       "properties": [],
       "prices": {
-        "usd": "0.83"
+        "usd": "0.84"
       }
     },
     {
@@ -42745,7 +42784,7 @@
       "edhrec_rank": 824,
       "properties": [],
       "prices": {
-        "usd": "0.45"
+        "usd": "0.46"
       }
     },
     {
@@ -42834,7 +42873,7 @@
       "edhrec_rank": 7364,
       "properties": [],
       "prices": {
-        "usd": "0.20"
+        "usd": "0.21"
       }
     },
     {
@@ -42911,7 +42950,7 @@
       ],
       "edhrec_rank": 13885,
       "prices": {
-        "usd": "0.20",
+        "usd": "0.19",
         "usd_foil": "0.25",
         "usd_etched": null,
         "eur": "0.02",
@@ -42964,7 +43003,7 @@
       "edhrec_rank": 2586,
       "properties": [],
       "prices": {
-        "usd": "0.39"
+        "usd": "0.40"
       }
     },
     {
@@ -43007,7 +43046,7 @@
       "edhrec_rank": 2024,
       "properties": [],
       "prices": {
-        "usd": "3.51"
+        "usd": "3.71"
       }
     },
     {
@@ -43093,7 +43132,7 @@
       "edhrec_rank": 14154,
       "properties": [],
       "prices": {
-        "usd": "2.34"
+        "usd": "2.23"
       }
     },
     {
@@ -43132,7 +43171,7 @@
       "edhrec_rank": 990,
       "properties": [],
       "prices": {
-        "usd": "5.79"
+        "usd": "5.75"
       }
     },
     {
@@ -43265,7 +43304,7 @@
       "edhrec_rank": 431,
       "properties": [],
       "prices": {
-        "usd": "1.39"
+        "usd": "1.38"
       }
     },
     {
@@ -43310,7 +43349,7 @@
       "edhrec_rank": 499,
       "properties": [],
       "prices": {
-        "usd": "1.30"
+        "usd": "1.31"
       }
     },
     {
@@ -43355,7 +43394,7 @@
       "edhrec_rank": 498,
       "properties": [],
       "prices": {
-        "usd": "2.07"
+        "usd": "2.08"
       }
     },
     {
@@ -43445,7 +43484,7 @@
       "edhrec_rank": 247,
       "properties": [],
       "prices": {
-        "usd": "12.53"
+        "usd": "12.40"
       }
     },
     {
@@ -43607,7 +43646,7 @@
       "edhrec_rank": 1311,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.35"
       }
     },
     {
@@ -43654,7 +43693,7 @@
       "edhrec_rank": 3175,
       "properties": [],
       "prices": {
-        "usd": "0.29"
+        "usd": "0.30"
       }
     },
     {
@@ -43698,7 +43737,7 @@
       "edhrec_rank": 8943,
       "properties": [],
       "prices": {
-        "usd": "0.75"
+        "usd": "0.73"
       }
     },
     {
@@ -43857,7 +43896,7 @@
       "edhrec_rank": 14843,
       "properties": [],
       "prices": {
-        "usd": "0.12"
+        "usd": "0.13"
       }
     },
     {
@@ -44083,7 +44122,7 @@
       "edhrec_rank": 313,
       "properties": [],
       "prices": {
-        "usd": "0.30"
+        "usd": "0.29"
       }
     },
     {
@@ -44860,7 +44899,7 @@
       "edhrec_rank": 1203,
       "properties": [],
       "prices": {
-        "usd": "9.31"
+        "usd": "9.49"
       }
     },
     {
@@ -44903,7 +44942,7 @@
       "edhrec_rank": 7338,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.26"
       }
     },
     {
@@ -45005,7 +45044,7 @@
       "edhrec_rank": 3642,
       "properties": [],
       "prices": {
-        "usd": "0.32"
+        "usd": "0.28"
       }
     },
     {
@@ -45128,7 +45167,7 @@
       "edhrec_rank": 6980,
       "properties": [],
       "prices": {
-        "usd": "0.19"
+        "usd": "0.21"
       }
     },
     {
@@ -45168,7 +45207,7 @@
       "edhrec_rank": 13309,
       "properties": [],
       "prices": {
-        "usd": "0.21"
+        "usd": "0.22"
       }
     },
     {
@@ -45214,7 +45253,7 @@
       "edhrec_rank": 865,
       "properties": [],
       "prices": {
-        "usd": "1.66"
+        "usd": "1.22"
       }
     },
     {
@@ -45322,7 +45361,7 @@
       "edhrec_rank": 1143,
       "properties": [],
       "prices": {
-        "usd": "3.64"
+        "usd": "3.67"
       }
     },
     {
@@ -45452,7 +45491,7 @@
       "edhrec_rank": 802,
       "properties": [],
       "prices": {
-        "usd": "6.94"
+        "usd": "7.38"
       }
     },
     {
@@ -45585,7 +45624,7 @@
       "edhrec_rank": 766,
       "properties": [],
       "prices": {
-        "usd": "5.50"
+        "usd": "5.38"
       }
     },
     {
@@ -45682,7 +45721,7 @@
       "edhrec_rank": 4559,
       "properties": [],
       "prices": {
-        "usd": "0.95"
+        "usd": "0.91"
       }
     },
     {
@@ -45771,7 +45810,7 @@
       "edhrec_rank": 176,
       "properties": [],
       "prices": {
-        "usd": "26.61"
+        "usd": "27.26"
       }
     },
     {
@@ -46154,7 +46193,7 @@
       "edhrec_rank": 619,
       "properties": [],
       "prices": {
-        "usd": "15.45"
+        "usd": "15.56"
       }
     },
     {
@@ -46368,7 +46407,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.20"
+        "usd": "0.22"
       }
     },
     {
@@ -46411,7 +46450,7 @@
       "edhrec_rank": 6101,
       "properties": [],
       "prices": {
-        "usd": "0.23"
+        "usd": "0.21"
       }
     },
     {
@@ -46498,7 +46537,7 @@
       "edhrec_rank": 3265,
       "properties": [],
       "prices": {
-        "usd": "1.95"
+        "usd": "2.01"
       }
     },
     {
@@ -46542,7 +46581,7 @@
       "edhrec_rank": 4951,
       "properties": [],
       "prices": {
-        "usd": "4.63"
+        "usd": "4.59"
       }
     },
     {
@@ -46759,7 +46798,7 @@
       "edhrec_rank": 148,
       "properties": [],
       "prices": {
-        "usd": "17.81"
+        "usd": "18.14"
       }
     },
     {
@@ -46789,7 +46828,7 @@
       ],
       "edhrec_rank": 12032,
       "prices": {
-        "usd": "1.80",
+        "usd": "1.85",
         "usd_foil": "3.12",
         "usd_etched": null,
         "eur": "5.16",
@@ -46841,7 +46880,7 @@
       "edhrec_rank": 7074,
       "properties": [],
       "prices": {
-        "usd": "0.21"
+        "usd": "0.20"
       }
     },
     {
@@ -47021,7 +47060,7 @@
       "edhrec_rank": 1977,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.33"
       }
     },
     {
@@ -47168,7 +47207,7 @@
       "edhrec_rank": 493,
       "properties": [],
       "prices": {
-        "usd": "1.77"
+        "usd": "1.72"
       }
     },
     {
@@ -47211,7 +47250,7 @@
       "edhrec_rank": 1534,
       "properties": [],
       "prices": {
-        "usd": "1.62"
+        "usd": "1.69"
       }
     },
     {
@@ -47341,7 +47380,7 @@
       "edhrec_rank": 4704,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.24"
       }
     },
     {
@@ -47609,7 +47648,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "6.17"
+        "usd": "6.13"
       }
     },
     {
@@ -47640,7 +47679,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "5.49"
+        "usd": "5.58"
       }
     },
     {
@@ -47671,7 +47710,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "4.76"
+        "usd": "4.97"
       }
     },
     {
@@ -47702,7 +47741,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "3.78"
+        "usd": "4.01"
       }
     },
     {
@@ -47733,7 +47772,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "4.73"
+        "usd": "4.97"
       }
     },
     {
@@ -47844,7 +47883,7 @@
       "edhrec_rank": 2296,
       "properties": [],
       "prices": {
-        "usd": "4.75"
+        "usd": "4.52"
       }
     },
     {
@@ -47876,7 +47915,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.23"
+        "usd": "0.21"
       }
     },
     {
@@ -47968,7 +48007,7 @@
       "edhrec_rank": 1777,
       "properties": [],
       "prices": {
-        "usd": "0.30"
+        "usd": "0.33"
       }
     },
     {
@@ -48008,7 +48047,7 @@
       "edhrec_rank": 1087,
       "properties": [],
       "prices": {
-        "usd": "2.48"
+        "usd": "2.52"
       }
     },
     {
@@ -48050,7 +48089,7 @@
       "edhrec_rank": 2861,
       "properties": [],
       "prices": {
-        "usd": "13.40"
+        "usd": "13.35"
       }
     },
     {
@@ -48200,7 +48239,7 @@
       "edhrec_rank": 2712,
       "properties": [],
       "prices": {
-        "usd": "0.22"
+        "usd": "0.23"
       }
     },
     {
@@ -48291,7 +48330,7 @@
       "edhrec_rank": 426,
       "properties": [],
       "prices": {
-        "usd": "13.88"
+        "usd": "13.80"
       }
     },
     {
@@ -48331,7 +48370,7 @@
       "edhrec_rank": 6733,
       "properties": [],
       "prices": {
-        "usd": "0.63"
+        "usd": "0.64"
       }
     },
     {
@@ -48377,7 +48416,7 @@
       "edhrec_rank": 476,
       "properties": [],
       "prices": {
-        "usd": "12.74"
+        "usd": "12.70"
       }
     },
     {
@@ -48422,7 +48461,7 @@
       "edhrec_rank": 151,
       "properties": [],
       "prices": {
-        "usd": "33.78"
+        "usd": "33.68"
       }
     },
     {
@@ -48511,7 +48550,7 @@
       "edhrec_rank": 175,
       "properties": [],
       "prices": {
-        "usd": "6.37"
+        "usd": "6.34"
       }
     },
     {
@@ -48635,7 +48674,7 @@
       "edhrec_rank": 2950,
       "properties": [],
       "prices": {
-        "usd": "6.53"
+        "usd": "6.47"
       }
     },
     {
@@ -48958,7 +48997,7 @@
       "edhrec_rank": 73,
       "properties": [],
       "prices": {
-        "usd": "59.54"
+        "usd": "59.61"
       }
     },
     {
@@ -48999,7 +49038,7 @@
       "edhrec_rank": 443,
       "properties": [],
       "prices": {
-        "usd": "1.11"
+        "usd": "1.17"
       }
     },
     {
@@ -49127,7 +49166,7 @@
       "edhrec_rank": 844,
       "properties": [],
       "prices": {
-        "usd": "16.60"
+        "usd": "16.46"
       }
     },
     {
@@ -49198,7 +49237,7 @@
       "edhrec_rank": 847,
       "properties": [],
       "prices": {
-        "usd": "4.87"
+        "usd": "4.94"
       }
     },
     {
@@ -49254,7 +49293,7 @@
       "edhrec_rank": 120,
       "properties": [],
       "prices": {
-        "usd": "43.11"
+        "usd": "43.61"
       }
     },
     {
@@ -49325,7 +49364,7 @@
       "edhrec_rank": 837,
       "properties": [],
       "prices": {
-        "usd": "14.70"
+        "usd": "14.86"
       }
     },
     {
@@ -49411,7 +49450,7 @@
       "edhrec_rank": 1468,
       "properties": [],
       "prices": {
-        "usd": "12.36"
+        "usd": "11.70"
       }
     },
     {
@@ -49481,7 +49520,7 @@
       "edhrec_rank": 518,
       "properties": [],
       "prices": {
-        "usd": "17.32"
+        "usd": "17.34"
       }
     },
     {
@@ -49570,7 +49609,7 @@
       "edhrec_rank": 1673,
       "properties": [],
       "prices": {
-        "usd": "0.72"
+        "usd": "0.67"
       }
     },
     {
@@ -49685,7 +49724,7 @@
       "edhrec_rank": 170,
       "properties": [],
       "prices": {
-        "usd": "14.23"
+        "usd": "14.32"
       }
     },
     {
@@ -49772,7 +49811,7 @@
       "edhrec_rank": 605,
       "properties": [],
       "prices": {
-        "usd": "3.97"
+        "usd": "4.13"
       }
     },
     {
@@ -49862,7 +49901,7 @@
       "edhrec_rank": 5299,
       "properties": [],
       "prices": {
-        "usd": "0.24"
+        "usd": "0.22"
       }
     },
     {
@@ -49987,7 +50026,7 @@
       "edhrec_rank": 819,
       "properties": [],
       "prices": {
-        "usd": "0.47"
+        "usd": "0.50"
       }
     },
     {
@@ -50050,7 +50089,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.25"
+        "usd": "0.28"
       }
     },
     {
@@ -50082,7 +50121,7 @@
       ],
       "edhrec_rank": 10711,
       "prices": {
-        "usd": "0.20",
+        "usd": "0.19",
         "usd_foil": "0.38",
         "usd_etched": null,
         "eur": "0.18",
@@ -50333,7 +50372,7 @@
       "edhrec_rank": 4422,
       "properties": [],
       "prices": {
-        "usd": "0.34"
+        "usd": "0.35"
       }
     },
     {
@@ -50529,7 +50568,7 @@
       "edhrec_rank": 2579,
       "properties": [],
       "prices": {
-        "usd": "0.31"
+        "usd": "0.32"
       }
     },
     {
@@ -50574,7 +50613,7 @@
       "edhrec_rank": 5010,
       "properties": [],
       "prices": {
-        "usd": "0.99"
+        "usd": "0.98"
       }
     },
     {
@@ -50852,7 +50891,7 @@
       "edhrec_rank": 140,
       "properties": [],
       "prices": {
-        "usd": "4.93"
+        "usd": "5.06"
       }
     },
     {
@@ -50979,7 +51018,7 @@
       "edhrec_rank": 1047,
       "properties": [],
       "prices": {
-        "usd": "9.28"
+        "usd": "9.54"
       }
     },
     {
@@ -51024,7 +51063,7 @@
       "edhrec_rank": 6765,
       "properties": [],
       "prices": {
-        "usd": "0.27"
+        "usd": "0.26"
       }
     },
     {
@@ -51069,7 +51108,7 @@
       "edhrec_rank": 1125,
       "properties": [],
       "prices": {
-        "usd": "1.52"
+        "usd": "1.56"
       }
     },
     {
@@ -51142,7 +51181,7 @@
       "edhrec_rank": 1378,
       "properties": [],
       "prices": {
-        "usd": "0.38"
+        "usd": "0.37"
       }
     },
     {
@@ -51232,7 +51271,7 @@
       "edhrec_rank": 51,
       "properties": [],
       "prices": {
-        "usd": "17.27"
+        "usd": "17.26"
       }
     },
     {
@@ -51367,7 +51406,7 @@
       "is_basic": false,
       "properties": [],
       "prices": {
-        "usd": "0.26"
+        "usd": "0.24"
       }
     },
     {
@@ -51470,7 +51509,7 @@
       "edhrec_rank": 1112,
       "properties": [],
       "prices": {
-        "usd": "6.06"
+        "usd": "6.36"
       }
     },
     {
@@ -51514,7 +51553,7 @@
       "edhrec_rank": 1017,
       "properties": [],
       "prices": {
-        "usd": "0.13"
+        "usd": "0.11"
       }
     },
     {
@@ -51598,7 +51637,7 @@
       "edhrec_rank": 7759,
       "properties": [],
       "prices": {
-        "usd": "33.17"
+        "usd": "33.16"
       }
     },
     {
@@ -51763,7 +51802,7 @@
       "edhrec_rank": 2468,
       "properties": [],
       "prices": {
-        "usd": "10.30"
+        "usd": "10.28"
       }
     },
     {
@@ -51835,7 +51874,7 @@
       "edhrec_rank": 310,
       "properties": [],
       "prices": {
-        "usd": "4.31"
+        "usd": "3.95"
       }
     },
     {
@@ -51918,7 +51957,7 @@
       "edhrec_rank": 876,
       "properties": [],
       "prices": {
-        "usd": "0.93"
+        "usd": "0.99"
       }
     },
     {
@@ -52232,7 +52271,7 @@
       "edhrec_rank": 3003,
       "properties": [],
       "prices": {
-        "usd": "0.57"
+        "usd": "0.58"
       }
     },
     {
@@ -52327,7 +52366,7 @@
       "edhrec_rank": 466,
       "properties": [],
       "prices": {
-        "usd": "13.06"
+        "usd": "13.32"
       }
     },
     {
@@ -52456,7 +52495,7 @@
       "edhrec_rank": 78,
       "properties": [],
       "prices": {
-        "usd": "14.42"
+        "usd": "14.14"
       }
     },
     {
@@ -52584,7 +52623,7 @@
       "edhrec_rank": 3987,
       "properties": [],
       "prices": {
-        "usd": "0.72"
+        "usd": "0.69"
       }
     },
     {
@@ -52677,7 +52716,7 @@
       "edhrec_rank": 521,
       "properties": [],
       "prices": {
-        "usd": "9.98"
+        "usd": "10.18"
       }
     },
     {

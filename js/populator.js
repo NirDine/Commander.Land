@@ -77,8 +77,11 @@ function createCardElement(card) {
 $('#search').on('input', debounce(function() {
   const searchValue = $(this).val().trim();
   const nonSymbolCharsCount = searchValue.replace(/[^a-zA-Z0-9]/g, '').length;
+  // Field syntax (e.g. "r:c", "id:wu") is meaningful even when short, so don't
+  // gate it behind the 3-character threshold meant for plain-text searches.
+  const looksLikeQuerySyntax = /[:()]|(^|\s)-\S/.test(searchValue);
 
-  if (nonSymbolCharsCount >= 3 || nonSymbolCharsCount === 0) {
+  if (nonSymbolCharsCount >= 3 || nonSymbolCharsCount === 0 || looksLikeQuerySyntax) {
     filterCards();
   updateBasicCardsCount(); 
   }
@@ -265,7 +268,9 @@ function updateCardsDisplay() {
 
 function filterCards() {
   const searchValue = $('#search').val();
-  const formattedSearchValue = formatCardName(searchValue);
+  const searchPredicate = (typeof ScryfallQuery !== 'undefined')
+    ? ScryfallQuery.parseQuery(searchValue)
+    : function() { return true; }; // Fail open if the query engine didn't load
 
   const selectedColors = $('.color:checked').map(function() {
     return $(this).val().toLowerCase(); // Convert to lowercase
@@ -273,35 +278,7 @@ function filterCards() {
 
 
   filteredData = data?.data.filter(function(card) {
-    let matchesSearch = false;
-
-    if (card.card_faces && card.card_faces.length > 0) {
-        for (const face of card.card_faces) {
-            if ((formatCardName(face.name)).includes(formattedSearchValue) ||
-                (formatCardName(face.type_line)).includes(formattedSearchValue) ||
-                (formatCardName(face.oracle_text)).includes(formattedSearchValue)) {
-                matchesSearch = true;
-                break; 
-            }
-        }
-    } else {
-        // Single-faced card
-        const formattedCardName = formatCardName(card.name);
-        const formattedCardType = formatCardName(card.type_line);
-        const formattedCardSetName = formatCardName(card.set_name);
-        const formattedCardSet = formatCardName(card.set);
-        const formattedCardText = formatCardName(card.oracle_text);
-        const cardProperties = Array.isArray(card.properties) ? card.properties : [];
-
-        matchesSearch = formattedCardName.includes(formattedSearchValue) ||
-                        formattedCardType.includes(formattedSearchValue) ||
-                        formattedCardSet.includes(formattedSearchValue) ||
-                        formattedCardSetName.includes(formattedSearchValue) ||
-                        formattedCardText.includes(formattedSearchValue) ||
-                        cardProperties.some(function(property) {
-                          return formatCardName(property).includes(formattedSearchValue);
-                        });
-    }
+    const matchesSearch = searchPredicate(card);
 
     const cardColors = card.color_identity?.map(function(color) {
       return color.toLowerCase(); // Convert to lowercase
@@ -450,7 +427,7 @@ const updateMobileColorFilters = () => {
 // Check if the data is already stored in localStorage
 const storedData = localStorage.getItem('landsData');
 const storedVersion = localStorage.getItem('landsDataVersion');
-const currentVersion = '10.66'; // [VERSION]
+const currentVersion = '10.67'; // [VERSION]
 
 if (!storedVersion) {
     console.log('No data found.');

@@ -1,7 +1,7 @@
 {
   "object": "list",
   "total_cards": 1153,
-  "version": "10.66",
+  "version": "10.67",
   "data": [
     {
       "object": "card",
@@ -184,7 +184,9 @@
         "tix": "0.01"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "gain-land"
+      ]
     },
     {
       "object": "card",
@@ -301,7 +303,9 @@
         "b845b8ee-aeea-4822-bcf9-7230625ac95c"
       ],
       "edhrec_rank": 21990,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.20"
       }
@@ -392,7 +396,9 @@
         "c6e77ba4-e891-4688-bca8-41b3f5f89dc6"
       ],
       "edhrec_rank": 2067,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "3.26"
       }
@@ -424,7 +430,9 @@
       ],
       "edhrec_rank": 3260,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "3.39"
       }
@@ -637,7 +645,9 @@
         "d29cd67f-30a7-4fb9-a081-36c3d5982442"
       ],
       "edhrec_rank": 152,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "26.43"
       }
@@ -777,7 +787,9 @@
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
       "edhrec_rank": 3373,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.20"
       }
@@ -907,7 +919,9 @@
       ],
       "edhrec_rank": 6865,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.24"
       }
@@ -951,7 +965,9 @@
         "9c77c81a-3b3f-4e94-a834-327d01cd6b35"
       ],
       "edhrec_rank": 3704,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.31"
       }
@@ -1114,7 +1130,9 @@
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
       "edhrec_rank": 7633,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.84"
       }
@@ -1159,7 +1177,9 @@
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
       "edhrec_rank": 4316,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.35"
       }
@@ -1487,7 +1507,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 2619,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "2.28"
       }
@@ -1718,7 +1740,9 @@
         "b4117364-73af-47e5-8cf0-901eeea09e01"
       ],
       "edhrec_rank": 17391,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.40"
       }
@@ -1762,7 +1786,9 @@
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
       "edhrec_rank": 9127,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.14"
       }
@@ -1849,7 +1875,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 13466,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "1.89"
       }
@@ -1894,7 +1922,9 @@
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
       "edhrec_rank": 3813,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.42"
       }
@@ -2091,7 +2121,9 @@
         "39fcaaac-bf5d-4c43-ae20-4cf4921a44fa"
       ],
       "edhrec_rank": 1478,
-      "properties": [],
+      "properties": [
+        "bounce-land"
+      ],
       "prices": {
         "usd": "0.89"
       }
@@ -2128,7 +2160,9 @@
         "e956bacc-077d-4c12-b6bc-ba798b718af9"
       ],
       "edhrec_rank": 56,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "37.77"
       }
@@ -2167,7 +2201,9 @@
         "tix": "0.01"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "gain-land"
+      ]
     },
     {
       "object": "card",
@@ -2209,7 +2245,9 @@
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
       "edhrec_rank": 202,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.25"
       }
@@ -2293,7 +2331,9 @@
         "tix": "0.01"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "gain-land"
+      ]
     },
     {
       "object": "card",
@@ -2330,7 +2370,9 @@
         "tix": "0.08"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "command-tower-style"
+      ]
     },
     {
       "object": "card",
@@ -2523,7 +2565,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 454,
-      "properties": [],
+      "properties": [
+        "bounce-land"
+      ],
       "prices": {
         "usd": "0.28"
       }
@@ -2569,7 +2613,9 @@
         "a8c4ef83-94ad-41c7-861f-95debea16868"
       ],
       "edhrec_rank": 2056,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "0.10"
       }
@@ -2598,7 +2644,9 @@
       ],
       "edhrec_rank": 1798,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "3.58"
       }
@@ -2635,7 +2683,9 @@
         "eb55171c-2342-45f4-a503-2d5a75baf752"
       ],
       "edhrec_rank": 6696,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "1.30"
       }
@@ -2679,7 +2729,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 385,
-      "properties": [],
+      "properties": [
+        "true-dual"
+      ],
       "prices": {
         "usd": null
       }
@@ -2869,7 +2921,9 @@
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
       "edhrec_rank": 2493,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "3.88"
       }
@@ -3015,7 +3069,9 @@
         "90332db2-aecb-4d79-917b-95cbeb8d0cb6"
       ],
       "edhrec_rank": 4885,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "0.60"
       }
@@ -3120,7 +3176,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 4801,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "2.73"
       }
@@ -3279,7 +3337,9 @@
         "4441fe52-9e41-40c1-9b74-8510426279ab"
       ],
       "edhrec_rank": 1013,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.33"
       }
@@ -3341,7 +3401,9 @@
         "2c14303e-97a3-45fa-9bd8-59e5332a65f9"
       ],
       "edhrec_rank": 11020,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.16"
       }
@@ -3382,7 +3444,9 @@
         "7f1868e3-325f-4df9-8f27-a381fed4f0fc"
       ],
       "edhrec_rank": 2789,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "0.33"
       }
@@ -3427,7 +3491,9 @@
         "262c8e55-4efc-467b-a042-6f734b9d2e01"
       ],
       "edhrec_rank": 121,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "11.17"
       }
@@ -3508,7 +3574,9 @@
         "c011318e-8503-48c1-a990-46e50aff48a0"
       ],
       "edhrec_rank": 424,
-      "properties": [],
+      "properties": [
+        "true-dual"
+      ],
       "prices": {
         "usd": null
       }
@@ -3747,7 +3815,9 @@
         "tix": "0.01"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "gain-land"
+      ]
     },
     {
       "object": "card",
@@ -3791,7 +3861,9 @@
         "8df4596a-1d88-4b6a-9ce8-5c8089c3946c"
       ],
       "edhrec_rank": 2472,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "0.46"
       }
@@ -3911,7 +3983,9 @@
         "8a5540a8-18c9-4fa9-802c-59d6866114d5"
       ],
       "edhrec_rank": 1078,
-      "properties": [],
+      "properties": [
+        "fast-land"
+      ],
       "prices": {
         "usd": "2.77"
       }
@@ -3993,7 +4067,9 @@
         "1761c216-72b5-4a9b-afee-ad47a00fe1ad"
       ],
       "edhrec_rank": 5274,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "1.59"
       }
@@ -4452,7 +4528,9 @@
         "770b4e16-de76-49ed-949f-84e6d2e06d25"
       ],
       "edhrec_rank": 3021,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "2.98"
       }
@@ -4538,7 +4616,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 69,
-      "properties": [],
+      "properties": [
+        "shock-land"
+      ],
       "prices": {
         "usd": "19.67"
       }
@@ -4582,7 +4662,9 @@
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
       "edhrec_rank": 921,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.17"
       }
@@ -4691,7 +4773,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 43,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "85.83"
       }
@@ -4736,7 +4820,9 @@
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
       "edhrec_rank": 1522,
-      "properties": [],
+      "properties": [
+        "fast-land"
+      ],
       "prices": {
         "usd": "2.33"
       }
@@ -4780,7 +4866,9 @@
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
       "edhrec_rank": 1081,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.13"
       }
@@ -4826,7 +4914,9 @@
         "770b4e16-de76-49ed-949f-84e6d2e06d25"
       ],
       "edhrec_rank": 22046,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.16"
       }
@@ -4929,7 +5019,9 @@
       ],
       "edhrec_rank": 7856,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.21"
       }
@@ -5057,7 +5149,9 @@
         "4441fe52-9e41-40c1-9b74-8510426279ab"
       ],
       "edhrec_rank": 11827,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "2.33"
       }
@@ -5102,7 +5196,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 485,
-      "properties": [],
+      "properties": [
+        "bounce-land"
+      ],
       "prices": {
         "usd": "0.35"
       }
@@ -5148,7 +5244,9 @@
         "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
       ],
       "edhrec_rank": 1799,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "0.23"
       }
@@ -5277,7 +5375,9 @@
         "8456c8ad-78c4-4ce0-9d5d-8a0cf994a361"
       ],
       "edhrec_rank": 7112,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.24"
       }
@@ -5322,7 +5422,9 @@
         "b8266529-1ffe-41e7-9969-fcf39f61426b"
       ],
       "edhrec_rank": 1662,
-      "properties": [],
+      "properties": [
+        "fast-land"
+      ],
       "prices": {
         "usd": "1.58"
       }
@@ -5410,7 +5512,10 @@
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
       "edhrec_rank": 1668,
-      "properties": [],
+      "properties": [
+        "fetch-land",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.26"
       }
@@ -5633,7 +5738,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 60,
-      "properties": [],
+      "properties": [
+        "shock-land"
+      ],
       "prices": {
         "usd": "20.42"
       }
@@ -5964,7 +6071,9 @@
         "1be2b84d-99c5-4a51-b741-105cbeb53078"
       ],
       "edhrec_rank": 5397,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.25"
       }
@@ -6009,7 +6118,9 @@
         "c99a114b-c679-47df-a6e9-4f9d3ad5b114"
       ],
       "edhrec_rank": 237,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "19.79"
       }
@@ -6054,7 +6165,9 @@
         "608e3b85-cdd3-4d1a-8a3a-7f1ed8856f6b"
       ],
       "edhrec_rank": 13987,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.24"
       }
@@ -6182,7 +6295,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 6569,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "2.09"
       }
@@ -6309,7 +6424,9 @@
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
       "edhrec_rank": 3780,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "5.79"
       }
@@ -6399,7 +6516,9 @@
         "8a56d854-b424-45ec-9262-e993a382a961"
       ],
       "edhrec_rank": 20159,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "1.56"
       }
@@ -6444,7 +6563,9 @@
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
       "edhrec_rank": 104,
-      "properties": [],
+      "properties": [
+        "battle-land"
+      ],
       "prices": {
         "usd": "0.39"
       }
@@ -6490,7 +6611,9 @@
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
       "edhrec_rank": 689,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.35"
       }
@@ -6538,7 +6661,10 @@
         "6bd18163-aa22-4a41-82f6-8cdb8269d3c8"
       ],
       "edhrec_rank": 3841,
-      "properties": [],
+      "properties": [
+        "cycling-land",
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.28"
       }
@@ -6583,7 +6709,9 @@
         "334dd388-1e26-4181-8eca-f9c097e29c5e"
       ],
       "edhrec_rank": 6045,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.24"
       }
@@ -6629,7 +6757,9 @@
         "0330b5e8-2cf0-4ecb-8fd7-e20a18bdeb20"
       ],
       "edhrec_rank": 292,
-      "properties": [],
+      "properties": [
+        "filter-land"
+      ],
       "prices": {
         "usd": "5.98"
       }
@@ -6776,7 +6906,9 @@
         "tix": "2.48"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "command-tower-style"
+      ]
     },
     {
       "object": "card",
@@ -7119,7 +7251,9 @@
         "e45fe8d3-75d6-42c9-a2df-e945ad81ea27"
       ],
       "edhrec_rank": 9201,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.27"
       }
@@ -7161,7 +7295,9 @@
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
       "edhrec_rank": 7808,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.43"
       }
@@ -7206,7 +7342,9 @@
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
       "edhrec_rank": 114,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "50.93"
       }
@@ -7247,7 +7385,9 @@
         "d4284188-36d3-4b24-b10f-80580ffdf52c"
       ],
       "edhrec_rank": 14577,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.19"
       }
@@ -7292,7 +7432,9 @@
         "aa9f64d1-29e1-4c82-877e-44c18183f40b"
       ],
       "edhrec_rank": 125,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "17.50"
       }
@@ -7336,7 +7478,9 @@
         "37970e22-9cee-44c1-af44-5ee27cf26b76"
       ],
       "edhrec_rank": 5565,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.91"
       }
@@ -7380,7 +7524,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 11908,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "1.30"
       }
@@ -7424,7 +7570,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 853,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "2.96"
       }
@@ -7587,7 +7735,9 @@
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
       "edhrec_rank": 87,
-      "properties": [],
+      "properties": [
+        "battle-land"
+      ],
       "prices": {
         "usd": "0.35"
       }
@@ -7679,7 +7829,9 @@
         "d084e74b-f63a-4107-b72c-ed6250ecc93b"
       ],
       "edhrec_rank": 2939,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "2.25"
       }
@@ -7723,7 +7875,9 @@
         "9ee9a9cc-c09e-486f-918b-69f80cbc4188"
       ],
       "edhrec_rank": 97,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "789.99"
       }
@@ -7921,7 +8075,9 @@
         "760cf309-b4b6-43a2-b3a9-6f985f09e7db"
       ],
       "edhrec_rank": 2946,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "0.39"
       }
@@ -7966,7 +8122,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 82,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "0.87"
       }
@@ -8127,7 +8285,9 @@
       ],
       "edhrec_rank": 6456,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.43"
       }
@@ -8256,7 +8416,9 @@
         "6cb0dc0c-4362-4c21-b23a-b2d7e096aa4f"
       ],
       "edhrec_rank": 3677,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.21"
       }
@@ -8301,7 +8463,9 @@
         "8955dca7-3e37-42b4-83a9-167c78a2178f"
       ],
       "edhrec_rank": 2,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.91"
       }
@@ -8347,7 +8511,9 @@
         "7f1868e3-325f-4df9-8f27-a381fed4f0fc"
       ],
       "edhrec_rank": 652,
-      "properties": [],
+      "properties": [
+        "surveil-land"
+      ],
       "prices": {
         "usd": "8.18"
       }
@@ -8392,7 +8558,9 @@
         "269392ac-4c06-4650-98e2-d49a5a7f2371"
       ],
       "edhrec_rank": 1162,
-      "properties": [],
+      "properties": [
+        "fast-land"
+      ],
       "prices": {
         "usd": "0.81"
       }
@@ -8440,7 +8608,10 @@
         "39fcaaac-bf5d-4c43-ae20-4cf4921a44fa"
       ],
       "edhrec_rank": 1989,
-      "properties": [],
+      "properties": [
+        "surveil-land",
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.26"
       }
@@ -8593,7 +8764,10 @@
         "90332db2-aecb-4d79-917b-95cbeb8d0cb6"
       ],
       "edhrec_rank": 2255,
-      "properties": [],
+      "properties": [
+        "fetch-land",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.22"
       }
@@ -8726,7 +8900,9 @@
         "44c3877f-8771-43dc-9e40-f4c765f59d2e"
       ],
       "edhrec_rank": 1474,
-      "properties": [],
+      "properties": [
+        "fast-land"
+      ],
       "prices": {
         "usd": "1.61"
       }
@@ -8813,7 +8989,9 @@
         "0c066852-6fdb-42d0-aab9-db4038850da0"
       ],
       "edhrec_rank": 3655,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "1.00"
       }
@@ -8859,7 +9037,9 @@
         "89cc9475-dda2-4d13-bf88-54b92867a25c"
       ],
       "edhrec_rank": 6033,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.14"
       }
@@ -9129,7 +9309,9 @@
         "af42a44c-8ec3-47a7-9047-5d29ddad186d"
       ],
       "edhrec_rank": 2952,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.76"
       }
@@ -9402,7 +9584,9 @@
         "17bc7f55-958b-43f4-bb40-09746d05b3f9"
       ],
       "edhrec_rank": 8561,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.17"
       }
@@ -9492,7 +9676,9 @@
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
       "edhrec_rank": 10980,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.18"
       }
@@ -9533,7 +9719,9 @@
         "4b149402-618d-4f54-9db8-788e4a5bce70"
       ],
       "edhrec_rank": 4539,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.31"
       }
@@ -9624,7 +9812,9 @@
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
       "edhrec_rank": 2620,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.24"
       }
@@ -9748,7 +9938,9 @@
       ],
       "edhrec_rank": 3569,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.21"
       }
@@ -9852,7 +10044,9 @@
         "63def22f-9b97-423f-8791-2c1be9f46619"
       ],
       "edhrec_rank": 3557,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "0.45"
       }
@@ -9951,7 +10145,9 @@
         "018799f5-76d7-4849-9375-f1b9030977e6"
       ],
       "edhrec_rank": 1430,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "8.26"
       }
@@ -10151,7 +10347,9 @@
         "507c67d2-1514-40ab-b7cb-a9f3b96a08e8"
       ],
       "edhrec_rank": 1386,
-      "properties": [],
+      "properties": [
+        "fast-land"
+      ],
       "prices": {
         "usd": "2.72"
       }
@@ -10326,7 +10524,9 @@
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
       "edhrec_rank": 365,
-      "properties": [],
+      "properties": [
+        "slow-land"
+      ],
       "prices": {
         "usd": "3.72"
       }
@@ -10372,7 +10572,10 @@
         "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
       ],
       "edhrec_rank": 2177,
-      "properties": [],
+      "properties": [
+        "fetch-land",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.24"
       }
@@ -10470,7 +10673,9 @@
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
       "edhrec_rank": 3073,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "2.01"
       }
@@ -10554,7 +10759,9 @@
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
       "edhrec_rank": 2969,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.26"
       }
@@ -10598,7 +10805,9 @@
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
       "edhrec_rank": 4366,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.19"
       }
@@ -10642,7 +10851,9 @@
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
       "edhrec_rank": 3503,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.20"
       }
@@ -10686,7 +10897,9 @@
         "b8266529-1ffe-41e7-9969-fcf39f61426b"
       ],
       "edhrec_rank": 3660,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.09"
       }
@@ -10730,7 +10943,9 @@
         "269392ac-4c06-4650-98e2-d49a5a7f2371"
       ],
       "edhrec_rank": 3171,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.24"
       }
@@ -10775,7 +10990,9 @@
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
       "edhrec_rank": 274,
-      "properties": [],
+      "properties": [
+        "slow-land"
+      ],
       "prices": {
         "usd": "5.04"
       }
@@ -11054,7 +11271,9 @@
       ],
       "edhrec_rank": 13394,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.25"
       }
@@ -11099,7 +11318,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 355,
-      "properties": [],
+      "properties": [
+        "bounce-land"
+      ],
       "prices": {
         "usd": "0.37"
       }
@@ -11145,7 +11366,9 @@
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
       "edhrec_rank": 1766,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "0.18"
       }
@@ -11323,7 +11546,9 @@
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
       "edhrec_rank": 981,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.16"
       }
@@ -11410,7 +11635,9 @@
         "be1fa767-c905-49b1-afcf-77a8e9ebbd31"
       ],
       "edhrec_rank": 85,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "1.58"
       }
@@ -11492,7 +11719,9 @@
         "02e2b5de-4341-464c-8fdb-a1adbf873bc0"
       ],
       "edhrec_rank": 11787,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.28"
       }
@@ -11582,7 +11811,9 @@
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
       "edhrec_rank": 177,
-      "properties": [],
+      "properties": [
+        "slow-land"
+      ],
       "prices": {
         "usd": "1.48"
       }
@@ -11626,7 +11857,9 @@
         "fc0fb0e9-aa30-4143-a43e-d20b4aa9d8ed"
       ],
       "edhrec_rank": 4823,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.21"
       }
@@ -11763,7 +11996,9 @@
         "8a5540a8-18c9-4fa9-802c-59d6866114d5"
       ],
       "edhrec_rank": 109,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "2.06"
       }
@@ -12425,7 +12660,9 @@
       ],
       "edhrec_rank": 3627,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.69"
       }
@@ -12456,7 +12693,9 @@
       ],
       "edhrec_rank": 4429,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "battle-land"
+      ],
       "prices": {
         "usd": "3.13"
       }
@@ -12717,7 +12956,9 @@
         "bec9ba7f-594e-4ff0-8172-9ec1fc909607"
       ],
       "edhrec_rank": 774,
-      "properties": [],
+      "properties": [
+        "surveil-land"
+      ],
       "prices": {
         "usd": "9.00"
       }
@@ -13135,7 +13376,9 @@
         "f0c43e1b-1853-4abc-8a1b-d7dda6c1d592"
       ],
       "edhrec_rank": 819,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "0.28"
       }
@@ -13176,7 +13419,9 @@
         "3a243c17-3baa-4b53-9599-645311cd7d3d"
       ],
       "edhrec_rank": 6087,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "0.34"
       }
@@ -13387,7 +13632,9 @@
         "f07d73b9-52a0-4fe5-858b-61f7b42174a5"
       ],
       "edhrec_rank": 19,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "0.11"
       }
@@ -13432,7 +13679,9 @@
         "f07d73b9-52a0-4fe5-858b-61f7b42174a5"
       ],
       "edhrec_rank": 9,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "2.67"
       }
@@ -13508,7 +13757,9 @@
         "6dd06426-59fe-4b9c-aad5-6da8446a5c3d"
       ],
       "edhrec_rank": 48,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "1.91"
       }
@@ -13549,7 +13800,10 @@
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
       "edhrec_rank": 7726,
-      "properties": [],
+      "properties": [
+        "man-land",
+        "snow"
+      ],
       "prices": {
         "usd": "0.36"
       }
@@ -13591,7 +13845,9 @@
         "289e552e-3b58-484f-a939-64a01426e84d"
       ],
       "edhrec_rank": 4824,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "1.95"
       }
@@ -13839,7 +14095,9 @@
         "982d9460-f9b9-42f6-8a25-47afa7df22e9"
       ],
       "edhrec_rank": 2031,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.30"
       }
@@ -13885,7 +14143,9 @@
         "e607a0d4-fc12-4c01-9e3f-501f5269b9cb"
       ],
       "edhrec_rank": 340,
-      "properties": [],
+      "properties": [
+        "filter-land"
+      ],
       "prices": {
         "usd": "6.61"
       }
@@ -13931,7 +14191,9 @@
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
       "edhrec_rank": 854,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.44"
       }
@@ -14105,7 +14367,9 @@
         "7b1b0ce9-2c58-4321-a2a7-cdc94feae082"
       ],
       "edhrec_rank": 835,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "6.72"
       }
@@ -14180,7 +14444,9 @@
         "a51444a8-eb4b-4615-a663-d1d418591ccb"
       ],
       "edhrec_rank": 1218,
-      "properties": [],
+      "properties": [
+        "filter-land"
+      ],
       "prices": {
         "usd": "9.02"
       }
@@ -14219,7 +14485,9 @@
         "tix": "0.01"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "gain-land"
+      ]
     },
     {
       "object": "card",
@@ -14338,7 +14606,9 @@
         "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
       ],
       "edhrec_rank": 5351,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "1.16"
       }
@@ -14384,7 +14654,9 @@
         "8a5540a8-18c9-4fa9-802c-59d6866114d5"
       ],
       "edhrec_rank": 304,
-      "properties": [],
+      "properties": [
+        "filter-land"
+      ],
       "prices": {
         "usd": "5.46"
       }
@@ -14421,7 +14693,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 39,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "123.39"
       }
@@ -14497,7 +14771,9 @@
       ],
       "edhrec_rank": 9306,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.18"
       }
@@ -14534,7 +14810,9 @@
         "tix": "0.02"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "pain-land"
+      ]
     },
     {
       "object": "card",
@@ -14602,7 +14880,9 @@
       ],
       "edhrec_rank": 12165,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.22"
       }
@@ -14662,7 +14942,9 @@
         "fcd5ea36-64e0-4af0-992a-3c68a34a400f"
       ],
       "edhrec_rank": 710,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "10.70"
       }
@@ -14704,7 +14986,9 @@
         "46dc4b5e-e42c-4d65-a4f3-ad75b0f6f6dd"
       ],
       "edhrec_rank": 10947,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.45"
       }
@@ -14750,7 +15034,10 @@
         "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
       ],
       "edhrec_rank": 1683,
-      "properties": [],
+      "properties": [
+        "fetch-land",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.27"
       }
@@ -14880,7 +15167,9 @@
         "1952c90b-a5a7-4328-9f7c-e11064f59daf"
       ],
       "edhrec_rank": 833,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.25"
       }
@@ -14926,7 +15215,9 @@
         "fa8fd324-099a-43f2-9c57-97f64e38a5e9"
       ],
       "edhrec_rank": 13765,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.20"
       }
@@ -15015,7 +15306,9 @@
         "4eac683c-8c96-4f57-b8a4-ad7f7b7c44c7"
       ],
       "edhrec_rank": 22579,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "12.59"
       }
@@ -15541,7 +15834,9 @@
         "1431bdd4-c187-40ea-847a-e1dcd835598a"
       ],
       "edhrec_rank": 11715,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.75"
       }
@@ -15627,7 +15922,10 @@
         "ebde5690-d401-46ba-8fd3-b9c07d5ef5a7"
       ],
       "edhrec_rank": 10160,
-      "properties": [],
+      "properties": [
+        "man-land",
+        "snow"
+      ],
       "prices": {
         "usd": "0.22"
       }
@@ -15808,7 +16106,9 @@
         "25645c87-71be-400b-8522-618a52c37454"
       ],
       "edhrec_rank": 5518,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.36"
       }
@@ -15997,7 +16297,10 @@
         "ebde5690-d401-46ba-8fd3-b9c07d5ef5a7"
       ],
       "edhrec_rank": 2567,
-      "properties": [],
+      "properties": [
+        "gate",
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.21"
       }
@@ -16164,7 +16467,9 @@
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
       "edhrec_rank": 180,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "52.08"
       }
@@ -16208,7 +16513,9 @@
         "bd79c951-2552-45dd-aae7-a333c2b7c1ef"
       ],
       "edhrec_rank": 3328,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "12.52"
       }
@@ -16341,7 +16648,9 @@
         "b4117364-73af-47e5-8cf0-901eeea09e01"
       ],
       "edhrec_rank": 11920,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.39"
       }
@@ -16612,7 +16921,9 @@
         "e31f5891-08f7-4e5a-bac9-8b4570b8c1ab"
       ],
       "edhrec_rank": 4017,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.36"
       }
@@ -16656,7 +16967,9 @@
         "3a243c17-3baa-4b53-9599-645311cd7d3d"
       ],
       "edhrec_rank": 96,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "1.13"
       }
@@ -16883,7 +17196,9 @@
         "2e6a0611-9411-4ba4-98e3-c0e18cbf9f83"
       ],
       "edhrec_rank": 6479,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.27"
       }
@@ -16928,7 +17243,9 @@
         "21ed6499-c4d3-4965-ab02-6c7228275bec"
       ],
       "edhrec_rank": 4715,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "4.31"
       }
@@ -16974,7 +17291,9 @@
         "c09ede88-a1b5-4a18-9895-dc8a965d28a5"
       ],
       "edhrec_rank": 3302,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.25"
       }
@@ -17165,7 +17484,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 61,
-      "properties": [],
+      "properties": [
+        "shock-land"
+      ],
       "prices": {
         "usd": "16.16"
       }
@@ -17360,7 +17681,9 @@
         "0d8d6726-4051-445a-8374-a919aad98f38"
       ],
       "edhrec_rank": 1570,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "0.20"
       }
@@ -17405,7 +17728,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 327,
-      "properties": [],
+      "properties": [
+        "bounce-land"
+      ],
       "prices": {
         "usd": "0.37"
       }
@@ -17450,7 +17775,10 @@
         "bec9ba7f-594e-4ff0-8172-9ec1fc909607"
       ],
       "edhrec_rank": 2557,
-      "properties": [],
+      "properties": [
+        "gate",
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "1.38"
       }
@@ -17540,7 +17868,10 @@
         "17948f16-611a-44b8-8d10-9895a0bdfff1"
       ],
       "edhrec_rank": 4363,
-      "properties": [],
+      "properties": [
+        "pain-land",
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "6.96"
       }
@@ -17617,7 +17948,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 4816,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "0.71"
       }
@@ -17663,7 +17996,9 @@
         "f009de11-3c8d-4663-b996-ca0c3e997fad"
       ],
       "edhrec_rank": 571,
-      "properties": [],
+      "properties": [
+        "filter-land"
+      ],
       "prices": {
         "usd": "7.39"
       }
@@ -17707,7 +18042,9 @@
         "43cdce85-e4bc-424e-ac95-fd0886b66ff3"
       ],
       "edhrec_rank": 2884,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.16"
       }
@@ -17766,7 +18103,9 @@
         "fb7b61a8-13c5-4813-a749-9d3396801906"
       ],
       "edhrec_rank": 7089,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "0.26"
       }
@@ -17900,7 +18239,10 @@
       ],
       "edhrec_rank": 10061,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "man-land",
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "1.01"
       }
@@ -18072,7 +18414,9 @@
         "c540d1fc-1500-457f-93cf-d6069ee66546"
       ],
       "edhrec_rank": 5804,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "0.36"
       }
@@ -18224,7 +18568,9 @@
         "a5048cc7-438a-4378-98e4-da99b78e1db0"
       ],
       "edhrec_rank": 2091,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "0.23"
       }
@@ -18269,7 +18615,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 433,
-      "properties": [],
+      "properties": [
+        "bounce-land"
+      ],
       "prices": {
         "usd": "0.33"
       }
@@ -18354,7 +18702,9 @@
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
       "edhrec_rank": 1277,
-      "properties": [],
+      "properties": [
+        "bounce-land"
+      ],
       "prices": {
         "usd": "1.44"
       }
@@ -18399,7 +18749,9 @@
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
       "edhrec_rank": 9465,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.35"
       }
@@ -18661,7 +19013,9 @@
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
       "edhrec_rank": 5572,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.38"
       }
@@ -18703,7 +19057,9 @@
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
       "edhrec_rank": 5487,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.47"
       }
@@ -18772,7 +19128,9 @@
         "c4c9b5ea-4b31-40a0-8e40-d7dfeae43234"
       ],
       "edhrec_rank": 6185,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.35"
       }
@@ -18857,7 +19215,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 64,
-      "properties": [],
+      "properties": [
+        "shock-land"
+      ],
       "prices": {
         "usd": "20.38"
       }
@@ -19187,7 +19547,9 @@
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
       "edhrec_rank": 276,
-      "properties": [],
+      "properties": [
+        "slow-land"
+      ],
       "prices": {
         "usd": "7.75"
       }
@@ -19232,7 +19594,9 @@
         "e956bacc-077d-4c12-b6bc-ba798b718af9"
       ],
       "edhrec_rank": 1141,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "1.50"
       }
@@ -19426,7 +19790,10 @@
         "d084e74b-f63a-4107-b72c-ed6250ecc93b"
       ],
       "edhrec_rank": 3064,
-      "properties": [],
+      "properties": [
+        "gate",
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.44"
       }
@@ -19514,7 +19881,9 @@
         "adad79bf-cd52-456a-b170-740ed8bff0fc"
       ],
       "edhrec_rank": 548,
-      "properties": [],
+      "properties": [
+        "surveil-land"
+      ],
       "prices": {
         "usd": "10.47"
       }
@@ -19610,7 +19979,9 @@
         "tix": "0.05"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "gain-land"
+      ]
     },
     {
       "object": "card",
@@ -19711,7 +20082,9 @@
         "b845b8ee-aeea-4822-bcf9-7230625ac95c"
       ],
       "edhrec_rank": 26813,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.32"
       }
@@ -19958,7 +20331,10 @@
         "22211c1d-e15e-4db3-9350-e4a9862928bb"
       ],
       "edhrec_rank": 2241,
-      "properties": [],
+      "properties": [
+        "surveil-land",
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.33"
       }
@@ -19989,7 +20365,9 @@
       ],
       "edhrec_rank": 4125,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "2.68"
       }
@@ -20242,7 +20620,9 @@
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
       "edhrec_rank": 3327,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.37"
       }
@@ -20332,7 +20712,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 16746,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.34"
       }
@@ -20377,7 +20759,9 @@
         "0fad2c48-a56e-4a0b-b512-224f6f238f20"
       ],
       "edhrec_rank": 98,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "0.78"
       }
@@ -20421,7 +20805,9 @@
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
       "edhrec_rank": 6769,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "1.21"
       }
@@ -20463,7 +20849,9 @@
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
       "edhrec_rank": 7725,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.47"
       }
@@ -20509,7 +20897,9 @@
         "aa7e89ed-d294-4633-9057-ce04dacfcfa4"
       ],
       "edhrec_rank": 2993,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.25"
       }
@@ -20637,7 +21027,9 @@
         "96a53b95-fe5f-4fbb-9411-ccf4ee150aca"
       ],
       "edhrec_rank": 1696,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "7.09"
       }
@@ -20681,7 +21073,9 @@
         "7f1868e3-325f-4df9-8f27-a381fed4f0fc"
       ],
       "edhrec_rank": 1507,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "6.15"
       }
@@ -20722,7 +21116,9 @@
         "8fa1fdf0-96d6-46f4-a7ff-b1c0257c3735"
       ],
       "edhrec_rank": 9631,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.25"
       }
@@ -21084,7 +21480,9 @@
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
       "edhrec_rank": 4140,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.52"
       }
@@ -21246,7 +21644,9 @@
       ],
       "edhrec_rank": 11789,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.21"
       }
@@ -21338,7 +21738,10 @@
         "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
       ],
       "edhrec_rank": 472,
-      "properties": [],
+      "properties": [
+        "triome",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "17.39"
       }
@@ -21395,7 +21798,9 @@
         "269392ac-4c06-4650-98e2-d49a5a7f2371"
       ],
       "edhrec_rank": 1990,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "11.07"
       }
@@ -21485,7 +21890,9 @@
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
       "edhrec_rank": 1464,
-      "properties": [],
+      "properties": [
+        "fast-land"
+      ],
       "prices": {
         "usd": "2.08"
       }
@@ -21662,7 +22069,9 @@
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
       "edhrec_rank": 810,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.32"
       }
@@ -21854,7 +22263,9 @@
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
       "edhrec_rank": 93,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "1.40"
       }
@@ -21941,7 +22352,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 407,
-      "properties": [],
+      "properties": [
+        "bounce-land"
+      ],
       "prices": {
         "usd": "0.40"
       }
@@ -21987,7 +22400,9 @@
         "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
       ],
       "edhrec_rank": 1742,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "0.14"
       }
@@ -22064,7 +22479,9 @@
       ],
       "edhrec_rank": 4527,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.47"
       }
@@ -22114,7 +22531,10 @@
         "a662cb71-4770-4b49-8b03-2cf8497049a7"
       ],
       "edhrec_rank": 357,
-      "properties": [],
+      "properties": [
+        "triome",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "16.58"
       }
@@ -22220,7 +22640,9 @@
         "92f6c2c1-fa57-4b52-99c4-0fd866c13dc9"
       ],
       "edhrec_rank": 5036,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "0.53"
       }
@@ -22307,7 +22729,9 @@
         "0d8d6726-4051-445a-8374-a919aad98f38"
       ],
       "edhrec_rank": 759,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.19"
       }
@@ -22457,7 +22881,9 @@
         "90edbd2e-9462-4394-b0b4-02885b4e56b3"
       ],
       "edhrec_rank": 4487,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.20"
       }
@@ -22770,7 +23196,9 @@
         "3de0bcf5-44b7-4c1e-9040-04c5396e79b0"
       ],
       "edhrec_rank": 221,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "30.81"
       }
@@ -22931,7 +23359,9 @@
         "3a243c17-3baa-4b53-9599-645311cd7d3d"
       ],
       "edhrec_rank": 5912,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.19"
       }
@@ -23180,7 +23610,10 @@
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
       "edhrec_rank": 356,
-      "properties": [],
+      "properties": [
+        "triome",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "17.22"
       }
@@ -23414,7 +23847,9 @@
         "91d65465-e8a6-4a4e-8b0e-0e07466cfa0f"
       ],
       "edhrec_rank": 4988,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "0.29"
       }
@@ -23695,7 +24130,9 @@
       ],
       "edhrec_rank": 7325,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.22"
       }
@@ -23794,7 +24231,9 @@
         "3593dd7e-c547-4a32-81cd-7da725f60118"
       ],
       "edhrec_rank": 2449,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.37"
       }
@@ -24058,7 +24497,9 @@
         "41084244-a313-4d14-8123-db05855f9cfe"
       ],
       "edhrec_rank": 7624,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.38"
       }
@@ -24119,7 +24560,9 @@
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
       "edhrec_rank": 1933,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "8.99"
       }
@@ -24568,7 +25011,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 137,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "31.37"
       }
@@ -24657,7 +25102,9 @@
         "4441fe52-9e41-40c1-9b74-8510426279ab"
       ],
       "edhrec_rank": 1131,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.31"
       }
@@ -24786,7 +25233,9 @@
         "tix": "0.05"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "gain-land"
+      ]
     },
     {
       "object": "card",
@@ -24980,7 +25429,9 @@
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
       "edhrec_rank": 4678,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.26"
       }
@@ -25114,7 +25565,9 @@
         "bec9ba7f-594e-4ff0-8172-9ec1fc909607"
       ],
       "edhrec_rank": 725,
-      "properties": [],
+      "properties": [
+        "surveil-land"
+      ],
       "prices": {
         "usd": "5.12"
       }
@@ -25246,7 +25699,9 @@
         "f0c43e1b-1853-4abc-8a1b-d7dda6c1d592"
       ],
       "edhrec_rank": 2104,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "2.10"
       }
@@ -25552,7 +26007,9 @@
         "7b1b0ce9-2c58-4321-a2a7-cdc94feae082"
       ],
       "edhrec_rank": 119,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "33.87"
       }
@@ -25599,7 +26056,9 @@
         "d084e74b-f63a-4107-b72c-ed6250ecc93b"
       ],
       "edhrec_rank": 2381,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "1.17"
       }
@@ -25692,7 +26151,9 @@
         "2c3d2473-ff5d-4309-8194-e0b2def2ab65"
       ],
       "edhrec_rank": 52,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "34.12"
       }
@@ -25899,7 +26360,10 @@
         "7f1868e3-325f-4df9-8f27-a381fed4f0fc"
       ],
       "edhrec_rank": 3277,
-      "properties": [],
+      "properties": [
+        "man-land",
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.43"
       }
@@ -25930,7 +26394,9 @@
       ],
       "edhrec_rank": 7816,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.25"
       }
@@ -26289,7 +26755,9 @@
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
       "edhrec_rank": 698,
-      "properties": [],
+      "properties": [
+        "surveil-land"
+      ],
       "prices": {
         "usd": "11.31"
       }
@@ -26735,7 +27203,9 @@
         "ed050721-9cc1-4376-8a91-59bddbe70fe6"
       ],
       "edhrec_rank": 2786,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.79"
       }
@@ -26780,7 +27250,9 @@
         "93d65564-bf00-447b-8406-e2031f03b6b1"
       ],
       "edhrec_rank": 11128,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.33"
       }
@@ -26877,7 +27349,9 @@
         "3bfc0fd7-f6ce-4c3f-a755-aaafc84ac704"
       ],
       "edhrec_rank": 3138,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "111.21"
       }
@@ -26933,7 +27407,9 @@
         "669b8b90-758d-4f9e-b4f7-98cd6742eb97"
       ],
       "edhrec_rank": 7570,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.36"
       }
@@ -27018,7 +27494,9 @@
         "6cb0dc0c-4362-4c21-b23a-b2d7e096aa4f"
       ],
       "edhrec_rank": 404,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "8.77"
       }
@@ -27138,7 +27616,9 @@
       ],
       "edhrec_rank": 10302,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.21"
       }
@@ -27175,7 +27655,9 @@
         "bc1722f2-95d4-462d-948b-35be540ef4c2"
       ],
       "edhrec_rank": 41,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "37.68"
       }
@@ -27216,7 +27698,9 @@
         "ebde5690-d401-46ba-8fd3-b9c07d5ef5a7"
       ],
       "edhrec_rank": 9244,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.16"
       }
@@ -27788,7 +28272,9 @@
         "5253a25f-c71e-47d0-b4ca-5a5dcab4e405"
       ],
       "edhrec_rank": 3109,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "1.29"
       }
@@ -27828,7 +28314,9 @@
         "7da1a585-c875-45e4-b322-5da9e8e1f651"
       ],
       "edhrec_rank": 10586,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.68"
       }
@@ -27895,7 +28383,9 @@
       "keywords": [],
       "edhrec_rank": 2357,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "choose-type-shock-land"
+      ],
       "prices": {
         "usd": "5.89"
       }
@@ -28046,7 +28536,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 2654,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "1.64"
       }
@@ -28077,7 +28569,9 @@
       ],
       "edhrec_rank": 14335,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.18"
       }
@@ -28118,7 +28612,9 @@
         "9c77c81a-3b3f-4e94-a834-327d01cd6b35"
       ],
       "edhrec_rank": 1917,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "8.27"
       }
@@ -28204,7 +28700,9 @@
         "9c77c81a-3b3f-4e94-a834-327d01cd6b35"
       ],
       "edhrec_rank": 891,
-      "properties": [],
+      "properties": [
+        "filter-land"
+      ],
       "prices": {
         "usd": "7.88"
       }
@@ -28379,7 +28877,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 19076,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.28"
       }
@@ -28420,7 +28920,9 @@
         "49b6270b-1b28-4e03-b503-522f97dc3a78"
       ],
       "edhrec_rank": 4376,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "0.36"
       }
@@ -28510,7 +29012,9 @@
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
       "edhrec_rank": 5345,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.34"
       }
@@ -28844,7 +29348,9 @@
         "c3004e2c-d372-4faa-90db-f1274e75ef41"
       ],
       "edhrec_rank": 6723,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.19"
       }
@@ -29027,7 +29533,9 @@
         "996ad764-4ae0-4952-8bb5-5a75c9d68275"
       ],
       "edhrec_rank": 14089,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "0.50"
       }
@@ -29058,7 +29566,9 @@
       ],
       "edhrec_rank": 7959,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.22"
       }
@@ -29175,7 +29685,9 @@
         "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
       ],
       "edhrec_rank": 1586,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "6.75"
       }
@@ -29456,7 +29968,9 @@
       ],
       "edhrec_rank": 7236,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.18"
       }
@@ -29645,7 +30159,9 @@
         "d084e74b-f63a-4107-b72c-ed6250ecc93b"
       ],
       "edhrec_rank": 654,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.28"
       }
@@ -29780,7 +30296,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 399,
-      "properties": [],
+      "properties": [
+        "bounce-land"
+      ],
       "prices": {
         "usd": "0.39"
       }
@@ -29826,7 +30344,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 1914,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "0.24"
       }
@@ -30040,7 +30560,9 @@
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
       "edhrec_rank": 288,
-      "properties": [],
+      "properties": [
+        "slow-land"
+      ],
       "prices": {
         "usd": "3.52"
       }
@@ -30085,7 +30607,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 71,
-      "properties": [],
+      "properties": [
+        "shock-land"
+      ],
       "prices": {
         "usd": "15.95"
       }
@@ -30131,7 +30655,9 @@
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
       "edhrec_rank": 6974,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.09"
       }
@@ -30176,7 +30702,9 @@
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
       "edhrec_rank": 24749,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.38"
       }
@@ -30255,7 +30783,9 @@
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
       "edhrec_rank": 14,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.28"
       }
@@ -30501,7 +31031,10 @@
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
       "edhrec_rank": 2066,
-      "properties": [],
+      "properties": [
+        "fetch-land",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.26"
       }
@@ -30699,7 +31232,9 @@
         "fcd5ea36-64e0-4af0-992a-3c68a34a400f"
       ],
       "edhrec_rank": 6348,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "1.23"
       }
@@ -30744,7 +31279,9 @@
         "f8f662fa-d597-46a3-afb2-91d6e13243e2"
       ],
       "edhrec_rank": 21342,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "1.93"
       }
@@ -30996,7 +31533,9 @@
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
       "edhrec_rank": 2640,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "9.25"
       }
@@ -31040,7 +31579,9 @@
         "22eef389-7b21-4dda-95dc-4c9a0f1bf4dd"
       ],
       "edhrec_rank": 448,
-      "properties": [],
+      "properties": [
+        "true-dual"
+      ],
       "prices": {
         "usd": "2479.99"
       }
@@ -31130,7 +31671,9 @@
         "44c3877f-8771-43dc-9e40-f4c765f59d2e"
       ],
       "edhrec_rank": 497,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "7.75"
       }
@@ -31167,7 +31710,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 36,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "130.49"
       }
@@ -31211,7 +31756,9 @@
         "a267f9bb-072b-410a-a704-50f4d19020d8"
       ],
       "edhrec_rank": 4136,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.26"
       }
@@ -31348,7 +31895,9 @@
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
       "edhrec_rank": 1976,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.77"
       }
@@ -31438,7 +31987,9 @@
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
       "edhrec_rank": 105,
-      "properties": [],
+      "properties": [
+        "battle-land"
+      ],
       "prices": {
         "usd": "0.34"
       }
@@ -31483,7 +32034,9 @@
         "9ee9a9cc-c09e-486f-918b-69f80cbc4188"
       ],
       "edhrec_rank": 6292,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "2.36"
       }
@@ -31569,7 +32122,9 @@
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
       "edhrec_rank": 197,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "34.80"
       }
@@ -31610,7 +32165,9 @@
         "7f1868e3-325f-4df9-8f27-a381fed4f0fc"
       ],
       "edhrec_rank": 3107,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "0.26"
       }
@@ -31654,7 +32211,9 @@
         "13a4bbe4-4e02-4403-8ecd-58f7744b994f"
       ],
       "edhrec_rank": 8745,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.26"
       }
@@ -31693,7 +32252,9 @@
         "tix": "0.01"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "gain-land"
+      ]
     },
     {
       "object": "card",
@@ -31868,7 +32429,9 @@
         "66756146-32f8-4513-9aae-75a8e5117585"
       ],
       "edhrec_rank": 8009,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.22"
       }
@@ -31998,7 +32561,9 @@
         "b6476cc7-1576-47e8-9f6a-68d05b45cf62"
       ],
       "edhrec_rank": 1264,
-      "properties": [],
+      "properties": [
+        "battle-land"
+      ],
       "prices": {
         "usd": "0.48"
       }
@@ -32048,7 +32613,10 @@
         "66756146-32f8-4513-9aae-75a8e5117585"
       ],
       "edhrec_rank": 420,
-      "properties": [],
+      "properties": [
+        "triome",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "12.83"
       }
@@ -32092,7 +32660,9 @@
         "d0b9f3cc-13fb-42b6-bc43-b034728e5c7b"
       ],
       "edhrec_rank": 2697,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.58"
       }
@@ -32125,7 +32695,9 @@
       ],
       "edhrec_rank": 3625,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.28"
       }
@@ -32170,7 +32742,9 @@
         "e8b85539-756a-4eac-ac66-a2258d7cf547"
       ],
       "edhrec_rank": 13220,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "8.56"
       }
@@ -32215,7 +32789,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 494,
-      "properties": [],
+      "properties": [
+        "bounce-land"
+      ],
       "prices": {
         "usd": "0.95"
       }
@@ -32261,7 +32837,9 @@
         "0d8d6726-4051-445a-8374-a919aad98f38"
       ],
       "edhrec_rank": 1979,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "0.23"
       }
@@ -32435,7 +33013,9 @@
         "8df4596a-1d88-4b6a-9ce8-5c8089c3946c"
       ],
       "edhrec_rank": 568,
-      "properties": [],
+      "properties": [
+        "surveil-land"
+      ],
       "prices": {
         "usd": "9.53"
       }
@@ -32484,7 +33064,10 @@
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
       "edhrec_rank": 488,
-      "properties": [],
+      "properties": [
+        "triome",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "15.21"
       }
@@ -32530,7 +33113,9 @@
         "996ad764-4ae0-4952-8bb5-5a75c9d68275"
       ],
       "edhrec_rank": 24826,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.17"
       }
@@ -32738,7 +33323,9 @@
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
       "edhrec_rank": 1421,
-      "properties": [],
+      "properties": [
+        "fast-land"
+      ],
       "prices": {
         "usd": "0.93"
       }
@@ -33042,7 +33629,9 @@
         "1761c216-72b5-4a9b-afee-ad47a00fe1ad"
       ],
       "edhrec_rank": 4215,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.47"
       }
@@ -33102,7 +33691,9 @@
         "669b8b90-758d-4f9e-b4f7-98cd6742eb97"
       ],
       "edhrec_rank": 3915,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.75"
       }
@@ -33146,7 +33737,9 @@
         "8df4596a-1d88-4b6a-9ce8-5c8089c3946c"
       ],
       "edhrec_rank": 4466,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.47"
       }
@@ -33208,7 +33801,9 @@
         "a5f8354a-8b51-4e59-96b2-0e3aeae4fa1d"
       ],
       "edhrec_rank": 3254,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "1.51"
       }
@@ -33252,7 +33847,9 @@
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
       "edhrec_rank": 4470,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.62"
       }
@@ -33296,7 +33893,9 @@
         "a5048cc7-438a-4378-98e4-da99b78e1db0"
       ],
       "edhrec_rank": 5319,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.38"
       }
@@ -33342,7 +33941,9 @@
         "e4631396-f0ce-41df-9d35-a7bd1da9d5a6"
       ],
       "edhrec_rank": 3940,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "2.00"
       }
@@ -33386,7 +33987,9 @@
         "d072adde-7194-4bf0-b9ca-b42d8973b0ff"
       ],
       "edhrec_rank": 4507,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.37"
       }
@@ -33432,7 +34035,9 @@
         "8df4596a-1d88-4b6a-9ce8-5c8089c3946c"
       ],
       "edhrec_rank": 4744,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.31"
       }
@@ -33474,7 +34079,9 @@
       "artist": "Svetlin Velinov",
       "artist_ids": [],
       "edhrec_rank": 5006,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.34"
       }
@@ -33518,7 +34125,9 @@
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
       "edhrec_rank": 5543,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.38"
       }
@@ -33726,7 +34335,9 @@
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
       "edhrec_rank": 2633,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.52"
       }
@@ -34227,7 +34838,9 @@
         "adb9ad6d-6173-454b-8b50-a102b182548b"
       ],
       "edhrec_rank": 3766,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.23"
       }
@@ -34315,7 +34928,9 @@
         "185ea3f2-0b95-4f96-ab62-f7754ba591d8"
       ],
       "edhrec_rank": 223,
-      "properties": [],
+      "properties": [
+        "slow-land"
+      ],
       "prices": {
         "usd": "3.43"
       }
@@ -34410,7 +35025,9 @@
         "9b465bde-3656-4495-ace4-af4ce29999ed"
       ],
       "edhrec_rank": 3372,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "0.61"
       }
@@ -34495,7 +35112,9 @@
         "20871267-2d8a-41d5-b03a-be3d557c5734"
       ],
       "edhrec_rank": 127,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "2.00"
       }
@@ -34584,7 +35203,9 @@
         "0d8d6726-4051-445a-8374-a919aad98f38"
       ],
       "edhrec_rank": 1390,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.16"
       }
@@ -34630,7 +35251,9 @@
         "9c77c81a-3b3f-4e94-a834-327d01cd6b35"
       ],
       "edhrec_rank": 286,
-      "properties": [],
+      "properties": [
+        "filter-land"
+      ],
       "prices": {
         "usd": "4.73"
       }
@@ -34747,7 +35370,9 @@
       ],
       "edhrec_rank": 3268,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.26"
       }
@@ -34791,7 +35416,9 @@
         "92f6c2c1-fa57-4b52-99c4-0fd866c13dc9"
       ],
       "edhrec_rank": 6095,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.12"
       }
@@ -35058,7 +35685,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 74,
-      "properties": [],
+      "properties": [
+        "shock-land"
+      ],
       "prices": {
         "usd": "16.06"
       }
@@ -35185,7 +35814,9 @@
         "a9199ae8-9891-4366-bf5b-42cfb662d840"
       ],
       "edhrec_rank": 20505,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "1.63"
       }
@@ -35826,7 +36457,10 @@
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
       "edhrec_rank": 496,
-      "properties": [],
+      "properties": [
+        "triome",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "20.16"
       }
@@ -35870,7 +36504,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 461,
-      "properties": [],
+      "properties": [
+        "true-dual"
+      ],
       "prices": {
         "usd": null
       }
@@ -35915,7 +36551,9 @@
         "cb577db7-7f47-4f78-8682-6eaef8a77bd1"
       ],
       "edhrec_rank": 21577,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "1.42"
       }
@@ -35952,7 +36590,9 @@
         "43cdce85-e4bc-424e-ac95-fd0886b66ff3"
       ],
       "edhrec_rank": 50,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "40.51"
       }
@@ -35998,7 +36638,9 @@
         "b8266529-1ffe-41e7-9969-fcf39f61426b"
       ],
       "edhrec_rank": 996,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.37"
       }
@@ -36084,7 +36726,10 @@
         "2c14303e-97a3-45fa-9bd8-59e5332a65f9"
       ],
       "edhrec_rank": 2574,
-      "properties": [],
+      "properties": [
+        "horizon-land",
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.32"
       }
@@ -36130,7 +36775,9 @@
         "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
       ],
       "edhrec_rank": 27092,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.22"
       }
@@ -36161,7 +36808,9 @@
       ],
       "edhrec_rank": 3369,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "battle-land"
+      ],
       "prices": {
         "usd": "1.40"
       }
@@ -36245,7 +36894,9 @@
         "0d8d6726-4051-445a-8374-a919aad98f38"
       ],
       "edhrec_rank": 728,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.19"
       }
@@ -36289,7 +36940,9 @@
         "c011318e-8503-48c1-a990-46e50aff48a0"
       ],
       "edhrec_rank": 389,
-      "properties": [],
+      "properties": [
+        "true-dual"
+      ],
       "prices": {
         "usd": null
       }
@@ -36327,7 +36980,9 @@
       "artist": "Thomas M. Baxa",
       "artist_ids": [],
       "edhrec_rank": 8318,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "4.12"
       }
@@ -36374,7 +37029,9 @@
         "bec9ba7f-594e-4ff0-8172-9ec1fc909607"
       ],
       "edhrec_rank": 2471,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "1.60"
       }
@@ -36576,7 +37233,9 @@
         "21ed6499-c4d3-4965-ab02-6c7228275bec"
       ],
       "edhrec_rank": 1184,
-      "properties": [],
+      "properties": [
+        "fast-land"
+      ],
       "prices": {
         "usd": "1.85"
       }
@@ -36659,7 +37318,9 @@
         "ad9811c8-6d5c-4728-9c94-a1854337b100"
       ],
       "edhrec_rank": 23956,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.24"
       }
@@ -36837,7 +37498,9 @@
         "f89f4b78-cefb-41f7-b7cb-4f4d28de0c4f"
       ],
       "edhrec_rank": 222,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.34"
       }
@@ -36966,7 +37629,9 @@
         "4441fe52-9e41-40c1-9b74-8510426279ab"
       ],
       "edhrec_rank": 1437,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.26"
       }
@@ -37101,7 +37766,10 @@
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
       "edhrec_rank": 1875,
-      "properties": [],
+      "properties": [
+        "fetch-land",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.28"
       }
@@ -37145,7 +37813,9 @@
         "89cc9475-dda2-4d13-bf88-54b92867a25c"
       ],
       "edhrec_rank": 4791,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.34"
       }
@@ -37303,7 +37973,9 @@
         "6dd06426-59fe-4b9c-aad5-6da8446a5c3d"
       ],
       "edhrec_rank": 2023,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "0.13"
       }
@@ -37348,7 +38020,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 565,
-      "properties": [],
+      "properties": [
+        "bounce-land"
+      ],
       "prices": {
         "usd": "0.71"
       }
@@ -37430,7 +38104,9 @@
         "04ce1c75-e30c-4b7a-8cb0-b53e4ecc2f39"
       ],
       "edhrec_rank": 2307,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "1.26"
       }
@@ -37461,7 +38137,9 @@
       ],
       "edhrec_rank": 9001,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.28"
       }
@@ -37595,7 +38273,9 @@
         "e2f13a9a-57c5-40de-81d4-3b0723899cdf"
       ],
       "edhrec_rank": 575,
-      "properties": [],
+      "properties": [
+        "surveil-land"
+      ],
       "prices": {
         "usd": "10.37"
       }
@@ -37639,7 +38319,9 @@
         "269392ac-4c06-4650-98e2-d49a5a7f2371"
       ],
       "edhrec_rank": 5697,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.30"
       }
@@ -37730,7 +38412,10 @@
         "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
       ],
       "edhrec_rank": 1890,
-      "properties": [],
+      "properties": [
+        "fetch-land",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.24"
       }
@@ -37775,7 +38460,9 @@
         "185ea3f2-0b95-4f96-ab62-f7754ba591d8"
       ],
       "edhrec_rank": 280,
-      "properties": [],
+      "properties": [
+        "slow-land"
+      ],
       "prices": {
         "usd": "2.13"
       }
@@ -37977,7 +38664,9 @@
         "4b149402-618d-4f54-9db8-788e4a5bce70"
       ],
       "edhrec_rank": 636,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.37"
       }
@@ -38063,7 +38752,10 @@
         "39cb50cf-0223-43c7-bd96-afb5f05c7e43"
       ],
       "edhrec_rank": 2206,
-      "properties": [],
+      "properties": [
+        "fetch-land",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.29"
       }
@@ -38152,7 +38844,9 @@
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
       "edhrec_rank": 6982,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.25"
       }
@@ -38198,7 +38892,9 @@
         "70c20ea3-5ad6-4082-a337-6e994ae5828e"
       ],
       "edhrec_rank": 11482,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.09"
       }
@@ -38330,7 +39026,9 @@
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
       "edhrec_rank": 228,
-      "properties": [],
+      "properties": [
+        "slow-land"
+      ],
       "prices": {
         "usd": "6.78"
       }
@@ -38371,7 +39069,9 @@
         "a796c230-bbbe-425f-8ff4-6878e1cf093d"
       ],
       "edhrec_rank": 2281,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "0.59"
       }
@@ -38504,7 +39204,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 116,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "31.52"
       }
@@ -38633,7 +39335,9 @@
         "ad4caca0-8d89-44ce-a1a6-d5ca905bd6fb"
       ],
       "edhrec_rank": 1638,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "5.52"
       }
@@ -38843,7 +39547,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 301,
-      "properties": [],
+      "properties": [
+        "bounce-land"
+      ],
       "prices": {
         "usd": "0.42"
       }
@@ -38887,7 +39593,9 @@
       "artist": "Svetlin Velinov",
       "artist_ids": [],
       "edhrec_rank": 1499,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "0.28"
       }
@@ -39146,7 +39854,9 @@
         "185ea3f2-0b95-4f96-ab62-f7754ba591d8"
       ],
       "edhrec_rank": 7754,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.27"
       }
@@ -39379,7 +40089,9 @@
         "79d6f296-1948-4a24-a2ce-a76e89057f23"
       ],
       "edhrec_rank": 21839,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "2.11"
       }
@@ -39514,7 +40226,9 @@
         "a267f9bb-072b-410a-a704-50f4d19020d8"
       ],
       "edhrec_rank": 5413,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.29"
       }
@@ -39575,7 +40289,9 @@
         "9c3e9d17-509f-485c-9360-46d897ce716b"
       ],
       "edhrec_rank": 5059,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "12.37"
       }
@@ -39619,7 +40335,9 @@
         "9ee9a9cc-c09e-486f-918b-69f80cbc4188"
       ],
       "edhrec_rank": 3756,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.26"
       }
@@ -39664,7 +40382,9 @@
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
       "edhrec_rank": 94,
-      "properties": [],
+      "properties": [
+        "battle-land"
+      ],
       "prices": {
         "usd": "0.37"
       }
@@ -39747,7 +40467,9 @@
       "artist_ids": [
         "3130411f-ddd5-4cab-a2f4-0a9c3b95a26e"
       ],
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "is_basic": true
     },
     {
@@ -39786,7 +40508,9 @@
       "artist_ids": [
         "634430a7-b5c3-4e4a-b2ac-164e084e47c9"
       ],
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "is_basic": true
     },
     {
@@ -39825,7 +40549,9 @@
       "artist_ids": [
         "c4e0aa7c-a008-4d71-80ce-d5a1ca0b251b"
       ],
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "is_basic": true
     },
     {
@@ -39864,7 +40590,9 @@
       "artist_ids": [
         "c96773f0-346c-4f7d-9271-2d98cc5d86e1"
       ],
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "is_basic": true
     },
     {
@@ -39903,7 +40631,9 @@
       "artist_ids": [
         "a9ddb513-51c7-455c-ab8f-5b90aae9f75b"
       ],
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "is_basic": true
     },
     {
@@ -39940,7 +40670,9 @@
       "artist_ids": [
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "is_basic": true
     },
     {
@@ -39983,7 +40715,9 @@
         "266ab861-ed64-4ba5-865c-f18758421cc3"
       ],
       "edhrec_rank": 3992,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.37"
       }
@@ -40056,7 +40790,9 @@
       ],
       "edhrec_rank": 1606,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "battle-land"
+      ],
       "prices": {
         "usd": "0.41"
       }
@@ -40309,7 +41045,9 @@
         "0fbd4798-76eb-46d5-a5d4-1e3a25870e34"
       ],
       "edhrec_rank": 5931,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.59"
       }
@@ -40404,7 +41142,10 @@
         "aa7e89ed-d294-4633-9057-ce04dacfcfa4"
       ],
       "edhrec_rank": 396,
-      "properties": [],
+      "properties": [
+        "triome",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "13.12"
       }
@@ -40503,7 +41244,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 14343,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.38"
       }
@@ -40786,7 +41529,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 391,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.28"
       }
@@ -40831,7 +41576,9 @@
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
       "edhrec_rank": 1579,
-      "properties": [],
+      "properties": [
+        "fast-land"
+      ],
       "prices": {
         "usd": "5.11"
       }
@@ -40976,7 +41723,9 @@
         "a267f9bb-072b-410a-a704-50f4d19020d8"
       ],
       "edhrec_rank": 17370,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.34"
       }
@@ -41054,7 +41803,9 @@
         "tix": "0.05"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "gain-land"
+      ]
     },
     {
       "object": "card",
@@ -41140,7 +41891,9 @@
         "e4631396-f0ce-41df-9d35-a7bd1da9d5a6"
       ],
       "edhrec_rank": 797,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "8.32"
       }
@@ -41185,7 +41938,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 65,
-      "properties": [],
+      "properties": [
+        "shock-land"
+      ],
       "prices": {
         "usd": "25.10"
       }
@@ -41273,7 +42028,9 @@
         "37970e22-9cee-44c1-af44-5ee27cf26b76"
       ],
       "edhrec_rank": 7269,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.36"
       }
@@ -41318,7 +42075,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 68,
-      "properties": [],
+      "properties": [
+        "shock-land"
+      ],
       "prices": {
         "usd": "13.90"
       }
@@ -41408,7 +42167,9 @@
         "e31f5891-08f7-4e5a-bac9-8b4570b8c1ab"
       ],
       "edhrec_rank": 188,
-      "properties": [],
+      "properties": [
+        "slow-land"
+      ],
       "prices": {
         "usd": "2.51"
       }
@@ -41678,7 +42439,9 @@
         "d084e74b-f63a-4107-b72c-ed6250ecc93b"
       ],
       "edhrec_rank": 3817,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.21"
       }
@@ -41835,7 +42598,9 @@
         "tix": "0.05"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "gain-land"
+      ]
     },
     {
       "object": "card",
@@ -41952,7 +42717,9 @@
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
       "edhrec_rank": 80,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "0.67"
       }
@@ -42043,7 +42810,9 @@
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
       "edhrec_rank": 5653,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.35"
       }
@@ -42088,7 +42857,9 @@
         "3bfc0fd7-f6ce-4c3f-a755-aaafc84ac704"
       ],
       "edhrec_rank": 158,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "19.35"
       }
@@ -42119,7 +42890,9 @@
       ],
       "edhrec_rank": 7947,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.16"
       }
@@ -42164,7 +42937,9 @@
         "f8e7f8d6-6dde-4059-973c-30f1fd1bbe4e"
       ],
       "edhrec_rank": 1482,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "4.23"
       }
@@ -42324,7 +43099,9 @@
         "185ea3f2-0b95-4f96-ab62-f7754ba591d8"
       ],
       "edhrec_rank": 275,
-      "properties": [],
+      "properties": [
+        "slow-land"
+      ],
       "prices": {
         "usd": "3.19"
       }
@@ -42503,7 +43280,9 @@
         "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
       ],
       "edhrec_rank": 86,
-      "properties": [],
+      "properties": [
+        "battle-land"
+      ],
       "prices": {
         "usd": "0.34"
       }
@@ -42591,7 +43370,9 @@
         "002c739e-aa1f-4c1d-921b-37cb2d1b1c5b"
       ],
       "edhrec_rank": 1004,
-      "properties": [],
+      "properties": [
+        "filter-land"
+      ],
       "prices": {
         "usd": "12.33"
       }
@@ -42680,7 +43461,9 @@
         "8062d5a9-51b6-4822-933f-fa9e9dba8416"
       ],
       "edhrec_rank": 134,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "1.82"
       }
@@ -42958,7 +43741,10 @@
         "tix": "0.01"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "surveil-land",
+        "command-tower-style"
+      ]
     },
     {
       "object": "card",
@@ -43001,7 +43787,9 @@
         "561ebf9e-8d93-4b57-8156-8826d0c19601"
       ],
       "edhrec_rank": 2601,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.40"
       }
@@ -43088,7 +43876,9 @@
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
       "edhrec_rank": 12279,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.20"
       }
@@ -43213,7 +44003,9 @@
         "0d8d6726-4051-445a-8374-a919aad98f38"
       ],
       "edhrec_rank": 1036,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.21"
       }
@@ -43257,7 +44049,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 438,
-      "properties": [],
+      "properties": [
+        "true-dual"
+      ],
       "prices": {
         "usd": null
       }
@@ -43527,7 +44321,10 @@
         "f07d73b9-52a0-4fe5-858b-61f7b42174a5"
       ],
       "edhrec_rank": 577,
-      "properties": [],
+      "properties": [
+        "gate",
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "39.27"
       }
@@ -43780,7 +44577,9 @@
         "996ad764-4ae0-4952-8bb5-5a75c9d68275"
       ],
       "edhrec_rank": 2435,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "18.64"
       }
@@ -43811,7 +44610,9 @@
       ],
       "edhrec_rank": 14421,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.16"
       }
@@ -43984,7 +44785,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 83,
-      "properties": [],
+      "properties": [
+        "shock-land"
+      ],
       "prices": {
         "usd": "14.86"
       }
@@ -44572,7 +45375,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 7496,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "1.72"
       }
@@ -44690,7 +45495,9 @@
         "f852fa13-137e-40f2-bbc1-0f01df09c0e0"
       ],
       "edhrec_rank": 27,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "0.15"
       }
@@ -44815,7 +45622,9 @@
         "185ea3f2-0b95-4f96-ab62-f7754ba591d8"
       ],
       "edhrec_rank": 8057,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.23"
       }
@@ -44897,7 +45706,9 @@
         "8089db55-5105-47b0-8c64-f320e08c97f0"
       ],
       "edhrec_rank": 1204,
-      "properties": [],
+      "properties": [
+        "gate"
+      ],
       "prices": {
         "usd": "9.28"
       }
@@ -44940,7 +45751,9 @@
         "bc760b5e-6f98-4a17-9b12-5f4eccd12bb2"
       ],
       "edhrec_rank": 7383,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.25"
       }
@@ -44983,7 +45796,9 @@
         "8089db55-5105-47b0-8c64-f320e08c97f0"
       ],
       "edhrec_rank": 6889,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.20"
       }
@@ -45122,7 +45937,9 @@
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
       "edhrec_rank": 1562,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.30"
       }
@@ -45165,7 +45982,9 @@
         "bb677b1a-ce51-4888-83d6-5a94de461ff9"
       ],
       "edhrec_rank": 7022,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.24"
       }
@@ -45251,7 +46070,9 @@
         "adad79bf-cd52-456a-b170-740ed8bff0fc"
       ],
       "edhrec_rank": 864,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "1.26"
       }
@@ -45298,7 +46119,9 @@
         "a662cb71-4770-4b49-8b03-2cf8497049a7"
       ],
       "edhrec_rank": 5731,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.32"
       }
@@ -45402,7 +46225,9 @@
         "e31f5891-08f7-4e5a-bac9-8b4570b8c1ab"
       ],
       "edhrec_rank": 9037,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.25"
       }
@@ -45489,7 +46314,9 @@
         "3605d81f-5c97-4958-9dcc-d44a85e10305"
       ],
       "edhrec_rank": 808,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "6.56"
       }
@@ -45666,7 +46493,9 @@
         "0d8d6726-4051-445a-8374-a919aad98f38"
       ],
       "edhrec_rank": 1069,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.16"
       }
@@ -45719,7 +46548,10 @@
         "e31f5891-08f7-4e5a-bac9-8b4570b8c1ab"
       ],
       "edhrec_rank": 4563,
-      "properties": [],
+      "properties": [
+        "fast-land",
+        "gate"
+      ],
       "prices": {
         "usd": "1.01"
       }
@@ -45763,7 +46595,9 @@
         "5ce7b3bd-53d2-49e6-b504-37191e8e9b17"
       ],
       "edhrec_rank": 14381,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "4.85"
       }
@@ -46191,7 +47025,9 @@
         "8456c8ad-78c4-4ce0-9d5d-8a0cf994a361"
       ],
       "edhrec_rank": 622,
-      "properties": [],
+      "properties": [
+        "surveil-land"
+      ],
       "prices": {
         "usd": "15.24"
       }
@@ -46282,7 +47118,9 @@
         "70c20ea3-5ad6-4082-a337-6e994ae5828e"
       ],
       "edhrec_rank": 23805,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.15"
       }
@@ -46878,7 +47716,9 @@
         "85908891-3cc7-42b0-9b54-27ed0fe89c53"
       ],
       "edhrec_rank": 7134,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.18"
       }
@@ -46922,7 +47762,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 1090,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.09"
       }
@@ -47058,7 +47900,10 @@
         "a5048cc7-438a-4378-98e4-da99b78e1db0"
       ],
       "edhrec_rank": 1999,
-      "properties": [],
+      "properties": [
+        "fetch-land",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.24"
       }
@@ -47102,7 +47947,9 @@
         "4441fe52-9e41-40c1-9b74-8510426279ab"
       ],
       "edhrec_rank": 1018,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.32"
       }
@@ -47146,7 +47993,9 @@
         "81995d11-da98-4f8b-89bd-b88ca2ddb06b"
       ],
       "edhrec_rank": 8043,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.22"
       }
@@ -47290,7 +48139,9 @@
         "f009de11-3c8d-4663-b996-ca0c3e997fad"
       ],
       "edhrec_rank": 5761,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "3.68"
       }
@@ -47465,7 +48316,9 @@
         "262c8e55-4efc-467b-a042-6f734b9d2e01"
       ],
       "edhrec_rank": 19697,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.53"
       }
@@ -47571,7 +48424,9 @@
         "c011318e-8503-48c1-a990-46e50aff48a0"
       ],
       "edhrec_rank": 353,
-      "properties": [],
+      "properties": [
+        "true-dual"
+      ],
       "prices": {
         "usd": null
       }
@@ -47615,7 +48470,9 @@
         "c011318e-8503-48c1-a990-46e50aff48a0"
       ],
       "edhrec_rank": 359,
-      "properties": [],
+      "properties": [
+        "true-dual"
+      ],
       "prices": {
         "usd": "3000.00"
       }
@@ -47913,7 +48770,9 @@
       ],
       "edhrec_rank": 6143,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.22"
       }
@@ -47959,7 +48818,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 363,
-      "properties": [],
+      "properties": [
+        "filter-land"
+      ],
       "prices": {
         "usd": "5.49"
       }
@@ -48005,7 +48866,10 @@
         "aff176e8-1d15-432e-ad1d-207a474decba"
       ],
       "edhrec_rank": 1794,
-      "properties": [],
+      "properties": [
+        "fetch-land",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.28"
       }
@@ -48192,7 +49056,9 @@
       ],
       "edhrec_rank": 8537,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "cycling-land"
+      ],
       "prices": {
         "usd": "0.43"
       }
@@ -48282,7 +49148,9 @@
         "ad53afd6-d00f-4bc8-98ec-deab3f6aec50"
       ],
       "edhrec_rank": 245,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.38"
       }
@@ -48328,7 +49196,9 @@
         "f8e7f8d6-6dde-4059-973c-30f1fd1bbe4e"
       ],
       "edhrec_rank": 422,
-      "properties": [],
+      "properties": [
+        "surveil-land"
+      ],
       "prices": {
         "usd": "14.37"
       }
@@ -48414,7 +49284,9 @@
         "8df4596a-1d88-4b6a-9ce8-5c8089c3946c"
       ],
       "edhrec_rank": 475,
-      "properties": [],
+      "properties": [
+        "surveil-land"
+      ],
       "prices": {
         "usd": "13.78"
       }
@@ -48459,7 +49331,9 @@
         "c74ef1dd-0341-44c4-8f9f-5f243151cce3"
       ],
       "edhrec_rank": 150,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "33.68"
       }
@@ -48503,7 +49377,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 300,
-      "properties": [],
+      "properties": [
+        "true-dual"
+      ],
       "prices": {
         "usd": null
       }
@@ -48593,7 +49469,9 @@
         "bd8dcf6f-4ab3-4854-bfb0-f2e21610fc16"
       ],
       "edhrec_rank": 16936,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "36.72"
       }
@@ -48751,7 +49629,9 @@
         "ad4caca0-8d89-44ce-a1a6-d5ca905bd6fb"
       ],
       "edhrec_rank": 7541,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.09"
       }
@@ -49036,7 +49916,9 @@
         "bfdeaf09-f915-4058-8e8b-bcac3bc43c33"
       ],
       "edhrec_rank": 444,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "1.55"
       }
@@ -49980,7 +50862,9 @@
         "b5516011-4722-4fc8-8542-102cecc52b71"
       ],
       "edhrec_rank": 47,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "30.85"
       }
@@ -50024,7 +50908,9 @@
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
       "edhrec_rank": 798,
-      "properties": [],
+      "properties": [
+        "battle-land"
+      ],
       "prices": {
         "usd": "0.46"
       }
@@ -50087,7 +50973,9 @@
       "keywords": [],
       "edhrec_rank": 1547,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "0.26"
       }
@@ -50129,7 +51017,9 @@
         "tix": "0.08"
       },
       "is_basic": false,
-      "properties": []
+      "properties": [
+        "command-tower-style"
+      ]
     },
     {
       "object": "card",
@@ -50324,7 +51214,9 @@
         "30fead7c-da53-4c1b-b514-4be6e5ce487c"
       ],
       "edhrec_rank": 7197,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "1.42"
       }
@@ -50370,7 +51262,9 @@
         "9c77c81a-3b3f-4e94-a834-327d01cd6b35"
       ],
       "edhrec_rank": 4458,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.35"
       }
@@ -50416,7 +51310,9 @@
         "6dd06426-59fe-4b9c-aad5-6da8446a5c3d"
       ],
       "edhrec_rank": 4498,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.37"
       }
@@ -50462,7 +51358,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 6277,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.64"
       }
@@ -50508,7 +51406,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 5899,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.38"
       }
@@ -50611,7 +51511,9 @@
         "d20672ca-0555-4238-a984-fd171d36b247"
       ],
       "edhrec_rank": 5077,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.86"
       }
@@ -50655,7 +51557,9 @@
         "770b4e16-de76-49ed-949f-84e6d2e06d25"
       ],
       "edhrec_rank": 336,
-      "properties": [],
+      "properties": [
+        "true-dual"
+      ],
       "prices": {
         "usd": null
       }
@@ -50716,7 +51620,9 @@
         "7b1b0ce9-2c58-4321-a2a7-cdc94feae082"
       ],
       "edhrec_rank": 2443,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.31"
       }
@@ -50803,7 +51709,9 @@
         "f28c54ff-bbe3-485d-81a4-b2cb49430a52"
       ],
       "edhrec_rank": 7664,
-      "properties": [],
+      "properties": [
+        "man-land"
+      ],
       "prices": {
         "usd": "0.38"
       }
@@ -50930,7 +51838,9 @@
         "ed6f7e03-20ba-4c73-bdda-4a4928480721"
       ],
       "edhrec_rank": 7920,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "0.26"
       }
@@ -51061,7 +51971,9 @@
         "85908891-3cc7-42b0-9b54-27ed0fe89c53"
       ],
       "edhrec_rank": 6838,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "0.23"
       }
@@ -51106,7 +52018,9 @@
         "798f3932-30e0-4420-aa3f-db4d613f89ca"
       ],
       "edhrec_rank": 1128,
-      "properties": [],
+      "properties": [
+        "horizon-land"
+      ],
       "prices": {
         "usd": "1.75"
       }
@@ -51269,7 +52183,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 51,
-      "properties": [],
+      "properties": [
+        "shock-land"
+      ],
       "prices": {
         "usd": "17.25"
       }
@@ -51404,7 +52320,9 @@
       ],
       "edhrec_rank": 5554,
       "is_basic": false,
-      "properties": [],
+      "properties": [
+        "command-tower-style"
+      ],
       "prices": {
         "usd": "0.25"
       }
@@ -51551,7 +52469,9 @@
         "0d8d6726-4051-445a-8374-a919aad98f38"
       ],
       "edhrec_rank": 1024,
-      "properties": [],
+      "properties": [
+        "gain-land"
+      ],
       "prices": {
         "usd": "0.10"
       }
@@ -51672,7 +52592,9 @@
         "f009de11-3c8d-4663-b996-ca0c3e997fad"
       ],
       "edhrec_rank": 45,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "89.01"
       }
@@ -52097,7 +53019,9 @@
         "21e10012-06ae-44f2-b38d-3824dd2e73d4"
       ],
       "edhrec_rank": 2026,
-      "properties": [],
+      "properties": [
+        "filter-land"
+      ],
       "prices": {
         "usd": "17.48"
       }
@@ -52134,7 +53058,9 @@
         "35906871-6c78-4ab2-9ed1-e6792c8efb74"
       ],
       "edhrec_rank": 46,
-      "properties": [],
+      "properties": [
+        "fetch-land"
+      ],
       "prices": {
         "usd": "118.74"
       }
@@ -52224,7 +53150,9 @@
         "21ed6499-c4d3-4965-ab02-6c7228275bec"
       ],
       "edhrec_rank": 113,
-      "properties": [],
+      "properties": [
+        "check-land"
+      ],
       "prices": {
         "usd": "1.43"
       }
@@ -52269,7 +53197,9 @@
         "b11e6b3a-f4ca-4cf1-8fd7-475696de5f5c"
       ],
       "edhrec_rank": 3034,
-      "properties": [],
+      "properties": [
+        "snow"
+      ],
       "prices": {
         "usd": "0.56"
       }
@@ -52364,7 +53294,10 @@
         "1a7be0a2-d8ac-45c7-b0a0-eb0886f47b5f"
       ],
       "edhrec_rank": 467,
-      "properties": [],
+      "properties": [
+        "triome",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "13.59"
       }
@@ -52409,7 +53342,9 @@
         "f009de11-3c8d-4663-b996-ca0c3e997fad"
       ],
       "edhrec_rank": 136,
-      "properties": [],
+      "properties": [
+        "pain-land"
+      ],
       "prices": {
         "usd": "31.80"
       }
@@ -52542,7 +53477,10 @@
         "0d8d6726-4051-445a-8374-a919aad98f38"
       ],
       "edhrec_rank": 406,
-      "properties": [],
+      "properties": [
+        "triome",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "23.79"
       }
@@ -52714,7 +53652,10 @@
         "92dfef2a-d0fa-42fd-bdd6-bc4c9286cb56"
       ],
       "edhrec_rank": 521,
-      "properties": [],
+      "properties": [
+        "triome",
+        "cycling-land"
+      ],
       "prices": {
         "usd": "9.65"
       }

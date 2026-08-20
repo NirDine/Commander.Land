@@ -546,7 +546,7 @@ li:has(#navColors) {
     font-size: 1.3em;
 }
 
-.bottom .button input {
+.bottom .button :is(input, button) {
   width: auto;
 }
 
@@ -629,7 +629,7 @@ mark {
   background-color: var(--accent);
 }
 
-.button input {
+.button :is(input, button) {
   border-radius: var(--bradius);
   border-style: none;
   box-sizing: border-box;
@@ -646,15 +646,54 @@ mark {
   width: 90vw;
 }
 
-.button input:disabled {
+.button :is(input, button):disabled {
   filter: grayscale(1) brightness(50%);
   cursor: not-allowed;
 }
 
 @media (min-width: 768px) {
-  .button input {
+  .button :is(input, button) {
     padding: 0 2.6rem;
   }
+}
+
+/* Progress fill for #analyze while the deck is being checked against
+   Scryfall. A pseudo-element sweeps left-to-right; using a pseudo-element
+   (rather than resizing the button itself) keeps the button's box size
+   fixed the whole time. */
+#analyze {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  min-width: 36ch; /* fits the longest label ("Help me build the perfect mana base") so status text swaps never resize the button */
+  white-space: nowrap;
+}
+
+#analyze .analyze-label {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#analyze::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: calc(var(--analyze-progress, 0) * 100%);
+  background-color: rgba(255, 255, 255, 0.25);
+  transition: width 0.2s ease-out;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.manaCurveChartWrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  margin-top: 0.75em;
 }
 
 /* BUFFET */

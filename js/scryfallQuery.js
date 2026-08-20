@@ -19,12 +19,12 @@
  *   id:, identity:   color identity (subset by default) - accepts wubrg letters,
  *                    guild/shard/wedge names (azorius, bant, jeskai...), 'c'/'colorless', 'm'/'multi'
  *   produces:        produced_mana (superset by default - "makes at least these colors")
- *   is:              boolean tags: basic, nonbasic, dfc/transform, snow,
+ *   is:              boolean tags: basic, nonbasic, dfc/transform/mdfc, snow,
  *                    plus any auto-generated land-cycle tag id (shock-land,
  *                    choose-type-shock-land, fetch-land, check-land, fast-land,
  *                    slow-land, battle-land, pain-land, filter-land, horizon-land,
  *                    bounce-land, surveil-land, gain-land, man-land, triome,
- *                    true-dual, gate, cycling-land, command-tower-style)
+ *                    true-dual, gate, cycling-land, command-tower-style, mdfc)
  *   kw:, keyword:    keywords array contains
  *   r:, rarity:      common/uncommon/rare/mythic (ordinal compare supported)
  *   cmc:             mana value, numeric compare
@@ -329,14 +329,14 @@
     'shock-land', 'choose-type-shock-land', 'fetch-land', 'check-land', 'fast-land', 'slow-land',
     'battle-land', 'pain-land', 'filter-land', 'horizon-land', 'bounce-land',
     'surveil-land', 'gain-land', 'man-land', 'triome', 'true-dual', 'gate',
-    'cycling-land', 'command-tower-style',
+    'cycling-land', 'command-tower-style', 'mdfc',
   ]);
 
   function evalIs(card, value) {
     const v = value.toLowerCase();
     if (v === 'basic') return !!card.is_basic;
     if (v === 'nonbasic') return !card.is_basic;
-    if (v === 'dfc' || v === 'transform') return !!(card.card_faces && card.card_faces.length > 1);
+    if (v === 'dfc' || v === 'transform' || v === 'mdfc') return !!(card.card_faces && card.card_faces.length > 1);
     if (v === 'snow') return /\bsnow\b/i.test(card.type_line || '');
     const properties = Array.isArray(card.properties) ? card.properties : [];
     return properties.includes(v);

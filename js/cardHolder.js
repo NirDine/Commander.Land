@@ -486,12 +486,22 @@ $(document).on('click', '.exportToMoxfield', function() {
   handleExportToPlatform('https://www.moxfield.com/import?c=');
 });
 
-// Initialize card list on page load
+// Initialize card list on page load.
+// `data` (the lands database) can still be loading asynchronously at this
+// point on a first visit or right after a version bump — populator.js fires
+// 'landsDataReady' on document once it's actually populated. Without this,
+// these lookups would silently no-op (data?.data.find(...) => undefined)
+// and the selected-cards panel/basics count would stay blank until the next
+// click happened to re-run them after the fetch had finished.
+function initCardHolder() {
+  updateBasicCardsCount();
+  totalCardCount();
+  updateCardList();
+  countProducedManaColors();
+}
 
-updateBasicCardsCount();
-
-
-totalCardCount();
-
-updateCardList();
-countProducedManaColors();
+if (typeof data !== 'undefined' && data) {
+  initCardHolder();
+} else {
+  $(document).one('landsDataReady', initCardHolder);
+}

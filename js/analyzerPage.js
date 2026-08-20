@@ -291,4 +291,10 @@ async function populateCardLists() {
 
 }
 
-updateManaColorProgress();
+// Same 'landsDataReady' guard as cardHolder.js: `data` may still be loading
+// asynchronously when this deferred script runs.
+if (typeof data !== 'undefined' && data) {
+  updateManaColorProgress();
+} else {
+  $(document).one('landsDataReady', updateManaColorProgress);
+}

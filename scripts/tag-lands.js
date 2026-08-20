@@ -126,6 +126,11 @@ const RULES = [
     label: 'Any-Color Land',
     test: (c) => /add one mana of any color/i.test(c.oracle_text || '')
   },
+  {
+    id: 'mdfc',
+    label: 'Modal Double-Faced Card',
+    test: (c) => Array.isArray(c.card_faces) && c.card_faces.length > 1
+  },
 ];
 
 const AUTO_TAG_IDS = new Set(RULES.map(r => r.id));

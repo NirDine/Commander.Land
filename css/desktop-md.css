@@ -156,7 +156,7 @@
     padding: 0px;
   }
 
-  .bottom .button input {
+  .bottom .button :is(input, button) {
     width: auto;
   }
 
@@ -189,7 +189,7 @@
     .analyze
     .addDeck:has(textarea:not(:placeholder-shown))
     ~ .button
-    input:not(:disabled),
+    :is(input, button):not(:disabled),
   .explore .color-picker:has(input:checked) ~ .button input,
   .buffet:has(.card.selected) #cardHolder:not(:has(#cardHolderInput:checked)),
     .buffet:has(.card.selected) #cardHolder:not(:has(#cardHolderInput:checked)):hover,
@@ -218,7 +218,7 @@
     .analyze
       .addDeck:has(textarea:not(:placeholder-shown))
       ~ .button
-      input:not(:disabled),
+      :is(input, button):not(:disabled),
     .explore .color-picker:has(input:checked) ~ .button input,
     .buffet:has(.card.selected) #cardHolder:not(:has(#cardHolderInput:checked)),
     .buffet:has(.card.selected) #cardHolder:not(:has(#cardHolderInput:checked)):hover,

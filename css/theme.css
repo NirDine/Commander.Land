@@ -217,11 +217,11 @@ span#combination-name {
   color: var(--contrast);
 }
 
-.bottom .button input:hover,
+.bottom .button :is(input, button):hover,
 .mana label:hover,
 #cardHolder .cardHolderLabel:hover,
 .card:hover,
-.bottom .button input:focus-visible,
+.bottom .button :is(input, button):focus-visible,
 .mana input:focus-visible + label,
 #cardHolder input:focus-visible ~ .cardHolderLabel,
 .card:focus-visible,
@@ -234,7 +234,7 @@ span#combination-name {
   transition: box-shadow 0.15s ease-in-out 0s;
 }
 
-.bottom .button input,
+.bottom .button :is(input, button),
 .chUserActionContainer .export {
   background-image: linear-gradient(92.88deg, #b76c8e 9.16%, var(--accent));
   color: var(--contrast);

@@ -275,8 +275,11 @@
           </div>
           <div class="recommended hidden" style="--hiddenCount: 12">
             <div class="info">
-              <h4>Suggestions</h4>
-              <p>Coming soon...</p>
+              <h4>Mana curve by color</h4>
+              <p>How your nonland spells' colored mana symbols are spread across mana values. Click a color in the legend to hide or show it.</p>
+              <div class="manaCurveChartWrapper">
+                <canvas id="manaCurveLineChart" role="img" aria-label="Line chart of nonland spell count by mana value, one line per color pip">Loading mana curve data.</canvas>
+              </div>
             </div>
           </div>
         </div>
@@ -884,6 +887,8 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
     <!-- CHART BUILDER -->
     <script type="text/javascript" src="js/charts.js" defer></script>
+    <!-- MANA CURVE BY COLOR CHART -->
+    <script type="text/javascript" src="js/manaCurveChart.js" defer></script>
 
     <script>
       $(function () {
@@ -897,6 +902,11 @@
           populateCardLists();
         } else {
           console.error("populateCardLists function not found. Ensure js/analyzerPage.js is loaded correctly.");
+        }
+        if (typeof renderManaCurveCharts === "function") {
+          renderManaCurveCharts();
+        } else {
+          console.error("renderManaCurveCharts function not found. Ensure js/manaCurveChart.js is loaded correctly.");
         }
       });
     </script>

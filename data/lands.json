@@ -1,7 +1,7 @@
 {
   "object": "list",
   "total_cards": 1162,
-  "version": "11.13",
+  "version": "11.14",
   "data": [
     {
       "object": "card",
@@ -3495,7 +3495,7 @@
         "pain-land"
       ],
       "prices": {
-        "usd": "10.69"
+        "usd": "10.60"
       }
     },
     {

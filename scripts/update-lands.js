@@ -13,11 +13,19 @@ async function fetchScryfallData(url, allData = []) {
             'Accept': 'application/json'
         }
     });
+
+    if (!response.ok) {
+        throw new Error(`Scryfall API HTTP error (${response.status}): ${response.statusText}`);
+    }
+
     const data = await response.json();
+    if (!data || !Array.isArray(data.data)) {
+        throw new Error(`Unexpected Scryfall response format: ${JSON.stringify(data)}`);
+    }
 
     allData.push(...data.data);
 
-    if (data.has_more) {
+    if (data.has_more && data.next_page) {
         // Respect Scryfall API rate limiting
         await new Promise(resolve => setTimeout(resolve, 100));
         return fetchScryfallData(data.next_page, allData);
@@ -53,22 +61,28 @@ async function main() {
                 }
             }
             return true;
-        }).map(card => ({
-            object: card.object,
-            id: card.id,
-            name: card.name,
-            released_at: card.released_at,
-            image_uris: card.image_uris,
-            type_line: card.type_line,
-            oracle_text: card.oracle_text,
-            color_identity: card.color_identity,
-            keywords: card.keywords,
-            produced_mana: card.produced_mana,
-            edhrec_rank: card.edhrec_rank,
-            prices: card.prices,
-            is_basic: false,
-            properties: [],
-        }));
+        }).map(card => {
+            const mappedCard = {
+                object: card.object,
+                id: card.id,
+                name: card.name,
+                released_at: card.released_at,
+                image_uris: card.image_uris,
+                type_line: card.type_line,
+                oracle_text: card.oracle_text,
+                color_identity: card.color_identity,
+                keywords: card.keywords,
+                produced_mana: card.produced_mana,
+                edhrec_rank: card.edhrec_rank,
+                prices: card.prices,
+                is_basic: false,
+                properties: [],
+            };
+            if (card.card_faces) {
+                mappedCard.card_faces = card.card_faces;
+            }
+            return mappedCard;
+        });
 
         console.log(`Found ${newLands.length} new lands.`);
 

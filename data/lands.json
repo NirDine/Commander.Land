@@ -1,7 +1,7 @@
 {
   "object": "list",
   "total_cards": 1180,
-  "version": "11.47",
+  "version": "11.48",
   "data": [
     {
       "object": "card",
@@ -4870,7 +4870,7 @@
         "gain-land"
       ],
       "prices": {
-        "usd": "0.16"
+        "usd": "0.15"
       }
     },
     {
@@ -6210,7 +6210,7 @@
       "edhrec_rank": 193,
       "properties": [],
       "prices": {
-        "usd": "0.52"
+        "usd": "0.53"
       }
     },
     {
@@ -6567,7 +6567,7 @@
         "battle-land"
       ],
       "prices": {
-        "usd": "0.41"
+        "usd": "0.40"
       }
     },
     {
@@ -13918,7 +13918,7 @@
         "fetch-land"
       ],
       "prices": {
-        "usd": "2.00"
+        "usd": "2.06"
       }
     },
     {
@@ -29340,7 +29340,7 @@
         "filter-land"
       ],
       "prices": {
-        "usd": "8.86"
+        "usd": "8.82"
       }
     },
     {
@@ -33110,7 +33110,7 @@
       "edhrec_rank": 1486,
       "properties": [],
       "prices": {
-        "usd": "0.44"
+        "usd": "0.41"
       }
     },
     {
@@ -35706,7 +35706,7 @@
       "edhrec_rank": 18,
       "properties": [],
       "prices": {
-        "usd": "0.46"
+        "usd": "0.47"
       }
     },
     {
@@ -40055,7 +40055,7 @@
         "horizon-land"
       ],
       "prices": {
-        "usd": "4.89"
+        "usd": "4.82"
       }
     },
     {
@@ -45958,7 +45958,7 @@
       "edhrec_rank": 312,
       "properties": [],
       "prices": {
-        "usd": "0.28"
+        "usd": "0.27"
       }
     },
     {
@@ -54514,7 +54514,7 @@
       "edhrec_rank": 80,
       "properties": [],
       "prices": {
-        "usd": "14.63"
+        "usd": "14.20"
       }
     },
     {

@@ -10,6 +10,12 @@ let filteredData = []; // Declare the filteredData variable
 let selectedCards = localStorage.getItem('selectedCards') || [];
 let maxCardSelected = 100;
 
+// Pricing filter state
+let pricingLoIdx = 0;
+let pricingHiIdx = 13;
+const PRICING_STOPS = [null, .25, .5, 1, 2, 5, 10, 15, 20, 30, 50, 100, 150, null];
+
+
 function createCardElement(card) {
   const cardElement = $(`
     <!-- Card -->
@@ -319,8 +325,18 @@ function filterCards() {
     });
 
 
-    return matchesSearch && (isSubset || showCard);
-  });
+    // Price filter
+    const loPrice = PRICING_STOPS[pricingLoIdx];
+    const hiPrice = PRICING_STOPS[pricingHiIdx];
+    const cardPrice = parseFloat(card.prices?.usd);
+    let matchesPrice = true;
+    if (!isNaN(cardPrice)) {
+      if (loPrice !== null && cardPrice < loPrice) matchesPrice = false;
+      if (hiPrice !== null && cardPrice > hiPrice) matchesPrice = false;
+    } // cards with no price data pass through
+
+    return matchesSearch && (isSubset || showCard) && matchesPrice;
+      });
 
   startIndex = 0;
   cardSuggestions.empty(); // Clear the card pool

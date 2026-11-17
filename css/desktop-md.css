@@ -289,6 +289,11 @@
     right: auto;
     left: auto;
   }
+  
+  #pricingFilter .dropdown ~ .section-dropdown {
+  top: 70px;
+
+}
 
 
     .buffet, .analyzer {

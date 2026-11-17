@@ -376,6 +376,58 @@
               </div>
               </div>
             </div>
+            
+            
+            <!--Pricing filters  -->
+            <div class="buffet-filters right">
+              <div class="filter-title">
+                <h4>Pricing</h4>
+              </div>
+              <div class="color-picker">
+                <div class="filters hidden" id="pricingFilter" style="--hiddenCount: 9.5;">
+                  <input class="dropdown parent" type="checkbox" id="pricingFilterInput" name="pricingFilterInput" />
+                  <label class="for-dropdown for-filters propertyTarget pricingFilterLabel" for="pricingFilterInput">
+                    <span class="lowerPricing">No min</span> – <span class="upperPricing">No max</span>
+                  </label>
+                  <div class="section-dropdown">
+                    <div class="filter-picker">
+
+                      <div class="dual-range" id="pricingDualRange">
+                        <div class="dr-track"></div>
+                        <div class="dr-fill" id="pricingFill"></div>
+                        <div class="dr-thumb" id="pricingThumbLo"
+                          role="slider" tabindex="0"
+                          aria-label="Minimum price"
+                          aria-valuemin="0" aria-valuemax="12"
+                          aria-valuenow="0" aria-valuetext="No min"></div>
+                        <div class="dr-thumb" id="pricingThumbHi"
+                          role="slider" tabindex="0"
+                          aria-label="Maximum price"
+                          aria-valuemin="0" aria-valuemax="12"
+                          aria-valuenow="12" aria-valuetext="No max"></div>
+                      </div>
+
+                      <div class="pricing-inputs">
+                        <div class="pricing-input-wrap">
+                           <h4>min</h4>
+                          <input type="text" id="pricingInputMin" placeholder="No min" />
+                        </div>
+                        <div class="pricing-input-wrap">
+                           <h4>max</h4>
+                          <input type="text" id="pricingInputMax" placeholder="No max" />
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            
+            
+            
             <div class="buffet-filters right">
               <div class="filter-title">
                   <h4></h4>
@@ -875,11 +927,127 @@
     <!-- ADD CARDS TO THE CARD HOLDER -->
     <script type="text/javascript" src="js/cardHolder.js" defer></script>
 
-    
-    <script>
-      $(function() {
-        $(document).tooltip();
-      });
-    </script>
+<script>
+(function() {
+  const STOPS  = [null, .25, .5, 1, 2, 5, 10, 15, 20, 30, 50, 100, 150, null];
+  const LABELS = ['No min','$0.25','$0.50','$1','$2','$5','$10','$15','$20','$30','$50','$100', '$150','No max'];
+  const MAX    = STOPS.length - 1;
+
+  const track = document.getElementById('pricingDualRange');
+  const fill  = document.getElementById('pricingFill');
+  const tLo   = document.getElementById('pricingThumbLo');
+  const tHi   = document.getElementById('pricingThumbHi');
+  const iMin  = document.getElementById('pricingInputMin');
+  const iMax  = document.getElementById('pricingInputMax');
+  const lLow  = document.querySelector('.lowerPricing');
+  const lHigh = document.querySelector('.upperPricing');
+
+  function pct(i) { return (i / MAX) * 100; }
+
+  function render() {
+    const l = pct(pricingLoIdx), h = pct(pricingHiIdx);
+    tLo.style.left   = l + '%';
+    tHi.style.left   = h + '%';
+    fill.style.left  = l + '%';
+    fill.style.width = (h - l) + '%';
+    tLo.setAttribute('aria-valuenow',  pricingLoIdx);
+    tLo.setAttribute('aria-valuetext', LABELS[pricingLoIdx]);
+    tHi.setAttribute('aria-valuenow',  pricingHiIdx);
+    tHi.setAttribute('aria-valuetext', LABELS[pricingHiIdx]);
+    lLow.textContent  = pricingLoIdx === 0   ? 'No min' : LABELS[pricingLoIdx];
+    lHigh.textContent = pricingHiIdx === MAX  ? 'No max' : LABELS[pricingHiIdx];
+    iMin.value = pricingLoIdx === 0   ? '' : LABELS[pricingLoIdx];
+    iMax.value = pricingHiIdx === MAX ? '' : LABELS[pricingHiIdx];
+    filterCards();
+  }
+
+  tLo.addEventListener('keydown', e => {
+    if      (e.key === 'ArrowRight' || e.key === 'ArrowUp')   pricingLoIdx = Math.min(pricingLoIdx + 1, pricingHiIdx);
+    else if (e.key === 'ArrowLeft'  || e.key === 'ArrowDown') pricingLoIdx = Math.max(pricingLoIdx - 1, 0);
+    else if (e.key === 'Home') pricingLoIdx = 0;
+    else if (e.key === 'End')  pricingLoIdx = pricingHiIdx;
+    else return;
+    render(); e.preventDefault();
+  });
+
+  tHi.addEventListener('keydown', e => {
+    if      (e.key === 'ArrowRight' || e.key === 'ArrowUp')   pricingHiIdx = Math.min(pricingHiIdx + 1, MAX);
+    else if (e.key === 'ArrowLeft'  || e.key === 'ArrowDown') pricingHiIdx = Math.max(pricingHiIdx - 1, pricingLoIdx);
+    else if (e.key === 'Home') pricingHiIdx = pricingLoIdx;
+    else if (e.key === 'End')  pricingHiIdx = MAX;
+    else return;
+    render(); e.preventDefault();
+  });
+
+  function idxFromPointer(cx) {
+    const r = track.getBoundingClientRect();
+    return Math.round(Math.max(0, Math.min(1, (cx - r.left) / r.width)) * MAX);
+  }
+
+  function makeDraggable(thumb, isLo) {
+    thumb.addEventListener('pointerdown', e => {
+      e.preventDefault();
+      thumb.setPointerCapture(e.pointerId);
+      thumb.focus();
+      function mv(ev) {
+        const idx = idxFromPointer(ev.clientX);
+        if (isLo) pricingLoIdx = Math.max(0,   Math.min(idx, pricingHiIdx));
+        else      pricingHiIdx = Math.min(MAX,  Math.max(idx, pricingLoIdx));
+        render();
+      }
+      thumb.addEventListener('pointermove', mv);
+      thumb.addEventListener('pointerup', () => thumb.removeEventListener('pointermove', mv), { once: true });
+    });
+  }
+
+  makeDraggable(tLo, true);
+  makeDraggable(tHi, false);
+
+  track.addEventListener('pointerdown', e => {
+    if (e.target === tLo || e.target === tHi) return;
+    const idx = idxFromPointer(e.clientX);
+    if (Math.abs(idx - pricingLoIdx) <= Math.abs(idx - pricingHiIdx)) {
+      pricingLoIdx = Math.max(0, Math.min(idx, pricingHiIdx)); tLo.focus();
+    } else {
+      pricingHiIdx = Math.min(MAX, Math.max(idx, pricingLoIdx)); tHi.focus();
+    }
+    render();
+  });
+
+  function findClosest(val) {
+    if (!val || !val.trim()) return null;
+    const clean = val.replace(/[$,\s]/g, '').toLowerCase();
+    if (clean === '0' || clean === 'nomin' || clean === 'no min') return 0;
+    if (clean === 'nomax' || clean === 'no max') return MAX;
+    const num = parseFloat(clean);
+    if (isNaN(num)) return null;
+    let best = 1, bestD = Infinity;
+    for (let i = 1; i < MAX; i++) {
+      const d = Math.abs(STOPS[i] - num);
+      if (d < bestD) { bestD = d; best = i; }
+    }
+    return best;
+  }
+
+  iMin.addEventListener('change', function() {
+    const i = findClosest(this.value);
+    if (i !== null) { pricingLoIdx = Math.min(i, pricingHiIdx); render(); }
+  });
+
+  iMax.addEventListener('change', function() {
+    const i = findClosest(this.value);
+    if (i !== null) { pricingHiIdx = Math.max(i, pricingLoIdx); render(); }
+  });
+
+  document.getElementById('pricingClear').addEventListener('click', () => {
+    pricingLoIdx = 0; pricingHiIdx = MAX; render();
+  });
+
+  document.getElementById('pricingFilterInput').addEventListener('change', function() {
+    if (this.checked) requestAnimationFrame(render);
+  });
+
+})();
+</script>
   </body>
 </html>
